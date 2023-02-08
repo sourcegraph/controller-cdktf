@@ -1,0 +1,3 @@
+# `google_apigee_environment_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_apigee_environment_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_apigee_environment_iam_binding).

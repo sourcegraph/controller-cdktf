@@ -1,0 +1,6 @@
+package googlecomputeinterconnectattachment
+
+
+type GoogleComputeInterconnectAttachmentPrivateInterconnectInfo struct {
+}
+

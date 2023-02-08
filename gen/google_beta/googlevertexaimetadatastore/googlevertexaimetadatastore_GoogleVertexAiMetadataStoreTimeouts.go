@@ -1,0 +1,10 @@
+package googlevertexaimetadatastore
+
+
+type GoogleVertexAiMetadataStoreTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_metadata_store#create GoogleVertexAiMetadataStore#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_metadata_store#delete GoogleVertexAiMetadataStore#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+}
+

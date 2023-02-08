@@ -1,0 +1,6 @@
+package googlecomputeinstancegroupmanager
+
+
+type GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs struct {
+}
+

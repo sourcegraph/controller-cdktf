@@ -1,0 +1,12 @@
+package googleappengineservicenetworksettings
+
+
+type GoogleAppEngineServiceNetworkSettingsTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_network_settings#create GoogleAppEngineServiceNetworkSettings#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_network_settings#delete GoogleAppEngineServiceNetworkSettings#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_network_settings#update GoogleAppEngineServiceNetworkSettings#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+

@@ -1,0 +1,35 @@
+package googlecomputebackendservice
+
+
+type GoogleComputeBackendServiceCircuitBreakers struct {
+	// connect_timeout block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#connect_timeout GoogleComputeBackendService#connect_timeout}
+	ConnectTimeout *GoogleComputeBackendServiceCircuitBreakersConnectTimeout `field:"optional" json:"connectTimeout" yaml:"connectTimeout"`
+	// The maximum number of connections to the backend cluster. Defaults to 1024.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#max_connections GoogleComputeBackendService#max_connections}
+	MaxConnections *float64 `field:"optional" json:"maxConnections" yaml:"maxConnections"`
+	// The maximum number of pending requests to the backend cluster. Defaults to 1024.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#max_pending_requests GoogleComputeBackendService#max_pending_requests}
+	MaxPendingRequests *float64 `field:"optional" json:"maxPendingRequests" yaml:"maxPendingRequests"`
+	// The maximum number of parallel requests to the backend cluster. Defaults to 1024.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#max_requests GoogleComputeBackendService#max_requests}
+	MaxRequests *float64 `field:"optional" json:"maxRequests" yaml:"maxRequests"`
+	// Maximum requests for a single backend connection.
+	//
+	// This parameter
+	// is respected by both the HTTP/1.1 and HTTP/2 implementations. If
+	// not specified, there is no limit. Setting this parameter to 1
+	// will effectively disable keep alive.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#max_requests_per_connection GoogleComputeBackendService#max_requests_per_connection}
+	MaxRequestsPerConnection *float64 `field:"optional" json:"maxRequestsPerConnection" yaml:"maxRequestsPerConnection"`
+	// The maximum number of parallel retries to the backend cluster. Defaults to 3.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#max_retries GoogleComputeBackendService#max_retries}
+	MaxRetries *float64 `field:"optional" json:"maxRetries" yaml:"maxRetries"`
+}
+

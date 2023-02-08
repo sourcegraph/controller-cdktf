@@ -1,0 +1,6 @@
+package googleprivatecacertificate
+
+
+type GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions struct {
+}
+

@@ -1,0 +1,20 @@
+package googleprivatecacapool
+
+
+type GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa struct {
+	// The maximum allowed RSA modulus size, in bits.
+	//
+	// If this is not set, or if set to zero, the
+	// service will not enforce an explicit upper bound on RSA modulus sizes.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_ca_pool#max_modulus_size GooglePrivatecaCaPool#max_modulus_size}
+	MaxModulusSize *string `field:"optional" json:"maxModulusSize" yaml:"maxModulusSize"`
+	// The minimum allowed RSA modulus size, in bits.
+	//
+	// If this is not set, or if set to zero, the
+	// service-level min RSA modulus size will continue to apply.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_ca_pool#min_modulus_size GooglePrivatecaCaPool#min_modulus_size}
+	MinModulusSize *string `field:"optional" json:"minModulusSize" yaml:"minModulusSize"`
+}
+

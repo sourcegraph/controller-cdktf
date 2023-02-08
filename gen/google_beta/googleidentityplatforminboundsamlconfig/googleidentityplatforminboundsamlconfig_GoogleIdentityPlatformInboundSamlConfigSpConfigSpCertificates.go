@@ -1,0 +1,6 @@
+package googleidentityplatforminboundsamlconfig
+
+
+type GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificates struct {
+}
+

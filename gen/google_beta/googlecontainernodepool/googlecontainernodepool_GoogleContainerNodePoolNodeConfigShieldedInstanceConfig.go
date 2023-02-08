@@ -1,0 +1,14 @@
+package googlecontainernodepool
+
+
+type GoogleContainerNodePoolNodeConfigShieldedInstanceConfig struct {
+	// Defines whether the instance has integrity monitoring enabled.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#enable_integrity_monitoring GoogleContainerNodePool#enable_integrity_monitoring}
+	EnableIntegrityMonitoring interface{} `field:"optional" json:"enableIntegrityMonitoring" yaml:"enableIntegrityMonitoring"`
+	// Defines whether the instance has Secure Boot enabled.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#enable_secure_boot GoogleContainerNodePool#enable_secure_boot}
+	EnableSecureBoot interface{} `field:"optional" json:"enableSecureBoot" yaml:"enableSecureBoot"`
+}
+

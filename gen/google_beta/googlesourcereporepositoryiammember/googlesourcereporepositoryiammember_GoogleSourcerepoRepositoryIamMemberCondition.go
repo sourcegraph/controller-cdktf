@@ -1,0 +1,12 @@
+package googlesourcereporepositoryiammember
+
+
+type GoogleSourcerepoRepositoryIamMemberCondition struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sourcerepo_repository_iam_member#expression GoogleSourcerepoRepositoryIamMember#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sourcerepo_repository_iam_member#title GoogleSourcerepoRepositoryIamMember#title}.
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sourcerepo_repository_iam_member#description GoogleSourcerepoRepositoryIamMember#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
+}
+

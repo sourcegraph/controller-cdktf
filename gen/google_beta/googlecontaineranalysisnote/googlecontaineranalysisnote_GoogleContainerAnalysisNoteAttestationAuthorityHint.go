@@ -1,0 +1,10 @@
+package googlecontaineranalysisnote
+
+
+type GoogleContainerAnalysisNoteAttestationAuthorityHint struct {
+	// The human readable name of this Attestation Authority, for example "qa".
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#human_readable_name GoogleContainerAnalysisNote#human_readable_name}
+	HumanReadableName *string `field:"required" json:"humanReadableName" yaml:"humanReadableName"`
+}
+

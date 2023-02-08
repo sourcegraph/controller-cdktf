@@ -1,0 +1,6 @@
+package googleclouddeploydeliverypipeline
+
+
+type GoogleClouddeployDeliveryPipelineConditionTargetsPresentCondition struct {
+}
+

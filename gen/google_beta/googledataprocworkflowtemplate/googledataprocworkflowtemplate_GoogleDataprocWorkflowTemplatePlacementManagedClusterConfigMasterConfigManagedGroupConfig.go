@@ -1,0 +1,6 @@
+package googledataprocworkflowtemplate
+
+
+type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfig struct {
+}
+

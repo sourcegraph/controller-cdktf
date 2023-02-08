@@ -1,0 +1,6 @@
+package googlecomputeregioninstancegroupmanager
+
+
+type GoogleComputeRegionInstanceGroupManagerStatusStateful struct {
+}
+

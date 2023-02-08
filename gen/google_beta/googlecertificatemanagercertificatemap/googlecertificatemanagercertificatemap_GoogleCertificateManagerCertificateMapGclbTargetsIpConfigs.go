@@ -1,0 +1,6 @@
+package googlecertificatemanagercertificatemap
+
+
+type GoogleCertificateManagerCertificateMapGclbTargetsIpConfigs struct {
+}
+
