@@ -1,4 +1,4 @@
-module github.com/sourcegraph/controller-cdktf/gen/googlebeta
+module github.com/sourcegraph/controller-cdktf/gen/google_beta
 
 go 1.20
 
