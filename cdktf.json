@@ -6,6 +6,11 @@
   "sendCrashReports": "false",
   "terraformProviders": [
     {
+      "name": "aws",
+      "source": "hashicorp/aws",
+      "version": "4.54.0"
+    },
+    {
       "name": "google",
       "source": "hashicorp/google",
       "version": "~> 4.38.0"
