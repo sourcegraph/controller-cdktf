@@ -6,6 +6,11 @@
   "sendCrashReports": "false",
   "terraformProviders": [
     {
+      "name": "aws",
+      "source": "hashicorp/aws",
+      "version": "4.54.0"
+    },
+    {
       "name": "google",
       "source": "hashicorp/google",
       "version": "~> 4.38.0"
@@ -75,7 +80,12 @@
      "name": "budget",
       "source": "terraform-google-modules/project-factory/google//modules/budget",
       "version": "14.0.0"
-    }
+    },
+    {
+      "name": "awsvpc",
+       "source": "terraform-aws-modules/vpc/aws",
+       "version": "3.19.0"
+     }
   ],
   "context": {
     "excludeStackIdFromLogicalIds": "true",

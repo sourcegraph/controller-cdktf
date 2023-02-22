@@ -13,19 +13,24 @@ import (
 )
 
 const (
-	outputDir = "output"
+	outputDir = "gen"
 )
 
 var (
-	version = flag.String("version", "", "target cdktf version, no 'v' prefix, e.g. '0.13.3'")
+	parallelism = flag.String("parallelism", "", "number of threads used for npx, each thread uses aprox. 3GB of memory")
+	version     = flag.String("version", "", "target cdktf version, no 'v' prefix, e.g. '0.13.3'")
 )
 
-//go:generate go run . --version 0.13.3
+//go:generate go run . --version 0.13.3 --parallelism 2
 func main() {
 	flag.Parse()
 
 	if *version == "" {
 		log.Fatal("no --version specified")
+	}
+	if *parallelism == "" {
+		threads := "2"
+		parallelism = &threads
 	}
 	if strings.HasPrefix(*version, "v") {
 		log.Fatalf("version must not start with 'v', %q", *version)
@@ -38,7 +43,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := run.Cmd(ctx, "npx", "--yes", "cdktf-cli@"+*version, "get", "--output", outputDir).Run().Stream(os.Stderr); err != nil {
+	if err := run.Cmd(ctx, "npx", "--yes", "cdktf-cli@"+*version, "get", "--parallelism="+*parallelism, "--output", outputDir).Run().Stream(os.Stderr); err != nil {
 		log.Fatal(err)
 	}
 
