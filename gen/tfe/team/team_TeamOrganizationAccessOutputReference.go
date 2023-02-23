@@ -38,6 +38,9 @@ type TeamOrganizationAccessOutputReference interface {
 	ManagePolicyOverrides() interface{}
 	SetManagePolicyOverrides(val interface{})
 	ManagePolicyOverridesInput() interface{}
+	ManageProjects() interface{}
+	SetManageProjects(val interface{})
+	ManageProjectsInput() interface{}
 	ManageProviders() interface{}
 	SetManageProviders(val interface{})
 	ManageProvidersInput() interface{}
@@ -85,6 +88,7 @@ type TeamOrganizationAccessOutputReference interface {
 	ResetManageModules()
 	ResetManagePolicies()
 	ResetManagePolicyOverrides()
+	ResetManageProjects()
 	ResetManageProviders()
 	ResetManageRunTasks()
 	ResetManageVcsSettings()
@@ -209,6 +213,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManagePolicyOverridesI
 	_jsii_.Get(
 		j,
 		"managePolicyOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageProjects() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageProjectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageProjectsInput",
 		&returns,
 	)
 	return returns
@@ -404,6 +428,17 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManagePolicyOverride
 	_jsii_.Set(
 		j,
 		"managePolicyOverrides",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageProjects(val interface{}) {
+	if err := j.validateSetManageProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageProjects",
 		val,
 	)
 }
@@ -680,6 +715,14 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManagePolicyOverr
 	_jsii_.InvokeVoid(
 		t,
 		"resetManagePolicyOverrides",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageProjects() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetManageProjects",
 		nil, // no parameters
 	)
 }

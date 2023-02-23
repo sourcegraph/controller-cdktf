@@ -37,6 +37,9 @@ type DataTfePolicySet interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -49,6 +52,9 @@ type DataTfePolicySet interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	Overridable() interface{}
+	SetOverridable(val interface{})
+	OverridableInput() interface{}
 	PoliciesPath() *string
 	PolicyIds() *[]*string
 	// Experimental.
@@ -91,6 +97,9 @@ type DataTfePolicySet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetKind()
+	ResetOrganization()
+	ResetOverridable()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -219,6 +228,26 @@ func (j *jsiiProxy_DataTfePolicySet) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataTfePolicySet) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfePolicySet) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataTfePolicySet) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -274,6 +303,26 @@ func (j *jsiiProxy_DataTfePolicySet) OrganizationInput() *string {
 	_jsii_.Get(
 		j,
 		"organizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfePolicySet) Overridable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overridable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfePolicySet) OverridableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overridableInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +483,17 @@ func (j *jsiiProxy_DataTfePolicySet)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataTfePolicySet)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataTfePolicySet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -463,6 +523,17 @@ func (j *jsiiProxy_DataTfePolicySet)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataTfePolicySet)SetOverridable(val interface{}) {
+	if err := j.validateSetOverridableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overridable",
 		val,
 	)
 }
@@ -707,6 +778,30 @@ func (d *jsiiProxy_DataTfePolicySet) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataTfePolicySet) ResetKind() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKind",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataTfePolicySet) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataTfePolicySet) ResetOverridable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverridable",
 		nil, // no parameters
 	)
 }

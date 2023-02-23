@@ -21,8 +21,6 @@ type WorkspaceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#name Workspace#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#organization Workspace#organization}.
-	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#agent_pool_id Workspace#agent_pool_id}.
 	AgentPoolId *string `field:"optional" json:"agentPoolId" yaml:"agentPoolId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#allow_destroy_plan Workspace#allow_destroy_plan}.
@@ -37,6 +35,8 @@ type WorkspaceConfig struct {
 	ExecutionMode *string `field:"optional" json:"executionMode" yaml:"executionMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#file_triggers_enabled Workspace#file_triggers_enabled}.
 	FileTriggersEnabled interface{} `field:"optional" json:"fileTriggersEnabled" yaml:"fileTriggersEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#force_delete Workspace#force_delete}.
+	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#global_remote_state Workspace#global_remote_state}.
 	GlobalRemoteState interface{} `field:"optional" json:"globalRemoteState" yaml:"globalRemoteState"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#id Workspace#id}.
@@ -46,6 +46,10 @@ type WorkspaceConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#operations Workspace#operations}.
 	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#organization Workspace#organization}.
+	Organization *string `field:"optional" json:"organization" yaml:"organization"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#project_id Workspace#project_id}.
+	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#queue_all_runs Workspace#queue_all_runs}.
 	QueueAllRuns interface{} `field:"optional" json:"queueAllRuns" yaml:"queueAllRuns"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/workspace#remote_state_consumer_ids Workspace#remote_state_consumer_ids}.

@@ -45,6 +45,9 @@ type PolicySet interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -57,6 +60,9 @@ type PolicySet interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	Overridable() interface{}
+	SetOverridable(val interface{})
+	OverridableInput() interface{}
 	PoliciesPath() *string
 	SetPoliciesPath(val *string)
 	PoliciesPathInput() *string
@@ -116,6 +122,9 @@ type PolicySet interface {
 	ResetDescription()
 	ResetGlobal()
 	ResetId()
+	ResetKind()
+	ResetOrganization()
+	ResetOverridable()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -279,6 +288,26 @@ func (j *jsiiProxy_PolicySet) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PolicySet) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicySet) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PolicySet) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -334,6 +363,26 @@ func (j *jsiiProxy_PolicySet) OrganizationInput() *string {
 	_jsii_.Get(
 		j,
 		"organizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicySet) Overridable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overridable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicySet) OverridableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overridableInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +646,17 @@ func (j *jsiiProxy_PolicySet)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_PolicySet)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PolicySet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -626,6 +686,17 @@ func (j *jsiiProxy_PolicySet)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicySet)SetOverridable(val interface{}) {
+	if err := j.validateSetOverridableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overridable",
 		val,
 	)
 }
@@ -952,6 +1023,30 @@ func (p *jsiiProxy_PolicySet) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicySet) ResetKind() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKind",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicySet) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicySet) ResetOverridable() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOverridable",
 		nil, // no parameters
 	)
 }

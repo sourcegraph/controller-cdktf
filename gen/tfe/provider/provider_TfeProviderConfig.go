@@ -10,6 +10,10 @@ type TfeProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#hostname TfeProvider#hostname}
 	Hostname *string `field:"optional" json:"hostname" yaml:"hostname"`
+	// The organization to apply to a resource if one is not defined on the resource itself.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#organization TfeProvider#organization}
+	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 	// Whether or not to skip certificate verifications.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe#ssl_skip_verify TfeProvider#ssl_skip_verify}

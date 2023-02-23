@@ -49,6 +49,9 @@ type Workspace interface {
 	FileTriggersEnabled() interface{}
 	SetFileTriggersEnabled(val interface{})
 	FileTriggersEnabledInput() interface{}
+	ForceDelete() interface{}
+	SetForceDelete(val interface{})
+	ForceDeleteInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -78,6 +81,9 @@ type Workspace interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -94,6 +100,7 @@ type Workspace interface {
 	RemoteStateConsumerIds() *[]*string
 	SetRemoteStateConsumerIds(val *[]*string)
 	RemoteStateConsumerIdsInput() *[]*string
+	ResourceCount() *float64
 	SpeculativeEnabled() interface{}
 	SetSpeculativeEnabled(val interface{})
 	SpeculativeEnabledInput() interface{}
@@ -159,12 +166,15 @@ type Workspace interface {
 	ResetDescription()
 	ResetExecutionMode()
 	ResetFileTriggersEnabled()
+	ResetForceDelete()
 	ResetGlobalRemoteState()
 	ResetId()
 	ResetOperations()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetQueueAllRuns()
 	ResetRemoteStateConsumerIds()
 	ResetSpeculativeEnabled()
@@ -381,6 +391,26 @@ func (j *jsiiProxy_Workspace) FileTriggersEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Workspace) ForceDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) ForceDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workspace) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -531,6 +561,26 @@ func (j *jsiiProxy_Workspace) OrganizationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Workspace) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workspace) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -596,6 +646,16 @@ func (j *jsiiProxy_Workspace) RemoteStateConsumerIdsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"remoteStateConsumerIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) ResourceCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resourceCount",
 		&returns,
 	)
 	return returns
@@ -945,6 +1005,17 @@ func (j *jsiiProxy_Workspace)SetFileTriggersEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Workspace)SetForceDelete(val interface{}) {
+	if err := j.validateSetForceDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDelete",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Workspace)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1015,6 +1086,17 @@ func (j *jsiiProxy_Workspace)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workspace)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1443,6 +1525,14 @@ func (w *jsiiProxy_Workspace) ResetFileTriggersEnabled() {
 	)
 }
 
+func (w *jsiiProxy_Workspace) ResetForceDelete() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetForceDelete",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_Workspace) ResetGlobalRemoteState() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1467,10 +1557,26 @@ func (w *jsiiProxy_Workspace) ResetOperations() {
 	)
 }
 
+func (w *jsiiProxy_Workspace) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_Workspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workspace) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

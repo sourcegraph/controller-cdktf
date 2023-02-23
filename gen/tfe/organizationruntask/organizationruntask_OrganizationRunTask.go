@@ -112,6 +112,7 @@ type OrganizationRunTask interface {
 	ResetEnabled()
 	ResetHmacKey()
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -897,6 +898,14 @@ func (o *jsiiProxy_OrganizationRunTask) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationRunTask) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

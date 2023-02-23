@@ -104,6 +104,7 @@ type SentinelPolicy interface {
 	ResetDescription()
 	ResetEnforceMode()
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -811,6 +812,14 @@ func (s *jsiiProxy_SentinelPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelPolicy) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

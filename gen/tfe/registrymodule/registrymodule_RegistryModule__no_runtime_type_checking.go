@@ -84,6 +84,10 @@ func (j *jsiiProxy_RegistryModule) validateSetNamespaceParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_RegistryModule) validateSetNoCodeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegistryModule) validateSetOrganizationParameters(val *string) error {
 	return nil
 }

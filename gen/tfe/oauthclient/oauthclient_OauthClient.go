@@ -121,6 +121,7 @@ type OauthClient interface {
 	ResetKey()
 	ResetName()
 	ResetOauthToken()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -1004,6 +1005,14 @@ func (o *jsiiProxy_OauthClient) ResetOauthToken() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOauthToken",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthClient) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

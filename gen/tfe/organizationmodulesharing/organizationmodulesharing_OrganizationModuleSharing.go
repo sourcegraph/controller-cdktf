@@ -93,6 +93,7 @@ type OrganizationModuleSharing interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -691,6 +692,14 @@ func (o *jsiiProxy_OrganizationModuleSharing) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationModuleSharing) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }
