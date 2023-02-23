@@ -104,6 +104,7 @@ type VariableSet interface {
 	ResetDescription()
 	ResetGlobal()
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -812,6 +813,14 @@ func (v *jsiiProxy_VariableSet) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VariableSet) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

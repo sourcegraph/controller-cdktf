@@ -102,6 +102,7 @@ type Team interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutOrganizationAccess(value *TeamOrganizationAccess)
 	ResetId()
+	ResetOrganization()
 	ResetOrganizationAccess()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -796,6 +797,14 @@ func (t *jsiiProxy_Team) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Team) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

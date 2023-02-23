@@ -39,6 +39,7 @@ type DataTfeOutputs interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	NonsensitiveValues() cdktf.AnyMap
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
@@ -85,6 +86,7 @@ type DataTfeOutputs interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -199,6 +201,16 @@ func (j *jsiiProxy_DataTfeOutputs) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfeOutputs) NonsensitiveValues() cdktf.AnyMap {
+	var returns cdktf.AnyMap
+	_jsii_.Get(
+		j,
+		"nonsensitiveValues",
 		&returns,
 	)
 	return returns
@@ -645,6 +657,14 @@ func (d *jsiiProxy_DataTfeOutputs) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataTfeOutputs) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrganization",
+		nil, // no parameters
 	)
 }
 

@@ -8,6 +8,8 @@ type TeamOrganizationAccess struct {
 	ManagePolicies interface{} `field:"optional" json:"managePolicies" yaml:"managePolicies"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_policy_overrides Team#manage_policy_overrides}.
 	ManagePolicyOverrides interface{} `field:"optional" json:"managePolicyOverrides" yaml:"managePolicyOverrides"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_projects Team#manage_projects}.
+	ManageProjects interface{} `field:"optional" json:"manageProjects" yaml:"manageProjects"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_providers Team#manage_providers}.
 	ManageProviders interface{} `field:"optional" json:"manageProviders" yaml:"manageProviders"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/team#manage_run_tasks Team#manage_run_tasks}.

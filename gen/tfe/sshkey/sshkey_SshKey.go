@@ -96,6 +96,7 @@ type SshKey interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -725,6 +726,14 @@ func (s *jsiiProxy_SshKey) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshKey) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

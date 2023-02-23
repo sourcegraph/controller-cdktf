@@ -30,6 +30,9 @@ type TfeProvider interface {
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
+	Organization() *string
+	SetOrganization(val *string)
+	OrganizationInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	SslSkipVerify() interface{}
@@ -51,6 +54,7 @@ type TfeProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
 	ResetHostname()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -166,6 +170,26 @@ func (j *jsiiProxy_TfeProvider) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TfeProvider) Organization() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"organization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TfeProvider) OrganizationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"organizationInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,14 @@ func (j *jsiiProxy_TfeProvider)SetHostname(val *string) {
 	)
 }
 
+func (j *jsiiProxy_TfeProvider)SetOrganization(val *string) {
+	_jsii_.Set(
+		j,
+		"organization",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TfeProvider)SetSslSkipVerify(val interface{}) {
 	if err := j.validateSetSslSkipVerifyParameters(val); err != nil {
 		panic(err)
@@ -396,6 +428,14 @@ func (t *jsiiProxy_TfeProvider) ResetHostname() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TfeProvider) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

@@ -100,6 +100,7 @@ type DataTfeOrganizationRunTask interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -805,6 +806,14 @@ func (d *jsiiProxy_DataTfeOrganizationRunTask) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataTfeOrganizationRunTask) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

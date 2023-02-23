@@ -72,6 +72,10 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePolic
 	return nil
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProjectsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProvidersParameters(val interface{}) error {
 	return nil
 }

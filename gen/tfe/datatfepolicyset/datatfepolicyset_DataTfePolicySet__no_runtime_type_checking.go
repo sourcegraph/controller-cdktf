@@ -60,6 +60,10 @@ func (j *jsiiProxy_DataTfePolicySet) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataTfePolicySet) validateSetKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataTfePolicySet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_DataTfePolicySet) validateSetNameParameters(val *string) erro
 }
 
 func (j *jsiiProxy_DataTfePolicySet) validateSetOrganizationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataTfePolicySet) validateSetOverridableParameters(val interface{}) error {
 	return nil
 }
 

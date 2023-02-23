@@ -92,6 +92,10 @@ func (j *jsiiProxy_Workspace) validateSetFileTriggersEnabledParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_Workspace) validateSetForceDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Workspace) validateSetGlobalRemoteStateParameters(val interface{}) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_Workspace) validateSetOperationsParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_Workspace) validateSetOrganizationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Workspace) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 
