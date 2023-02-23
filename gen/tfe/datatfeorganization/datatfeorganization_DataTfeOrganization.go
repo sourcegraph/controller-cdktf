@@ -23,6 +23,7 @@ type DataTfeOrganization interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DefaultProjectId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,6 +164,16 @@ func (j *jsiiProxy_DataTfeOrganization) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfeOrganization) DefaultProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultProjectId",
 		&returns,
 	)
 	return returns

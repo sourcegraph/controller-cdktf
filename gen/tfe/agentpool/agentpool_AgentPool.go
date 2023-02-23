@@ -93,6 +93,7 @@ type AgentPool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -691,6 +692,14 @@ func (a *jsiiProxy_AgentPool) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AgentPool) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

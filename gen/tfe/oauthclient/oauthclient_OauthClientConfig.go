@@ -23,8 +23,6 @@ type OauthClientConfig struct {
 	ApiUrl *string `field:"required" json:"apiUrl" yaml:"apiUrl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#http_url OauthClient#http_url}.
 	HttpUrl *string `field:"required" json:"httpUrl" yaml:"httpUrl"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}.
-	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#service_provider OauthClient#service_provider}.
 	ServiceProvider *string `field:"required" json:"serviceProvider" yaml:"serviceProvider"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#id OauthClient#id}.
@@ -38,6 +36,8 @@ type OauthClientConfig struct {
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#oauth_token OauthClient#oauth_token}.
 	OauthToken *string `field:"optional" json:"oauthToken" yaml:"oauthToken"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#organization OauthClient#organization}.
+	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#private_key OauthClient#private_key}.
 	PrivateKey *string `field:"optional" json:"privateKey" yaml:"privateKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/oauth_client#rsa_public_key OauthClient#rsa_public_key}.

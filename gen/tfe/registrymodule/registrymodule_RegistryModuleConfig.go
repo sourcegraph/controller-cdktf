@@ -30,6 +30,8 @@ type RegistryModuleConfig struct {
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#namespace RegistryModule#namespace}.
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#no_code RegistryModule#no_code}.
+	NoCode interface{} `field:"optional" json:"noCode" yaml:"noCode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#organization RegistryModule#organization}.
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/registry_module#registry_name RegistryModule#registry_name}.

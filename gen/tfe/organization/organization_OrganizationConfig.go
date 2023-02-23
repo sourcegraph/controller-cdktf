@@ -23,6 +23,8 @@ type OrganizationConfig struct {
 	Email *string `field:"required" json:"email" yaml:"email"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#name Organization#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#allow_force_delete_workspaces Organization#allow_force_delete_workspaces}.
+	AllowForceDeleteWorkspaces interface{} `field:"optional" json:"allowForceDeleteWorkspaces" yaml:"allowForceDeleteWorkspaces"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#assessments_enforced Organization#assessments_enforced}.
 	AssessmentsEnforced interface{} `field:"optional" json:"assessmentsEnforced" yaml:"assessmentsEnforced"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/tfe/r/organization#collaborator_auth_policy Organization#collaborator_auth_policy}.

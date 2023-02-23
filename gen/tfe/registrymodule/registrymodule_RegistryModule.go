@@ -52,6 +52,9 @@ type RegistryModule interface {
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
+	NoCode() interface{}
+	SetNoCode(val interface{})
+	NoCodeInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Organization() *string
@@ -108,6 +111,7 @@ type RegistryModule interface {
 	ResetModuleProvider()
 	ResetName()
 	ResetNamespace()
+	ResetNoCode()
 	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -294,6 +298,26 @@ func (j *jsiiProxy_RegistryModule) NamespaceInput() *string {
 	_jsii_.Get(
 		j,
 		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryModule) NoCode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryModule) NoCodeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noCodeInput",
 		&returns,
 	)
 	return returns
@@ -545,6 +569,17 @@ func (j *jsiiProxy_RegistryModule)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegistryModule)SetNoCode(val interface{}) {
+	if err := j.validateSetNoCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noCode",
 		val,
 	)
 }
@@ -857,6 +892,14 @@ func (r *jsiiProxy_RegistryModule) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryModule) ResetNoCode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNoCode",
 		nil, // no parameters
 	)
 }

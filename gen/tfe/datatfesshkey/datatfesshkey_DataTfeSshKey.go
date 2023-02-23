@@ -85,6 +85,7 @@ type DataTfeSshKey interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -641,6 +642,14 @@ func (d *jsiiProxy_DataTfeSshKey) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataTfeSshKey) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }
