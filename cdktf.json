@@ -53,28 +53,9 @@
   ],
   "terraformModules": [
     {
-      "name": "googlesqldb",
-      "source": "git::https://github.com/michaellzc/terraform-google-sql-db//modules/postgresql?ref=feat/support-dynamic-iam-users"
-    },
-    {
       "name": "gkeprivate",
       "source": "terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster",
       "version": "24.0.0"
-    },
-    {
-      "name": "executorsnetworking",
-      "source": "sourcegraph/executors/google//modules/networking",
-      "version": "4.0.1"
-    },
-    {
-      "name": "executorsdockermirror",
-      "source": "sourcegraph/executors/google//modules/docker-mirror",
-      "version": "4.0.1"
-    },
-    {
-      "name": "executors",
-      "source": "sourcegraph/executors/google//modules/executors",
-      "version": "4.0.1"
     },
     {
      "name": "budget",
