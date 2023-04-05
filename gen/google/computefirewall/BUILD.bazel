@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computefirewall",
+    srcs = [
+        "computefirewall.go",
+        "computefirewall_ComputeFirewall.go",
+        "computefirewall_ComputeFirewallAllow.go",
+        "computefirewall_ComputeFirewallAllowList.go",
+        "computefirewall_ComputeFirewallAllowList__runtime_type_checks.go",
+        "computefirewall_ComputeFirewallAllowOutputReference.go",
+        "computefirewall_ComputeFirewallAllowOutputReference__runtime_type_checks.go",
+        "computefirewall_ComputeFirewallConfig.go",
+        "computefirewall_ComputeFirewallDeny.go",
+        "computefirewall_ComputeFirewallDenyList.go",
+        "computefirewall_ComputeFirewallDenyList__runtime_type_checks.go",
+        "computefirewall_ComputeFirewallDenyOutputReference.go",
+        "computefirewall_ComputeFirewallDenyOutputReference__runtime_type_checks.go",
+        "computefirewall_ComputeFirewallLogConfig.go",
+        "computefirewall_ComputeFirewallLogConfigOutputReference.go",
+        "computefirewall_ComputeFirewallLogConfigOutputReference__runtime_type_checks.go",
+        "computefirewall_ComputeFirewallTimeouts.go",
+        "computefirewall_ComputeFirewallTimeoutsOutputReference.go",
+        "computefirewall_ComputeFirewallTimeoutsOutputReference__runtime_type_checks.go",
+        "computefirewall_ComputeFirewall__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computefirewall",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computefirewall/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

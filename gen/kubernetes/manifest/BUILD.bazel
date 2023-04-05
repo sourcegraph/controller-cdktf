@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "manifest",
+    srcs = [
+        "manifest.go",
+        "manifest_Manifest.go",
+        "manifest_ManifestConfig.go",
+        "manifest_ManifestFieldManager.go",
+        "manifest_ManifestFieldManagerOutputReference.go",
+        "manifest_ManifestFieldManagerOutputReference__runtime_type_checks.go",
+        "manifest_ManifestTimeouts.go",
+        "manifest_ManifestTimeoutsOutputReference.go",
+        "manifest_ManifestTimeoutsOutputReference__runtime_type_checks.go",
+        "manifest_ManifestWait.go",
+        "manifest_ManifestWaitCondition.go",
+        "manifest_ManifestWaitConditionList.go",
+        "manifest_ManifestWaitConditionList__runtime_type_checks.go",
+        "manifest_ManifestWaitConditionOutputReference.go",
+        "manifest_ManifestWaitConditionOutputReference__runtime_type_checks.go",
+        "manifest_ManifestWaitFor.go",
+        "manifest_ManifestWaitForOutputReference.go",
+        "manifest_ManifestWaitForOutputReference__runtime_type_checks.go",
+        "manifest_ManifestWaitOutputReference.go",
+        "manifest_ManifestWaitOutputReference__runtime_type_checks.go",
+        "manifest_Manifest__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/manifest",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/manifest/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

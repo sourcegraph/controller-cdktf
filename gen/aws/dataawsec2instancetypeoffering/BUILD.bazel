@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2instancetypeoffering",
+    srcs = [
+        "dataawsec2instancetypeoffering.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOffering.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingConfig.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingFilter.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingFilterList.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingFilterList__runtime_type_checks.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingFilterOutputReference.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingTimeouts.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingTimeoutsOutputReference.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOfferingTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2instancetypeoffering_DataAwsEc2InstanceTypeOffering__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2instancetypeoffering",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2instancetypeoffering/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

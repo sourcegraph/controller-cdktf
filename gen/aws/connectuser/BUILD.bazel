@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connectuser",
+    srcs = [
+        "connectuser.go",
+        "connectuser_ConnectUser.go",
+        "connectuser_ConnectUserConfig.go",
+        "connectuser_ConnectUserIdentityInfo.go",
+        "connectuser_ConnectUserIdentityInfoOutputReference.go",
+        "connectuser_ConnectUserIdentityInfoOutputReference__runtime_type_checks.go",
+        "connectuser_ConnectUserPhoneConfig.go",
+        "connectuser_ConnectUserPhoneConfigOutputReference.go",
+        "connectuser_ConnectUserPhoneConfigOutputReference__runtime_type_checks.go",
+        "connectuser_ConnectUser__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/connectuser",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/connectuser/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsnetworkmanagersite",
+    srcs = [
+        "dataawsnetworkmanagersite.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSite.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSiteConfig.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSiteLocation.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSiteLocationList.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSiteLocationList__runtime_type_checks.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSiteLocationOutputReference.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSiteLocationOutputReference__runtime_type_checks.go",
+        "dataawsnetworkmanagersite_DataAwsNetworkmanagerSite__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsnetworkmanagersite",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsnetworkmanagersite/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

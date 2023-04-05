@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lambdaalias",
+    srcs = [
+        "lambdaalias.go",
+        "lambdaalias_LambdaAlias.go",
+        "lambdaalias_LambdaAliasConfig.go",
+        "lambdaalias_LambdaAliasRoutingConfig.go",
+        "lambdaalias_LambdaAliasRoutingConfigOutputReference.go",
+        "lambdaalias_LambdaAliasRoutingConfigOutputReference__runtime_type_checks.go",
+        "lambdaalias_LambdaAlias__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lambdaalias",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lambdaalias/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

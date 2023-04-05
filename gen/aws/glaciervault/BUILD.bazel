@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "glaciervault",
+    srcs = [
+        "glaciervault.go",
+        "glaciervault_GlacierVault.go",
+        "glaciervault_GlacierVaultConfig.go",
+        "glaciervault_GlacierVaultNotification.go",
+        "glaciervault_GlacierVaultNotificationOutputReference.go",
+        "glaciervault_GlacierVaultNotificationOutputReference__runtime_type_checks.go",
+        "glaciervault_GlacierVault__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/glaciervault",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/glaciervault/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

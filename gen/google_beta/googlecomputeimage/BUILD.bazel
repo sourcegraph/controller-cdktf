@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeimage",
+    srcs = [
+        "googlecomputeimage.go",
+        "googlecomputeimage_GoogleComputeImage.go",
+        "googlecomputeimage_GoogleComputeImageConfig.go",
+        "googlecomputeimage_GoogleComputeImageGuestOsFeatures.go",
+        "googlecomputeimage_GoogleComputeImageGuestOsFeaturesList.go",
+        "googlecomputeimage_GoogleComputeImageGuestOsFeaturesList__runtime_type_checks.go",
+        "googlecomputeimage_GoogleComputeImageGuestOsFeaturesOutputReference.go",
+        "googlecomputeimage_GoogleComputeImageGuestOsFeaturesOutputReference__runtime_type_checks.go",
+        "googlecomputeimage_GoogleComputeImageRawDisk.go",
+        "googlecomputeimage_GoogleComputeImageRawDiskOutputReference.go",
+        "googlecomputeimage_GoogleComputeImageRawDiskOutputReference__runtime_type_checks.go",
+        "googlecomputeimage_GoogleComputeImageTimeouts.go",
+        "googlecomputeimage_GoogleComputeImageTimeoutsOutputReference.go",
+        "googlecomputeimage_GoogleComputeImageTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeimage_GoogleComputeImage__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeimage",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeimage/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

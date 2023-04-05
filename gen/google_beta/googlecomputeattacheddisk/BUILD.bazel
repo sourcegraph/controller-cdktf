@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeattacheddisk",
+    srcs = [
+        "googlecomputeattacheddisk.go",
+        "googlecomputeattacheddisk_GoogleComputeAttachedDisk.go",
+        "googlecomputeattacheddisk_GoogleComputeAttachedDiskConfig.go",
+        "googlecomputeattacheddisk_GoogleComputeAttachedDiskTimeouts.go",
+        "googlecomputeattacheddisk_GoogleComputeAttachedDiskTimeoutsOutputReference.go",
+        "googlecomputeattacheddisk_GoogleComputeAttachedDiskTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeattacheddisk_GoogleComputeAttachedDisk__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeattacheddisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeattacheddisk/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

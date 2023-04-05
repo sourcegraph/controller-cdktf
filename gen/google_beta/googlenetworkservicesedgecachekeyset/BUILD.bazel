@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenetworkservicesedgecachekeyset",
+    srcs = [
+        "googlenetworkservicesedgecachekeyset.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeyset.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetConfig.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetPublicKey.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList__runtime_type_checks.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference__runtime_type_checks.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetTimeouts.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetTimeoutsOutputReference.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeysetTimeoutsOutputReference__runtime_type_checks.go",
+        "googlenetworkservicesedgecachekeyset_GoogleNetworkServicesEdgeCacheKeyset__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesedgecachekeyset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlenetworkservicesedgecachekeyset/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

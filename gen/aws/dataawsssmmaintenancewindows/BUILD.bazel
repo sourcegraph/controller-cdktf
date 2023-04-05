@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsssmmaintenancewindows",
+    srcs = [
+        "dataawsssmmaintenancewindows.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindows.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindowsConfig.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindowsFilter.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindowsFilterList.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindowsFilterList__runtime_type_checks.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindowsFilterOutputReference.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindowsFilterOutputReference__runtime_type_checks.go",
+        "dataawsssmmaintenancewindows_DataAwsSsmMaintenanceWindows__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsssmmaintenancewindows",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsssmmaintenancewindows/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

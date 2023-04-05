@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computenodetemplate",
+    srcs = [
+        "computenodetemplate.go",
+        "computenodetemplate_ComputeNodeTemplate.go",
+        "computenodetemplate_ComputeNodeTemplateConfig.go",
+        "computenodetemplate_ComputeNodeTemplateNodeTypeFlexibility.go",
+        "computenodetemplate_ComputeNodeTemplateNodeTypeFlexibilityOutputReference.go",
+        "computenodetemplate_ComputeNodeTemplateNodeTypeFlexibilityOutputReference__runtime_type_checks.go",
+        "computenodetemplate_ComputeNodeTemplateServerBinding.go",
+        "computenodetemplate_ComputeNodeTemplateServerBindingOutputReference.go",
+        "computenodetemplate_ComputeNodeTemplateServerBindingOutputReference__runtime_type_checks.go",
+        "computenodetemplate_ComputeNodeTemplateTimeouts.go",
+        "computenodetemplate_ComputeNodeTemplateTimeoutsOutputReference.go",
+        "computenodetemplate_ComputeNodeTemplateTimeoutsOutputReference__runtime_type_checks.go",
+        "computenodetemplate_ComputeNodeTemplate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computenodetemplate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computenodetemplate/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

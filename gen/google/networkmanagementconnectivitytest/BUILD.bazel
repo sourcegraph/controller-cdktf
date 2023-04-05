@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagementconnectivitytest",
+    srcs = [
+        "networkmanagementconnectivitytest.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTest.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestConfig.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestDestination.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestDestinationOutputReference.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestDestinationOutputReference__runtime_type_checks.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestSource.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestSourceOutputReference.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestSourceOutputReference__runtime_type_checks.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestTimeouts.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestTimeoutsOutputReference.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTestTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagementconnectivitytest_NetworkManagementConnectivityTest__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/networkmanagementconnectivitytest",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/networkmanagementconnectivitytest/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

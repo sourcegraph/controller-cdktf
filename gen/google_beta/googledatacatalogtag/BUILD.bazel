@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledatacatalogtag",
+    srcs = [
+        "googledatacatalogtag.go",
+        "googledatacatalogtag_GoogleDataCatalogTag.go",
+        "googledatacatalogtag_GoogleDataCatalogTagConfig.go",
+        "googledatacatalogtag_GoogleDataCatalogTagFields.go",
+        "googledatacatalogtag_GoogleDataCatalogTagFieldsList.go",
+        "googledatacatalogtag_GoogleDataCatalogTagFieldsList__runtime_type_checks.go",
+        "googledatacatalogtag_GoogleDataCatalogTagFieldsOutputReference.go",
+        "googledatacatalogtag_GoogleDataCatalogTagFieldsOutputReference__runtime_type_checks.go",
+        "googledatacatalogtag_GoogleDataCatalogTagTimeouts.go",
+        "googledatacatalogtag_GoogleDataCatalogTagTimeoutsOutputReference.go",
+        "googledatacatalogtag_GoogleDataCatalogTagTimeoutsOutputReference__runtime_type_checks.go",
+        "googledatacatalogtag_GoogleDataCatalogTag__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogtag",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledatacatalogtag/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

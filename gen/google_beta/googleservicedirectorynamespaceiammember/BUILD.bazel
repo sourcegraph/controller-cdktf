@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleservicedirectorynamespaceiammember",
+    srcs = [
+        "googleservicedirectorynamespaceiammember.go",
+        "googleservicedirectorynamespaceiammember_GoogleServiceDirectoryNamespaceIamMember.go",
+        "googleservicedirectorynamespaceiammember_GoogleServiceDirectoryNamespaceIamMemberCondition.go",
+        "googleservicedirectorynamespaceiammember_GoogleServiceDirectoryNamespaceIamMemberConditionOutputReference.go",
+        "googleservicedirectorynamespaceiammember_GoogleServiceDirectoryNamespaceIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googleservicedirectorynamespaceiammember_GoogleServiceDirectoryNamespaceIamMemberConfig.go",
+        "googleservicedirectorynamespaceiammember_GoogleServiceDirectoryNamespaceIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleservicedirectorynamespaceiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleservicedirectorynamespaceiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

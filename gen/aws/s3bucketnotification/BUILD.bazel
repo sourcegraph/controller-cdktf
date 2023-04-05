@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketnotification",
+    srcs = [
+        "s3bucketnotification.go",
+        "s3bucketnotification_S3BucketNotification.go",
+        "s3bucketnotification_S3BucketNotificationConfig.go",
+        "s3bucketnotification_S3BucketNotificationLambdaFunction.go",
+        "s3bucketnotification_S3BucketNotificationLambdaFunctionList.go",
+        "s3bucketnotification_S3BucketNotificationLambdaFunctionList__runtime_type_checks.go",
+        "s3bucketnotification_S3BucketNotificationLambdaFunctionOutputReference.go",
+        "s3bucketnotification_S3BucketNotificationLambdaFunctionOutputReference__runtime_type_checks.go",
+        "s3bucketnotification_S3BucketNotificationQueue.go",
+        "s3bucketnotification_S3BucketNotificationQueueList.go",
+        "s3bucketnotification_S3BucketNotificationQueueList__runtime_type_checks.go",
+        "s3bucketnotification_S3BucketNotificationQueueOutputReference.go",
+        "s3bucketnotification_S3BucketNotificationQueueOutputReference__runtime_type_checks.go",
+        "s3bucketnotification_S3BucketNotificationTopic.go",
+        "s3bucketnotification_S3BucketNotificationTopicList.go",
+        "s3bucketnotification_S3BucketNotificationTopicList__runtime_type_checks.go",
+        "s3bucketnotification_S3BucketNotificationTopicOutputReference.go",
+        "s3bucketnotification_S3BucketNotificationTopicOutputReference__runtime_type_checks.go",
+        "s3bucketnotification_S3BucketNotification__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketnotification",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketnotification/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

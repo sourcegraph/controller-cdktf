@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowcxentitytype",
+    srcs = [
+        "dialogflowcxentitytype.go",
+        "dialogflowcxentitytype_DialogflowCxEntityType.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeConfig.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeEntities.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeEntitiesList.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeEntitiesList__runtime_type_checks.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeEntitiesOutputReference.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeEntitiesOutputReference__runtime_type_checks.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeExcludedPhrases.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeExcludedPhrasesList.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeExcludedPhrasesList__runtime_type_checks.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeExcludedPhrasesOutputReference.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeExcludedPhrasesOutputReference__runtime_type_checks.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeTimeouts.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeTimeoutsOutputReference.go",
+        "dialogflowcxentitytype_DialogflowCxEntityTypeTimeoutsOutputReference__runtime_type_checks.go",
+        "dialogflowcxentitytype_DialogflowCxEntityType__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxentitytype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowcxentitytype/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appsaml",
+    srcs = [
+        "appsaml.go",
+        "appsaml_AppSaml.go",
+        "appsaml_AppSamlAttributeStatements.go",
+        "appsaml_AppSamlAttributeStatementsList.go",
+        "appsaml_AppSamlAttributeStatementsList__runtime_type_checks.go",
+        "appsaml_AppSamlAttributeStatementsOutputReference.go",
+        "appsaml_AppSamlAttributeStatementsOutputReference__runtime_type_checks.go",
+        "appsaml_AppSamlConfig.go",
+        "appsaml_AppSamlKeys.go",
+        "appsaml_AppSamlKeysList.go",
+        "appsaml_AppSamlKeysList__runtime_type_checks.go",
+        "appsaml_AppSamlKeysOutputReference.go",
+        "appsaml_AppSamlKeysOutputReference__runtime_type_checks.go",
+        "appsaml_AppSamlTimeouts.go",
+        "appsaml_AppSamlTimeoutsOutputReference.go",
+        "appsaml_AppSamlTimeoutsOutputReference__runtime_type_checks.go",
+        "appsaml_AppSamlUsers.go",
+        "appsaml_AppSamlUsersList.go",
+        "appsaml_AppSamlUsersList__runtime_type_checks.go",
+        "appsaml_AppSamlUsersOutputReference.go",
+        "appsaml_AppSamlUsersOutputReference__runtime_type_checks.go",
+        "appsaml_AppSaml__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appsaml",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appsaml/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

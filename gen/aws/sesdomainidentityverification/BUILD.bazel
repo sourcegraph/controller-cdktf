@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sesdomainidentityverification",
+    srcs = [
+        "sesdomainidentityverification.go",
+        "sesdomainidentityverification_SesDomainIdentityVerification.go",
+        "sesdomainidentityverification_SesDomainIdentityVerificationConfig.go",
+        "sesdomainidentityverification_SesDomainIdentityVerificationTimeouts.go",
+        "sesdomainidentityverification_SesDomainIdentityVerificationTimeoutsOutputReference.go",
+        "sesdomainidentityverification_SesDomainIdentityVerificationTimeoutsOutputReference__runtime_type_checks.go",
+        "sesdomainidentityverification_SesDomainIdentityVerification__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sesdomainidentityverification",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sesdomainidentityverification/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsimagebuilderimage",
+    srcs = [
+        "dataawsimagebuilderimage.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImage.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageConfig.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageImageTestsConfiguration.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageImageTestsConfigurationList.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageImageTestsConfigurationList__runtime_type_checks.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageImageTestsConfigurationOutputReference.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageImageTestsConfigurationOutputReference__runtime_type_checks.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResources.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesAmis.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesAmisList.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesAmisList__runtime_type_checks.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesAmisOutputReference.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesAmisOutputReference__runtime_type_checks.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesList.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesList__runtime_type_checks.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesOutputReference.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImageOutputResourcesOutputReference__runtime_type_checks.go",
+        "dataawsimagebuilderimage_DataAwsImagebuilderImage__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsimagebuilderimage",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsimagebuilderimage/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

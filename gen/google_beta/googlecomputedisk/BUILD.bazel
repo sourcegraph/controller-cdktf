@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputedisk",
+    srcs = [
+        "googlecomputedisk.go",
+        "googlecomputedisk_GoogleComputeDisk.go",
+        "googlecomputedisk_GoogleComputeDiskConfig.go",
+        "googlecomputedisk_GoogleComputeDiskDiskEncryptionKey.go",
+        "googlecomputedisk_GoogleComputeDiskDiskEncryptionKeyOutputReference.go",
+        "googlecomputedisk_GoogleComputeDiskDiskEncryptionKeyOutputReference__runtime_type_checks.go",
+        "googlecomputedisk_GoogleComputeDiskSourceImageEncryptionKey.go",
+        "googlecomputedisk_GoogleComputeDiskSourceImageEncryptionKeyOutputReference.go",
+        "googlecomputedisk_GoogleComputeDiskSourceImageEncryptionKeyOutputReference__runtime_type_checks.go",
+        "googlecomputedisk_GoogleComputeDiskSourceSnapshotEncryptionKey.go",
+        "googlecomputedisk_GoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference.go",
+        "googlecomputedisk_GoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference__runtime_type_checks.go",
+        "googlecomputedisk_GoogleComputeDiskTimeouts.go",
+        "googlecomputedisk_GoogleComputeDiskTimeoutsOutputReference.go",
+        "googlecomputedisk_GoogleComputeDiskTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputedisk_GoogleComputeDisk__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputedisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputedisk/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

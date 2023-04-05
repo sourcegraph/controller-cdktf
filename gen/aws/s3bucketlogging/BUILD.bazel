@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketlogging",
+    srcs = [
+        "s3bucketlogging.go",
+        "s3bucketlogging_S3BucketLoggingA.go",
+        "s3bucketlogging_S3BucketLoggingAConfig.go",
+        "s3bucketlogging_S3BucketLoggingA__runtime_type_checks.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrant.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantGrantee.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantGranteeOutputReference.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantGranteeOutputReference__runtime_type_checks.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantList.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantList__runtime_type_checks.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantOutputReference.go",
+        "s3bucketlogging_S3BucketLoggingTargetGrantOutputReference__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketlogging",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketlogging/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

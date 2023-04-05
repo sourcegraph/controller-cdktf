@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeregionnetworkendpointgroup",
+    srcs = [
+        "googlecomputeregionnetworkendpointgroup.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroup.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupAppEngine.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference__runtime_type_checks.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupCloudFunction.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference__runtime_type_checks.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupCloudRun.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference__runtime_type_checks.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupConfig.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupServerlessDeployment.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference__runtime_type_checks.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupTimeouts.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupTimeoutsOutputReference.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeregionnetworkendpointgroup_GoogleComputeRegionNetworkEndpointGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionnetworkendpointgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeregionnetworkendpointgroup/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

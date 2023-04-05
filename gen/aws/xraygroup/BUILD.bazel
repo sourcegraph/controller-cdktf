@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "xraygroup",
+    srcs = [
+        "xraygroup.go",
+        "xraygroup_XrayGroup.go",
+        "xraygroup_XrayGroupConfig.go",
+        "xraygroup_XrayGroupInsightsConfiguration.go",
+        "xraygroup_XrayGroupInsightsConfigurationOutputReference.go",
+        "xraygroup_XrayGroupInsightsConfigurationOutputReference__runtime_type_checks.go",
+        "xraygroup_XrayGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/xraygroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/xraygroup/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

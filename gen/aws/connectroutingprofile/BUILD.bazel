@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connectroutingprofile",
+    srcs = [
+        "connectroutingprofile.go",
+        "connectroutingprofile_ConnectRoutingProfile.go",
+        "connectroutingprofile_ConnectRoutingProfileConfig.go",
+        "connectroutingprofile_ConnectRoutingProfileMediaConcurrencies.go",
+        "connectroutingprofile_ConnectRoutingProfileMediaConcurrenciesList.go",
+        "connectroutingprofile_ConnectRoutingProfileMediaConcurrenciesList__runtime_type_checks.go",
+        "connectroutingprofile_ConnectRoutingProfileMediaConcurrenciesOutputReference.go",
+        "connectroutingprofile_ConnectRoutingProfileMediaConcurrenciesOutputReference__runtime_type_checks.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigs.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsAssociated.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsAssociatedList.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsAssociatedList__runtime_type_checks.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsAssociatedOutputReference.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsAssociatedOutputReference__runtime_type_checks.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsList.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsList__runtime_type_checks.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsOutputReference.go",
+        "connectroutingprofile_ConnectRoutingProfileQueueConfigsOutputReference__runtime_type_checks.go",
+        "connectroutingprofile_ConnectRoutingProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/connectroutingprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/connectroutingprofile/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

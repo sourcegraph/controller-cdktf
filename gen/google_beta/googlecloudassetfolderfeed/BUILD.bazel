@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudassetfolderfeed",
+    srcs = [
+        "googlecloudassetfolderfeed.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeed.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedCondition.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedConditionOutputReference.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedConditionOutputReference__runtime_type_checks.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedConfig.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedFeedOutputConfig.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference__runtime_type_checks.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestination.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference__runtime_type_checks.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedTimeouts.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedTimeoutsOutputReference.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeedTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecloudassetfolderfeed_GoogleCloudAssetFolderFeed__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudassetfolderfeed",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudassetfolderfeed/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

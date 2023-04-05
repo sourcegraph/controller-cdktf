@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ssmdocument",
+    srcs = [
+        "ssmdocument.go",
+        "ssmdocument_SsmDocument.go",
+        "ssmdocument_SsmDocumentAttachmentsSource.go",
+        "ssmdocument_SsmDocumentAttachmentsSourceList.go",
+        "ssmdocument_SsmDocumentAttachmentsSourceList__runtime_type_checks.go",
+        "ssmdocument_SsmDocumentAttachmentsSourceOutputReference.go",
+        "ssmdocument_SsmDocumentAttachmentsSourceOutputReference__runtime_type_checks.go",
+        "ssmdocument_SsmDocumentConfig.go",
+        "ssmdocument_SsmDocumentParameter.go",
+        "ssmdocument_SsmDocumentParameterList.go",
+        "ssmdocument_SsmDocumentParameterList__runtime_type_checks.go",
+        "ssmdocument_SsmDocumentParameterOutputReference.go",
+        "ssmdocument_SsmDocumentParameterOutputReference__runtime_type_checks.go",
+        "ssmdocument_SsmDocument__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ssmdocument",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/ssmdocument/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

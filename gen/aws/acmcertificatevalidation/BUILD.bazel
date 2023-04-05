@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "acmcertificatevalidation",
+    srcs = [
+        "acmcertificatevalidation.go",
+        "acmcertificatevalidation_AcmCertificateValidation.go",
+        "acmcertificatevalidation_AcmCertificateValidationConfig.go",
+        "acmcertificatevalidation_AcmCertificateValidationTimeouts.go",
+        "acmcertificatevalidation_AcmCertificateValidationTimeoutsOutputReference.go",
+        "acmcertificatevalidation_AcmCertificateValidationTimeoutsOutputReference__runtime_type_checks.go",
+        "acmcertificatevalidation_AcmCertificateValidation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/acmcertificatevalidation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/acmcertificatevalidation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

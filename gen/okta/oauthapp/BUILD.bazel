@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "oauthapp",
+    srcs = [
+        "oauthapp.go",
+        "oauthapp_OauthApp.go",
+        "oauthapp_OauthAppConfig.go",
+        "oauthapp_OauthAppGroupsClaim.go",
+        "oauthapp_OauthAppGroupsClaimOutputReference.go",
+        "oauthapp_OauthAppGroupsClaimOutputReference__runtime_type_checks.go",
+        "oauthapp_OauthAppJwks.go",
+        "oauthapp_OauthAppJwksList.go",
+        "oauthapp_OauthAppJwksList__runtime_type_checks.go",
+        "oauthapp_OauthAppJwksOutputReference.go",
+        "oauthapp_OauthAppJwksOutputReference__runtime_type_checks.go",
+        "oauthapp_OauthAppTimeouts.go",
+        "oauthapp_OauthAppTimeoutsOutputReference.go",
+        "oauthapp_OauthAppTimeoutsOutputReference__runtime_type_checks.go",
+        "oauthapp_OauthAppUsers.go",
+        "oauthapp_OauthAppUsersList.go",
+        "oauthapp_OauthAppUsersList__runtime_type_checks.go",
+        "oauthapp_OauthAppUsersOutputReference.go",
+        "oauthapp_OauthAppUsersOutputReference__runtime_type_checks.go",
+        "oauthapp_OauthApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/oauthapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/oauthapp/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "macie2member",
+    srcs = [
+        "macie2member.go",
+        "macie2member_Macie2Member.go",
+        "macie2member_Macie2MemberConfig.go",
+        "macie2member_Macie2MemberTimeouts.go",
+        "macie2member_Macie2MemberTimeoutsOutputReference.go",
+        "macie2member_Macie2MemberTimeoutsOutputReference__runtime_type_checks.go",
+        "macie2member_Macie2Member__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/macie2member",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/macie2member/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

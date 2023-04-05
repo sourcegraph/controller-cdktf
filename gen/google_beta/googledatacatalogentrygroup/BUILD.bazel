@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledatacatalogentrygroup",
+    srcs = [
+        "googledatacatalogentrygroup.go",
+        "googledatacatalogentrygroup_GoogleDataCatalogEntryGroup.go",
+        "googledatacatalogentrygroup_GoogleDataCatalogEntryGroupConfig.go",
+        "googledatacatalogentrygroup_GoogleDataCatalogEntryGroupTimeouts.go",
+        "googledatacatalogentrygroup_GoogleDataCatalogEntryGroupTimeoutsOutputReference.go",
+        "googledatacatalogentrygroup_GoogleDataCatalogEntryGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "googledatacatalogentrygroup_GoogleDataCatalogEntryGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogentrygroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledatacatalogentrygroup/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

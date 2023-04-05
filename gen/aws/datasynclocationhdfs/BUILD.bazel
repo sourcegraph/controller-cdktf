@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datasynclocationhdfs",
+    srcs = [
+        "datasynclocationhdfs.go",
+        "datasynclocationhdfs_DatasyncLocationHdfs.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsConfig.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsNameNode.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsNameNodeList.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsNameNodeList__runtime_type_checks.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsNameNodeOutputReference.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsNameNodeOutputReference__runtime_type_checks.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsQopConfiguration.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsQopConfigurationOutputReference.go",
+        "datasynclocationhdfs_DatasyncLocationHdfsQopConfigurationOutputReference__runtime_type_checks.go",
+        "datasynclocationhdfs_DatasyncLocationHdfs__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/datasynclocationhdfs",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/datasynclocationhdfs/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "bigtableinstance",
+    srcs = [
+        "bigtableinstance.go",
+        "bigtableinstance_BigtableInstance.go",
+        "bigtableinstance_BigtableInstanceCluster.go",
+        "bigtableinstance_BigtableInstanceClusterAutoscalingConfig.go",
+        "bigtableinstance_BigtableInstanceClusterAutoscalingConfigOutputReference.go",
+        "bigtableinstance_BigtableInstanceClusterAutoscalingConfigOutputReference__runtime_type_checks.go",
+        "bigtableinstance_BigtableInstanceClusterList.go",
+        "bigtableinstance_BigtableInstanceClusterList__runtime_type_checks.go",
+        "bigtableinstance_BigtableInstanceClusterOutputReference.go",
+        "bigtableinstance_BigtableInstanceClusterOutputReference__runtime_type_checks.go",
+        "bigtableinstance_BigtableInstanceConfig.go",
+        "bigtableinstance_BigtableInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/bigtableinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/bigtableinstance/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

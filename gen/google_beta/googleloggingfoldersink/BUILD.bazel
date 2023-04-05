@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleloggingfoldersink",
+    srcs = [
+        "googleloggingfoldersink.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSink.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkBigqueryOptions.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkBigqueryOptionsOutputReference.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkBigqueryOptionsOutputReference__runtime_type_checks.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkConfig.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkExclusions.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkExclusionsList.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkExclusionsList__runtime_type_checks.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkExclusionsOutputReference.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSinkExclusionsOutputReference__runtime_type_checks.go",
+        "googleloggingfoldersink_GoogleLoggingFolderSink__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingfoldersink",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleloggingfoldersink/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

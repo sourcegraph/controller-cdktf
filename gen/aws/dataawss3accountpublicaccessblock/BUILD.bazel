@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawss3accountpublicaccessblock",
+    srcs = [
+        "dataawss3accountpublicaccessblock.go",
+        "dataawss3accountpublicaccessblock_DataAwsS3AccountPublicAccessBlock.go",
+        "dataawss3accountpublicaccessblock_DataAwsS3AccountPublicAccessBlockConfig.go",
+        "dataawss3accountpublicaccessblock_DataAwsS3AccountPublicAccessBlock__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawss3accountpublicaccessblock",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawss3accountpublicaccessblock/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

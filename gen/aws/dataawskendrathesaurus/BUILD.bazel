@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawskendrathesaurus",
+    srcs = [
+        "dataawskendrathesaurus.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurus.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurusConfig.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurusSourceS3Path.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurusSourceS3PathList.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurusSourceS3PathList__runtime_type_checks.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurusSourceS3PathOutputReference.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurusSourceS3PathOutputReference__runtime_type_checks.go",
+        "dataawskendrathesaurus_DataAwsKendraThesaurus__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawskendrathesaurus",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawskendrathesaurus/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

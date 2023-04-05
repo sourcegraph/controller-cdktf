@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudtasksqueue",
+    srcs = [
+        "googlecloudtasksqueue.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueue.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueAppEngineRoutingOverride.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference__runtime_type_checks.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueConfig.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueRateLimits.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueRateLimitsOutputReference.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueRateLimitsOutputReference__runtime_type_checks.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueRetryConfig.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueRetryConfigOutputReference.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueRetryConfigOutputReference__runtime_type_checks.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueStackdriverLoggingConfig.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference__runtime_type_checks.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueTimeouts.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueTimeoutsOutputReference.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueueTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecloudtasksqueue_GoogleCloudTasksQueue__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudtasksqueue",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudtasksqueue/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

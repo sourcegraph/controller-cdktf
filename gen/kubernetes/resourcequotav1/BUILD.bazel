@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "resourcequotav1",
+    srcs = [
+        "resourcequotav1.go",
+        "resourcequotav1_ResourceQuotaV1.go",
+        "resourcequotav1_ResourceQuotaV1Config.go",
+        "resourcequotav1_ResourceQuotaV1Metadata.go",
+        "resourcequotav1_ResourceQuotaV1MetadataOutputReference.go",
+        "resourcequotav1_ResourceQuotaV1MetadataOutputReference__runtime_type_checks.go",
+        "resourcequotav1_ResourceQuotaV1Spec.go",
+        "resourcequotav1_ResourceQuotaV1SpecOutputReference.go",
+        "resourcequotav1_ResourceQuotaV1SpecOutputReference__runtime_type_checks.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelector.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorMatchExpression.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorMatchExpressionList.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorMatchExpressionList__runtime_type_checks.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference__runtime_type_checks.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorOutputReference.go",
+        "resourcequotav1_ResourceQuotaV1SpecScopeSelectorOutputReference__runtime_type_checks.go",
+        "resourcequotav1_ResourceQuotaV1Timeouts.go",
+        "resourcequotav1_ResourceQuotaV1TimeoutsOutputReference.go",
+        "resourcequotav1_ResourceQuotaV1TimeoutsOutputReference__runtime_type_checks.go",
+        "resourcequotav1_ResourceQuotaV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/resourcequotav1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/resourcequotav1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

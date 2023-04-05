@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rdsexporttask",
+    srcs = [
+        "rdsexporttask.go",
+        "rdsexporttask_RdsExportTask.go",
+        "rdsexporttask_RdsExportTaskConfig.go",
+        "rdsexporttask_RdsExportTaskTimeouts.go",
+        "rdsexporttask_RdsExportTaskTimeoutsOutputReference.go",
+        "rdsexporttask_RdsExportTaskTimeoutsOutputReference__runtime_type_checks.go",
+        "rdsexporttask_RdsExportTask__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/rdsexporttask",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/rdsexporttask/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

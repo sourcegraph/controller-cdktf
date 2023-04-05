@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsglobalacceleratoraccelerator",
+    srcs = [
+        "dataawsglobalacceleratoraccelerator.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAccelerator.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorAttributes.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorAttributesList.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorAttributesList__runtime_type_checks.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorAttributesOutputReference.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorAttributesOutputReference__runtime_type_checks.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorConfig.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorIpSets.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorIpSetsList.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorIpSetsList__runtime_type_checks.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference__runtime_type_checks.go",
+        "dataawsglobalacceleratoraccelerator_DataAwsGlobalacceleratorAccelerator__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsglobalacceleratoraccelerator",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsglobalacceleratoraccelerator/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagersitetositevpnattachment",
+    srcs = [
+        "networkmanagersitetositevpnattachment.go",
+        "networkmanagersitetositevpnattachment_NetworkmanagerSiteToSiteVpnAttachment.go",
+        "networkmanagersitetositevpnattachment_NetworkmanagerSiteToSiteVpnAttachmentConfig.go",
+        "networkmanagersitetositevpnattachment_NetworkmanagerSiteToSiteVpnAttachmentTimeouts.go",
+        "networkmanagersitetositevpnattachment_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference.go",
+        "networkmanagersitetositevpnattachment_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagersitetositevpnattachment_NetworkmanagerSiteToSiteVpnAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagersitetositevpnattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagersitetositevpnattachment/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalxssmatchset",
+    srcs = [
+        "wafregionalxssmatchset.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSet.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetConfig.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTuple.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleFieldToMatch.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleList.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleList__runtime_type_checks.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleOutputReference.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSetXssMatchTupleOutputReference__runtime_type_checks.go",
+        "wafregionalxssmatchset_WafregionalXssMatchSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalxssmatchset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalxssmatchset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

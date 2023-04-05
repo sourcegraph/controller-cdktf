@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlednsrecordset",
+    srcs = [
+        "googlednsrecordset.go",
+        "googlednsrecordset_GoogleDnsRecordSet.go",
+        "googlednsrecordset_GoogleDnsRecordSetConfig.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicy.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyGeo.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyGeoList.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyGeoList__runtime_type_checks.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyGeoOutputReference.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyGeoOutputReference__runtime_type_checks.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyOutputReference.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyOutputReference__runtime_type_checks.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyWrr.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyWrrList.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyWrrList__runtime_type_checks.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyWrrOutputReference.go",
+        "googlednsrecordset_GoogleDnsRecordSetRoutingPolicyWrrOutputReference__runtime_type_checks.go",
+        "googlednsrecordset_GoogleDnsRecordSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlednsrecordset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlednsrecordset/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

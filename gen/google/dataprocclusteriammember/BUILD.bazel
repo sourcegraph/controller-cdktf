@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataprocclusteriammember",
+    srcs = [
+        "dataprocclusteriammember.go",
+        "dataprocclusteriammember_DataprocClusterIamMember.go",
+        "dataprocclusteriammember_DataprocClusterIamMemberCondition.go",
+        "dataprocclusteriammember_DataprocClusterIamMemberConditionOutputReference.go",
+        "dataprocclusteriammember_DataprocClusterIamMemberConditionOutputReference__runtime_type_checks.go",
+        "dataprocclusteriammember_DataprocClusterIamMemberConfig.go",
+        "dataprocclusteriammember_DataprocClusterIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dataprocclusteriammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dataprocclusteriammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

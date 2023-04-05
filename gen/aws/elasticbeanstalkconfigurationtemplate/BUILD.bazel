@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elasticbeanstalkconfigurationtemplate",
+    srcs = [
+        "elasticbeanstalkconfigurationtemplate.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplate.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplateConfig.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplateSetting.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplateSettingList.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplateSettingList__runtime_type_checks.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplateSettingOutputReference.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplateSettingOutputReference__runtime_type_checks.go",
+        "elasticbeanstalkconfigurationtemplate_ElasticBeanstalkConfigurationTemplate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elasticbeanstalkconfigurationtemplate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elasticbeanstalkconfigurationtemplate/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

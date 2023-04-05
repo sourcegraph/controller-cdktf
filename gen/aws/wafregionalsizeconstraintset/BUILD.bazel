@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalsizeconstraintset",
+    srcs = [
+        "wafregionalsizeconstraintset.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSet.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetConfig.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraints.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsFieldToMatch.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsList.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsList__runtime_type_checks.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsOutputReference.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSetSizeConstraintsOutputReference__runtime_type_checks.go",
+        "wafregionalsizeconstraintset_WafregionalSizeConstraintSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalsizeconstraintset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalsizeconstraintset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

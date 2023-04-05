@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsimagebuilderimagepipeline",
+    srcs = [
+        "dataawsimagebuilderimagepipeline.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipeline.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineConfig.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineImageTestsConfiguration.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineImageTestsConfigurationList.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineImageTestsConfigurationList__runtime_type_checks.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference__runtime_type_checks.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineSchedule.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineScheduleList.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineScheduleList__runtime_type_checks.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineScheduleOutputReference.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipelineScheduleOutputReference__runtime_type_checks.go",
+        "dataawsimagebuilderimagepipeline_DataAwsImagebuilderImagePipeline__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsimagebuilderimagepipeline",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsimagebuilderimagepipeline/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

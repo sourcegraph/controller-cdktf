@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "organizationsorganizationalunit",
+    srcs = [
+        "organizationsorganizationalunit.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnit.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnitAccounts.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnitAccountsList.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnitAccountsList__runtime_type_checks.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnitAccountsOutputReference.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnitAccountsOutputReference__runtime_type_checks.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnitConfig.go",
+        "organizationsorganizationalunit_OrganizationsOrganizationalUnit__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/organizationsorganizationalunit",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/organizationsorganizationalunit/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

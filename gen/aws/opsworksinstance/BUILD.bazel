@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "opsworksinstance",
+    srcs = [
+        "opsworksinstance.go",
+        "opsworksinstance_OpsworksInstance.go",
+        "opsworksinstance_OpsworksInstanceConfig.go",
+        "opsworksinstance_OpsworksInstanceEbsBlockDevice.go",
+        "opsworksinstance_OpsworksInstanceEbsBlockDeviceList.go",
+        "opsworksinstance_OpsworksInstanceEbsBlockDeviceList__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstanceEbsBlockDeviceOutputReference.go",
+        "opsworksinstance_OpsworksInstanceEbsBlockDeviceOutputReference__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstanceEphemeralBlockDevice.go",
+        "opsworksinstance_OpsworksInstanceEphemeralBlockDeviceList.go",
+        "opsworksinstance_OpsworksInstanceEphemeralBlockDeviceList__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstanceEphemeralBlockDeviceOutputReference.go",
+        "opsworksinstance_OpsworksInstanceEphemeralBlockDeviceOutputReference__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstanceRootBlockDevice.go",
+        "opsworksinstance_OpsworksInstanceRootBlockDeviceList.go",
+        "opsworksinstance_OpsworksInstanceRootBlockDeviceList__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstanceRootBlockDeviceOutputReference.go",
+        "opsworksinstance_OpsworksInstanceRootBlockDeviceOutputReference__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstanceTimeouts.go",
+        "opsworksinstance_OpsworksInstanceTimeoutsOutputReference.go",
+        "opsworksinstance_OpsworksInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "opsworksinstance_OpsworksInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/opsworksinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/opsworksinstance/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

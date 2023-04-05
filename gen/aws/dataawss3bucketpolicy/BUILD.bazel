@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawss3bucketpolicy",
+    srcs = [
+        "dataawss3bucketpolicy.go",
+        "dataawss3bucketpolicy_DataAwsS3BucketPolicy.go",
+        "dataawss3bucketpolicy_DataAwsS3BucketPolicyConfig.go",
+        "dataawss3bucketpolicy_DataAwsS3BucketPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawss3bucketpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawss3bucketpolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kmsgrant",
+    srcs = [
+        "kmsgrant.go",
+        "kmsgrant_KmsGrant.go",
+        "kmsgrant_KmsGrantConfig.go",
+        "kmsgrant_KmsGrantConstraints.go",
+        "kmsgrant_KmsGrantConstraintsList.go",
+        "kmsgrant_KmsGrantConstraintsList__runtime_type_checks.go",
+        "kmsgrant_KmsGrantConstraintsOutputReference.go",
+        "kmsgrant_KmsGrantConstraintsOutputReference__runtime_type_checks.go",
+        "kmsgrant_KmsGrant__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/kmsgrant",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/kmsgrant/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

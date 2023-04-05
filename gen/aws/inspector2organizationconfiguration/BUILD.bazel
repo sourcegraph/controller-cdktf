@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "inspector2organizationconfiguration",
+    srcs = [
+        "inspector2organizationconfiguration.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfiguration.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationAutoEnable.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationAutoEnableOutputReference.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationAutoEnableOutputReference__runtime_type_checks.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationConfig.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationTimeouts.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationTimeoutsOutputReference.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfigurationTimeoutsOutputReference__runtime_type_checks.go",
+        "inspector2organizationconfiguration_Inspector2OrganizationConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/inspector2organizationconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/inspector2organizationconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

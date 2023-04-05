@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenotebooksinstance",
+    srcs = [
+        "googlenotebooksinstance.go",
+        "googlenotebooksinstance_GoogleNotebooksInstance.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceAcceleratorConfig.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceAcceleratorConfigOutputReference.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceAcceleratorConfigOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceConfig.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceContainerImage.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceContainerImageOutputReference.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceContainerImageOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceReservationAffinity.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceReservationAffinityOutputReference.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceReservationAffinityOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceShieldedInstanceConfig.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceShieldedInstanceConfigOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceTimeouts.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceTimeoutsOutputReference.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceVmImage.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceVmImageOutputReference.go",
+        "googlenotebooksinstance_GoogleNotebooksInstanceVmImageOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstance_GoogleNotebooksInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlenotebooksinstance/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

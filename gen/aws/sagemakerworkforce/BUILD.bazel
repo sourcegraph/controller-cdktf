@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sagemakerworkforce",
+    srcs = [
+        "sagemakerworkforce.go",
+        "sagemakerworkforce_SagemakerWorkforce.go",
+        "sagemakerworkforce_SagemakerWorkforceCognitoConfig.go",
+        "sagemakerworkforce_SagemakerWorkforceCognitoConfigOutputReference.go",
+        "sagemakerworkforce_SagemakerWorkforceCognitoConfigOutputReference__runtime_type_checks.go",
+        "sagemakerworkforce_SagemakerWorkforceConfig.go",
+        "sagemakerworkforce_SagemakerWorkforceOidcConfig.go",
+        "sagemakerworkforce_SagemakerWorkforceOidcConfigOutputReference.go",
+        "sagemakerworkforce_SagemakerWorkforceOidcConfigOutputReference__runtime_type_checks.go",
+        "sagemakerworkforce_SagemakerWorkforceSourceIpConfig.go",
+        "sagemakerworkforce_SagemakerWorkforceSourceIpConfigOutputReference.go",
+        "sagemakerworkforce_SagemakerWorkforceSourceIpConfigOutputReference__runtime_type_checks.go",
+        "sagemakerworkforce_SagemakerWorkforceWorkforceVpcConfig.go",
+        "sagemakerworkforce_SagemakerWorkforceWorkforceVpcConfigOutputReference.go",
+        "sagemakerworkforce_SagemakerWorkforceWorkforceVpcConfigOutputReference__runtime_type_checks.go",
+        "sagemakerworkforce_SagemakerWorkforce__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerworkforce",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sagemakerworkforce/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

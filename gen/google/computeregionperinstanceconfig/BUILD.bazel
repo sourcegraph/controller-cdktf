@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeregionperinstanceconfig",
+    srcs = [
+        "computeregionperinstanceconfig.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfig.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigConfig.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedState.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateDisk.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateDiskList.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateDiskList__runtime_type_checks.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference__runtime_type_checks.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateOutputReference.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigPreservedStateOutputReference__runtime_type_checks.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigTimeouts.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigTimeoutsOutputReference.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "computeregionperinstanceconfig_ComputeRegionPerInstanceConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeregionperinstanceconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeregionperinstanceconfig/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

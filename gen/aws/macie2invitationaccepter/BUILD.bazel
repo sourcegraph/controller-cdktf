@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "macie2invitationaccepter",
+    srcs = [
+        "macie2invitationaccepter.go",
+        "macie2invitationaccepter_Macie2InvitationAccepter.go",
+        "macie2invitationaccepter_Macie2InvitationAccepterConfig.go",
+        "macie2invitationaccepter_Macie2InvitationAccepterTimeouts.go",
+        "macie2invitationaccepter_Macie2InvitationAccepterTimeoutsOutputReference.go",
+        "macie2invitationaccepter_Macie2InvitationAccepterTimeoutsOutputReference__runtime_type_checks.go",
+        "macie2invitationaccepter_Macie2InvitationAccepter__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/macie2invitationaccepter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/macie2invitationaccepter/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

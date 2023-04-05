@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleiaptunneliambinding",
+    srcs = [
+        "googleiaptunneliambinding.go",
+        "googleiaptunneliambinding_GoogleIapTunnelIamBinding.go",
+        "googleiaptunneliambinding_GoogleIapTunnelIamBindingCondition.go",
+        "googleiaptunneliambinding_GoogleIapTunnelIamBindingConditionOutputReference.go",
+        "googleiaptunneliambinding_GoogleIapTunnelIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googleiaptunneliambinding_GoogleIapTunnelIamBindingConfig.go",
+        "googleiaptunneliambinding_GoogleIapTunnelIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiaptunneliambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleiaptunneliambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleappengineapplication",
+    srcs = [
+        "googleappengineapplication.go",
+        "googleappengineapplication_GoogleAppEngineApplication.go",
+        "googleappengineapplication_GoogleAppEngineApplicationConfig.go",
+        "googleappengineapplication_GoogleAppEngineApplicationFeatureSettings.go",
+        "googleappengineapplication_GoogleAppEngineApplicationFeatureSettingsOutputReference.go",
+        "googleappengineapplication_GoogleAppEngineApplicationFeatureSettingsOutputReference__runtime_type_checks.go",
+        "googleappengineapplication_GoogleAppEngineApplicationIap.go",
+        "googleappengineapplication_GoogleAppEngineApplicationIapOutputReference.go",
+        "googleappengineapplication_GoogleAppEngineApplicationIapOutputReference__runtime_type_checks.go",
+        "googleappengineapplication_GoogleAppEngineApplicationTimeouts.go",
+        "googleappengineapplication_GoogleAppEngineApplicationTimeoutsOutputReference.go",
+        "googleappengineapplication_GoogleAppEngineApplicationTimeoutsOutputReference__runtime_type_checks.go",
+        "googleappengineapplication_GoogleAppEngineApplicationUrlDispatchRule.go",
+        "googleappengineapplication_GoogleAppEngineApplicationUrlDispatchRuleList.go",
+        "googleappengineapplication_GoogleAppEngineApplicationUrlDispatchRuleList__runtime_type_checks.go",
+        "googleappengineapplication_GoogleAppEngineApplicationUrlDispatchRuleOutputReference.go",
+        "googleappengineapplication_GoogleAppEngineApplicationUrlDispatchRuleOutputReference__runtime_type_checks.go",
+        "googleappengineapplication_GoogleAppEngineApplication__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineapplication",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleappengineapplication/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

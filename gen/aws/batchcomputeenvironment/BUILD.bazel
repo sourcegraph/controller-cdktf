@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "batchcomputeenvironment",
+    srcs = [
+        "batchcomputeenvironment.go",
+        "batchcomputeenvironment_BatchComputeEnvironment.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResources.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesEc2Configuration.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference__runtime_type_checks.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesLaunchTemplate.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference__runtime_type_checks.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesOutputReference.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentComputeResourcesOutputReference__runtime_type_checks.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentConfig.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentEksConfiguration.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentEksConfigurationOutputReference.go",
+        "batchcomputeenvironment_BatchComputeEnvironmentEksConfigurationOutputReference__runtime_type_checks.go",
+        "batchcomputeenvironment_BatchComputeEnvironment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/batchcomputeenvironment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/batchcomputeenvironment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

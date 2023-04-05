@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeglobalforwardingrule",
+    srcs = [
+        "googlecomputeglobalforwardingrule.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRule.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleConfig.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFilters.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList__runtime_type_checks.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference__runtime_type_checks.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersList.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersList__runtime_type_checks.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference__runtime_type_checks.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleTimeouts.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleTimeoutsOutputReference.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeglobalforwardingrule_GoogleComputeGlobalForwardingRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeglobalforwardingrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeglobalforwardingrule/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

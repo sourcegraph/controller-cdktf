@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefirestoredocument",
+    srcs = [
+        "googlefirestoredocument.go",
+        "googlefirestoredocument_GoogleFirestoreDocument.go",
+        "googlefirestoredocument_GoogleFirestoreDocumentConfig.go",
+        "googlefirestoredocument_GoogleFirestoreDocumentTimeouts.go",
+        "googlefirestoredocument_GoogleFirestoreDocumentTimeoutsOutputReference.go",
+        "googlefirestoredocument_GoogleFirestoreDocumentTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefirestoredocument_GoogleFirestoreDocument__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirestoredocument",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefirestoredocument/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

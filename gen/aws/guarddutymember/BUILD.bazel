@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "guarddutymember",
+    srcs = [
+        "guarddutymember.go",
+        "guarddutymember_GuarddutyMember.go",
+        "guarddutymember_GuarddutyMemberConfig.go",
+        "guarddutymember_GuarddutyMemberTimeouts.go",
+        "guarddutymember_GuarddutyMemberTimeoutsOutputReference.go",
+        "guarddutymember_GuarddutyMemberTimeoutsOutputReference__runtime_type_checks.go",
+        "guarddutymember_GuarddutyMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/guarddutymember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/guarddutymember/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

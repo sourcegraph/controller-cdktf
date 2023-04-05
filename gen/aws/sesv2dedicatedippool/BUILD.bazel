@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sesv2dedicatedippool",
+    srcs = [
+        "sesv2dedicatedippool.go",
+        "sesv2dedicatedippool_Sesv2DedicatedIpPool.go",
+        "sesv2dedicatedippool_Sesv2DedicatedIpPoolConfig.go",
+        "sesv2dedicatedippool_Sesv2DedicatedIpPoolTimeouts.go",
+        "sesv2dedicatedippool_Sesv2DedicatedIpPoolTimeoutsOutputReference.go",
+        "sesv2dedicatedippool_Sesv2DedicatedIpPoolTimeoutsOutputReference__runtime_type_checks.go",
+        "sesv2dedicatedippool_Sesv2DedicatedIpPool__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sesv2dedicatedippool",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sesv2dedicatedippool/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

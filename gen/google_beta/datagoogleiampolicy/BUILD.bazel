@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagoogleiampolicy",
+    srcs = [
+        "datagoogleiampolicy.go",
+        "datagoogleiampolicy_DataGoogleIamPolicy.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfig.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigAuditLogConfigs.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigAuditLogConfigsList.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigAuditLogConfigsList__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigList.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigList__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigOutputReference.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyAuditConfigOutputReference__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBinding.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingCondition.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingConditionOutputReference.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingConditionOutputReference__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingList.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingList__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingOutputReference.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyBindingOutputReference__runtime_type_checks.go",
+        "datagoogleiampolicy_DataGoogleIamPolicyConfig.go",
+        "datagoogleiampolicy_DataGoogleIamPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleiampolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagoogleiampolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

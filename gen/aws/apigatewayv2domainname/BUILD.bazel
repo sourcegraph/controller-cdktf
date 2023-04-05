@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayv2domainname",
+    srcs = [
+        "apigatewayv2domainname.go",
+        "apigatewayv2domainname_Apigatewayv2DomainName.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameConfig.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameDomainNameConfiguration.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameDomainNameConfigurationOutputReference.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameDomainNameConfigurationOutputReference__runtime_type_checks.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameMutualTlsAuthentication.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference__runtime_type_checks.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameTimeouts.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameTimeoutsOutputReference.go",
+        "apigatewayv2domainname_Apigatewayv2DomainNameTimeoutsOutputReference__runtime_type_checks.go",
+        "apigatewayv2domainname_Apigatewayv2DomainName__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2domainname",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayv2domainname/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

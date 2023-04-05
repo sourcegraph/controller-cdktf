@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudtasksqueue",
+    srcs = [
+        "cloudtasksqueue.go",
+        "cloudtasksqueue_CloudTasksQueue.go",
+        "cloudtasksqueue_CloudTasksQueueAppEngineRoutingOverride.go",
+        "cloudtasksqueue_CloudTasksQueueAppEngineRoutingOverrideOutputReference.go",
+        "cloudtasksqueue_CloudTasksQueueAppEngineRoutingOverrideOutputReference__runtime_type_checks.go",
+        "cloudtasksqueue_CloudTasksQueueConfig.go",
+        "cloudtasksqueue_CloudTasksQueueRateLimits.go",
+        "cloudtasksqueue_CloudTasksQueueRateLimitsOutputReference.go",
+        "cloudtasksqueue_CloudTasksQueueRateLimitsOutputReference__runtime_type_checks.go",
+        "cloudtasksqueue_CloudTasksQueueRetryConfig.go",
+        "cloudtasksqueue_CloudTasksQueueRetryConfigOutputReference.go",
+        "cloudtasksqueue_CloudTasksQueueRetryConfigOutputReference__runtime_type_checks.go",
+        "cloudtasksqueue_CloudTasksQueueStackdriverLoggingConfig.go",
+        "cloudtasksqueue_CloudTasksQueueStackdriverLoggingConfigOutputReference.go",
+        "cloudtasksqueue_CloudTasksQueueStackdriverLoggingConfigOutputReference__runtime_type_checks.go",
+        "cloudtasksqueue_CloudTasksQueueTimeouts.go",
+        "cloudtasksqueue_CloudTasksQueueTimeoutsOutputReference.go",
+        "cloudtasksqueue_CloudTasksQueueTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudtasksqueue_CloudTasksQueue__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/cloudtasksqueue",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/cloudtasksqueue/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

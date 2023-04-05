@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "firestoreindex",
+    srcs = [
+        "firestoreindex.go",
+        "firestoreindex_FirestoreIndex.go",
+        "firestoreindex_FirestoreIndexConfig.go",
+        "firestoreindex_FirestoreIndexFields.go",
+        "firestoreindex_FirestoreIndexFieldsList.go",
+        "firestoreindex_FirestoreIndexFieldsList__runtime_type_checks.go",
+        "firestoreindex_FirestoreIndexFieldsOutputReference.go",
+        "firestoreindex_FirestoreIndexFieldsOutputReference__runtime_type_checks.go",
+        "firestoreindex_FirestoreIndexTimeouts.go",
+        "firestoreindex_FirestoreIndexTimeoutsOutputReference.go",
+        "firestoreindex_FirestoreIndexTimeoutsOutputReference__runtime_type_checks.go",
+        "firestoreindex_FirestoreIndex__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/firestoreindex",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/firestoreindex/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

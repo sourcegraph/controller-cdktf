@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "authenticatedoriginpullscertificate",
+    srcs = [
+        "authenticatedoriginpullscertificate.go",
+        "authenticatedoriginpullscertificate_AuthenticatedOriginPullsCertificate.go",
+        "authenticatedoriginpullscertificate_AuthenticatedOriginPullsCertificateConfig.go",
+        "authenticatedoriginpullscertificate_AuthenticatedOriginPullsCertificateTimeouts.go",
+        "authenticatedoriginpullscertificate_AuthenticatedOriginPullsCertificateTimeoutsOutputReference.go",
+        "authenticatedoriginpullscertificate_AuthenticatedOriginPullsCertificateTimeoutsOutputReference__runtime_type_checks.go",
+        "authenticatedoriginpullscertificate_AuthenticatedOriginPullsCertificate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/authenticatedoriginpullscertificate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/authenticatedoriginpullscertificate/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagertransitgatewayconnectpeerassociation",
+    srcs = [
+        "networkmanagertransitgatewayconnectpeerassociation.go",
+        "networkmanagertransitgatewayconnectpeerassociation_NetworkmanagerTransitGatewayConnectPeerAssociation.go",
+        "networkmanagertransitgatewayconnectpeerassociation_NetworkmanagerTransitGatewayConnectPeerAssociationConfig.go",
+        "networkmanagertransitgatewayconnectpeerassociation_NetworkmanagerTransitGatewayConnectPeerAssociationTimeouts.go",
+        "networkmanagertransitgatewayconnectpeerassociation_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference.go",
+        "networkmanagertransitgatewayconnectpeerassociation_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagertransitgatewayconnectpeerassociation_NetworkmanagerTransitGatewayConnectPeerAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagertransitgatewayconnectpeerassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagertransitgatewayconnectpeerassociation/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

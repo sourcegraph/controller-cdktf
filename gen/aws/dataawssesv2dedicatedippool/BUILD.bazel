@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawssesv2dedicatedippool",
+    srcs = [
+        "dataawssesv2dedicatedippool.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPool.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPoolConfig.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPoolDedicatedIps.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPoolDedicatedIpsList.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPoolDedicatedIpsList__runtime_type_checks.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference__runtime_type_checks.go",
+        "dataawssesv2dedicatedippool_DataAwsSesv2DedicatedIpPool__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawssesv2dedicatedippool",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawssesv2dedicatedippool/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

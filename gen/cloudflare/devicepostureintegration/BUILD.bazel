@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "devicepostureintegration",
+    srcs = [
+        "devicepostureintegration.go",
+        "devicepostureintegration_DevicePostureIntegration.go",
+        "devicepostureintegration_DevicePostureIntegrationConfig.go",
+        "devicepostureintegration_DevicePostureIntegrationConfigA.go",
+        "devicepostureintegration_DevicePostureIntegrationConfigAList.go",
+        "devicepostureintegration_DevicePostureIntegrationConfigAList__runtime_type_checks.go",
+        "devicepostureintegration_DevicePostureIntegrationConfigAOutputReference.go",
+        "devicepostureintegration_DevicePostureIntegrationConfigAOutputReference__runtime_type_checks.go",
+        "devicepostureintegration_DevicePostureIntegration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/devicepostureintegration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/devicepostureintegration/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

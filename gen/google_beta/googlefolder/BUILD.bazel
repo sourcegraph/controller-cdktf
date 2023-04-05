@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefolder",
+    srcs = [
+        "googlefolder.go",
+        "googlefolder_GoogleFolder.go",
+        "googlefolder_GoogleFolderConfig.go",
+        "googlefolder_GoogleFolderTimeouts.go",
+        "googlefolder_GoogleFolderTimeoutsOutputReference.go",
+        "googlefolder_GoogleFolderTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefolder_GoogleFolder__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolder",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefolder/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

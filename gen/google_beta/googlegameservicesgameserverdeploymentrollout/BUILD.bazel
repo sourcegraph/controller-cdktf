@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlegameservicesgameserverdeploymentrollout",
+    srcs = [
+        "googlegameservicesgameserverdeploymentrollout.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRollout.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutConfig.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrides.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList__runtime_type_checks.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference__runtime_type_checks.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference__runtime_type_checks.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutTimeouts.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReference.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReference__runtime_type_checks.go",
+        "googlegameservicesgameserverdeploymentrollout_GoogleGameServicesGameServerDeploymentRollout__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegameservicesgameserverdeploymentrollout",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlegameservicesgameserverdeploymentrollout/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "functionresource",
+    srcs = [
+        "functionresource.go",
+        "functionresource_FunctionResource.go",
+        "functionresource_FunctionResourceArg.go",
+        "functionresource_FunctionResourceArgList.go",
+        "functionresource_FunctionResourceArgList__runtime_type_checks.go",
+        "functionresource_FunctionResourceArgOutputReference.go",
+        "functionresource_FunctionResourceArgOutputReference__runtime_type_checks.go",
+        "functionresource_FunctionResourceConfig.go",
+        "functionresource_FunctionResource__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/postgresql/functionresource",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/postgresql/functionresource/internal",
+        "//gen/postgresql/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsservicecatalogportfolioconstraints",
+    srcs = [
+        "dataawsservicecatalogportfolioconstraints.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraints.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsConfig.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsDetails.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsDetailsList.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsDetailsList__runtime_type_checks.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference__runtime_type_checks.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsTimeouts.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsservicecatalogportfolioconstraints_DataAwsServicecatalogPortfolioConstraints__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsservicecatalogportfolioconstraints",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsservicecatalogportfolioconstraints/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

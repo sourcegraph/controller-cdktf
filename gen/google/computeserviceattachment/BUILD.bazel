@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeserviceattachment",
+    srcs = [
+        "computeserviceattachment.go",
+        "computeserviceattachment_ComputeServiceAttachment.go",
+        "computeserviceattachment_ComputeServiceAttachmentConfig.go",
+        "computeserviceattachment_ComputeServiceAttachmentConnectedEndpoints.go",
+        "computeserviceattachment_ComputeServiceAttachmentConnectedEndpointsList.go",
+        "computeserviceattachment_ComputeServiceAttachmentConnectedEndpointsList__runtime_type_checks.go",
+        "computeserviceattachment_ComputeServiceAttachmentConnectedEndpointsOutputReference.go",
+        "computeserviceattachment_ComputeServiceAttachmentConnectedEndpointsOutputReference__runtime_type_checks.go",
+        "computeserviceattachment_ComputeServiceAttachmentConsumerAcceptLists.go",
+        "computeserviceattachment_ComputeServiceAttachmentConsumerAcceptListsList.go",
+        "computeserviceattachment_ComputeServiceAttachmentConsumerAcceptListsList__runtime_type_checks.go",
+        "computeserviceattachment_ComputeServiceAttachmentConsumerAcceptListsOutputReference.go",
+        "computeserviceattachment_ComputeServiceAttachmentConsumerAcceptListsOutputReference__runtime_type_checks.go",
+        "computeserviceattachment_ComputeServiceAttachmentTimeouts.go",
+        "computeserviceattachment_ComputeServiceAttachmentTimeoutsOutputReference.go",
+        "computeserviceattachment_ComputeServiceAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "computeserviceattachment_ComputeServiceAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeserviceattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeserviceattachment/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

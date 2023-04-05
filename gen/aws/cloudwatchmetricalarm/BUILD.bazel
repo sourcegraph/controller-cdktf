@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudwatchmetricalarm",
+    srcs = [
+        "cloudwatchmetricalarm.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarm.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmConfig.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQuery.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryList.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryList__runtime_type_checks.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryMetric.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryMetricOutputReference.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryMetricOutputReference__runtime_type_checks.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryOutputReference.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarmMetricQueryOutputReference__runtime_type_checks.go",
+        "cloudwatchmetricalarm_CloudwatchMetricAlarm__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatchmetricalarm",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudwatchmetricalarm/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

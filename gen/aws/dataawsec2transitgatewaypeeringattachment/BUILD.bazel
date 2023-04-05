@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgatewaypeeringattachment",
+    srcs = [
+        "dataawsec2transitgatewaypeeringattachment.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachment.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentConfig.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentFilter.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentFilterList.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentFilterList__runtime_type_checks.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentTimeouts.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgatewaypeeringattachment_DataAwsEc2TransitGatewayPeeringAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgatewaypeeringattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgatewaypeeringattachment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

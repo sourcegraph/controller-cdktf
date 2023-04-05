@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "grafanaworkspace",
+    srcs = [
+        "grafanaworkspace.go",
+        "grafanaworkspace_GrafanaWorkspace.go",
+        "grafanaworkspace_GrafanaWorkspaceConfig.go",
+        "grafanaworkspace_GrafanaWorkspaceTimeouts.go",
+        "grafanaworkspace_GrafanaWorkspaceTimeoutsOutputReference.go",
+        "grafanaworkspace_GrafanaWorkspaceTimeoutsOutputReference__runtime_type_checks.go",
+        "grafanaworkspace_GrafanaWorkspaceVpcConfiguration.go",
+        "grafanaworkspace_GrafanaWorkspaceVpcConfigurationOutputReference.go",
+        "grafanaworkspace_GrafanaWorkspaceVpcConfigurationOutputReference__runtime_type_checks.go",
+        "grafanaworkspace_GrafanaWorkspace__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/grafanaworkspace",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/grafanaworkspace/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagoogleiamworkloadidentitypoolprovider",
+    srcs = [
+        "datagoogleiamworkloadidentitypoolprovider.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProvider.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderAws.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderAwsList.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderAwsList__runtime_type_checks.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderAwsOutputReference.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderAwsOutputReference__runtime_type_checks.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderConfig.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderOidc.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderOidcList.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderOidcList__runtime_type_checks.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference__runtime_type_checks.go",
+        "datagoogleiamworkloadidentitypoolprovider_DataGoogleIamWorkloadIdentityPoolProvider__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleiamworkloadidentitypoolprovider",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagoogleiamworkloadidentitypoolprovider/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

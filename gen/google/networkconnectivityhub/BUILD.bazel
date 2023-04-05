@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkconnectivityhub",
+    srcs = [
+        "networkconnectivityhub.go",
+        "networkconnectivityhub_NetworkConnectivityHub.go",
+        "networkconnectivityhub_NetworkConnectivityHubConfig.go",
+        "networkconnectivityhub_NetworkConnectivityHubRoutingVpcs.go",
+        "networkconnectivityhub_NetworkConnectivityHubRoutingVpcsList.go",
+        "networkconnectivityhub_NetworkConnectivityHubRoutingVpcsList__runtime_type_checks.go",
+        "networkconnectivityhub_NetworkConnectivityHubRoutingVpcsOutputReference.go",
+        "networkconnectivityhub_NetworkConnectivityHubRoutingVpcsOutputReference__runtime_type_checks.go",
+        "networkconnectivityhub_NetworkConnectivityHubTimeouts.go",
+        "networkconnectivityhub_NetworkConnectivityHubTimeoutsOutputReference.go",
+        "networkconnectivityhub_NetworkConnectivityHubTimeoutsOutputReference__runtime_type_checks.go",
+        "networkconnectivityhub_NetworkConnectivityHub__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityhub",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/networkconnectivityhub/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

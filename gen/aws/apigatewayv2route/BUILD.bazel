@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayv2route",
+    srcs = [
+        "apigatewayv2route.go",
+        "apigatewayv2route_Apigatewayv2Route.go",
+        "apigatewayv2route_Apigatewayv2RouteConfig.go",
+        "apigatewayv2route_Apigatewayv2RouteRequestParameter.go",
+        "apigatewayv2route_Apigatewayv2RouteRequestParameterList.go",
+        "apigatewayv2route_Apigatewayv2RouteRequestParameterList__runtime_type_checks.go",
+        "apigatewayv2route_Apigatewayv2RouteRequestParameterOutputReference.go",
+        "apigatewayv2route_Apigatewayv2RouteRequestParameterOutputReference__runtime_type_checks.go",
+        "apigatewayv2route_Apigatewayv2Route__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2route",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayv2route/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

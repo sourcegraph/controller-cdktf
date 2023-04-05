@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeregionnetworkendpointgroup",
+    srcs = [
+        "computeregionnetworkendpointgroup.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroup.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupAppEngine.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupAppEngineOutputReference.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupAppEngineOutputReference__runtime_type_checks.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupCloudFunction.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference__runtime_type_checks.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupCloudRun.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupCloudRunOutputReference.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupCloudRunOutputReference__runtime_type_checks.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupConfig.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupTimeouts.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupTimeoutsOutputReference.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "computeregionnetworkendpointgroup_ComputeRegionNetworkEndpointGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeregionnetworkendpointgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeregionnetworkendpointgroup/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "loadbalancerpolicy",
+    srcs = [
+        "loadbalancerpolicy.go",
+        "loadbalancerpolicy_LoadBalancerPolicy.go",
+        "loadbalancerpolicy_LoadBalancerPolicyConfig.go",
+        "loadbalancerpolicy_LoadBalancerPolicyPolicyAttribute.go",
+        "loadbalancerpolicy_LoadBalancerPolicyPolicyAttributeList.go",
+        "loadbalancerpolicy_LoadBalancerPolicyPolicyAttributeList__runtime_type_checks.go",
+        "loadbalancerpolicy_LoadBalancerPolicyPolicyAttributeOutputReference.go",
+        "loadbalancerpolicy_LoadBalancerPolicyPolicyAttributeOutputReference__runtime_type_checks.go",
+        "loadbalancerpolicy_LoadBalancerPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/loadbalancerpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/loadbalancerpolicy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

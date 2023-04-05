@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2localgatewayroutetables",
+    srcs = [
+        "dataawsec2localgatewayroutetables.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTables.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesConfig.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesFilter.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesFilterList.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesFilterList__runtime_type_checks.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesFilterOutputReference.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesTimeouts.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesTimeoutsOutputReference.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTablesTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2localgatewayroutetables_DataAwsEc2LocalGatewayRouteTables__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2localgatewayroutetables",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2localgatewayroutetables/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

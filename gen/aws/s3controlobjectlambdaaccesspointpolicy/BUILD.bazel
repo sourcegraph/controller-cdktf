@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3controlobjectlambdaaccesspointpolicy",
+    srcs = [
+        "s3controlobjectlambdaaccesspointpolicy.go",
+        "s3controlobjectlambdaaccesspointpolicy_S3ControlObjectLambdaAccessPointPolicy.go",
+        "s3controlobjectlambdaaccesspointpolicy_S3ControlObjectLambdaAccessPointPolicyConfig.go",
+        "s3controlobjectlambdaaccesspointpolicy_S3ControlObjectLambdaAccessPointPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3controlobjectlambdaaccesspointpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3controlobjectlambdaaccesspointpolicy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

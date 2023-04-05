@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgateway",
+    srcs = [
+        "dataawsec2transitgateway.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGateway.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayConfig.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayFilter.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayFilterList.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayFilterList__runtime_type_checks.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayFilterOutputReference.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayTimeouts.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayTimeoutsOutputReference.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgateway_DataAwsEc2TransitGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgateway/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

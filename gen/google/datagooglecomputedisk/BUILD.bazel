@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglecomputedisk",
+    srcs = [
+        "datagooglecomputedisk.go",
+        "datagooglecomputedisk_DataGoogleComputeDisk.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskConfig.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskDiskEncryptionKey.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskDiskEncryptionKeyList.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskDiskEncryptionKeyList__runtime_type_checks.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskDiskEncryptionKeyOutputReference.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskDiskEncryptionKeyOutputReference__runtime_type_checks.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceImageEncryptionKey.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceImageEncryptionKeyList.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceImageEncryptionKeyList__runtime_type_checks.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceImageEncryptionKeyOutputReference.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceImageEncryptionKeyOutputReference__runtime_type_checks.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceSnapshotEncryptionKey.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceSnapshotEncryptionKeyList.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceSnapshotEncryptionKeyList__runtime_type_checks.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference.go",
+        "datagooglecomputedisk_DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference__runtime_type_checks.go",
+        "datagooglecomputedisk_DataGoogleComputeDisk__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputedisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglecomputedisk/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

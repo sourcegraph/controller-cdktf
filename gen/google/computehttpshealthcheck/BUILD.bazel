@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computehttpshealthcheck",
+    srcs = [
+        "computehttpshealthcheck.go",
+        "computehttpshealthcheck_ComputeHttpsHealthCheck.go",
+        "computehttpshealthcheck_ComputeHttpsHealthCheckConfig.go",
+        "computehttpshealthcheck_ComputeHttpsHealthCheckTimeouts.go",
+        "computehttpshealthcheck_ComputeHttpsHealthCheckTimeoutsOutputReference.go",
+        "computehttpshealthcheck_ComputeHttpsHealthCheckTimeoutsOutputReference__runtime_type_checks.go",
+        "computehttpshealthcheck_ComputeHttpsHealthCheck__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computehttpshealthcheck",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computehttpshealthcheck/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

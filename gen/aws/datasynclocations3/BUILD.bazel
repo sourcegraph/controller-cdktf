@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datasynclocations3",
+    srcs = [
+        "datasynclocations3.go",
+        "datasynclocations3_DatasyncLocationS3.go",
+        "datasynclocations3_DatasyncLocationS3Config.go",
+        "datasynclocations3_DatasyncLocationS3S3Config.go",
+        "datasynclocations3_DatasyncLocationS3S3ConfigOutputReference.go",
+        "datasynclocations3_DatasyncLocationS3S3ConfigOutputReference__runtime_type_checks.go",
+        "datasynclocations3_DatasyncLocationS3__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/datasynclocations3",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/datasynclocations3/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

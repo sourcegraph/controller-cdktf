@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appmeshvirtualrouter",
+    srcs = [
+        "appmeshvirtualrouter.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouter.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterConfig.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpec.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListener.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerList.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerList__runtime_type_checks.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerOutputReference.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerOutputReference__runtime_type_checks.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerPortMapping.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerPortMappingOutputReference.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecListenerPortMappingOutputReference__runtime_type_checks.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecOutputReference.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouterSpecOutputReference__runtime_type_checks.go",
+        "appmeshvirtualrouter_AppmeshVirtualRouter__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/appmeshvirtualrouter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/appmeshvirtualrouter/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

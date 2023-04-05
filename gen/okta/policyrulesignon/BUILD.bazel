@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "policyrulesignon",
+    srcs = [
+        "policyrulesignon.go",
+        "policyrulesignon_PolicyRuleSignon.go",
+        "policyrulesignon_PolicyRuleSignonConfig.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequence.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceList.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceList__runtime_type_checks.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceOutputReference.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceOutputReference__runtime_type_checks.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceSecondaryCriteria.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceSecondaryCriteriaList.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceSecondaryCriteriaList__runtime_type_checks.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.go",
+        "policyrulesignon_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference__runtime_type_checks.go",
+        "policyrulesignon_PolicyRuleSignon__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/policyrulesignon",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/policyrulesignon/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

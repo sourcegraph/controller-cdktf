@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+# gazelle:prefix github.com/sourcegraph/controller-cdktf
+# gazelle:build_file_name BUILD.bazel
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+gazelle(name = "gazelle")
+
+gazelle(
+    name = "gazelle-update-repos",
+    args = [
+        "-from_file=go.mod",
+        "-to_macro=deps.bzl%go_dependencies",
+        "-prune",
+        "-build_file_proto_mode=disable_global",
+    ],
+    command = "update-repos",
+)
+
+go_library(
+    name = "controller-cdktf_lib",
+    srcs = ["gen.go"],
+    importpath = "github.com/sourcegraph/controller-cdktf",
+    visibility = ["//visibility:private"],
+    deps = ["@com_github_sourcegraph_run//:run"],
+)
+
+go_binary(
+    name = "controller-cdktf",
+    embed = [":controller-cdktf_lib"],
+    visibility = ["//visibility:public"],
+)

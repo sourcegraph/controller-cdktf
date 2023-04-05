@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewaymethodsettings",
+    srcs = [
+        "apigatewaymethodsettings.go",
+        "apigatewaymethodsettings_ApiGatewayMethodSettings.go",
+        "apigatewaymethodsettings_ApiGatewayMethodSettingsConfig.go",
+        "apigatewaymethodsettings_ApiGatewayMethodSettingsSettings.go",
+        "apigatewaymethodsettings_ApiGatewayMethodSettingsSettingsOutputReference.go",
+        "apigatewaymethodsettings_ApiGatewayMethodSettingsSettingsOutputReference__runtime_type_checks.go",
+        "apigatewaymethodsettings_ApiGatewayMethodSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewaymethodsettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewaymethodsettings/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

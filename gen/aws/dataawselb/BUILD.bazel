@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawselb",
+    srcs = [
+        "dataawselb.go",
+        "dataawselb_DataAwsElb.go",
+        "dataawselb_DataAwsElbAccessLogs.go",
+        "dataawselb_DataAwsElbAccessLogsList.go",
+        "dataawselb_DataAwsElbAccessLogsList__runtime_type_checks.go",
+        "dataawselb_DataAwsElbAccessLogsOutputReference.go",
+        "dataawselb_DataAwsElbAccessLogsOutputReference__runtime_type_checks.go",
+        "dataawselb_DataAwsElbConfig.go",
+        "dataawselb_DataAwsElbHealthCheck.go",
+        "dataawselb_DataAwsElbHealthCheckList.go",
+        "dataawselb_DataAwsElbHealthCheckList__runtime_type_checks.go",
+        "dataawselb_DataAwsElbHealthCheckOutputReference.go",
+        "dataawselb_DataAwsElbHealthCheckOutputReference__runtime_type_checks.go",
+        "dataawselb_DataAwsElbListener.go",
+        "dataawselb_DataAwsElbListenerList.go",
+        "dataawselb_DataAwsElbListenerList__runtime_type_checks.go",
+        "dataawselb_DataAwsElbListenerOutputReference.go",
+        "dataawselb_DataAwsElbListenerOutputReference__runtime_type_checks.go",
+        "dataawselb_DataAwsElb__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawselb",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawselb/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "vpcpeeringconnectionaccepter",
+    srcs = [
+        "vpcpeeringconnectionaccepter.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterA.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterAConfig.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterA__runtime_type_checks.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterAccepter.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterAccepterOutputReference.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterAccepterOutputReference__runtime_type_checks.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterRequester.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterRequesterOutputReference.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterRequesterOutputReference__runtime_type_checks.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterTimeouts.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterTimeoutsOutputReference.go",
+        "vpcpeeringconnectionaccepter_VpcPeeringConnectionAccepterTimeoutsOutputReference__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/vpcpeeringconnectionaccepter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/vpcpeeringconnectionaccepter/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

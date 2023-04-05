@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "efsaccesspoint",
+    srcs = [
+        "efsaccesspoint.go",
+        "efsaccesspoint_EfsAccessPoint.go",
+        "efsaccesspoint_EfsAccessPointConfig.go",
+        "efsaccesspoint_EfsAccessPointPosixUser.go",
+        "efsaccesspoint_EfsAccessPointPosixUserOutputReference.go",
+        "efsaccesspoint_EfsAccessPointPosixUserOutputReference__runtime_type_checks.go",
+        "efsaccesspoint_EfsAccessPointRootDirectory.go",
+        "efsaccesspoint_EfsAccessPointRootDirectoryCreationInfo.go",
+        "efsaccesspoint_EfsAccessPointRootDirectoryCreationInfoOutputReference.go",
+        "efsaccesspoint_EfsAccessPointRootDirectoryCreationInfoOutputReference__runtime_type_checks.go",
+        "efsaccesspoint_EfsAccessPointRootDirectoryOutputReference.go",
+        "efsaccesspoint_EfsAccessPointRootDirectoryOutputReference__runtime_type_checks.go",
+        "efsaccesspoint_EfsAccessPoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/efsaccesspoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/efsaccesspoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

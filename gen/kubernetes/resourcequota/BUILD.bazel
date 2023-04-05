@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "resourcequota",
+    srcs = [
+        "resourcequota.go",
+        "resourcequota_ResourceQuota.go",
+        "resourcequota_ResourceQuotaConfig.go",
+        "resourcequota_ResourceQuotaMetadata.go",
+        "resourcequota_ResourceQuotaMetadataOutputReference.go",
+        "resourcequota_ResourceQuotaMetadataOutputReference__runtime_type_checks.go",
+        "resourcequota_ResourceQuotaSpec.go",
+        "resourcequota_ResourceQuotaSpecOutputReference.go",
+        "resourcequota_ResourceQuotaSpecOutputReference__runtime_type_checks.go",
+        "resourcequota_ResourceQuotaSpecScopeSelector.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorMatchExpression.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorMatchExpressionList.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorMatchExpressionList__runtime_type_checks.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference__runtime_type_checks.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorOutputReference.go",
+        "resourcequota_ResourceQuotaSpecScopeSelectorOutputReference__runtime_type_checks.go",
+        "resourcequota_ResourceQuotaTimeouts.go",
+        "resourcequota_ResourceQuotaTimeoutsOutputReference.go",
+        "resourcequota_ResourceQuotaTimeoutsOutputReference__runtime_type_checks.go",
+        "resourcequota_ResourceQuota__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/resourcequota",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/resourcequota/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

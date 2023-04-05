@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "fsxwindowsfilesystem",
+    srcs = [
+        "fsxwindowsfilesystem.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystem.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemAuditLogConfiguration.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemAuditLogConfigurationOutputReference.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemAuditLogConfigurationOutputReference__runtime_type_checks.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemConfig.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemSelfManagedActiveDirectory.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference__runtime_type_checks.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemTimeouts.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemTimeoutsOutputReference.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystemTimeoutsOutputReference__runtime_type_checks.go",
+        "fsxwindowsfilesystem_FsxWindowsFileSystem__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/fsxwindowsfilesystem",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/fsxwindowsfilesystem/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

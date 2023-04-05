@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "healthcarehl7v2storeiammember",
+    srcs = [
+        "healthcarehl7v2storeiammember.go",
+        "healthcarehl7v2storeiammember_HealthcareHl7V2StoreIamMember.go",
+        "healthcarehl7v2storeiammember_HealthcareHl7V2StoreIamMemberCondition.go",
+        "healthcarehl7v2storeiammember_HealthcareHl7V2StoreIamMemberConditionOutputReference.go",
+        "healthcarehl7v2storeiammember_HealthcareHl7V2StoreIamMemberConditionOutputReference__runtime_type_checks.go",
+        "healthcarehl7v2storeiammember_HealthcareHl7V2StoreIamMemberConfig.go",
+        "healthcarehl7v2storeiammember_HealthcareHl7V2StoreIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/healthcarehl7v2storeiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/healthcarehl7v2storeiammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

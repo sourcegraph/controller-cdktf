@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "assuredworkloadsworkload",
+    srcs = [
+        "assuredworkloadsworkload.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkload.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadConfig.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadKmsSettings.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadKmsSettingsOutputReference.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadKmsSettingsOutputReference__runtime_type_checks.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourceSettings.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourceSettingsList.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourceSettingsList__runtime_type_checks.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourceSettingsOutputReference.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourceSettingsOutputReference__runtime_type_checks.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResources.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourcesList.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourcesList__runtime_type_checks.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourcesOutputReference.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadResourcesOutputReference__runtime_type_checks.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadTimeouts.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadTimeoutsOutputReference.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkloadTimeoutsOutputReference__runtime_type_checks.go",
+        "assuredworkloadsworkload_AssuredWorkloadsWorkload__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/assuredworkloadsworkload",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/assuredworkloadsworkload/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

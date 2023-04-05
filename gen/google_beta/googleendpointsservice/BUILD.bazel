@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleendpointsservice",
+    srcs = [
+        "googleendpointsservice.go",
+        "googleendpointsservice_GoogleEndpointsService.go",
+        "googleendpointsservice_GoogleEndpointsServiceApis.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisList.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisList__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisMethods.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisMethodsList.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisMethodsList__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisMethodsOutputReference.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisMethodsOutputReference__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisOutputReference.go",
+        "googleendpointsservice_GoogleEndpointsServiceApisOutputReference__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsServiceConfig.go",
+        "googleendpointsservice_GoogleEndpointsServiceEndpoints.go",
+        "googleendpointsservice_GoogleEndpointsServiceEndpointsList.go",
+        "googleendpointsservice_GoogleEndpointsServiceEndpointsList__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsServiceEndpointsOutputReference.go",
+        "googleendpointsservice_GoogleEndpointsServiceEndpointsOutputReference__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsServiceTimeouts.go",
+        "googleendpointsservice_GoogleEndpointsServiceTimeoutsOutputReference.go",
+        "googleendpointsservice_GoogleEndpointsServiceTimeoutsOutputReference__runtime_type_checks.go",
+        "googleendpointsservice_GoogleEndpointsService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleendpointsservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleendpointsservice/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

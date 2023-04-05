@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeexternalvpngateway",
+    srcs = [
+        "computeexternalvpngateway.go",
+        "computeexternalvpngateway_ComputeExternalVpnGateway.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayConfig.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayInterface.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayInterfaceList.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayInterfaceList__runtime_type_checks.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayInterfaceOutputReference.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayInterfaceOutputReference__runtime_type_checks.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayTimeouts.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayTimeoutsOutputReference.go",
+        "computeexternalvpngateway_ComputeExternalVpnGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "computeexternalvpngateway_ComputeExternalVpnGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeexternalvpngateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeexternalvpngateway/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

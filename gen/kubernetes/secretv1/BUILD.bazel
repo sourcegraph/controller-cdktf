@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "secretv1",
+    srcs = [
+        "secretv1.go",
+        "secretv1_SecretV1.go",
+        "secretv1_SecretV1Config.go",
+        "secretv1_SecretV1Metadata.go",
+        "secretv1_SecretV1MetadataOutputReference.go",
+        "secretv1_SecretV1MetadataOutputReference__runtime_type_checks.go",
+        "secretv1_SecretV1Timeouts.go",
+        "secretv1_SecretV1TimeoutsOutputReference.go",
+        "secretv1_SecretV1TimeoutsOutputReference__runtime_type_checks.go",
+        "secretv1_SecretV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/secretv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/secretv1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsdbproxy",
+    srcs = [
+        "dataawsdbproxy.go",
+        "dataawsdbproxy_DataAwsDbProxy.go",
+        "dataawsdbproxy_DataAwsDbProxyAuth.go",
+        "dataawsdbproxy_DataAwsDbProxyAuthList.go",
+        "dataawsdbproxy_DataAwsDbProxyAuthList__runtime_type_checks.go",
+        "dataawsdbproxy_DataAwsDbProxyAuthOutputReference.go",
+        "dataawsdbproxy_DataAwsDbProxyAuthOutputReference__runtime_type_checks.go",
+        "dataawsdbproxy_DataAwsDbProxyConfig.go",
+        "dataawsdbproxy_DataAwsDbProxy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsdbproxy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsdbproxy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

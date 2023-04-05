@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlemonitoringgroup",
+    srcs = [
+        "googlemonitoringgroup.go",
+        "googlemonitoringgroup_GoogleMonitoringGroup.go",
+        "googlemonitoringgroup_GoogleMonitoringGroupConfig.go",
+        "googlemonitoringgroup_GoogleMonitoringGroupTimeouts.go",
+        "googlemonitoringgroup_GoogleMonitoringGroupTimeoutsOutputReference.go",
+        "googlemonitoringgroup_GoogleMonitoringGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "googlemonitoringgroup_GoogleMonitoringGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlemonitoringgroup/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

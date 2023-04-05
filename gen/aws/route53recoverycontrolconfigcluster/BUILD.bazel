@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "route53recoverycontrolconfigcluster",
+    srcs = [
+        "route53recoverycontrolconfigcluster.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigCluster.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigClusterClusterEndpoints.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigClusterClusterEndpointsList.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigClusterClusterEndpointsList__runtime_type_checks.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference__runtime_type_checks.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigClusterConfig.go",
+        "route53recoverycontrolconfigcluster_Route53RecoverycontrolconfigCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/route53recoverycontrolconfigcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/route53recoverycontrolconfigcluster/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

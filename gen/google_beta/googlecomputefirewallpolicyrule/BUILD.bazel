@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputefirewallpolicyrule",
+    srcs = [
+        "googlecomputefirewallpolicyrule.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRule.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleConfig.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatch.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchLayer4Configs.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsList.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsList__runtime_type_checks.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference__runtime_type_checks.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchOutputReference.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleMatchOutputReference__runtime_type_checks.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleTimeouts.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleTimeoutsOutputReference.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputefirewallpolicyrule_GoogleComputeFirewallPolicyRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputefirewallpolicyrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputefirewallpolicyrule/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

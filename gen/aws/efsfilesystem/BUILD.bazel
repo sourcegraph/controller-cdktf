@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "efsfilesystem",
+    srcs = [
+        "efsfilesystem.go",
+        "efsfilesystem_EfsFileSystem.go",
+        "efsfilesystem_EfsFileSystemConfig.go",
+        "efsfilesystem_EfsFileSystemLifecyclePolicy.go",
+        "efsfilesystem_EfsFileSystemLifecyclePolicyList.go",
+        "efsfilesystem_EfsFileSystemLifecyclePolicyList__runtime_type_checks.go",
+        "efsfilesystem_EfsFileSystemLifecyclePolicyOutputReference.go",
+        "efsfilesystem_EfsFileSystemLifecyclePolicyOutputReference__runtime_type_checks.go",
+        "efsfilesystem_EfsFileSystemSizeInBytes.go",
+        "efsfilesystem_EfsFileSystemSizeInBytesList.go",
+        "efsfilesystem_EfsFileSystemSizeInBytesList__runtime_type_checks.go",
+        "efsfilesystem_EfsFileSystemSizeInBytesOutputReference.go",
+        "efsfilesystem_EfsFileSystemSizeInBytesOutputReference__runtime_type_checks.go",
+        "efsfilesystem_EfsFileSystem__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/efsfilesystem",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/efsfilesystem/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

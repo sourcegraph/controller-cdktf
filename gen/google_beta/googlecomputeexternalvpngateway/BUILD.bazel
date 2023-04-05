@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeexternalvpngateway",
+    srcs = [
+        "googlecomputeexternalvpngateway.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGateway.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayConfig.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayInterface.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayInterfaceList.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayInterfaceList__runtime_type_checks.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayInterfaceOutputReference.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayInterfaceOutputReference__runtime_type_checks.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayTimeouts.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayTimeoutsOutputReference.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeexternalvpngateway_GoogleComputeExternalVpnGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeexternalvpngateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeexternalvpngateway/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

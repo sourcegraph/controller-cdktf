@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "inlinehook",
+    srcs = [
+        "inlinehook.go",
+        "inlinehook_InlineHook.go",
+        "inlinehook_InlineHookConfig.go",
+        "inlinehook_InlineHookHeaders.go",
+        "inlinehook_InlineHookHeadersList.go",
+        "inlinehook_InlineHookHeadersList__runtime_type_checks.go",
+        "inlinehook_InlineHookHeadersOutputReference.go",
+        "inlinehook_InlineHookHeadersOutputReference__runtime_type_checks.go",
+        "inlinehook_InlineHook__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/inlinehook",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/inlinehook/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

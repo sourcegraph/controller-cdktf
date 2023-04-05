@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2transitgatewaymulticastdomain",
+    srcs = [
+        "ec2transitgatewaymulticastdomain.go",
+        "ec2transitgatewaymulticastdomain_Ec2TransitGatewayMulticastDomain.go",
+        "ec2transitgatewaymulticastdomain_Ec2TransitGatewayMulticastDomainConfig.go",
+        "ec2transitgatewaymulticastdomain_Ec2TransitGatewayMulticastDomainTimeouts.go",
+        "ec2transitgatewaymulticastdomain_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference.go",
+        "ec2transitgatewaymulticastdomain_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference__runtime_type_checks.go",
+        "ec2transitgatewaymulticastdomain_Ec2TransitGatewayMulticastDomain__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2transitgatewaymulticastdomain",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2transitgatewaymulticastdomain/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

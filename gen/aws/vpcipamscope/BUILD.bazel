@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "vpcipamscope",
+    srcs = [
+        "vpcipamscope.go",
+        "vpcipamscope_VpcIpamScope.go",
+        "vpcipamscope_VpcIpamScopeConfig.go",
+        "vpcipamscope_VpcIpamScopeTimeouts.go",
+        "vpcipamscope_VpcIpamScopeTimeoutsOutputReference.go",
+        "vpcipamscope_VpcIpamScopeTimeoutsOutputReference__runtime_type_checks.go",
+        "vpcipamscope_VpcIpamScope__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/vpcipamscope",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/vpcipamscope/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datacloudflarewafrules",
+    srcs = [
+        "datacloudflarewafrules.go",
+        "datacloudflarewafrules_DataCloudflareWafRules.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesConfig.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesFilter.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesFilterOutputReference.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesFilterOutputReference__runtime_type_checks.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesRules.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesRulesList.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesRulesList__runtime_type_checks.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesRulesOutputReference.go",
+        "datacloudflarewafrules_DataCloudflareWafRulesRulesOutputReference__runtime_type_checks.go",
+        "datacloudflarewafrules_DataCloudflareWafRules__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflarewafrules",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/datacloudflarewafrules/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

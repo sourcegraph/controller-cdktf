@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "priorityclass",
+    srcs = [
+        "priorityclass.go",
+        "priorityclass_PriorityClass.go",
+        "priorityclass_PriorityClassConfig.go",
+        "priorityclass_PriorityClassMetadata.go",
+        "priorityclass_PriorityClassMetadataOutputReference.go",
+        "priorityclass_PriorityClassMetadataOutputReference__runtime_type_checks.go",
+        "priorityclass_PriorityClass__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/priorityclass",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/priorityclass/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

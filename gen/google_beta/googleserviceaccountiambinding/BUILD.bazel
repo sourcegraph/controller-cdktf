@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleserviceaccountiambinding",
+    srcs = [
+        "googleserviceaccountiambinding.go",
+        "googleserviceaccountiambinding_GoogleServiceAccountIamBinding.go",
+        "googleserviceaccountiambinding_GoogleServiceAccountIamBindingCondition.go",
+        "googleserviceaccountiambinding_GoogleServiceAccountIamBindingConditionOutputReference.go",
+        "googleserviceaccountiambinding_GoogleServiceAccountIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googleserviceaccountiambinding_GoogleServiceAccountIamBindingConfig.go",
+        "googleserviceaccountiambinding_GoogleServiceAccountIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleserviceaccountiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleserviceaccountiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

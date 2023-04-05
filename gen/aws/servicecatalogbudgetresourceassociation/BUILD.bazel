@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "servicecatalogbudgetresourceassociation",
+    srcs = [
+        "servicecatalogbudgetresourceassociation.go",
+        "servicecatalogbudgetresourceassociation_ServicecatalogBudgetResourceAssociation.go",
+        "servicecatalogbudgetresourceassociation_ServicecatalogBudgetResourceAssociationConfig.go",
+        "servicecatalogbudgetresourceassociation_ServicecatalogBudgetResourceAssociationTimeouts.go",
+        "servicecatalogbudgetresourceassociation_ServicecatalogBudgetResourceAssociationTimeoutsOutputReference.go",
+        "servicecatalogbudgetresourceassociation_ServicecatalogBudgetResourceAssociationTimeoutsOutputReference__runtime_type_checks.go",
+        "servicecatalogbudgetresourceassociation_ServicecatalogBudgetResourceAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/servicecatalogbudgetresourceassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/servicecatalogbudgetresourceassociation/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

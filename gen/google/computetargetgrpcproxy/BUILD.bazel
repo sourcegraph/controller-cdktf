@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computetargetgrpcproxy",
+    srcs = [
+        "computetargetgrpcproxy.go",
+        "computetargetgrpcproxy_ComputeTargetGrpcProxy.go",
+        "computetargetgrpcproxy_ComputeTargetGrpcProxyConfig.go",
+        "computetargetgrpcproxy_ComputeTargetGrpcProxyTimeouts.go",
+        "computetargetgrpcproxy_ComputeTargetGrpcProxyTimeoutsOutputReference.go",
+        "computetargetgrpcproxy_ComputeTargetGrpcProxyTimeoutsOutputReference__runtime_type_checks.go",
+        "computetargetgrpcproxy_ComputeTargetGrpcProxy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computetargetgrpcproxy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computetargetgrpcproxy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

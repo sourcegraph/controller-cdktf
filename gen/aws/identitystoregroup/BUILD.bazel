@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "identitystoregroup",
+    srcs = [
+        "identitystoregroup.go",
+        "identitystoregroup_IdentitystoreGroup.go",
+        "identitystoregroup_IdentitystoreGroupConfig.go",
+        "identitystoregroup_IdentitystoreGroupExternalIds.go",
+        "identitystoregroup_IdentitystoreGroupExternalIdsList.go",
+        "identitystoregroup_IdentitystoreGroupExternalIdsList__runtime_type_checks.go",
+        "identitystoregroup_IdentitystoreGroupExternalIdsOutputReference.go",
+        "identitystoregroup_IdentitystoreGroupExternalIdsOutputReference__runtime_type_checks.go",
+        "identitystoregroup_IdentitystoreGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/identitystoregroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/identitystoregroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

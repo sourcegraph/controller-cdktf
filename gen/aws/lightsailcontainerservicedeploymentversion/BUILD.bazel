@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lightsailcontainerservicedeploymentversion",
+    srcs = [
+        "lightsailcontainerservicedeploymentversion.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersion.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionConfig.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionContainer.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionContainerList.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionContainerList__runtime_type_checks.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionContainerOutputReference.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionContainerOutputReference__runtime_type_checks.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionPublicEndpoint.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference__runtime_type_checks.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference__runtime_type_checks.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionTimeouts.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionTimeoutsOutputReference.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersionTimeoutsOutputReference__runtime_type_checks.go",
+        "lightsailcontainerservicedeploymentversion_LightsailContainerServiceDeploymentVersion__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lightsailcontainerservicedeploymentversion",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lightsailcontainerservicedeploymentversion/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

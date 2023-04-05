@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "domaincertificate",
+    srcs = [
+        "domaincertificate.go",
+        "domaincertificate_DomainCertificate.go",
+        "domaincertificate_DomainCertificateConfig.go",
+        "domaincertificate_DomainCertificate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/domaincertificate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/domaincertificate/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iotthinggroup",
+    srcs = [
+        "iotthinggroup.go",
+        "iotthinggroup_IotThingGroup.go",
+        "iotthinggroup_IotThingGroupConfig.go",
+        "iotthinggroup_IotThingGroupMetadata.go",
+        "iotthinggroup_IotThingGroupMetadataList.go",
+        "iotthinggroup_IotThingGroupMetadataList__runtime_type_checks.go",
+        "iotthinggroup_IotThingGroupMetadataOutputReference.go",
+        "iotthinggroup_IotThingGroupMetadataOutputReference__runtime_type_checks.go",
+        "iotthinggroup_IotThingGroupMetadataRootToParentGroups.go",
+        "iotthinggroup_IotThingGroupMetadataRootToParentGroupsList.go",
+        "iotthinggroup_IotThingGroupMetadataRootToParentGroupsList__runtime_type_checks.go",
+        "iotthinggroup_IotThingGroupMetadataRootToParentGroupsOutputReference.go",
+        "iotthinggroup_IotThingGroupMetadataRootToParentGroupsOutputReference__runtime_type_checks.go",
+        "iotthinggroup_IotThingGroupProperties.go",
+        "iotthinggroup_IotThingGroupPropertiesAttributePayload.go",
+        "iotthinggroup_IotThingGroupPropertiesAttributePayloadOutputReference.go",
+        "iotthinggroup_IotThingGroupPropertiesAttributePayloadOutputReference__runtime_type_checks.go",
+        "iotthinggroup_IotThingGroupPropertiesOutputReference.go",
+        "iotthinggroup_IotThingGroupPropertiesOutputReference__runtime_type_checks.go",
+        "iotthinggroup_IotThingGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/iotthinggroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/iotthinggroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

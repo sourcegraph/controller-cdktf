@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsdbinstances",
+    srcs = [
+        "dataawsdbinstances.go",
+        "dataawsdbinstances_DataAwsDbInstances.go",
+        "dataawsdbinstances_DataAwsDbInstancesConfig.go",
+        "dataawsdbinstances_DataAwsDbInstancesFilter.go",
+        "dataawsdbinstances_DataAwsDbInstancesFilterList.go",
+        "dataawsdbinstances_DataAwsDbInstancesFilterList__runtime_type_checks.go",
+        "dataawsdbinstances_DataAwsDbInstancesFilterOutputReference.go",
+        "dataawsdbinstances_DataAwsDbInstancesFilterOutputReference__runtime_type_checks.go",
+        "dataawsdbinstances_DataAwsDbInstances__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsdbinstances",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsdbinstances/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

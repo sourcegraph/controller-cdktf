@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "limitrangev1",
+    srcs = [
+        "limitrangev1.go",
+        "limitrangev1_LimitRangeV1.go",
+        "limitrangev1_LimitRangeV1Config.go",
+        "limitrangev1_LimitRangeV1Metadata.go",
+        "limitrangev1_LimitRangeV1MetadataOutputReference.go",
+        "limitrangev1_LimitRangeV1MetadataOutputReference__runtime_type_checks.go",
+        "limitrangev1_LimitRangeV1Spec.go",
+        "limitrangev1_LimitRangeV1SpecLimit.go",
+        "limitrangev1_LimitRangeV1SpecLimitList.go",
+        "limitrangev1_LimitRangeV1SpecLimitList__runtime_type_checks.go",
+        "limitrangev1_LimitRangeV1SpecLimitOutputReference.go",
+        "limitrangev1_LimitRangeV1SpecLimitOutputReference__runtime_type_checks.go",
+        "limitrangev1_LimitRangeV1SpecOutputReference.go",
+        "limitrangev1_LimitRangeV1SpecOutputReference__runtime_type_checks.go",
+        "limitrangev1_LimitRangeV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/limitrangev1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/limitrangev1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

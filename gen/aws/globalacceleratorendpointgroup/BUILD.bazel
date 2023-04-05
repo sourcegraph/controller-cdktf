@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "globalacceleratorendpointgroup",
+    srcs = [
+        "globalacceleratorendpointgroup.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroup.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupConfig.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupEndpointConfiguration.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupEndpointConfigurationList.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupEndpointConfigurationList__runtime_type_checks.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference__runtime_type_checks.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupPortOverride.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupPortOverrideList.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupPortOverrideList__runtime_type_checks.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupPortOverrideOutputReference.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupPortOverrideOutputReference__runtime_type_checks.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupTimeouts.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupTimeoutsOutputReference.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "globalacceleratorendpointgroup_GlobalacceleratorEndpointGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/globalacceleratorendpointgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/globalacceleratorendpointgroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

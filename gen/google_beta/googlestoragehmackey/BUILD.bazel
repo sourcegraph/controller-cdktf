@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlestoragehmackey",
+    srcs = [
+        "googlestoragehmackey.go",
+        "googlestoragehmackey_GoogleStorageHmacKey.go",
+        "googlestoragehmackey_GoogleStorageHmacKeyConfig.go",
+        "googlestoragehmackey_GoogleStorageHmacKeyTimeouts.go",
+        "googlestoragehmackey_GoogleStorageHmacKeyTimeoutsOutputReference.go",
+        "googlestoragehmackey_GoogleStorageHmacKeyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlestoragehmackey_GoogleStorageHmacKey__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragehmackey",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlestoragehmackey/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

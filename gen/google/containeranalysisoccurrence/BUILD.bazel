@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "containeranalysisoccurrence",
+    srcs = [
+        "containeranalysisoccurrence.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrence.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestation.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationOutputReference.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationOutputReference__runtime_type_checks.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationSignatures.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationSignaturesList.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationSignaturesList__runtime_type_checks.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference__runtime_type_checks.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceConfig.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceTimeouts.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceTimeoutsOutputReference.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrenceTimeoutsOutputReference__runtime_type_checks.go",
+        "containeranalysisoccurrence_ContainerAnalysisOccurrence__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/containeranalysisoccurrence",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/containeranalysisoccurrence/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

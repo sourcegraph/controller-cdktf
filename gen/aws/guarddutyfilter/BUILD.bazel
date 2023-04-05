@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "guarddutyfilter",
+    srcs = [
+        "guarddutyfilter.go",
+        "guarddutyfilter_GuarddutyFilter.go",
+        "guarddutyfilter_GuarddutyFilterConfig.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteria.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaCriterion.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaCriterionList.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaCriterionList__runtime_type_checks.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaCriterionOutputReference.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaCriterionOutputReference__runtime_type_checks.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaOutputReference.go",
+        "guarddutyfilter_GuarddutyFilterFindingCriteriaOutputReference__runtime_type_checks.go",
+        "guarddutyfilter_GuarddutyFilter__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/guarddutyfilter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/guarddutyfilter/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

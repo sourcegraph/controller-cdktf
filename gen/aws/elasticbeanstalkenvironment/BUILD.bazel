@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elasticbeanstalkenvironment",
+    srcs = [
+        "elasticbeanstalkenvironment.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironment.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentAllSettings.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentAllSettingsList.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentAllSettingsList__runtime_type_checks.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentAllSettingsOutputReference.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentAllSettingsOutputReference__runtime_type_checks.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentConfig.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentSetting.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentSettingList.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentSettingList__runtime_type_checks.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentSettingOutputReference.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironmentSettingOutputReference__runtime_type_checks.go",
+        "elasticbeanstalkenvironment_ElasticBeanstalkEnvironment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elasticbeanstalkenvironment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elasticbeanstalkenvironment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

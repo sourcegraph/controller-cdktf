@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeprojectdefaultnetworktier",
+    srcs = [
+        "googlecomputeprojectdefaultnetworktier.go",
+        "googlecomputeprojectdefaultnetworktier_GoogleComputeProjectDefaultNetworkTier.go",
+        "googlecomputeprojectdefaultnetworktier_GoogleComputeProjectDefaultNetworkTierConfig.go",
+        "googlecomputeprojectdefaultnetworktier_GoogleComputeProjectDefaultNetworkTierTimeouts.go",
+        "googlecomputeprojectdefaultnetworktier_GoogleComputeProjectDefaultNetworkTierTimeoutsOutputReference.go",
+        "googlecomputeprojectdefaultnetworktier_GoogleComputeProjectDefaultNetworkTierTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeprojectdefaultnetworktier_GoogleComputeProjectDefaultNetworkTier__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeprojectdefaultnetworktier",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeprojectdefaultnetworktier/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

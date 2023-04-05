@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gluedatacatalogencryptionsettings",
+    srcs = [
+        "gluedatacatalogencryptionsettings.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettings.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsConfig.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference__runtime_type_checks.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference__runtime_type_checks.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference__runtime_type_checks.go",
+        "gluedatacatalogencryptionsettings_GlueDataCatalogEncryptionSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gluedatacatalogencryptionsettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gluedatacatalogencryptionsettings/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

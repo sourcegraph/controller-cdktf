@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "configorganizationconformancepack",
+    srcs = [
+        "configorganizationconformancepack.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePack.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackConfig.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackInputParameter.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackInputParameterList.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackInputParameterList__runtime_type_checks.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackInputParameterOutputReference.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackInputParameterOutputReference__runtime_type_checks.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackTimeouts.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackTimeoutsOutputReference.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePackTimeoutsOutputReference__runtime_type_checks.go",
+        "configorganizationconformancepack_ConfigOrganizationConformancePack__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/configorganizationconformancepack",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/configorganizationconformancepack/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

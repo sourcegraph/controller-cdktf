@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3controlmultiregionaccesspointpolicy",
+    srcs = [
+        "s3controlmultiregionaccesspointpolicy.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicy.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyConfig.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyDetails.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyDetailsOutputReference.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyDetailsOutputReference__runtime_type_checks.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyTimeouts.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "s3controlmultiregionaccesspointpolicy_S3ControlMultiRegionAccessPointPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3controlmultiregionaccesspointpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3controlmultiregionaccesspointpolicy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

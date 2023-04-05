@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rumappmonitor",
+    srcs = [
+        "rumappmonitor.go",
+        "rumappmonitor_RumAppMonitor.go",
+        "rumappmonitor_RumAppMonitorAppMonitorConfiguration.go",
+        "rumappmonitor_RumAppMonitorAppMonitorConfigurationOutputReference.go",
+        "rumappmonitor_RumAppMonitorAppMonitorConfigurationOutputReference__runtime_type_checks.go",
+        "rumappmonitor_RumAppMonitorConfig.go",
+        "rumappmonitor_RumAppMonitorCustomEvents.go",
+        "rumappmonitor_RumAppMonitorCustomEventsOutputReference.go",
+        "rumappmonitor_RumAppMonitorCustomEventsOutputReference__runtime_type_checks.go",
+        "rumappmonitor_RumAppMonitor__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/rumappmonitor",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/rumappmonitor/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

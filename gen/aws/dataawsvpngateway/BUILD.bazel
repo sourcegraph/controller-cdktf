@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpngateway",
+    srcs = [
+        "dataawsvpngateway.go",
+        "dataawsvpngateway_DataAwsVpnGateway.go",
+        "dataawsvpngateway_DataAwsVpnGatewayConfig.go",
+        "dataawsvpngateway_DataAwsVpnGatewayFilter.go",
+        "dataawsvpngateway_DataAwsVpnGatewayFilterList.go",
+        "dataawsvpngateway_DataAwsVpnGatewayFilterList__runtime_type_checks.go",
+        "dataawsvpngateway_DataAwsVpnGatewayFilterOutputReference.go",
+        "dataawsvpngateway_DataAwsVpnGatewayFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpngateway_DataAwsVpnGatewayTimeouts.go",
+        "dataawsvpngateway_DataAwsVpnGatewayTimeoutsOutputReference.go",
+        "dataawsvpngateway_DataAwsVpnGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpngateway_DataAwsVpnGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpngateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpngateway/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

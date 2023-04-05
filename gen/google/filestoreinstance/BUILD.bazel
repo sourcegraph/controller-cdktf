@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "filestoreinstance",
+    srcs = [
+        "filestoreinstance.go",
+        "filestoreinstance_FilestoreInstance.go",
+        "filestoreinstance_FilestoreInstanceConfig.go",
+        "filestoreinstance_FilestoreInstanceFileShares.go",
+        "filestoreinstance_FilestoreInstanceFileSharesNfsExportOptions.go",
+        "filestoreinstance_FilestoreInstanceFileSharesNfsExportOptionsList.go",
+        "filestoreinstance_FilestoreInstanceFileSharesNfsExportOptionsList__runtime_type_checks.go",
+        "filestoreinstance_FilestoreInstanceFileSharesNfsExportOptionsOutputReference.go",
+        "filestoreinstance_FilestoreInstanceFileSharesNfsExportOptionsOutputReference__runtime_type_checks.go",
+        "filestoreinstance_FilestoreInstanceFileSharesOutputReference.go",
+        "filestoreinstance_FilestoreInstanceFileSharesOutputReference__runtime_type_checks.go",
+        "filestoreinstance_FilestoreInstanceNetworks.go",
+        "filestoreinstance_FilestoreInstanceNetworksList.go",
+        "filestoreinstance_FilestoreInstanceNetworksList__runtime_type_checks.go",
+        "filestoreinstance_FilestoreInstanceNetworksOutputReference.go",
+        "filestoreinstance_FilestoreInstanceNetworksOutputReference__runtime_type_checks.go",
+        "filestoreinstance_FilestoreInstanceTimeouts.go",
+        "filestoreinstance_FilestoreInstanceTimeoutsOutputReference.go",
+        "filestoreinstance_FilestoreInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "filestoreinstance_FilestoreInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/filestoreinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/filestoreinstance/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

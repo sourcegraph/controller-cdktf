@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "notebooksenvironment",
+    srcs = [
+        "notebooksenvironment.go",
+        "notebooksenvironment_NotebooksEnvironment.go",
+        "notebooksenvironment_NotebooksEnvironmentConfig.go",
+        "notebooksenvironment_NotebooksEnvironmentContainerImage.go",
+        "notebooksenvironment_NotebooksEnvironmentContainerImageOutputReference.go",
+        "notebooksenvironment_NotebooksEnvironmentContainerImageOutputReference__runtime_type_checks.go",
+        "notebooksenvironment_NotebooksEnvironmentTimeouts.go",
+        "notebooksenvironment_NotebooksEnvironmentTimeoutsOutputReference.go",
+        "notebooksenvironment_NotebooksEnvironmentTimeoutsOutputReference__runtime_type_checks.go",
+        "notebooksenvironment_NotebooksEnvironmentVmImage.go",
+        "notebooksenvironment_NotebooksEnvironmentVmImageOutputReference.go",
+        "notebooksenvironment_NotebooksEnvironmentVmImageOutputReference__runtime_type_checks.go",
+        "notebooksenvironment_NotebooksEnvironment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/notebooksenvironment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/notebooksenvironment/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

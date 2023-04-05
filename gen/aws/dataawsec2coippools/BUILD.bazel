@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2coippools",
+    srcs = [
+        "dataawsec2coippools.go",
+        "dataawsec2coippools_DataAwsEc2CoipPools.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsConfig.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsFilter.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsFilterList.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsFilterList__runtime_type_checks.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsFilterOutputReference.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsTimeouts.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsTimeoutsOutputReference.go",
+        "dataawsec2coippools_DataAwsEc2CoipPoolsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2coippools_DataAwsEc2CoipPools__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2coippools",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2coippools/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

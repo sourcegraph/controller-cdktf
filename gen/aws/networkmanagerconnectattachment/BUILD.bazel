@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagerconnectattachment",
+    srcs = [
+        "networkmanagerconnectattachment.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachment.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentConfig.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentOptions.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentOptionsOutputReference.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentOptionsOutputReference__runtime_type_checks.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentTimeouts.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentTimeoutsOutputReference.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagerconnectattachment_NetworkmanagerConnectAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagerconnectattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagerconnectattachment/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

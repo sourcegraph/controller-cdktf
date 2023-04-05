@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lexbotalias",
+    srcs = [
+        "lexbotalias.go",
+        "lexbotalias_LexBotAlias.go",
+        "lexbotalias_LexBotAliasConfig.go",
+        "lexbotalias_LexBotAliasConversationLogs.go",
+        "lexbotalias_LexBotAliasConversationLogsLogSettings.go",
+        "lexbotalias_LexBotAliasConversationLogsLogSettingsList.go",
+        "lexbotalias_LexBotAliasConversationLogsLogSettingsList__runtime_type_checks.go",
+        "lexbotalias_LexBotAliasConversationLogsLogSettingsOutputReference.go",
+        "lexbotalias_LexBotAliasConversationLogsLogSettingsOutputReference__runtime_type_checks.go",
+        "lexbotalias_LexBotAliasConversationLogsOutputReference.go",
+        "lexbotalias_LexBotAliasConversationLogsOutputReference__runtime_type_checks.go",
+        "lexbotalias_LexBotAliasTimeouts.go",
+        "lexbotalias_LexBotAliasTimeoutsOutputReference.go",
+        "lexbotalias_LexBotAliasTimeoutsOutputReference__runtime_type_checks.go",
+        "lexbotalias_LexBotAlias__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lexbotalias",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lexbotalias/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

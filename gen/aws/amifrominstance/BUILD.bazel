@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "amifrominstance",
+    srcs = [
+        "amifrominstance.go",
+        "amifrominstance_AmiFromInstance.go",
+        "amifrominstance_AmiFromInstanceConfig.go",
+        "amifrominstance_AmiFromInstanceEbsBlockDevice.go",
+        "amifrominstance_AmiFromInstanceEbsBlockDeviceList.go",
+        "amifrominstance_AmiFromInstanceEbsBlockDeviceList__runtime_type_checks.go",
+        "amifrominstance_AmiFromInstanceEbsBlockDeviceOutputReference.go",
+        "amifrominstance_AmiFromInstanceEbsBlockDeviceOutputReference__runtime_type_checks.go",
+        "amifrominstance_AmiFromInstanceEphemeralBlockDevice.go",
+        "amifrominstance_AmiFromInstanceEphemeralBlockDeviceList.go",
+        "amifrominstance_AmiFromInstanceEphemeralBlockDeviceList__runtime_type_checks.go",
+        "amifrominstance_AmiFromInstanceEphemeralBlockDeviceOutputReference.go",
+        "amifrominstance_AmiFromInstanceEphemeralBlockDeviceOutputReference__runtime_type_checks.go",
+        "amifrominstance_AmiFromInstanceTimeouts.go",
+        "amifrominstance_AmiFromInstanceTimeoutsOutputReference.go",
+        "amifrominstance_AmiFromInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "amifrominstance_AmiFromInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/amifrominstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/amifrominstance/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

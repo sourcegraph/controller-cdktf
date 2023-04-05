@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenetworkservicesedgecacheorigin",
+    srcs = [
+        "googlenetworkservicesedgecacheorigin.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOrigin.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginConfig.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginTimeout.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginTimeoutOutputReference.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginTimeoutOutputReference__runtime_type_checks.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginTimeouts.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginTimeoutsOutputReference.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOriginTimeoutsOutputReference__runtime_type_checks.go",
+        "googlenetworkservicesedgecacheorigin_GoogleNetworkServicesEdgeCacheOrigin__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesedgecacheorigin",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlenetworkservicesedgecacheorigin/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

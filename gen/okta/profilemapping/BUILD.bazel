@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "profilemapping",
+    srcs = [
+        "profilemapping.go",
+        "profilemapping_ProfileMapping.go",
+        "profilemapping_ProfileMappingConfig.go",
+        "profilemapping_ProfileMappingMappings.go",
+        "profilemapping_ProfileMappingMappingsList.go",
+        "profilemapping_ProfileMappingMappingsList__runtime_type_checks.go",
+        "profilemapping_ProfileMappingMappingsOutputReference.go",
+        "profilemapping_ProfileMappingMappingsOutputReference__runtime_type_checks.go",
+        "profilemapping_ProfileMapping__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/profilemapping",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/profilemapping/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

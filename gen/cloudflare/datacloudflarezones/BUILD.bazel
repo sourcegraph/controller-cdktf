@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datacloudflarezones",
+    srcs = [
+        "datacloudflarezones.go",
+        "datacloudflarezones_DataCloudflareZones.go",
+        "datacloudflarezones_DataCloudflareZonesConfig.go",
+        "datacloudflarezones_DataCloudflareZonesFilter.go",
+        "datacloudflarezones_DataCloudflareZonesFilterOutputReference.go",
+        "datacloudflarezones_DataCloudflareZonesFilterOutputReference__runtime_type_checks.go",
+        "datacloudflarezones_DataCloudflareZonesZones.go",
+        "datacloudflarezones_DataCloudflareZonesZonesList.go",
+        "datacloudflarezones_DataCloudflareZonesZonesList__runtime_type_checks.go",
+        "datacloudflarezones_DataCloudflareZonesZonesOutputReference.go",
+        "datacloudflarezones_DataCloudflareZonesZonesOutputReference__runtime_type_checks.go",
+        "datacloudflarezones_DataCloudflareZones__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflarezones",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/datacloudflarezones/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

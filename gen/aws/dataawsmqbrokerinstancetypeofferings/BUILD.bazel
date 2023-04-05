@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsmqbrokerinstancetypeofferings",
+    srcs = [
+        "dataawsmqbrokerinstancetypeofferings.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferings.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZones.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList__runtime_type_checks.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference__runtime_type_checks.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList__runtime_type_checks.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference__runtime_type_checks.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferingsConfig.go",
+        "dataawsmqbrokerinstancetypeofferings_DataAwsMqBrokerInstanceTypeOfferings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsmqbrokerinstancetypeofferings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsmqbrokerinstancetypeofferings/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

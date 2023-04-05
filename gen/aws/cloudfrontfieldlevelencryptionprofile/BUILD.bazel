@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudfrontfieldlevelencryptionprofile",
+    srcs = [
+        "cloudfrontfieldlevelencryptionprofile.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfile.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileConfig.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntities.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference__runtime_type_checks.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList__runtime_type_checks.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference__runtime_type_checks.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference__runtime_type_checks.go",
+        "cloudfrontfieldlevelencryptionprofile_CloudfrontFieldLevelEncryptionProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudfrontfieldlevelencryptionprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudfrontfieldlevelencryptionprofile/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

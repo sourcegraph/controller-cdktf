@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlevertexaimetadatastore",
+    srcs = [
+        "googlevertexaimetadatastore.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStore.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreConfig.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreEncryptionSpec.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreEncryptionSpecOutputReference.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreEncryptionSpecOutputReference__runtime_type_checks.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreState.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreStateList.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreStateList__runtime_type_checks.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreStateOutputReference.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreStateOutputReference__runtime_type_checks.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreTimeouts.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreTimeoutsOutputReference.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStoreTimeoutsOutputReference__runtime_type_checks.go",
+        "googlevertexaimetadatastore_GoogleVertexAiMetadataStore__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaimetadatastore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlevertexaimetadatastore/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

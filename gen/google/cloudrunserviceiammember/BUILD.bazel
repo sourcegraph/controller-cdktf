@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudrunserviceiammember",
+    srcs = [
+        "cloudrunserviceiammember.go",
+        "cloudrunserviceiammember_CloudRunServiceIamMember.go",
+        "cloudrunserviceiammember_CloudRunServiceIamMemberCondition.go",
+        "cloudrunserviceiammember_CloudRunServiceIamMemberConditionOutputReference.go",
+        "cloudrunserviceiammember_CloudRunServiceIamMemberConditionOutputReference__runtime_type_checks.go",
+        "cloudrunserviceiammember_CloudRunServiceIamMemberConfig.go",
+        "cloudrunserviceiammember_CloudRunServiceIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/cloudrunserviceiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/cloudrunserviceiammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

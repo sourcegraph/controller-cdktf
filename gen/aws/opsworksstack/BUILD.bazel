@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "opsworksstack",
+    srcs = [
+        "opsworksstack.go",
+        "opsworksstack_OpsworksStack.go",
+        "opsworksstack_OpsworksStackConfig.go",
+        "opsworksstack_OpsworksStackCustomCookbooksSource.go",
+        "opsworksstack_OpsworksStackCustomCookbooksSourceOutputReference.go",
+        "opsworksstack_OpsworksStackCustomCookbooksSourceOutputReference__runtime_type_checks.go",
+        "opsworksstack_OpsworksStackTimeouts.go",
+        "opsworksstack_OpsworksStackTimeoutsOutputReference.go",
+        "opsworksstack_OpsworksStackTimeoutsOutputReference__runtime_type_checks.go",
+        "opsworksstack_OpsworksStack__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/opsworksstack",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/opsworksstack/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

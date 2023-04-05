@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "securityhubproductsubscription",
+    srcs = [
+        "securityhubproductsubscription.go",
+        "securityhubproductsubscription_SecurityhubProductSubscription.go",
+        "securityhubproductsubscription_SecurityhubProductSubscriptionConfig.go",
+        "securityhubproductsubscription_SecurityhubProductSubscription__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/securityhubproductsubscription",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/securityhubproductsubscription/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

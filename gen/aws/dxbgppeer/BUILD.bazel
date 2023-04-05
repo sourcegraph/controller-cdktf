@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dxbgppeer",
+    srcs = [
+        "dxbgppeer.go",
+        "dxbgppeer_DxBgpPeer.go",
+        "dxbgppeer_DxBgpPeerConfig.go",
+        "dxbgppeer_DxBgpPeerTimeouts.go",
+        "dxbgppeer_DxBgpPeerTimeoutsOutputReference.go",
+        "dxbgppeer_DxBgpPeerTimeoutsOutputReference__runtime_type_checks.go",
+        "dxbgppeer_DxBgpPeer__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dxbgppeer",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dxbgppeer/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

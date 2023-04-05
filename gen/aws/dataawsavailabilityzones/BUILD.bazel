@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsavailabilityzones",
+    srcs = [
+        "dataawsavailabilityzones.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZones.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesConfig.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesFilter.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesFilterList.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesFilterList__runtime_type_checks.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesFilterOutputReference.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesFilterOutputReference__runtime_type_checks.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesTimeouts.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesTimeoutsOutputReference.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZonesTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsavailabilityzones_DataAwsAvailabilityZones__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsavailabilityzones",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsavailabilityzones/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

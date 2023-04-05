@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2clientvpnauthorizationrule",
+    srcs = [
+        "ec2clientvpnauthorizationrule.go",
+        "ec2clientvpnauthorizationrule_Ec2ClientVpnAuthorizationRule.go",
+        "ec2clientvpnauthorizationrule_Ec2ClientVpnAuthorizationRuleConfig.go",
+        "ec2clientvpnauthorizationrule_Ec2ClientVpnAuthorizationRuleTimeouts.go",
+        "ec2clientvpnauthorizationrule_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference.go",
+        "ec2clientvpnauthorizationrule_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "ec2clientvpnauthorizationrule_Ec2ClientVpnAuthorizationRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2clientvpnauthorizationrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2clientvpnauthorizationrule/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

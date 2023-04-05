@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "samlapp",
+    srcs = [
+        "samlapp.go",
+        "samlapp_SamlApp.go",
+        "samlapp_SamlAppAttributeStatements.go",
+        "samlapp_SamlAppAttributeStatementsList.go",
+        "samlapp_SamlAppAttributeStatementsList__runtime_type_checks.go",
+        "samlapp_SamlAppAttributeStatementsOutputReference.go",
+        "samlapp_SamlAppAttributeStatementsOutputReference__runtime_type_checks.go",
+        "samlapp_SamlAppConfig.go",
+        "samlapp_SamlAppKeys.go",
+        "samlapp_SamlAppKeysList.go",
+        "samlapp_SamlAppKeysList__runtime_type_checks.go",
+        "samlapp_SamlAppKeysOutputReference.go",
+        "samlapp_SamlAppKeysOutputReference__runtime_type_checks.go",
+        "samlapp_SamlAppTimeouts.go",
+        "samlapp_SamlAppTimeoutsOutputReference.go",
+        "samlapp_SamlAppTimeoutsOutputReference__runtime_type_checks.go",
+        "samlapp_SamlAppUsers.go",
+        "samlapp_SamlAppUsersList.go",
+        "samlapp_SamlAppUsersList__runtime_type_checks.go",
+        "samlapp_SamlAppUsersOutputReference.go",
+        "samlapp_SamlAppUsersOutputReference__runtime_type_checks.go",
+        "samlapp_SamlApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/samlapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/samlapp/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

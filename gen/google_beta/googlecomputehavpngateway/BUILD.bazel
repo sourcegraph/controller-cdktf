@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputehavpngateway",
+    srcs = [
+        "googlecomputehavpngateway.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGateway.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayConfig.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayTimeouts.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayTimeoutsOutputReference.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayVpnInterfaces.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayVpnInterfacesList.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayVpnInterfacesList__runtime_type_checks.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayVpnInterfacesOutputReference.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGatewayVpnInterfacesOutputReference__runtime_type_checks.go",
+        "googlecomputehavpngateway_GoogleComputeHaVpnGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputehavpngateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputehavpngateway/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

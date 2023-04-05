@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "endpointsservice",
+    srcs = [
+        "endpointsservice.go",
+        "endpointsservice_EndpointsService.go",
+        "endpointsservice_EndpointsServiceApis.go",
+        "endpointsservice_EndpointsServiceApisList.go",
+        "endpointsservice_EndpointsServiceApisList__runtime_type_checks.go",
+        "endpointsservice_EndpointsServiceApisMethods.go",
+        "endpointsservice_EndpointsServiceApisMethodsList.go",
+        "endpointsservice_EndpointsServiceApisMethodsList__runtime_type_checks.go",
+        "endpointsservice_EndpointsServiceApisMethodsOutputReference.go",
+        "endpointsservice_EndpointsServiceApisMethodsOutputReference__runtime_type_checks.go",
+        "endpointsservice_EndpointsServiceApisOutputReference.go",
+        "endpointsservice_EndpointsServiceApisOutputReference__runtime_type_checks.go",
+        "endpointsservice_EndpointsServiceConfig.go",
+        "endpointsservice_EndpointsServiceEndpoints.go",
+        "endpointsservice_EndpointsServiceEndpointsList.go",
+        "endpointsservice_EndpointsServiceEndpointsList__runtime_type_checks.go",
+        "endpointsservice_EndpointsServiceEndpointsOutputReference.go",
+        "endpointsservice_EndpointsServiceEndpointsOutputReference__runtime_type_checks.go",
+        "endpointsservice_EndpointsServiceTimeouts.go",
+        "endpointsservice_EndpointsServiceTimeoutsOutputReference.go",
+        "endpointsservice_EndpointsServiceTimeoutsOutputReference__runtime_type_checks.go",
+        "endpointsservice_EndpointsService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/endpointsservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/endpointsservice/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

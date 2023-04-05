@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebigqueryroutine",
+    srcs = [
+        "googlebigqueryroutine.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutine.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineArguments.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineArgumentsList.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineArgumentsList__runtime_type_checks.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineArgumentsOutputReference.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineArgumentsOutputReference__runtime_type_checks.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineConfig.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineTimeouts.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineTimeoutsOutputReference.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutineTimeoutsOutputReference__runtime_type_checks.go",
+        "googlebigqueryroutine_GoogleBigqueryRoutine__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryroutine",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlebigqueryroutine/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

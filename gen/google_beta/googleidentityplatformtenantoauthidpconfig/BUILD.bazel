@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleidentityplatformtenantoauthidpconfig",
+    srcs = [
+        "googleidentityplatformtenantoauthidpconfig.go",
+        "googleidentityplatformtenantoauthidpconfig_GoogleIdentityPlatformTenantOauthIdpConfig.go",
+        "googleidentityplatformtenantoauthidpconfig_GoogleIdentityPlatformTenantOauthIdpConfigConfig.go",
+        "googleidentityplatformtenantoauthidpconfig_GoogleIdentityPlatformTenantOauthIdpConfigTimeouts.go",
+        "googleidentityplatformtenantoauthidpconfig_GoogleIdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference.go",
+        "googleidentityplatformtenantoauthidpconfig_GoogleIdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "googleidentityplatformtenantoauthidpconfig_GoogleIdentityPlatformTenantOauthIdpConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformtenantoauthidpconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleidentityplatformtenantoauthidpconfig/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "eksfargateprofile",
+    srcs = [
+        "eksfargateprofile.go",
+        "eksfargateprofile_EksFargateProfile.go",
+        "eksfargateprofile_EksFargateProfileConfig.go",
+        "eksfargateprofile_EksFargateProfileSelector.go",
+        "eksfargateprofile_EksFargateProfileSelectorList.go",
+        "eksfargateprofile_EksFargateProfileSelectorList__runtime_type_checks.go",
+        "eksfargateprofile_EksFargateProfileSelectorOutputReference.go",
+        "eksfargateprofile_EksFargateProfileSelectorOutputReference__runtime_type_checks.go",
+        "eksfargateprofile_EksFargateProfileTimeouts.go",
+        "eksfargateprofile_EksFargateProfileTimeoutsOutputReference.go",
+        "eksfargateprofile_EksFargateProfileTimeoutsOutputReference__runtime_type_checks.go",
+        "eksfargateprofile_EksFargateProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/eksfargateprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/eksfargateprofile/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

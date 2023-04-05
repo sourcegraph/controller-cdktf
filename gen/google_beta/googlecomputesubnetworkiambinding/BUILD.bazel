@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputesubnetworkiambinding",
+    srcs = [
+        "googlecomputesubnetworkiambinding.go",
+        "googlecomputesubnetworkiambinding_GoogleComputeSubnetworkIamBinding.go",
+        "googlecomputesubnetworkiambinding_GoogleComputeSubnetworkIamBindingCondition.go",
+        "googlecomputesubnetworkiambinding_GoogleComputeSubnetworkIamBindingConditionOutputReference.go",
+        "googlecomputesubnetworkiambinding_GoogleComputeSubnetworkIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlecomputesubnetworkiambinding_GoogleComputeSubnetworkIamBindingConfig.go",
+        "googlecomputesubnetworkiambinding_GoogleComputeSubnetworkIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesubnetworkiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputesubnetworkiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

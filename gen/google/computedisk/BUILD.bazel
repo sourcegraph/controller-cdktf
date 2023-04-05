@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computedisk",
+    srcs = [
+        "computedisk.go",
+        "computedisk_ComputeDisk.go",
+        "computedisk_ComputeDiskConfig.go",
+        "computedisk_ComputeDiskDiskEncryptionKey.go",
+        "computedisk_ComputeDiskDiskEncryptionKeyOutputReference.go",
+        "computedisk_ComputeDiskDiskEncryptionKeyOutputReference__runtime_type_checks.go",
+        "computedisk_ComputeDiskSourceImageEncryptionKey.go",
+        "computedisk_ComputeDiskSourceImageEncryptionKeyOutputReference.go",
+        "computedisk_ComputeDiskSourceImageEncryptionKeyOutputReference__runtime_type_checks.go",
+        "computedisk_ComputeDiskSourceSnapshotEncryptionKey.go",
+        "computedisk_ComputeDiskSourceSnapshotEncryptionKeyOutputReference.go",
+        "computedisk_ComputeDiskSourceSnapshotEncryptionKeyOutputReference__runtime_type_checks.go",
+        "computedisk_ComputeDiskTimeouts.go",
+        "computedisk_ComputeDiskTimeoutsOutputReference.go",
+        "computedisk_ComputeDiskTimeoutsOutputReference__runtime_type_checks.go",
+        "computedisk_ComputeDisk__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computedisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computedisk/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

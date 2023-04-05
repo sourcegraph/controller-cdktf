@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledialogflowcxwebhook",
+    srcs = [
+        "googledialogflowcxwebhook.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhook.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookConfig.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookGenericWebService.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookGenericWebServiceOutputReference.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookGenericWebServiceOutputReference__runtime_type_checks.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookServiceDirectory.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookServiceDirectoryGenericWebService.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference__runtime_type_checks.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookServiceDirectoryOutputReference.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookServiceDirectoryOutputReference__runtime_type_checks.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookTimeouts.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookTimeoutsOutputReference.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhookTimeoutsOutputReference__runtime_type_checks.go",
+        "googledialogflowcxwebhook_GoogleDialogflowCxWebhook__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxwebhook",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledialogflowcxwebhook/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

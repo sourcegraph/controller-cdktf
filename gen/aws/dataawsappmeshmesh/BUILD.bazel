@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsappmeshmesh",
+    srcs = [
+        "dataawsappmeshmesh.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMesh.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshConfig.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpec.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecEgressFilter.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecEgressFilterList.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecEgressFilterList__runtime_type_checks.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecEgressFilterOutputReference.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecEgressFilterOutputReference__runtime_type_checks.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecList.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecList__runtime_type_checks.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecOutputReference.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMeshSpecOutputReference__runtime_type_checks.go",
+        "dataawsappmeshmesh_DataAwsAppmeshMesh__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsappmeshmesh",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsappmeshmesh/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

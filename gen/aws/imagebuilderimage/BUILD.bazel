@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "imagebuilderimage",
+    srcs = [
+        "imagebuilderimage.go",
+        "imagebuilderimage_ImagebuilderImage.go",
+        "imagebuilderimage_ImagebuilderImageConfig.go",
+        "imagebuilderimage_ImagebuilderImageImageTestsConfiguration.go",
+        "imagebuilderimage_ImagebuilderImageImageTestsConfigurationOutputReference.go",
+        "imagebuilderimage_ImagebuilderImageImageTestsConfigurationOutputReference__runtime_type_checks.go",
+        "imagebuilderimage_ImagebuilderImageOutputResources.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesAmis.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesAmisList.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesAmisList__runtime_type_checks.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesAmisOutputReference.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesAmisOutputReference__runtime_type_checks.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesList.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesList__runtime_type_checks.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesOutputReference.go",
+        "imagebuilderimage_ImagebuilderImageOutputResourcesOutputReference__runtime_type_checks.go",
+        "imagebuilderimage_ImagebuilderImageTimeouts.go",
+        "imagebuilderimage_ImagebuilderImageTimeoutsOutputReference.go",
+        "imagebuilderimage_ImagebuilderImageTimeoutsOutputReference__runtime_type_checks.go",
+        "imagebuilderimage_ImagebuilderImage__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/imagebuilderimage",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/imagebuilderimage/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

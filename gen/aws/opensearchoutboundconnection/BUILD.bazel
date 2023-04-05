@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "opensearchoutboundconnection",
+    srcs = [
+        "opensearchoutboundconnection.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnection.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionConfig.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionLocalDomainInfo.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionLocalDomainInfoOutputReference.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionLocalDomainInfoOutputReference__runtime_type_checks.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionRemoteDomainInfo.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionRemoteDomainInfoOutputReference.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionRemoteDomainInfoOutputReference__runtime_type_checks.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionTimeouts.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionTimeoutsOutputReference.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnectionTimeoutsOutputReference__runtime_type_checks.go",
+        "opensearchoutboundconnection_OpensearchOutboundConnection__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/opensearchoutboundconnection",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/opensearchoutboundconnection/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

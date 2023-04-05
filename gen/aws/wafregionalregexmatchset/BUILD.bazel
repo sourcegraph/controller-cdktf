@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalregexmatchset",
+    srcs = [
+        "wafregionalregexmatchset.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSet.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetConfig.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTuple.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleFieldToMatch.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleList.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleList__runtime_type_checks.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleOutputReference.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSetRegexMatchTupleOutputReference__runtime_type_checks.go",
+        "wafregionalregexmatchset_WafregionalRegexMatchSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalregexmatchset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalregexmatchset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

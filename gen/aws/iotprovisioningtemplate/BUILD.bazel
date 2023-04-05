@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iotprovisioningtemplate",
+    srcs = [
+        "iotprovisioningtemplate.go",
+        "iotprovisioningtemplate_IotProvisioningTemplate.go",
+        "iotprovisioningtemplate_IotProvisioningTemplateConfig.go",
+        "iotprovisioningtemplate_IotProvisioningTemplatePreProvisioningHook.go",
+        "iotprovisioningtemplate_IotProvisioningTemplatePreProvisioningHookOutputReference.go",
+        "iotprovisioningtemplate_IotProvisioningTemplatePreProvisioningHookOutputReference__runtime_type_checks.go",
+        "iotprovisioningtemplate_IotProvisioningTemplate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/iotprovisioningtemplate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/iotprovisioningtemplate/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

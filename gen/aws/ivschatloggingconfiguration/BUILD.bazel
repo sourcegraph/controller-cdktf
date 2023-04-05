@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ivschatloggingconfiguration",
+    srcs = [
+        "ivschatloggingconfiguration.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfiguration.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationConfig.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfiguration.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference__runtime_type_checks.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationFirehose.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference__runtime_type_checks.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationOutputReference.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationOutputReference__runtime_type_checks.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationS3.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference__runtime_type_checks.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationTimeouts.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationTimeoutsOutputReference.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfigurationTimeoutsOutputReference__runtime_type_checks.go",
+        "ivschatloggingconfiguration_IvschatLoggingConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ivschatloggingconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ivschatloggingconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

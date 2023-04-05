@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsidentitystoregroup",
+    srcs = [
+        "dataawsidentitystoregroup.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroup.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifier.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierExternalId.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference__runtime_type_checks.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference__runtime_type_checks.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference__runtime_type_checks.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupConfig.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupExternalIds.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupExternalIdsList.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupExternalIdsList__runtime_type_checks.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupExternalIdsOutputReference.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupExternalIdsOutputReference__runtime_type_checks.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupFilter.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupFilterOutputReference.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroupFilterOutputReference__runtime_type_checks.go",
+        "dataawsidentitystoregroup_DataAwsIdentitystoreGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsidentitystoregroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsidentitystoregroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iotthingtype",
+    srcs = [
+        "iotthingtype.go",
+        "iotthingtype_IotThingType.go",
+        "iotthingtype_IotThingTypeConfig.go",
+        "iotthingtype_IotThingTypeProperties.go",
+        "iotthingtype_IotThingTypePropertiesOutputReference.go",
+        "iotthingtype_IotThingTypePropertiesOutputReference__runtime_type_checks.go",
+        "iotthingtype_IotThingType__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/iotthingtype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/iotthingtype/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

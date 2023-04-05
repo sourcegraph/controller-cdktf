@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dnspolicy",
+    srcs = [
+        "dnspolicy.go",
+        "dnspolicy_DnsPolicy.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfig.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigOutputReference.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigOutputReference__runtime_type_checks.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigTargetNameServers.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigTargetNameServersList.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigTargetNameServersList__runtime_type_checks.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.go",
+        "dnspolicy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference__runtime_type_checks.go",
+        "dnspolicy_DnsPolicyConfig.go",
+        "dnspolicy_DnsPolicyNetworks.go",
+        "dnspolicy_DnsPolicyNetworksList.go",
+        "dnspolicy_DnsPolicyNetworksList__runtime_type_checks.go",
+        "dnspolicy_DnsPolicyNetworksOutputReference.go",
+        "dnspolicy_DnsPolicyNetworksOutputReference__runtime_type_checks.go",
+        "dnspolicy_DnsPolicyTimeouts.go",
+        "dnspolicy_DnsPolicyTimeoutsOutputReference.go",
+        "dnspolicy_DnsPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "dnspolicy_DnsPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dnspolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dnspolicy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

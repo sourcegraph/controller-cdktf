@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "amplifyapp",
+    srcs = [
+        "amplifyapp.go",
+        "amplifyapp_AmplifyApp.go",
+        "amplifyapp_AmplifyAppAutoBranchCreationConfig.go",
+        "amplifyapp_AmplifyAppAutoBranchCreationConfigOutputReference.go",
+        "amplifyapp_AmplifyAppAutoBranchCreationConfigOutputReference__runtime_type_checks.go",
+        "amplifyapp_AmplifyAppConfig.go",
+        "amplifyapp_AmplifyAppCustomRule.go",
+        "amplifyapp_AmplifyAppCustomRuleList.go",
+        "amplifyapp_AmplifyAppCustomRuleList__runtime_type_checks.go",
+        "amplifyapp_AmplifyAppCustomRuleOutputReference.go",
+        "amplifyapp_AmplifyAppCustomRuleOutputReference__runtime_type_checks.go",
+        "amplifyapp_AmplifyAppProductionBranch.go",
+        "amplifyapp_AmplifyAppProductionBranchList.go",
+        "amplifyapp_AmplifyAppProductionBranchList__runtime_type_checks.go",
+        "amplifyapp_AmplifyAppProductionBranchOutputReference.go",
+        "amplifyapp_AmplifyAppProductionBranchOutputReference__runtime_type_checks.go",
+        "amplifyapp_AmplifyApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/amplifyapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/amplifyapp/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

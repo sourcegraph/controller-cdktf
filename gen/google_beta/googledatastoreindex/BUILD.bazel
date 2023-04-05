@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledatastoreindex",
+    srcs = [
+        "googledatastoreindex.go",
+        "googledatastoreindex_GoogleDatastoreIndex.go",
+        "googledatastoreindex_GoogleDatastoreIndexConfig.go",
+        "googledatastoreindex_GoogleDatastoreIndexProperties.go",
+        "googledatastoreindex_GoogleDatastoreIndexPropertiesList.go",
+        "googledatastoreindex_GoogleDatastoreIndexPropertiesList__runtime_type_checks.go",
+        "googledatastoreindex_GoogleDatastoreIndexPropertiesOutputReference.go",
+        "googledatastoreindex_GoogleDatastoreIndexPropertiesOutputReference__runtime_type_checks.go",
+        "googledatastoreindex_GoogleDatastoreIndexTimeouts.go",
+        "googledatastoreindex_GoogleDatastoreIndexTimeoutsOutputReference.go",
+        "googledatastoreindex_GoogleDatastoreIndexTimeoutsOutputReference__runtime_type_checks.go",
+        "googledatastoreindex_GoogleDatastoreIndex__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatastoreindex",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledatastoreindex/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

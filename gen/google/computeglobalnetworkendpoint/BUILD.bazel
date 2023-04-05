@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeglobalnetworkendpoint",
+    srcs = [
+        "computeglobalnetworkendpoint.go",
+        "computeglobalnetworkendpoint_ComputeGlobalNetworkEndpoint.go",
+        "computeglobalnetworkendpoint_ComputeGlobalNetworkEndpointConfig.go",
+        "computeglobalnetworkendpoint_ComputeGlobalNetworkEndpointTimeouts.go",
+        "computeglobalnetworkendpoint_ComputeGlobalNetworkEndpointTimeoutsOutputReference.go",
+        "computeglobalnetworkendpoint_ComputeGlobalNetworkEndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "computeglobalnetworkendpoint_ComputeGlobalNetworkEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeglobalnetworkendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeglobalnetworkendpoint/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

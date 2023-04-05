@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "accessidentityprovider",
+    srcs = [
+        "accessidentityprovider.go",
+        "accessidentityprovider_AccessIdentityProvider.go",
+        "accessidentityprovider_AccessIdentityProviderConfig.go",
+        "accessidentityprovider_AccessIdentityProviderConfigA.go",
+        "accessidentityprovider_AccessIdentityProviderConfigAList.go",
+        "accessidentityprovider_AccessIdentityProviderConfigAList__runtime_type_checks.go",
+        "accessidentityprovider_AccessIdentityProviderConfigAOutputReference.go",
+        "accessidentityprovider_AccessIdentityProviderConfigAOutputReference__runtime_type_checks.go",
+        "accessidentityprovider_AccessIdentityProvider__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/accessidentityprovider",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/accessidentityprovider/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

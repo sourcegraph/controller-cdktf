@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2clientvpnendpoint",
+    srcs = [
+        "ec2clientvpnendpoint.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpoint.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointAuthenticationOptions.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointAuthenticationOptionsList.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointAuthenticationOptionsList__runtime_type_checks.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference__runtime_type_checks.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointClientConnectOptions.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointClientConnectOptionsOutputReference.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointClientConnectOptionsOutputReference__runtime_type_checks.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointClientLoginBannerOptions.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference__runtime_type_checks.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointConfig.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointConnectionLogOptions.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference__runtime_type_checks.go",
+        "ec2clientvpnendpoint_Ec2ClientVpnEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2clientvpnendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2clientvpnendpoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

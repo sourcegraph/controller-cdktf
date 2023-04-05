@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudfrontrealtimelogconfig",
+    srcs = [
+        "cloudfrontrealtimelogconfig.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfig.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigConfig.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigEndpoint.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference__runtime_type_checks.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigEndpointOutputReference.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfigEndpointOutputReference__runtime_type_checks.go",
+        "cloudfrontrealtimelogconfig_CloudfrontRealtimeLogConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudfrontrealtimelogconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudfrontrealtimelogconfig/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

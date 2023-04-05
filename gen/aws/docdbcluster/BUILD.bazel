@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "docdbcluster",
+    srcs = [
+        "docdbcluster.go",
+        "docdbcluster_DocdbCluster.go",
+        "docdbcluster_DocdbClusterConfig.go",
+        "docdbcluster_DocdbClusterTimeouts.go",
+        "docdbcluster_DocdbClusterTimeoutsOutputReference.go",
+        "docdbcluster_DocdbClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "docdbcluster_DocdbCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/docdbcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/docdbcluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

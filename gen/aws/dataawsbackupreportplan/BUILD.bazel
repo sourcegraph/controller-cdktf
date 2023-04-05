@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsbackupreportplan",
+    srcs = [
+        "dataawsbackupreportplan.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlan.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanConfig.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportDeliveryChannel.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportDeliveryChannelList.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportDeliveryChannelList__runtime_type_checks.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportDeliveryChannelOutputReference.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportDeliveryChannelOutputReference__runtime_type_checks.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportSetting.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportSettingList.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportSettingList__runtime_type_checks.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportSettingOutputReference.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlanReportSettingOutputReference__runtime_type_checks.go",
+        "dataawsbackupreportplan_DataAwsBackupReportPlan__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsbackupreportplan",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsbackupreportplan/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

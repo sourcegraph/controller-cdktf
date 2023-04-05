@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataplexlake",
+    srcs = [
+        "dataplexlake.go",
+        "dataplexlake_DataplexLake.go",
+        "dataplexlake_DataplexLakeAssetStatus.go",
+        "dataplexlake_DataplexLakeAssetStatusList.go",
+        "dataplexlake_DataplexLakeAssetStatusList__runtime_type_checks.go",
+        "dataplexlake_DataplexLakeAssetStatusOutputReference.go",
+        "dataplexlake_DataplexLakeAssetStatusOutputReference__runtime_type_checks.go",
+        "dataplexlake_DataplexLakeConfig.go",
+        "dataplexlake_DataplexLakeMetastore.go",
+        "dataplexlake_DataplexLakeMetastoreOutputReference.go",
+        "dataplexlake_DataplexLakeMetastoreOutputReference__runtime_type_checks.go",
+        "dataplexlake_DataplexLakeMetastoreStatus.go",
+        "dataplexlake_DataplexLakeMetastoreStatusList.go",
+        "dataplexlake_DataplexLakeMetastoreStatusList__runtime_type_checks.go",
+        "dataplexlake_DataplexLakeMetastoreStatusOutputReference.go",
+        "dataplexlake_DataplexLakeMetastoreStatusOutputReference__runtime_type_checks.go",
+        "dataplexlake_DataplexLakeTimeouts.go",
+        "dataplexlake_DataplexLakeTimeoutsOutputReference.go",
+        "dataplexlake_DataplexLakeTimeoutsOutputReference__runtime_type_checks.go",
+        "dataplexlake_DataplexLake__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dataplexlake",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dataplexlake/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

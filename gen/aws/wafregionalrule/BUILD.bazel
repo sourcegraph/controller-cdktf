@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalrule",
+    srcs = [
+        "wafregionalrule.go",
+        "wafregionalrule_WafregionalRule.go",
+        "wafregionalrule_WafregionalRuleConfig.go",
+        "wafregionalrule_WafregionalRulePredicate.go",
+        "wafregionalrule_WafregionalRulePredicateList.go",
+        "wafregionalrule_WafregionalRulePredicateList__runtime_type_checks.go",
+        "wafregionalrule_WafregionalRulePredicateOutputReference.go",
+        "wafregionalrule_WafregionalRulePredicateOutputReference__runtime_type_checks.go",
+        "wafregionalrule_WafregionalRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalrule/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

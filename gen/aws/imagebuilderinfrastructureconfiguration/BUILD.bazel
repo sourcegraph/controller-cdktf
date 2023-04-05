@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "imagebuilderinfrastructureconfiguration",
+    srcs = [
+        "imagebuilderinfrastructureconfiguration.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfiguration.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationConfig.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationInstanceMetadataOptions.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference__runtime_type_checks.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationLogging.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationLoggingOutputReference.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationLoggingOutputReference__runtime_type_checks.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationLoggingS3Logs.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference__runtime_type_checks.go",
+        "imagebuilderinfrastructureconfiguration_ImagebuilderInfrastructureConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/imagebuilderinfrastructureconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/imagebuilderinfrastructureconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

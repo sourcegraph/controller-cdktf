@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "teamsrule",
+    srcs = [
+        "teamsrule.go",
+        "teamsrule_TeamsRule.go",
+        "teamsrule_TeamsRuleConfig.go",
+        "teamsrule_TeamsRuleRuleSettings.go",
+        "teamsrule_TeamsRuleRuleSettingsBisoAdminControls.go",
+        "teamsrule_TeamsRuleRuleSettingsBisoAdminControlsOutputReference.go",
+        "teamsrule_TeamsRuleRuleSettingsBisoAdminControlsOutputReference__runtime_type_checks.go",
+        "teamsrule_TeamsRuleRuleSettingsCheckSession.go",
+        "teamsrule_TeamsRuleRuleSettingsCheckSessionOutputReference.go",
+        "teamsrule_TeamsRuleRuleSettingsCheckSessionOutputReference__runtime_type_checks.go",
+        "teamsrule_TeamsRuleRuleSettingsL4Override.go",
+        "teamsrule_TeamsRuleRuleSettingsL4OverrideOutputReference.go",
+        "teamsrule_TeamsRuleRuleSettingsL4OverrideOutputReference__runtime_type_checks.go",
+        "teamsrule_TeamsRuleRuleSettingsOutputReference.go",
+        "teamsrule_TeamsRuleRuleSettingsOutputReference__runtime_type_checks.go",
+        "teamsrule_TeamsRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/teamsrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/jsii",
+        "//gen/cloudflare/teamsrule/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

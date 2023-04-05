@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudrunserviceiambinding",
+    srcs = [
+        "cloudrunserviceiambinding.go",
+        "cloudrunserviceiambinding_CloudRunServiceIamBinding.go",
+        "cloudrunserviceiambinding_CloudRunServiceIamBindingCondition.go",
+        "cloudrunserviceiambinding_CloudRunServiceIamBindingConditionOutputReference.go",
+        "cloudrunserviceiambinding_CloudRunServiceIamBindingConditionOutputReference__runtime_type_checks.go",
+        "cloudrunserviceiambinding_CloudRunServiceIamBindingConfig.go",
+        "cloudrunserviceiambinding_CloudRunServiceIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/cloudrunserviceiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/cloudrunserviceiambinding/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

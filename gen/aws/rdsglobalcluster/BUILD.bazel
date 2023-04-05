@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rdsglobalcluster",
+    srcs = [
+        "rdsglobalcluster.go",
+        "rdsglobalcluster_RdsGlobalCluster.go",
+        "rdsglobalcluster_RdsGlobalClusterConfig.go",
+        "rdsglobalcluster_RdsGlobalClusterGlobalClusterMembers.go",
+        "rdsglobalcluster_RdsGlobalClusterGlobalClusterMembersList.go",
+        "rdsglobalcluster_RdsGlobalClusterGlobalClusterMembersList__runtime_type_checks.go",
+        "rdsglobalcluster_RdsGlobalClusterGlobalClusterMembersOutputReference.go",
+        "rdsglobalcluster_RdsGlobalClusterGlobalClusterMembersOutputReference__runtime_type_checks.go",
+        "rdsglobalcluster_RdsGlobalClusterTimeouts.go",
+        "rdsglobalcluster_RdsGlobalClusterTimeoutsOutputReference.go",
+        "rdsglobalcluster_RdsGlobalClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "rdsglobalcluster_RdsGlobalCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/rdsglobalcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/rdsglobalcluster/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

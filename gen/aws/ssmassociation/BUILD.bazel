@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ssmassociation",
+    srcs = [
+        "ssmassociation.go",
+        "ssmassociation_SsmAssociation.go",
+        "ssmassociation_SsmAssociationConfig.go",
+        "ssmassociation_SsmAssociationOutputLocation.go",
+        "ssmassociation_SsmAssociationOutputLocationOutputReference.go",
+        "ssmassociation_SsmAssociationOutputLocationOutputReference__runtime_type_checks.go",
+        "ssmassociation_SsmAssociationTargets.go",
+        "ssmassociation_SsmAssociationTargetsList.go",
+        "ssmassociation_SsmAssociationTargetsList__runtime_type_checks.go",
+        "ssmassociation_SsmAssociationTargetsOutputReference.go",
+        "ssmassociation_SsmAssociationTargetsOutputReference__runtime_type_checks.go",
+        "ssmassociation_SsmAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ssmassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/ssmassociation/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

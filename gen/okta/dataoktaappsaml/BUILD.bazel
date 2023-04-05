@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktaappsaml",
+    srcs = [
+        "dataoktaappsaml.go",
+        "dataoktaappsaml_DataOktaAppSaml.go",
+        "dataoktaappsaml_DataOktaAppSamlAttributeStatements.go",
+        "dataoktaappsaml_DataOktaAppSamlAttributeStatementsList.go",
+        "dataoktaappsaml_DataOktaAppSamlAttributeStatementsList__runtime_type_checks.go",
+        "dataoktaappsaml_DataOktaAppSamlAttributeStatementsOutputReference.go",
+        "dataoktaappsaml_DataOktaAppSamlAttributeStatementsOutputReference__runtime_type_checks.go",
+        "dataoktaappsaml_DataOktaAppSamlConfig.go",
+        "dataoktaappsaml_DataOktaAppSaml__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaappsaml",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktaappsaml/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

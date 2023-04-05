@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sagemakerappimageconfig",
+    srcs = [
+        "sagemakerappimageconfig.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfig.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigConfig.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfig.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference__runtime_type_checks.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference__runtime_type_checks.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference__runtime_type_checks.go",
+        "sagemakerappimageconfig_SagemakerAppImageConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerappimageconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sagemakerappimageconfig/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

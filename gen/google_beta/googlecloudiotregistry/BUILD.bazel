@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudiotregistry",
+    srcs = [
+        "googlecloudiotregistry.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistry.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryConfig.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryCredentials.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryCredentialsList.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryCredentialsList__runtime_type_checks.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryCredentialsOutputReference.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryCredentialsOutputReference__runtime_type_checks.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryEventNotificationConfigs.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryEventNotificationConfigsList.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryEventNotificationConfigsList__runtime_type_checks.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryEventNotificationConfigsOutputReference.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryEventNotificationConfigsOutputReference__runtime_type_checks.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryTimeouts.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryTimeoutsOutputReference.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistryTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecloudiotregistry_GoogleCloudiotRegistry__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudiotregistry",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudiotregistry/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleservicedirectoryendpoint",
+    srcs = [
+        "googleservicedirectoryendpoint.go",
+        "googleservicedirectoryendpoint_GoogleServiceDirectoryEndpoint.go",
+        "googleservicedirectoryendpoint_GoogleServiceDirectoryEndpointConfig.go",
+        "googleservicedirectoryendpoint_GoogleServiceDirectoryEndpointTimeouts.go",
+        "googleservicedirectoryendpoint_GoogleServiceDirectoryEndpointTimeoutsOutputReference.go",
+        "googleservicedirectoryendpoint_GoogleServiceDirectoryEndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "googleservicedirectoryendpoint_GoogleServiceDirectoryEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleservicedirectoryendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleservicedirectoryendpoint/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

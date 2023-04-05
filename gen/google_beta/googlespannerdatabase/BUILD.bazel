@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlespannerdatabase",
+    srcs = [
+        "googlespannerdatabase.go",
+        "googlespannerdatabase_GoogleSpannerDatabase.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseConfig.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseEncryptionConfig.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseEncryptionConfigOutputReference.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseEncryptionConfigOutputReference__runtime_type_checks.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseTimeouts.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseTimeoutsOutputReference.go",
+        "googlespannerdatabase_GoogleSpannerDatabaseTimeoutsOutputReference__runtime_type_checks.go",
+        "googlespannerdatabase_GoogleSpannerDatabase__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerdatabase",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlespannerdatabase/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

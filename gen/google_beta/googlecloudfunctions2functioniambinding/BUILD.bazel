@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudfunctions2functioniambinding",
+    srcs = [
+        "googlecloudfunctions2functioniambinding.go",
+        "googlecloudfunctions2functioniambinding_GoogleCloudfunctions2FunctionIamBinding.go",
+        "googlecloudfunctions2functioniambinding_GoogleCloudfunctions2FunctionIamBindingCondition.go",
+        "googlecloudfunctions2functioniambinding_GoogleCloudfunctions2FunctionIamBindingConditionOutputReference.go",
+        "googlecloudfunctions2functioniambinding_GoogleCloudfunctions2FunctionIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlecloudfunctions2functioniambinding_GoogleCloudfunctions2FunctionIamBindingConfig.go",
+        "googlecloudfunctions2functioniambinding_GoogleCloudfunctions2FunctionIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctions2functioniambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudfunctions2functioniambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

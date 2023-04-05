@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlevertexaifeaturestoreentitytype",
+    srcs = [
+        "googlevertexaifeaturestoreentitytype.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytype.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeConfig.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfig.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference__runtime_type_checks.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference__runtime_type_checks.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeTimeouts.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeTimeoutsOutputReference.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytypeTimeoutsOutputReference__runtime_type_checks.go",
+        "googlevertexaifeaturestoreentitytype_GoogleVertexAiFeaturestoreEntitytype__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestoreentitytype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlevertexaifeaturestoreentitytype/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

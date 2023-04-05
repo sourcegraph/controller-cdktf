@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "organizationaccessapprovalsettings",
+    srcs = [
+        "organizationaccessapprovalsettings.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettings.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsConfig.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsEnrolledServices.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsEnrolledServicesList.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsEnrolledServicesList__runtime_type_checks.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsEnrolledServicesOutputReference.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsEnrolledServicesOutputReference__runtime_type_checks.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsTimeouts.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsTimeoutsOutputReference.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettingsTimeoutsOutputReference__runtime_type_checks.go",
+        "organizationaccessapprovalsettings_OrganizationAccessApprovalSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/organizationaccessapprovalsettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/organizationaccessapprovalsettings/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

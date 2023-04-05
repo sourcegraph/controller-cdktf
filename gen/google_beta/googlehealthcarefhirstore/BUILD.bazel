@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlehealthcarefhirstore",
+    srcs = [
+        "googlehealthcarefhirstore.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStore.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreConfig.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreNotificationConfig.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreNotificationConfigOutputReference.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreNotificationConfigOutputReference__runtime_type_checks.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigs.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestination.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference__runtime_type_checks.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference__runtime_type_checks.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsList.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsList__runtime_type_checks.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsOutputReference.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreStreamConfigsOutputReference__runtime_type_checks.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreTimeouts.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreTimeoutsOutputReference.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStoreTimeoutsOutputReference__runtime_type_checks.go",
+        "googlehealthcarefhirstore_GoogleHealthcareFhirStore__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlehealthcarefhirstore/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

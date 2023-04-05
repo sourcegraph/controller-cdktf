@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codebuildwebhook",
+    srcs = [
+        "codebuildwebhook.go",
+        "codebuildwebhook_CodebuildWebhook.go",
+        "codebuildwebhook_CodebuildWebhookConfig.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroup.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupFilter.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupFilterList.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupFilterList__runtime_type_checks.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupFilterOutputReference.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupFilterOutputReference__runtime_type_checks.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupList.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupList__runtime_type_checks.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupOutputReference.go",
+        "codebuildwebhook_CodebuildWebhookFilterGroupOutputReference__runtime_type_checks.go",
+        "codebuildwebhook_CodebuildWebhook__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codebuildwebhook",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codebuildwebhook/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

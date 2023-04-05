@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "internetgateway",
+    srcs = [
+        "internetgateway.go",
+        "internetgateway_InternetGateway.go",
+        "internetgateway_InternetGatewayConfig.go",
+        "internetgateway_InternetGatewayTimeouts.go",
+        "internetgateway_InternetGatewayTimeoutsOutputReference.go",
+        "internetgateway_InternetGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "internetgateway_InternetGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/internetgateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/internetgateway/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

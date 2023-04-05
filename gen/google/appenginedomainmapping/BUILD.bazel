@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appenginedomainmapping",
+    srcs = [
+        "appenginedomainmapping.go",
+        "appenginedomainmapping_AppEngineDomainMapping.go",
+        "appenginedomainmapping_AppEngineDomainMappingConfig.go",
+        "appenginedomainmapping_AppEngineDomainMappingResourceRecords.go",
+        "appenginedomainmapping_AppEngineDomainMappingResourceRecordsList.go",
+        "appenginedomainmapping_AppEngineDomainMappingResourceRecordsList__runtime_type_checks.go",
+        "appenginedomainmapping_AppEngineDomainMappingResourceRecordsOutputReference.go",
+        "appenginedomainmapping_AppEngineDomainMappingResourceRecordsOutputReference__runtime_type_checks.go",
+        "appenginedomainmapping_AppEngineDomainMappingSslSettings.go",
+        "appenginedomainmapping_AppEngineDomainMappingSslSettingsOutputReference.go",
+        "appenginedomainmapping_AppEngineDomainMappingSslSettingsOutputReference__runtime_type_checks.go",
+        "appenginedomainmapping_AppEngineDomainMappingTimeouts.go",
+        "appenginedomainmapping_AppEngineDomainMappingTimeoutsOutputReference.go",
+        "appenginedomainmapping_AppEngineDomainMappingTimeoutsOutputReference__runtime_type_checks.go",
+        "appenginedomainmapping_AppEngineDomainMapping__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/appenginedomainmapping",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/appenginedomainmapping/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

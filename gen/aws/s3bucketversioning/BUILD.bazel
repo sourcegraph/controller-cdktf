@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketversioning",
+    srcs = [
+        "s3bucketversioning.go",
+        "s3bucketversioning_S3BucketVersioningA.go",
+        "s3bucketversioning_S3BucketVersioningAConfig.go",
+        "s3bucketversioning_S3BucketVersioningA__runtime_type_checks.go",
+        "s3bucketversioning_S3BucketVersioningVersioningConfiguration.go",
+        "s3bucketversioning_S3BucketVersioningVersioningConfigurationOutputReference.go",
+        "s3bucketversioning_S3BucketVersioningVersioningConfigurationOutputReference__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketversioning",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketversioning/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

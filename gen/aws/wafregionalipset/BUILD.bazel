@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalipset",
+    srcs = [
+        "wafregionalipset.go",
+        "wafregionalipset_WafregionalIpset.go",
+        "wafregionalipset_WafregionalIpsetConfig.go",
+        "wafregionalipset_WafregionalIpsetIpSetDescriptor.go",
+        "wafregionalipset_WafregionalIpsetIpSetDescriptorList.go",
+        "wafregionalipset_WafregionalIpsetIpSetDescriptorList__runtime_type_checks.go",
+        "wafregionalipset_WafregionalIpsetIpSetDescriptorOutputReference.go",
+        "wafregionalipset_WafregionalIpsetIpSetDescriptorOutputReference__runtime_type_checks.go",
+        "wafregionalipset_WafregionalIpset__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalipset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalipset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

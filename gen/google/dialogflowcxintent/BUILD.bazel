@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowcxintent",
+    srcs = [
+        "dialogflowcxintent.go",
+        "dialogflowcxintent_DialogflowCxIntent.go",
+        "dialogflowcxintent_DialogflowCxIntentConfig.go",
+        "dialogflowcxintent_DialogflowCxIntentParameters.go",
+        "dialogflowcxintent_DialogflowCxIntentParametersList.go",
+        "dialogflowcxintent_DialogflowCxIntentParametersList__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntentParametersOutputReference.go",
+        "dialogflowcxintent_DialogflowCxIntentParametersOutputReference__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntentTimeouts.go",
+        "dialogflowcxintent_DialogflowCxIntentTimeoutsOutputReference.go",
+        "dialogflowcxintent_DialogflowCxIntentTimeoutsOutputReference__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrases.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesList.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesList__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesOutputReference.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesOutputReference__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesParts.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesPartsList.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesPartsList__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesPartsOutputReference.go",
+        "dialogflowcxintent_DialogflowCxIntentTrainingPhrasesPartsOutputReference__runtime_type_checks.go",
+        "dialogflowcxintent_DialogflowCxIntent__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxintent",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowcxintent/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

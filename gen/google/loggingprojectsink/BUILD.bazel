@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "loggingprojectsink",
+    srcs = [
+        "loggingprojectsink.go",
+        "loggingprojectsink_LoggingProjectSink.go",
+        "loggingprojectsink_LoggingProjectSinkBigqueryOptions.go",
+        "loggingprojectsink_LoggingProjectSinkBigqueryOptionsOutputReference.go",
+        "loggingprojectsink_LoggingProjectSinkBigqueryOptionsOutputReference__runtime_type_checks.go",
+        "loggingprojectsink_LoggingProjectSinkConfig.go",
+        "loggingprojectsink_LoggingProjectSinkExclusions.go",
+        "loggingprojectsink_LoggingProjectSinkExclusionsList.go",
+        "loggingprojectsink_LoggingProjectSinkExclusionsList__runtime_type_checks.go",
+        "loggingprojectsink_LoggingProjectSinkExclusionsOutputReference.go",
+        "loggingprojectsink_LoggingProjectSinkExclusionsOutputReference__runtime_type_checks.go",
+        "loggingprojectsink_LoggingProjectSink__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/loggingprojectsink",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/loggingprojectsink/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

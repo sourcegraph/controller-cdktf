@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ecrregistryscanningconfiguration",
+    srcs = [
+        "ecrregistryscanningconfiguration.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfiguration.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationConfig.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRule.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleList.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleList__runtime_type_checks.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleOutputReference.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleOutputReference__runtime_type_checks.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleRepositoryFilter.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleRepositoryFilterList.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleRepositoryFilterList__runtime_type_checks.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference__runtime_type_checks.go",
+        "ecrregistryscanningconfiguration_EcrRegistryScanningConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ecrregistryscanningconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ecrregistryscanningconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

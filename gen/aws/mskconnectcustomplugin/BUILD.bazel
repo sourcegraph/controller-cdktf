@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "mskconnectcustomplugin",
+    srcs = [
+        "mskconnectcustomplugin.go",
+        "mskconnectcustomplugin_MskconnectCustomPlugin.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginConfig.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginLocation.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginLocationOutputReference.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginLocationOutputReference__runtime_type_checks.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginLocationS3.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginLocationS3OutputReference.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginLocationS3OutputReference__runtime_type_checks.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginTimeouts.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginTimeoutsOutputReference.go",
+        "mskconnectcustomplugin_MskconnectCustomPluginTimeoutsOutputReference__runtime_type_checks.go",
+        "mskconnectcustomplugin_MskconnectCustomPlugin__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/mskconnectcustomplugin",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/mskconnectcustomplugin/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

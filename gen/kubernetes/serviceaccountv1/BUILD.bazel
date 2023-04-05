@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "serviceaccountv1",
+    srcs = [
+        "serviceaccountv1.go",
+        "serviceaccountv1_ServiceAccountV1.go",
+        "serviceaccountv1_ServiceAccountV1Config.go",
+        "serviceaccountv1_ServiceAccountV1ImagePullSecret.go",
+        "serviceaccountv1_ServiceAccountV1ImagePullSecretList.go",
+        "serviceaccountv1_ServiceAccountV1ImagePullSecretList__runtime_type_checks.go",
+        "serviceaccountv1_ServiceAccountV1ImagePullSecretOutputReference.go",
+        "serviceaccountv1_ServiceAccountV1ImagePullSecretOutputReference__runtime_type_checks.go",
+        "serviceaccountv1_ServiceAccountV1Metadata.go",
+        "serviceaccountv1_ServiceAccountV1MetadataOutputReference.go",
+        "serviceaccountv1_ServiceAccountV1MetadataOutputReference__runtime_type_checks.go",
+        "serviceaccountv1_ServiceAccountV1Secret.go",
+        "serviceaccountv1_ServiceAccountV1SecretList.go",
+        "serviceaccountv1_ServiceAccountV1SecretList__runtime_type_checks.go",
+        "serviceaccountv1_ServiceAccountV1SecretOutputReference.go",
+        "serviceaccountv1_ServiceAccountV1SecretOutputReference__runtime_type_checks.go",
+        "serviceaccountv1_ServiceAccountV1Timeouts.go",
+        "serviceaccountv1_ServiceAccountV1TimeoutsOutputReference.go",
+        "serviceaccountv1_ServiceAccountV1TimeoutsOutputReference__runtime_type_checks.go",
+        "serviceaccountv1_ServiceAccountV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/serviceaccountv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/serviceaccountv1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

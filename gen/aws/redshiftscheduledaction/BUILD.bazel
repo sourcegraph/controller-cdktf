@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "redshiftscheduledaction",
+    srcs = [
+        "redshiftscheduledaction.go",
+        "redshiftscheduledaction_RedshiftScheduledAction.go",
+        "redshiftscheduledaction_RedshiftScheduledActionConfig.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetAction.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionOutputReference.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionOutputReference__runtime_type_checks.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionPauseCluster.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionPauseClusterOutputReference.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionPauseClusterOutputReference__runtime_type_checks.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionResizeCluster.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionResizeClusterOutputReference.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionResizeClusterOutputReference__runtime_type_checks.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionResumeCluster.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionResumeClusterOutputReference.go",
+        "redshiftscheduledaction_RedshiftScheduledActionTargetActionResumeClusterOutputReference__runtime_type_checks.go",
+        "redshiftscheduledaction_RedshiftScheduledAction__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/redshiftscheduledaction",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/redshiftscheduledaction/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

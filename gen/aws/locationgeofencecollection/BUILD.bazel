@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "locationgeofencecollection",
+    srcs = [
+        "locationgeofencecollection.go",
+        "locationgeofencecollection_LocationGeofenceCollection.go",
+        "locationgeofencecollection_LocationGeofenceCollectionConfig.go",
+        "locationgeofencecollection_LocationGeofenceCollectionTimeouts.go",
+        "locationgeofencecollection_LocationGeofenceCollectionTimeoutsOutputReference.go",
+        "locationgeofencecollection_LocationGeofenceCollectionTimeoutsOutputReference__runtime_type_checks.go",
+        "locationgeofencecollection_LocationGeofenceCollection__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/locationgeofencecollection",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/locationgeofencecollection/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

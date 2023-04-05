@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlehealthcarehl7v2store",
+    srcs = [
+        "googlehealthcarehl7v2store.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2Store.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreConfig.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfig.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigOutputReference.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigOutputReference__runtime_type_checks.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigs.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigsList.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigsList__runtime_type_checks.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference__runtime_type_checks.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreParserConfig.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreParserConfigOutputReference.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreParserConfigOutputReference__runtime_type_checks.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreTimeouts.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreTimeoutsOutputReference.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2StoreTimeoutsOutputReference__runtime_type_checks.go",
+        "googlehealthcarehl7v2store_GoogleHealthcareHl7V2Store__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarehl7v2store",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlehealthcarehl7v2store/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dynamodbglobaltable",
+    srcs = [
+        "dynamodbglobaltable.go",
+        "dynamodbglobaltable_DynamodbGlobalTable.go",
+        "dynamodbglobaltable_DynamodbGlobalTableConfig.go",
+        "dynamodbglobaltable_DynamodbGlobalTableReplica.go",
+        "dynamodbglobaltable_DynamodbGlobalTableReplicaList.go",
+        "dynamodbglobaltable_DynamodbGlobalTableReplicaList__runtime_type_checks.go",
+        "dynamodbglobaltable_DynamodbGlobalTableReplicaOutputReference.go",
+        "dynamodbglobaltable_DynamodbGlobalTableReplicaOutputReference__runtime_type_checks.go",
+        "dynamodbglobaltable_DynamodbGlobalTableTimeouts.go",
+        "dynamodbglobaltable_DynamodbGlobalTableTimeoutsOutputReference.go",
+        "dynamodbglobaltable_DynamodbGlobalTableTimeoutsOutputReference__runtime_type_checks.go",
+        "dynamodbglobaltable_DynamodbGlobalTable__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dynamodbglobaltable",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dynamodbglobaltable/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

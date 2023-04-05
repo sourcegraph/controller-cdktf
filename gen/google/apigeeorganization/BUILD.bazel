@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigeeorganization",
+    srcs = [
+        "apigeeorganization.go",
+        "apigeeorganization_ApigeeOrganization.go",
+        "apigeeorganization_ApigeeOrganizationConfig.go",
+        "apigeeorganization_ApigeeOrganizationProperties.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesOutputReference.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesOutputReference__runtime_type_checks.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesProperty.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesPropertyList.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesPropertyList__runtime_type_checks.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesPropertyOutputReference.go",
+        "apigeeorganization_ApigeeOrganizationPropertiesPropertyOutputReference__runtime_type_checks.go",
+        "apigeeorganization_ApigeeOrganizationTimeouts.go",
+        "apigeeorganization_ApigeeOrganizationTimeoutsOutputReference.go",
+        "apigeeorganization_ApigeeOrganizationTimeoutsOutputReference__runtime_type_checks.go",
+        "apigeeorganization_ApigeeOrganization__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/apigeeorganization",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/apigeeorganization/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudsearchdomainserviceaccesspolicy",
+    srcs = [
+        "cloudsearchdomainserviceaccesspolicy.go",
+        "cloudsearchdomainserviceaccesspolicy_CloudsearchDomainServiceAccessPolicy.go",
+        "cloudsearchdomainserviceaccesspolicy_CloudsearchDomainServiceAccessPolicyConfig.go",
+        "cloudsearchdomainserviceaccesspolicy_CloudsearchDomainServiceAccessPolicyTimeouts.go",
+        "cloudsearchdomainserviceaccesspolicy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference.go",
+        "cloudsearchdomainserviceaccesspolicy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudsearchdomainserviceaccesspolicy_CloudsearchDomainServiceAccessPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudsearchdomainserviceaccesspolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudsearchdomainserviceaccesspolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

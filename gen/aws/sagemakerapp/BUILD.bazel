@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sagemakerapp",
+    srcs = [
+        "sagemakerapp.go",
+        "sagemakerapp_SagemakerApp.go",
+        "sagemakerapp_SagemakerAppConfig.go",
+        "sagemakerapp_SagemakerAppResourceSpec.go",
+        "sagemakerapp_SagemakerAppResourceSpecOutputReference.go",
+        "sagemakerapp_SagemakerAppResourceSpecOutputReference__runtime_type_checks.go",
+        "sagemakerapp_SagemakerApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sagemakerapp/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

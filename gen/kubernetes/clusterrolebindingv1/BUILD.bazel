@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "clusterrolebindingv1",
+    srcs = [
+        "clusterrolebindingv1.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1Config.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1Metadata.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1MetadataOutputReference.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1MetadataOutputReference__runtime_type_checks.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1RoleRef.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1RoleRefOutputReference.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1RoleRefOutputReference__runtime_type_checks.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1Subject.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1SubjectList.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1SubjectList__runtime_type_checks.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1SubjectOutputReference.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1SubjectOutputReference__runtime_type_checks.go",
+        "clusterrolebindingv1_ClusterRoleBindingV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/clusterrolebindingv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/clusterrolebindingv1/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

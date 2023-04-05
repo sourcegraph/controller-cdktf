@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "emrmanagedscalingpolicy",
+    srcs = [
+        "emrmanagedscalingpolicy.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicy.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicyComputeLimits.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicyComputeLimitsList.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicyComputeLimitsList__runtime_type_checks.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicyComputeLimitsOutputReference.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicyComputeLimitsOutputReference__runtime_type_checks.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicyConfig.go",
+        "emrmanagedscalingpolicy_EmrManagedScalingPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/emrmanagedscalingpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/emrmanagedscalingpolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

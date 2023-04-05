@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsappconfigenvironment",
+    srcs = [
+        "dataawsappconfigenvironment.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironment.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironmentConfig.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironmentMonitor.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironmentMonitorList.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironmentMonitorList__runtime_type_checks.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironmentMonitorOutputReference.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironmentMonitorOutputReference__runtime_type_checks.go",
+        "dataawsappconfigenvironment_DataAwsAppconfigEnvironment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsappconfigenvironment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsappconfigenvironment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

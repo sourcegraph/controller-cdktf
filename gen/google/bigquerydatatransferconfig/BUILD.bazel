@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "bigquerydatatransferconfig",
+    srcs = [
+        "bigquerydatatransferconfig.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfig.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigConfig.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigEmailPreferences.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigEmailPreferencesOutputReference.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigEmailPreferencesOutputReference__runtime_type_checks.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigScheduleOptions.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigScheduleOptionsOutputReference.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigScheduleOptionsOutputReference__runtime_type_checks.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigSensitiveParams.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigSensitiveParamsOutputReference.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigSensitiveParamsOutputReference__runtime_type_checks.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigTimeouts.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigTimeoutsOutputReference.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "bigquerydatatransferconfig_BigqueryDataTransferConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/bigquerydatatransferconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/bigquerydatatransferconfig/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

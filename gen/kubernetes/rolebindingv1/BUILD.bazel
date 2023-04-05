@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rolebindingv1",
+    srcs = [
+        "rolebindingv1.go",
+        "rolebindingv1_RoleBindingV1.go",
+        "rolebindingv1_RoleBindingV1Config.go",
+        "rolebindingv1_RoleBindingV1Metadata.go",
+        "rolebindingv1_RoleBindingV1MetadataOutputReference.go",
+        "rolebindingv1_RoleBindingV1MetadataOutputReference__runtime_type_checks.go",
+        "rolebindingv1_RoleBindingV1RoleRef.go",
+        "rolebindingv1_RoleBindingV1RoleRefOutputReference.go",
+        "rolebindingv1_RoleBindingV1RoleRefOutputReference__runtime_type_checks.go",
+        "rolebindingv1_RoleBindingV1Subject.go",
+        "rolebindingv1_RoleBindingV1SubjectList.go",
+        "rolebindingv1_RoleBindingV1SubjectList__runtime_type_checks.go",
+        "rolebindingv1_RoleBindingV1SubjectOutputReference.go",
+        "rolebindingv1_RoleBindingV1SubjectOutputReference__runtime_type_checks.go",
+        "rolebindingv1_RoleBindingV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/rolebindingv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/rolebindingv1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

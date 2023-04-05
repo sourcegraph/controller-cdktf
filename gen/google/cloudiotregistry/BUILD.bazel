@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudiotregistry",
+    srcs = [
+        "cloudiotregistry.go",
+        "cloudiotregistry_CloudiotRegistry.go",
+        "cloudiotregistry_CloudiotRegistryConfig.go",
+        "cloudiotregistry_CloudiotRegistryCredentials.go",
+        "cloudiotregistry_CloudiotRegistryCredentialsList.go",
+        "cloudiotregistry_CloudiotRegistryCredentialsList__runtime_type_checks.go",
+        "cloudiotregistry_CloudiotRegistryCredentialsOutputReference.go",
+        "cloudiotregistry_CloudiotRegistryCredentialsOutputReference__runtime_type_checks.go",
+        "cloudiotregistry_CloudiotRegistryEventNotificationConfigs.go",
+        "cloudiotregistry_CloudiotRegistryEventNotificationConfigsList.go",
+        "cloudiotregistry_CloudiotRegistryEventNotificationConfigsList__runtime_type_checks.go",
+        "cloudiotregistry_CloudiotRegistryEventNotificationConfigsOutputReference.go",
+        "cloudiotregistry_CloudiotRegistryEventNotificationConfigsOutputReference__runtime_type_checks.go",
+        "cloudiotregistry_CloudiotRegistryTimeouts.go",
+        "cloudiotregistry_CloudiotRegistryTimeoutsOutputReference.go",
+        "cloudiotregistry_CloudiotRegistryTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudiotregistry_CloudiotRegistry__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/cloudiotregistry",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/cloudiotregistry/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

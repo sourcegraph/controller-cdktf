@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3outpostsendpoint",
+    srcs = [
+        "s3outpostsendpoint.go",
+        "s3outpostsendpoint_S3OutpostsEndpoint.go",
+        "s3outpostsendpoint_S3OutpostsEndpointConfig.go",
+        "s3outpostsendpoint_S3OutpostsEndpointNetworkInterfaces.go",
+        "s3outpostsendpoint_S3OutpostsEndpointNetworkInterfacesList.go",
+        "s3outpostsendpoint_S3OutpostsEndpointNetworkInterfacesList__runtime_type_checks.go",
+        "s3outpostsendpoint_S3OutpostsEndpointNetworkInterfacesOutputReference.go",
+        "s3outpostsendpoint_S3OutpostsEndpointNetworkInterfacesOutputReference__runtime_type_checks.go",
+        "s3outpostsendpoint_S3OutpostsEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3outpostsendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3outpostsendpoint/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

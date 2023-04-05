@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "swaapp",
+    srcs = [
+        "swaapp.go",
+        "swaapp_SwaApp.go",
+        "swaapp_SwaAppConfig.go",
+        "swaapp_SwaAppTimeouts.go",
+        "swaapp_SwaAppTimeoutsOutputReference.go",
+        "swaapp_SwaAppTimeoutsOutputReference__runtime_type_checks.go",
+        "swaapp_SwaAppUsers.go",
+        "swaapp_SwaAppUsersList.go",
+        "swaapp_SwaAppUsersList__runtime_type_checks.go",
+        "swaapp_SwaAppUsersOutputReference.go",
+        "swaapp_SwaAppUsersOutputReference__runtime_type_checks.go",
+        "swaapp_SwaApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/swaapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/swaapp/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

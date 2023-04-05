@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsroute53resolverendpoint",
+    srcs = [
+        "dataawsroute53resolverendpoint.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpoint.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpointConfig.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpointFilter.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpointFilterList.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpointFilterList__runtime_type_checks.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpointFilterOutputReference.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpointFilterOutputReference__runtime_type_checks.go",
+        "dataawsroute53resolverendpoint_DataAwsRoute53ResolverEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsroute53resolverendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsroute53resolverendpoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

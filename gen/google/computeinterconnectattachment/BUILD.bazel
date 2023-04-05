@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeinterconnectattachment",
+    srcs = [
+        "computeinterconnectattachment.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachment.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentConfig.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentPrivateInterconnectInfo.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentPrivateInterconnectInfoList.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentPrivateInterconnectInfoList__runtime_type_checks.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference__runtime_type_checks.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentTimeouts.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentTimeoutsOutputReference.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "computeinterconnectattachment_ComputeInterconnectAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeinterconnectattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeinterconnectattachment/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

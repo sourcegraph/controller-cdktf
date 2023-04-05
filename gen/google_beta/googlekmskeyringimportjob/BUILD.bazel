@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlekmskeyringimportjob",
+    srcs = [
+        "googlekmskeyringimportjob.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJob.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobAttestation.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobAttestationList.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobAttestationList__runtime_type_checks.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobAttestationOutputReference.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobAttestationOutputReference__runtime_type_checks.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobConfig.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobPublicKey.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobPublicKeyList.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobPublicKeyList__runtime_type_checks.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobPublicKeyOutputReference.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobPublicKeyOutputReference__runtime_type_checks.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobTimeouts.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobTimeoutsOutputReference.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJobTimeoutsOutputReference__runtime_type_checks.go",
+        "googlekmskeyringimportjob_GoogleKmsKeyRingImportJob__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmskeyringimportjob",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlekmskeyringimportjob/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

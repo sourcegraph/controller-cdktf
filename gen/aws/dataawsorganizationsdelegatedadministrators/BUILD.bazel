@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsorganizationsdelegatedadministrators",
+    srcs = [
+        "dataawsorganizationsdelegatedadministrators.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministrators.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministratorsConfig.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList__runtime_type_checks.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference__runtime_type_checks.go",
+        "dataawsorganizationsdelegatedadministrators_DataAwsOrganizationsDelegatedAdministrators__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsorganizationsdelegatedadministrators",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsorganizationsdelegatedadministrators/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

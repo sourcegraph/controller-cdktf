@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ecrpublicrepository",
+    srcs = [
+        "ecrpublicrepository.go",
+        "ecrpublicrepository_EcrpublicRepository.go",
+        "ecrpublicrepository_EcrpublicRepositoryCatalogData.go",
+        "ecrpublicrepository_EcrpublicRepositoryCatalogDataOutputReference.go",
+        "ecrpublicrepository_EcrpublicRepositoryCatalogDataOutputReference__runtime_type_checks.go",
+        "ecrpublicrepository_EcrpublicRepositoryConfig.go",
+        "ecrpublicrepository_EcrpublicRepositoryTimeouts.go",
+        "ecrpublicrepository_EcrpublicRepositoryTimeoutsOutputReference.go",
+        "ecrpublicrepository_EcrpublicRepositoryTimeoutsOutputReference__runtime_type_checks.go",
+        "ecrpublicrepository_EcrpublicRepository__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ecrpublicrepository",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ecrpublicrepository/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

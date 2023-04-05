@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datakubernetesnamespacev1",
+    srcs = [
+        "datakubernetesnamespacev1.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1Config.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1Metadata.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1MetadataOutputReference.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1MetadataOutputReference__runtime_type_checks.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1Spec.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1SpecList.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1SpecList__runtime_type_checks.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1SpecOutputReference.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1SpecOutputReference__runtime_type_checks.go",
+        "datakubernetesnamespacev1_DataKubernetesNamespaceV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetesnamespacev1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/datakubernetesnamespacev1/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

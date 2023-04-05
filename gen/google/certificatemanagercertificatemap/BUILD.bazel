@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "certificatemanagercertificatemap",
+    srcs = [
+        "certificatemanagercertificatemap.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMap.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapConfig.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargets.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsIpConfigs.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsIpConfigsList.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsIpConfigsList__runtime_type_checks.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference__runtime_type_checks.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsList.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsList__runtime_type_checks.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsOutputReference.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapGclbTargetsOutputReference__runtime_type_checks.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapTimeouts.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapTimeoutsOutputReference.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMapTimeoutsOutputReference__runtime_type_checks.go",
+        "certificatemanagercertificatemap_CertificateManagerCertificateMap__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/certificatemanagercertificatemap",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/certificatemanagercertificatemap/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

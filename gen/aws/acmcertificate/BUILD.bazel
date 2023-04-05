@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "acmcertificate",
+    srcs = [
+        "acmcertificate.go",
+        "acmcertificate_AcmCertificate.go",
+        "acmcertificate_AcmCertificateConfig.go",
+        "acmcertificate_AcmCertificateDomainValidationOptions.go",
+        "acmcertificate_AcmCertificateDomainValidationOptionsList.go",
+        "acmcertificate_AcmCertificateDomainValidationOptionsList__runtime_type_checks.go",
+        "acmcertificate_AcmCertificateDomainValidationOptionsOutputReference.go",
+        "acmcertificate_AcmCertificateDomainValidationOptionsOutputReference__runtime_type_checks.go",
+        "acmcertificate_AcmCertificateOptions.go",
+        "acmcertificate_AcmCertificateOptionsOutputReference.go",
+        "acmcertificate_AcmCertificateOptionsOutputReference__runtime_type_checks.go",
+        "acmcertificate_AcmCertificateRenewalSummary.go",
+        "acmcertificate_AcmCertificateRenewalSummaryList.go",
+        "acmcertificate_AcmCertificateRenewalSummaryList__runtime_type_checks.go",
+        "acmcertificate_AcmCertificateRenewalSummaryOutputReference.go",
+        "acmcertificate_AcmCertificateRenewalSummaryOutputReference__runtime_type_checks.go",
+        "acmcertificate_AcmCertificateValidationOption.go",
+        "acmcertificate_AcmCertificateValidationOptionList.go",
+        "acmcertificate_AcmCertificateValidationOptionList__runtime_type_checks.go",
+        "acmcertificate_AcmCertificateValidationOptionOutputReference.go",
+        "acmcertificate_AcmCertificateValidationOptionOutputReference__runtime_type_checks.go",
+        "acmcertificate_AcmCertificate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/acmcertificate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/acmcertificate/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayaccount",
+    srcs = [
+        "apigatewayaccount.go",
+        "apigatewayaccount_ApiGatewayAccount.go",
+        "apigatewayaccount_ApiGatewayAccountConfig.go",
+        "apigatewayaccount_ApiGatewayAccountThrottleSettings.go",
+        "apigatewayaccount_ApiGatewayAccountThrottleSettingsList.go",
+        "apigatewayaccount_ApiGatewayAccountThrottleSettingsList__runtime_type_checks.go",
+        "apigatewayaccount_ApiGatewayAccountThrottleSettingsOutputReference.go",
+        "apigatewayaccount_ApiGatewayAccountThrottleSettingsOutputReference__runtime_type_checks.go",
+        "apigatewayaccount_ApiGatewayAccount__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayaccount",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayaccount/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

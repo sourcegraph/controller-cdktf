@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datakubernetesserviceaccountv1",
+    srcs = [
+        "datakubernetesserviceaccountv1.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1Config.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1ImagePullSecret.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1ImagePullSecretList.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1ImagePullSecretList__runtime_type_checks.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1ImagePullSecretOutputReference.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1ImagePullSecretOutputReference__runtime_type_checks.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1Metadata.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1MetadataOutputReference.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1MetadataOutputReference__runtime_type_checks.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1Secret.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1SecretList.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1SecretList__runtime_type_checks.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1SecretOutputReference.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1SecretOutputReference__runtime_type_checks.go",
+        "datakubernetesserviceaccountv1_DataKubernetesServiceAccountV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetesserviceaccountv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/datakubernetesserviceaccountv1/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

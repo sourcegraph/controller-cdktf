@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlesqlsourcerepresentationinstance",
+    srcs = [
+        "googlesqlsourcerepresentationinstance.go",
+        "googlesqlsourcerepresentationinstance_GoogleSqlSourceRepresentationInstance.go",
+        "googlesqlsourcerepresentationinstance_GoogleSqlSourceRepresentationInstanceConfig.go",
+        "googlesqlsourcerepresentationinstance_GoogleSqlSourceRepresentationInstanceTimeouts.go",
+        "googlesqlsourcerepresentationinstance_GoogleSqlSourceRepresentationInstanceTimeoutsOutputReference.go",
+        "googlesqlsourcerepresentationinstance_GoogleSqlSourceRepresentationInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "googlesqlsourcerepresentationinstance_GoogleSqlSourceRepresentationInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesqlsourcerepresentationinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlesqlsourcerepresentationinstance/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computerouternat",
+    srcs = [
+        "computerouternat.go",
+        "computerouternat_ComputeRouterNat.go",
+        "computerouternat_ComputeRouterNatConfig.go",
+        "computerouternat_ComputeRouterNatLogConfig.go",
+        "computerouternat_ComputeRouterNatLogConfigOutputReference.go",
+        "computerouternat_ComputeRouterNatLogConfigOutputReference__runtime_type_checks.go",
+        "computerouternat_ComputeRouterNatSubnetwork.go",
+        "computerouternat_ComputeRouterNatSubnetworkList.go",
+        "computerouternat_ComputeRouterNatSubnetworkList__runtime_type_checks.go",
+        "computerouternat_ComputeRouterNatSubnetworkOutputReference.go",
+        "computerouternat_ComputeRouterNatSubnetworkOutputReference__runtime_type_checks.go",
+        "computerouternat_ComputeRouterNatTimeouts.go",
+        "computerouternat_ComputeRouterNatTimeoutsOutputReference.go",
+        "computerouternat_ComputeRouterNatTimeoutsOutputReference__runtime_type_checks.go",
+        "computerouternat_ComputeRouterNat__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computerouternat",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computerouternat/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

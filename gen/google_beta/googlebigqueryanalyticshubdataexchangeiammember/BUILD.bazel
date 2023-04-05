@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebigqueryanalyticshubdataexchangeiammember",
+    srcs = [
+        "googlebigqueryanalyticshubdataexchangeiammember.go",
+        "googlebigqueryanalyticshubdataexchangeiammember_GoogleBigqueryAnalyticsHubDataExchangeIamMember.go",
+        "googlebigqueryanalyticshubdataexchangeiammember_GoogleBigqueryAnalyticsHubDataExchangeIamMemberCondition.go",
+        "googlebigqueryanalyticshubdataexchangeiammember_GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference.go",
+        "googlebigqueryanalyticshubdataexchangeiammember_GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googlebigqueryanalyticshubdataexchangeiammember_GoogleBigqueryAnalyticsHubDataExchangeIamMemberConfig.go",
+        "googlebigqueryanalyticshubdataexchangeiammember_GoogleBigqueryAnalyticsHubDataExchangeIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryanalyticshubdataexchangeiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlebigqueryanalyticshubdataexchangeiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

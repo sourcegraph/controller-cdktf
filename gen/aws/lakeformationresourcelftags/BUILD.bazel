@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lakeformationresourcelftags",
+    srcs = [
+        "lakeformationresourcelftags.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTags.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsConfig.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsDatabase.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsDatabaseOutputReference.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsDatabaseOutputReference__runtime_type_checks.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsLfTag.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsLfTagList.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsLfTagList__runtime_type_checks.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsLfTagOutputReference.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsLfTagOutputReference__runtime_type_checks.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTable.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTableOutputReference.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTableOutputReference__runtime_type_checks.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTableWithColumns.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTableWithColumnsOutputReference.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTableWithColumnsOutputReference__runtime_type_checks.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTimeouts.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTimeoutsOutputReference.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTagsTimeoutsOutputReference__runtime_type_checks.go",
+        "lakeformationresourcelftags_LakeformationResourceLfTags__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lakeformationresourcelftags",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lakeformationresourcelftags/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

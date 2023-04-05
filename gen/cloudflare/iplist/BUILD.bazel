@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iplist",
+    srcs = [
+        "iplist.go",
+        "iplist_IpList.go",
+        "iplist_IpListConfig.go",
+        "iplist_IpListItem.go",
+        "iplist_IpListItemList.go",
+        "iplist_IpListItemList__runtime_type_checks.go",
+        "iplist_IpListItemOutputReference.go",
+        "iplist_IpListItemOutputReference__runtime_type_checks.go",
+        "iplist_IpList__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/iplist",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/iplist/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

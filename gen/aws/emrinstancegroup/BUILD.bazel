@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "emrinstancegroup",
+    srcs = [
+        "emrinstancegroup.go",
+        "emrinstancegroup_EmrInstanceGroup.go",
+        "emrinstancegroup_EmrInstanceGroupConfig.go",
+        "emrinstancegroup_EmrInstanceGroupEbsConfig.go",
+        "emrinstancegroup_EmrInstanceGroupEbsConfigList.go",
+        "emrinstancegroup_EmrInstanceGroupEbsConfigList__runtime_type_checks.go",
+        "emrinstancegroup_EmrInstanceGroupEbsConfigOutputReference.go",
+        "emrinstancegroup_EmrInstanceGroupEbsConfigOutputReference__runtime_type_checks.go",
+        "emrinstancegroup_EmrInstanceGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/emrinstancegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/emrinstancegroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

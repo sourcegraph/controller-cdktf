@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudfunctions2functioniampolicy",
+    srcs = [
+        "googlecloudfunctions2functioniampolicy.go",
+        "googlecloudfunctions2functioniampolicy_GoogleCloudfunctions2FunctionIamPolicy.go",
+        "googlecloudfunctions2functioniampolicy_GoogleCloudfunctions2FunctionIamPolicyConfig.go",
+        "googlecloudfunctions2functioniampolicy_GoogleCloudfunctions2FunctionIamPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctions2functioniampolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudfunctions2functioniampolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

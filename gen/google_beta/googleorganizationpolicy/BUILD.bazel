@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleorganizationpolicy",
+    srcs = [
+        "googleorganizationpolicy.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicy.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyBooleanPolicy.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyBooleanPolicyOutputReference.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyBooleanPolicyOutputReference__runtime_type_checks.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyConfig.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicy.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyAllow.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyAllowOutputReference.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyAllowOutputReference__runtime_type_checks.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyDeny.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyDenyOutputReference.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyDenyOutputReference__runtime_type_checks.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyOutputReference.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyListPolicyOutputReference__runtime_type_checks.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyRestorePolicy.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyRestorePolicyOutputReference.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyRestorePolicyOutputReference__runtime_type_checks.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyTimeouts.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyTimeoutsOutputReference.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googleorganizationpolicy_GoogleOrganizationPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleorganizationpolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

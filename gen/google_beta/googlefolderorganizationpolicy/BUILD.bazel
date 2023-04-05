@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefolderorganizationpolicy",
+    srcs = [
+        "googlefolderorganizationpolicy.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicy.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyBooleanPolicy.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyBooleanPolicyOutputReference.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyBooleanPolicyOutputReference__runtime_type_checks.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyConfig.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicy.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyAllow.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyAllowOutputReference.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyAllowOutputReference__runtime_type_checks.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyDeny.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyDenyOutputReference.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyDenyOutputReference__runtime_type_checks.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyOutputReference.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyListPolicyOutputReference__runtime_type_checks.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyRestorePolicy.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyRestorePolicyOutputReference.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyRestorePolicyOutputReference__runtime_type_checks.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyTimeouts.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyTimeoutsOutputReference.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefolderorganizationpolicy_GoogleFolderOrganizationPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolderorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefolderorganizationpolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

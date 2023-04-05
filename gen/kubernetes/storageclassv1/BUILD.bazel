@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storageclassv1",
+    srcs = [
+        "storageclassv1.go",
+        "storageclassv1_StorageClassV1.go",
+        "storageclassv1_StorageClassV1AllowedTopologies.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesMatchLabelExpressions.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesMatchLabelExpressionsList.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesMatchLabelExpressionsList__runtime_type_checks.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference__runtime_type_checks.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesOutputReference.go",
+        "storageclassv1_StorageClassV1AllowedTopologiesOutputReference__runtime_type_checks.go",
+        "storageclassv1_StorageClassV1Config.go",
+        "storageclassv1_StorageClassV1Metadata.go",
+        "storageclassv1_StorageClassV1MetadataOutputReference.go",
+        "storageclassv1_StorageClassV1MetadataOutputReference__runtime_type_checks.go",
+        "storageclassv1_StorageClassV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/storageclassv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/storageclassv1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

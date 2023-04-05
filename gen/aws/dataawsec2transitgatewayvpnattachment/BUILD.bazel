@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgatewayvpnattachment",
+    srcs = [
+        "dataawsec2transitgatewayvpnattachment.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachment.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentConfig.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentFilter.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentFilterList.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentFilterList__runtime_type_checks.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentFilterOutputReference.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentTimeouts.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentTimeoutsOutputReference.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgatewayvpnattachment_DataAwsEc2TransitGatewayVpnAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgatewayvpnattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgatewayvpnattachment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

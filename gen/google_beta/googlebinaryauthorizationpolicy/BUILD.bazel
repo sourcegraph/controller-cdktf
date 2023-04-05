@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebinaryauthorizationpolicy",
+    srcs = [
+        "googlebinaryauthorizationpolicy.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicy.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatterns.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsList.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsList__runtime_type_checks.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyClusterAdmissionRules.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesList.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesList__runtime_type_checks.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyConfig.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRule.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyTimeouts.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyTimeoutsOutputReference.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationpolicy_GoogleBinaryAuthorizationPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebinaryauthorizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlebinaryauthorizationpolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

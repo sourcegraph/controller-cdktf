@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "clouddeploytarget",
+    srcs = [
+        "clouddeploytarget.go",
+        "clouddeploytarget_ClouddeployTarget.go",
+        "clouddeploytarget_ClouddeployTargetAnthosCluster.go",
+        "clouddeploytarget_ClouddeployTargetAnthosClusterOutputReference.go",
+        "clouddeploytarget_ClouddeployTargetAnthosClusterOutputReference__runtime_type_checks.go",
+        "clouddeploytarget_ClouddeployTargetConfig.go",
+        "clouddeploytarget_ClouddeployTargetExecutionConfigs.go",
+        "clouddeploytarget_ClouddeployTargetExecutionConfigsList.go",
+        "clouddeploytarget_ClouddeployTargetExecutionConfigsList__runtime_type_checks.go",
+        "clouddeploytarget_ClouddeployTargetExecutionConfigsOutputReference.go",
+        "clouddeploytarget_ClouddeployTargetExecutionConfigsOutputReference__runtime_type_checks.go",
+        "clouddeploytarget_ClouddeployTargetGke.go",
+        "clouddeploytarget_ClouddeployTargetGkeOutputReference.go",
+        "clouddeploytarget_ClouddeployTargetGkeOutputReference__runtime_type_checks.go",
+        "clouddeploytarget_ClouddeployTargetTimeouts.go",
+        "clouddeploytarget_ClouddeployTargetTimeoutsOutputReference.go",
+        "clouddeploytarget_ClouddeployTargetTimeoutsOutputReference__runtime_type_checks.go",
+        "clouddeploytarget_ClouddeployTarget__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/clouddeploytarget",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/clouddeploytarget/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

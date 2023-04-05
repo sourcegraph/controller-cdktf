@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rdsreservedinstance",
+    srcs = [
+        "rdsreservedinstance.go",
+        "rdsreservedinstance_RdsReservedInstance.go",
+        "rdsreservedinstance_RdsReservedInstanceConfig.go",
+        "rdsreservedinstance_RdsReservedInstanceRecurringCharges.go",
+        "rdsreservedinstance_RdsReservedInstanceRecurringChargesList.go",
+        "rdsreservedinstance_RdsReservedInstanceRecurringChargesList__runtime_type_checks.go",
+        "rdsreservedinstance_RdsReservedInstanceRecurringChargesOutputReference.go",
+        "rdsreservedinstance_RdsReservedInstanceRecurringChargesOutputReference__runtime_type_checks.go",
+        "rdsreservedinstance_RdsReservedInstanceTimeouts.go",
+        "rdsreservedinstance_RdsReservedInstanceTimeoutsOutputReference.go",
+        "rdsreservedinstance_RdsReservedInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "rdsreservedinstance_RdsReservedInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/rdsreservedinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/rdsreservedinstance/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

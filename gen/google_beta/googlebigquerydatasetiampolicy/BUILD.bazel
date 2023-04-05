@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebigquerydatasetiampolicy",
+    srcs = [
+        "googlebigquerydatasetiampolicy.go",
+        "googlebigquerydatasetiampolicy_GoogleBigqueryDatasetIamPolicy.go",
+        "googlebigquerydatasetiampolicy_GoogleBigqueryDatasetIamPolicyConfig.go",
+        "googlebigquerydatasetiampolicy_GoogleBigqueryDatasetIamPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydatasetiampolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlebigquerydatasetiampolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

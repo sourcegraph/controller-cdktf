@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sagemakerproject",
+    srcs = [
+        "sagemakerproject.go",
+        "sagemakerproject_SagemakerProject.go",
+        "sagemakerproject_SagemakerProjectConfig.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetails.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference__runtime_type_checks.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList__runtime_type_checks.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference.go",
+        "sagemakerproject_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference__runtime_type_checks.go",
+        "sagemakerproject_SagemakerProject__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerproject",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sagemakerproject/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

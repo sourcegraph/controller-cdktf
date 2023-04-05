@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2managedprefixlist",
+    srcs = [
+        "ec2managedprefixlist.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixList.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixListConfig.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixListEntry.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixListEntryList.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixListEntryList__runtime_type_checks.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixListEntryOutputReference.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixListEntryOutputReference__runtime_type_checks.go",
+        "ec2managedprefixlist_Ec2ManagedPrefixList__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2managedprefixlist",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2managedprefixlist/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

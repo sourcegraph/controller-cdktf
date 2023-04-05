@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "bigqueryconnectioniammember",
+    srcs = [
+        "bigqueryconnectioniammember.go",
+        "bigqueryconnectioniammember_BigqueryConnectionIamMember.go",
+        "bigqueryconnectioniammember_BigqueryConnectionIamMemberCondition.go",
+        "bigqueryconnectioniammember_BigqueryConnectionIamMemberConditionOutputReference.go",
+        "bigqueryconnectioniammember_BigqueryConnectionIamMemberConditionOutputReference__runtime_type_checks.go",
+        "bigqueryconnectioniammember_BigqueryConnectionIamMemberConfig.go",
+        "bigqueryconnectioniammember_BigqueryConnectionIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/bigqueryconnectioniammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/bigqueryconnectioniammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleappenginedomainmapping",
+    srcs = [
+        "googleappenginedomainmapping.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMapping.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingConfig.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingResourceRecords.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingResourceRecordsList.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingResourceRecordsList__runtime_type_checks.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingResourceRecordsOutputReference.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingResourceRecordsOutputReference__runtime_type_checks.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingSslSettings.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingSslSettingsOutputReference.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingSslSettingsOutputReference__runtime_type_checks.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingTimeouts.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingTimeoutsOutputReference.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMappingTimeoutsOutputReference__runtime_type_checks.go",
+        "googleappenginedomainmapping_GoogleAppEngineDomainMapping__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappenginedomainmapping",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleappenginedomainmapping/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

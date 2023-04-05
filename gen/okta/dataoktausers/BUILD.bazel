@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktausers",
+    srcs = [
+        "dataoktausers.go",
+        "dataoktausers_DataOktaUsers.go",
+        "dataoktausers_DataOktaUsersConfig.go",
+        "dataoktausers_DataOktaUsersSearch.go",
+        "dataoktausers_DataOktaUsersSearchList.go",
+        "dataoktausers_DataOktaUsersSearchList__runtime_type_checks.go",
+        "dataoktausers_DataOktaUsersSearchOutputReference.go",
+        "dataoktausers_DataOktaUsersSearchOutputReference__runtime_type_checks.go",
+        "dataoktausers_DataOktaUsersUsers.go",
+        "dataoktausers_DataOktaUsersUsersList.go",
+        "dataoktausers_DataOktaUsersUsersList__runtime_type_checks.go",
+        "dataoktausers_DataOktaUsersUsersOutputReference.go",
+        "dataoktausers_DataOktaUsersUsersOutputReference__runtime_type_checks.go",
+        "dataoktausers_DataOktaUsers__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktausers",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktausers/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

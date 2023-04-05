@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcendpoint",
+    srcs = [
+        "dataawsvpcendpoint.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpoint.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointConfig.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsEntry.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsEntryList.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsEntryList__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsEntryOutputReference.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsEntryOutputReference__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsOptions.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsOptionsList.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsOptionsList__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsOptionsOutputReference.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointDnsOptionsOutputReference__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointFilter.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointFilterList.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointFilterList__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointFilterOutputReference.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointTimeouts.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointTimeoutsOutputReference.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcendpoint_DataAwsVpcEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcendpoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

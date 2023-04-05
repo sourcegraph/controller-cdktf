@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledatacatalogpolicytagiambinding",
+    srcs = [
+        "googledatacatalogpolicytagiambinding.go",
+        "googledatacatalogpolicytagiambinding_GoogleDataCatalogPolicyTagIamBinding.go",
+        "googledatacatalogpolicytagiambinding_GoogleDataCatalogPolicyTagIamBindingCondition.go",
+        "googledatacatalogpolicytagiambinding_GoogleDataCatalogPolicyTagIamBindingConditionOutputReference.go",
+        "googledatacatalogpolicytagiambinding_GoogleDataCatalogPolicyTagIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googledatacatalogpolicytagiambinding_GoogleDataCatalogPolicyTagIamBindingConfig.go",
+        "googledatacatalogpolicytagiambinding_GoogleDataCatalogPolicyTagIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogpolicytagiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledatacatalogpolicytagiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

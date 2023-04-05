@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagoogleiamtestablepermissions",
+    srcs = [
+        "datagoogleiamtestablepermissions.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissions.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissionsConfig.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissionsPermissions.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissionsPermissionsList.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissionsPermissionsList__runtime_type_checks.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissionsPermissionsOutputReference.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissionsPermissionsOutputReference__runtime_type_checks.go",
+        "datagoogleiamtestablepermissions_DataGoogleIamTestablePermissions__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagoogleiamtestablepermissions",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagoogleiamtestablepermissions/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

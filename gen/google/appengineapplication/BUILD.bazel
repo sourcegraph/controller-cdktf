@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appengineapplication",
+    srcs = [
+        "appengineapplication.go",
+        "appengineapplication_AppEngineApplication.go",
+        "appengineapplication_AppEngineApplicationConfig.go",
+        "appengineapplication_AppEngineApplicationFeatureSettings.go",
+        "appengineapplication_AppEngineApplicationFeatureSettingsOutputReference.go",
+        "appengineapplication_AppEngineApplicationFeatureSettingsOutputReference__runtime_type_checks.go",
+        "appengineapplication_AppEngineApplicationIap.go",
+        "appengineapplication_AppEngineApplicationIapOutputReference.go",
+        "appengineapplication_AppEngineApplicationIapOutputReference__runtime_type_checks.go",
+        "appengineapplication_AppEngineApplicationTimeouts.go",
+        "appengineapplication_AppEngineApplicationTimeoutsOutputReference.go",
+        "appengineapplication_AppEngineApplicationTimeoutsOutputReference__runtime_type_checks.go",
+        "appengineapplication_AppEngineApplicationUrlDispatchRule.go",
+        "appengineapplication_AppEngineApplicationUrlDispatchRuleList.go",
+        "appengineapplication_AppEngineApplicationUrlDispatchRuleList__runtime_type_checks.go",
+        "appengineapplication_AppEngineApplicationUrlDispatchRuleOutputReference.go",
+        "appengineapplication_AppEngineApplicationUrlDispatchRuleOutputReference__runtime_type_checks.go",
+        "appengineapplication_AppEngineApplication__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/appengineapplication",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/appengineapplication/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

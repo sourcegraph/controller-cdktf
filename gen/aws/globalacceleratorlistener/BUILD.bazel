@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "globalacceleratorlistener",
+    srcs = [
+        "globalacceleratorlistener.go",
+        "globalacceleratorlistener_GlobalacceleratorListener.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerConfig.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerPortRange.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerPortRangeList.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerPortRangeList__runtime_type_checks.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerPortRangeOutputReference.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerPortRangeOutputReference__runtime_type_checks.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerTimeouts.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerTimeoutsOutputReference.go",
+        "globalacceleratorlistener_GlobalacceleratorListenerTimeoutsOutputReference__runtime_type_checks.go",
+        "globalacceleratorlistener_GlobalacceleratorListener__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/globalacceleratorlistener",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/globalacceleratorlistener/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

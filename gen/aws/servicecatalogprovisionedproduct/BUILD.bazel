@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "servicecatalogprovisionedproduct",
+    srcs = [
+        "servicecatalogprovisionedproduct.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProduct.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductConfig.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductOutputs.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductOutputsList.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductOutputsList__runtime_type_checks.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductOutputsOutputReference.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductOutputsOutputReference__runtime_type_checks.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductProvisioningParameters.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductProvisioningParametersList.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductProvisioningParametersList__runtime_type_checks.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductProvisioningParametersOutputReference.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductProvisioningParametersOutputReference__runtime_type_checks.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductStackSetProvisioningPreferences.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference__runtime_type_checks.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductTimeouts.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductTimeoutsOutputReference.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProductTimeoutsOutputReference__runtime_type_checks.go",
+        "servicecatalogprovisionedproduct_ServicecatalogProvisionedProduct__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/servicecatalogprovisionedproduct",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/servicecatalogprovisionedproduct/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

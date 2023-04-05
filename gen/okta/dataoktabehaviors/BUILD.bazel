@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktabehaviors",
+    srcs = [
+        "dataoktabehaviors.go",
+        "dataoktabehaviors_DataOktaBehaviors.go",
+        "dataoktabehaviors_DataOktaBehaviorsBehaviors.go",
+        "dataoktabehaviors_DataOktaBehaviorsBehaviorsList.go",
+        "dataoktabehaviors_DataOktaBehaviorsBehaviorsList__runtime_type_checks.go",
+        "dataoktabehaviors_DataOktaBehaviorsBehaviorsOutputReference.go",
+        "dataoktabehaviors_DataOktaBehaviorsBehaviorsOutputReference__runtime_type_checks.go",
+        "dataoktabehaviors_DataOktaBehaviorsConfig.go",
+        "dataoktabehaviors_DataOktaBehaviors__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktabehaviors",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktabehaviors/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

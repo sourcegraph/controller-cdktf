@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "pubsubtopiciammember",
+    srcs = [
+        "pubsubtopiciammember.go",
+        "pubsubtopiciammember_PubsubTopicIamMember.go",
+        "pubsubtopiciammember_PubsubTopicIamMemberCondition.go",
+        "pubsubtopiciammember_PubsubTopicIamMemberConditionOutputReference.go",
+        "pubsubtopiciammember_PubsubTopicIamMemberConditionOutputReference__runtime_type_checks.go",
+        "pubsubtopiciammember_PubsubTopicIamMemberConfig.go",
+        "pubsubtopiciammember_PubsubTopicIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/pubsubtopiciammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/pubsubtopiciammember/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

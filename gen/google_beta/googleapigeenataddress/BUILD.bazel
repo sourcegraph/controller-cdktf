@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleapigeenataddress",
+    srcs = [
+        "googleapigeenataddress.go",
+        "googleapigeenataddress_GoogleApigeeNatAddress.go",
+        "googleapigeenataddress_GoogleApigeeNatAddressConfig.go",
+        "googleapigeenataddress_GoogleApigeeNatAddressTimeouts.go",
+        "googleapigeenataddress_GoogleApigeeNatAddressTimeoutsOutputReference.go",
+        "googleapigeenataddress_GoogleApigeeNatAddressTimeoutsOutputReference__runtime_type_checks.go",
+        "googleapigeenataddress_GoogleApigeeNatAddress__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeenataddress",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleapigeenataddress/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

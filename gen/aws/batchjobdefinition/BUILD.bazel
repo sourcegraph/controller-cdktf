@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "batchjobdefinition",
+    srcs = [
+        "batchjobdefinition.go",
+        "batchjobdefinition_BatchJobDefinition.go",
+        "batchjobdefinition_BatchJobDefinitionConfig.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategy.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyEvaluateOnExit.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyEvaluateOnExitList.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyEvaluateOnExitList__runtime_type_checks.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference__runtime_type_checks.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyOutputReference.go",
+        "batchjobdefinition_BatchJobDefinitionRetryStrategyOutputReference__runtime_type_checks.go",
+        "batchjobdefinition_BatchJobDefinitionTimeout.go",
+        "batchjobdefinition_BatchJobDefinitionTimeoutOutputReference.go",
+        "batchjobdefinition_BatchJobDefinitionTimeoutOutputReference__runtime_type_checks.go",
+        "batchjobdefinition_BatchJobDefinition__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/batchjobdefinition",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/batchjobdefinition/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

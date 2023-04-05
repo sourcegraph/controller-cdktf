@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "horizontalpodautoscalerv1",
+    srcs = [
+        "horizontalpodautoscalerv1.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1Config.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1Metadata.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1MetadataOutputReference.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1MetadataOutputReference__runtime_type_checks.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1Spec.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1SpecOutputReference.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1SpecOutputReference__runtime_type_checks.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1SpecScaleTargetRef.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference__runtime_type_checks.go",
+        "horizontalpodautoscalerv1_HorizontalPodAutoscalerV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/horizontalpodautoscalerv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/horizontalpodautoscalerv1/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

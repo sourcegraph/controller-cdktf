@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datatfevariables",
+    srcs = [
+        "datatfevariables.go",
+        "datatfevariables_DataTfeVariables.go",
+        "datatfevariables_DataTfeVariablesConfig.go",
+        "datatfevariables_DataTfeVariablesEnv.go",
+        "datatfevariables_DataTfeVariablesEnvList.go",
+        "datatfevariables_DataTfeVariablesEnvList__runtime_type_checks.go",
+        "datatfevariables_DataTfeVariablesEnvOutputReference.go",
+        "datatfevariables_DataTfeVariablesEnvOutputReference__runtime_type_checks.go",
+        "datatfevariables_DataTfeVariablesTerraform.go",
+        "datatfevariables_DataTfeVariablesTerraformList.go",
+        "datatfevariables_DataTfeVariablesTerraformList__runtime_type_checks.go",
+        "datatfevariables_DataTfeVariablesTerraformOutputReference.go",
+        "datatfevariables_DataTfeVariablesTerraformOutputReference__runtime_type_checks.go",
+        "datatfevariables_DataTfeVariablesVariables.go",
+        "datatfevariables_DataTfeVariablesVariablesList.go",
+        "datatfevariables_DataTfeVariablesVariablesList__runtime_type_checks.go",
+        "datatfevariables_DataTfeVariablesVariablesOutputReference.go",
+        "datatfevariables_DataTfeVariablesVariablesOutputReference__runtime_type_checks.go",
+        "datatfevariables_DataTfeVariables__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/tfe/datatfevariables",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/tfe/datatfevariables/internal",
+        "//gen/tfe/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

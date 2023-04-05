@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datacloudflaredevices",
+    srcs = [
+        "datacloudflaredevices.go",
+        "datacloudflaredevices_DataCloudflareDevices.go",
+        "datacloudflaredevices_DataCloudflareDevicesConfig.go",
+        "datacloudflaredevices_DataCloudflareDevicesDevices.go",
+        "datacloudflaredevices_DataCloudflareDevicesDevicesList.go",
+        "datacloudflaredevices_DataCloudflareDevicesDevicesList__runtime_type_checks.go",
+        "datacloudflaredevices_DataCloudflareDevicesDevicesOutputReference.go",
+        "datacloudflaredevices_DataCloudflareDevicesDevicesOutputReference__runtime_type_checks.go",
+        "datacloudflaredevices_DataCloudflareDevices__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflaredevices",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/datacloudflaredevices/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

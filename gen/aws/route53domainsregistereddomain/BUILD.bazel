@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "route53domainsregistereddomain",
+    srcs = [
+        "route53domainsregistereddomain.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomain.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainAdminContact.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainAdminContactOutputReference.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainAdminContactOutputReference__runtime_type_checks.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainConfig.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainNameServer.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainNameServerList.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainNameServerList__runtime_type_checks.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainNameServerOutputReference.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainNameServerOutputReference__runtime_type_checks.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainRegistrantContact.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainRegistrantContactOutputReference.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainRegistrantContactOutputReference__runtime_type_checks.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainTechContact.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainTechContactOutputReference.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainTechContactOutputReference__runtime_type_checks.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainTimeouts.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainTimeoutsOutputReference.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomainTimeoutsOutputReference__runtime_type_checks.go",
+        "route53domainsregistereddomain_Route53DomainsRegisteredDomain__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/route53domainsregistereddomain",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/route53domainsregistereddomain/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

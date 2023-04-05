@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlemlenginemodel",
+    srcs = [
+        "googlemlenginemodel.go",
+        "googlemlenginemodel_GoogleMlEngineModel.go",
+        "googlemlenginemodel_GoogleMlEngineModelConfig.go",
+        "googlemlenginemodel_GoogleMlEngineModelDefaultVersion.go",
+        "googlemlenginemodel_GoogleMlEngineModelDefaultVersionOutputReference.go",
+        "googlemlenginemodel_GoogleMlEngineModelDefaultVersionOutputReference__runtime_type_checks.go",
+        "googlemlenginemodel_GoogleMlEngineModelTimeouts.go",
+        "googlemlenginemodel_GoogleMlEngineModelTimeoutsOutputReference.go",
+        "googlemlenginemodel_GoogleMlEngineModelTimeoutsOutputReference__runtime_type_checks.go",
+        "googlemlenginemodel_GoogleMlEngineModel__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemlenginemodel",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlemlenginemodel/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

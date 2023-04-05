@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "policyruleprofileenrollment",
+    srcs = [
+        "policyruleprofileenrollment.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollment.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollmentConfig.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollmentProfileAttributes.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollmentProfileAttributesList.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollmentProfileAttributesList__runtime_type_checks.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollmentProfileAttributesOutputReference.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollmentProfileAttributesOutputReference__runtime_type_checks.go",
+        "policyruleprofileenrollment_PolicyRuleProfileEnrollment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/policyruleprofileenrollment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/policyruleprofileenrollment/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

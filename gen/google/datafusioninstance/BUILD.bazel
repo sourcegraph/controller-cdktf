@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datafusioninstance",
+    srcs = [
+        "datafusioninstance.go",
+        "datafusioninstance_DataFusionInstance.go",
+        "datafusioninstance_DataFusionInstanceConfig.go",
+        "datafusioninstance_DataFusionInstanceNetworkConfig.go",
+        "datafusioninstance_DataFusionInstanceNetworkConfigOutputReference.go",
+        "datafusioninstance_DataFusionInstanceNetworkConfigOutputReference__runtime_type_checks.go",
+        "datafusioninstance_DataFusionInstanceTimeouts.go",
+        "datafusioninstance_DataFusionInstanceTimeoutsOutputReference.go",
+        "datafusioninstance_DataFusionInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "datafusioninstance_DataFusionInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datafusioninstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datafusioninstance/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

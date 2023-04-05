@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datakubernetesstorageclass",
+    srcs = [
+        "datakubernetesstorageclass.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClass.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologies.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList__runtime_type_checks.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference__runtime_type_checks.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesOutputReference.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassAllowedTopologiesOutputReference__runtime_type_checks.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassConfig.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassMetadata.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassMetadataOutputReference.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClassMetadataOutputReference__runtime_type_checks.go",
+        "datakubernetesstorageclass_DataKubernetesStorageClass__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetesstorageclass",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/datakubernetesstorageclass/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

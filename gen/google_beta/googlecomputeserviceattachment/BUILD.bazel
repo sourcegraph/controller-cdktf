@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeserviceattachment",
+    srcs = [
+        "googlecomputeserviceattachment.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachment.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConfig.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConnectedEndpoints.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConnectedEndpointsList.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConnectedEndpointsList__runtime_type_checks.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConnectedEndpointsOutputReference__runtime_type_checks.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConsumerAcceptLists.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConsumerAcceptListsList.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConsumerAcceptListsList__runtime_type_checks.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference__runtime_type_checks.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentTimeouts.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentTimeoutsOutputReference.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeserviceattachment_GoogleComputeServiceAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeserviceattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeserviceattachment/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

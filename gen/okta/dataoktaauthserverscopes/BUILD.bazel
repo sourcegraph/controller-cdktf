@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktaauthserverscopes",
+    srcs = [
+        "dataoktaauthserverscopes.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopes.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopesConfig.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopesScopes.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopesScopesList.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopesScopesList__runtime_type_checks.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopesScopesOutputReference.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopesScopesOutputReference__runtime_type_checks.go",
+        "dataoktaauthserverscopes_DataOktaAuthServerScopes__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaauthserverscopes",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktaauthserverscopes/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

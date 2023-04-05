@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "memorydbuser",
+    srcs = [
+        "memorydbuser.go",
+        "memorydbuser_MemorydbUser.go",
+        "memorydbuser_MemorydbUserAuthenticationMode.go",
+        "memorydbuser_MemorydbUserAuthenticationModeOutputReference.go",
+        "memorydbuser_MemorydbUserAuthenticationModeOutputReference__runtime_type_checks.go",
+        "memorydbuser_MemorydbUserConfig.go",
+        "memorydbuser_MemorydbUser__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/memorydbuser",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/memorydbuser/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlemonitoringmetricdescriptor",
+    srcs = [
+        "googlemonitoringmetricdescriptor.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptor.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorConfig.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorLabels.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorLabelsList.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorLabelsList__runtime_type_checks.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorLabelsOutputReference.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorLabelsOutputReference__runtime_type_checks.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorMetadata.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorMetadataOutputReference.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorMetadataOutputReference__runtime_type_checks.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorTimeouts.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorTimeoutsOutputReference.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptorTimeoutsOutputReference__runtime_type_checks.go",
+        "googlemonitoringmetricdescriptor_GoogleMonitoringMetricDescriptor__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringmetricdescriptor",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlemonitoringmetricdescriptor/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lbtargetgroupattachment",
+    srcs = [
+        "lbtargetgroupattachment.go",
+        "lbtargetgroupattachment_LbTargetGroupAttachment.go",
+        "lbtargetgroupattachment_LbTargetGroupAttachmentConfig.go",
+        "lbtargetgroupattachment_LbTargetGroupAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lbtargetgroupattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lbtargetgroupattachment/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

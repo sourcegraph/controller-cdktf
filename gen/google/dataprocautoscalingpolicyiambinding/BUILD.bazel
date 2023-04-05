@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataprocautoscalingpolicyiambinding",
+    srcs = [
+        "dataprocautoscalingpolicyiambinding.go",
+        "dataprocautoscalingpolicyiambinding_DataprocAutoscalingPolicyIamBinding.go",
+        "dataprocautoscalingpolicyiambinding_DataprocAutoscalingPolicyIamBindingCondition.go",
+        "dataprocautoscalingpolicyiambinding_DataprocAutoscalingPolicyIamBindingConditionOutputReference.go",
+        "dataprocautoscalingpolicyiambinding_DataprocAutoscalingPolicyIamBindingConditionOutputReference__runtime_type_checks.go",
+        "dataprocautoscalingpolicyiambinding_DataprocAutoscalingPolicyIamBindingConfig.go",
+        "dataprocautoscalingpolicyiambinding_DataprocAutoscalingPolicyIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dataprocautoscalingpolicyiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dataprocautoscalingpolicyiambinding/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

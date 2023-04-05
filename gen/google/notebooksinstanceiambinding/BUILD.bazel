@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "notebooksinstanceiambinding",
+    srcs = [
+        "notebooksinstanceiambinding.go",
+        "notebooksinstanceiambinding_NotebooksInstanceIamBinding.go",
+        "notebooksinstanceiambinding_NotebooksInstanceIamBindingCondition.go",
+        "notebooksinstanceiambinding_NotebooksInstanceIamBindingConditionOutputReference.go",
+        "notebooksinstanceiambinding_NotebooksInstanceIamBindingConditionOutputReference__runtime_type_checks.go",
+        "notebooksinstanceiambinding_NotebooksInstanceIamBindingConfig.go",
+        "notebooksinstanceiambinding_NotebooksInstanceIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/notebooksinstanceiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/notebooksinstanceiambinding/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleappengineservicenetworksettings",
+    srcs = [
+        "googleappengineservicenetworksettings.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettings.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsConfig.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsNetworkSettings.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference__runtime_type_checks.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsTimeouts.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsTimeoutsOutputReference.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettingsTimeoutsOutputReference__runtime_type_checks.go",
+        "googleappengineservicenetworksettings_GoogleAppEngineServiceNetworkSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineservicenetworksettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleappengineservicenetworksettings/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

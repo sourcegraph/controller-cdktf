@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lightsailinstance",
+    srcs = [
+        "lightsailinstance.go",
+        "lightsailinstance_LightsailInstance.go",
+        "lightsailinstance_LightsailInstanceAddOn.go",
+        "lightsailinstance_LightsailInstanceAddOnOutputReference.go",
+        "lightsailinstance_LightsailInstanceAddOnOutputReference__runtime_type_checks.go",
+        "lightsailinstance_LightsailInstanceConfig.go",
+        "lightsailinstance_LightsailInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lightsailinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lightsailinstance/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

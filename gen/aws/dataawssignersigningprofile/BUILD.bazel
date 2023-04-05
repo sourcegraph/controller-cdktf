@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawssignersigningprofile",
+    srcs = [
+        "dataawssignersigningprofile.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfile.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileConfig.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileRevocationRecord.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileRevocationRecordList.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileRevocationRecordList__runtime_type_checks.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileRevocationRecordOutputReference.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileRevocationRecordOutputReference__runtime_type_checks.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileSignatureValidityPeriod.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileSignatureValidityPeriodList.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileSignatureValidityPeriodList__runtime_type_checks.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference__runtime_type_checks.go",
+        "dataawssignersigningprofile_DataAwsSignerSigningProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawssignersigningprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawssignersigningprofile/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

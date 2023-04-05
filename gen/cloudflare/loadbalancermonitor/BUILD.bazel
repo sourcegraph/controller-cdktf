@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "loadbalancermonitor",
+    srcs = [
+        "loadbalancermonitor.go",
+        "loadbalancermonitor_LoadBalancerMonitor.go",
+        "loadbalancermonitor_LoadBalancerMonitorConfig.go",
+        "loadbalancermonitor_LoadBalancerMonitorHeader.go",
+        "loadbalancermonitor_LoadBalancerMonitorHeaderList.go",
+        "loadbalancermonitor_LoadBalancerMonitorHeaderList__runtime_type_checks.go",
+        "loadbalancermonitor_LoadBalancerMonitorHeaderOutputReference.go",
+        "loadbalancermonitor_LoadBalancerMonitorHeaderOutputReference__runtime_type_checks.go",
+        "loadbalancermonitor_LoadBalancerMonitor__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/loadbalancermonitor",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/jsii",
+        "//gen/cloudflare/loadbalancermonitor/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

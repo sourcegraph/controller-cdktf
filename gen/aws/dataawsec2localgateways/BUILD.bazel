@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2localgateways",
+    srcs = [
+        "dataawsec2localgateways.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGateways.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysConfig.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysFilter.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysFilterList.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysFilterList__runtime_type_checks.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysFilterOutputReference.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysTimeouts.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysTimeoutsOutputReference.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGatewaysTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2localgateways_DataAwsEc2LocalGateways__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2localgateways",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2localgateways/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlednspolicy",
+    srcs = [
+        "googlednspolicy.go",
+        "googlednspolicy_GoogleDnsPolicy.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfig.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigOutputReference.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigOutputReference__runtime_type_checks.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList__runtime_type_checks.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.go",
+        "googlednspolicy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference__runtime_type_checks.go",
+        "googlednspolicy_GoogleDnsPolicyConfig.go",
+        "googlednspolicy_GoogleDnsPolicyNetworks.go",
+        "googlednspolicy_GoogleDnsPolicyNetworksList.go",
+        "googlednspolicy_GoogleDnsPolicyNetworksList__runtime_type_checks.go",
+        "googlednspolicy_GoogleDnsPolicyNetworksOutputReference.go",
+        "googlednspolicy_GoogleDnsPolicyNetworksOutputReference__runtime_type_checks.go",
+        "googlednspolicy_GoogleDnsPolicyTimeouts.go",
+        "googlednspolicy_GoogleDnsPolicyTimeoutsOutputReference.go",
+        "googlednspolicy_GoogleDnsPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlednspolicy_GoogleDnsPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlednspolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlednspolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

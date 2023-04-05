@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computesubnetwork",
+    srcs = [
+        "computesubnetwork.go",
+        "computesubnetwork_ComputeSubnetwork.go",
+        "computesubnetwork_ComputeSubnetworkConfig.go",
+        "computesubnetwork_ComputeSubnetworkLogConfig.go",
+        "computesubnetwork_ComputeSubnetworkLogConfigOutputReference.go",
+        "computesubnetwork_ComputeSubnetworkLogConfigOutputReference__runtime_type_checks.go",
+        "computesubnetwork_ComputeSubnetworkSecondaryIpRange.go",
+        "computesubnetwork_ComputeSubnetworkSecondaryIpRangeList.go",
+        "computesubnetwork_ComputeSubnetworkSecondaryIpRangeList__runtime_type_checks.go",
+        "computesubnetwork_ComputeSubnetworkSecondaryIpRangeOutputReference.go",
+        "computesubnetwork_ComputeSubnetworkSecondaryIpRangeOutputReference__runtime_type_checks.go",
+        "computesubnetwork_ComputeSubnetworkTimeouts.go",
+        "computesubnetwork_ComputeSubnetworkTimeoutsOutputReference.go",
+        "computesubnetwork_ComputeSubnetworkTimeoutsOutputReference__runtime_type_checks.go",
+        "computesubnetwork_ComputeSubnetwork__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computesubnetwork",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computesubnetwork/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3objectcopy",
+    srcs = [
+        "s3objectcopy.go",
+        "s3objectcopy_S3ObjectCopy.go",
+        "s3objectcopy_S3ObjectCopyConfig.go",
+        "s3objectcopy_S3ObjectCopyGrant.go",
+        "s3objectcopy_S3ObjectCopyGrantList.go",
+        "s3objectcopy_S3ObjectCopyGrantList__runtime_type_checks.go",
+        "s3objectcopy_S3ObjectCopyGrantOutputReference.go",
+        "s3objectcopy_S3ObjectCopyGrantOutputReference__runtime_type_checks.go",
+        "s3objectcopy_S3ObjectCopy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3objectcopy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3objectcopy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

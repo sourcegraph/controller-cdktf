@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalbytematchset",
+    srcs = [
+        "wafregionalbytematchset.go",
+        "wafregionalbytematchset_WafregionalByteMatchSet.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuples.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesFieldToMatch.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesList.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesList__runtime_type_checks.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesOutputReference.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetByteMatchTuplesOutputReference__runtime_type_checks.go",
+        "wafregionalbytematchset_WafregionalByteMatchSetConfig.go",
+        "wafregionalbytematchset_WafregionalByteMatchSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalbytematchset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalbytematchset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

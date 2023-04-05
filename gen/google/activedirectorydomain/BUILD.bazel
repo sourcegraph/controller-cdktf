@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "activedirectorydomain",
+    srcs = [
+        "activedirectorydomain.go",
+        "activedirectorydomain_ActiveDirectoryDomain.go",
+        "activedirectorydomain_ActiveDirectoryDomainConfig.go",
+        "activedirectorydomain_ActiveDirectoryDomainTimeouts.go",
+        "activedirectorydomain_ActiveDirectoryDomainTimeoutsOutputReference.go",
+        "activedirectorydomain_ActiveDirectoryDomainTimeoutsOutputReference__runtime_type_checks.go",
+        "activedirectorydomain_ActiveDirectoryDomain__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/activedirectorydomain",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/activedirectorydomain/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

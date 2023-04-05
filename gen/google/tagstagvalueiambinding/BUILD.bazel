@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "tagstagvalueiambinding",
+    srcs = [
+        "tagstagvalueiambinding.go",
+        "tagstagvalueiambinding_TagsTagValueIamBinding.go",
+        "tagstagvalueiambinding_TagsTagValueIamBindingCondition.go",
+        "tagstagvalueiambinding_TagsTagValueIamBindingConditionOutputReference.go",
+        "tagstagvalueiambinding_TagsTagValueIamBindingConditionOutputReference__runtime_type_checks.go",
+        "tagstagvalueiambinding_TagsTagValueIamBindingConfig.go",
+        "tagstagvalueiambinding_TagsTagValueIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/tagstagvalueiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/tagstagvalueiambinding/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dmseventsubscription",
+    srcs = [
+        "dmseventsubscription.go",
+        "dmseventsubscription_DmsEventSubscription.go",
+        "dmseventsubscription_DmsEventSubscriptionConfig.go",
+        "dmseventsubscription_DmsEventSubscriptionTimeouts.go",
+        "dmseventsubscription_DmsEventSubscriptionTimeoutsOutputReference.go",
+        "dmseventsubscription_DmsEventSubscriptionTimeoutsOutputReference__runtime_type_checks.go",
+        "dmseventsubscription_DmsEventSubscription__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dmseventsubscription",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dmseventsubscription/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

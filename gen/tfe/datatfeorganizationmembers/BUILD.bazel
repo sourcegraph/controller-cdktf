@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datatfeorganizationmembers",
+    srcs = [
+        "datatfeorganizationmembers.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembers.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersConfig.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembers.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersList.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersList__runtime_type_checks.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersOutputReference.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersOutputReference__runtime_type_checks.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersWaiting.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersWaitingList.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersWaitingList__runtime_type_checks.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersWaitingOutputReference.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembersMembersWaitingOutputReference__runtime_type_checks.go",
+        "datatfeorganizationmembers_DataTfeOrganizationMembers__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeorganizationmembers",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/tfe/datatfeorganizationmembers/internal",
+        "//gen/tfe/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

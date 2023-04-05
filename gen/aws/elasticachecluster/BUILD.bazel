@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elasticachecluster",
+    srcs = [
+        "elasticachecluster.go",
+        "elasticachecluster_ElasticacheCluster.go",
+        "elasticachecluster_ElasticacheClusterCacheNodes.go",
+        "elasticachecluster_ElasticacheClusterCacheNodesList.go",
+        "elasticachecluster_ElasticacheClusterCacheNodesList__runtime_type_checks.go",
+        "elasticachecluster_ElasticacheClusterCacheNodesOutputReference.go",
+        "elasticachecluster_ElasticacheClusterCacheNodesOutputReference__runtime_type_checks.go",
+        "elasticachecluster_ElasticacheClusterConfig.go",
+        "elasticachecluster_ElasticacheClusterLogDeliveryConfiguration.go",
+        "elasticachecluster_ElasticacheClusterLogDeliveryConfigurationList.go",
+        "elasticachecluster_ElasticacheClusterLogDeliveryConfigurationList__runtime_type_checks.go",
+        "elasticachecluster_ElasticacheClusterLogDeliveryConfigurationOutputReference.go",
+        "elasticachecluster_ElasticacheClusterLogDeliveryConfigurationOutputReference__runtime_type_checks.go",
+        "elasticachecluster_ElasticacheCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elasticachecluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elasticachecluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "emrcontainersvirtualcluster",
+    srcs = [
+        "emrcontainersvirtualcluster.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualCluster.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterConfig.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProvider.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderInfo.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderInfoEksInfo.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference__runtime_type_checks.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderInfoOutputReference.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderInfoOutputReference__runtime_type_checks.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderOutputReference.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterContainerProviderOutputReference__runtime_type_checks.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterTimeouts.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterTimeoutsOutputReference.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "emrcontainersvirtualcluster_EmrcontainersVirtualCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/emrcontainersvirtualcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/emrcontainersvirtualcluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

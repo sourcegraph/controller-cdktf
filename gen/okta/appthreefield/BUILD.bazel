@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appthreefield",
+    srcs = [
+        "appthreefield.go",
+        "appthreefield_AppThreeField.go",
+        "appthreefield_AppThreeFieldConfig.go",
+        "appthreefield_AppThreeFieldTimeouts.go",
+        "appthreefield_AppThreeFieldTimeoutsOutputReference.go",
+        "appthreefield_AppThreeFieldTimeoutsOutputReference__runtime_type_checks.go",
+        "appthreefield_AppThreeFieldUsers.go",
+        "appthreefield_AppThreeFieldUsersList.go",
+        "appthreefield_AppThreeFieldUsersList__runtime_type_checks.go",
+        "appthreefield_AppThreeFieldUsersOutputReference.go",
+        "appthreefield_AppThreeFieldUsersOutputReference__runtime_type_checks.go",
+        "appthreefield_AppThreeField__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appthreefield",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appthreefield/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

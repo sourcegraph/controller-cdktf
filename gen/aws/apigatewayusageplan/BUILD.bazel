@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayusageplan",
+    srcs = [
+        "apigatewayusageplan.go",
+        "apigatewayusageplan_ApiGatewayUsagePlan.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStages.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesList.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesList__runtime_type_checks.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesOutputReference.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesOutputReference__runtime_type_checks.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesThrottle.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesThrottleList.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesThrottleList__runtime_type_checks.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesThrottleOutputReference.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanApiStagesThrottleOutputReference__runtime_type_checks.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanConfig.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanQuotaSettings.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanQuotaSettingsOutputReference.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanQuotaSettingsOutputReference__runtime_type_checks.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanThrottleSettings.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanThrottleSettingsOutputReference.go",
+        "apigatewayusageplan_ApiGatewayUsagePlanThrottleSettingsOutputReference__runtime_type_checks.go",
+        "apigatewayusageplan_ApiGatewayUsagePlan__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayusageplan",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayusageplan/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

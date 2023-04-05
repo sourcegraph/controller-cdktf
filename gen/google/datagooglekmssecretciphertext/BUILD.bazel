@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglekmssecretciphertext",
+    srcs = [
+        "datagooglekmssecretciphertext.go",
+        "datagooglekmssecretciphertext_DataGoogleKmsSecretCiphertext.go",
+        "datagooglekmssecretciphertext_DataGoogleKmsSecretCiphertextConfig.go",
+        "datagooglekmssecretciphertext_DataGoogleKmsSecretCiphertext__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglekmssecretciphertext",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglekmssecretciphertext/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

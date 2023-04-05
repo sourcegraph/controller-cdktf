@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "configorganizationcustomrule",
+    srcs = [
+        "configorganizationcustomrule.go",
+        "configorganizationcustomrule_ConfigOrganizationCustomRule.go",
+        "configorganizationcustomrule_ConfigOrganizationCustomRuleConfig.go",
+        "configorganizationcustomrule_ConfigOrganizationCustomRuleTimeouts.go",
+        "configorganizationcustomrule_ConfigOrganizationCustomRuleTimeoutsOutputReference.go",
+        "configorganizationcustomrule_ConfigOrganizationCustomRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "configorganizationcustomrule_ConfigOrganizationCustomRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/configorganizationcustomrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/configorganizationcustomrule/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

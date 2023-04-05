@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "certificatesigningrequest",
+    srcs = [
+        "certificatesigningrequest.go",
+        "certificatesigningrequest_CertificateSigningRequest.go",
+        "certificatesigningrequest_CertificateSigningRequestConfig.go",
+        "certificatesigningrequest_CertificateSigningRequestMetadata.go",
+        "certificatesigningrequest_CertificateSigningRequestMetadataOutputReference.go",
+        "certificatesigningrequest_CertificateSigningRequestMetadataOutputReference__runtime_type_checks.go",
+        "certificatesigningrequest_CertificateSigningRequestSpec.go",
+        "certificatesigningrequest_CertificateSigningRequestSpecOutputReference.go",
+        "certificatesigningrequest_CertificateSigningRequestSpecOutputReference__runtime_type_checks.go",
+        "certificatesigningrequest_CertificateSigningRequestTimeouts.go",
+        "certificatesigningrequest_CertificateSigningRequestTimeoutsOutputReference.go",
+        "certificatesigningrequest_CertificateSigningRequestTimeoutsOutputReference__runtime_type_checks.go",
+        "certificatesigningrequest_CertificateSigningRequest__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/certificatesigningrequest",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/certificatesigningrequest/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudbuildworkerpool",
+    srcs = [
+        "googlecloudbuildworkerpool.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPool.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolConfig.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolNetworkConfig.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference__runtime_type_checks.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolTimeouts.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolTimeoutsOutputReference.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolWorkerConfig.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference__runtime_type_checks.go",
+        "googlecloudbuildworkerpool_GoogleCloudbuildWorkerPool__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudbuildworkerpool",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudbuildworkerpool/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

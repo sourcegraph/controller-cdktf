@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "defaultsecuritygroup",
+    srcs = [
+        "defaultsecuritygroup.go",
+        "defaultsecuritygroup_DefaultSecurityGroup.go",
+        "defaultsecuritygroup_DefaultSecurityGroupConfig.go",
+        "defaultsecuritygroup_DefaultSecurityGroupEgress.go",
+        "defaultsecuritygroup_DefaultSecurityGroupEgressList.go",
+        "defaultsecuritygroup_DefaultSecurityGroupEgressList__runtime_type_checks.go",
+        "defaultsecuritygroup_DefaultSecurityGroupEgressOutputReference.go",
+        "defaultsecuritygroup_DefaultSecurityGroupEgressOutputReference__runtime_type_checks.go",
+        "defaultsecuritygroup_DefaultSecurityGroupIngress.go",
+        "defaultsecuritygroup_DefaultSecurityGroupIngressList.go",
+        "defaultsecuritygroup_DefaultSecurityGroupIngressList__runtime_type_checks.go",
+        "defaultsecuritygroup_DefaultSecurityGroupIngressOutputReference.go",
+        "defaultsecuritygroup_DefaultSecurityGroupIngressOutputReference__runtime_type_checks.go",
+        "defaultsecuritygroup_DefaultSecurityGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/defaultsecuritygroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/defaultsecuritygroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

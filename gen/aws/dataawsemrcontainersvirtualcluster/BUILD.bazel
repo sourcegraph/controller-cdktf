@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsemrcontainersvirtualcluster",
+    srcs = [
+        "dataawsemrcontainersvirtualcluster.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualCluster.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterConfig.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProvider.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfo.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfo.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList__runtime_type_checks.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference__runtime_type_checks.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoList.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoList__runtime_type_checks.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference__runtime_type_checks.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderList.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderList__runtime_type_checks.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference__runtime_type_checks.go",
+        "dataawsemrcontainersvirtualcluster_DataAwsEmrcontainersVirtualCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsemrcontainersvirtualcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsemrcontainersvirtualcluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

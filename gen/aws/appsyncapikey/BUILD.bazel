@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appsyncapikey",
+    srcs = [
+        "appsyncapikey.go",
+        "appsyncapikey_AppsyncApiKey.go",
+        "appsyncapikey_AppsyncApiKeyConfig.go",
+        "appsyncapikey_AppsyncApiKey__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/appsyncapikey",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/appsyncapikey/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

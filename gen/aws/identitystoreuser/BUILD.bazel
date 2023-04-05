@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "identitystoreuser",
+    srcs = [
+        "identitystoreuser.go",
+        "identitystoreuser_IdentitystoreUser.go",
+        "identitystoreuser_IdentitystoreUserAddresses.go",
+        "identitystoreuser_IdentitystoreUserAddressesOutputReference.go",
+        "identitystoreuser_IdentitystoreUserAddressesOutputReference__runtime_type_checks.go",
+        "identitystoreuser_IdentitystoreUserConfig.go",
+        "identitystoreuser_IdentitystoreUserEmails.go",
+        "identitystoreuser_IdentitystoreUserEmailsOutputReference.go",
+        "identitystoreuser_IdentitystoreUserEmailsOutputReference__runtime_type_checks.go",
+        "identitystoreuser_IdentitystoreUserExternalIds.go",
+        "identitystoreuser_IdentitystoreUserExternalIdsList.go",
+        "identitystoreuser_IdentitystoreUserExternalIdsList__runtime_type_checks.go",
+        "identitystoreuser_IdentitystoreUserExternalIdsOutputReference.go",
+        "identitystoreuser_IdentitystoreUserExternalIdsOutputReference__runtime_type_checks.go",
+        "identitystoreuser_IdentitystoreUserName.go",
+        "identitystoreuser_IdentitystoreUserNameOutputReference.go",
+        "identitystoreuser_IdentitystoreUserNameOutputReference__runtime_type_checks.go",
+        "identitystoreuser_IdentitystoreUserPhoneNumbers.go",
+        "identitystoreuser_IdentitystoreUserPhoneNumbersOutputReference.go",
+        "identitystoreuser_IdentitystoreUserPhoneNumbersOutputReference__runtime_type_checks.go",
+        "identitystoreuser_IdentitystoreUser__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/identitystoreuser",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/identitystoreuser/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataprocautoscalingpolicyiammember",
+    srcs = [
+        "dataprocautoscalingpolicyiammember.go",
+        "dataprocautoscalingpolicyiammember_DataprocAutoscalingPolicyIamMember.go",
+        "dataprocautoscalingpolicyiammember_DataprocAutoscalingPolicyIamMemberCondition.go",
+        "dataprocautoscalingpolicyiammember_DataprocAutoscalingPolicyIamMemberConditionOutputReference.go",
+        "dataprocautoscalingpolicyiammember_DataprocAutoscalingPolicyIamMemberConditionOutputReference__runtime_type_checks.go",
+        "dataprocautoscalingpolicyiammember_DataprocAutoscalingPolicyIamMemberConfig.go",
+        "dataprocautoscalingpolicyiammember_DataprocAutoscalingPolicyIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dataprocautoscalingpolicyiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dataprocautoscalingpolicyiammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

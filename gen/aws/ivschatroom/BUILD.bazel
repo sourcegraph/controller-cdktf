@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ivschatroom",
+    srcs = [
+        "ivschatroom.go",
+        "ivschatroom_IvschatRoom.go",
+        "ivschatroom_IvschatRoomConfig.go",
+        "ivschatroom_IvschatRoomMessageReviewHandler.go",
+        "ivschatroom_IvschatRoomMessageReviewHandlerOutputReference.go",
+        "ivschatroom_IvschatRoomMessageReviewHandlerOutputReference__runtime_type_checks.go",
+        "ivschatroom_IvschatRoomTimeouts.go",
+        "ivschatroom_IvschatRoomTimeoutsOutputReference.go",
+        "ivschatroom_IvschatRoomTimeoutsOutputReference__runtime_type_checks.go",
+        "ivschatroom_IvschatRoom__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ivschatroom",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ivschatroom/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

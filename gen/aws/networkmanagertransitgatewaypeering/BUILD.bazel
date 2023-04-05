@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagertransitgatewaypeering",
+    srcs = [
+        "networkmanagertransitgatewaypeering.go",
+        "networkmanagertransitgatewaypeering_NetworkmanagerTransitGatewayPeering.go",
+        "networkmanagertransitgatewaypeering_NetworkmanagerTransitGatewayPeeringConfig.go",
+        "networkmanagertransitgatewaypeering_NetworkmanagerTransitGatewayPeeringTimeouts.go",
+        "networkmanagertransitgatewaypeering_NetworkmanagerTransitGatewayPeeringTimeoutsOutputReference.go",
+        "networkmanagertransitgatewaypeering_NetworkmanagerTransitGatewayPeeringTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagertransitgatewaypeering_NetworkmanagerTransitGatewayPeering__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagertransitgatewaypeering",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagertransitgatewaypeering/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

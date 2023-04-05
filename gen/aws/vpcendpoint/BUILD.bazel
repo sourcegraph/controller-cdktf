@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "vpcendpoint",
+    srcs = [
+        "vpcendpoint.go",
+        "vpcendpoint_VpcEndpoint.go",
+        "vpcendpoint_VpcEndpointConfig.go",
+        "vpcendpoint_VpcEndpointDnsEntry.go",
+        "vpcendpoint_VpcEndpointDnsEntryList.go",
+        "vpcendpoint_VpcEndpointDnsEntryList__runtime_type_checks.go",
+        "vpcendpoint_VpcEndpointDnsEntryOutputReference.go",
+        "vpcendpoint_VpcEndpointDnsEntryOutputReference__runtime_type_checks.go",
+        "vpcendpoint_VpcEndpointDnsOptions.go",
+        "vpcendpoint_VpcEndpointDnsOptionsOutputReference.go",
+        "vpcendpoint_VpcEndpointDnsOptionsOutputReference__runtime_type_checks.go",
+        "vpcendpoint_VpcEndpointTimeouts.go",
+        "vpcendpoint_VpcEndpointTimeoutsOutputReference.go",
+        "vpcendpoint_VpcEndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "vpcendpoint_VpcEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/vpcendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/vpcendpoint/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

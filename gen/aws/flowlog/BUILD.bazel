@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "flowlog",
+    srcs = [
+        "flowlog.go",
+        "flowlog_FlowLog.go",
+        "flowlog_FlowLogConfig.go",
+        "flowlog_FlowLogDestinationOptions.go",
+        "flowlog_FlowLogDestinationOptionsOutputReference.go",
+        "flowlog_FlowLogDestinationOptionsOutputReference__runtime_type_checks.go",
+        "flowlog_FlowLog__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/flowlog",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/flowlog/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

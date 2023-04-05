@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputediskresourcepolicyattachment",
+    srcs = [
+        "googlecomputediskresourcepolicyattachment.go",
+        "googlecomputediskresourcepolicyattachment_GoogleComputeDiskResourcePolicyAttachment.go",
+        "googlecomputediskresourcepolicyattachment_GoogleComputeDiskResourcePolicyAttachmentConfig.go",
+        "googlecomputediskresourcepolicyattachment_GoogleComputeDiskResourcePolicyAttachmentTimeouts.go",
+        "googlecomputediskresourcepolicyattachment_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference.go",
+        "googlecomputediskresourcepolicyattachment_GoogleComputeDiskResourcePolicyAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputediskresourcepolicyattachment_GoogleComputeDiskResourcePolicyAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputediskresourcepolicyattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputediskresourcepolicyattachment/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

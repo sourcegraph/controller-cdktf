@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsapigatewaydomainname",
+    srcs = [
+        "dataawsapigatewaydomainname.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainName.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainNameConfig.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainNameEndpointConfiguration.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainNameEndpointConfigurationList.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainNameEndpointConfigurationList__runtime_type_checks.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference__runtime_type_checks.go",
+        "dataawsapigatewaydomainname_DataAwsApiGatewayDomainName__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsapigatewaydomainname",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsapigatewaydomainname/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

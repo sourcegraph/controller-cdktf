@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketintelligenttieringconfiguration",
+    srcs = [
+        "s3bucketintelligenttieringconfiguration.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfiguration.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationConfig.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationFilter.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationFilterOutputReference.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationFilterOutputReference__runtime_type_checks.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationTiering.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationTieringList.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationTieringList__runtime_type_checks.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationTieringOutputReference.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfigurationTieringOutputReference__runtime_type_checks.go",
+        "s3bucketintelligenttieringconfiguration_S3BucketIntelligentTieringConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketintelligenttieringconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketintelligenttieringconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

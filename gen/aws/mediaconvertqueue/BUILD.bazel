@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "mediaconvertqueue",
+    srcs = [
+        "mediaconvertqueue.go",
+        "mediaconvertqueue_MediaConvertQueue.go",
+        "mediaconvertqueue_MediaConvertQueueConfig.go",
+        "mediaconvertqueue_MediaConvertQueueReservationPlanSettings.go",
+        "mediaconvertqueue_MediaConvertQueueReservationPlanSettingsOutputReference.go",
+        "mediaconvertqueue_MediaConvertQueueReservationPlanSettingsOutputReference__runtime_type_checks.go",
+        "mediaconvertqueue_MediaConvertQueue__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/mediaconvertqueue",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/mediaconvertqueue/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iapbrand",
+    srcs = [
+        "iapbrand.go",
+        "iapbrand_IapBrand.go",
+        "iapbrand_IapBrandConfig.go",
+        "iapbrand_IapBrandTimeouts.go",
+        "iapbrand_IapBrandTimeoutsOutputReference.go",
+        "iapbrand_IapBrandTimeoutsOutputReference__runtime_type_checks.go",
+        "iapbrand_IapBrand__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/iapbrand",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/iapbrand/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

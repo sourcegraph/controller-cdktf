@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "mfapolicyrule",
+    srcs = [
+        "mfapolicyrule.go",
+        "mfapolicyrule_MfaPolicyRule.go",
+        "mfapolicyrule_MfaPolicyRuleAppExclude.go",
+        "mfapolicyrule_MfaPolicyRuleAppExcludeList.go",
+        "mfapolicyrule_MfaPolicyRuleAppExcludeList__runtime_type_checks.go",
+        "mfapolicyrule_MfaPolicyRuleAppExcludeOutputReference.go",
+        "mfapolicyrule_MfaPolicyRuleAppExcludeOutputReference__runtime_type_checks.go",
+        "mfapolicyrule_MfaPolicyRuleAppInclude.go",
+        "mfapolicyrule_MfaPolicyRuleAppIncludeList.go",
+        "mfapolicyrule_MfaPolicyRuleAppIncludeList__runtime_type_checks.go",
+        "mfapolicyrule_MfaPolicyRuleAppIncludeOutputReference.go",
+        "mfapolicyrule_MfaPolicyRuleAppIncludeOutputReference__runtime_type_checks.go",
+        "mfapolicyrule_MfaPolicyRuleConfig.go",
+        "mfapolicyrule_MfaPolicyRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/mfapolicyrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/mfapolicyrule/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

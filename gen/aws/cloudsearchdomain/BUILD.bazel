@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudsearchdomain",
+    srcs = [
+        "cloudsearchdomain.go",
+        "cloudsearchdomain_CloudsearchDomain.go",
+        "cloudsearchdomain_CloudsearchDomainConfig.go",
+        "cloudsearchdomain_CloudsearchDomainEndpointOptions.go",
+        "cloudsearchdomain_CloudsearchDomainEndpointOptionsOutputReference.go",
+        "cloudsearchdomain_CloudsearchDomainEndpointOptionsOutputReference__runtime_type_checks.go",
+        "cloudsearchdomain_CloudsearchDomainIndexField.go",
+        "cloudsearchdomain_CloudsearchDomainIndexFieldList.go",
+        "cloudsearchdomain_CloudsearchDomainIndexFieldList__runtime_type_checks.go",
+        "cloudsearchdomain_CloudsearchDomainIndexFieldOutputReference.go",
+        "cloudsearchdomain_CloudsearchDomainIndexFieldOutputReference__runtime_type_checks.go",
+        "cloudsearchdomain_CloudsearchDomainScalingParameters.go",
+        "cloudsearchdomain_CloudsearchDomainScalingParametersOutputReference.go",
+        "cloudsearchdomain_CloudsearchDomainScalingParametersOutputReference__runtime_type_checks.go",
+        "cloudsearchdomain_CloudsearchDomainTimeouts.go",
+        "cloudsearchdomain_CloudsearchDomainTimeoutsOutputReference.go",
+        "cloudsearchdomain_CloudsearchDomainTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudsearchdomain_CloudsearchDomain__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudsearchdomain",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudsearchdomain/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

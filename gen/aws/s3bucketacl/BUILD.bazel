@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketacl",
+    srcs = [
+        "s3bucketacl.go",
+        "s3bucketacl_S3BucketAcl.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicy.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrant.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantGrantee.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantGranteeOutputReference.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantGranteeOutputReference__runtime_type_checks.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantList.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantList__runtime_type_checks.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantOutputReference.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyGrantOutputReference__runtime_type_checks.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyOutputReference.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyOutputReference__runtime_type_checks.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyOwner.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyOwnerOutputReference.go",
+        "s3bucketacl_S3BucketAclAccessControlPolicyOwnerOutputReference__runtime_type_checks.go",
+        "s3bucketacl_S3BucketAclConfig.go",
+        "s3bucketacl_S3BucketAcl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketacl",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketacl/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sagemakerworkteam",
+    srcs = [
+        "sagemakerworkteam.go",
+        "sagemakerworkteam_SagemakerWorkteam.go",
+        "sagemakerworkteam_SagemakerWorkteamConfig.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinition.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference__runtime_type_checks.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionList.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionList__runtime_type_checks.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionOidcMemberDefinition.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference__runtime_type_checks.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionOutputReference.go",
+        "sagemakerworkteam_SagemakerWorkteamMemberDefinitionOutputReference__runtime_type_checks.go",
+        "sagemakerworkteam_SagemakerWorkteamNotificationConfiguration.go",
+        "sagemakerworkteam_SagemakerWorkteamNotificationConfigurationOutputReference.go",
+        "sagemakerworkteam_SagemakerWorkteamNotificationConfigurationOutputReference__runtime_type_checks.go",
+        "sagemakerworkteam_SagemakerWorkteam__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerworkteam",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sagemakerworkteam/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

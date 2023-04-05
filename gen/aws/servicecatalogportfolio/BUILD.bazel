@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "servicecatalogportfolio",
+    srcs = [
+        "servicecatalogportfolio.go",
+        "servicecatalogportfolio_ServicecatalogPortfolio.go",
+        "servicecatalogportfolio_ServicecatalogPortfolioConfig.go",
+        "servicecatalogportfolio_ServicecatalogPortfolioTimeouts.go",
+        "servicecatalogportfolio_ServicecatalogPortfolioTimeoutsOutputReference.go",
+        "servicecatalogportfolio_ServicecatalogPortfolioTimeoutsOutputReference__runtime_type_checks.go",
+        "servicecatalogportfolio_ServicecatalogPortfolio__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/servicecatalogportfolio",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/servicecatalogportfolio/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iottopicruledestination",
+    srcs = [
+        "iottopicruledestination.go",
+        "iottopicruledestination_IotTopicRuleDestination.go",
+        "iottopicruledestination_IotTopicRuleDestinationConfig.go",
+        "iottopicruledestination_IotTopicRuleDestinationTimeouts.go",
+        "iottopicruledestination_IotTopicRuleDestinationTimeoutsOutputReference.go",
+        "iottopicruledestination_IotTopicRuleDestinationTimeoutsOutputReference__runtime_type_checks.go",
+        "iottopicruledestination_IotTopicRuleDestinationVpcConfiguration.go",
+        "iottopicruledestination_IotTopicRuleDestinationVpcConfigurationOutputReference.go",
+        "iottopicruledestination_IotTopicRuleDestinationVpcConfigurationOutputReference__runtime_type_checks.go",
+        "iottopicruledestination_IotTopicRuleDestination__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/iottopicruledestination",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/iottopicruledestination/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

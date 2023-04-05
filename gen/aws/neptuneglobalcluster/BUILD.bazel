@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "neptuneglobalcluster",
+    srcs = [
+        "neptuneglobalcluster.go",
+        "neptuneglobalcluster_NeptuneGlobalCluster.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterConfig.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterGlobalClusterMembers.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterGlobalClusterMembersList.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterGlobalClusterMembersList__runtime_type_checks.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterGlobalClusterMembersOutputReference.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterGlobalClusterMembersOutputReference__runtime_type_checks.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterTimeouts.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterTimeoutsOutputReference.go",
+        "neptuneglobalcluster_NeptuneGlobalClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "neptuneglobalcluster_NeptuneGlobalCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/neptuneglobalcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/neptuneglobalcluster/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

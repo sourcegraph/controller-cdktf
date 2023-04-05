@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3controlbucketlifecycleconfiguration",
+    srcs = [
+        "s3controlbucketlifecycleconfiguration.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfiguration.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationConfig.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRule.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference__runtime_type_checks.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleExpiration.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference__runtime_type_checks.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleFilter.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleFilterOutputReference.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleFilterOutputReference__runtime_type_checks.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleList.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleList__runtime_type_checks.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleOutputReference.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfigurationRuleOutputReference__runtime_type_checks.go",
+        "s3controlbucketlifecycleconfiguration_S3ControlBucketLifecycleConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3controlbucketlifecycleconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3controlbucketlifecycleconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

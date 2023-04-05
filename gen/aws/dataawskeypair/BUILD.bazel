@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawskeypair",
+    srcs = [
+        "dataawskeypair.go",
+        "dataawskeypair_DataAwsKeyPair.go",
+        "dataawskeypair_DataAwsKeyPairConfig.go",
+        "dataawskeypair_DataAwsKeyPairFilter.go",
+        "dataawskeypair_DataAwsKeyPairFilterList.go",
+        "dataawskeypair_DataAwsKeyPairFilterList__runtime_type_checks.go",
+        "dataawskeypair_DataAwsKeyPairFilterOutputReference.go",
+        "dataawskeypair_DataAwsKeyPairFilterOutputReference__runtime_type_checks.go",
+        "dataawskeypair_DataAwsKeyPairTimeouts.go",
+        "dataawskeypair_DataAwsKeyPairTimeoutsOutputReference.go",
+        "dataawskeypair_DataAwsKeyPairTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawskeypair_DataAwsKeyPair__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawskeypair",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawskeypair/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefirebaserulesruleset",
+    srcs = [
+        "googlefirebaserulesruleset.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRuleset.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetConfig.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetMetadata.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetMetadataList.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetMetadataList__runtime_type_checks.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetMetadataOutputReference.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetMetadataOutputReference__runtime_type_checks.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSource.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceFiles.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceFilesList.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceFilesList__runtime_type_checks.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceFilesOutputReference.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceFilesOutputReference__runtime_type_checks.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceOutputReference.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetSourceOutputReference__runtime_type_checks.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetTimeouts.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetTimeoutsOutputReference.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRulesetTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefirebaserulesruleset_GoogleFirebaserulesRuleset__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaserulesruleset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefirebaserulesruleset/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

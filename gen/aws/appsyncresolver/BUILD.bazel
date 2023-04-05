@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appsyncresolver",
+    srcs = [
+        "appsyncresolver.go",
+        "appsyncresolver_AppsyncResolver.go",
+        "appsyncresolver_AppsyncResolverCachingConfig.go",
+        "appsyncresolver_AppsyncResolverCachingConfigOutputReference.go",
+        "appsyncresolver_AppsyncResolverCachingConfigOutputReference__runtime_type_checks.go",
+        "appsyncresolver_AppsyncResolverConfig.go",
+        "appsyncresolver_AppsyncResolverPipelineConfig.go",
+        "appsyncresolver_AppsyncResolverPipelineConfigOutputReference.go",
+        "appsyncresolver_AppsyncResolverPipelineConfigOutputReference__runtime_type_checks.go",
+        "appsyncresolver_AppsyncResolverRuntime.go",
+        "appsyncresolver_AppsyncResolverRuntimeOutputReference.go",
+        "appsyncresolver_AppsyncResolverRuntimeOutputReference__runtime_type_checks.go",
+        "appsyncresolver_AppsyncResolverSyncConfig.go",
+        "appsyncresolver_AppsyncResolverSyncConfigLambdaConflictHandlerConfig.go",
+        "appsyncresolver_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference.go",
+        "appsyncresolver_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference__runtime_type_checks.go",
+        "appsyncresolver_AppsyncResolverSyncConfigOutputReference.go",
+        "appsyncresolver_AppsyncResolverSyncConfigOutputReference__runtime_type_checks.go",
+        "appsyncresolver_AppsyncResolver__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/appsyncresolver",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/appsyncresolver/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

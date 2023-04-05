@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "eksaddon",
+    srcs = [
+        "eksaddon.go",
+        "eksaddon_EksAddon.go",
+        "eksaddon_EksAddonConfig.go",
+        "eksaddon_EksAddonTimeouts.go",
+        "eksaddon_EksAddonTimeoutsOutputReference.go",
+        "eksaddon_EksAddonTimeoutsOutputReference__runtime_type_checks.go",
+        "eksaddon_EksAddon__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/eksaddon",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/eksaddon/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

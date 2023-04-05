@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktagroups",
+    srcs = [
+        "dataoktagroups.go",
+        "dataoktagroups_DataOktaGroups.go",
+        "dataoktagroups_DataOktaGroupsConfig.go",
+        "dataoktagroups_DataOktaGroupsGroups.go",
+        "dataoktagroups_DataOktaGroupsGroupsList.go",
+        "dataoktagroups_DataOktaGroupsGroupsList__runtime_type_checks.go",
+        "dataoktagroups_DataOktaGroupsGroupsOutputReference.go",
+        "dataoktagroups_DataOktaGroupsGroupsOutputReference__runtime_type_checks.go",
+        "dataoktagroups_DataOktaGroups__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktagroups",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktagroups/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cognitoidentitypoolrolesattachment",
+    srcs = [
+        "cognitoidentitypoolrolesattachment.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachment.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentConfig.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMapping.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingList.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingList__runtime_type_checks.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList__runtime_type_checks.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference__runtime_type_checks.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference__runtime_type_checks.go",
+        "cognitoidentitypoolrolesattachment_CognitoIdentityPoolRolesAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cognitoidentitypoolrolesattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cognitoidentitypoolrolesattachment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

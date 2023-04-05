@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlehealthcaredicomstore",
+    srcs = [
+        "googlehealthcaredicomstore.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStore.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreConfig.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreNotificationConfig.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreNotificationConfigOutputReference.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreNotificationConfigOutputReference__runtime_type_checks.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigs.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference__runtime_type_checks.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsList.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsList__runtime_type_checks.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsOutputReference.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreStreamConfigsOutputReference__runtime_type_checks.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreTimeouts.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreTimeoutsOutputReference.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStoreTimeoutsOutputReference__runtime_type_checks.go",
+        "googlehealthcaredicomstore_GoogleHealthcareDicomStore__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcaredicomstore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlehealthcaredicomstore/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

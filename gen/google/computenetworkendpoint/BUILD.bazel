@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computenetworkendpoint",
+    srcs = [
+        "computenetworkendpoint.go",
+        "computenetworkendpoint_ComputeNetworkEndpoint.go",
+        "computenetworkendpoint_ComputeNetworkEndpointConfig.go",
+        "computenetworkendpoint_ComputeNetworkEndpointTimeouts.go",
+        "computenetworkendpoint_ComputeNetworkEndpointTimeoutsOutputReference.go",
+        "computenetworkendpoint_ComputeNetworkEndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "computenetworkendpoint_ComputeNetworkEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computenetworkendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computenetworkendpoint/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleruntimeconfigconfigiambinding",
+    srcs = [
+        "googleruntimeconfigconfigiambinding.go",
+        "googleruntimeconfigconfigiambinding_GoogleRuntimeconfigConfigIamBinding.go",
+        "googleruntimeconfigconfigiambinding_GoogleRuntimeconfigConfigIamBindingCondition.go",
+        "googleruntimeconfigconfigiambinding_GoogleRuntimeconfigConfigIamBindingConditionOutputReference.go",
+        "googleruntimeconfigconfigiambinding_GoogleRuntimeconfigConfigIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googleruntimeconfigconfigiambinding_GoogleRuntimeconfigConfigIamBindingConfig.go",
+        "googleruntimeconfigconfigiambinding_GoogleRuntimeconfigConfigIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleruntimeconfigconfigiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleruntimeconfigconfigiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

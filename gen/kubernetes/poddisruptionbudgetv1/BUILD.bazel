@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "poddisruptionbudgetv1",
+    srcs = [
+        "poddisruptionbudgetv1.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1Config.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1Metadata.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1MetadataOutputReference.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1MetadataOutputReference__runtime_type_checks.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1Spec.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecOutputReference.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecOutputReference__runtime_type_checks.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelector.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorMatchExpressions.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList__runtime_type_checks.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference__runtime_type_checks.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorOutputReference.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1SpecSelectorOutputReference__runtime_type_checks.go",
+        "poddisruptionbudgetv1_PodDisruptionBudgetV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/poddisruptionbudgetv1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/poddisruptionbudgetv1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

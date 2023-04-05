@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleapigeeenvgroup",
+    srcs = [
+        "googleapigeeenvgroup.go",
+        "googleapigeeenvgroup_GoogleApigeeEnvgroup.go",
+        "googleapigeeenvgroup_GoogleApigeeEnvgroupConfig.go",
+        "googleapigeeenvgroup_GoogleApigeeEnvgroupTimeouts.go",
+        "googleapigeeenvgroup_GoogleApigeeEnvgroupTimeoutsOutputReference.go",
+        "googleapigeeenvgroup_GoogleApigeeEnvgroupTimeoutsOutputReference__runtime_type_checks.go",
+        "googleapigeeenvgroup_GoogleApigeeEnvgroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleapigeeenvgroup/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

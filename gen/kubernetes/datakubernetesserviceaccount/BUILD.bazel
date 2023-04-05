@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datakubernetesserviceaccount",
+    srcs = [
+        "datakubernetesserviceaccount.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccount.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountConfig.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountImagePullSecret.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountImagePullSecretList.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountImagePullSecretList__runtime_type_checks.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountImagePullSecretOutputReference.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountImagePullSecretOutputReference__runtime_type_checks.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountMetadata.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountMetadataOutputReference.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountMetadataOutputReference__runtime_type_checks.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountSecret.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountSecretList.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountSecretList__runtime_type_checks.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountSecretOutputReference.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccountSecretOutputReference__runtime_type_checks.go",
+        "datakubernetesserviceaccount_DataKubernetesServiceAccount__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetesserviceaccount",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/datakubernetesserviceaccount/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

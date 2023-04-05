@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computesslpolicy",
+    srcs = [
+        "computesslpolicy.go",
+        "computesslpolicy_ComputeSslPolicy.go",
+        "computesslpolicy_ComputeSslPolicyConfig.go",
+        "computesslpolicy_ComputeSslPolicyTimeouts.go",
+        "computesslpolicy_ComputeSslPolicyTimeoutsOutputReference.go",
+        "computesslpolicy_ComputeSslPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "computesslpolicy_ComputeSslPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computesslpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computesslpolicy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

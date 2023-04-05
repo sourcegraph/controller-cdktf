@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "glueuserdefinedfunction",
+    srcs = [
+        "glueuserdefinedfunction.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunction.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunctionConfig.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunctionResourceUris.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunctionResourceUrisList.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunctionResourceUrisList__runtime_type_checks.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunctionResourceUrisOutputReference.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunctionResourceUrisOutputReference__runtime_type_checks.go",
+        "glueuserdefinedfunction_GlueUserDefinedFunction__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/glueuserdefinedfunction",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/glueuserdefinedfunction/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

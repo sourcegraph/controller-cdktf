@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apitoken",
+    srcs = [
+        "apitoken.go",
+        "apitoken_ApiToken.go",
+        "apitoken_ApiTokenCondition.go",
+        "apitoken_ApiTokenConditionOutputReference.go",
+        "apitoken_ApiTokenConditionOutputReference__runtime_type_checks.go",
+        "apitoken_ApiTokenConditionRequestIp.go",
+        "apitoken_ApiTokenConditionRequestIpOutputReference.go",
+        "apitoken_ApiTokenConditionRequestIpOutputReference__runtime_type_checks.go",
+        "apitoken_ApiTokenConfig.go",
+        "apitoken_ApiTokenPolicy.go",
+        "apitoken_ApiTokenPolicyList.go",
+        "apitoken_ApiTokenPolicyList__runtime_type_checks.go",
+        "apitoken_ApiTokenPolicyOutputReference.go",
+        "apitoken_ApiTokenPolicyOutputReference__runtime_type_checks.go",
+        "apitoken_ApiToken__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/apitoken",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/apitoken/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

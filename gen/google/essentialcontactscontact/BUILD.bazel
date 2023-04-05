@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "essentialcontactscontact",
+    srcs = [
+        "essentialcontactscontact.go",
+        "essentialcontactscontact_EssentialContactsContact.go",
+        "essentialcontactscontact_EssentialContactsContactConfig.go",
+        "essentialcontactscontact_EssentialContactsContactTimeouts.go",
+        "essentialcontactscontact_EssentialContactsContactTimeoutsOutputReference.go",
+        "essentialcontactscontact_EssentialContactsContactTimeoutsOutputReference__runtime_type_checks.go",
+        "essentialcontactscontact_EssentialContactsContact__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/essentialcontactscontact",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/essentialcontactscontact/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

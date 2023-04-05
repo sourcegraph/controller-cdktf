@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglecomputeregioninstancegroup",
+    srcs = [
+        "datagooglecomputeregioninstancegroup.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroup.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupConfig.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstances.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesList.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesList__runtime_type_checks.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesNamedPorts.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList__runtime_type_checks.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsOutputReference.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsOutputReference__runtime_type_checks.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesOutputReference.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroupInstancesOutputReference__runtime_type_checks.go",
+        "datagooglecomputeregioninstancegroup_DataGoogleComputeRegionInstanceGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeregioninstancegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglecomputeregioninstancegroup/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

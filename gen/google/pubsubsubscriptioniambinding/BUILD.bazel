@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "pubsubsubscriptioniambinding",
+    srcs = [
+        "pubsubsubscriptioniambinding.go",
+        "pubsubsubscriptioniambinding_PubsubSubscriptionIamBinding.go",
+        "pubsubsubscriptioniambinding_PubsubSubscriptionIamBindingCondition.go",
+        "pubsubsubscriptioniambinding_PubsubSubscriptionIamBindingConditionOutputReference.go",
+        "pubsubsubscriptioniambinding_PubsubSubscriptionIamBindingConditionOutputReference__runtime_type_checks.go",
+        "pubsubsubscriptioniambinding_PubsubSubscriptionIamBindingConfig.go",
+        "pubsubsubscriptioniambinding_PubsubSubscriptionIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/pubsubsubscriptioniambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/pubsubsubscriptioniambinding/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

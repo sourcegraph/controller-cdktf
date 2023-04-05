@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storagegatewaysmbfileshare",
+    srcs = [
+        "storagegatewaysmbfileshare.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShare.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareCacheAttributes.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareCacheAttributesOutputReference.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareCacheAttributesOutputReference__runtime_type_checks.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareConfig.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareTimeouts.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareTimeoutsOutputReference.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShareTimeoutsOutputReference__runtime_type_checks.go",
+        "storagegatewaysmbfileshare_StoragegatewaySmbFileShare__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/storagegatewaysmbfileshare",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/storagegatewaysmbfileshare/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

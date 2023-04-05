@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsami",
+    srcs = [
+        "dataawsami.go",
+        "dataawsami_DataAwsAmi.go",
+        "dataawsami_DataAwsAmiBlockDeviceMappings.go",
+        "dataawsami_DataAwsAmiBlockDeviceMappingsList.go",
+        "dataawsami_DataAwsAmiBlockDeviceMappingsList__runtime_type_checks.go",
+        "dataawsami_DataAwsAmiBlockDeviceMappingsOutputReference.go",
+        "dataawsami_DataAwsAmiBlockDeviceMappingsOutputReference__runtime_type_checks.go",
+        "dataawsami_DataAwsAmiConfig.go",
+        "dataawsami_DataAwsAmiFilter.go",
+        "dataawsami_DataAwsAmiFilterList.go",
+        "dataawsami_DataAwsAmiFilterList__runtime_type_checks.go",
+        "dataawsami_DataAwsAmiFilterOutputReference.go",
+        "dataawsami_DataAwsAmiFilterOutputReference__runtime_type_checks.go",
+        "dataawsami_DataAwsAmiProductCodes.go",
+        "dataawsami_DataAwsAmiProductCodesList.go",
+        "dataawsami_DataAwsAmiProductCodesList__runtime_type_checks.go",
+        "dataawsami_DataAwsAmiProductCodesOutputReference.go",
+        "dataawsami_DataAwsAmiProductCodesOutputReference__runtime_type_checks.go",
+        "dataawsami_DataAwsAmiTimeouts.go",
+        "dataawsami_DataAwsAmiTimeoutsOutputReference.go",
+        "dataawsami_DataAwsAmiTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsami_DataAwsAmi__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsami",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsami/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

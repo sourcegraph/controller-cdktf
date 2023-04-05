@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "inspectorassessmenttemplate",
+    srcs = [
+        "inspectorassessmenttemplate.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplate.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplateConfig.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplateEventSubscription.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplateEventSubscriptionList.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplateEventSubscriptionList__runtime_type_checks.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplateEventSubscriptionOutputReference.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplateEventSubscriptionOutputReference__runtime_type_checks.go",
+        "inspectorassessmenttemplate_InspectorAssessmentTemplate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/inspectorassessmenttemplate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/inspectorassessmenttemplate/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

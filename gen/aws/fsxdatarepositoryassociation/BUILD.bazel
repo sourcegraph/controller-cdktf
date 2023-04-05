@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "fsxdatarepositoryassociation",
+    srcs = [
+        "fsxdatarepositoryassociation.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociation.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationConfig.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3AutoExportPolicy.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference__runtime_type_checks.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3AutoImportPolicy.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference__runtime_type_checks.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3OutputReference.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationS3OutputReference__runtime_type_checks.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationTimeouts.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationTimeoutsOutputReference.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociationTimeoutsOutputReference__runtime_type_checks.go",
+        "fsxdatarepositoryassociation_FsxDataRepositoryAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/fsxdatarepositoryassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/fsxdatarepositoryassociation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

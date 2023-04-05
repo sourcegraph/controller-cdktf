@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawssecuritygroups",
+    srcs = [
+        "dataawssecuritygroups.go",
+        "dataawssecuritygroups_DataAwsSecurityGroups.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsConfig.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsFilter.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsFilterList.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsFilterList__runtime_type_checks.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsFilterOutputReference.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsFilterOutputReference__runtime_type_checks.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsTimeouts.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsTimeoutsOutputReference.go",
+        "dataawssecuritygroups_DataAwsSecurityGroupsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawssecuritygroups_DataAwsSecurityGroups__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawssecuritygroups",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawssecuritygroups/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

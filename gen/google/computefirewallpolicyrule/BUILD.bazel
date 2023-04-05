@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computefirewallpolicyrule",
+    srcs = [
+        "computefirewallpolicyrule.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRule.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleConfig.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatch.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchLayer4Configs.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchLayer4ConfigsList.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchLayer4ConfigsList__runtime_type_checks.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference__runtime_type_checks.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchOutputReference.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleMatchOutputReference__runtime_type_checks.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleTimeouts.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleTimeoutsOutputReference.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "computefirewallpolicyrule_ComputeFirewallPolicyRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computefirewallpolicyrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computefirewallpolicyrule/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "subnet",
+    srcs = [
+        "subnet.go",
+        "subnet_Subnet.go",
+        "subnet_SubnetConfig.go",
+        "subnet_SubnetTimeouts.go",
+        "subnet_SubnetTimeoutsOutputReference.go",
+        "subnet_SubnetTimeoutsOutputReference__runtime_type_checks.go",
+        "subnet_Subnet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/subnet",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/subnet/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

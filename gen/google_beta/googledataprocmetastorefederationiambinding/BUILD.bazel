@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledataprocmetastorefederationiambinding",
+    srcs = [
+        "googledataprocmetastorefederationiambinding.go",
+        "googledataprocmetastorefederationiambinding_GoogleDataprocMetastoreFederationIamBinding.go",
+        "googledataprocmetastorefederationiambinding_GoogleDataprocMetastoreFederationIamBindingCondition.go",
+        "googledataprocmetastorefederationiambinding_GoogleDataprocMetastoreFederationIamBindingConditionOutputReference.go",
+        "googledataprocmetastorefederationiambinding_GoogleDataprocMetastoreFederationIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googledataprocmetastorefederationiambinding_GoogleDataprocMetastoreFederationIamBindingConfig.go",
+        "googledataprocmetastorefederationiambinding_GoogleDataprocMetastoreFederationIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastorefederationiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledataprocmetastorefederationiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

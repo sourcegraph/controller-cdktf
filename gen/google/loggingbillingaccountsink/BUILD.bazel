@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "loggingbillingaccountsink",
+    srcs = [
+        "loggingbillingaccountsink.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSink.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkBigqueryOptions.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkBigqueryOptionsOutputReference.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkBigqueryOptionsOutputReference__runtime_type_checks.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkConfig.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkExclusions.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkExclusionsList.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkExclusionsList__runtime_type_checks.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkExclusionsOutputReference.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSinkExclusionsOutputReference__runtime_type_checks.go",
+        "loggingbillingaccountsink_LoggingBillingAccountSink__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/loggingbillingaccountsink",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/loggingbillingaccountsink/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

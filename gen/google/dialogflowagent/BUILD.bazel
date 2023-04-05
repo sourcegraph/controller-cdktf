@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowagent",
+    srcs = [
+        "dialogflowagent.go",
+        "dialogflowagent_DialogflowAgent.go",
+        "dialogflowagent_DialogflowAgentConfig.go",
+        "dialogflowagent_DialogflowAgentTimeouts.go",
+        "dialogflowagent_DialogflowAgentTimeoutsOutputReference.go",
+        "dialogflowagent_DialogflowAgentTimeoutsOutputReference__runtime_type_checks.go",
+        "dialogflowagent_DialogflowAgent__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowagent",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowagent/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "neptuneclusterinstance",
+    srcs = [
+        "neptuneclusterinstance.go",
+        "neptuneclusterinstance_NeptuneClusterInstance.go",
+        "neptuneclusterinstance_NeptuneClusterInstanceConfig.go",
+        "neptuneclusterinstance_NeptuneClusterInstanceTimeouts.go",
+        "neptuneclusterinstance_NeptuneClusterInstanceTimeoutsOutputReference.go",
+        "neptuneclusterinstance_NeptuneClusterInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "neptuneclusterinstance_NeptuneClusterInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/neptuneclusterinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/neptuneclusterinstance/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

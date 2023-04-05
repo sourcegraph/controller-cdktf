@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "zonelockdown",
+    srcs = [
+        "zonelockdown.go",
+        "zonelockdown_ZoneLockdown.go",
+        "zonelockdown_ZoneLockdownConfig.go",
+        "zonelockdown_ZoneLockdownConfigurations.go",
+        "zonelockdown_ZoneLockdownConfigurationsList.go",
+        "zonelockdown_ZoneLockdownConfigurationsList__runtime_type_checks.go",
+        "zonelockdown_ZoneLockdownConfigurationsOutputReference.go",
+        "zonelockdown_ZoneLockdownConfigurationsOutputReference__runtime_type_checks.go",
+        "zonelockdown_ZoneLockdown__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/zonelockdown",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/jsii",
+        "//gen/cloudflare/zonelockdown/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

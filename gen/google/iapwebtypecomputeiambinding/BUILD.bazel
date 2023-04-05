@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iapwebtypecomputeiambinding",
+    srcs = [
+        "iapwebtypecomputeiambinding.go",
+        "iapwebtypecomputeiambinding_IapWebTypeComputeIamBinding.go",
+        "iapwebtypecomputeiambinding_IapWebTypeComputeIamBindingCondition.go",
+        "iapwebtypecomputeiambinding_IapWebTypeComputeIamBindingConditionOutputReference.go",
+        "iapwebtypecomputeiambinding_IapWebTypeComputeIamBindingConditionOutputReference__runtime_type_checks.go",
+        "iapwebtypecomputeiambinding_IapWebTypeComputeIamBindingConfig.go",
+        "iapwebtypecomputeiambinding_IapWebTypeComputeIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/iapwebtypecomputeiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/iapwebtypecomputeiambinding/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

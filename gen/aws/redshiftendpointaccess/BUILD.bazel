@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "redshiftendpointaccess",
+    srcs = [
+        "redshiftendpointaccess.go",
+        "redshiftendpointaccess_RedshiftEndpointAccess.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessConfig.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpoint.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointList.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointList__runtime_type_checks.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointNetworkInterface.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointNetworkInterfaceList.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointNetworkInterfaceList__runtime_type_checks.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference__runtime_type_checks.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointOutputReference.go",
+        "redshiftendpointaccess_RedshiftEndpointAccessVpcEndpointOutputReference__runtime_type_checks.go",
+        "redshiftendpointaccess_RedshiftEndpointAccess__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/redshiftendpointaccess",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/redshiftendpointaccess/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

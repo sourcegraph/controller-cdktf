@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "secretsmanagersecret",
+    srcs = [
+        "secretsmanagersecret.go",
+        "secretsmanagersecret_SecretsmanagerSecret.go",
+        "secretsmanagersecret_SecretsmanagerSecretConfig.go",
+        "secretsmanagersecret_SecretsmanagerSecretReplica.go",
+        "secretsmanagersecret_SecretsmanagerSecretReplicaList.go",
+        "secretsmanagersecret_SecretsmanagerSecretReplicaList__runtime_type_checks.go",
+        "secretsmanagersecret_SecretsmanagerSecretReplicaOutputReference.go",
+        "secretsmanagersecret_SecretsmanagerSecretReplicaOutputReference__runtime_type_checks.go",
+        "secretsmanagersecret_SecretsmanagerSecretRotationRules.go",
+        "secretsmanagersecret_SecretsmanagerSecretRotationRulesOutputReference.go",
+        "secretsmanagersecret_SecretsmanagerSecretRotationRulesOutputReference__runtime_type_checks.go",
+        "secretsmanagersecret_SecretsmanagerSecret__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/secretsmanagersecret",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/secretsmanagersecret/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

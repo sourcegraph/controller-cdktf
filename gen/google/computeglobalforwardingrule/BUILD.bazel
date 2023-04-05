@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeglobalforwardingrule",
+    srcs = [
+        "computeglobalforwardingrule.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRule.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleConfig.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFilters.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersFilterLabels.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList__runtime_type_checks.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference__runtime_type_checks.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersList.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersList__runtime_type_checks.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersOutputReference.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleMetadataFiltersOutputReference__runtime_type_checks.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleTimeouts.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleTimeoutsOutputReference.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "computeglobalforwardingrule_ComputeGlobalForwardingRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeglobalforwardingrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeglobalforwardingrule/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

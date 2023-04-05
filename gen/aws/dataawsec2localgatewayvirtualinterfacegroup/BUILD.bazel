@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2localgatewayvirtualinterfacegroup",
+    srcs = [
+        "dataawsec2localgatewayvirtualinterfacegroup.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroup.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupConfig.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilter.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList__runtime_type_checks.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterOutputReference.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupTimeouts.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupTimeoutsOutputReference.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2localgatewayvirtualinterfacegroup_DataAwsEc2LocalGatewayVirtualInterfaceGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2localgatewayvirtualinterfacegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2localgatewayvirtualinterfacegroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

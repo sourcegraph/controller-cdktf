@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregionalsqlinjectionmatchset",
+    srcs = [
+        "wafregionalsqlinjectionmatchset.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSet.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetConfig.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList__runtime_type_checks.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference__runtime_type_checks.go",
+        "wafregionalsqlinjectionmatchset_WafregionalSqlInjectionMatchSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalsqlinjectionmatchset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregionalsqlinjectionmatchset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

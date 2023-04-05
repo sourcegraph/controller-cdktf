@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "evidentlyproject",
+    srcs = [
+        "evidentlyproject.go",
+        "evidentlyproject_EvidentlyProject.go",
+        "evidentlyproject_EvidentlyProjectConfig.go",
+        "evidentlyproject_EvidentlyProjectDataDelivery.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryCloudwatchLogs.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference__runtime_type_checks.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryOutputReference.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryOutputReference__runtime_type_checks.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryS3Destination.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryS3DestinationOutputReference.go",
+        "evidentlyproject_EvidentlyProjectDataDeliveryS3DestinationOutputReference__runtime_type_checks.go",
+        "evidentlyproject_EvidentlyProjectTimeouts.go",
+        "evidentlyproject_EvidentlyProjectTimeoutsOutputReference.go",
+        "evidentlyproject_EvidentlyProjectTimeoutsOutputReference__runtime_type_checks.go",
+        "evidentlyproject_EvidentlyProject__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/evidentlyproject",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/evidentlyproject/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

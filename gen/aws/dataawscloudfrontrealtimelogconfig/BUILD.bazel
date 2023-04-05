@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawscloudfrontrealtimelogconfig",
+    srcs = [
+        "dataawscloudfrontrealtimelogconfig.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfig.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigConfig.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpoint.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList__runtime_type_checks.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference__runtime_type_checks.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointList.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointList__runtime_type_checks.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference__runtime_type_checks.go",
+        "dataawscloudfrontrealtimelogconfig_DataAwsCloudfrontRealtimeLogConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawscloudfrontrealtimelogconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawscloudfrontrealtimelogconfig/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

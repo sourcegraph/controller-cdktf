@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storageobjectaccesscontrol",
+    srcs = [
+        "storageobjectaccesscontrol.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControl.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlConfig.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlProjectTeam.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlProjectTeamList.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlProjectTeamList__runtime_type_checks.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlProjectTeamOutputReference.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlProjectTeamOutputReference__runtime_type_checks.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlTimeouts.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlTimeoutsOutputReference.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControlTimeoutsOutputReference__runtime_type_checks.go",
+        "storageobjectaccesscontrol_StorageObjectAccessControl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/storageobjectaccesscontrol",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/storageobjectaccesscontrol/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

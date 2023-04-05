@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ebssnapshotimport",
+    srcs = [
+        "ebssnapshotimport.go",
+        "ebssnapshotimport_EbsSnapshotImport.go",
+        "ebssnapshotimport_EbsSnapshotImportClientData.go",
+        "ebssnapshotimport_EbsSnapshotImportClientDataOutputReference.go",
+        "ebssnapshotimport_EbsSnapshotImportClientDataOutputReference__runtime_type_checks.go",
+        "ebssnapshotimport_EbsSnapshotImportConfig.go",
+        "ebssnapshotimport_EbsSnapshotImportDiskContainer.go",
+        "ebssnapshotimport_EbsSnapshotImportDiskContainerOutputReference.go",
+        "ebssnapshotimport_EbsSnapshotImportDiskContainerOutputReference__runtime_type_checks.go",
+        "ebssnapshotimport_EbsSnapshotImportDiskContainerUserBucket.go",
+        "ebssnapshotimport_EbsSnapshotImportDiskContainerUserBucketOutputReference.go",
+        "ebssnapshotimport_EbsSnapshotImportDiskContainerUserBucketOutputReference__runtime_type_checks.go",
+        "ebssnapshotimport_EbsSnapshotImportTimeouts.go",
+        "ebssnapshotimport_EbsSnapshotImportTimeoutsOutputReference.go",
+        "ebssnapshotimport_EbsSnapshotImportTimeoutsOutputReference__runtime_type_checks.go",
+        "ebssnapshotimport_EbsSnapshotImport__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ebssnapshotimport",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ebssnapshotimport/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

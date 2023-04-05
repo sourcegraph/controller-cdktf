@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "pubsublitetopic",
+    srcs = [
+        "pubsublitetopic.go",
+        "pubsublitetopic_PubsubLiteTopic.go",
+        "pubsublitetopic_PubsubLiteTopicConfig.go",
+        "pubsublitetopic_PubsubLiteTopicPartitionConfig.go",
+        "pubsublitetopic_PubsubLiteTopicPartitionConfigCapacity.go",
+        "pubsublitetopic_PubsubLiteTopicPartitionConfigCapacityOutputReference.go",
+        "pubsublitetopic_PubsubLiteTopicPartitionConfigCapacityOutputReference__runtime_type_checks.go",
+        "pubsublitetopic_PubsubLiteTopicPartitionConfigOutputReference.go",
+        "pubsublitetopic_PubsubLiteTopicPartitionConfigOutputReference__runtime_type_checks.go",
+        "pubsublitetopic_PubsubLiteTopicReservationConfig.go",
+        "pubsublitetopic_PubsubLiteTopicReservationConfigOutputReference.go",
+        "pubsublitetopic_PubsubLiteTopicReservationConfigOutputReference__runtime_type_checks.go",
+        "pubsublitetopic_PubsubLiteTopicRetentionConfig.go",
+        "pubsublitetopic_PubsubLiteTopicRetentionConfigOutputReference.go",
+        "pubsublitetopic_PubsubLiteTopicRetentionConfigOutputReference__runtime_type_checks.go",
+        "pubsublitetopic_PubsubLiteTopicTimeouts.go",
+        "pubsublitetopic_PubsubLiteTopicTimeoutsOutputReference.go",
+        "pubsublitetopic_PubsubLiteTopicTimeoutsOutputReference__runtime_type_checks.go",
+        "pubsublitetopic_PubsubLiteTopic__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/pubsublitetopic",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/pubsublitetopic/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

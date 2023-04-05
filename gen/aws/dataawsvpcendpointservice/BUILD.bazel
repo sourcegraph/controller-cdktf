@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcendpointservice",
+    srcs = [
+        "dataawsvpcendpointservice.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointService.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceConfig.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceFilter.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceFilterList.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceFilterList__runtime_type_checks.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceFilterOutputReference.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceTimeouts.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceTimeoutsOutputReference.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointServiceTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcendpointservice_DataAwsVpcEndpointService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcendpointservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcendpointservice/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

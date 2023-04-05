@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "firebaserulesruleset",
+    srcs = [
+        "firebaserulesruleset.go",
+        "firebaserulesruleset_FirebaserulesRuleset.go",
+        "firebaserulesruleset_FirebaserulesRulesetConfig.go",
+        "firebaserulesruleset_FirebaserulesRulesetMetadata.go",
+        "firebaserulesruleset_FirebaserulesRulesetMetadataList.go",
+        "firebaserulesruleset_FirebaserulesRulesetMetadataList__runtime_type_checks.go",
+        "firebaserulesruleset_FirebaserulesRulesetMetadataOutputReference.go",
+        "firebaserulesruleset_FirebaserulesRulesetMetadataOutputReference__runtime_type_checks.go",
+        "firebaserulesruleset_FirebaserulesRulesetSource.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceFiles.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceFilesList.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceFilesList__runtime_type_checks.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceFilesOutputReference.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceFilesOutputReference__runtime_type_checks.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceOutputReference.go",
+        "firebaserulesruleset_FirebaserulesRulesetSourceOutputReference__runtime_type_checks.go",
+        "firebaserulesruleset_FirebaserulesRulesetTimeouts.go",
+        "firebaserulesruleset_FirebaserulesRulesetTimeoutsOutputReference.go",
+        "firebaserulesruleset_FirebaserulesRulesetTimeoutsOutputReference__runtime_type_checks.go",
+        "firebaserulesruleset_FirebaserulesRuleset__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/firebaserulesruleset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/firebaserulesruleset/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

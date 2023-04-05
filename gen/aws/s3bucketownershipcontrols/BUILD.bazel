@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketownershipcontrols",
+    srcs = [
+        "s3bucketownershipcontrols.go",
+        "s3bucketownershipcontrols_S3BucketOwnershipControls.go",
+        "s3bucketownershipcontrols_S3BucketOwnershipControlsConfig.go",
+        "s3bucketownershipcontrols_S3BucketOwnershipControlsRule.go",
+        "s3bucketownershipcontrols_S3BucketOwnershipControlsRuleOutputReference.go",
+        "s3bucketownershipcontrols_S3BucketOwnershipControlsRuleOutputReference__runtime_type_checks.go",
+        "s3bucketownershipcontrols_S3BucketOwnershipControls__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketownershipcontrols",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketownershipcontrols/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

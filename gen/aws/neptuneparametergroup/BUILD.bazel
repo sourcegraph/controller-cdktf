@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "neptuneparametergroup",
+    srcs = [
+        "neptuneparametergroup.go",
+        "neptuneparametergroup_NeptuneParameterGroup.go",
+        "neptuneparametergroup_NeptuneParameterGroupConfig.go",
+        "neptuneparametergroup_NeptuneParameterGroupParameter.go",
+        "neptuneparametergroup_NeptuneParameterGroupParameterList.go",
+        "neptuneparametergroup_NeptuneParameterGroupParameterList__runtime_type_checks.go",
+        "neptuneparametergroup_NeptuneParameterGroupParameterOutputReference.go",
+        "neptuneparametergroup_NeptuneParameterGroupParameterOutputReference__runtime_type_checks.go",
+        "neptuneparametergroup_NeptuneParameterGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/neptuneparametergroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/neptuneparametergroup/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

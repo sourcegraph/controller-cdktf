@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcipampoolcidrs",
+    srcs = [
+        "dataawsvpcipampoolcidrs.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrs.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsConfig.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsFilter.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsFilterList.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsFilterList__runtime_type_checks.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsFilterOutputReference.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsIpamPoolCidrs.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsIpamPoolCidrsList.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsIpamPoolCidrsList__runtime_type_checks.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference__runtime_type_checks.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsTimeouts.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsTimeoutsOutputReference.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcipampoolcidrs_DataAwsVpcIpamPoolCidrs__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcipampoolcidrs",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcipampoolcidrs/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

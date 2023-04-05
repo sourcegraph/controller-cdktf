@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudassetorganizationfeed",
+    srcs = [
+        "googlecloudassetorganizationfeed.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeed.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedCondition.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedConditionOutputReference.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedConditionOutputReference__runtime_type_checks.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedConfig.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedFeedOutputConfig.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference__runtime_type_checks.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestination.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference__runtime_type_checks.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedTimeouts.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedTimeoutsOutputReference.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeedTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecloudassetorganizationfeed_GoogleCloudAssetOrganizationFeed__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudassetorganizationfeed",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudassetorganizationfeed/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

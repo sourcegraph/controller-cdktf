@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcipampools",
+    srcs = [
+        "dataawsvpcipampools.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPools.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsConfig.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsFilter.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsFilterList.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsFilterList__runtime_type_checks.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsFilterOutputReference.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsIpamPools.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsIpamPoolsList.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsIpamPoolsList__runtime_type_checks.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsIpamPoolsOutputReference.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPoolsIpamPoolsOutputReference__runtime_type_checks.go",
+        "dataawsvpcipampools_DataAwsVpcIpamPools__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcipampools",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcipampools/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

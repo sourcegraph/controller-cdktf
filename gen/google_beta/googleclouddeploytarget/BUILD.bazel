@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleclouddeploytarget",
+    srcs = [
+        "googleclouddeploytarget.go",
+        "googleclouddeploytarget_GoogleClouddeployTarget.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetAnthosCluster.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetAnthosClusterOutputReference.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetAnthosClusterOutputReference__runtime_type_checks.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetConfig.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetExecutionConfigs.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetExecutionConfigsList.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetExecutionConfigsList__runtime_type_checks.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetExecutionConfigsOutputReference.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetExecutionConfigsOutputReference__runtime_type_checks.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetGke.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetGkeOutputReference.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetGkeOutputReference__runtime_type_checks.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetTimeouts.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetTimeoutsOutputReference.go",
+        "googleclouddeploytarget_GoogleClouddeployTargetTimeoutsOutputReference__runtime_type_checks.go",
+        "googleclouddeploytarget_GoogleClouddeployTarget__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeploytarget",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleclouddeploytarget/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

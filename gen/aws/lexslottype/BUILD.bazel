@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lexslottype",
+    srcs = [
+        "lexslottype.go",
+        "lexslottype_LexSlotType.go",
+        "lexslottype_LexSlotTypeConfig.go",
+        "lexslottype_LexSlotTypeEnumerationValue.go",
+        "lexslottype_LexSlotTypeEnumerationValueList.go",
+        "lexslottype_LexSlotTypeEnumerationValueList__runtime_type_checks.go",
+        "lexslottype_LexSlotTypeEnumerationValueOutputReference.go",
+        "lexslottype_LexSlotTypeEnumerationValueOutputReference__runtime_type_checks.go",
+        "lexslottype_LexSlotTypeTimeouts.go",
+        "lexslottype_LexSlotTypeTimeoutsOutputReference.go",
+        "lexslottype_LexSlotTypeTimeoutsOutputReference__runtime_type_checks.go",
+        "lexslottype_LexSlotType__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lexslottype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lexslottype/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

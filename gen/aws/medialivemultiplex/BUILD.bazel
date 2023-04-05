@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "medialivemultiplex",
+    srcs = [
+        "medialivemultiplex.go",
+        "medialivemultiplex_MedialiveMultiplex.go",
+        "medialivemultiplex_MedialiveMultiplexConfig.go",
+        "medialivemultiplex_MedialiveMultiplexMultiplexSettings.go",
+        "medialivemultiplex_MedialiveMultiplexMultiplexSettingsOutputReference.go",
+        "medialivemultiplex_MedialiveMultiplexMultiplexSettingsOutputReference__runtime_type_checks.go",
+        "medialivemultiplex_MedialiveMultiplexTimeouts.go",
+        "medialivemultiplex_MedialiveMultiplexTimeoutsOutputReference.go",
+        "medialivemultiplex_MedialiveMultiplexTimeoutsOutputReference__runtime_type_checks.go",
+        "medialivemultiplex_MedialiveMultiplex__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/medialivemultiplex",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/medialivemultiplex/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

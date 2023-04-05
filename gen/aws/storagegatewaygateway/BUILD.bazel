@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storagegatewaygateway",
+    srcs = [
+        "storagegatewaygateway.go",
+        "storagegatewaygateway_StoragegatewayGateway.go",
+        "storagegatewaygateway_StoragegatewayGatewayConfig.go",
+        "storagegatewaygateway_StoragegatewayGatewayGatewayNetworkInterface.go",
+        "storagegatewaygateway_StoragegatewayGatewayGatewayNetworkInterfaceList.go",
+        "storagegatewaygateway_StoragegatewayGatewayGatewayNetworkInterfaceList__runtime_type_checks.go",
+        "storagegatewaygateway_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference.go",
+        "storagegatewaygateway_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference__runtime_type_checks.go",
+        "storagegatewaygateway_StoragegatewayGatewayMaintenanceStartTime.go",
+        "storagegatewaygateway_StoragegatewayGatewayMaintenanceStartTimeOutputReference.go",
+        "storagegatewaygateway_StoragegatewayGatewayMaintenanceStartTimeOutputReference__runtime_type_checks.go",
+        "storagegatewaygateway_StoragegatewayGatewaySmbActiveDirectorySettings.go",
+        "storagegatewaygateway_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference.go",
+        "storagegatewaygateway_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference__runtime_type_checks.go",
+        "storagegatewaygateway_StoragegatewayGatewayTimeouts.go",
+        "storagegatewaygateway_StoragegatewayGatewayTimeoutsOutputReference.go",
+        "storagegatewaygateway_StoragegatewayGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "storagegatewaygateway_StoragegatewayGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/storagegatewaygateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/storagegatewaygateway/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

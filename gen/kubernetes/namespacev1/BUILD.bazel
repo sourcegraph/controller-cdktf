@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "namespacev1",
+    srcs = [
+        "namespacev1.go",
+        "namespacev1_NamespaceV1.go",
+        "namespacev1_NamespaceV1Config.go",
+        "namespacev1_NamespaceV1Metadata.go",
+        "namespacev1_NamespaceV1MetadataOutputReference.go",
+        "namespacev1_NamespaceV1MetadataOutputReference__runtime_type_checks.go",
+        "namespacev1_NamespaceV1Timeouts.go",
+        "namespacev1_NamespaceV1TimeoutsOutputReference.go",
+        "namespacev1_NamespaceV1TimeoutsOutputReference__runtime_type_checks.go",
+        "namespacev1_NamespaceV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/namespacev1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/namespacev1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

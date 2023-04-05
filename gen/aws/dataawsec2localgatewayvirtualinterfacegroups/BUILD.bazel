@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2localgatewayvirtualinterfacegroups",
+    srcs = [
+        "dataawsec2localgatewayvirtualinterfacegroups.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroups.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilter.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterList.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterList__runtime_type_checks.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputReference.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsTimeouts.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsTimeoutsOutputReference.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroupsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2localgatewayvirtualinterfacegroups_DataAwsEc2LocalGatewayVirtualInterfaceGroups__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2localgatewayvirtualinterfacegroups",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2localgatewayvirtualinterfacegroups/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

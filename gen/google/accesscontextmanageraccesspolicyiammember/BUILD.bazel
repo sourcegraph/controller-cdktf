@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "accesscontextmanageraccesspolicyiammember",
+    srcs = [
+        "accesscontextmanageraccesspolicyiammember.go",
+        "accesscontextmanageraccesspolicyiammember_AccessContextManagerAccessPolicyIamMember.go",
+        "accesscontextmanageraccesspolicyiammember_AccessContextManagerAccessPolicyIamMemberCondition.go",
+        "accesscontextmanageraccesspolicyiammember_AccessContextManagerAccessPolicyIamMemberConditionOutputReference.go",
+        "accesscontextmanageraccesspolicyiammember_AccessContextManagerAccessPolicyIamMemberConditionOutputReference__runtime_type_checks.go",
+        "accesscontextmanageraccesspolicyiammember_AccessContextManagerAccessPolicyIamMemberConfig.go",
+        "accesscontextmanageraccesspolicyiammember_AccessContextManagerAccessPolicyIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/accesscontextmanageraccesspolicyiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/accesscontextmanageraccesspolicyiammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

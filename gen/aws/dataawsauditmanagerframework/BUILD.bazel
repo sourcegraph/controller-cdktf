@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsauditmanagerframework",
+    srcs = [
+        "dataawsauditmanagerframework.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFramework.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkConfig.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSets.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsControls.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsControlsList.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsControlsList__runtime_type_checks.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference__runtime_type_checks.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsList.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsList__runtime_type_checks.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsOutputReference.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFrameworkControlSetsOutputReference__runtime_type_checks.go",
+        "dataawsauditmanagerframework_DataAwsAuditmanagerFramework__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsauditmanagerframework",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsauditmanagerframework/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

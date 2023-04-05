@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "folderorganizationpolicy",
+    srcs = [
+        "folderorganizationpolicy.go",
+        "folderorganizationpolicy_FolderOrganizationPolicy.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyBooleanPolicy.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyBooleanPolicyOutputReference.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyBooleanPolicyOutputReference__runtime_type_checks.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyConfig.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicy.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyAllow.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyAllowOutputReference.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyAllowOutputReference__runtime_type_checks.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyDeny.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyDenyOutputReference.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyDenyOutputReference__runtime_type_checks.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyOutputReference.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyListPolicyOutputReference__runtime_type_checks.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyRestorePolicy.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyRestorePolicyOutputReference.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyRestorePolicyOutputReference__runtime_type_checks.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyTimeouts.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyTimeoutsOutputReference.go",
+        "folderorganizationpolicy_FolderOrganizationPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "folderorganizationpolicy_FolderOrganizationPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/folderorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/folderorganizationpolicy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

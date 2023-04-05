@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "memorydbsnapshot",
+    srcs = [
+        "memorydbsnapshot.go",
+        "memorydbsnapshot_MemorydbSnapshot.go",
+        "memorydbsnapshot_MemorydbSnapshotClusterConfiguration.go",
+        "memorydbsnapshot_MemorydbSnapshotClusterConfigurationList.go",
+        "memorydbsnapshot_MemorydbSnapshotClusterConfigurationList__runtime_type_checks.go",
+        "memorydbsnapshot_MemorydbSnapshotClusterConfigurationOutputReference.go",
+        "memorydbsnapshot_MemorydbSnapshotClusterConfigurationOutputReference__runtime_type_checks.go",
+        "memorydbsnapshot_MemorydbSnapshotConfig.go",
+        "memorydbsnapshot_MemorydbSnapshotTimeouts.go",
+        "memorydbsnapshot_MemorydbSnapshotTimeoutsOutputReference.go",
+        "memorydbsnapshot_MemorydbSnapshotTimeoutsOutputReference__runtime_type_checks.go",
+        "memorydbsnapshot_MemorydbSnapshot__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/memorydbsnapshot",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/memorydbsnapshot/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

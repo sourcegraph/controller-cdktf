@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleiamworkloadidentitypool",
+    srcs = [
+        "googleiamworkloadidentitypool.go",
+        "googleiamworkloadidentitypool_GoogleIamWorkloadIdentityPool.go",
+        "googleiamworkloadidentitypool_GoogleIamWorkloadIdentityPoolConfig.go",
+        "googleiamworkloadidentitypool_GoogleIamWorkloadIdentityPoolTimeouts.go",
+        "googleiamworkloadidentitypool_GoogleIamWorkloadIdentityPoolTimeoutsOutputReference.go",
+        "googleiamworkloadidentitypool_GoogleIamWorkloadIdentityPoolTimeoutsOutputReference__runtime_type_checks.go",
+        "googleiamworkloadidentitypool_GoogleIamWorkloadIdentityPool__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkloadidentitypool",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleiamworkloadidentitypool/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

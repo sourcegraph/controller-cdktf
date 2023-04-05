@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleprojectaccessapprovalsettings",
+    srcs = [
+        "googleprojectaccessapprovalsettings.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettings.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsConfig.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsEnrolledServices.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsEnrolledServicesList.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsEnrolledServicesList__runtime_type_checks.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsEnrolledServicesOutputReference.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsEnrolledServicesOutputReference__runtime_type_checks.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsTimeouts.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsTimeoutsOutputReference.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettingsTimeoutsOutputReference__runtime_type_checks.go",
+        "googleprojectaccessapprovalsettings_GoogleProjectAccessApprovalSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectaccessapprovalsettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleprojectaccessapprovalsettings/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

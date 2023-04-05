@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "role",
+    srcs = [
+        "role.go",
+        "role_Role.go",
+        "role_RoleConfig.go",
+        "role_RoleMetadata.go",
+        "role_RoleMetadataOutputReference.go",
+        "role_RoleMetadataOutputReference__runtime_type_checks.go",
+        "role_RoleRule.go",
+        "role_RoleRuleList.go",
+        "role_RoleRuleList__runtime_type_checks.go",
+        "role_RoleRuleOutputReference.go",
+        "role_RoleRuleOutputReference__runtime_type_checks.go",
+        "role_Role__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/role",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/role/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

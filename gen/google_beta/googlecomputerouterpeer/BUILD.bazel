@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputerouterpeer",
+    srcs = [
+        "googlecomputerouterpeer.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeer.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerAdvertisedIpRanges.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerAdvertisedIpRangesList.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerAdvertisedIpRangesList__runtime_type_checks.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference__runtime_type_checks.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerBfd.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerBfdOutputReference.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerBfdOutputReference__runtime_type_checks.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerConfig.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerTimeouts.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerTimeoutsOutputReference.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeerTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputerouterpeer_GoogleComputeRouterPeer__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouterpeer",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputerouterpeer/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

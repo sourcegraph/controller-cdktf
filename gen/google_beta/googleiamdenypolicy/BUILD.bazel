@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleiamdenypolicy",
+    srcs = [
+        "googleiamdenypolicy.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicy.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyConfig.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRules.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesDenyRule.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesDenyRuleDenialCondition.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference__runtime_type_checks.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesDenyRuleOutputReference.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesDenyRuleOutputReference__runtime_type_checks.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesList.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesList__runtime_type_checks.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesOutputReference.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyRulesOutputReference__runtime_type_checks.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyTimeouts.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyTimeoutsOutputReference.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googleiamdenypolicy_GoogleIamDenyPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamdenypolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleiamdenypolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

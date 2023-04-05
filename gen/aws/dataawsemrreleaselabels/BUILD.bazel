@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsemrreleaselabels",
+    srcs = [
+        "dataawsemrreleaselabels.go",
+        "dataawsemrreleaselabels_DataAwsEmrReleaseLabels.go",
+        "dataawsemrreleaselabels_DataAwsEmrReleaseLabelsConfig.go",
+        "dataawsemrreleaselabels_DataAwsEmrReleaseLabelsFilters.go",
+        "dataawsemrreleaselabels_DataAwsEmrReleaseLabelsFiltersOutputReference.go",
+        "dataawsemrreleaselabels_DataAwsEmrReleaseLabelsFiltersOutputReference__runtime_type_checks.go",
+        "dataawsemrreleaselabels_DataAwsEmrReleaseLabels__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsemrreleaselabels",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsemrreleaselabels/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

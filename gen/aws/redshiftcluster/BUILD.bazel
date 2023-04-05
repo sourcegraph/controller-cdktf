@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "redshiftcluster",
+    srcs = [
+        "redshiftcluster.go",
+        "redshiftcluster_RedshiftCluster.go",
+        "redshiftcluster_RedshiftClusterClusterNodes.go",
+        "redshiftcluster_RedshiftClusterClusterNodesList.go",
+        "redshiftcluster_RedshiftClusterClusterNodesList__runtime_type_checks.go",
+        "redshiftcluster_RedshiftClusterClusterNodesOutputReference.go",
+        "redshiftcluster_RedshiftClusterClusterNodesOutputReference__runtime_type_checks.go",
+        "redshiftcluster_RedshiftClusterConfig.go",
+        "redshiftcluster_RedshiftClusterLogging.go",
+        "redshiftcluster_RedshiftClusterLoggingOutputReference.go",
+        "redshiftcluster_RedshiftClusterLoggingOutputReference__runtime_type_checks.go",
+        "redshiftcluster_RedshiftClusterSnapshotCopy.go",
+        "redshiftcluster_RedshiftClusterSnapshotCopyOutputReference.go",
+        "redshiftcluster_RedshiftClusterSnapshotCopyOutputReference__runtime_type_checks.go",
+        "redshiftcluster_RedshiftClusterTimeouts.go",
+        "redshiftcluster_RedshiftClusterTimeoutsOutputReference.go",
+        "redshiftcluster_RedshiftClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "redshiftcluster_RedshiftCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/redshiftcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/redshiftcluster/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

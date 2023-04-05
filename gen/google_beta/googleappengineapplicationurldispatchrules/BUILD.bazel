@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleappengineapplicationurldispatchrules",
+    srcs = [
+        "googleappengineapplicationurldispatchrules.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRules.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesConfig.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesDispatchRules.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList__runtime_type_checks.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference__runtime_type_checks.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesTimeouts.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference__runtime_type_checks.go",
+        "googleappengineapplicationurldispatchrules_GoogleAppEngineApplicationUrlDispatchRules__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineapplicationurldispatchrules",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleappengineapplicationurldispatchrules/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

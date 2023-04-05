@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsroutetables",
+    srcs = [
+        "dataawsroutetables.go",
+        "dataawsroutetables_DataAwsRouteTables.go",
+        "dataawsroutetables_DataAwsRouteTablesConfig.go",
+        "dataawsroutetables_DataAwsRouteTablesFilter.go",
+        "dataawsroutetables_DataAwsRouteTablesFilterList.go",
+        "dataawsroutetables_DataAwsRouteTablesFilterList__runtime_type_checks.go",
+        "dataawsroutetables_DataAwsRouteTablesFilterOutputReference.go",
+        "dataawsroutetables_DataAwsRouteTablesFilterOutputReference__runtime_type_checks.go",
+        "dataawsroutetables_DataAwsRouteTablesTimeouts.go",
+        "dataawsroutetables_DataAwsRouteTablesTimeoutsOutputReference.go",
+        "dataawsroutetables_DataAwsRouteTablesTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsroutetables_DataAwsRouteTables__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsroutetables",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsroutetables/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datasynclocationfsxopenzfsfilesystem",
+    srcs = [
+        "datasynclocationfsxopenzfsfilesystem.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystem.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemConfig.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocol.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolNfs.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference__runtime_type_checks.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference__runtime_type_checks.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference__runtime_type_checks.go",
+        "datasynclocationfsxopenzfsfilesystem_DatasyncLocationFsxOpenzfsFileSystem__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/datasynclocationfsxopenzfsfilesystem",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/datasynclocationfsxopenzfsfilesystem/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

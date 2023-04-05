@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appconfigconfigurationprofile",
+    srcs = [
+        "appconfigconfigurationprofile.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfile.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfileConfig.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfileValidator.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfileValidatorList.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfileValidatorList__runtime_type_checks.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfileValidatorOutputReference.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfileValidatorOutputReference__runtime_type_checks.go",
+        "appconfigconfigurationprofile_AppconfigConfigurationProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/appconfigconfigurationprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/appconfigconfigurationprofile/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

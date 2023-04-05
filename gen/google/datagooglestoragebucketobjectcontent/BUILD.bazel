@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglestoragebucketobjectcontent",
+    srcs = [
+        "datagooglestoragebucketobjectcontent.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContent.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContentConfig.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContentCustomerEncryption.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContentCustomerEncryptionList.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContentCustomerEncryptionList__runtime_type_checks.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference__runtime_type_checks.go",
+        "datagooglestoragebucketobjectcontent_DataGoogleStorageBucketObjectContent__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglestoragebucketobjectcontent",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglestoragebucketobjectcontent/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

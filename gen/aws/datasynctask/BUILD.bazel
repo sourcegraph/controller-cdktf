@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datasynctask",
+    srcs = [
+        "datasynctask.go",
+        "datasynctask_DatasyncTask.go",
+        "datasynctask_DatasyncTaskConfig.go",
+        "datasynctask_DatasyncTaskExcludes.go",
+        "datasynctask_DatasyncTaskExcludesOutputReference.go",
+        "datasynctask_DatasyncTaskExcludesOutputReference__runtime_type_checks.go",
+        "datasynctask_DatasyncTaskIncludes.go",
+        "datasynctask_DatasyncTaskIncludesOutputReference.go",
+        "datasynctask_DatasyncTaskIncludesOutputReference__runtime_type_checks.go",
+        "datasynctask_DatasyncTaskOptions.go",
+        "datasynctask_DatasyncTaskOptionsOutputReference.go",
+        "datasynctask_DatasyncTaskOptionsOutputReference__runtime_type_checks.go",
+        "datasynctask_DatasyncTaskSchedule.go",
+        "datasynctask_DatasyncTaskScheduleOutputReference.go",
+        "datasynctask_DatasyncTaskScheduleOutputReference__runtime_type_checks.go",
+        "datasynctask_DatasyncTaskTimeouts.go",
+        "datasynctask_DatasyncTaskTimeoutsOutputReference.go",
+        "datasynctask_DatasyncTaskTimeoutsOutputReference__runtime_type_checks.go",
+        "datasynctask_DatasyncTask__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/datasynctask",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/datasynctask/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

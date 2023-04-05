@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowfulfillment",
+    srcs = [
+        "dialogflowfulfillment.go",
+        "dialogflowfulfillment_DialogflowFulfillment.go",
+        "dialogflowfulfillment_DialogflowFulfillmentConfig.go",
+        "dialogflowfulfillment_DialogflowFulfillmentFeatures.go",
+        "dialogflowfulfillment_DialogflowFulfillmentFeaturesList.go",
+        "dialogflowfulfillment_DialogflowFulfillmentFeaturesList__runtime_type_checks.go",
+        "dialogflowfulfillment_DialogflowFulfillmentFeaturesOutputReference.go",
+        "dialogflowfulfillment_DialogflowFulfillmentFeaturesOutputReference__runtime_type_checks.go",
+        "dialogflowfulfillment_DialogflowFulfillmentGenericWebService.go",
+        "dialogflowfulfillment_DialogflowFulfillmentGenericWebServiceOutputReference.go",
+        "dialogflowfulfillment_DialogflowFulfillmentGenericWebServiceOutputReference__runtime_type_checks.go",
+        "dialogflowfulfillment_DialogflowFulfillmentTimeouts.go",
+        "dialogflowfulfillment_DialogflowFulfillmentTimeoutsOutputReference.go",
+        "dialogflowfulfillment_DialogflowFulfillmentTimeoutsOutputReference__runtime_type_checks.go",
+        "dialogflowfulfillment_DialogflowFulfillment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowfulfillment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowfulfillment/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

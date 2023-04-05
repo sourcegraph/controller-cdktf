@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3controlobjectlambdaaccesspoint",
+    srcs = [
+        "s3controlobjectlambdaaccesspoint.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPoint.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfig.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfiguration.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationOutputReference.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationOutputReference__runtime_type_checks.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference__runtime_type_checks.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference__runtime_type_checks.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList__runtime_type_checks.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference__runtime_type_checks.go",
+        "s3controlobjectlambdaaccesspoint_S3ControlObjectLambdaAccessPoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3controlobjectlambdaaccesspoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3controlobjectlambdaaccesspoint/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

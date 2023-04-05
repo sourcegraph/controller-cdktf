@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lb",
+    srcs = [
+        "lb.go",
+        "lb_Lb.go",
+        "lb_LbAccessLogs.go",
+        "lb_LbAccessLogsOutputReference.go",
+        "lb_LbAccessLogsOutputReference__runtime_type_checks.go",
+        "lb_LbConfig.go",
+        "lb_LbSubnetMapping.go",
+        "lb_LbSubnetMappingList.go",
+        "lb_LbSubnetMappingList__runtime_type_checks.go",
+        "lb_LbSubnetMappingOutputReference.go",
+        "lb_LbSubnetMappingOutputReference__runtime_type_checks.go",
+        "lb_LbTimeouts.go",
+        "lb_LbTimeoutsOutputReference.go",
+        "lb_LbTimeoutsOutputReference__runtime_type_checks.go",
+        "lb_Lb__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lb",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lb/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

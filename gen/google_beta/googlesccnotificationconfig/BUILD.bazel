@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlesccnotificationconfig",
+    srcs = [
+        "googlesccnotificationconfig.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfig.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigConfig.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigStreamingConfig.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigStreamingConfigOutputReference.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigStreamingConfigOutputReference__runtime_type_checks.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigTimeouts.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigTimeoutsOutputReference.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "googlesccnotificationconfig_GoogleSccNotificationConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesccnotificationconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlesccnotificationconfig/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "vpcipam",
+    srcs = [
+        "vpcipam.go",
+        "vpcipam_VpcIpam.go",
+        "vpcipam_VpcIpamConfig.go",
+        "vpcipam_VpcIpamOperatingRegions.go",
+        "vpcipam_VpcIpamOperatingRegionsList.go",
+        "vpcipam_VpcIpamOperatingRegionsList__runtime_type_checks.go",
+        "vpcipam_VpcIpamOperatingRegionsOutputReference.go",
+        "vpcipam_VpcIpamOperatingRegionsOutputReference__runtime_type_checks.go",
+        "vpcipam_VpcIpamTimeouts.go",
+        "vpcipam_VpcIpamTimeoutsOutputReference.go",
+        "vpcipam_VpcIpamTimeoutsOutputReference__runtime_type_checks.go",
+        "vpcipam_VpcIpam__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/vpcipam",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/vpcipam/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

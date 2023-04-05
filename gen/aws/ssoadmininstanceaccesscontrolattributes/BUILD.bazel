@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ssoadmininstanceaccesscontrolattributes",
+    srcs = [
+        "ssoadmininstanceaccesscontrolattributes.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributes.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttribute.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeList.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeList__runtime_type_checks.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeOutputReference.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeOutputReference__runtime_type_checks.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeValue.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeValueList.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeValueList__runtime_type_checks.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference__runtime_type_checks.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributesConfig.go",
+        "ssoadmininstanceaccesscontrolattributes_SsoadminInstanceAccessControlAttributes__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ssoadmininstanceaccesscontrolattributes",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/ssoadmininstanceaccesscontrolattributes/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

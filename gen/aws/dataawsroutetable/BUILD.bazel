@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsroutetable",
+    srcs = [
+        "dataawsroutetable.go",
+        "dataawsroutetable_DataAwsRouteTable.go",
+        "dataawsroutetable_DataAwsRouteTableAssociations.go",
+        "dataawsroutetable_DataAwsRouteTableAssociationsList.go",
+        "dataawsroutetable_DataAwsRouteTableAssociationsList__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTableAssociationsOutputReference.go",
+        "dataawsroutetable_DataAwsRouteTableAssociationsOutputReference__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTableConfig.go",
+        "dataawsroutetable_DataAwsRouteTableFilter.go",
+        "dataawsroutetable_DataAwsRouteTableFilterList.go",
+        "dataawsroutetable_DataAwsRouteTableFilterList__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTableFilterOutputReference.go",
+        "dataawsroutetable_DataAwsRouteTableFilterOutputReference__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTableRoutes.go",
+        "dataawsroutetable_DataAwsRouteTableRoutesList.go",
+        "dataawsroutetable_DataAwsRouteTableRoutesList__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTableRoutesOutputReference.go",
+        "dataawsroutetable_DataAwsRouteTableRoutesOutputReference__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTableTimeouts.go",
+        "dataawsroutetable_DataAwsRouteTableTimeoutsOutputReference.go",
+        "dataawsroutetable_DataAwsRouteTableTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsroutetable_DataAwsRouteTable__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsroutetable",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsroutetable/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

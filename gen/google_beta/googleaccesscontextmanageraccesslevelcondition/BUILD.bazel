@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleaccesscontextmanageraccesslevelcondition",
+    srcs = [
+        "googleaccesscontextmanageraccesslevelcondition.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelCondition.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionConfig.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicy.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraints.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList__runtime_type_checks.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference__runtime_type_checks.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference__runtime_type_checks.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionTimeouts.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionTimeoutsOutputReference.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelConditionTimeoutsOutputReference__runtime_type_checks.go",
+        "googleaccesscontextmanageraccesslevelcondition_GoogleAccessContextManagerAccessLevelCondition__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesslevelcondition",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleaccesscontextmanageraccesslevelcondition/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsorganizationsorganizationalunits",
+    srcs = [
+        "dataawsorganizationsorganizationalunits.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnits.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnitsChildren.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnitsChildrenList.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnitsChildrenList__runtime_type_checks.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnitsChildrenOutputReference.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnitsChildrenOutputReference__runtime_type_checks.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnitsConfig.go",
+        "dataawsorganizationsorganizationalunits_DataAwsOrganizationsOrganizationalUnits__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsorganizationsorganizationalunits",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsorganizationsorganizationalunits/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

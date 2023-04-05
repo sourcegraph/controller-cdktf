@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "efsreplicationconfiguration",
+    srcs = [
+        "efsreplicationconfiguration.go",
+        "efsreplicationconfiguration_EfsReplicationConfiguration.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationConfig.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationDestination.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationDestinationOutputReference.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationDestinationOutputReference__runtime_type_checks.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationTimeouts.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationTimeoutsOutputReference.go",
+        "efsreplicationconfiguration_EfsReplicationConfigurationTimeoutsOutputReference__runtime_type_checks.go",
+        "efsreplicationconfiguration_EfsReplicationConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/efsreplicationconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/efsreplicationconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

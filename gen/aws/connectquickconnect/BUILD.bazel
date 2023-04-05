@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connectquickconnect",
+    srcs = [
+        "connectquickconnect.go",
+        "connectquickconnect_ConnectQuickConnect.go",
+        "connectquickconnect_ConnectQuickConnectConfig.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfig.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigOutputReference.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigOutputReference__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigPhoneConfig.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigPhoneConfigList.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigPhoneConfigList__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigQueueConfig.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigQueueConfigList.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigQueueConfigList__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigUserConfig.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigUserConfigList.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigUserConfigList__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference.go",
+        "connectquickconnect_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference__runtime_type_checks.go",
+        "connectquickconnect_ConnectQuickConnect__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/connectquickconnect",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/connectquickconnect/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

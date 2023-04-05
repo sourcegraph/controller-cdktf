@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputemachineimageiambinding",
+    srcs = [
+        "googlecomputemachineimageiambinding.go",
+        "googlecomputemachineimageiambinding_GoogleComputeMachineImageIamBinding.go",
+        "googlecomputemachineimageiambinding_GoogleComputeMachineImageIamBindingCondition.go",
+        "googlecomputemachineimageiambinding_GoogleComputeMachineImageIamBindingConditionOutputReference.go",
+        "googlecomputemachineimageiambinding_GoogleComputeMachineImageIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlecomputemachineimageiambinding_GoogleComputeMachineImageIamBindingConfig.go",
+        "googlecomputemachineimageiambinding_GoogleComputeMachineImageIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputemachineimageiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputemachineimageiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

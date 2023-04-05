@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "projectorganizationpolicy",
+    srcs = [
+        "projectorganizationpolicy.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicy.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyBooleanPolicy.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyBooleanPolicyOutputReference.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyBooleanPolicyOutputReference__runtime_type_checks.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyConfig.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicy.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyAllow.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyAllowOutputReference.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyAllowOutputReference__runtime_type_checks.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyDeny.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyDenyOutputReference.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyDenyOutputReference__runtime_type_checks.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyOutputReference.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyListPolicyOutputReference__runtime_type_checks.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyRestorePolicy.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyRestorePolicyOutputReference.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyRestorePolicyOutputReference__runtime_type_checks.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyTimeouts.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyTimeoutsOutputReference.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "projectorganizationpolicy_ProjectOrganizationPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/projectorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/projectorganizationpolicy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

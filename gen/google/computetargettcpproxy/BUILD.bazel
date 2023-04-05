@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computetargettcpproxy",
+    srcs = [
+        "computetargettcpproxy.go",
+        "computetargettcpproxy_ComputeTargetTcpProxy.go",
+        "computetargettcpproxy_ComputeTargetTcpProxyConfig.go",
+        "computetargettcpproxy_ComputeTargetTcpProxyTimeouts.go",
+        "computetargettcpproxy_ComputeTargetTcpProxyTimeoutsOutputReference.go",
+        "computetargettcpproxy_ComputeTargetTcpProxyTimeoutsOutputReference__runtime_type_checks.go",
+        "computetargettcpproxy_ComputeTargetTcpProxy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computetargettcpproxy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computetargettcpproxy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

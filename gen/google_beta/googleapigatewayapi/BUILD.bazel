@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleapigatewayapi",
+    srcs = [
+        "googleapigatewayapi.go",
+        "googleapigatewayapi_GoogleApiGatewayApi.go",
+        "googleapigatewayapi_GoogleApiGatewayApiConfig.go",
+        "googleapigatewayapi_GoogleApiGatewayApiTimeouts.go",
+        "googleapigatewayapi_GoogleApiGatewayApiTimeoutsOutputReference.go",
+        "googleapigatewayapi_GoogleApiGatewayApiTimeoutsOutputReference__runtime_type_checks.go",
+        "googleapigatewayapi_GoogleApiGatewayApi__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigatewayapi",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleapigatewayapi/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

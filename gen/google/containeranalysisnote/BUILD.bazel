@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "containeranalysisnote",
+    srcs = [
+        "containeranalysisnote.go",
+        "containeranalysisnote_ContainerAnalysisNote.go",
+        "containeranalysisnote_ContainerAnalysisNoteAttestationAuthority.go",
+        "containeranalysisnote_ContainerAnalysisNoteAttestationAuthorityHint.go",
+        "containeranalysisnote_ContainerAnalysisNoteAttestationAuthorityHintOutputReference.go",
+        "containeranalysisnote_ContainerAnalysisNoteAttestationAuthorityHintOutputReference__runtime_type_checks.go",
+        "containeranalysisnote_ContainerAnalysisNoteAttestationAuthorityOutputReference.go",
+        "containeranalysisnote_ContainerAnalysisNoteAttestationAuthorityOutputReference__runtime_type_checks.go",
+        "containeranalysisnote_ContainerAnalysisNoteConfig.go",
+        "containeranalysisnote_ContainerAnalysisNoteRelatedUrl.go",
+        "containeranalysisnote_ContainerAnalysisNoteRelatedUrlList.go",
+        "containeranalysisnote_ContainerAnalysisNoteRelatedUrlList__runtime_type_checks.go",
+        "containeranalysisnote_ContainerAnalysisNoteRelatedUrlOutputReference.go",
+        "containeranalysisnote_ContainerAnalysisNoteRelatedUrlOutputReference__runtime_type_checks.go",
+        "containeranalysisnote_ContainerAnalysisNoteTimeouts.go",
+        "containeranalysisnote_ContainerAnalysisNoteTimeoutsOutputReference.go",
+        "containeranalysisnote_ContainerAnalysisNoteTimeoutsOutputReference__runtime_type_checks.go",
+        "containeranalysisnote_ContainerAnalysisNote__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/containeranalysisnote",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/containeranalysisnote/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ecrreplicationconfiguration",
+    srcs = [
+        "ecrreplicationconfiguration.go",
+        "ecrreplicationconfiguration_EcrReplicationConfiguration.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationConfig.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfiguration.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationOutputReference.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationOutputReference__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRule.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleDestination.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleDestinationList.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleDestinationList__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleList.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleList__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference.go",
+        "ecrreplicationconfiguration_EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference__runtime_type_checks.go",
+        "ecrreplicationconfiguration_EcrReplicationConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ecrreplicationconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ecrreplicationconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

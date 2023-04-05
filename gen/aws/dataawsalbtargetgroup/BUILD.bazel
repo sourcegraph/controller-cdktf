@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsalbtargetgroup",
+    srcs = [
+        "dataawsalbtargetgroup.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroup.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupConfig.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupHealthCheck.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupHealthCheckList.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupHealthCheckList__runtime_type_checks.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupHealthCheckOutputReference.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupHealthCheckOutputReference__runtime_type_checks.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupStickiness.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupStickinessList.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupStickinessList__runtime_type_checks.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupStickinessOutputReference.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupStickinessOutputReference__runtime_type_checks.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupTimeouts.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupTimeoutsOutputReference.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsalbtargetgroup_DataAwsAlbTargetGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsalbtargetgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsalbtargetgroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

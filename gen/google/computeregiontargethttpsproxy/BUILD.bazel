@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeregiontargethttpsproxy",
+    srcs = [
+        "computeregiontargethttpsproxy.go",
+        "computeregiontargethttpsproxy_ComputeRegionTargetHttpsProxy.go",
+        "computeregiontargethttpsproxy_ComputeRegionTargetHttpsProxyConfig.go",
+        "computeregiontargethttpsproxy_ComputeRegionTargetHttpsProxyTimeouts.go",
+        "computeregiontargethttpsproxy_ComputeRegionTargetHttpsProxyTimeoutsOutputReference.go",
+        "computeregiontargethttpsproxy_ComputeRegionTargetHttpsProxyTimeoutsOutputReference__runtime_type_checks.go",
+        "computeregiontargethttpsproxy_ComputeRegionTargetHttpsProxy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeregiontargethttpsproxy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeregiontargethttpsproxy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

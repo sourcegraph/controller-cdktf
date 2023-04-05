@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeperinstanceconfig",
+    srcs = [
+        "computeperinstanceconfig.go",
+        "computeperinstanceconfig_ComputePerInstanceConfig.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigConfig.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedState.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateDisk.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateDiskList.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateDiskList__runtime_type_checks.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateDiskOutputReference.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateDiskOutputReference__runtime_type_checks.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateOutputReference.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigPreservedStateOutputReference__runtime_type_checks.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigTimeouts.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigTimeoutsOutputReference.go",
+        "computeperinstanceconfig_ComputePerInstanceConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "computeperinstanceconfig_ComputePerInstanceConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeperinstanceconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeperinstanceconfig/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

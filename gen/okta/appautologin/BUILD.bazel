@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appautologin",
+    srcs = [
+        "appautologin.go",
+        "appautologin_AppAutoLogin.go",
+        "appautologin_AppAutoLoginConfig.go",
+        "appautologin_AppAutoLoginTimeouts.go",
+        "appautologin_AppAutoLoginTimeoutsOutputReference.go",
+        "appautologin_AppAutoLoginTimeoutsOutputReference__runtime_type_checks.go",
+        "appautologin_AppAutoLoginUsers.go",
+        "appautologin_AppAutoLoginUsersList.go",
+        "appautologin_AppAutoLoginUsersList__runtime_type_checks.go",
+        "appautologin_AppAutoLoginUsersOutputReference.go",
+        "appautologin_AppAutoLoginUsersOutputReference__runtime_type_checks.go",
+        "appautologin_AppAutoLogin__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appautologin",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appautologin/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

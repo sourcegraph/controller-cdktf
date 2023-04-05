@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gluejob",
+    srcs = [
+        "gluejob.go",
+        "gluejob_GlueJob.go",
+        "gluejob_GlueJobCommand.go",
+        "gluejob_GlueJobCommandOutputReference.go",
+        "gluejob_GlueJobCommandOutputReference__runtime_type_checks.go",
+        "gluejob_GlueJobConfig.go",
+        "gluejob_GlueJobExecutionProperty.go",
+        "gluejob_GlueJobExecutionPropertyOutputReference.go",
+        "gluejob_GlueJobExecutionPropertyOutputReference__runtime_type_checks.go",
+        "gluejob_GlueJobNotificationProperty.go",
+        "gluejob_GlueJobNotificationPropertyOutputReference.go",
+        "gluejob_GlueJobNotificationPropertyOutputReference__runtime_type_checks.go",
+        "gluejob_GlueJob__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gluejob",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gluejob/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

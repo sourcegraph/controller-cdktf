@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dmss3endpoint",
+    srcs = [
+        "dmss3endpoint.go",
+        "dmss3endpoint_DmsS3Endpoint.go",
+        "dmss3endpoint_DmsS3EndpointConfig.go",
+        "dmss3endpoint_DmsS3EndpointTimeouts.go",
+        "dmss3endpoint_DmsS3EndpointTimeoutsOutputReference.go",
+        "dmss3endpoint_DmsS3EndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "dmss3endpoint_DmsS3Endpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dmss3endpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dmss3endpoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

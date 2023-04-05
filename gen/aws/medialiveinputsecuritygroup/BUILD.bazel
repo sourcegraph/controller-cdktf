@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "medialiveinputsecuritygroup",
+    srcs = [
+        "medialiveinputsecuritygroup.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroup.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupConfig.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupTimeouts.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupTimeoutsOutputReference.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupWhitelistRules.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupWhitelistRulesList.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupWhitelistRulesList__runtime_type_checks.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupWhitelistRulesOutputReference.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroupWhitelistRulesOutputReference__runtime_type_checks.go",
+        "medialiveinputsecuritygroup_MedialiveInputSecurityGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/medialiveinputsecuritygroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/medialiveinputsecuritygroup/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

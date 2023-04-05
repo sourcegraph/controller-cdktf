@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dboptiongroup",
+    srcs = [
+        "dboptiongroup.go",
+        "dboptiongroup_DbOptionGroup.go",
+        "dboptiongroup_DbOptionGroupConfig.go",
+        "dboptiongroup_DbOptionGroupOption.go",
+        "dboptiongroup_DbOptionGroupOptionList.go",
+        "dboptiongroup_DbOptionGroupOptionList__runtime_type_checks.go",
+        "dboptiongroup_DbOptionGroupOptionOptionSettings.go",
+        "dboptiongroup_DbOptionGroupOptionOptionSettingsList.go",
+        "dboptiongroup_DbOptionGroupOptionOptionSettingsList__runtime_type_checks.go",
+        "dboptiongroup_DbOptionGroupOptionOptionSettingsOutputReference.go",
+        "dboptiongroup_DbOptionGroupOptionOptionSettingsOutputReference__runtime_type_checks.go",
+        "dboptiongroup_DbOptionGroupOptionOutputReference.go",
+        "dboptiongroup_DbOptionGroupOptionOutputReference__runtime_type_checks.go",
+        "dboptiongroup_DbOptionGroupTimeouts.go",
+        "dboptiongroup_DbOptionGroupTimeoutsOutputReference.go",
+        "dboptiongroup_DbOptionGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "dboptiongroup_DbOptionGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dboptiongroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dboptiongroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

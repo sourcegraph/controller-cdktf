@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gluesecurityconfiguration",
+    srcs = [
+        "gluesecurityconfiguration.go",
+        "gluesecurityconfiguration_GlueSecurityConfiguration.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationConfig.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfiguration.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference__runtime_type_checks.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference__runtime_type_checks.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationOutputReference.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationOutputReference__runtime_type_checks.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationS3Encryption.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference.go",
+        "gluesecurityconfiguration_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference__runtime_type_checks.go",
+        "gluesecurityconfiguration_GlueSecurityConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gluesecurityconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gluesecurityconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafregexmatchset",
+    srcs = [
+        "wafregexmatchset.go",
+        "wafregexmatchset_WafRegexMatchSet.go",
+        "wafregexmatchset_WafRegexMatchSetConfig.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTuple.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleFieldToMatch.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleList.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleList__runtime_type_checks.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleOutputReference.go",
+        "wafregexmatchset_WafRegexMatchSetRegexMatchTupleOutputReference__runtime_type_checks.go",
+        "wafregexmatchset_WafRegexMatchSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafregexmatchset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafregexmatchset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

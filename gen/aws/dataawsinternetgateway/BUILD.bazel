@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsinternetgateway",
+    srcs = [
+        "dataawsinternetgateway.go",
+        "dataawsinternetgateway_DataAwsInternetGateway.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayAttachments.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayAttachmentsList.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayAttachmentsList__runtime_type_checks.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayAttachmentsOutputReference.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayAttachmentsOutputReference__runtime_type_checks.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayConfig.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayFilter.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayFilterList.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayFilterList__runtime_type_checks.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayFilterOutputReference.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayFilterOutputReference__runtime_type_checks.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayTimeouts.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayTimeoutsOutputReference.go",
+        "dataawsinternetgateway_DataAwsInternetGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsinternetgateway_DataAwsInternetGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsinternetgateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsinternetgateway/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

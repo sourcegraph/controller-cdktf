@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsautoscalinggroups",
+    srcs = [
+        "dataawsautoscalinggroups.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroups.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroupsConfig.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroupsFilter.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroupsFilterList.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroupsFilterList__runtime_type_checks.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroupsFilterOutputReference.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroupsFilterOutputReference__runtime_type_checks.go",
+        "dataawsautoscalinggroups_DataAwsAutoscalingGroups__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsautoscalinggroups",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsautoscalinggroups/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computenetwork",
+    srcs = [
+        "computenetwork.go",
+        "computenetwork_ComputeNetwork.go",
+        "computenetwork_ComputeNetworkConfig.go",
+        "computenetwork_ComputeNetworkTimeouts.go",
+        "computenetwork_ComputeNetworkTimeoutsOutputReference.go",
+        "computenetwork_ComputeNetworkTimeoutsOutputReference__runtime_type_checks.go",
+        "computenetwork_ComputeNetwork__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computenetwork",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computenetwork/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

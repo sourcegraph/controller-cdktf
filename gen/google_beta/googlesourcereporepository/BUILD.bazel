@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlesourcereporepository",
+    srcs = [
+        "googlesourcereporepository.go",
+        "googlesourcereporepository_GoogleSourcerepoRepository.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryConfig.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryPubsubConfigs.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryPubsubConfigsList.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryPubsubConfigsList__runtime_type_checks.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryPubsubConfigsOutputReference.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryPubsubConfigsOutputReference__runtime_type_checks.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryTimeouts.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryTimeoutsOutputReference.go",
+        "googlesourcereporepository_GoogleSourcerepoRepositoryTimeoutsOutputReference__runtime_type_checks.go",
+        "googlesourcereporepository_GoogleSourcerepoRepository__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesourcereporepository",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlesourcereporepository/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

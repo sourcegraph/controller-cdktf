@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawssecretsmanagersecrets",
+    srcs = [
+        "dataawssecretsmanagersecrets.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecrets.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecretsConfig.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecretsFilter.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecretsFilterList.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecretsFilterList__runtime_type_checks.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecretsFilterOutputReference.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecretsFilterOutputReference__runtime_type_checks.go",
+        "dataawssecretsmanagersecrets_DataAwsSecretsmanagerSecrets__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawssecretsmanagersecrets",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawssecretsmanagersecrets/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

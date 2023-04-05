@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "containerazureclient",
+    srcs = [
+        "containerazureclient.go",
+        "containerazureclient_ContainerAzureClient.go",
+        "containerazureclient_ContainerAzureClientConfig.go",
+        "containerazureclient_ContainerAzureClientTimeouts.go",
+        "containerazureclient_ContainerAzureClientTimeoutsOutputReference.go",
+        "containerazureclient_ContainerAzureClientTimeoutsOutputReference__runtime_type_checks.go",
+        "containerazureclient_ContainerAzureClient__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/containerazureclient",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/containerazureclient/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

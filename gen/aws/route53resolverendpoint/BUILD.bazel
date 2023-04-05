@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "route53resolverendpoint",
+    srcs = [
+        "route53resolverendpoint.go",
+        "route53resolverendpoint_Route53ResolverEndpoint.go",
+        "route53resolverendpoint_Route53ResolverEndpointConfig.go",
+        "route53resolverendpoint_Route53ResolverEndpointIpAddress.go",
+        "route53resolverendpoint_Route53ResolverEndpointIpAddressList.go",
+        "route53resolverendpoint_Route53ResolverEndpointIpAddressList__runtime_type_checks.go",
+        "route53resolverendpoint_Route53ResolverEndpointIpAddressOutputReference.go",
+        "route53resolverendpoint_Route53ResolverEndpointIpAddressOutputReference__runtime_type_checks.go",
+        "route53resolverendpoint_Route53ResolverEndpointTimeouts.go",
+        "route53resolverendpoint_Route53ResolverEndpointTimeoutsOutputReference.go",
+        "route53resolverendpoint_Route53ResolverEndpointTimeoutsOutputReference__runtime_type_checks.go",
+        "route53resolverendpoint_Route53ResolverEndpoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/route53resolverendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/route53resolverendpoint/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleiamworkloadidentitypoolprovider",
+    srcs = [
+        "googleiamworkloadidentitypoolprovider.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProvider.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderAws.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderAwsOutputReference.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderAwsOutputReference__runtime_type_checks.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderConfig.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderOidc.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference__runtime_type_checks.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderTimeouts.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderTimeoutsOutputReference.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProviderTimeoutsOutputReference__runtime_type_checks.go",
+        "googleiamworkloadidentitypoolprovider_GoogleIamWorkloadIdentityPoolProvider__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkloadidentitypoolprovider",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleiamworkloadidentitypoolprovider/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

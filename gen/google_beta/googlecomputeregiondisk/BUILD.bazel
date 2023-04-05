@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeregiondisk",
+    srcs = [
+        "googlecomputeregiondisk.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDisk.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskConfig.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskDiskEncryptionKey.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskDiskEncryptionKeyOutputReference.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskDiskEncryptionKeyOutputReference__runtime_type_checks.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskSourceSnapshotEncryptionKey.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference__runtime_type_checks.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskTimeouts.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskTimeoutsOutputReference.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDiskTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeregiondisk_GoogleComputeRegionDisk__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiondisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeregiondisk/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

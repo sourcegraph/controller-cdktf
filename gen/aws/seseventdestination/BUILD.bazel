@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "seseventdestination",
+    srcs = [
+        "seseventdestination.go",
+        "seseventdestination_SesEventDestination.go",
+        "seseventdestination_SesEventDestinationCloudwatchDestination.go",
+        "seseventdestination_SesEventDestinationCloudwatchDestinationList.go",
+        "seseventdestination_SesEventDestinationCloudwatchDestinationList__runtime_type_checks.go",
+        "seseventdestination_SesEventDestinationCloudwatchDestinationOutputReference.go",
+        "seseventdestination_SesEventDestinationCloudwatchDestinationOutputReference__runtime_type_checks.go",
+        "seseventdestination_SesEventDestinationConfig.go",
+        "seseventdestination_SesEventDestinationKinesisDestination.go",
+        "seseventdestination_SesEventDestinationKinesisDestinationOutputReference.go",
+        "seseventdestination_SesEventDestinationKinesisDestinationOutputReference__runtime_type_checks.go",
+        "seseventdestination_SesEventDestinationSnsDestination.go",
+        "seseventdestination_SesEventDestinationSnsDestinationOutputReference.go",
+        "seseventdestination_SesEventDestinationSnsDestinationOutputReference__runtime_type_checks.go",
+        "seseventdestination_SesEventDestination__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/seseventdestination",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/seseventdestination/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

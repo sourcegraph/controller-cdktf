@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketserversideencryptionconfiguration",
+    srcs = [
+        "s3bucketserversideencryptionconfiguration.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationA.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationAConfig.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationA__runtime_type_checks.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleA.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleAList.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleAList__runtime_type_checks.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleAOutputReference.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleAOutputReference__runtime_type_checks.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference.go",
+        "s3bucketserversideencryptionconfiguration_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketserversideencryptionconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketserversideencryptionconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

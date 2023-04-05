@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "spectrumapplication",
+    srcs = [
+        "spectrumapplication.go",
+        "spectrumapplication_SpectrumApplication.go",
+        "spectrumapplication_SpectrumApplicationConfig.go",
+        "spectrumapplication_SpectrumApplicationDns.go",
+        "spectrumapplication_SpectrumApplicationDnsOutputReference.go",
+        "spectrumapplication_SpectrumApplicationDnsOutputReference__runtime_type_checks.go",
+        "spectrumapplication_SpectrumApplicationOriginDns.go",
+        "spectrumapplication_SpectrumApplicationOriginDnsOutputReference.go",
+        "spectrumapplication_SpectrumApplicationOriginDnsOutputReference__runtime_type_checks.go",
+        "spectrumapplication_SpectrumApplicationOriginPortRange.go",
+        "spectrumapplication_SpectrumApplicationOriginPortRangeOutputReference.go",
+        "spectrumapplication_SpectrumApplicationOriginPortRangeOutputReference__runtime_type_checks.go",
+        "spectrumapplication_SpectrumApplication__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/spectrumapplication",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/jsii",
+        "//gen/cloudflare/spectrumapplication/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

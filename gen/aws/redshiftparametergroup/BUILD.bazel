@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "redshiftparametergroup",
+    srcs = [
+        "redshiftparametergroup.go",
+        "redshiftparametergroup_RedshiftParameterGroup.go",
+        "redshiftparametergroup_RedshiftParameterGroupConfig.go",
+        "redshiftparametergroup_RedshiftParameterGroupParameter.go",
+        "redshiftparametergroup_RedshiftParameterGroupParameterList.go",
+        "redshiftparametergroup_RedshiftParameterGroupParameterList__runtime_type_checks.go",
+        "redshiftparametergroup_RedshiftParameterGroupParameterOutputReference.go",
+        "redshiftparametergroup_RedshiftParameterGroupParameterOutputReference__runtime_type_checks.go",
+        "redshiftparametergroup_RedshiftParameterGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/redshiftparametergroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/redshiftparametergroup/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

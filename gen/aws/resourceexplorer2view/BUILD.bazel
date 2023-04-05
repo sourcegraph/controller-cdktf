@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "resourceexplorer2view",
+    srcs = [
+        "resourceexplorer2view.go",
+        "resourceexplorer2view_Resourceexplorer2View.go",
+        "resourceexplorer2view_Resourceexplorer2ViewConfig.go",
+        "resourceexplorer2view_Resourceexplorer2ViewFilters.go",
+        "resourceexplorer2view_Resourceexplorer2ViewFiltersList.go",
+        "resourceexplorer2view_Resourceexplorer2ViewFiltersList__runtime_type_checks.go",
+        "resourceexplorer2view_Resourceexplorer2ViewFiltersOutputReference.go",
+        "resourceexplorer2view_Resourceexplorer2ViewFiltersOutputReference__runtime_type_checks.go",
+        "resourceexplorer2view_Resourceexplorer2ViewIncludedProperty.go",
+        "resourceexplorer2view_Resourceexplorer2ViewIncludedPropertyList.go",
+        "resourceexplorer2view_Resourceexplorer2ViewIncludedPropertyList__runtime_type_checks.go",
+        "resourceexplorer2view_Resourceexplorer2ViewIncludedPropertyOutputReference.go",
+        "resourceexplorer2view_Resourceexplorer2ViewIncludedPropertyOutputReference__runtime_type_checks.go",
+        "resourceexplorer2view_Resourceexplorer2View__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/resourceexplorer2view",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/resourceexplorer2view/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

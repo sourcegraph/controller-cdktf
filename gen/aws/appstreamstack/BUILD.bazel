@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appstreamstack",
+    srcs = [
+        "appstreamstack.go",
+        "appstreamstack_AppstreamStack.go",
+        "appstreamstack_AppstreamStackAccessEndpoints.go",
+        "appstreamstack_AppstreamStackAccessEndpointsList.go",
+        "appstreamstack_AppstreamStackAccessEndpointsList__runtime_type_checks.go",
+        "appstreamstack_AppstreamStackAccessEndpointsOutputReference.go",
+        "appstreamstack_AppstreamStackAccessEndpointsOutputReference__runtime_type_checks.go",
+        "appstreamstack_AppstreamStackApplicationSettings.go",
+        "appstreamstack_AppstreamStackApplicationSettingsOutputReference.go",
+        "appstreamstack_AppstreamStackApplicationSettingsOutputReference__runtime_type_checks.go",
+        "appstreamstack_AppstreamStackConfig.go",
+        "appstreamstack_AppstreamStackStorageConnectors.go",
+        "appstreamstack_AppstreamStackStorageConnectorsList.go",
+        "appstreamstack_AppstreamStackStorageConnectorsList__runtime_type_checks.go",
+        "appstreamstack_AppstreamStackStorageConnectorsOutputReference.go",
+        "appstreamstack_AppstreamStackStorageConnectorsOutputReference__runtime_type_checks.go",
+        "appstreamstack_AppstreamStackUserSettings.go",
+        "appstreamstack_AppstreamStackUserSettingsList.go",
+        "appstreamstack_AppstreamStackUserSettingsList__runtime_type_checks.go",
+        "appstreamstack_AppstreamStackUserSettingsOutputReference.go",
+        "appstreamstack_AppstreamStackUserSettingsOutputReference__runtime_type_checks.go",
+        "appstreamstack_AppstreamStack__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/appstreamstack",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/appstreamstack/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

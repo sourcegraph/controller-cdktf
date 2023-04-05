@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "configconfigrule",
+    srcs = [
+        "configconfigrule.go",
+        "configconfigrule_ConfigConfigRule.go",
+        "configconfigrule_ConfigConfigRuleConfig.go",
+        "configconfigrule_ConfigConfigRuleScope.go",
+        "configconfigrule_ConfigConfigRuleScopeOutputReference.go",
+        "configconfigrule_ConfigConfigRuleScopeOutputReference__runtime_type_checks.go",
+        "configconfigrule_ConfigConfigRuleSource.go",
+        "configconfigrule_ConfigConfigRuleSourceCustomPolicyDetails.go",
+        "configconfigrule_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.go",
+        "configconfigrule_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference__runtime_type_checks.go",
+        "configconfigrule_ConfigConfigRuleSourceOutputReference.go",
+        "configconfigrule_ConfigConfigRuleSourceOutputReference__runtime_type_checks.go",
+        "configconfigrule_ConfigConfigRuleSourceSourceDetail.go",
+        "configconfigrule_ConfigConfigRuleSourceSourceDetailList.go",
+        "configconfigrule_ConfigConfigRuleSourceSourceDetailList__runtime_type_checks.go",
+        "configconfigrule_ConfigConfigRuleSourceSourceDetailOutputReference.go",
+        "configconfigrule_ConfigConfigRuleSourceSourceDetailOutputReference__runtime_type_checks.go",
+        "configconfigrule_ConfigConfigRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/configconfigrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/configconfigrule/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

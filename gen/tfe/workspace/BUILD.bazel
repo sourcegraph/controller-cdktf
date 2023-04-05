@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "workspace",
+    srcs = [
+        "workspace.go",
+        "workspace_Workspace.go",
+        "workspace_WorkspaceConfig.go",
+        "workspace_WorkspaceVcsRepo.go",
+        "workspace_WorkspaceVcsRepoOutputReference.go",
+        "workspace_WorkspaceVcsRepoOutputReference__runtime_type_checks.go",
+        "workspace_Workspace__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/tfe/workspace",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/tfe/jsii",
+        "//gen/tfe/workspace/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

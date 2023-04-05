@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appuserschema",
+    srcs = [
+        "appuserschema.go",
+        "appuserschema_AppUserSchema.go",
+        "appuserschema_AppUserSchemaArrayOneOf.go",
+        "appuserschema_AppUserSchemaArrayOneOfList.go",
+        "appuserschema_AppUserSchemaArrayOneOfList__runtime_type_checks.go",
+        "appuserschema_AppUserSchemaArrayOneOfOutputReference.go",
+        "appuserschema_AppUserSchemaArrayOneOfOutputReference__runtime_type_checks.go",
+        "appuserschema_AppUserSchemaConfig.go",
+        "appuserschema_AppUserSchemaOneOf.go",
+        "appuserschema_AppUserSchemaOneOfList.go",
+        "appuserschema_AppUserSchemaOneOfList__runtime_type_checks.go",
+        "appuserschema_AppUserSchemaOneOfOutputReference.go",
+        "appuserschema_AppUserSchemaOneOfOutputReference__runtime_type_checks.go",
+        "appuserschema_AppUserSchema__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appuserschema",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appuserschema/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagerconnection",
+    srcs = [
+        "networkmanagerconnection.go",
+        "networkmanagerconnection_NetworkmanagerConnection.go",
+        "networkmanagerconnection_NetworkmanagerConnectionConfig.go",
+        "networkmanagerconnection_NetworkmanagerConnectionTimeouts.go",
+        "networkmanagerconnection_NetworkmanagerConnectionTimeoutsOutputReference.go",
+        "networkmanagerconnection_NetworkmanagerConnectionTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagerconnection_NetworkmanagerConnection__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagerconnection",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagerconnection/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

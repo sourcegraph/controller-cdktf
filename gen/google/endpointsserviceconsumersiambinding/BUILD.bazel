@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "endpointsserviceconsumersiambinding",
+    srcs = [
+        "endpointsserviceconsumersiambinding.go",
+        "endpointsserviceconsumersiambinding_EndpointsServiceConsumersIamBinding.go",
+        "endpointsserviceconsumersiambinding_EndpointsServiceConsumersIamBindingCondition.go",
+        "endpointsserviceconsumersiambinding_EndpointsServiceConsumersIamBindingConditionOutputReference.go",
+        "endpointsserviceconsumersiambinding_EndpointsServiceConsumersIamBindingConditionOutputReference__runtime_type_checks.go",
+        "endpointsserviceconsumersiambinding_EndpointsServiceConsumersIamBindingConfig.go",
+        "endpointsserviceconsumersiambinding_EndpointsServiceConsumersIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/endpointsserviceconsumersiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/endpointsserviceconsumersiambinding/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

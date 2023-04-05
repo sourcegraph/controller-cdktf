@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleartifactregistryrepositoryiammember",
+    srcs = [
+        "googleartifactregistryrepositoryiammember.go",
+        "googleartifactregistryrepositoryiammember_GoogleArtifactRegistryRepositoryIamMember.go",
+        "googleartifactregistryrepositoryiammember_GoogleArtifactRegistryRepositoryIamMemberCondition.go",
+        "googleartifactregistryrepositoryiammember_GoogleArtifactRegistryRepositoryIamMemberConditionOutputReference.go",
+        "googleartifactregistryrepositoryiammember_GoogleArtifactRegistryRepositoryIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googleartifactregistryrepositoryiammember_GoogleArtifactRegistryRepositoryIamMemberConfig.go",
+        "googleartifactregistryrepositoryiammember_GoogleArtifactRegistryRepositoryIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleartifactregistryrepositoryiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleartifactregistryrepositoryiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

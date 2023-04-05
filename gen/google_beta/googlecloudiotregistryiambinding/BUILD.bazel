@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudiotregistryiambinding",
+    srcs = [
+        "googlecloudiotregistryiambinding.go",
+        "googlecloudiotregistryiambinding_GoogleCloudiotRegistryIamBinding.go",
+        "googlecloudiotregistryiambinding_GoogleCloudiotRegistryIamBindingCondition.go",
+        "googlecloudiotregistryiambinding_GoogleCloudiotRegistryIamBindingConditionOutputReference.go",
+        "googlecloudiotregistryiambinding_GoogleCloudiotRegistryIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlecloudiotregistryiambinding_GoogleCloudiotRegistryIamBindingConfig.go",
+        "googlecloudiotregistryiambinding_GoogleCloudiotRegistryIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudiotregistryiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudiotregistryiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

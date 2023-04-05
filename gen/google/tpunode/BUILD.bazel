@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "tpunode",
+    srcs = [
+        "tpunode.go",
+        "tpunode_TpuNode.go",
+        "tpunode_TpuNodeConfig.go",
+        "tpunode_TpuNodeNetworkEndpoints.go",
+        "tpunode_TpuNodeNetworkEndpointsList.go",
+        "tpunode_TpuNodeNetworkEndpointsList__runtime_type_checks.go",
+        "tpunode_TpuNodeNetworkEndpointsOutputReference.go",
+        "tpunode_TpuNodeNetworkEndpointsOutputReference__runtime_type_checks.go",
+        "tpunode_TpuNodeSchedulingConfig.go",
+        "tpunode_TpuNodeSchedulingConfigOutputReference.go",
+        "tpunode_TpuNodeSchedulingConfigOutputReference__runtime_type_checks.go",
+        "tpunode_TpuNodeTimeouts.go",
+        "tpunode_TpuNodeTimeoutsOutputReference.go",
+        "tpunode_TpuNodeTimeoutsOutputReference__runtime_type_checks.go",
+        "tpunode_TpuNode__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/tpunode",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/tpunode/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

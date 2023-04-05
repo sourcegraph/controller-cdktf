@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenetworkmanagementconnectivitytest",
+    srcs = [
+        "googlenetworkmanagementconnectivitytest.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTest.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestConfig.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestDestination.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestDestinationOutputReference.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestDestinationOutputReference__runtime_type_checks.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestSource.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestSourceOutputReference.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestSourceOutputReference__runtime_type_checks.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestTimeouts.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestTimeoutsOutputReference.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTestTimeoutsOutputReference__runtime_type_checks.go",
+        "googlenetworkmanagementconnectivitytest_GoogleNetworkManagementConnectivityTest__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkmanagementconnectivitytest",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlenetworkmanagementconnectivitytest/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

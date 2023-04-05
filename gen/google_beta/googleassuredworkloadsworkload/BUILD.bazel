@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleassuredworkloadsworkload",
+    srcs = [
+        "googleassuredworkloadsworkload.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkload.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadConfig.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadKmsSettings.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference__runtime_type_checks.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourceSettings.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourceSettingsList.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourceSettingsList__runtime_type_checks.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference__runtime_type_checks.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResources.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourcesList.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourcesList__runtime_type_checks.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourcesOutputReference.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadResourcesOutputReference__runtime_type_checks.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadTimeouts.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference__runtime_type_checks.go",
+        "googleassuredworkloadsworkload_GoogleAssuredWorkloadsWorkload__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleassuredworkloadsworkload",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleassuredworkloadsworkload/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

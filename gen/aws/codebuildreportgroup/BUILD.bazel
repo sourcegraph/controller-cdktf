@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codebuildreportgroup",
+    srcs = [
+        "codebuildreportgroup.go",
+        "codebuildreportgroup_CodebuildReportGroup.go",
+        "codebuildreportgroup_CodebuildReportGroupConfig.go",
+        "codebuildreportgroup_CodebuildReportGroupExportConfig.go",
+        "codebuildreportgroup_CodebuildReportGroupExportConfigOutputReference.go",
+        "codebuildreportgroup_CodebuildReportGroupExportConfigOutputReference__runtime_type_checks.go",
+        "codebuildreportgroup_CodebuildReportGroupExportConfigS3Destination.go",
+        "codebuildreportgroup_CodebuildReportGroupExportConfigS3DestinationOutputReference.go",
+        "codebuildreportgroup_CodebuildReportGroupExportConfigS3DestinationOutputReference__runtime_type_checks.go",
+        "codebuildreportgroup_CodebuildReportGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codebuildreportgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codebuildreportgroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledialogflowcxentitytype",
+    srcs = [
+        "googledialogflowcxentitytype.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityType.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeConfig.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeEntities.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeEntitiesList.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeEntitiesList__runtime_type_checks.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeEntitiesOutputReference.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeEntitiesOutputReference__runtime_type_checks.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeExcludedPhrases.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeExcludedPhrasesList.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeExcludedPhrasesList__runtime_type_checks.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference__runtime_type_checks.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeTimeouts.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeTimeoutsOutputReference.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityTypeTimeoutsOutputReference__runtime_type_checks.go",
+        "googledialogflowcxentitytype_GoogleDialogflowCxEntityType__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxentitytype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledialogflowcxentitytype/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

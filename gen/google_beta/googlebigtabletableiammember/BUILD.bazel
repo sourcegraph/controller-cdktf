@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebigtabletableiammember",
+    srcs = [
+        "googlebigtabletableiammember.go",
+        "googlebigtabletableiammember_GoogleBigtableTableIamMember.go",
+        "googlebigtabletableiammember_GoogleBigtableTableIamMemberCondition.go",
+        "googlebigtabletableiammember_GoogleBigtableTableIamMemberConditionOutputReference.go",
+        "googlebigtabletableiammember_GoogleBigtableTableIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googlebigtabletableiammember_GoogleBigtableTableIamMemberConfig.go",
+        "googlebigtabletableiammember_GoogleBigtableTableIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtabletableiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlebigtabletableiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

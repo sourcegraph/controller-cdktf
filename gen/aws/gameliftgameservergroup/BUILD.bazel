@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gameliftgameservergroup",
+    srcs = [
+        "gameliftgameservergroup.go",
+        "gameliftgameservergroup_GameliftGameServerGroup.go",
+        "gameliftgameservergroup_GameliftGameServerGroupAutoScalingPolicy.go",
+        "gameliftgameservergroup_GameliftGameServerGroupAutoScalingPolicyOutputReference.go",
+        "gameliftgameservergroup_GameliftGameServerGroupAutoScalingPolicyOutputReference__runtime_type_checks.go",
+        "gameliftgameservergroup_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration.go",
+        "gameliftgameservergroup_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference.go",
+        "gameliftgameservergroup_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference__runtime_type_checks.go",
+        "gameliftgameservergroup_GameliftGameServerGroupConfig.go",
+        "gameliftgameservergroup_GameliftGameServerGroupInstanceDefinition.go",
+        "gameliftgameservergroup_GameliftGameServerGroupInstanceDefinitionList.go",
+        "gameliftgameservergroup_GameliftGameServerGroupInstanceDefinitionList__runtime_type_checks.go",
+        "gameliftgameservergroup_GameliftGameServerGroupInstanceDefinitionOutputReference.go",
+        "gameliftgameservergroup_GameliftGameServerGroupInstanceDefinitionOutputReference__runtime_type_checks.go",
+        "gameliftgameservergroup_GameliftGameServerGroupLaunchTemplate.go",
+        "gameliftgameservergroup_GameliftGameServerGroupLaunchTemplateOutputReference.go",
+        "gameliftgameservergroup_GameliftGameServerGroupLaunchTemplateOutputReference__runtime_type_checks.go",
+        "gameliftgameservergroup_GameliftGameServerGroupTimeouts.go",
+        "gameliftgameservergroup_GameliftGameServerGroupTimeoutsOutputReference.go",
+        "gameliftgameservergroup_GameliftGameServerGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "gameliftgameservergroup_GameliftGameServerGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gameliftgameservergroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gameliftgameservergroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

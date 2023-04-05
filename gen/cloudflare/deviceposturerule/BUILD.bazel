@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "deviceposturerule",
+    srcs = [
+        "deviceposturerule.go",
+        "deviceposturerule_DevicePostureRule.go",
+        "deviceposturerule_DevicePostureRuleConfig.go",
+        "deviceposturerule_DevicePostureRuleInput.go",
+        "deviceposturerule_DevicePostureRuleInputList.go",
+        "deviceposturerule_DevicePostureRuleInputList__runtime_type_checks.go",
+        "deviceposturerule_DevicePostureRuleInputOutputReference.go",
+        "deviceposturerule_DevicePostureRuleInputOutputReference__runtime_type_checks.go",
+        "deviceposturerule_DevicePostureRuleMatch.go",
+        "deviceposturerule_DevicePostureRuleMatchList.go",
+        "deviceposturerule_DevicePostureRuleMatchList__runtime_type_checks.go",
+        "deviceposturerule_DevicePostureRuleMatchOutputReference.go",
+        "deviceposturerule_DevicePostureRuleMatchOutputReference__runtime_type_checks.go",
+        "deviceposturerule_DevicePostureRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/deviceposturerule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/deviceposturerule/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

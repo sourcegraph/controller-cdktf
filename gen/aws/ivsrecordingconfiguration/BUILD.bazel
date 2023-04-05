@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ivsrecordingconfiguration",
+    srcs = [
+        "ivsrecordingconfiguration.go",
+        "ivsrecordingconfiguration_IvsRecordingConfiguration.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationConfig.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationDestinationConfiguration.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationDestinationConfigurationOutputReference.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationDestinationConfigurationOutputReference__runtime_type_checks.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationDestinationConfigurationS3.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationDestinationConfigurationS3OutputReference.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationDestinationConfigurationS3OutputReference__runtime_type_checks.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationThumbnailConfiguration.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationThumbnailConfigurationOutputReference.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationThumbnailConfigurationOutputReference__runtime_type_checks.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationTimeouts.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationTimeoutsOutputReference.go",
+        "ivsrecordingconfiguration_IvsRecordingConfigurationTimeoutsOutputReference__runtime_type_checks.go",
+        "ivsrecordingconfiguration_IvsRecordingConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ivsrecordingconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ivsrecordingconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

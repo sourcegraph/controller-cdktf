@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gameliftgamesessionqueue",
+    srcs = [
+        "gameliftgamesessionqueue.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueue.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueueConfig.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueuePlayerLatencyPolicy.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueuePlayerLatencyPolicyList.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueuePlayerLatencyPolicyList__runtime_type_checks.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference__runtime_type_checks.go",
+        "gameliftgamesessionqueue_GameliftGameSessionQueue__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gameliftgamesessionqueue",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gameliftgamesessionqueue/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

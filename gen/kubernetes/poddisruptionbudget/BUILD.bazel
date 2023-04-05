@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "poddisruptionbudget",
+    srcs = [
+        "poddisruptionbudget.go",
+        "poddisruptionbudget_PodDisruptionBudget.go",
+        "poddisruptionbudget_PodDisruptionBudgetConfig.go",
+        "poddisruptionbudget_PodDisruptionBudgetMetadata.go",
+        "poddisruptionbudget_PodDisruptionBudgetMetadataOutputReference.go",
+        "poddisruptionbudget_PodDisruptionBudgetMetadataOutputReference__runtime_type_checks.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpec.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecOutputReference.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecOutputReference__runtime_type_checks.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelector.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorMatchExpressions.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorMatchExpressionsList.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorMatchExpressionsList__runtime_type_checks.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference__runtime_type_checks.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorOutputReference.go",
+        "poddisruptionbudget_PodDisruptionBudgetSpecSelectorOutputReference__runtime_type_checks.go",
+        "poddisruptionbudget_PodDisruptionBudget__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/poddisruptionbudget",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/poddisruptionbudget/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elb",
+    srcs = [
+        "elb.go",
+        "elb_Elb.go",
+        "elb_ElbAccessLogs.go",
+        "elb_ElbAccessLogsOutputReference.go",
+        "elb_ElbAccessLogsOutputReference__runtime_type_checks.go",
+        "elb_ElbConfig.go",
+        "elb_ElbHealthCheck.go",
+        "elb_ElbHealthCheckOutputReference.go",
+        "elb_ElbHealthCheckOutputReference__runtime_type_checks.go",
+        "elb_ElbListener.go",
+        "elb_ElbListenerList.go",
+        "elb_ElbListenerList__runtime_type_checks.go",
+        "elb_ElbListenerOutputReference.go",
+        "elb_ElbListenerOutputReference__runtime_type_checks.go",
+        "elb_Elb__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elb",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elb/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

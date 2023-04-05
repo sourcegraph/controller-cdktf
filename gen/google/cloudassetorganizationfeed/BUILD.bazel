@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudassetorganizationfeed",
+    srcs = [
+        "cloudassetorganizationfeed.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeed.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedCondition.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedConditionOutputReference.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedConditionOutputReference__runtime_type_checks.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedConfig.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedFeedOutputConfig.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedFeedOutputConfigOutputReference.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedFeedOutputConfigOutputReference__runtime_type_checks.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedFeedOutputConfigPubsubDestination.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference__runtime_type_checks.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedTimeouts.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedTimeoutsOutputReference.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeedTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudassetorganizationfeed_CloudAssetOrganizationFeed__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/cloudassetorganizationfeed",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/cloudassetorganizationfeed/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

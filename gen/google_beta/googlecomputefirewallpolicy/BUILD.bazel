@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputefirewallpolicy",
+    srcs = [
+        "googlecomputefirewallpolicy.go",
+        "googlecomputefirewallpolicy_GoogleComputeFirewallPolicy.go",
+        "googlecomputefirewallpolicy_GoogleComputeFirewallPolicyConfig.go",
+        "googlecomputefirewallpolicy_GoogleComputeFirewallPolicyTimeouts.go",
+        "googlecomputefirewallpolicy_GoogleComputeFirewallPolicyTimeoutsOutputReference.go",
+        "googlecomputefirewallpolicy_GoogleComputeFirewallPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputefirewallpolicy_GoogleComputeFirewallPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputefirewallpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputefirewallpolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

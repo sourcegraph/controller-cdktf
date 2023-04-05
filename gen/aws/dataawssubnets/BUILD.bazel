@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawssubnets",
+    srcs = [
+        "dataawssubnets.go",
+        "dataawssubnets_DataAwsSubnets.go",
+        "dataawssubnets_DataAwsSubnetsConfig.go",
+        "dataawssubnets_DataAwsSubnetsFilter.go",
+        "dataawssubnets_DataAwsSubnetsFilterList.go",
+        "dataawssubnets_DataAwsSubnetsFilterList__runtime_type_checks.go",
+        "dataawssubnets_DataAwsSubnetsFilterOutputReference.go",
+        "dataawssubnets_DataAwsSubnetsFilterOutputReference__runtime_type_checks.go",
+        "dataawssubnets_DataAwsSubnetsTimeouts.go",
+        "dataawssubnets_DataAwsSubnetsTimeoutsOutputReference.go",
+        "dataawssubnets_DataAwsSubnetsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawssubnets_DataAwsSubnets__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawssubnets",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawssubnets/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

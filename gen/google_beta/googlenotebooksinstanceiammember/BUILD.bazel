@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenotebooksinstanceiammember",
+    srcs = [
+        "googlenotebooksinstanceiammember.go",
+        "googlenotebooksinstanceiammember_GoogleNotebooksInstanceIamMember.go",
+        "googlenotebooksinstanceiammember_GoogleNotebooksInstanceIamMemberCondition.go",
+        "googlenotebooksinstanceiammember_GoogleNotebooksInstanceIamMemberConditionOutputReference.go",
+        "googlenotebooksinstanceiammember_GoogleNotebooksInstanceIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googlenotebooksinstanceiammember_GoogleNotebooksInstanceIamMemberConfig.go",
+        "googlenotebooksinstanceiammember_GoogleNotebooksInstanceIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksinstanceiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlenotebooksinstanceiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

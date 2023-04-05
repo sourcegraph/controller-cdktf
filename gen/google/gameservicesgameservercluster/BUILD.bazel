@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gameservicesgameservercluster",
+    srcs = [
+        "gameservicesgameservercluster.go",
+        "gameservicesgameservercluster_GameServicesGameServerCluster.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConfig.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConnectionInfo.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConnectionInfoGkeClusterReference.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference__runtime_type_checks.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConnectionInfoOutputReference.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterConnectionInfoOutputReference__runtime_type_checks.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterTimeouts.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterTimeoutsOutputReference.go",
+        "gameservicesgameservercluster_GameServicesGameServerClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "gameservicesgameservercluster_GameServicesGameServerCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/gameservicesgameservercluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/gameservicesgameservercluster/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

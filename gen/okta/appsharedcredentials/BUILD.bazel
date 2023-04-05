@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appsharedcredentials",
+    srcs = [
+        "appsharedcredentials.go",
+        "appsharedcredentials_AppSharedCredentials.go",
+        "appsharedcredentials_AppSharedCredentialsConfig.go",
+        "appsharedcredentials_AppSharedCredentialsTimeouts.go",
+        "appsharedcredentials_AppSharedCredentialsTimeoutsOutputReference.go",
+        "appsharedcredentials_AppSharedCredentialsTimeoutsOutputReference__runtime_type_checks.go",
+        "appsharedcredentials_AppSharedCredentialsUsers.go",
+        "appsharedcredentials_AppSharedCredentialsUsersList.go",
+        "appsharedcredentials_AppSharedCredentialsUsersList__runtime_type_checks.go",
+        "appsharedcredentials_AppSharedCredentialsUsersOutputReference.go",
+        "appsharedcredentials_AppSharedCredentialsUsersOutputReference__runtime_type_checks.go",
+        "appsharedcredentials_AppSharedCredentials__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appsharedcredentials",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appsharedcredentials/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

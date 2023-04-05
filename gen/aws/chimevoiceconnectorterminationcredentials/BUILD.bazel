@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "chimevoiceconnectorterminationcredentials",
+    srcs = [
+        "chimevoiceconnectorterminationcredentials.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentials.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentialsConfig.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentialsCredentials.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentialsCredentialsList.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentialsCredentialsList__runtime_type_checks.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference__runtime_type_checks.go",
+        "chimevoiceconnectorterminationcredentials_ChimeVoiceConnectorTerminationCredentials__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/chimevoiceconnectorterminationcredentials",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/chimevoiceconnectorterminationcredentials/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawscognitouserpoolclient",
+    srcs = [
+        "dataawscognitouserpoolclient.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClient.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientAnalyticsConfiguration.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientAnalyticsConfigurationList.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientAnalyticsConfigurationList__runtime_type_checks.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference__runtime_type_checks.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientConfig.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientTokenValidityUnits.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientTokenValidityUnitsList.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientTokenValidityUnitsList__runtime_type_checks.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference__runtime_type_checks.go",
+        "dataawscognitouserpoolclient_DataAwsCognitoUserPoolClient__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawscognitouserpoolclient",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawscognitouserpoolclient/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

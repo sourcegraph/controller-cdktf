@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lambdacodesigningconfig",
+    srcs = [
+        "lambdacodesigningconfig.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfig.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigAllowedPublishers.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigAllowedPublishersOutputReference.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigAllowedPublishersOutputReference__runtime_type_checks.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigConfig.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigPolicies.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigPoliciesOutputReference.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfigPoliciesOutputReference__runtime_type_checks.go",
+        "lambdacodesigningconfig_LambdaCodeSigningConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lambdacodesigningconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lambdacodesigningconfig/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

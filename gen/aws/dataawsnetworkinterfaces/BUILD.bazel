@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsnetworkinterfaces",
+    srcs = [
+        "dataawsnetworkinterfaces.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfaces.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesConfig.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesFilter.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesFilterList.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesFilterList__runtime_type_checks.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesFilterOutputReference.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesFilterOutputReference__runtime_type_checks.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesTimeouts.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesTimeoutsOutputReference.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfacesTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsnetworkinterfaces_DataAwsNetworkInterfaces__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsnetworkinterfaces",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsnetworkinterfaces/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

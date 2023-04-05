@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlepubsubtopic",
+    srcs = [
+        "googlepubsubtopic.go",
+        "googlepubsubtopic_GooglePubsubTopic.go",
+        "googlepubsubtopic_GooglePubsubTopicConfig.go",
+        "googlepubsubtopic_GooglePubsubTopicMessageStoragePolicy.go",
+        "googlepubsubtopic_GooglePubsubTopicMessageStoragePolicyOutputReference.go",
+        "googlepubsubtopic_GooglePubsubTopicMessageStoragePolicyOutputReference__runtime_type_checks.go",
+        "googlepubsubtopic_GooglePubsubTopicSchemaSettings.go",
+        "googlepubsubtopic_GooglePubsubTopicSchemaSettingsOutputReference.go",
+        "googlepubsubtopic_GooglePubsubTopicSchemaSettingsOutputReference__runtime_type_checks.go",
+        "googlepubsubtopic_GooglePubsubTopicTimeouts.go",
+        "googlepubsubtopic_GooglePubsubTopicTimeoutsOutputReference.go",
+        "googlepubsubtopic_GooglePubsubTopicTimeoutsOutputReference__runtime_type_checks.go",
+        "googlepubsubtopic_GooglePubsubTopic__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsubtopic",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlepubsubtopic/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

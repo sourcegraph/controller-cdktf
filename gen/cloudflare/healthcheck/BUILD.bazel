@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "healthcheck",
+    srcs = [
+        "healthcheck.go",
+        "healthcheck_Healthcheck.go",
+        "healthcheck_HealthcheckConfig.go",
+        "healthcheck_HealthcheckHeader.go",
+        "healthcheck_HealthcheckHeaderList.go",
+        "healthcheck_HealthcheckHeaderList__runtime_type_checks.go",
+        "healthcheck_HealthcheckHeaderOutputReference.go",
+        "healthcheck_HealthcheckHeaderOutputReference__runtime_type_checks.go",
+        "healthcheck_HealthcheckTimeouts.go",
+        "healthcheck_HealthcheckTimeoutsOutputReference.go",
+        "healthcheck_HealthcheckTimeoutsOutputReference__runtime_type_checks.go",
+        "healthcheck_Healthcheck__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/healthcheck",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/healthcheck/internal",
+        "//gen/cloudflare/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

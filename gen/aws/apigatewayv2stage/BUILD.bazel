@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayv2stage",
+    srcs = [
+        "apigatewayv2stage.go",
+        "apigatewayv2stage_Apigatewayv2Stage.go",
+        "apigatewayv2stage_Apigatewayv2StageAccessLogSettings.go",
+        "apigatewayv2stage_Apigatewayv2StageAccessLogSettingsOutputReference.go",
+        "apigatewayv2stage_Apigatewayv2StageAccessLogSettingsOutputReference__runtime_type_checks.go",
+        "apigatewayv2stage_Apigatewayv2StageConfig.go",
+        "apigatewayv2stage_Apigatewayv2StageDefaultRouteSettings.go",
+        "apigatewayv2stage_Apigatewayv2StageDefaultRouteSettingsOutputReference.go",
+        "apigatewayv2stage_Apigatewayv2StageDefaultRouteSettingsOutputReference__runtime_type_checks.go",
+        "apigatewayv2stage_Apigatewayv2StageRouteSettings.go",
+        "apigatewayv2stage_Apigatewayv2StageRouteSettingsList.go",
+        "apigatewayv2stage_Apigatewayv2StageRouteSettingsList__runtime_type_checks.go",
+        "apigatewayv2stage_Apigatewayv2StageRouteSettingsOutputReference.go",
+        "apigatewayv2stage_Apigatewayv2StageRouteSettingsOutputReference__runtime_type_checks.go",
+        "apigatewayv2stage_Apigatewayv2Stage__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2stage",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayv2stage/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudfunctionsfunctioniammember",
+    srcs = [
+        "googlecloudfunctionsfunctioniammember.go",
+        "googlecloudfunctionsfunctioniammember_GoogleCloudfunctionsFunctionIamMember.go",
+        "googlecloudfunctionsfunctioniammember_GoogleCloudfunctionsFunctionIamMemberCondition.go",
+        "googlecloudfunctionsfunctioniammember_GoogleCloudfunctionsFunctionIamMemberConditionOutputReference.go",
+        "googlecloudfunctionsfunctioniammember_GoogleCloudfunctionsFunctionIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googlecloudfunctionsfunctioniammember_GoogleCloudfunctionsFunctionIamMemberConfig.go",
+        "googlecloudfunctionsfunctioniammember_GoogleCloudfunctionsFunctionIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctionsfunctioniammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudfunctionsfunctioniammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

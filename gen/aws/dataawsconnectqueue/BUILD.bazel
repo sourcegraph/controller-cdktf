@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsconnectqueue",
+    srcs = [
+        "dataawsconnectqueue.go",
+        "dataawsconnectqueue_DataAwsConnectQueue.go",
+        "dataawsconnectqueue_DataAwsConnectQueueConfig.go",
+        "dataawsconnectqueue_DataAwsConnectQueueOutboundCallerConfig.go",
+        "dataawsconnectqueue_DataAwsConnectQueueOutboundCallerConfigList.go",
+        "dataawsconnectqueue_DataAwsConnectQueueOutboundCallerConfigList__runtime_type_checks.go",
+        "dataawsconnectqueue_DataAwsConnectQueueOutboundCallerConfigOutputReference.go",
+        "dataawsconnectqueue_DataAwsConnectQueueOutboundCallerConfigOutputReference__runtime_type_checks.go",
+        "dataawsconnectqueue_DataAwsConnectQueue__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsconnectqueue",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsconnectqueue/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

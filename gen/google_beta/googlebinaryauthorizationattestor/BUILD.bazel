@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebinaryauthorizationattestor",
+    srcs = [
+        "googlebinaryauthorizationattestor.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestor.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNote.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList__runtime_type_checks.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorConfig.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorTimeouts.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorTimeoutsOutputReference.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestorTimeoutsOutputReference__runtime_type_checks.go",
+        "googlebinaryauthorizationattestor_GoogleBinaryAuthorizationAttestor__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebinaryauthorizationattestor",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlebinaryauthorizationattestor/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

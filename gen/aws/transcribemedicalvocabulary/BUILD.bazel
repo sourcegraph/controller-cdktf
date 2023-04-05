@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "transcribemedicalvocabulary",
+    srcs = [
+        "transcribemedicalvocabulary.go",
+        "transcribemedicalvocabulary_TranscribeMedicalVocabulary.go",
+        "transcribemedicalvocabulary_TranscribeMedicalVocabularyConfig.go",
+        "transcribemedicalvocabulary_TranscribeMedicalVocabularyTimeouts.go",
+        "transcribemedicalvocabulary_TranscribeMedicalVocabularyTimeoutsOutputReference.go",
+        "transcribemedicalvocabulary_TranscribeMedicalVocabularyTimeoutsOutputReference__runtime_type_checks.go",
+        "transcribemedicalvocabulary_TranscribeMedicalVocabulary__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/transcribemedicalvocabulary",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/transcribemedicalvocabulary/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

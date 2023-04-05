@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudcontrolapiresource",
+    srcs = [
+        "cloudcontrolapiresource.go",
+        "cloudcontrolapiresource_CloudcontrolapiResource.go",
+        "cloudcontrolapiresource_CloudcontrolapiResourceConfig.go",
+        "cloudcontrolapiresource_CloudcontrolapiResourceTimeouts.go",
+        "cloudcontrolapiresource_CloudcontrolapiResourceTimeoutsOutputReference.go",
+        "cloudcontrolapiresource_CloudcontrolapiResourceTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudcontrolapiresource_CloudcontrolapiResource__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudcontrolapiresource",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudcontrolapiresource/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

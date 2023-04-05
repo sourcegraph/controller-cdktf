@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "monitoringcustomservice",
+    srcs = [
+        "monitoringcustomservice.go",
+        "monitoringcustomservice_MonitoringCustomService.go",
+        "monitoringcustomservice_MonitoringCustomServiceConfig.go",
+        "monitoringcustomservice_MonitoringCustomServiceTelemetry.go",
+        "monitoringcustomservice_MonitoringCustomServiceTelemetryOutputReference.go",
+        "monitoringcustomservice_MonitoringCustomServiceTelemetryOutputReference__runtime_type_checks.go",
+        "monitoringcustomservice_MonitoringCustomServiceTimeouts.go",
+        "monitoringcustomservice_MonitoringCustomServiceTimeoutsOutputReference.go",
+        "monitoringcustomservice_MonitoringCustomServiceTimeoutsOutputReference__runtime_type_checks.go",
+        "monitoringcustomservice_MonitoringCustomService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/monitoringcustomservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/monitoringcustomservice/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

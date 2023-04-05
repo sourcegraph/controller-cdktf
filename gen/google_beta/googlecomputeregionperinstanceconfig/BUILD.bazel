@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeregionperinstanceconfig",
+    srcs = [
+        "googlecomputeregionperinstanceconfig.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfig.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigConfig.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedState.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateDisk.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateDiskList.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateDiskList__runtime_type_checks.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference__runtime_type_checks.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference__runtime_type_checks.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigTimeouts.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigTimeoutsOutputReference.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeregionperinstanceconfig_GoogleComputeRegionPerInstanceConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionperinstanceconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeregionperinstanceconfig/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

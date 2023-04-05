@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecertificatemanagercertificatemapentry",
+    srcs = [
+        "googlecertificatemanagercertificatemapentry.go",
+        "googlecertificatemanagercertificatemapentry_GoogleCertificateManagerCertificateMapEntry.go",
+        "googlecertificatemanagercertificatemapentry_GoogleCertificateManagerCertificateMapEntryConfig.go",
+        "googlecertificatemanagercertificatemapentry_GoogleCertificateManagerCertificateMapEntryTimeouts.go",
+        "googlecertificatemanagercertificatemapentry_GoogleCertificateManagerCertificateMapEntryTimeoutsOutputReference.go",
+        "googlecertificatemanagercertificatemapentry_GoogleCertificateManagerCertificateMapEntryTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecertificatemanagercertificatemapentry_GoogleCertificateManagerCertificateMapEntry__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecertificatemanagercertificatemapentry",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecertificatemanagercertificatemapentry/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

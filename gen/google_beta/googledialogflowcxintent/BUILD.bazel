@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledialogflowcxintent",
+    srcs = [
+        "googledialogflowcxintent.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntent.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentConfig.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentParameters.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentParametersList.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentParametersList__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentParametersOutputReference.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentParametersOutputReference__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTimeouts.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTimeoutsOutputReference.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTimeoutsOutputReference__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrases.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesList.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesList__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesOutputReference.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesOutputReference__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesParts.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesPartsList.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesPartsList__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference__runtime_type_checks.go",
+        "googledialogflowcxintent_GoogleDialogflowCxIntent__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxintent",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledialogflowcxintent/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elasticachereplicationgroup",
+    srcs = [
+        "elasticachereplicationgroup.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroup.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupClusterMode.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupClusterModeOutputReference.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupClusterModeOutputReference__runtime_type_checks.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupConfig.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupLogDeliveryConfiguration.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupLogDeliveryConfigurationList.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupLogDeliveryConfigurationList__runtime_type_checks.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference__runtime_type_checks.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupTimeouts.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupTimeoutsOutputReference.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "elasticachereplicationgroup_ElasticacheReplicationGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elasticachereplicationgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elasticachereplicationgroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

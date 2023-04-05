@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputesharedvpcserviceproject",
+    srcs = [
+        "googlecomputesharedvpcserviceproject.go",
+        "googlecomputesharedvpcserviceproject_GoogleComputeSharedVpcServiceProject.go",
+        "googlecomputesharedvpcserviceproject_GoogleComputeSharedVpcServiceProjectConfig.go",
+        "googlecomputesharedvpcserviceproject_GoogleComputeSharedVpcServiceProjectTimeouts.go",
+        "googlecomputesharedvpcserviceproject_GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference.go",
+        "googlecomputesharedvpcserviceproject_GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputesharedvpcserviceproject_GoogleComputeSharedVpcServiceProject__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesharedvpcserviceproject",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputesharedvpcserviceproject/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

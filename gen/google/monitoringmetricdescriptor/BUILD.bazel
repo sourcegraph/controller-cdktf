@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "monitoringmetricdescriptor",
+    srcs = [
+        "monitoringmetricdescriptor.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptor.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorConfig.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorLabels.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorLabelsList.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorLabelsList__runtime_type_checks.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorLabelsOutputReference.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorLabelsOutputReference__runtime_type_checks.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorMetadata.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorMetadataOutputReference.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorMetadataOutputReference__runtime_type_checks.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorTimeouts.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorTimeoutsOutputReference.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptorTimeoutsOutputReference__runtime_type_checks.go",
+        "monitoringmetricdescriptor_MonitoringMetricDescriptor__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/monitoringmetricdescriptor",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/monitoringmetricdescriptor/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

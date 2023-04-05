@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataprocmetastoreservice",
+    srcs = [
+        "dataprocmetastoreservice.go",
+        "dataprocmetastoreservice_DataprocMetastoreService.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceConfig.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceEncryptionConfig.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceEncryptionConfigOutputReference.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceEncryptionConfigOutputReference__runtime_type_checks.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfig.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference__runtime_type_checks.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference__runtime_type_checks.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigOutputReference.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceHiveMetastoreConfigOutputReference__runtime_type_checks.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceMaintenanceWindow.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceMaintenanceWindowOutputReference.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceMaintenanceWindowOutputReference__runtime_type_checks.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceTimeouts.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceTimeoutsOutputReference.go",
+        "dataprocmetastoreservice_DataprocMetastoreServiceTimeoutsOutputReference__runtime_type_checks.go",
+        "dataprocmetastoreservice_DataprocMetastoreService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dataprocmetastoreservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dataprocmetastoreservice/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

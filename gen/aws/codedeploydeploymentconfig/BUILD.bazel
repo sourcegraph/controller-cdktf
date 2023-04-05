@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codedeploydeploymentconfig",
+    srcs = [
+        "codedeploydeploymentconfig.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfig.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigConfig.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigMinimumHealthyHosts.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference__runtime_type_checks.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfig.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference__runtime_type_checks.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference__runtime_type_checks.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference__runtime_type_checks.go",
+        "codedeploydeploymentconfig_CodedeployDeploymentConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codedeploydeploymentconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codedeploydeploymentconfig/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "autoscalinglifecyclehook",
+    srcs = [
+        "autoscalinglifecyclehook.go",
+        "autoscalinglifecyclehook_AutoscalingLifecycleHook.go",
+        "autoscalinglifecyclehook_AutoscalingLifecycleHookConfig.go",
+        "autoscalinglifecyclehook_AutoscalingLifecycleHook__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/autoscalinglifecyclehook",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/autoscalinglifecyclehook/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

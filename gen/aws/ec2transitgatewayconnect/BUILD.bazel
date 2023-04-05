@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2transitgatewayconnect",
+    srcs = [
+        "ec2transitgatewayconnect.go",
+        "ec2transitgatewayconnect_Ec2TransitGatewayConnect.go",
+        "ec2transitgatewayconnect_Ec2TransitGatewayConnectConfig.go",
+        "ec2transitgatewayconnect_Ec2TransitGatewayConnectTimeouts.go",
+        "ec2transitgatewayconnect_Ec2TransitGatewayConnectTimeoutsOutputReference.go",
+        "ec2transitgatewayconnect_Ec2TransitGatewayConnectTimeoutsOutputReference__runtime_type_checks.go",
+        "ec2transitgatewayconnect_Ec2TransitGatewayConnect__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2transitgatewayconnect",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2transitgatewayconnect/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

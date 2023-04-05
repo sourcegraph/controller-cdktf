@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudhsmv2hsm",
+    srcs = [
+        "cloudhsmv2hsm.go",
+        "cloudhsmv2hsm_CloudhsmV2Hsm.go",
+        "cloudhsmv2hsm_CloudhsmV2HsmConfig.go",
+        "cloudhsmv2hsm_CloudhsmV2HsmTimeouts.go",
+        "cloudhsmv2hsm_CloudhsmV2HsmTimeoutsOutputReference.go",
+        "cloudhsmv2hsm_CloudhsmV2HsmTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudhsmv2hsm_CloudhsmV2Hsm__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudhsmv2hsm",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudhsmv2hsm/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

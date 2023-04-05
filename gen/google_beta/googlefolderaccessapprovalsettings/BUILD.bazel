@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefolderaccessapprovalsettings",
+    srcs = [
+        "googlefolderaccessapprovalsettings.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettings.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsConfig.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsEnrolledServices.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsEnrolledServicesList.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsEnrolledServicesList__runtime_type_checks.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference__runtime_type_checks.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsTimeouts.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefolderaccessapprovalsettings_GoogleFolderAccessApprovalSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolderaccessapprovalsettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefolderaccessapprovalsettings/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsefsaccesspoint",
+    srcs = [
+        "dataawsefsaccesspoint.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPoint.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointConfig.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointPosixUser.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointPosixUserList.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointPosixUserList__runtime_type_checks.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointPosixUserOutputReference.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointPosixUserOutputReference__runtime_type_checks.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectory.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryCreationInfo.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryCreationInfoList.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryCreationInfoList__runtime_type_checks.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference__runtime_type_checks.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryList.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryList__runtime_type_checks.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryOutputReference.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPointRootDirectoryOutputReference__runtime_type_checks.go",
+        "dataawsefsaccesspoint_DataAwsEfsAccessPoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsefsaccesspoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsefsaccesspoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

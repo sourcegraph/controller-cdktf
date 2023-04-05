@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleserviceusageconsumerquotaoverride",
+    srcs = [
+        "googleserviceusageconsumerquotaoverride.go",
+        "googleserviceusageconsumerquotaoverride_GoogleServiceUsageConsumerQuotaOverride.go",
+        "googleserviceusageconsumerquotaoverride_GoogleServiceUsageConsumerQuotaOverrideConfig.go",
+        "googleserviceusageconsumerquotaoverride_GoogleServiceUsageConsumerQuotaOverrideTimeouts.go",
+        "googleserviceusageconsumerquotaoverride_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference.go",
+        "googleserviceusageconsumerquotaoverride_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference__runtime_type_checks.go",
+        "googleserviceusageconsumerquotaoverride_GoogleServiceUsageConsumerQuotaOverride__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleserviceusageconsumerquotaoverride",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleserviceusageconsumerquotaoverride/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

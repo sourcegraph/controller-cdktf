@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elasticbeanstalkapplication",
+    srcs = [
+        "elasticbeanstalkapplication.go",
+        "elasticbeanstalkapplication_ElasticBeanstalkApplication.go",
+        "elasticbeanstalkapplication_ElasticBeanstalkApplicationAppversionLifecycle.go",
+        "elasticbeanstalkapplication_ElasticBeanstalkApplicationAppversionLifecycleOutputReference.go",
+        "elasticbeanstalkapplication_ElasticBeanstalkApplicationAppversionLifecycleOutputReference__runtime_type_checks.go",
+        "elasticbeanstalkapplication_ElasticBeanstalkApplicationConfig.go",
+        "elasticbeanstalkapplication_ElasticBeanstalkApplication__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elasticbeanstalkapplication",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elasticbeanstalkapplication/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

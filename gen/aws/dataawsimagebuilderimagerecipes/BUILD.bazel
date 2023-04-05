@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsimagebuilderimagerecipes",
+    srcs = [
+        "dataawsimagebuilderimagerecipes.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipes.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipesConfig.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipesFilter.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipesFilterList.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipesFilterList__runtime_type_checks.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipesFilterOutputReference.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipesFilterOutputReference__runtime_type_checks.go",
+        "dataawsimagebuilderimagerecipes_DataAwsImagebuilderImageRecipes__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsimagebuilderimagerecipes",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsimagebuilderimagerecipes/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

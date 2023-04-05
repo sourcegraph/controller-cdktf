@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "backupframework",
+    srcs = [
+        "backupframework.go",
+        "backupframework_BackupFramework.go",
+        "backupframework_BackupFrameworkConfig.go",
+        "backupframework_BackupFrameworkControl.go",
+        "backupframework_BackupFrameworkControlInputParameter.go",
+        "backupframework_BackupFrameworkControlInputParameterList.go",
+        "backupframework_BackupFrameworkControlInputParameterList__runtime_type_checks.go",
+        "backupframework_BackupFrameworkControlInputParameterOutputReference.go",
+        "backupframework_BackupFrameworkControlInputParameterOutputReference__runtime_type_checks.go",
+        "backupframework_BackupFrameworkControlList.go",
+        "backupframework_BackupFrameworkControlList__runtime_type_checks.go",
+        "backupframework_BackupFrameworkControlOutputReference.go",
+        "backupframework_BackupFrameworkControlOutputReference__runtime_type_checks.go",
+        "backupframework_BackupFrameworkControlScope.go",
+        "backupframework_BackupFrameworkControlScopeOutputReference.go",
+        "backupframework_BackupFrameworkControlScopeOutputReference__runtime_type_checks.go",
+        "backupframework_BackupFrameworkTimeouts.go",
+        "backupframework_BackupFrameworkTimeoutsOutputReference.go",
+        "backupframework_BackupFrameworkTimeoutsOutputReference__runtime_type_checks.go",
+        "backupframework_BackupFramework__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/backupframework",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/backupframework/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

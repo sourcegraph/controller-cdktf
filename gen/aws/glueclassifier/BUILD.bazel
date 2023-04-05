@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "glueclassifier",
+    srcs = [
+        "glueclassifier.go",
+        "glueclassifier_GlueClassifier.go",
+        "glueclassifier_GlueClassifierConfig.go",
+        "glueclassifier_GlueClassifierCsvClassifier.go",
+        "glueclassifier_GlueClassifierCsvClassifierOutputReference.go",
+        "glueclassifier_GlueClassifierCsvClassifierOutputReference__runtime_type_checks.go",
+        "glueclassifier_GlueClassifierGrokClassifier.go",
+        "glueclassifier_GlueClassifierGrokClassifierOutputReference.go",
+        "glueclassifier_GlueClassifierGrokClassifierOutputReference__runtime_type_checks.go",
+        "glueclassifier_GlueClassifierJsonClassifier.go",
+        "glueclassifier_GlueClassifierJsonClassifierOutputReference.go",
+        "glueclassifier_GlueClassifierJsonClassifierOutputReference__runtime_type_checks.go",
+        "glueclassifier_GlueClassifierXmlClassifier.go",
+        "glueclassifier_GlueClassifierXmlClassifierOutputReference.go",
+        "glueclassifier_GlueClassifierXmlClassifierOutputReference__runtime_type_checks.go",
+        "glueclassifier_GlueClassifier__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/glueclassifier",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/glueclassifier/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

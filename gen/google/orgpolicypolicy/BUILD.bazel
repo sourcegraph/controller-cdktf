@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "orgpolicypolicy",
+    srcs = [
+        "orgpolicypolicy.go",
+        "orgpolicypolicy_OrgPolicyPolicy.go",
+        "orgpolicypolicy_OrgPolicyPolicyConfig.go",
+        "orgpolicypolicy_OrgPolicyPolicySpec.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecOutputReference.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecOutputReference__runtime_type_checks.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRules.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesCondition.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesConditionOutputReference.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesConditionOutputReference__runtime_type_checks.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesList.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesList__runtime_type_checks.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesOutputReference.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesOutputReference__runtime_type_checks.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesValues.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesValuesOutputReference.go",
+        "orgpolicypolicy_OrgPolicyPolicySpecRulesValuesOutputReference__runtime_type_checks.go",
+        "orgpolicypolicy_OrgPolicyPolicyTimeouts.go",
+        "orgpolicypolicy_OrgPolicyPolicyTimeoutsOutputReference.go",
+        "orgpolicypolicy_OrgPolicyPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "orgpolicypolicy_OrgPolicyPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/orgpolicypolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/orgpolicypolicy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ingressclass",
+    srcs = [
+        "ingressclass.go",
+        "ingressclass_IngressClass.go",
+        "ingressclass_IngressClassConfig.go",
+        "ingressclass_IngressClassMetadata.go",
+        "ingressclass_IngressClassMetadataOutputReference.go",
+        "ingressclass_IngressClassMetadataOutputReference__runtime_type_checks.go",
+        "ingressclass_IngressClassSpec.go",
+        "ingressclass_IngressClassSpecOutputReference.go",
+        "ingressclass_IngressClassSpecOutputReference__runtime_type_checks.go",
+        "ingressclass_IngressClassSpecParameters.go",
+        "ingressclass_IngressClassSpecParametersList.go",
+        "ingressclass_IngressClassSpecParametersList__runtime_type_checks.go",
+        "ingressclass_IngressClassSpecParametersOutputReference.go",
+        "ingressclass_IngressClassSpecParametersOutputReference__runtime_type_checks.go",
+        "ingressclass_IngressClass__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/ingressclass",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/ingressclass/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

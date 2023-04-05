@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codepipelinecustomactiontype",
+    srcs = [
+        "codepipelinecustomactiontype.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionType.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeConfig.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeConfigurationProperty.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeConfigurationPropertyList.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeConfigurationPropertyList__runtime_type_checks.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeConfigurationPropertyOutputReference.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeConfigurationPropertyOutputReference__runtime_type_checks.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeInputArtifactDetails.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeInputArtifactDetailsOutputReference.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeInputArtifactDetailsOutputReference__runtime_type_checks.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeOutputArtifactDetails.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference__runtime_type_checks.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeSettings.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeSettingsOutputReference.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionTypeSettingsOutputReference__runtime_type_checks.go",
+        "codepipelinecustomactiontype_CodepipelineCustomActionType__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codepipelinecustomactiontype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codepipelinecustomactiontype/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

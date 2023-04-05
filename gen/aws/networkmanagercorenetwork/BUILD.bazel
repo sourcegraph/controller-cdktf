@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagercorenetwork",
+    srcs = [
+        "networkmanagercorenetwork.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetwork.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkConfig.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkEdges.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkEdgesList.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkEdgesList__runtime_type_checks.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkEdgesOutputReference.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkEdgesOutputReference__runtime_type_checks.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkSegments.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkSegmentsList.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkSegmentsList__runtime_type_checks.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkSegmentsOutputReference.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkSegmentsOutputReference__runtime_type_checks.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkTimeouts.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkTimeoutsOutputReference.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetworkTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagercorenetwork_NetworkmanagerCoreNetwork__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagercorenetwork",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagercorenetwork/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

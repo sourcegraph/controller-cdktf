@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsnetworkmanagerdevice",
+    srcs = [
+        "dataawsnetworkmanagerdevice.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDevice.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceAwsLocation.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceAwsLocationList.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceAwsLocationList__runtime_type_checks.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceAwsLocationOutputReference.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceAwsLocationOutputReference__runtime_type_checks.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceConfig.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceLocation.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceLocationList.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceLocationList__runtime_type_checks.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceLocationOutputReference.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDeviceLocationOutputReference__runtime_type_checks.go",
+        "dataawsnetworkmanagerdevice_DataAwsNetworkmanagerDevice__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsnetworkmanagerdevice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsnetworkmanagerdevice/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

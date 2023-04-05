@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dbinstance",
+    srcs = [
+        "dbinstance.go",
+        "dbinstance_DbInstance.go",
+        "dbinstance_DbInstanceBlueGreenUpdate.go",
+        "dbinstance_DbInstanceBlueGreenUpdateOutputReference.go",
+        "dbinstance_DbInstanceBlueGreenUpdateOutputReference__runtime_type_checks.go",
+        "dbinstance_DbInstanceConfig.go",
+        "dbinstance_DbInstanceRestoreToPointInTime.go",
+        "dbinstance_DbInstanceRestoreToPointInTimeOutputReference.go",
+        "dbinstance_DbInstanceRestoreToPointInTimeOutputReference__runtime_type_checks.go",
+        "dbinstance_DbInstanceS3Import.go",
+        "dbinstance_DbInstanceS3ImportOutputReference.go",
+        "dbinstance_DbInstanceS3ImportOutputReference__runtime_type_checks.go",
+        "dbinstance_DbInstanceTimeouts.go",
+        "dbinstance_DbInstanceTimeoutsOutputReference.go",
+        "dbinstance_DbInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "dbinstance_DbInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dbinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dbinstance/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktaemailcustomizations",
+    srcs = [
+        "dataoktaemailcustomizations.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizations.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizationsConfig.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizationsEmailCustomizations.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizationsEmailCustomizationsList.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizationsEmailCustomizationsList__runtime_type_checks.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizationsEmailCustomizationsOutputReference.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizationsEmailCustomizationsOutputReference__runtime_type_checks.go",
+        "dataoktaemailcustomizations_DataOktaEmailCustomizations__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaemailcustomizations",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktaemailcustomizations/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

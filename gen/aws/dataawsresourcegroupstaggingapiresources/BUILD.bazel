@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsresourcegroupstaggingapiresources",
+    srcs = [
+        "dataawsresourcegroupstaggingapiresources.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResources.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesConfig.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingList.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetails.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList__runtime_type_checks.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference__runtime_type_checks.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList__runtime_type_checks.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListOutputReference.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListOutputReference__runtime_type_checks.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesTagFilter.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesTagFilterList.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesTagFilterList__runtime_type_checks.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesTagFilterOutputReference.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResourcesTagFilterOutputReference__runtime_type_checks.go",
+        "dataawsresourcegroupstaggingapiresources_DataAwsResourcegroupstaggingapiResources__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsresourcegroupstaggingapiresources",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsresourcegroupstaggingapiresources/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

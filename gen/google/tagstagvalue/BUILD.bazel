@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "tagstagvalue",
+    srcs = [
+        "tagstagvalue.go",
+        "tagstagvalue_TagsTagValue.go",
+        "tagstagvalue_TagsTagValueConfig.go",
+        "tagstagvalue_TagsTagValueTimeouts.go",
+        "tagstagvalue_TagsTagValueTimeoutsOutputReference.go",
+        "tagstagvalue_TagsTagValueTimeoutsOutputReference__runtime_type_checks.go",
+        "tagstagvalue_TagsTagValue__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/tagstagvalue",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/tagstagvalue/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

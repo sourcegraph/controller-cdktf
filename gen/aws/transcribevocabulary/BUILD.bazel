@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "transcribevocabulary",
+    srcs = [
+        "transcribevocabulary.go",
+        "transcribevocabulary_TranscribeVocabulary.go",
+        "transcribevocabulary_TranscribeVocabularyConfig.go",
+        "transcribevocabulary_TranscribeVocabularyTimeouts.go",
+        "transcribevocabulary_TranscribeVocabularyTimeoutsOutputReference.go",
+        "transcribevocabulary_TranscribeVocabularyTimeoutsOutputReference__runtime_type_checks.go",
+        "transcribevocabulary_TranscribeVocabulary__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/transcribevocabulary",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/transcribevocabulary/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

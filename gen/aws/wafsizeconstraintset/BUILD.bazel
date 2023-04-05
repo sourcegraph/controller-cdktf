@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafsizeconstraintset",
+    srcs = [
+        "wafsizeconstraintset.go",
+        "wafsizeconstraintset_WafSizeConstraintSet.go",
+        "wafsizeconstraintset_WafSizeConstraintSetConfig.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraints.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsFieldToMatch.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsList.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsList__runtime_type_checks.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsOutputReference.go",
+        "wafsizeconstraintset_WafSizeConstraintSetSizeConstraintsOutputReference__runtime_type_checks.go",
+        "wafsizeconstraintset_WafSizeConstraintSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafsizeconstraintset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafsizeconstraintset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

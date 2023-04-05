@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "docdbglobalcluster",
+    srcs = [
+        "docdbglobalcluster.go",
+        "docdbglobalcluster_DocdbGlobalCluster.go",
+        "docdbglobalcluster_DocdbGlobalClusterConfig.go",
+        "docdbglobalcluster_DocdbGlobalClusterGlobalClusterMembers.go",
+        "docdbglobalcluster_DocdbGlobalClusterGlobalClusterMembersList.go",
+        "docdbglobalcluster_DocdbGlobalClusterGlobalClusterMembersList__runtime_type_checks.go",
+        "docdbglobalcluster_DocdbGlobalClusterGlobalClusterMembersOutputReference.go",
+        "docdbglobalcluster_DocdbGlobalClusterGlobalClusterMembersOutputReference__runtime_type_checks.go",
+        "docdbglobalcluster_DocdbGlobalClusterTimeouts.go",
+        "docdbglobalcluster_DocdbGlobalClusterTimeoutsOutputReference.go",
+        "docdbglobalcluster_DocdbGlobalClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "docdbglobalcluster_DocdbGlobalCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/docdbglobalcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/docdbglobalcluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

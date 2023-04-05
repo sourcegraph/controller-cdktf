@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsworkspacesworkspace",
+    srcs = [
+        "dataawsworkspacesworkspace.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspace.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspaceConfig.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspaceWorkspaceProperties.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspaceWorkspacePropertiesList.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspaceWorkspacePropertiesList__runtime_type_checks.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference__runtime_type_checks.go",
+        "dataawsworkspacesworkspace_DataAwsWorkspacesWorkspace__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsworkspacesworkspace",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsworkspacesworkspace/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

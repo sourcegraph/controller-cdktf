@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sesv2configurationset",
+    srcs = [
+        "sesv2configurationset.go",
+        "sesv2configurationset_Sesv2ConfigurationSet.go",
+        "sesv2configurationset_Sesv2ConfigurationSetConfig.go",
+        "sesv2configurationset_Sesv2ConfigurationSetDeliveryOptions.go",
+        "sesv2configurationset_Sesv2ConfigurationSetDeliveryOptionsOutputReference.go",
+        "sesv2configurationset_Sesv2ConfigurationSetDeliveryOptionsOutputReference__runtime_type_checks.go",
+        "sesv2configurationset_Sesv2ConfigurationSetReputationOptions.go",
+        "sesv2configurationset_Sesv2ConfigurationSetReputationOptionsOutputReference.go",
+        "sesv2configurationset_Sesv2ConfigurationSetReputationOptionsOutputReference__runtime_type_checks.go",
+        "sesv2configurationset_Sesv2ConfigurationSetSendingOptions.go",
+        "sesv2configurationset_Sesv2ConfigurationSetSendingOptionsOutputReference.go",
+        "sesv2configurationset_Sesv2ConfigurationSetSendingOptionsOutputReference__runtime_type_checks.go",
+        "sesv2configurationset_Sesv2ConfigurationSetSuppressionOptions.go",
+        "sesv2configurationset_Sesv2ConfigurationSetSuppressionOptionsOutputReference.go",
+        "sesv2configurationset_Sesv2ConfigurationSetSuppressionOptionsOutputReference__runtime_type_checks.go",
+        "sesv2configurationset_Sesv2ConfigurationSetTrackingOptions.go",
+        "sesv2configurationset_Sesv2ConfigurationSetTrackingOptionsOutputReference.go",
+        "sesv2configurationset_Sesv2ConfigurationSetTrackingOptionsOutputReference__runtime_type_checks.go",
+        "sesv2configurationset_Sesv2ConfigurationSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sesv2configurationset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sesv2configurationset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

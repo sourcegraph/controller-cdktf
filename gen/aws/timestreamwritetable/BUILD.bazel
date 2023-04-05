@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "timestreamwritetable",
+    srcs = [
+        "timestreamwritetable.go",
+        "timestreamwritetable_TimestreamwriteTable.go",
+        "timestreamwritetable_TimestreamwriteTableConfig.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWriteProperties.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference__runtime_type_checks.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference__runtime_type_checks.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference.go",
+        "timestreamwritetable_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference__runtime_type_checks.go",
+        "timestreamwritetable_TimestreamwriteTableRetentionProperties.go",
+        "timestreamwritetable_TimestreamwriteTableRetentionPropertiesOutputReference.go",
+        "timestreamwritetable_TimestreamwriteTableRetentionPropertiesOutputReference__runtime_type_checks.go",
+        "timestreamwritetable_TimestreamwriteTable__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/timestreamwritetable",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/timestreamwritetable/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

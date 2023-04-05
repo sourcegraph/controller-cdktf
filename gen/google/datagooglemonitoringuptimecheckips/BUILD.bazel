@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglemonitoringuptimecheckips",
+    srcs = [
+        "datagooglemonitoringuptimecheckips.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIps.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIpsConfig.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIps.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList__runtime_type_checks.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference__runtime_type_checks.go",
+        "datagooglemonitoringuptimecheckips_DataGoogleMonitoringUptimeCheckIps__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglemonitoringuptimecheckips",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglemonitoringuptimecheckips/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

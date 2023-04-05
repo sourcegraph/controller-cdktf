@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "glueconnection",
+    srcs = [
+        "glueconnection.go",
+        "glueconnection_GlueConnection.go",
+        "glueconnection_GlueConnectionConfig.go",
+        "glueconnection_GlueConnectionPhysicalConnectionRequirements.go",
+        "glueconnection_GlueConnectionPhysicalConnectionRequirementsOutputReference.go",
+        "glueconnection_GlueConnectionPhysicalConnectionRequirementsOutputReference__runtime_type_checks.go",
+        "glueconnection_GlueConnection__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/glueconnection",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/glueconnection/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "athenadatacatalog",
+    srcs = [
+        "athenadatacatalog.go",
+        "athenadatacatalog_AthenaDataCatalog.go",
+        "athenadatacatalog_AthenaDataCatalogConfig.go",
+        "athenadatacatalog_AthenaDataCatalog__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/athenadatacatalog",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/athenadatacatalog/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

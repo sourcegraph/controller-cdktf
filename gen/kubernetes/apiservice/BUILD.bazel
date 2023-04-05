@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apiservice",
+    srcs = [
+        "apiservice.go",
+        "apiservice_ApiService.go",
+        "apiservice_ApiServiceConfig.go",
+        "apiservice_ApiServiceMetadata.go",
+        "apiservice_ApiServiceMetadataOutputReference.go",
+        "apiservice_ApiServiceMetadataOutputReference__runtime_type_checks.go",
+        "apiservice_ApiServiceSpec.go",
+        "apiservice_ApiServiceSpecOutputReference.go",
+        "apiservice_ApiServiceSpecOutputReference__runtime_type_checks.go",
+        "apiservice_ApiServiceSpecService.go",
+        "apiservice_ApiServiceSpecServiceOutputReference.go",
+        "apiservice_ApiServiceSpecServiceOutputReference__runtime_type_checks.go",
+        "apiservice_ApiService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/apiservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/apiservice/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

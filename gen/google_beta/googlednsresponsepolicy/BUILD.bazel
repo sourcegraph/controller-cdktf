@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlednsresponsepolicy",
+    srcs = [
+        "googlednsresponsepolicy.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicy.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyConfig.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyNetworks.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyNetworksList.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyNetworksList__runtime_type_checks.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyNetworksOutputReference.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyNetworksOutputReference__runtime_type_checks.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyTimeouts.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyTimeoutsOutputReference.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlednsresponsepolicy_GoogleDnsResponsePolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlednsresponsepolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlednsresponsepolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

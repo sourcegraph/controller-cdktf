@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudformationstackset",
+    srcs = [
+        "cloudformationstackset.go",
+        "cloudformationstackset_CloudformationStackSet.go",
+        "cloudformationstackset_CloudformationStackSetAutoDeployment.go",
+        "cloudformationstackset_CloudformationStackSetAutoDeploymentOutputReference.go",
+        "cloudformationstackset_CloudformationStackSetAutoDeploymentOutputReference__runtime_type_checks.go",
+        "cloudformationstackset_CloudformationStackSetConfig.go",
+        "cloudformationstackset_CloudformationStackSetOperationPreferences.go",
+        "cloudformationstackset_CloudformationStackSetOperationPreferencesOutputReference.go",
+        "cloudformationstackset_CloudformationStackSetOperationPreferencesOutputReference__runtime_type_checks.go",
+        "cloudformationstackset_CloudformationStackSetTimeouts.go",
+        "cloudformationstackset_CloudformationStackSetTimeoutsOutputReference.go",
+        "cloudformationstackset_CloudformationStackSetTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudformationstackset_CloudformationStackSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudformationstackset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudformationstackset/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

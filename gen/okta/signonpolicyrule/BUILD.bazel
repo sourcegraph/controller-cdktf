@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "signonpolicyrule",
+    srcs = [
+        "signonpolicyrule.go",
+        "signonpolicyrule_SignonPolicyRule.go",
+        "signonpolicyrule_SignonPolicyRuleConfig.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequence.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceList.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceList__runtime_type_checks.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceOutputReference.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceOutputReference__runtime_type_checks.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceSecondaryCriteria.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceSecondaryCriteriaList.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceSecondaryCriteriaList__runtime_type_checks.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference.go",
+        "signonpolicyrule_SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference__runtime_type_checks.go",
+        "signonpolicyrule_SignonPolicyRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/signonpolicyrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/signonpolicyrule/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connecthoursofoperation",
+    srcs = [
+        "connecthoursofoperation.go",
+        "connecthoursofoperation_ConnectHoursOfOperation.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfig.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigA.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigAList.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigAList__runtime_type_checks.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigAOutputReference.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigAOutputReference__runtime_type_checks.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigEndTime.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigEndTimeOutputReference.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigEndTimeOutputReference__runtime_type_checks.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigStartTime.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigStartTimeOutputReference.go",
+        "connecthoursofoperation_ConnectHoursOfOperationConfigStartTimeOutputReference__runtime_type_checks.go",
+        "connecthoursofoperation_ConnectHoursOfOperation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/connecthoursofoperation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/connecthoursofoperation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

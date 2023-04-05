@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "bookmarkapp",
+    srcs = [
+        "bookmarkapp.go",
+        "bookmarkapp_BookmarkApp.go",
+        "bookmarkapp_BookmarkAppConfig.go",
+        "bookmarkapp_BookmarkAppTimeouts.go",
+        "bookmarkapp_BookmarkAppTimeoutsOutputReference.go",
+        "bookmarkapp_BookmarkAppTimeoutsOutputReference__runtime_type_checks.go",
+        "bookmarkapp_BookmarkAppUsers.go",
+        "bookmarkapp_BookmarkAppUsersList.go",
+        "bookmarkapp_BookmarkAppUsersList__runtime_type_checks.go",
+        "bookmarkapp_BookmarkAppUsersOutputReference.go",
+        "bookmarkapp_BookmarkAppUsersOutputReference__runtime_type_checks.go",
+        "bookmarkapp_BookmarkApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/bookmarkapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/bookmarkapp/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

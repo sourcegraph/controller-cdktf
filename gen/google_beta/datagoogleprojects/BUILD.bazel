@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagoogleprojects",
+    srcs = [
+        "datagoogleprojects.go",
+        "datagoogleprojects_DataGoogleProjects.go",
+        "datagoogleprojects_DataGoogleProjectsConfig.go",
+        "datagoogleprojects_DataGoogleProjectsProjects.go",
+        "datagoogleprojects_DataGoogleProjectsProjectsList.go",
+        "datagoogleprojects_DataGoogleProjectsProjectsList__runtime_type_checks.go",
+        "datagoogleprojects_DataGoogleProjectsProjectsOutputReference.go",
+        "datagoogleprojects_DataGoogleProjectsProjectsOutputReference__runtime_type_checks.go",
+        "datagoogleprojects_DataGoogleProjects__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleprojects",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagoogleprojects/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

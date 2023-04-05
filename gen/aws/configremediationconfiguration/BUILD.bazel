@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "configremediationconfiguration",
+    srcs = [
+        "configremediationconfiguration.go",
+        "configremediationconfiguration_ConfigRemediationConfiguration.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationConfig.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationExecutionControls.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationExecutionControlsOutputReference.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationExecutionControlsOutputReference__runtime_type_checks.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationExecutionControlsSsmControls.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference__runtime_type_checks.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationParameter.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationParameterList.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationParameterList__runtime_type_checks.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationParameterOutputReference.go",
+        "configremediationconfiguration_ConfigRemediationConfigurationParameterOutputReference__runtime_type_checks.go",
+        "configremediationconfiguration_ConfigRemediationConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/configremediationconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/configremediationconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

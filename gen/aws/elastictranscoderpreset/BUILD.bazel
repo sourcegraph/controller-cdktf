@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "elastictranscoderpreset",
+    srcs = [
+        "elastictranscoderpreset.go",
+        "elastictranscoderpreset_ElastictranscoderPreset.go",
+        "elastictranscoderpreset_ElastictranscoderPresetAudio.go",
+        "elastictranscoderpreset_ElastictranscoderPresetAudioCodecOptions.go",
+        "elastictranscoderpreset_ElastictranscoderPresetAudioCodecOptionsOutputReference.go",
+        "elastictranscoderpreset_ElastictranscoderPresetAudioCodecOptionsOutputReference__runtime_type_checks.go",
+        "elastictranscoderpreset_ElastictranscoderPresetAudioOutputReference.go",
+        "elastictranscoderpreset_ElastictranscoderPresetAudioOutputReference__runtime_type_checks.go",
+        "elastictranscoderpreset_ElastictranscoderPresetConfig.go",
+        "elastictranscoderpreset_ElastictranscoderPresetThumbnails.go",
+        "elastictranscoderpreset_ElastictranscoderPresetThumbnailsOutputReference.go",
+        "elastictranscoderpreset_ElastictranscoderPresetThumbnailsOutputReference__runtime_type_checks.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideo.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoOutputReference.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoOutputReference__runtime_type_checks.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoWatermarks.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoWatermarksList.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoWatermarksList__runtime_type_checks.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoWatermarksOutputReference.go",
+        "elastictranscoderpreset_ElastictranscoderPresetVideoWatermarksOutputReference__runtime_type_checks.go",
+        "elastictranscoderpreset_ElastictranscoderPreset__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/elastictranscoderpreset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/elastictranscoderpreset/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

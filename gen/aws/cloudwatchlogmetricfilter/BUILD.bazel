@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudwatchlogmetricfilter",
+    srcs = [
+        "cloudwatchlogmetricfilter.go",
+        "cloudwatchlogmetricfilter_CloudwatchLogMetricFilter.go",
+        "cloudwatchlogmetricfilter_CloudwatchLogMetricFilterConfig.go",
+        "cloudwatchlogmetricfilter_CloudwatchLogMetricFilterMetricTransformation.go",
+        "cloudwatchlogmetricfilter_CloudwatchLogMetricFilterMetricTransformationOutputReference.go",
+        "cloudwatchlogmetricfilter_CloudwatchLogMetricFilterMetricTransformationOutputReference__runtime_type_checks.go",
+        "cloudwatchlogmetricfilter_CloudwatchLogMetricFilter__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatchlogmetricfilter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudwatchlogmetricfilter/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

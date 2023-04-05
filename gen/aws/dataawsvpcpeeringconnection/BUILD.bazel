@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcpeeringconnection",
+    srcs = [
+        "dataawsvpcpeeringconnection.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnection.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionCidrBlockSet.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionCidrBlockSetList.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionCidrBlockSetList__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionConfig.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionFilter.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionFilterList.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionFilterList__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionFilterOutputReference.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionPeerCidrBlockSet.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionPeerCidrBlockSetList.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionPeerCidrBlockSetList__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionTimeouts.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionTimeoutsOutputReference.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnectionTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcpeeringconnection_DataAwsVpcPeeringConnection__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcpeeringconnection",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcpeeringconnection/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

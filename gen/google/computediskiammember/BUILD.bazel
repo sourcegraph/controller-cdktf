@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computediskiammember",
+    srcs = [
+        "computediskiammember.go",
+        "computediskiammember_ComputeDiskIamMember.go",
+        "computediskiammember_ComputeDiskIamMemberCondition.go",
+        "computediskiammember_ComputeDiskIamMemberConditionOutputReference.go",
+        "computediskiammember_ComputeDiskIamMemberConditionOutputReference__runtime_type_checks.go",
+        "computediskiammember_ComputeDiskIamMemberConfig.go",
+        "computediskiammember_ComputeDiskIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computediskiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computediskiammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

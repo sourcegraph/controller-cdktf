@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "controltowercontrol",
+    srcs = [
+        "controltowercontrol.go",
+        "controltowercontrol_ControltowerControl.go",
+        "controltowercontrol_ControltowerControlConfig.go",
+        "controltowercontrol_ControltowerControlTimeouts.go",
+        "controltowercontrol_ControltowerControlTimeoutsOutputReference.go",
+        "controltowercontrol_ControltowerControlTimeoutsOutputReference__runtime_type_checks.go",
+        "controltowercontrol_ControltowerControl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/controltowercontrol",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/controltowercontrol/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

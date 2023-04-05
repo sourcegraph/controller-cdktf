@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayv2authorizer",
+    srcs = [
+        "apigatewayv2authorizer.go",
+        "apigatewayv2authorizer_Apigatewayv2Authorizer.go",
+        "apigatewayv2authorizer_Apigatewayv2AuthorizerConfig.go",
+        "apigatewayv2authorizer_Apigatewayv2AuthorizerJwtConfiguration.go",
+        "apigatewayv2authorizer_Apigatewayv2AuthorizerJwtConfigurationOutputReference.go",
+        "apigatewayv2authorizer_Apigatewayv2AuthorizerJwtConfigurationOutputReference__runtime_type_checks.go",
+        "apigatewayv2authorizer_Apigatewayv2Authorizer__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2authorizer",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayv2authorizer/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledataplexlake",
+    srcs = [
+        "googledataplexlake.go",
+        "googledataplexlake_GoogleDataplexLake.go",
+        "googledataplexlake_GoogleDataplexLakeAssetStatus.go",
+        "googledataplexlake_GoogleDataplexLakeAssetStatusList.go",
+        "googledataplexlake_GoogleDataplexLakeAssetStatusList__runtime_type_checks.go",
+        "googledataplexlake_GoogleDataplexLakeAssetStatusOutputReference.go",
+        "googledataplexlake_GoogleDataplexLakeAssetStatusOutputReference__runtime_type_checks.go",
+        "googledataplexlake_GoogleDataplexLakeConfig.go",
+        "googledataplexlake_GoogleDataplexLakeMetastore.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreOutputReference.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreOutputReference__runtime_type_checks.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreStatus.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreStatusList.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreStatusList__runtime_type_checks.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreStatusOutputReference.go",
+        "googledataplexlake_GoogleDataplexLakeMetastoreStatusOutputReference__runtime_type_checks.go",
+        "googledataplexlake_GoogleDataplexLakeTimeouts.go",
+        "googledataplexlake_GoogleDataplexLakeTimeoutsOutputReference.go",
+        "googledataplexlake_GoogleDataplexLakeTimeoutsOutputReference__runtime_type_checks.go",
+        "googledataplexlake_GoogleDataplexLake__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexlake",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledataplexlake/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

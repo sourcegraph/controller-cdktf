@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcs",
+    srcs = [
+        "dataawsvpcs.go",
+        "dataawsvpcs_DataAwsVpcs.go",
+        "dataawsvpcs_DataAwsVpcsConfig.go",
+        "dataawsvpcs_DataAwsVpcsFilter.go",
+        "dataawsvpcs_DataAwsVpcsFilterList.go",
+        "dataawsvpcs_DataAwsVpcsFilterList__runtime_type_checks.go",
+        "dataawsvpcs_DataAwsVpcsFilterOutputReference.go",
+        "dataawsvpcs_DataAwsVpcsFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcs_DataAwsVpcsTimeouts.go",
+        "dataawsvpcs_DataAwsVpcsTimeoutsOutputReference.go",
+        "dataawsvpcs_DataAwsVpcsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcs_DataAwsVpcs__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcs",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcs/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

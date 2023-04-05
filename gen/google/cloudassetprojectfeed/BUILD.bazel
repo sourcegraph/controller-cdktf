@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudassetprojectfeed",
+    srcs = [
+        "cloudassetprojectfeed.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeed.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedCondition.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedConditionOutputReference.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedConditionOutputReference__runtime_type_checks.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedConfig.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedFeedOutputConfig.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedFeedOutputConfigOutputReference.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedFeedOutputConfigOutputReference__runtime_type_checks.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedFeedOutputConfigPubsubDestination.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference__runtime_type_checks.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedTimeouts.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedTimeoutsOutputReference.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeedTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudassetprojectfeed_CloudAssetProjectFeed__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/cloudassetprojectfeed",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/cloudassetprojectfeed/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

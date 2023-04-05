@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "signersigningprofile",
+    srcs = [
+        "signersigningprofile.go",
+        "signersigningprofile_SignerSigningProfile.go",
+        "signersigningprofile_SignerSigningProfileConfig.go",
+        "signersigningprofile_SignerSigningProfileRevocationRecord.go",
+        "signersigningprofile_SignerSigningProfileRevocationRecordList.go",
+        "signersigningprofile_SignerSigningProfileRevocationRecordList__runtime_type_checks.go",
+        "signersigningprofile_SignerSigningProfileRevocationRecordOutputReference.go",
+        "signersigningprofile_SignerSigningProfileRevocationRecordOutputReference__runtime_type_checks.go",
+        "signersigningprofile_SignerSigningProfileSignatureValidityPeriod.go",
+        "signersigningprofile_SignerSigningProfileSignatureValidityPeriodOutputReference.go",
+        "signersigningprofile_SignerSigningProfileSignatureValidityPeriodOutputReference__runtime_type_checks.go",
+        "signersigningprofile_SignerSigningProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/signersigningprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/signersigningprofile/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

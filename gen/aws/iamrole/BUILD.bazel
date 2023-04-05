@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "iamrole",
+    srcs = [
+        "iamrole.go",
+        "iamrole_IamRole.go",
+        "iamrole_IamRoleConfig.go",
+        "iamrole_IamRoleInlinePolicy.go",
+        "iamrole_IamRoleInlinePolicyList.go",
+        "iamrole_IamRoleInlinePolicyList__runtime_type_checks.go",
+        "iamrole_IamRoleInlinePolicyOutputReference.go",
+        "iamrole_IamRoleInlinePolicyOutputReference__runtime_type_checks.go",
+        "iamrole_IamRole__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/iamrole",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/iamrole/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

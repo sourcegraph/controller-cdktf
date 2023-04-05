@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudtraileventdatastore",
+    srcs = [
+        "cloudtraileventdatastore.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStore.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelector.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList__runtime_type_checks.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference__runtime_type_checks.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorList.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorList__runtime_type_checks.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorOutputReference.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreAdvancedEventSelectorOutputReference__runtime_type_checks.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreConfig.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreTimeouts.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreTimeoutsOutputReference.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStoreTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudtraileventdatastore_CloudtrailEventDataStore__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudtraileventdatastore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudtraileventdatastore/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

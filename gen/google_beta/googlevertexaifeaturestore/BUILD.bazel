@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlevertexaifeaturestore",
+    srcs = [
+        "googlevertexaifeaturestore.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestore.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreConfig.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreEncryptionSpec.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreEncryptionSpecOutputReference.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreEncryptionSpecOutputReference__runtime_type_checks.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreOnlineServingConfig.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference__runtime_type_checks.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreTimeouts.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreTimeoutsOutputReference.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestoreTimeoutsOutputReference__runtime_type_checks.go",
+        "googlevertexaifeaturestore_GoogleVertexAiFeaturestore__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlevertexaifeaturestore/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

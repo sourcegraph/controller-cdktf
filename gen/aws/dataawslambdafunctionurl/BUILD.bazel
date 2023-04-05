@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawslambdafunctionurl",
+    srcs = [
+        "dataawslambdafunctionurl.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrl.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrlConfig.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrlCors.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrlCorsList.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrlCorsList__runtime_type_checks.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrlCorsOutputReference.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrlCorsOutputReference__runtime_type_checks.go",
+        "dataawslambdafunctionurl_DataAwsLambdaFunctionUrl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawslambdafunctionurl",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawslambdafunctionurl/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

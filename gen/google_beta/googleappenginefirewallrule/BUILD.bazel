@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleappenginefirewallrule",
+    srcs = [
+        "googleappenginefirewallrule.go",
+        "googleappenginefirewallrule_GoogleAppEngineFirewallRule.go",
+        "googleappenginefirewallrule_GoogleAppEngineFirewallRuleConfig.go",
+        "googleappenginefirewallrule_GoogleAppEngineFirewallRuleTimeouts.go",
+        "googleappenginefirewallrule_GoogleAppEngineFirewallRuleTimeoutsOutputReference.go",
+        "googleappenginefirewallrule_GoogleAppEngineFirewallRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "googleappenginefirewallrule_GoogleAppEngineFirewallRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappenginefirewallrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleappenginefirewallrule/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

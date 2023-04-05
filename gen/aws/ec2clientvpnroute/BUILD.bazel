@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2clientvpnroute",
+    srcs = [
+        "ec2clientvpnroute.go",
+        "ec2clientvpnroute_Ec2ClientVpnRoute.go",
+        "ec2clientvpnroute_Ec2ClientVpnRouteConfig.go",
+        "ec2clientvpnroute_Ec2ClientVpnRouteTimeouts.go",
+        "ec2clientvpnroute_Ec2ClientVpnRouteTimeoutsOutputReference.go",
+        "ec2clientvpnroute_Ec2ClientVpnRouteTimeoutsOutputReference__runtime_type_checks.go",
+        "ec2clientvpnroute_Ec2ClientVpnRoute__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2clientvpnroute",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2clientvpnroute/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "daxcluster",
+    srcs = [
+        "daxcluster.go",
+        "daxcluster_DaxCluster.go",
+        "daxcluster_DaxClusterConfig.go",
+        "daxcluster_DaxClusterNodes.go",
+        "daxcluster_DaxClusterNodesList.go",
+        "daxcluster_DaxClusterNodesList__runtime_type_checks.go",
+        "daxcluster_DaxClusterNodesOutputReference.go",
+        "daxcluster_DaxClusterNodesOutputReference__runtime_type_checks.go",
+        "daxcluster_DaxClusterServerSideEncryption.go",
+        "daxcluster_DaxClusterServerSideEncryptionOutputReference.go",
+        "daxcluster_DaxClusterServerSideEncryptionOutputReference__runtime_type_checks.go",
+        "daxcluster_DaxClusterTimeouts.go",
+        "daxcluster_DaxClusterTimeoutsOutputReference.go",
+        "daxcluster_DaxClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "daxcluster_DaxCluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/daxcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/daxcluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

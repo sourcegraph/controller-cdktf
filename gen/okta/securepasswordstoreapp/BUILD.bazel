@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "securepasswordstoreapp",
+    srcs = [
+        "securepasswordstoreapp.go",
+        "securepasswordstoreapp_SecurePasswordStoreApp.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppConfig.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppTimeouts.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppTimeoutsOutputReference.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppTimeoutsOutputReference__runtime_type_checks.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppUsers.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppUsersList.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppUsersList__runtime_type_checks.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppUsersOutputReference.go",
+        "securepasswordstoreapp_SecurePasswordStoreAppUsersOutputReference__runtime_type_checks.go",
+        "securepasswordstoreapp_SecurePasswordStoreApp__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/securepasswordstoreapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/securepasswordstoreapp/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

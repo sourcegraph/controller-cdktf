@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "route53zoneassociation",
+    srcs = [
+        "route53zoneassociation.go",
+        "route53zoneassociation_Route53ZoneAssociation.go",
+        "route53zoneassociation_Route53ZoneAssociationConfig.go",
+        "route53zoneassociation_Route53ZoneAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/route53zoneassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/route53zoneassociation/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

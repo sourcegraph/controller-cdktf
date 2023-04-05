@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlerecaptchaenterprisekey",
+    srcs = [
+        "googlerecaptchaenterprisekey.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKey.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyAndroidSettings.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference__runtime_type_checks.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyConfig.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyIosSettings.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference__runtime_type_checks.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyTestingOptions.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference__runtime_type_checks.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyTimeouts.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference__runtime_type_checks.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyWebSettings.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference__runtime_type_checks.go",
+        "googlerecaptchaenterprisekey_GoogleRecaptchaEnterpriseKey__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlerecaptchaenterprisekey",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlerecaptchaenterprisekey/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

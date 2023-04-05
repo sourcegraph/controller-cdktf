@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefirebaseprojectlocation",
+    srcs = [
+        "googlefirebaseprojectlocation.go",
+        "googlefirebaseprojectlocation_GoogleFirebaseProjectLocation.go",
+        "googlefirebaseprojectlocation_GoogleFirebaseProjectLocationConfig.go",
+        "googlefirebaseprojectlocation_GoogleFirebaseProjectLocationTimeouts.go",
+        "googlefirebaseprojectlocation_GoogleFirebaseProjectLocationTimeoutsOutputReference.go",
+        "googlefirebaseprojectlocation_GoogleFirebaseProjectLocationTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefirebaseprojectlocation_GoogleFirebaseProjectLocation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseprojectlocation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefirebaseprojectlocation/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

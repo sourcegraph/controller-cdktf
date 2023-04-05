@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "spannerinstanceiammember",
+    srcs = [
+        "spannerinstanceiammember.go",
+        "spannerinstanceiammember_SpannerInstanceIamMember.go",
+        "spannerinstanceiammember_SpannerInstanceIamMemberCondition.go",
+        "spannerinstanceiammember_SpannerInstanceIamMemberConditionOutputReference.go",
+        "spannerinstanceiammember_SpannerInstanceIamMemberConditionOutputReference__runtime_type_checks.go",
+        "spannerinstanceiammember_SpannerInstanceIamMemberConfig.go",
+        "spannerinstanceiammember_SpannerInstanceIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/spannerinstanceiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/spannerinstanceiammember/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

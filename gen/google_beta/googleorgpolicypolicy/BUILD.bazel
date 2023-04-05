@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleorgpolicypolicy",
+    srcs = [
+        "googleorgpolicypolicy.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicy.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicyConfig.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpec.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecOutputReference.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecOutputReference__runtime_type_checks.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRules.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesCondition.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesConditionOutputReference.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesConditionOutputReference__runtime_type_checks.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesList.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesList__runtime_type_checks.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesOutputReference.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesOutputReference__runtime_type_checks.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesValues.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesValuesOutputReference.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicySpecRulesValuesOutputReference__runtime_type_checks.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicyTimeouts.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicyTimeoutsOutputReference.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "googleorgpolicypolicy_GoogleOrgPolicyPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleorgpolicypolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleorgpolicypolicy/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

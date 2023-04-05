@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeorganizationsecuritypolicyrule",
+    srcs = [
+        "googlecomputeorganizationsecuritypolicyrule.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRule.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleConfig.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatch.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfig.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList__runtime_type_checks.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference__runtime_type_checks.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReference.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReference__runtime_type_checks.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchOutputReference.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleMatchOutputReference__runtime_type_checks.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleTimeouts.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleTimeoutsOutputReference.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeorganizationsecuritypolicyrule_GoogleComputeOrganizationSecurityPolicyRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeorganizationsecuritypolicyrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeorganizationsecuritypolicyrule/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

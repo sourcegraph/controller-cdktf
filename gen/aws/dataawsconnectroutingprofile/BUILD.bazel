@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsconnectroutingprofile",
+    srcs = [
+        "dataawsconnectroutingprofile.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfile.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileConfig.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileMediaConcurrencies.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileMediaConcurrenciesList.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileMediaConcurrenciesList__runtime_type_checks.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference__runtime_type_checks.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileQueueConfigs.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileQueueConfigsList.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileQueueConfigsList__runtime_type_checks.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileQueueConfigsOutputReference.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfileQueueConfigsOutputReference__runtime_type_checks.go",
+        "dataawsconnectroutingprofile_DataAwsConnectRoutingProfile__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsconnectroutingprofile",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsconnectroutingprofile/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglecomputerouterstatus",
+    srcs = [
+        "datagooglecomputerouterstatus.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatus.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutes.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesForRouter.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesForRouterList.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesForRouterList__runtime_type_checks.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference__runtime_type_checks.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesList.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesList__runtime_type_checks.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesOutputReference.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusBestRoutesOutputReference__runtime_type_checks.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatusConfig.go",
+        "datagooglecomputerouterstatus_DataGoogleComputeRouterStatus__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputerouterstatus",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglecomputerouterstatus/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

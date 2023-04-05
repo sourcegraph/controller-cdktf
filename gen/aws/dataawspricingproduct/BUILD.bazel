@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawspricingproduct",
+    srcs = [
+        "dataawspricingproduct.go",
+        "dataawspricingproduct_DataAwsPricingProduct.go",
+        "dataawspricingproduct_DataAwsPricingProductConfig.go",
+        "dataawspricingproduct_DataAwsPricingProductFilters.go",
+        "dataawspricingproduct_DataAwsPricingProductFiltersList.go",
+        "dataawspricingproduct_DataAwsPricingProductFiltersList__runtime_type_checks.go",
+        "dataawspricingproduct_DataAwsPricingProductFiltersOutputReference.go",
+        "dataawspricingproduct_DataAwsPricingProductFiltersOutputReference__runtime_type_checks.go",
+        "dataawspricingproduct_DataAwsPricingProduct__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawspricingproduct",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawspricingproduct/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

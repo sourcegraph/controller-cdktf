@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "fmspolicy",
+    srcs = [
+        "fmspolicy.go",
+        "fmspolicy_FmsPolicy.go",
+        "fmspolicy_FmsPolicyConfig.go",
+        "fmspolicy_FmsPolicyExcludeMap.go",
+        "fmspolicy_FmsPolicyExcludeMapOutputReference.go",
+        "fmspolicy_FmsPolicyExcludeMapOutputReference__runtime_type_checks.go",
+        "fmspolicy_FmsPolicyIncludeMap.go",
+        "fmspolicy_FmsPolicyIncludeMapOutputReference.go",
+        "fmspolicy_FmsPolicyIncludeMapOutputReference__runtime_type_checks.go",
+        "fmspolicy_FmsPolicySecurityServicePolicyData.go",
+        "fmspolicy_FmsPolicySecurityServicePolicyDataOutputReference.go",
+        "fmspolicy_FmsPolicySecurityServicePolicyDataOutputReference__runtime_type_checks.go",
+        "fmspolicy_FmsPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/fmspolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/fmspolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

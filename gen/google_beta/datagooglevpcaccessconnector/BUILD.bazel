@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglevpcaccessconnector",
+    srcs = [
+        "datagooglevpcaccessconnector.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnector.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnectorConfig.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnectorSubnet.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnectorSubnetList.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnectorSubnetList__runtime_type_checks.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnectorSubnetOutputReference.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnectorSubnetOutputReference__runtime_type_checks.go",
+        "datagooglevpcaccessconnector_DataGoogleVpcAccessConnector__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglevpcaccessconnector",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagooglevpcaccessconnector/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

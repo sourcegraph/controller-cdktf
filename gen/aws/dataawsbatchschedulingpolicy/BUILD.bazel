@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsbatchschedulingpolicy",
+    srcs = [
+        "dataawsbatchschedulingpolicy.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicy.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyConfig.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicy.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyList.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyList__runtime_type_checks.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference__runtime_type_checks.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList__runtime_type_checks.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference__runtime_type_checks.go",
+        "dataawsbatchschedulingpolicy_DataAwsBatchSchedulingPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsbatchschedulingpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsbatchschedulingpolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

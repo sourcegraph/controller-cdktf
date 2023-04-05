@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "servicediscoveryservice",
+    srcs = [
+        "servicediscoveryservice.go",
+        "servicediscoveryservice_ServiceDiscoveryService.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceConfig.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfig.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigDnsRecords.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigDnsRecordsList.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigDnsRecordsList__runtime_type_checks.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference__runtime_type_checks.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigOutputReference.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceDnsConfigOutputReference__runtime_type_checks.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceHealthCheckConfig.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceHealthCheckConfigOutputReference.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceHealthCheckConfigOutputReference__runtime_type_checks.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceHealthCheckCustomConfig.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference.go",
+        "servicediscoveryservice_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference__runtime_type_checks.go",
+        "servicediscoveryservice_ServiceDiscoveryService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/servicediscoveryservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/servicediscoveryservice/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

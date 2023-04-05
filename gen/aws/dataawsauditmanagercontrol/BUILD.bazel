@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsauditmanagercontrol",
+    srcs = [
+        "dataawsauditmanagercontrol.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControl.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlConfig.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSources.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesList.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesList__runtime_type_checks.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesOutputReference.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesOutputReference__runtime_type_checks.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList__runtime_type_checks.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference__runtime_type_checks.go",
+        "dataawsauditmanagercontrol_DataAwsAuditmanagerControl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsauditmanagercontrol",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsauditmanagercontrol/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

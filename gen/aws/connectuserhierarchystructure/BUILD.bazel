@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connectuserhierarchystructure",
+    srcs = [
+        "connectuserhierarchystructure.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructure.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureConfig.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructure.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelFive.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference__runtime_type_checks.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelFour.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference__runtime_type_checks.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelOne.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference__runtime_type_checks.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelThree.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference__runtime_type_checks.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelTwo.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference__runtime_type_checks.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureOutputReference.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructureHierarchyStructureOutputReference__runtime_type_checks.go",
+        "connectuserhierarchystructure_ConnectUserHierarchyStructure__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/connectuserhierarchystructure",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/connectuserhierarchystructure/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

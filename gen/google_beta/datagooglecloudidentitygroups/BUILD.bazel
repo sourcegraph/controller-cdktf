@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglecloudidentitygroups",
+    srcs = [
+        "datagooglecloudidentitygroups.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroups.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsConfig.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroups.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsGroupKey.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsGroupKeyList.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsGroupKeyList__runtime_type_checks.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference__runtime_type_checks.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsList.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsList__runtime_type_checks.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsOutputReference.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroupsGroupsOutputReference__runtime_type_checks.go",
+        "datagooglecloudidentitygroups_DataGoogleCloudIdentityGroups__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecloudidentitygroups",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagooglecloudidentitygroups/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

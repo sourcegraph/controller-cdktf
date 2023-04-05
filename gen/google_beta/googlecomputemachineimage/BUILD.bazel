@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputemachineimage",
+    srcs = [
+        "googlecomputemachineimage.go",
+        "googlecomputemachineimage_GoogleComputeMachineImage.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageConfig.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageMachineImageEncryptionKey.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference__runtime_type_checks.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageTimeouts.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageTimeoutsOutputReference.go",
+        "googlecomputemachineimage_GoogleComputeMachineImageTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputemachineimage_GoogleComputeMachineImage__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputemachineimage",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputemachineimage/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlednsresponsepolicyrule",
+    srcs = [
+        "googlednsresponsepolicyrule.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRule.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleConfig.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalData.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataLocalDatas.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataLocalDatasList__runtime_type_checks.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference__runtime_type_checks.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataOutputReference.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleLocalDataOutputReference__runtime_type_checks.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleTimeouts.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleTimeoutsOutputReference.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRuleTimeoutsOutputReference__runtime_type_checks.go",
+        "googlednsresponsepolicyrule_GoogleDnsResponsePolicyRule__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlednsresponsepolicyrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlednsresponsepolicyrule/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

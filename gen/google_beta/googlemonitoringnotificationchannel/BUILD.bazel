@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlemonitoringnotificationchannel",
+    srcs = [
+        "googlemonitoringnotificationchannel.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannel.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelConfig.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelSensitiveLabels.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference__runtime_type_checks.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelTimeouts.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelTimeoutsOutputReference.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannelTimeoutsOutputReference__runtime_type_checks.go",
+        "googlemonitoringnotificationchannel_GoogleMonitoringNotificationChannel__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringnotificationchannel",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlemonitoringnotificationchannel/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

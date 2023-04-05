@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lambdafunctioneventinvokeconfig",
+    srcs = [
+        "lambdafunctioneventinvokeconfig.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfig.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigConfig.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfig.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOnFailure.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference__runtime_type_checks.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference__runtime_type_checks.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference__runtime_type_checks.go",
+        "lambdafunctioneventinvokeconfig_LambdaFunctionEventInvokeConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lambdafunctioneventinvokeconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lambdafunctioneventinvokeconfig/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

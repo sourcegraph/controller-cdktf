@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kendrafaq",
+    srcs = [
+        "kendrafaq.go",
+        "kendrafaq_KendraFaq.go",
+        "kendrafaq_KendraFaqConfig.go",
+        "kendrafaq_KendraFaqS3Path.go",
+        "kendrafaq_KendraFaqS3PathOutputReference.go",
+        "kendrafaq_KendraFaqS3PathOutputReference__runtime_type_checks.go",
+        "kendrafaq_KendraFaqTimeouts.go",
+        "kendrafaq_KendraFaqTimeoutsOutputReference.go",
+        "kendrafaq_KendraFaqTimeoutsOutputReference__runtime_type_checks.go",
+        "kendrafaq_KendraFaq__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/kendrafaq",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/kendrafaq/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

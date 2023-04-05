@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kendraquerysuggestionsblocklist",
+    srcs = [
+        "kendraquerysuggestionsblocklist.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockList.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListConfig.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListSourceS3Path.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListSourceS3PathOutputReference.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListSourceS3PathOutputReference__runtime_type_checks.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListTimeouts.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListTimeoutsOutputReference.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockListTimeoutsOutputReference__runtime_type_checks.go",
+        "kendraquerysuggestionsblocklist_KendraQuerySuggestionsBlockList__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/kendraquerysuggestionsblocklist",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/kendraquerysuggestionsblocklist/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

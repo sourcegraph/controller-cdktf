@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2spotprice",
+    srcs = [
+        "dataawsec2spotprice.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPrice.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceConfig.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceFilter.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceFilterList.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceFilterList__runtime_type_checks.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceFilterOutputReference.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceTimeouts.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceTimeoutsOutputReference.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPriceTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2spotprice_DataAwsEc2SpotPrice__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2spotprice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2spotprice/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

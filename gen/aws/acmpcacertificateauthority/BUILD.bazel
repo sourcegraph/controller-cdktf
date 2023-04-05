@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "acmpcacertificateauthority",
+    srcs = [
+        "acmpcacertificateauthority.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthority.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityCertificateAuthorityConfiguration.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference__runtime_type_checks.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference__runtime_type_checks.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityConfig.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfiguration.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference__runtime_type_checks.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference__runtime_type_checks.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationOutputReference.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityRevocationConfigurationOutputReference__runtime_type_checks.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityTimeouts.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityTimeoutsOutputReference.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthorityTimeoutsOutputReference__runtime_type_checks.go",
+        "acmpcacertificateauthority_AcmpcaCertificateAuthority__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/acmpcacertificateauthority",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/acmpcacertificateauthority/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

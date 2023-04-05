@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktanetworkzone",
+    srcs = [
+        "dataoktanetworkzone.go",
+        "dataoktanetworkzone_DataOktaNetworkZone.go",
+        "dataoktanetworkzone_DataOktaNetworkZoneConfig.go",
+        "dataoktanetworkzone_DataOktaNetworkZone__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktanetworkzone",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktanetworkzone/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

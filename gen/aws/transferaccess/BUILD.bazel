@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "transferaccess",
+    srcs = [
+        "transferaccess.go",
+        "transferaccess_TransferAccess.go",
+        "transferaccess_TransferAccessConfig.go",
+        "transferaccess_TransferAccessHomeDirectoryMappings.go",
+        "transferaccess_TransferAccessHomeDirectoryMappingsList.go",
+        "transferaccess_TransferAccessHomeDirectoryMappingsList__runtime_type_checks.go",
+        "transferaccess_TransferAccessHomeDirectoryMappingsOutputReference.go",
+        "transferaccess_TransferAccessHomeDirectoryMappingsOutputReference__runtime_type_checks.go",
+        "transferaccess_TransferAccessPosixProfile.go",
+        "transferaccess_TransferAccessPosixProfileOutputReference.go",
+        "transferaccess_TransferAccessPosixProfileOutputReference__runtime_type_checks.go",
+        "transferaccess_TransferAccess__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/transferaccess",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/transferaccess/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

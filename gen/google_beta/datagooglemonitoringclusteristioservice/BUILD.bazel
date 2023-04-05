@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglemonitoringclusteristioservice",
+    srcs = [
+        "datagooglemonitoringclusteristioservice.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioService.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioServiceConfig.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioServiceTelemetry.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioServiceTelemetryList.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioServiceTelemetryList__runtime_type_checks.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference__runtime_type_checks.go",
+        "datagooglemonitoringclusteristioservice_DataGoogleMonitoringClusterIstioService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglemonitoringclusteristioservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagooglemonitoringclusteristioservice/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

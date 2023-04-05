@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kendrathesaurus",
+    srcs = [
+        "kendrathesaurus.go",
+        "kendrathesaurus_KendraThesaurus.go",
+        "kendrathesaurus_KendraThesaurusConfig.go",
+        "kendrathesaurus_KendraThesaurusSourceS3Path.go",
+        "kendrathesaurus_KendraThesaurusSourceS3PathOutputReference.go",
+        "kendrathesaurus_KendraThesaurusSourceS3PathOutputReference__runtime_type_checks.go",
+        "kendrathesaurus_KendraThesaurusTimeouts.go",
+        "kendrathesaurus_KendraThesaurusTimeoutsOutputReference.go",
+        "kendrathesaurus_KendraThesaurusTimeoutsOutputReference__runtime_type_checks.go",
+        "kendrathesaurus_KendraThesaurus__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/kendrathesaurus",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/kendrathesaurus/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

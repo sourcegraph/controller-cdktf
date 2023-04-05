@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeinstancegroup",
+    srcs = [
+        "googlecomputeinstancegroup.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroup.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupConfig.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupNamedPort.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupNamedPortList.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupNamedPortList__runtime_type_checks.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupNamedPortOutputReference.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupNamedPortOutputReference__runtime_type_checks.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupTimeouts.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupTimeoutsOutputReference.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeinstancegroup_GoogleComputeInstanceGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeinstancegroup/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

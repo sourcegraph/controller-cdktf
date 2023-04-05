@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeregiondisk",
+    srcs = [
+        "computeregiondisk.go",
+        "computeregiondisk_ComputeRegionDisk.go",
+        "computeregiondisk_ComputeRegionDiskConfig.go",
+        "computeregiondisk_ComputeRegionDiskDiskEncryptionKey.go",
+        "computeregiondisk_ComputeRegionDiskDiskEncryptionKeyOutputReference.go",
+        "computeregiondisk_ComputeRegionDiskDiskEncryptionKeyOutputReference__runtime_type_checks.go",
+        "computeregiondisk_ComputeRegionDiskSourceSnapshotEncryptionKey.go",
+        "computeregiondisk_ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference.go",
+        "computeregiondisk_ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference__runtime_type_checks.go",
+        "computeregiondisk_ComputeRegionDiskTimeouts.go",
+        "computeregiondisk_ComputeRegionDiskTimeoutsOutputReference.go",
+        "computeregiondisk_ComputeRegionDiskTimeoutsOutputReference__runtime_type_checks.go",
+        "computeregiondisk_ComputeRegionDisk__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeregiondisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeregiondisk/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

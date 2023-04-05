@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktaauthserverclaims",
+    srcs = [
+        "dataoktaauthserverclaims.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaims.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaimsClaims.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaimsClaimsList.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaimsClaimsList__runtime_type_checks.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaimsClaimsOutputReference.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaimsClaimsOutputReference__runtime_type_checks.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaimsConfig.go",
+        "dataoktaauthserverclaims_DataOktaAuthServerClaims__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaauthserverclaims",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktaauthserverclaims/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

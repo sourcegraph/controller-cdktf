@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appintegrationseventintegration",
+    srcs = [
+        "appintegrationseventintegration.go",
+        "appintegrationseventintegration_AppintegrationsEventIntegration.go",
+        "appintegrationseventintegration_AppintegrationsEventIntegrationConfig.go",
+        "appintegrationseventintegration_AppintegrationsEventIntegrationEventFilter.go",
+        "appintegrationseventintegration_AppintegrationsEventIntegrationEventFilterOutputReference.go",
+        "appintegrationseventintegration_AppintegrationsEventIntegrationEventFilterOutputReference__runtime_type_checks.go",
+        "appintegrationseventintegration_AppintegrationsEventIntegration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/appintegrationseventintegration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/appintegrationseventintegration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

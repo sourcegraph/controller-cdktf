@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawseips",
+    srcs = [
+        "dataawseips.go",
+        "dataawseips_DataAwsEips.go",
+        "dataawseips_DataAwsEipsConfig.go",
+        "dataawseips_DataAwsEipsFilter.go",
+        "dataawseips_DataAwsEipsFilterList.go",
+        "dataawseips_DataAwsEipsFilterList__runtime_type_checks.go",
+        "dataawseips_DataAwsEipsFilterOutputReference.go",
+        "dataawseips_DataAwsEipsFilterOutputReference__runtime_type_checks.go",
+        "dataawseips_DataAwsEipsTimeouts.go",
+        "dataawseips_DataAwsEipsTimeoutsOutputReference.go",
+        "dataawseips_DataAwsEipsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawseips_DataAwsEips__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawseips",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawseips/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

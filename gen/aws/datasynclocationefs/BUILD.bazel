@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datasynclocationefs",
+    srcs = [
+        "datasynclocationefs.go",
+        "datasynclocationefs_DatasyncLocationEfs.go",
+        "datasynclocationefs_DatasyncLocationEfsConfig.go",
+        "datasynclocationefs_DatasyncLocationEfsEc2Config.go",
+        "datasynclocationefs_DatasyncLocationEfsEc2ConfigOutputReference.go",
+        "datasynclocationefs_DatasyncLocationEfsEc2ConfigOutputReference__runtime_type_checks.go",
+        "datasynclocationefs_DatasyncLocationEfs__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/datasynclocationefs",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/datasynclocationefs/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

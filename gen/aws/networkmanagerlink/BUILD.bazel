@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagerlink",
+    srcs = [
+        "networkmanagerlink.go",
+        "networkmanagerlink_NetworkmanagerLink.go",
+        "networkmanagerlink_NetworkmanagerLinkBandwidth.go",
+        "networkmanagerlink_NetworkmanagerLinkBandwidthOutputReference.go",
+        "networkmanagerlink_NetworkmanagerLinkBandwidthOutputReference__runtime_type_checks.go",
+        "networkmanagerlink_NetworkmanagerLinkConfig.go",
+        "networkmanagerlink_NetworkmanagerLinkTimeouts.go",
+        "networkmanagerlink_NetworkmanagerLinkTimeoutsOutputReference.go",
+        "networkmanagerlink_NetworkmanagerLinkTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagerlink_NetworkmanagerLink__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagerlink",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagerlink/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

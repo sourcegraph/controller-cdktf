@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "userschemaproperty",
+    srcs = [
+        "userschemaproperty.go",
+        "userschemaproperty_UserSchemaProperty.go",
+        "userschemaproperty_UserSchemaPropertyArrayOneOf.go",
+        "userschemaproperty_UserSchemaPropertyArrayOneOfList.go",
+        "userschemaproperty_UserSchemaPropertyArrayOneOfList__runtime_type_checks.go",
+        "userschemaproperty_UserSchemaPropertyArrayOneOfOutputReference.go",
+        "userschemaproperty_UserSchemaPropertyArrayOneOfOutputReference__runtime_type_checks.go",
+        "userschemaproperty_UserSchemaPropertyConfig.go",
+        "userschemaproperty_UserSchemaPropertyMasterOverridePriority.go",
+        "userschemaproperty_UserSchemaPropertyMasterOverridePriorityList.go",
+        "userschemaproperty_UserSchemaPropertyMasterOverridePriorityList__runtime_type_checks.go",
+        "userschemaproperty_UserSchemaPropertyMasterOverridePriorityOutputReference.go",
+        "userschemaproperty_UserSchemaPropertyMasterOverridePriorityOutputReference__runtime_type_checks.go",
+        "userschemaproperty_UserSchemaPropertyOneOf.go",
+        "userschemaproperty_UserSchemaPropertyOneOfList.go",
+        "userschemaproperty_UserSchemaPropertyOneOfList__runtime_type_checks.go",
+        "userschemaproperty_UserSchemaPropertyOneOfOutputReference.go",
+        "userschemaproperty_UserSchemaPropertyOneOfOutputReference__runtime_type_checks.go",
+        "userschemaproperty_UserSchemaProperty__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/userschemaproperty",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/userschemaproperty/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

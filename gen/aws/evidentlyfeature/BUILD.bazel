@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "evidentlyfeature",
+    srcs = [
+        "evidentlyfeature.go",
+        "evidentlyfeature_EvidentlyFeature.go",
+        "evidentlyfeature_EvidentlyFeatureConfig.go",
+        "evidentlyfeature_EvidentlyFeatureEvaluationRules.go",
+        "evidentlyfeature_EvidentlyFeatureEvaluationRulesList.go",
+        "evidentlyfeature_EvidentlyFeatureEvaluationRulesList__runtime_type_checks.go",
+        "evidentlyfeature_EvidentlyFeatureEvaluationRulesOutputReference.go",
+        "evidentlyfeature_EvidentlyFeatureEvaluationRulesOutputReference__runtime_type_checks.go",
+        "evidentlyfeature_EvidentlyFeatureTimeouts.go",
+        "evidentlyfeature_EvidentlyFeatureTimeoutsOutputReference.go",
+        "evidentlyfeature_EvidentlyFeatureTimeoutsOutputReference__runtime_type_checks.go",
+        "evidentlyfeature_EvidentlyFeatureVariations.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsList.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsList__runtime_type_checks.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsOutputReference.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsOutputReference__runtime_type_checks.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsValue.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsValueOutputReference.go",
+        "evidentlyfeature_EvidentlyFeatureVariationsValueOutputReference__runtime_type_checks.go",
+        "evidentlyfeature_EvidentlyFeature__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/evidentlyfeature",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/evidentlyfeature/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

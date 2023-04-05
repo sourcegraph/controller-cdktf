@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computebackendservicesignedurlkey",
+    srcs = [
+        "computebackendservicesignedurlkey.go",
+        "computebackendservicesignedurlkey_ComputeBackendServiceSignedUrlKey.go",
+        "computebackendservicesignedurlkey_ComputeBackendServiceSignedUrlKeyConfig.go",
+        "computebackendservicesignedurlkey_ComputeBackendServiceSignedUrlKeyTimeouts.go",
+        "computebackendservicesignedurlkey_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference.go",
+        "computebackendservicesignedurlkey_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference__runtime_type_checks.go",
+        "computebackendservicesignedurlkey_ComputeBackendServiceSignedUrlKey__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computebackendservicesignedurlkey",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computebackendservicesignedurlkey/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

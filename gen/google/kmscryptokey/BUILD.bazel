@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kmscryptokey",
+    srcs = [
+        "kmscryptokey.go",
+        "kmscryptokey_KmsCryptoKey.go",
+        "kmscryptokey_KmsCryptoKeyConfig.go",
+        "kmscryptokey_KmsCryptoKeyTimeouts.go",
+        "kmscryptokey_KmsCryptoKeyTimeoutsOutputReference.go",
+        "kmscryptokey_KmsCryptoKeyTimeoutsOutputReference__runtime_type_checks.go",
+        "kmscryptokey_KmsCryptoKeyVersionTemplate.go",
+        "kmscryptokey_KmsCryptoKeyVersionTemplateOutputReference.go",
+        "kmscryptokey_KmsCryptoKeyVersionTemplateOutputReference__runtime_type_checks.go",
+        "kmscryptokey_KmsCryptoKey__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/kmscryptokey",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/kmscryptokey/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computenodegroup",
+    srcs = [
+        "computenodegroup.go",
+        "computenodegroup_ComputeNodeGroup.go",
+        "computenodegroup_ComputeNodeGroupAutoscalingPolicy.go",
+        "computenodegroup_ComputeNodeGroupAutoscalingPolicyOutputReference.go",
+        "computenodegroup_ComputeNodeGroupAutoscalingPolicyOutputReference__runtime_type_checks.go",
+        "computenodegroup_ComputeNodeGroupConfig.go",
+        "computenodegroup_ComputeNodeGroupMaintenanceWindow.go",
+        "computenodegroup_ComputeNodeGroupMaintenanceWindowOutputReference.go",
+        "computenodegroup_ComputeNodeGroupMaintenanceWindowOutputReference__runtime_type_checks.go",
+        "computenodegroup_ComputeNodeGroupTimeouts.go",
+        "computenodegroup_ComputeNodeGroupTimeoutsOutputReference.go",
+        "computenodegroup_ComputeNodeGroupTimeoutsOutputReference__runtime_type_checks.go",
+        "computenodegroup_ComputeNodeGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computenodegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computenodegroup/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

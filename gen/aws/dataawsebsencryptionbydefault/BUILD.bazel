@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsebsencryptionbydefault",
+    srcs = [
+        "dataawsebsencryptionbydefault.go",
+        "dataawsebsencryptionbydefault_DataAwsEbsEncryptionByDefault.go",
+        "dataawsebsencryptionbydefault_DataAwsEbsEncryptionByDefaultConfig.go",
+        "dataawsebsencryptionbydefault_DataAwsEbsEncryptionByDefaultTimeouts.go",
+        "dataawsebsencryptionbydefault_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference.go",
+        "dataawsebsencryptionbydefault_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsebsencryptionbydefault_DataAwsEbsEncryptionByDefault__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsebsencryptionbydefault",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsebsencryptionbydefault/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

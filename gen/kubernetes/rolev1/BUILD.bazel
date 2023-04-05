@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rolev1",
+    srcs = [
+        "rolev1.go",
+        "rolev1_RoleV1.go",
+        "rolev1_RoleV1Config.go",
+        "rolev1_RoleV1Metadata.go",
+        "rolev1_RoleV1MetadataOutputReference.go",
+        "rolev1_RoleV1MetadataOutputReference__runtime_type_checks.go",
+        "rolev1_RoleV1Rule.go",
+        "rolev1_RoleV1RuleList.go",
+        "rolev1_RoleV1RuleList__runtime_type_checks.go",
+        "rolev1_RoleV1RuleOutputReference.go",
+        "rolev1_RoleV1RuleOutputReference__runtime_type_checks.go",
+        "rolev1_RoleV1__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/rolev1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/rolev1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

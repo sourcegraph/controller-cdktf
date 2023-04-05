@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsservicecataloglaunchpaths",
+    srcs = [
+        "dataawsservicecataloglaunchpaths.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPaths.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsConfig.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummaries.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList__runtime_type_checks.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference__runtime_type_checks.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesList.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesList__runtime_type_checks.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesOutputReference.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsSummariesOutputReference__runtime_type_checks.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsTimeouts.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsTimeoutsOutputReference.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPathsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsservicecataloglaunchpaths_DataAwsServicecatalogLaunchPaths__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsservicecataloglaunchpaths",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsservicecataloglaunchpaths/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

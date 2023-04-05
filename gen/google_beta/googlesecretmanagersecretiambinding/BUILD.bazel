@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlesecretmanagersecretiambinding",
+    srcs = [
+        "googlesecretmanagersecretiambinding.go",
+        "googlesecretmanagersecretiambinding_GoogleSecretManagerSecretIamBinding.go",
+        "googlesecretmanagersecretiambinding_GoogleSecretManagerSecretIamBindingCondition.go",
+        "googlesecretmanagersecretiambinding_GoogleSecretManagerSecretIamBindingConditionOutputReference.go",
+        "googlesecretmanagersecretiambinding_GoogleSecretManagerSecretIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlesecretmanagersecretiambinding_GoogleSecretManagerSecretIamBindingConfig.go",
+        "googlesecretmanagersecretiambinding_GoogleSecretManagerSecretIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecretmanagersecretiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlesecretmanagersecretiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

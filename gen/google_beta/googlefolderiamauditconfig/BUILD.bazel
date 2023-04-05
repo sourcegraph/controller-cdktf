@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefolderiamauditconfig",
+    srcs = [
+        "googlefolderiamauditconfig.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfig.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfigAuditLogConfig.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfigAuditLogConfigList.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfigAuditLogConfigList__runtime_type_checks.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfigAuditLogConfigOutputReference.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfigAuditLogConfigOutputReference__runtime_type_checks.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfigConfig.go",
+        "googlefolderiamauditconfig_GoogleFolderIamAuditConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolderiamauditconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefolderiamauditconfig/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

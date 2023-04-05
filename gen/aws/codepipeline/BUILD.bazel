@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codepipeline",
+    srcs = [
+        "codepipeline.go",
+        "codepipeline_Codepipeline.go",
+        "codepipeline_CodepipelineArtifactStore.go",
+        "codepipeline_CodepipelineArtifactStoreEncryptionKey.go",
+        "codepipeline_CodepipelineArtifactStoreEncryptionKeyOutputReference.go",
+        "codepipeline_CodepipelineArtifactStoreEncryptionKeyOutputReference__runtime_type_checks.go",
+        "codepipeline_CodepipelineArtifactStoreList.go",
+        "codepipeline_CodepipelineArtifactStoreList__runtime_type_checks.go",
+        "codepipeline_CodepipelineArtifactStoreOutputReference.go",
+        "codepipeline_CodepipelineArtifactStoreOutputReference__runtime_type_checks.go",
+        "codepipeline_CodepipelineConfig.go",
+        "codepipeline_CodepipelineStage.go",
+        "codepipeline_CodepipelineStageAction.go",
+        "codepipeline_CodepipelineStageActionList.go",
+        "codepipeline_CodepipelineStageActionList__runtime_type_checks.go",
+        "codepipeline_CodepipelineStageActionOutputReference.go",
+        "codepipeline_CodepipelineStageActionOutputReference__runtime_type_checks.go",
+        "codepipeline_CodepipelineStageList.go",
+        "codepipeline_CodepipelineStageList__runtime_type_checks.go",
+        "codepipeline_CodepipelineStageOutputReference.go",
+        "codepipeline_CodepipelineStageOutputReference__runtime_type_checks.go",
+        "codepipeline_Codepipeline__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codepipeline",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codepipeline/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

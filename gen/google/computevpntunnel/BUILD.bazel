@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computevpntunnel",
+    srcs = [
+        "computevpntunnel.go",
+        "computevpntunnel_ComputeVpnTunnel.go",
+        "computevpntunnel_ComputeVpnTunnelConfig.go",
+        "computevpntunnel_ComputeVpnTunnelTimeouts.go",
+        "computevpntunnel_ComputeVpnTunnelTimeoutsOutputReference.go",
+        "computevpntunnel_ComputeVpnTunnelTimeoutsOutputReference__runtime_type_checks.go",
+        "computevpntunnel_ComputeVpnTunnel__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computevpntunnel",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computevpntunnel/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

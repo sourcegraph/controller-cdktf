@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "worklinkfleet",
+    srcs = [
+        "worklinkfleet.go",
+        "worklinkfleet_WorklinkFleet.go",
+        "worklinkfleet_WorklinkFleetConfig.go",
+        "worklinkfleet_WorklinkFleetIdentityProvider.go",
+        "worklinkfleet_WorklinkFleetIdentityProviderOutputReference.go",
+        "worklinkfleet_WorklinkFleetIdentityProviderOutputReference__runtime_type_checks.go",
+        "worklinkfleet_WorklinkFleetNetwork.go",
+        "worklinkfleet_WorklinkFleetNetworkOutputReference.go",
+        "worklinkfleet_WorklinkFleetNetworkOutputReference__runtime_type_checks.go",
+        "worklinkfleet_WorklinkFleet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/worklinkfleet",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/worklinkfleet/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

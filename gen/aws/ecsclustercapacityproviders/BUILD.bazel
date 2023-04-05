@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ecsclustercapacityproviders",
+    srcs = [
+        "ecsclustercapacityproviders.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProviders.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProvidersConfig.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProvidersDefaultCapacityProviderStrategy.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList__runtime_type_checks.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference__runtime_type_checks.go",
+        "ecsclustercapacityproviders_EcsClusterCapacityProviders__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ecsclustercapacityproviders",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ecsclustercapacityproviders/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

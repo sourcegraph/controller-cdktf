@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "athenaworkgroup",
+    srcs = [
+        "athenaworkgroup.go",
+        "athenaworkgroup_AthenaWorkgroup.go",
+        "athenaworkgroup_AthenaWorkgroupConfig.go",
+        "athenaworkgroup_AthenaWorkgroupConfiguration.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationEngineVersion.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationEngineVersionOutputReference.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationEngineVersionOutputReference__runtime_type_checks.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationOutputReference.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationOutputReference__runtime_type_checks.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfiguration.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationAclConfiguration.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference__runtime_type_checks.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference__runtime_type_checks.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationOutputReference.go",
+        "athenaworkgroup_AthenaWorkgroupConfigurationResultConfigurationOutputReference__runtime_type_checks.go",
+        "athenaworkgroup_AthenaWorkgroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/athenaworkgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/athenaworkgroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

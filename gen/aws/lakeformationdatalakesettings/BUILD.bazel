@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lakeformationdatalakesettings",
+    srcs = [
+        "lakeformationdatalakesettings.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettings.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsConfig.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList__runtime_type_checks.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference__runtime_type_checks.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateTableDefaultPermissions.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateTableDefaultPermissionsList.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateTableDefaultPermissionsList__runtime_type_checks.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference__runtime_type_checks.go",
+        "lakeformationdatalakesettings_LakeformationDataLakeSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lakeformationdatalakesettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lakeformationdatalakesettings/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

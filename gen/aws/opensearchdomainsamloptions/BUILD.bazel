@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "opensearchdomainsamloptions",
+    srcs = [
+        "opensearchdomainsamloptions.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptions.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsConfig.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsSamlOptions.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsSamlOptionsIdp.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference__runtime_type_checks.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsSamlOptionsOutputReference.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsSamlOptionsOutputReference__runtime_type_checks.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsTimeouts.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsTimeoutsOutputReference.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptionsTimeoutsOutputReference__runtime_type_checks.go",
+        "opensearchdomainsamloptions_OpensearchDomainSamlOptions__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/opensearchdomainsamloptions",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/opensearchdomainsamloptions/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

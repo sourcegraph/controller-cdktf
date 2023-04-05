@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "directoryserviceregion",
+    srcs = [
+        "directoryserviceregion.go",
+        "directoryserviceregion_DirectoryServiceRegion.go",
+        "directoryserviceregion_DirectoryServiceRegionConfig.go",
+        "directoryserviceregion_DirectoryServiceRegionTimeouts.go",
+        "directoryserviceregion_DirectoryServiceRegionTimeoutsOutputReference.go",
+        "directoryserviceregion_DirectoryServiceRegionTimeoutsOutputReference__runtime_type_checks.go",
+        "directoryserviceregion_DirectoryServiceRegionVpcSettings.go",
+        "directoryserviceregion_DirectoryServiceRegionVpcSettingsOutputReference.go",
+        "directoryserviceregion_DirectoryServiceRegionVpcSettingsOutputReference__runtime_type_checks.go",
+        "directoryserviceregion_DirectoryServiceRegion__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/directoryserviceregion",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/directoryserviceregion/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "teamaccess",
+    srcs = [
+        "teamaccess.go",
+        "teamaccess_TeamAccess.go",
+        "teamaccess_TeamAccessConfig.go",
+        "teamaccess_TeamAccessPermissions.go",
+        "teamaccess_TeamAccessPermissionsList.go",
+        "teamaccess_TeamAccessPermissionsList__runtime_type_checks.go",
+        "teamaccess_TeamAccessPermissionsOutputReference.go",
+        "teamaccess_TeamAccessPermissionsOutputReference__runtime_type_checks.go",
+        "teamaccess_TeamAccess__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/tfe/teamaccess",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/tfe/jsii",
+        "//gen/tfe/teamaccess/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

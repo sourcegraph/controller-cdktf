@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sagemakerdevice",
+    srcs = [
+        "sagemakerdevice.go",
+        "sagemakerdevice_SagemakerDevice.go",
+        "sagemakerdevice_SagemakerDeviceConfig.go",
+        "sagemakerdevice_SagemakerDeviceDevice.go",
+        "sagemakerdevice_SagemakerDeviceDeviceOutputReference.go",
+        "sagemakerdevice_SagemakerDeviceDeviceOutputReference__runtime_type_checks.go",
+        "sagemakerdevice_SagemakerDevice__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerdevice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sagemakerdevice/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

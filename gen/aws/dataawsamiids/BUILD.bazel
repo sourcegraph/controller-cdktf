@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsamiids",
+    srcs = [
+        "dataawsamiids.go",
+        "dataawsamiids_DataAwsAmiIds.go",
+        "dataawsamiids_DataAwsAmiIdsConfig.go",
+        "dataawsamiids_DataAwsAmiIdsFilter.go",
+        "dataawsamiids_DataAwsAmiIdsFilterList.go",
+        "dataawsamiids_DataAwsAmiIdsFilterList__runtime_type_checks.go",
+        "dataawsamiids_DataAwsAmiIdsFilterOutputReference.go",
+        "dataawsamiids_DataAwsAmiIdsFilterOutputReference__runtime_type_checks.go",
+        "dataawsamiids_DataAwsAmiIdsTimeouts.go",
+        "dataawsamiids_DataAwsAmiIdsTimeoutsOutputReference.go",
+        "dataawsamiids_DataAwsAmiIdsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsamiids_DataAwsAmiIds__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsamiids",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsamiids/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

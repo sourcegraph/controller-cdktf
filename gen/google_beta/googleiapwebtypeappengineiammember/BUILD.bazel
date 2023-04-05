@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleiapwebtypeappengineiammember",
+    srcs = [
+        "googleiapwebtypeappengineiammember.go",
+        "googleiapwebtypeappengineiammember_GoogleIapWebTypeAppEngineIamMember.go",
+        "googleiapwebtypeappengineiammember_GoogleIapWebTypeAppEngineIamMemberCondition.go",
+        "googleiapwebtypeappengineiammember_GoogleIapWebTypeAppEngineIamMemberConditionOutputReference.go",
+        "googleiapwebtypeappengineiammember_GoogleIapWebTypeAppEngineIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googleiapwebtypeappengineiammember_GoogleIapWebTypeAppEngineIamMemberConfig.go",
+        "googleiapwebtypeappengineiammember_GoogleIapWebTypeAppEngineIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapwebtypeappengineiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleiapwebtypeappengineiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

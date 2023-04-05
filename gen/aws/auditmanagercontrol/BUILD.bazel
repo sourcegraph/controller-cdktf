@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "auditmanagercontrol",
+    srcs = [
+        "auditmanagercontrol.go",
+        "auditmanagercontrol_AuditmanagerControl.go",
+        "auditmanagercontrol_AuditmanagerControlConfig.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSources.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesList.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesList__runtime_type_checks.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesOutputReference.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesOutputReference__runtime_type_checks.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesSourceKeyword.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesSourceKeywordList.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesSourceKeywordList__runtime_type_checks.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference.go",
+        "auditmanagercontrol_AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference__runtime_type_checks.go",
+        "auditmanagercontrol_AuditmanagerControl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/auditmanagercontrol",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/auditmanagercontrol/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

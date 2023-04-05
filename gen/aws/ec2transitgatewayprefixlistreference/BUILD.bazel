@@ -1,0 +1,20 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2transitgatewayprefixlistreference",
+    srcs = [
+        "ec2transitgatewayprefixlistreference.go",
+        "ec2transitgatewayprefixlistreference_Ec2TransitGatewayPrefixListReference.go",
+        "ec2transitgatewayprefixlistreference_Ec2TransitGatewayPrefixListReferenceConfig.go",
+        "ec2transitgatewayprefixlistreference_Ec2TransitGatewayPrefixListReference__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2transitgatewayprefixlistreference",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2transitgatewayprefixlistreference/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

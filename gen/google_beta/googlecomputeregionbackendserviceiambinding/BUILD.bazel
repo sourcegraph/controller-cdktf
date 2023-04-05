@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeregionbackendserviceiambinding",
+    srcs = [
+        "googlecomputeregionbackendserviceiambinding.go",
+        "googlecomputeregionbackendserviceiambinding_GoogleComputeRegionBackendServiceIamBinding.go",
+        "googlecomputeregionbackendserviceiambinding_GoogleComputeRegionBackendServiceIamBindingCondition.go",
+        "googlecomputeregionbackendserviceiambinding_GoogleComputeRegionBackendServiceIamBindingConditionOutputReference.go",
+        "googlecomputeregionbackendserviceiambinding_GoogleComputeRegionBackendServiceIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlecomputeregionbackendserviceiambinding_GoogleComputeRegionBackendServiceIamBindingConfig.go",
+        "googlecomputeregionbackendserviceiambinding_GoogleComputeRegionBackendServiceIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionbackendserviceiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeregionbackendserviceiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "vpcendpointservice",
+    srcs = [
+        "vpcendpointservice.go",
+        "vpcendpointservice_VpcEndpointService.go",
+        "vpcendpointservice_VpcEndpointServiceConfig.go",
+        "vpcendpointservice_VpcEndpointServicePrivateDnsNameConfiguration.go",
+        "vpcendpointservice_VpcEndpointServicePrivateDnsNameConfigurationList.go",
+        "vpcendpointservice_VpcEndpointServicePrivateDnsNameConfigurationList__runtime_type_checks.go",
+        "vpcendpointservice_VpcEndpointServicePrivateDnsNameConfigurationOutputReference.go",
+        "vpcendpointservice_VpcEndpointServicePrivateDnsNameConfigurationOutputReference__runtime_type_checks.go",
+        "vpcendpointservice_VpcEndpointServiceTimeouts.go",
+        "vpcendpointservice_VpcEndpointServiceTimeoutsOutputReference.go",
+        "vpcendpointservice_VpcEndpointServiceTimeoutsOutputReference__runtime_type_checks.go",
+        "vpcendpointservice_VpcEndpointService__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/vpcendpointservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/vpcendpointservice/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

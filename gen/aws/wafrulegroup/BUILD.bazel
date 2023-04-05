@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafrulegroup",
+    srcs = [
+        "wafrulegroup.go",
+        "wafrulegroup_WafRuleGroup.go",
+        "wafrulegroup_WafRuleGroupActivatedRule.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleAction.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleActionOutputReference.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleActionOutputReference__runtime_type_checks.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleList.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleList__runtime_type_checks.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleOutputReference.go",
+        "wafrulegroup_WafRuleGroupActivatedRuleOutputReference__runtime_type_checks.go",
+        "wafrulegroup_WafRuleGroupConfig.go",
+        "wafrulegroup_WafRuleGroup__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafrulegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafrulegroup/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

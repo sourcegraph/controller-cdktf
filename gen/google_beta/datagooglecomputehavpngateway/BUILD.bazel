@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglecomputehavpngateway",
+    srcs = [
+        "datagooglecomputehavpngateway.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGateway.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGatewayConfig.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGatewayVpnInterfaces.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGatewayVpnInterfacesList.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGatewayVpnInterfacesList__runtime_type_checks.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference__runtime_type_checks.go",
+        "datagooglecomputehavpngateway_DataGoogleComputeHaVpnGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputehavpngateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/datagooglecomputehavpngateway/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawss3controlmultiregionaccesspoint",
+    srcs = [
+        "dataawss3controlmultiregionaccesspoint.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPoint.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointConfig.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlock.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList__runtime_type_checks.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockOutputReference.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockOutputReference__runtime_type_checks.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointRegions.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointRegionsList.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointRegionsList__runtime_type_checks.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointRegionsOutputReference.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPointRegionsOutputReference__runtime_type_checks.go",
+        "dataawss3controlmultiregionaccesspoint_DataAwsS3ControlMultiRegionAccessPoint__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawss3controlmultiregionaccesspoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawss3controlmultiregionaccesspoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

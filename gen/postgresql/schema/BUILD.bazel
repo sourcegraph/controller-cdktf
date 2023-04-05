@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "schema",
+    srcs = [
+        "schema.go",
+        "schema_Schema.go",
+        "schema_SchemaConfig.go",
+        "schema_SchemaPolicy.go",
+        "schema_SchemaPolicyList.go",
+        "schema_SchemaPolicyList__runtime_type_checks.go",
+        "schema_SchemaPolicyOutputReference.go",
+        "schema_SchemaPolicyOutputReference__runtime_type_checks.go",
+        "schema_Schema__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/postgresql/schema",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/postgresql/jsii",
+        "//gen/postgresql/schema/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

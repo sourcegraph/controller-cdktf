@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appswa",
+    srcs = [
+        "appswa.go",
+        "appswa_AppSwa.go",
+        "appswa_AppSwaConfig.go",
+        "appswa_AppSwaTimeouts.go",
+        "appswa_AppSwaTimeoutsOutputReference.go",
+        "appswa_AppSwaTimeoutsOutputReference__runtime_type_checks.go",
+        "appswa_AppSwaUsers.go",
+        "appswa_AppSwaUsersList.go",
+        "appswa_AppSwaUsersList__runtime_type_checks.go",
+        "appswa_AppSwaUsersOutputReference.go",
+        "appswa_AppSwaUsersOutputReference__runtime_type_checks.go",
+        "appswa_AppSwa__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appswa",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appswa/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

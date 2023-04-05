@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudtasksqueueiammember",
+    srcs = [
+        "googlecloudtasksqueueiammember.go",
+        "googlecloudtasksqueueiammember_GoogleCloudTasksQueueIamMember.go",
+        "googlecloudtasksqueueiammember_GoogleCloudTasksQueueIamMemberCondition.go",
+        "googlecloudtasksqueueiammember_GoogleCloudTasksQueueIamMemberConditionOutputReference.go",
+        "googlecloudtasksqueueiammember_GoogleCloudTasksQueueIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googlecloudtasksqueueiammember_GoogleCloudTasksQueueIamMemberConfig.go",
+        "googlecloudtasksqueueiammember_GoogleCloudTasksQueueIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudtasksqueueiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecloudtasksqueueiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

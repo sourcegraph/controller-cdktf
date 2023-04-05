@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenetworkconnectivityspoke",
+    srcs = [
+        "googlenetworkconnectivityspoke.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpoke.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeConfig.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference__runtime_type_checks.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList__runtime_type_checks.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference__runtime_type_checks.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference__runtime_type_checks.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedVpnTunnels.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference__runtime_type_checks.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeTimeouts.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeTimeoutsOutputReference.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpokeTimeoutsOutputReference__runtime_type_checks.go",
+        "googlenetworkconnectivityspoke_GoogleNetworkConnectivitySpoke__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkconnectivityspoke",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlenetworkconnectivityspoke/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

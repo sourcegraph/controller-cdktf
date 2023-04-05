@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "locationroutecalculator",
+    srcs = [
+        "locationroutecalculator.go",
+        "locationroutecalculator_LocationRouteCalculator.go",
+        "locationroutecalculator_LocationRouteCalculatorConfig.go",
+        "locationroutecalculator_LocationRouteCalculatorTimeouts.go",
+        "locationroutecalculator_LocationRouteCalculatorTimeoutsOutputReference.go",
+        "locationroutecalculator_LocationRouteCalculatorTimeoutsOutputReference__runtime_type_checks.go",
+        "locationroutecalculator_LocationRouteCalculator__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/locationroutecalculator",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/locationroutecalculator/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

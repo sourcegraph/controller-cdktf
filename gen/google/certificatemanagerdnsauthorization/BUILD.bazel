@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "certificatemanagerdnsauthorization",
+    srcs = [
+        "certificatemanagerdnsauthorization.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorization.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationConfig.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationDnsResourceRecord.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationDnsResourceRecordList.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationDnsResourceRecordList__runtime_type_checks.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference__runtime_type_checks.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationTimeouts.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationTimeoutsOutputReference.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorizationTimeoutsOutputReference__runtime_type_checks.go",
+        "certificatemanagerdnsauthorization_CertificateManagerDnsAuthorization__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/certificatemanagerdnsauthorization",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/certificatemanagerdnsauthorization/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

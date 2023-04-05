@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagerlinkassociation",
+    srcs = [
+        "networkmanagerlinkassociation.go",
+        "networkmanagerlinkassociation_NetworkmanagerLinkAssociation.go",
+        "networkmanagerlinkassociation_NetworkmanagerLinkAssociationConfig.go",
+        "networkmanagerlinkassociation_NetworkmanagerLinkAssociationTimeouts.go",
+        "networkmanagerlinkassociation_NetworkmanagerLinkAssociationTimeoutsOutputReference.go",
+        "networkmanagerlinkassociation_NetworkmanagerLinkAssociationTimeoutsOutputReference__runtime_type_checks.go",
+        "networkmanagerlinkassociation_NetworkmanagerLinkAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagerlinkassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagerlinkassociation/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "macie2classificationexportconfiguration",
+    srcs = [
+        "macie2classificationexportconfiguration.go",
+        "macie2classificationexportconfiguration_Macie2ClassificationExportConfiguration.go",
+        "macie2classificationexportconfiguration_Macie2ClassificationExportConfigurationConfig.go",
+        "macie2classificationexportconfiguration_Macie2ClassificationExportConfigurationS3Destination.go",
+        "macie2classificationexportconfiguration_Macie2ClassificationExportConfigurationS3DestinationOutputReference.go",
+        "macie2classificationexportconfiguration_Macie2ClassificationExportConfigurationS3DestinationOutputReference__runtime_type_checks.go",
+        "macie2classificationexportconfiguration_Macie2ClassificationExportConfiguration__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/macie2classificationexportconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/macie2classificationexportconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

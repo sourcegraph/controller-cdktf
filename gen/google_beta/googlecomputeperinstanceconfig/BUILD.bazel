@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeperinstanceconfig",
+    srcs = [
+        "googlecomputeperinstanceconfig.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfig.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigConfig.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedState.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateDisk.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateDiskList.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateDiskList__runtime_type_checks.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateDiskOutputReference.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateDiskOutputReference__runtime_type_checks.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateOutputReference.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigPreservedStateOutputReference__runtime_type_checks.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigTimeouts.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigTimeoutsOutputReference.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfigTimeoutsOutputReference__runtime_type_checks.go",
+        "googlecomputeperinstanceconfig_GoogleComputePerInstanceConfig__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeperinstanceconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlecomputeperinstanceconfig/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

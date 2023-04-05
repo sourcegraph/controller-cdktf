@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "mediapackagechannel",
+    srcs = [
+        "mediapackagechannel.go",
+        "mediapackagechannel_MediaPackageChannel.go",
+        "mediapackagechannel_MediaPackageChannelConfig.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngest.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestIngestEndpoints.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestIngestEndpointsList.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestIngestEndpointsList__runtime_type_checks.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestIngestEndpointsOutputReference.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestIngestEndpointsOutputReference__runtime_type_checks.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestList.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestList__runtime_type_checks.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestOutputReference.go",
+        "mediapackagechannel_MediaPackageChannelHlsIngestOutputReference__runtime_type_checks.go",
+        "mediapackagechannel_MediaPackageChannel__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/mediapackagechannel",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/mediapackagechannel/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsmskbrokernodes",
+    srcs = [
+        "dataawsmskbrokernodes.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodes.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodesConfig.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodesNodeInfoList.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodesNodeInfoListList.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodesNodeInfoListList__runtime_type_checks.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodesNodeInfoListOutputReference.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodesNodeInfoListOutputReference__runtime_type_checks.go",
+        "dataawsmskbrokernodes_DataAwsMskBrokerNodes__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsmskbrokernodes",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsmskbrokernodes/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

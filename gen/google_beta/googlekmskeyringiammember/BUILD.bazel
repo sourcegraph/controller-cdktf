@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlekmskeyringiammember",
+    srcs = [
+        "googlekmskeyringiammember.go",
+        "googlekmskeyringiammember_GoogleKmsKeyRingIamMember.go",
+        "googlekmskeyringiammember_GoogleKmsKeyRingIamMemberCondition.go",
+        "googlekmskeyringiammember_GoogleKmsKeyRingIamMemberConditionOutputReference.go",
+        "googlekmskeyringiammember_GoogleKmsKeyRingIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googlekmskeyringiammember_GoogleKmsKeyRingIamMemberConfig.go",
+        "googlekmskeyringiammember_GoogleKmsKeyRingIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmskeyringiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlekmskeyringiammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "binaryauthorizationpolicy",
+    srcs = [
+        "binaryauthorizationpolicy.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicy.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyAdmissionWhitelistPatterns.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList__runtime_type_checks.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference__runtime_type_checks.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyClusterAdmissionRules.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyClusterAdmissionRulesList.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyClusterAdmissionRulesList__runtime_type_checks.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference__runtime_type_checks.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyConfig.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyDefaultAdmissionRule.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference__runtime_type_checks.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyTimeouts.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyTimeoutsOutputReference.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicyTimeoutsOutputReference__runtime_type_checks.go",
+        "binaryauthorizationpolicy_BinaryAuthorizationPolicy__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/binaryauthorizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/binaryauthorizationpolicy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

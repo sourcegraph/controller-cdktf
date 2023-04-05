@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlestoragedefaultobjectaccesscontrol",
+    srcs = [
+        "googlestoragedefaultobjectaccesscontrol.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControl.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlConfig.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlProjectTeam.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlProjectTeamList.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlProjectTeamList__runtime_type_checks.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlProjectTeamOutputReference.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlProjectTeamOutputReference__runtime_type_checks.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlTimeouts.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlTimeoutsOutputReference.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControlTimeoutsOutputReference__runtime_type_checks.go",
+        "googlestoragedefaultobjectaccesscontrol_GoogleStorageDefaultObjectAccessControl__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragedefaultobjectaccesscontrol",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlestoragedefaultobjectaccesscontrol/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

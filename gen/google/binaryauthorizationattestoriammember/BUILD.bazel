@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "binaryauthorizationattestoriammember",
+    srcs = [
+        "binaryauthorizationattestoriammember.go",
+        "binaryauthorizationattestoriammember_BinaryAuthorizationAttestorIamMember.go",
+        "binaryauthorizationattestoriammember_BinaryAuthorizationAttestorIamMemberCondition.go",
+        "binaryauthorizationattestoriammember_BinaryAuthorizationAttestorIamMemberConditionOutputReference.go",
+        "binaryauthorizationattestoriammember_BinaryAuthorizationAttestorIamMemberConditionOutputReference__runtime_type_checks.go",
+        "binaryauthorizationattestoriammember_BinaryAuthorizationAttestorIamMemberConfig.go",
+        "binaryauthorizationattestoriammember_BinaryAuthorizationAttestorIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/binaryauthorizationattestoriammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/binaryauthorizationattestoriammember/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

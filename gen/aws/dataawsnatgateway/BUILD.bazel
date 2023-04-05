@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsnatgateway",
+    srcs = [
+        "dataawsnatgateway.go",
+        "dataawsnatgateway_DataAwsNatGateway.go",
+        "dataawsnatgateway_DataAwsNatGatewayConfig.go",
+        "dataawsnatgateway_DataAwsNatGatewayFilter.go",
+        "dataawsnatgateway_DataAwsNatGatewayFilterList.go",
+        "dataawsnatgateway_DataAwsNatGatewayFilterList__runtime_type_checks.go",
+        "dataawsnatgateway_DataAwsNatGatewayFilterOutputReference.go",
+        "dataawsnatgateway_DataAwsNatGatewayFilterOutputReference__runtime_type_checks.go",
+        "dataawsnatgateway_DataAwsNatGatewayTimeouts.go",
+        "dataawsnatgateway_DataAwsNatGatewayTimeoutsOutputReference.go",
+        "dataawsnatgateway_DataAwsNatGatewayTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsnatgateway_DataAwsNatGateway__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsnatgateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsnatgateway/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "grafanaroleassociation",
+    srcs = [
+        "grafanaroleassociation.go",
+        "grafanaroleassociation_GrafanaRoleAssociation.go",
+        "grafanaroleassociation_GrafanaRoleAssociationConfig.go",
+        "grafanaroleassociation_GrafanaRoleAssociationTimeouts.go",
+        "grafanaroleassociation_GrafanaRoleAssociationTimeoutsOutputReference.go",
+        "grafanaroleassociation_GrafanaRoleAssociationTimeoutsOutputReference__runtime_type_checks.go",
+        "grafanaroleassociation_GrafanaRoleAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/grafanaroleassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/grafanaroleassociation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

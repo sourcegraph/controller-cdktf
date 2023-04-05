@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataoktauser",
+    srcs = [
+        "dataoktauser.go",
+        "dataoktauser_DataOktaUser.go",
+        "dataoktauser_DataOktaUserConfig.go",
+        "dataoktauser_DataOktaUserSearch.go",
+        "dataoktauser_DataOktaUserSearchList.go",
+        "dataoktauser_DataOktaUserSearchList__runtime_type_checks.go",
+        "dataoktauser_DataOktaUserSearchOutputReference.go",
+        "dataoktauser_DataOktaUserSearchOutputReference__runtime_type_checks.go",
+        "dataoktauser_DataOktaUser__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/dataoktauser",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/dataoktauser/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

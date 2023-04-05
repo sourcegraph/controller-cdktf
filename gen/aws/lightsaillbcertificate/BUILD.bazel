@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lightsaillbcertificate",
+    srcs = [
+        "lightsaillbcertificate.go",
+        "lightsaillbcertificate_LightsailLbCertificate.go",
+        "lightsaillbcertificate_LightsailLbCertificateConfig.go",
+        "lightsaillbcertificate_LightsailLbCertificateDomainValidationRecords.go",
+        "lightsaillbcertificate_LightsailLbCertificateDomainValidationRecordsList.go",
+        "lightsaillbcertificate_LightsailLbCertificateDomainValidationRecordsList__runtime_type_checks.go",
+        "lightsaillbcertificate_LightsailLbCertificateDomainValidationRecordsOutputReference.go",
+        "lightsaillbcertificate_LightsailLbCertificateDomainValidationRecordsOutputReference__runtime_type_checks.go",
+        "lightsaillbcertificate_LightsailLbCertificate__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lightsaillbcertificate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lightsaillbcertificate/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

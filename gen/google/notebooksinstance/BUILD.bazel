@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "notebooksinstance",
+    srcs = [
+        "notebooksinstance.go",
+        "notebooksinstance_NotebooksInstance.go",
+        "notebooksinstance_NotebooksInstanceAcceleratorConfig.go",
+        "notebooksinstance_NotebooksInstanceAcceleratorConfigOutputReference.go",
+        "notebooksinstance_NotebooksInstanceAcceleratorConfigOutputReference__runtime_type_checks.go",
+        "notebooksinstance_NotebooksInstanceConfig.go",
+        "notebooksinstance_NotebooksInstanceContainerImage.go",
+        "notebooksinstance_NotebooksInstanceContainerImageOutputReference.go",
+        "notebooksinstance_NotebooksInstanceContainerImageOutputReference__runtime_type_checks.go",
+        "notebooksinstance_NotebooksInstanceReservationAffinity.go",
+        "notebooksinstance_NotebooksInstanceReservationAffinityOutputReference.go",
+        "notebooksinstance_NotebooksInstanceReservationAffinityOutputReference__runtime_type_checks.go",
+        "notebooksinstance_NotebooksInstanceShieldedInstanceConfig.go",
+        "notebooksinstance_NotebooksInstanceShieldedInstanceConfigOutputReference.go",
+        "notebooksinstance_NotebooksInstanceShieldedInstanceConfigOutputReference__runtime_type_checks.go",
+        "notebooksinstance_NotebooksInstanceTimeouts.go",
+        "notebooksinstance_NotebooksInstanceTimeoutsOutputReference.go",
+        "notebooksinstance_NotebooksInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "notebooksinstance_NotebooksInstanceVmImage.go",
+        "notebooksinstance_NotebooksInstanceVmImageOutputReference.go",
+        "notebooksinstance_NotebooksInstanceVmImageOutputReference__runtime_type_checks.go",
+        "notebooksinstance_NotebooksInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/notebooksinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/notebooksinstance/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

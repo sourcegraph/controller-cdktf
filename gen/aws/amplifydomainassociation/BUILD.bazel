@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "amplifydomainassociation",
+    srcs = [
+        "amplifydomainassociation.go",
+        "amplifydomainassociation_AmplifyDomainAssociation.go",
+        "amplifydomainassociation_AmplifyDomainAssociationConfig.go",
+        "amplifydomainassociation_AmplifyDomainAssociationSubDomain.go",
+        "amplifydomainassociation_AmplifyDomainAssociationSubDomainList.go",
+        "amplifydomainassociation_AmplifyDomainAssociationSubDomainList__runtime_type_checks.go",
+        "amplifydomainassociation_AmplifyDomainAssociationSubDomainOutputReference.go",
+        "amplifydomainassociation_AmplifyDomainAssociationSubDomainOutputReference__runtime_type_checks.go",
+        "amplifydomainassociation_AmplifyDomainAssociation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/amplifydomainassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/amplifydomainassociation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

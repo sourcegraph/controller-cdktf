@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlekmskeyringiambinding",
+    srcs = [
+        "googlekmskeyringiambinding.go",
+        "googlekmskeyringiambinding_GoogleKmsKeyRingIamBinding.go",
+        "googlekmskeyringiambinding_GoogleKmsKeyRingIamBindingCondition.go",
+        "googlekmskeyringiambinding_GoogleKmsKeyRingIamBindingConditionOutputReference.go",
+        "googlekmskeyringiambinding_GoogleKmsKeyRingIamBindingConditionOutputReference__runtime_type_checks.go",
+        "googlekmskeyringiambinding_GoogleKmsKeyRingIamBindingConfig.go",
+        "googlekmskeyringiambinding_GoogleKmsKeyRingIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmskeyringiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlekmskeyringiambinding/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

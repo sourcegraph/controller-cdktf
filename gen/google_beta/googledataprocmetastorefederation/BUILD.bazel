@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledataprocmetastorefederation",
+    srcs = [
+        "googledataprocmetastorefederation.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederation.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationBackendMetastores.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationBackendMetastoresList.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationBackendMetastoresList__runtime_type_checks.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationBackendMetastoresOutputReference.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationBackendMetastoresOutputReference__runtime_type_checks.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationConfig.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationTimeouts.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationTimeoutsOutputReference.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederationTimeoutsOutputReference__runtime_type_checks.go",
+        "googledataprocmetastorefederation_GoogleDataprocMetastoreFederation__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastorefederation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledataprocmetastorefederation/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

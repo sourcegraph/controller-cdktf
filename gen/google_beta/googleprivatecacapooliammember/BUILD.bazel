@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleprivatecacapooliammember",
+    srcs = [
+        "googleprivatecacapooliammember.go",
+        "googleprivatecacapooliammember_GooglePrivatecaCaPoolIamMember.go",
+        "googleprivatecacapooliammember_GooglePrivatecaCaPoolIamMemberCondition.go",
+        "googleprivatecacapooliammember_GooglePrivatecaCaPoolIamMemberConditionOutputReference.go",
+        "googleprivatecacapooliammember_GooglePrivatecaCaPoolIamMemberConditionOutputReference__runtime_type_checks.go",
+        "googleprivatecacapooliammember_GooglePrivatecaCaPoolIamMemberConfig.go",
+        "googleprivatecacapooliammember_GooglePrivatecaCaPoolIamMember__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprivatecacapooliammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googleprivatecacapooliammember/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

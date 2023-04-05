@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcdhcpoptions",
+    srcs = [
+        "dataawsvpcdhcpoptions.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptions.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsConfig.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsFilter.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsFilterList.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsFilterList__runtime_type_checks.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsFilterOutputReference.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsTimeouts.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsTimeoutsOutputReference.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptionsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcdhcpoptions_DataAwsVpcDhcpOptions__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcdhcpoptions",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcdhcpoptions/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudhsmv2cluster",
+    srcs = [
+        "cloudhsmv2cluster.go",
+        "cloudhsmv2cluster_CloudhsmV2Cluster.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterClusterCertificates.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterClusterCertificatesList.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterClusterCertificatesList__runtime_type_checks.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterClusterCertificatesOutputReference.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterClusterCertificatesOutputReference__runtime_type_checks.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterConfig.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterTimeouts.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterTimeoutsOutputReference.go",
+        "cloudhsmv2cluster_CloudhsmV2ClusterTimeoutsOutputReference__runtime_type_checks.go",
+        "cloudhsmv2cluster_CloudhsmV2Cluster__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudhsmv2cluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudhsmv2cluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

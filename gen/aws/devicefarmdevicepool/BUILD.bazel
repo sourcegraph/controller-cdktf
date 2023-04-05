@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "devicefarmdevicepool",
+    srcs = [
+        "devicefarmdevicepool.go",
+        "devicefarmdevicepool_DevicefarmDevicePool.go",
+        "devicefarmdevicepool_DevicefarmDevicePoolConfig.go",
+        "devicefarmdevicepool_DevicefarmDevicePoolRule.go",
+        "devicefarmdevicepool_DevicefarmDevicePoolRuleList.go",
+        "devicefarmdevicepool_DevicefarmDevicePoolRuleList__runtime_type_checks.go",
+        "devicefarmdevicepool_DevicefarmDevicePoolRuleOutputReference.go",
+        "devicefarmdevicepool_DevicefarmDevicePoolRuleOutputReference__runtime_type_checks.go",
+        "devicefarmdevicepool_DevicefarmDevicePool__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/devicefarmdevicepool",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/devicefarmdevicepool/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

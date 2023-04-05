@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpcpeeringconnections",
+    srcs = [
+        "dataawsvpcpeeringconnections.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnections.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsConfig.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsFilter.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsFilterList.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsFilterList__runtime_type_checks.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsFilterOutputReference.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsFilterOutputReference__runtime_type_checks.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsTimeouts.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsTimeoutsOutputReference.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnectionsTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsvpcpeeringconnections_DataAwsVpcPeeringConnections__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpcpeeringconnections",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpcpeeringconnections/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

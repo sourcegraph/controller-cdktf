@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawslb",
+    srcs = [
+        "dataawslb.go",
+        "dataawslb_DataAwsLb.go",
+        "dataawslb_DataAwsLbAccessLogs.go",
+        "dataawslb_DataAwsLbAccessLogsList.go",
+        "dataawslb_DataAwsLbAccessLogsList__runtime_type_checks.go",
+        "dataawslb_DataAwsLbAccessLogsOutputReference.go",
+        "dataawslb_DataAwsLbAccessLogsOutputReference__runtime_type_checks.go",
+        "dataawslb_DataAwsLbConfig.go",
+        "dataawslb_DataAwsLbSubnetMapping.go",
+        "dataawslb_DataAwsLbSubnetMappingList.go",
+        "dataawslb_DataAwsLbSubnetMappingList__runtime_type_checks.go",
+        "dataawslb_DataAwsLbSubnetMappingOutputReference.go",
+        "dataawslb_DataAwsLbSubnetMappingOutputReference__runtime_type_checks.go",
+        "dataawslb_DataAwsLbTimeouts.go",
+        "dataawslb_DataAwsLbTimeoutsOutputReference.go",
+        "dataawslb_DataAwsLbTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawslb_DataAwsLb__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawslb",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawslb/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

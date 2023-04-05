@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "artifactregistryrepository",
+    srcs = [
+        "artifactregistryrepository.go",
+        "artifactregistryrepository_ArtifactRegistryRepository.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryConfig.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryMavenConfig.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryMavenConfigOutputReference.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryMavenConfigOutputReference__runtime_type_checks.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryTimeouts.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryTimeoutsOutputReference.go",
+        "artifactregistryrepository_ArtifactRegistryRepositoryTimeoutsOutputReference__runtime_type_checks.go",
+        "artifactregistryrepository_ArtifactRegistryRepository__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/artifactregistryrepository",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/artifactregistryrepository/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

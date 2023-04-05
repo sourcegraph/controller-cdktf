@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledialogflowcxversion",
+    srcs = [
+        "googledialogflowcxversion.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersion.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionConfig.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionNluSettings.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionNluSettingsList.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionNluSettingsList__runtime_type_checks.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionNluSettingsOutputReference.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionNluSettingsOutputReference__runtime_type_checks.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionTimeouts.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionTimeoutsOutputReference.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersionTimeoutsOutputReference__runtime_type_checks.go",
+        "googledialogflowcxversion_GoogleDialogflowCxVersion__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxversion",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googledialogflowcxversion/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

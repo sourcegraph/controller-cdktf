@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgatewaydxgatewayattachment",
+    srcs = [
+        "dataawsec2transitgatewaydxgatewayattachment.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachment.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentConfig.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentFilter.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList__runtime_type_checks.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference__runtime_type_checks.go",
+        "dataawsec2transitgatewaydxgatewayattachment_DataAwsEc2TransitGatewayDxGatewayAttachment__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgatewaydxgatewayattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgatewaydxgatewayattachment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

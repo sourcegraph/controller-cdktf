@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsroute53resolverfirewallrules",
+    srcs = [
+        "dataawsroute53resolverfirewallrules.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRules.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRulesConfig.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRulesFirewallRules.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRulesFirewallRulesList.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRulesFirewallRulesList__runtime_type_checks.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference__runtime_type_checks.go",
+        "dataawsroute53resolverfirewallrules_DataAwsRoute53ResolverFirewallRules__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsroute53resolverfirewallrules",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsroute53resolverfirewallrules/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

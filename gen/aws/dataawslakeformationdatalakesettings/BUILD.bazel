@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawslakeformationdatalakesettings",
+    srcs = [
+        "dataawslakeformationdatalakesettings.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettings.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsConfig.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList__runtime_type_checks.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference__runtime_type_checks.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList__runtime_type_checks.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference__runtime_type_checks.go",
+        "dataawslakeformationdatalakesettings_DataAwsLakeformationDataLakeSettings__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawslakeformationdatalakesettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawslakeformationdatalakesettings/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

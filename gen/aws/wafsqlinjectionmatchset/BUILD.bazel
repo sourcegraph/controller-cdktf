@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "wafsqlinjectionmatchset",
+    srcs = [
+        "wafsqlinjectionmatchset.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSet.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetConfig.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuples.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference__runtime_type_checks.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList__runtime_type_checks.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference__runtime_type_checks.go",
+        "wafsqlinjectionmatchset_WafSqlInjectionMatchSet__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/wafsqlinjectionmatchset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/wafsqlinjectionmatchset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

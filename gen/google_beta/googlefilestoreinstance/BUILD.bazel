@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefilestoreinstance",
+    srcs = [
+        "googlefilestoreinstance.go",
+        "googlefilestoreinstance_GoogleFilestoreInstance.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceConfig.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileShares.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesNfsExportOptions.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesNfsExportOptionsList.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesNfsExportOptionsList__runtime_type_checks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference__runtime_type_checks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesOutputReference.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceFileSharesOutputReference__runtime_type_checks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceNetworks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceNetworksList.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceNetworksList__runtime_type_checks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceNetworksOutputReference.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceNetworksOutputReference__runtime_type_checks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceTimeouts.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceTimeoutsOutputReference.go",
+        "googlefilestoreinstance_GoogleFilestoreInstanceTimeoutsOutputReference__runtime_type_checks.go",
+        "googlefilestoreinstance_GoogleFilestoreInstance__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefilestoreinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google_beta/googlefilestoreinstance/internal",
+        "//gen/google_beta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

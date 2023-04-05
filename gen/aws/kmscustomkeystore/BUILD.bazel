@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kmscustomkeystore",
+    srcs = [
+        "kmscustomkeystore.go",
+        "kmscustomkeystore_KmsCustomKeyStore.go",
+        "kmscustomkeystore_KmsCustomKeyStoreConfig.go",
+        "kmscustomkeystore_KmsCustomKeyStoreTimeouts.go",
+        "kmscustomkeystore_KmsCustomKeyStoreTimeoutsOutputReference.go",
+        "kmscustomkeystore_KmsCustomKeyStoreTimeoutsOutputReference__runtime_type_checks.go",
+        "kmscustomkeystore_KmsCustomKeyStore__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/kmscustomkeystore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/kmscustomkeystore/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "folderiambinding",
+    srcs = [
+        "folderiambinding.go",
+        "folderiambinding_FolderIamBinding.go",
+        "folderiambinding_FolderIamBindingCondition.go",
+        "folderiambinding_FolderIamBindingConditionOutputReference.go",
+        "folderiambinding_FolderIamBindingConditionOutputReference__runtime_type_checks.go",
+        "folderiambinding_FolderIamBindingConfig.go",
+        "folderiambinding_FolderIamBinding__runtime_type_checks.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/folderiambinding",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/folderiambinding/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:constructs",
+        "@com_github_aws_jsii_runtime_go//runtime",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:cdktf",
+    ],
+)
