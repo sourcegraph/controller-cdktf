@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawselb",
+    srcs = [
+        "DataAwsElb.go",
+        "DataAwsElbAccessLogs.go",
+        "DataAwsElbAccessLogsList.go",
+        "DataAwsElbAccessLogsList__checks.go",
+        "DataAwsElbAccessLogsOutputReference.go",
+        "DataAwsElbAccessLogsOutputReference__checks.go",
+        "DataAwsElbConfig.go",
+        "DataAwsElbHealthCheck.go",
+        "DataAwsElbHealthCheckList.go",
+        "DataAwsElbHealthCheckList__checks.go",
+        "DataAwsElbHealthCheckOutputReference.go",
+        "DataAwsElbHealthCheckOutputReference__checks.go",
+        "DataAwsElbListener.go",
+        "DataAwsElbListenerList.go",
+        "DataAwsElbListenerList__checks.go",
+        "DataAwsElbListenerOutputReference.go",
+        "DataAwsElbListenerOutputReference__checks.go",
+        "DataAwsElb__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawselb",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawselb/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlesqluser",
+    srcs = [
+        "GoogleSqlUser.go",
+        "GoogleSqlUserConfig.go",
+        "GoogleSqlUserSqlServerUserDetails.go",
+        "GoogleSqlUserSqlServerUserDetailsOutputReference.go",
+        "GoogleSqlUserSqlServerUserDetailsOutputReference__checks.go",
+        "GoogleSqlUserTimeouts.go",
+        "GoogleSqlUserTimeoutsOutputReference.go",
+        "GoogleSqlUserTimeoutsOutputReference__checks.go",
+        "GoogleSqlUser__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlesqluser",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlesqluser/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

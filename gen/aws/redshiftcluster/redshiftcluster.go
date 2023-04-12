@@ -1,389 +1,2548 @@
 package redshiftcluster
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/redshiftcluster/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.redshiftCluster.RedshiftCluster",
-		reflect.TypeOf((*RedshiftCluster)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "allowVersionUpgrade", GoGetter: "AllowVersionUpgrade"},
-			_jsii_.MemberProperty{JsiiProperty: "allowVersionUpgradeInput", GoGetter: "AllowVersionUpgradeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "applyImmediately", GoGetter: "ApplyImmediately"},
-			_jsii_.MemberProperty{JsiiProperty: "applyImmediatelyInput", GoGetter: "ApplyImmediatelyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "aquaConfigurationStatus", GoGetter: "AquaConfigurationStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "aquaConfigurationStatusInput", GoGetter: "AquaConfigurationStatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotRetentionPeriod", GoGetter: "AutomatedSnapshotRetentionPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotRetentionPeriodInput", GoGetter: "AutomatedSnapshotRetentionPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneInput", GoGetter: "AvailabilityZoneInput"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneRelocationEnabled", GoGetter: "AvailabilityZoneRelocationEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneRelocationEnabledInput", GoGetter: "AvailabilityZoneRelocationEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterIdentifier", GoGetter: "ClusterIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterIdentifierInput", GoGetter: "ClusterIdentifierInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterNodes", GoGetter: "ClusterNodes"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterParameterGroupName", GoGetter: "ClusterParameterGroupName"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterParameterGroupNameInput", GoGetter: "ClusterParameterGroupNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterPublicKey", GoGetter: "ClusterPublicKey"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterPublicKeyInput", GoGetter: "ClusterPublicKeyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterRevisionNumber", GoGetter: "ClusterRevisionNumber"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterRevisionNumberInput", GoGetter: "ClusterRevisionNumberInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterSecurityGroups", GoGetter: "ClusterSecurityGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterSecurityGroupsInput", GoGetter: "ClusterSecurityGroupsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterSubnetGroupName", GoGetter: "ClusterSubnetGroupName"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterSubnetGroupNameInput", GoGetter: "ClusterSubnetGroupNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterType", GoGetter: "ClusterType"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterTypeInput", GoGetter: "ClusterTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterVersion", GoGetter: "ClusterVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterVersionInput", GoGetter: "ClusterVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseNameInput", GoGetter: "DatabaseNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultIamRoleArn", GoGetter: "DefaultIamRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultIamRoleArnInput", GoGetter: "DefaultIamRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
-			_jsii_.MemberProperty{JsiiProperty: "elasticIp", GoGetter: "ElasticIp"},
-			_jsii_.MemberProperty{JsiiProperty: "elasticIpInput", GoGetter: "ElasticIpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encrypted", GoGetter: "Encrypted"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptedInput", GoGetter: "EncryptedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointInput", GoGetter: "EndpointInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enhancedVpcRouting", GoGetter: "EnhancedVpcRouting"},
-			_jsii_.MemberProperty{JsiiProperty: "enhancedVpcRoutingInput", GoGetter: "EnhancedVpcRoutingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "finalSnapshotIdentifier", GoGetter: "FinalSnapshotIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "finalSnapshotIdentifierInput", GoGetter: "FinalSnapshotIdentifierInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iamRoles", GoGetter: "IamRoles"},
-			_jsii_.MemberProperty{JsiiProperty: "iamRolesInput", GoGetter: "IamRolesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "logging", GoGetter: "Logging"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceTrackName", GoGetter: "MaintenanceTrackName"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceTrackNameInput", GoGetter: "MaintenanceTrackNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "manualSnapshotRetentionPeriod", GoGetter: "ManualSnapshotRetentionPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "manualSnapshotRetentionPeriodInput", GoGetter: "ManualSnapshotRetentionPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterPassword", GoGetter: "MasterPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "masterPasswordInput", GoGetter: "MasterPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUsername", GoGetter: "MasterUsername"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUsernameInput", GoGetter: "MasterUsernameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeType", GoGetter: "NodeType"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeTypeInput", GoGetter: "NodeTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "numberOfNodes", GoGetter: "NumberOfNodes"},
-			_jsii_.MemberProperty{JsiiProperty: "numberOfNodesInput", GoGetter: "NumberOfNodesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "ownerAccount", GoGetter: "OwnerAccount"},
-			_jsii_.MemberProperty{JsiiProperty: "ownerAccountInput", GoGetter: "OwnerAccountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preferredMaintenanceWindow", GoGetter: "PreferredMaintenanceWindow"},
-			_jsii_.MemberProperty{JsiiProperty: "preferredMaintenanceWindowInput", GoGetter: "PreferredMaintenanceWindowInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberProperty{JsiiProperty: "publiclyAccessible", GoGetter: "PubliclyAccessible"},
-			_jsii_.MemberProperty{JsiiProperty: "publiclyAccessibleInput", GoGetter: "PubliclyAccessibleInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
-			_jsii_.MemberMethod{JsiiMethod: "putSnapshotCopy", GoMethod: "PutSnapshotCopy"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowVersionUpgrade", GoMethod: "ResetAllowVersionUpgrade"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApplyImmediately", GoMethod: "ResetApplyImmediately"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAquaConfigurationStatus", GoMethod: "ResetAquaConfigurationStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutomatedSnapshotRetentionPeriod", GoMethod: "ResetAutomatedSnapshotRetentionPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZone", GoMethod: "ResetAvailabilityZone"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZoneRelocationEnabled", GoMethod: "ResetAvailabilityZoneRelocationEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterParameterGroupName", GoMethod: "ResetClusterParameterGroupName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterPublicKey", GoMethod: "ResetClusterPublicKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterRevisionNumber", GoMethod: "ResetClusterRevisionNumber"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterSecurityGroups", GoMethod: "ResetClusterSecurityGroups"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterSubnetGroupName", GoMethod: "ResetClusterSubnetGroupName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterType", GoMethod: "ResetClusterType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterVersion", GoMethod: "ResetClusterVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseName", GoMethod: "ResetDatabaseName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultIamRoleArn", GoMethod: "ResetDefaultIamRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetElasticIp", GoMethod: "ResetElasticIp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncrypted", GoMethod: "ResetEncrypted"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEndpoint", GoMethod: "ResetEndpoint"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnhancedVpcRouting", GoMethod: "ResetEnhancedVpcRouting"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFinalSnapshotIdentifier", GoMethod: "ResetFinalSnapshotIdentifier"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIamRoles", GoMethod: "ResetIamRoles"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogging", GoMethod: "ResetLogging"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceTrackName", GoMethod: "ResetMaintenanceTrackName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetManualSnapshotRetentionPeriod", GoMethod: "ResetManualSnapshotRetentionPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterPassword", GoMethod: "ResetMasterPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterUsername", GoMethod: "ResetMasterUsername"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfNodes", GoMethod: "ResetNumberOfNodes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOwnerAccount", GoMethod: "ResetOwnerAccount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreferredMaintenanceWindow", GoMethod: "ResetPreferredMaintenanceWindow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPubliclyAccessible", GoMethod: "ResetPubliclyAccessible"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSkipFinalSnapshot", GoMethod: "ResetSkipFinalSnapshot"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotClusterIdentifier", GoMethod: "ResetSnapshotClusterIdentifier"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotCopy", GoMethod: "ResetSnapshotCopy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotIdentifier", GoMethod: "ResetSnapshotIdentifier"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcSecurityGroupIds", GoMethod: "ResetVpcSecurityGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "skipFinalSnapshot", GoGetter: "SkipFinalSnapshot"},
-			_jsii_.MemberProperty{JsiiProperty: "skipFinalSnapshotInput", GoGetter: "SkipFinalSnapshotInput"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotClusterIdentifier", GoGetter: "SnapshotClusterIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotClusterIdentifierInput", GoGetter: "SnapshotClusterIdentifierInput"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotCopy", GoGetter: "SnapshotCopy"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotCopyInput", GoGetter: "SnapshotCopyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotIdentifier", GoGetter: "SnapshotIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotIdentifierInput", GoGetter: "SnapshotIdentifierInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_RedshiftCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster aws_redshift_cluster}.
+type RedshiftCluster interface {
+	cdktf.TerraformResource
+	AllowVersionUpgrade() interface{}
+	SetAllowVersionUpgrade(val interface{})
+	AllowVersionUpgradeInput() interface{}
+	ApplyImmediately() interface{}
+	SetApplyImmediately(val interface{})
+	ApplyImmediatelyInput() interface{}
+	AquaConfigurationStatus() *string
+	SetAquaConfigurationStatus(val *string)
+	AquaConfigurationStatusInput() *string
+	Arn() *string
+	AutomatedSnapshotRetentionPeriod() *float64
+	SetAutomatedSnapshotRetentionPeriod(val *float64)
+	AutomatedSnapshotRetentionPeriodInput() *float64
+	AvailabilityZone() *string
+	SetAvailabilityZone(val *string)
+	AvailabilityZoneInput() *string
+	AvailabilityZoneRelocationEnabled() interface{}
+	SetAvailabilityZoneRelocationEnabled(val interface{})
+	AvailabilityZoneRelocationEnabledInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClusterIdentifier() *string
+	SetClusterIdentifier(val *string)
+	ClusterIdentifierInput() *string
+	ClusterNodes() RedshiftClusterClusterNodesList
+	ClusterParameterGroupName() *string
+	SetClusterParameterGroupName(val *string)
+	ClusterParameterGroupNameInput() *string
+	ClusterPublicKey() *string
+	SetClusterPublicKey(val *string)
+	ClusterPublicKeyInput() *string
+	ClusterRevisionNumber() *string
+	SetClusterRevisionNumber(val *string)
+	ClusterRevisionNumberInput() *string
+	ClusterSecurityGroups() *[]*string
+	SetClusterSecurityGroups(val *[]*string)
+	ClusterSecurityGroupsInput() *[]*string
+	ClusterSubnetGroupName() *string
+	SetClusterSubnetGroupName(val *string)
+	ClusterSubnetGroupNameInput() *string
+	ClusterType() *string
+	SetClusterType(val *string)
+	ClusterTypeInput() *string
+	ClusterVersion() *string
+	SetClusterVersion(val *string)
+	ClusterVersionInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DatabaseName() *string
+	SetDatabaseName(val *string)
+	DatabaseNameInput() *string
+	DefaultIamRoleArn() *string
+	SetDefaultIamRoleArn(val *string)
+	DefaultIamRoleArnInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DnsName() *string
+	ElasticIp() *string
+	SetElasticIp(val *string)
+	ElasticIpInput() *string
+	Encrypted() interface{}
+	SetEncrypted(val interface{})
+	EncryptedInput() interface{}
+	Endpoint() *string
+	SetEndpoint(val *string)
+	EndpointInput() *string
+	EnhancedVpcRouting() interface{}
+	SetEnhancedVpcRouting(val interface{})
+	EnhancedVpcRoutingInput() interface{}
+	FinalSnapshotIdentifier() *string
+	SetFinalSnapshotIdentifier(val *string)
+	FinalSnapshotIdentifierInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	IamRoles() *[]*string
+	SetIamRoles(val *[]*string)
+	IamRolesInput() *[]*string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Logging() RedshiftClusterLoggingOutputReference
+	LoggingInput() *RedshiftClusterLogging
+	MaintenanceTrackName() *string
+	SetMaintenanceTrackName(val *string)
+	MaintenanceTrackNameInput() *string
+	ManualSnapshotRetentionPeriod() *float64
+	SetManualSnapshotRetentionPeriod(val *float64)
+	ManualSnapshotRetentionPeriodInput() *float64
+	MasterPassword() *string
+	SetMasterPassword(val *string)
+	MasterPasswordInput() *string
+	MasterUsername() *string
+	SetMasterUsername(val *string)
+	MasterUsernameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NodeType() *string
+	SetNodeType(val *string)
+	NodeTypeInput() *string
+	NumberOfNodes() *float64
+	SetNumberOfNodes(val *float64)
+	NumberOfNodesInput() *float64
+	OwnerAccount() *string
+	SetOwnerAccount(val *string)
+	OwnerAccountInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
+	PreferredMaintenanceWindow() *string
+	SetPreferredMaintenanceWindow(val *string)
+	PreferredMaintenanceWindowInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	PubliclyAccessible() interface{}
+	SetPubliclyAccessible(val interface{})
+	PubliclyAccessibleInput() interface{}
+	// Experimental.
+	RawOverrides() interface{}
+	SkipFinalSnapshot() interface{}
+	SetSkipFinalSnapshot(val interface{})
+	SkipFinalSnapshotInput() interface{}
+	SnapshotClusterIdentifier() *string
+	SetSnapshotClusterIdentifier(val *string)
+	SnapshotClusterIdentifierInput() *string
+	SnapshotCopy() RedshiftClusterSnapshotCopyOutputReference
+	SnapshotCopyInput() *RedshiftClusterSnapshotCopy
+	SnapshotIdentifier() *string
+	SetSnapshotIdentifier(val *string)
+	SnapshotIdentifierInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() RedshiftClusterTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VpcSecurityGroupIds() *[]*string
+	SetVpcSecurityGroupIds(val *[]*string)
+	VpcSecurityGroupIdsInput() *[]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutLogging(value *RedshiftClusterLogging)
+	PutSnapshotCopy(value *RedshiftClusterSnapshotCopy)
+	PutTimeouts(value *RedshiftClusterTimeouts)
+	ResetAllowVersionUpgrade()
+	ResetApplyImmediately()
+	ResetAquaConfigurationStatus()
+	ResetAutomatedSnapshotRetentionPeriod()
+	ResetAvailabilityZone()
+	ResetAvailabilityZoneRelocationEnabled()
+	ResetClusterParameterGroupName()
+	ResetClusterPublicKey()
+	ResetClusterRevisionNumber()
+	ResetClusterSecurityGroups()
+	ResetClusterSubnetGroupName()
+	ResetClusterType()
+	ResetClusterVersion()
+	ResetDatabaseName()
+	ResetDefaultIamRoleArn()
+	ResetElasticIp()
+	ResetEncrypted()
+	ResetEndpoint()
+	ResetEnhancedVpcRouting()
+	ResetFinalSnapshotIdentifier()
+	ResetIamRoles()
+	ResetId()
+	ResetKmsKeyId()
+	ResetLogging()
+	ResetMaintenanceTrackName()
+	ResetManualSnapshotRetentionPeriod()
+	ResetMasterPassword()
+	ResetMasterUsername()
+	ResetNumberOfNodes()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetOwnerAccount()
+	ResetPort()
+	ResetPreferredMaintenanceWindow()
+	ResetPubliclyAccessible()
+	ResetSkipFinalSnapshot()
+	ResetSnapshotClusterIdentifier()
+	ResetSnapshotCopy()
+	ResetSnapshotIdentifier()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	ResetVpcSecurityGroupIds()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for RedshiftCluster
+type jsiiProxy_RedshiftCluster struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgrade() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowVersionUpgrade",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.redshiftCluster.RedshiftClusterClusterNodes",
-		reflect.TypeOf((*RedshiftClusterClusterNodes)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgradeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowVersionUpgradeInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.redshiftCluster.RedshiftClusterClusterNodesList",
-		reflect.TypeOf((*RedshiftClusterClusterNodesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_RedshiftClusterClusterNodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ApplyImmediately() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyImmediately",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.redshiftCluster.RedshiftClusterClusterNodesOutputReference",
-		reflect.TypeOf((*RedshiftClusterClusterNodesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeRole", GoGetter: "NodeRole"},
-			_jsii_.MemberProperty{JsiiProperty: "privateIpAddress", GoGetter: "PrivateIpAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_RedshiftClusterClusterNodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ApplyImmediatelyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyImmediatelyInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.redshiftCluster.RedshiftClusterConfig",
-		reflect.TypeOf((*RedshiftClusterConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AquaConfigurationStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aquaConfigurationStatus",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.redshiftCluster.RedshiftClusterLogging",
-		reflect.TypeOf((*RedshiftClusterLogging)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AquaConfigurationStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aquaConfigurationStatusInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
-		reflect.TypeOf((*RedshiftClusterLoggingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enable", GoGetter: "Enable"},
-			_jsii_.MemberProperty{JsiiProperty: "enableInput", GoGetter: "EnableInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "logDestinationType", GoGetter: "LogDestinationType"},
-			_jsii_.MemberProperty{JsiiProperty: "logDestinationTypeInput", GoGetter: "LogDestinationTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "logExports", GoGetter: "LogExports"},
-			_jsii_.MemberProperty{JsiiProperty: "logExportsInput", GoGetter: "LogExportsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketName", GoMethod: "ResetBucketName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogDestinationType", GoMethod: "ResetLogDestinationType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogExports", GoMethod: "ResetLogExports"},
-			_jsii_.MemberMethod{JsiiMethod: "resetS3KeyPrefix", GoMethod: "ResetS3KeyPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "s3KeyPrefix", GoGetter: "S3KeyPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "s3KeyPrefixInput", GoGetter: "S3KeyPrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_RedshiftClusterLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.redshiftCluster.RedshiftClusterSnapshotCopy",
-		reflect.TypeOf((*RedshiftClusterSnapshotCopy)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AutomatedSnapshotRetentionPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"automatedSnapshotRetentionPeriod",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
-		reflect.TypeOf((*RedshiftClusterSnapshotCopyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationRegion", GoGetter: "DestinationRegion"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationRegionInput", GoGetter: "DestinationRegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "grantName", GoGetter: "GrantName"},
-			_jsii_.MemberProperty{JsiiProperty: "grantNameInput", GoGetter: "GrantNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGrantName", GoMethod: "ResetGrantName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetentionPeriod", GoMethod: "ResetRetentionPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "retentionPeriod", GoGetter: "RetentionPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "retentionPeriodInput", GoGetter: "RetentionPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_RedshiftClusterSnapshotCopyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AutomatedSnapshotRetentionPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"automatedSnapshotRetentionPeriodInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.redshiftCluster.RedshiftClusterTimeouts",
-		reflect.TypeOf((*RedshiftClusterTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AvailabilityZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityZone",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
-		reflect.TypeOf((*RedshiftClusterTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_RedshiftClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityZoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"availabilityZoneRelocationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"availabilityZoneRelocationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterNodes() RedshiftClusterClusterNodesList {
+	var returns RedshiftClusterClusterNodesList
+	_jsii_.Get(
+		j,
+		"clusterNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterParameterGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterParameterGroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterParameterGroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterParameterGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterPublicKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterPublicKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterPublicKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterPublicKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterRevisionNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterRevisionNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterRevisionNumberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterRevisionNumberInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterSecurityGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusterSecurityGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterSecurityGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusterSecurityGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterSubnetGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterSubnetGroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterSubnetGroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterSubnetGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ClusterVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) DatabaseName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) DatabaseNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) DefaultIamRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultIamRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) DefaultIamRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultIamRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) DnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ElasticIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ElasticIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Encrypted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encrypted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) EncryptedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) EndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedVpcRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enhancedVpcRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) FinalSnapshotIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"finalSnapshotIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) FinalSnapshotIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"finalSnapshotIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) IamRoles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iamRoles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) IamRolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iamRolesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Logging() RedshiftClusterLoggingOutputReference {
+	var returns RedshiftClusterLoggingOutputReference
+	_jsii_.Get(
+		j,
+		"logging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) LoggingInput() *RedshiftClusterLogging {
+	var returns *RedshiftClusterLogging
+	_jsii_.Get(
+		j,
+		"loggingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MaintenanceTrackName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceTrackName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MaintenanceTrackNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceTrackNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ManualSnapshotRetentionPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"manualSnapshotRetentionPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ManualSnapshotRetentionPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"manualSnapshotRetentionPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterUsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) NodeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) NodeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) NumberOfNodes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numberOfNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) NumberOfNodesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numberOfNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) OwnerAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) OwnerAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) PreferredMaintenanceWindow() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredMaintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) PreferredMaintenanceWindowInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredMaintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) PubliclyAccessible() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publiclyAccessible",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) PubliclyAccessibleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publiclyAccessibleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshotInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalSnapshotInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotClusterIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotClusterIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotClusterIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotClusterIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotCopy() RedshiftClusterSnapshotCopyOutputReference {
+	var returns RedshiftClusterSnapshotCopyOutputReference
+	_jsii_.Get(
+		j,
+		"snapshotCopy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotCopyInput() *RedshiftClusterSnapshotCopy {
+	var returns *RedshiftClusterSnapshotCopy
+	_jsii_.Get(
+		j,
+		"snapshotCopyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) Timeouts() RedshiftClusterTimeoutsOutputReference {
+	var returns RedshiftClusterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vpcSecurityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vpcSecurityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster aws_redshift_cluster} Resource.
+func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
+	_init_.Initialize()
+
+	if err := validateNewRedshiftClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_RedshiftCluster{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster aws_redshift_cluster} Resource.
+func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		[]interface{}{scope, id, config},
+		r,
 	)
 }
+
+func (j *jsiiProxy_RedshiftCluster)SetAllowVersionUpgrade(val interface{}) {
+	if err := j.validateSetAllowVersionUpgradeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowVersionUpgrade",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetApplyImmediately(val interface{}) {
+	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applyImmediately",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetAquaConfigurationStatus(val *string) {
+	if err := j.validateSetAquaConfigurationStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aquaConfigurationStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetAutomatedSnapshotRetentionPeriod(val *float64) {
+	if err := j.validateSetAutomatedSnapshotRetentionPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automatedSnapshotRetentionPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityZone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetAvailabilityZoneRelocationEnabled(val interface{}) {
+	if err := j.validateSetAvailabilityZoneRelocationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityZoneRelocationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterIdentifier(val *string) {
+	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterParameterGroupName(val *string) {
+	if err := j.validateSetClusterParameterGroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterParameterGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterPublicKey(val *string) {
+	if err := j.validateSetClusterPublicKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterPublicKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterRevisionNumber(val *string) {
+	if err := j.validateSetClusterRevisionNumberParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterRevisionNumber",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterSecurityGroups(val *[]*string) {
+	if err := j.validateSetClusterSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterSecurityGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterSubnetGroupName(val *string) {
+	if err := j.validateSetClusterSubnetGroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterSubnetGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterType(val *string) {
+	if err := j.validateSetClusterTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetClusterVersion(val *string) {
+	if err := j.validateSetClusterVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetDatabaseName(val *string) {
+	if err := j.validateSetDatabaseNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetDefaultIamRoleArn(val *string) {
+	if err := j.validateSetDefaultIamRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultIamRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetElasticIp(val *string) {
+	if err := j.validateSetElasticIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetEncrypted(val interface{}) {
+	if err := j.validateSetEncryptedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encrypted",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetEndpoint(val *string) {
+	if err := j.validateSetEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetEnhancedVpcRouting(val interface{}) {
+	if err := j.validateSetEnhancedVpcRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enhancedVpcRouting",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetFinalSnapshotIdentifier(val *string) {
+	if err := j.validateSetFinalSnapshotIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"finalSnapshotIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetIamRoles(val *[]*string) {
+	if err := j.validateSetIamRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamRoles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMaintenanceTrackName(val *string) {
+	if err := j.validateSetMaintenanceTrackNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceTrackName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetManualSnapshotRetentionPeriod(val *float64) {
+	if err := j.validateSetManualSnapshotRetentionPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manualSnapshotRetentionPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMasterPassword(val *string) {
+	if err := j.validateSetMasterPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMasterUsername(val *string) {
+	if err := j.validateSetMasterUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterUsername",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetNodeType(val *string) {
+	if err := j.validateSetNodeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetNumberOfNodes(val *float64) {
+	if err := j.validateSetNumberOfNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numberOfNodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetOwnerAccount(val *string) {
+	if err := j.validateSetOwnerAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ownerAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetPreferredMaintenanceWindow(val *string) {
+	if err := j.validateSetPreferredMaintenanceWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredMaintenanceWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetPubliclyAccessible(val interface{}) {
+	if err := j.validateSetPubliclyAccessibleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetSkipFinalSnapshot(val interface{}) {
+	if err := j.validateSetSkipFinalSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipFinalSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetSnapshotClusterIdentifier(val *string) {
+	if err := j.validateSetSnapshotClusterIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotClusterIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetSnapshotIdentifier(val *string) {
+	if err := j.validateSetSnapshotIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetVpcSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcSecurityGroupIds",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func RedshiftCluster_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftCluster_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftCluster_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftCluster_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftCluster_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func RedshiftCluster_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		r,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		r,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) PutLogging(value *RedshiftClusterLogging) {
+	if err := r.validatePutLoggingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putLogging",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) PutSnapshotCopy(value *RedshiftClusterSnapshotCopy) {
+	if err := r.validatePutSnapshotCopyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putSnapshotCopy",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) PutTimeouts(value *RedshiftClusterTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetAllowVersionUpgrade() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAllowVersionUpgrade",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetApplyImmediately() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetApplyImmediately",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetAquaConfigurationStatus() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAquaConfigurationStatus",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetAutomatedSnapshotRetentionPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutomatedSnapshotRetentionPeriod",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetAvailabilityZone() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAvailabilityZone",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetAvailabilityZoneRelocationEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAvailabilityZoneRelocationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterParameterGroupName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterParameterGroupName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterPublicKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterPublicKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterRevisionNumber() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterRevisionNumber",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterSecurityGroups() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterSecurityGroups",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterSubnetGroupName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterSubnetGroupName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterType",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetClusterVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterVersion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetDatabaseName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDatabaseName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetDefaultIamRoleArn() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDefaultIamRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetElasticIp() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetElasticIp",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetEncrypted() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEncrypted",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetEndpoint() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetEnhancedVpcRouting() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEnhancedVpcRouting",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetFinalSnapshotIdentifier() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFinalSnapshotIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetIamRoles() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetIamRoles",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetLogging() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLogging",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMaintenanceTrackName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaintenanceTrackName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetManualSnapshotRetentionPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManualSnapshotRetentionPeriod",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMasterPassword() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMasterUsername() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterUsername",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetNumberOfNodes() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNumberOfNodes",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetOwnerAccount() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOwnerAccount",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetPort() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetPreferredMaintenanceWindow() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPreferredMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetPubliclyAccessible() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetSkipFinalSnapshot() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSkipFinalSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetSnapshotClusterIdentifier() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSnapshotClusterIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetSnapshotCopy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSnapshotCopy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetSnapshotIdentifier() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSnapshotIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetVpcSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetVpcSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RedshiftCluster) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

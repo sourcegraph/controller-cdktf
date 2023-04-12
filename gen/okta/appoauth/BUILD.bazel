@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appoauth",
+    srcs = [
+        "AppOauth.go",
+        "AppOauthConfig.go",
+        "AppOauthGroupsClaim.go",
+        "AppOauthGroupsClaimOutputReference.go",
+        "AppOauthGroupsClaimOutputReference__checks.go",
+        "AppOauthJwks.go",
+        "AppOauthJwksList.go",
+        "AppOauthJwksList__checks.go",
+        "AppOauthJwksOutputReference.go",
+        "AppOauthJwksOutputReference__checks.go",
+        "AppOauthTimeouts.go",
+        "AppOauthTimeoutsOutputReference.go",
+        "AppOauthTimeoutsOutputReference__checks.go",
+        "AppOauthUsers.go",
+        "AppOauthUsersList.go",
+        "AppOauthUsersList__checks.go",
+        "AppOauthUsersOutputReference.go",
+        "AppOauthUsersOutputReference__checks.go",
+        "AppOauth__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appoauth",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appoauth/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

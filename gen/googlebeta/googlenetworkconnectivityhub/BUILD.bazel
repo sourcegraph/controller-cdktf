@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlenetworkconnectivityhub",
+    srcs = [
+        "GoogleNetworkConnectivityHub.go",
+        "GoogleNetworkConnectivityHubConfig.go",
+        "GoogleNetworkConnectivityHubRoutingVpcs.go",
+        "GoogleNetworkConnectivityHubRoutingVpcsList.go",
+        "GoogleNetworkConnectivityHubRoutingVpcsList__checks.go",
+        "GoogleNetworkConnectivityHubRoutingVpcsOutputReference.go",
+        "GoogleNetworkConnectivityHubRoutingVpcsOutputReference__checks.go",
+        "GoogleNetworkConnectivityHubTimeouts.go",
+        "GoogleNetworkConnectivityHubTimeoutsOutputReference.go",
+        "GoogleNetworkConnectivityHubTimeoutsOutputReference__checks.go",
+        "GoogleNetworkConnectivityHub__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlenetworkconnectivityhub",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlenetworkconnectivityhub/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

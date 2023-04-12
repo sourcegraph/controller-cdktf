@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsconnecthoursofoperation",
+    srcs = [
+        "DataAwsConnectHoursOfOperation.go",
+        "DataAwsConnectHoursOfOperationConfig.go",
+        "DataAwsConnectHoursOfOperationConfigA.go",
+        "DataAwsConnectHoursOfOperationConfigAList.go",
+        "DataAwsConnectHoursOfOperationConfigAList__checks.go",
+        "DataAwsConnectHoursOfOperationConfigAOutputReference.go",
+        "DataAwsConnectHoursOfOperationConfigAOutputReference__checks.go",
+        "DataAwsConnectHoursOfOperationConfigEndTime.go",
+        "DataAwsConnectHoursOfOperationConfigEndTimeList.go",
+        "DataAwsConnectHoursOfOperationConfigEndTimeList__checks.go",
+        "DataAwsConnectHoursOfOperationConfigEndTimeOutputReference.go",
+        "DataAwsConnectHoursOfOperationConfigEndTimeOutputReference__checks.go",
+        "DataAwsConnectHoursOfOperationConfigStartTime.go",
+        "DataAwsConnectHoursOfOperationConfigStartTimeList.go",
+        "DataAwsConnectHoursOfOperationConfigStartTimeList__checks.go",
+        "DataAwsConnectHoursOfOperationConfigStartTimeOutputReference.go",
+        "DataAwsConnectHoursOfOperationConfigStartTimeOutputReference__checks.go",
+        "DataAwsConnectHoursOfOperation__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsconnecthoursofoperation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsconnecthoursofoperation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

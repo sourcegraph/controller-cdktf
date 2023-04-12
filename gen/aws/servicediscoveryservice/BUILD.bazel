@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "servicediscoveryservice",
+    srcs = [
+        "ServiceDiscoveryService.go",
+        "ServiceDiscoveryServiceConfig.go",
+        "ServiceDiscoveryServiceDnsConfig.go",
+        "ServiceDiscoveryServiceDnsConfigDnsRecords.go",
+        "ServiceDiscoveryServiceDnsConfigDnsRecordsList.go",
+        "ServiceDiscoveryServiceDnsConfigDnsRecordsList__checks.go",
+        "ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference.go",
+        "ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference__checks.go",
+        "ServiceDiscoveryServiceDnsConfigOutputReference.go",
+        "ServiceDiscoveryServiceDnsConfigOutputReference__checks.go",
+        "ServiceDiscoveryServiceHealthCheckConfig.go",
+        "ServiceDiscoveryServiceHealthCheckConfigOutputReference.go",
+        "ServiceDiscoveryServiceHealthCheckConfigOutputReference__checks.go",
+        "ServiceDiscoveryServiceHealthCheckCustomConfig.go",
+        "ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference.go",
+        "ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference__checks.go",
+        "ServiceDiscoveryService__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/servicediscoveryservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/servicediscoveryservice/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

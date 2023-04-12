@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "apigatewayv2integration",
+    srcs = [
+        "Apigatewayv2Integration.go",
+        "Apigatewayv2IntegrationConfig.go",
+        "Apigatewayv2IntegrationResponseParameters.go",
+        "Apigatewayv2IntegrationResponseParametersList.go",
+        "Apigatewayv2IntegrationResponseParametersList__checks.go",
+        "Apigatewayv2IntegrationResponseParametersOutputReference.go",
+        "Apigatewayv2IntegrationResponseParametersOutputReference__checks.go",
+        "Apigatewayv2IntegrationTlsConfig.go",
+        "Apigatewayv2IntegrationTlsConfigOutputReference.go",
+        "Apigatewayv2IntegrationTlsConfigOutputReference__checks.go",
+        "Apigatewayv2Integration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2integration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/apigatewayv2integration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

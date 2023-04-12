@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsimagebuilderimagepipeline",
+    srcs = [
+        "DataAwsImagebuilderImagePipeline.go",
+        "DataAwsImagebuilderImagePipelineConfig.go",
+        "DataAwsImagebuilderImagePipelineImageTestsConfiguration.go",
+        "DataAwsImagebuilderImagePipelineImageTestsConfigurationList.go",
+        "DataAwsImagebuilderImagePipelineImageTestsConfigurationList__checks.go",
+        "DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference.go",
+        "DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference__checks.go",
+        "DataAwsImagebuilderImagePipelineSchedule.go",
+        "DataAwsImagebuilderImagePipelineScheduleList.go",
+        "DataAwsImagebuilderImagePipelineScheduleList__checks.go",
+        "DataAwsImagebuilderImagePipelineScheduleOutputReference.go",
+        "DataAwsImagebuilderImagePipelineScheduleOutputReference__checks.go",
+        "DataAwsImagebuilderImagePipeline__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsimagebuilderimagepipeline",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsimagebuilderimagepipeline/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlehealthcarehl7v2store",
+    srcs = [
+        "GoogleHealthcareHl7V2Store.go",
+        "GoogleHealthcareHl7V2StoreConfig.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfig.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigOutputReference.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigOutputReference__checks.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigs.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigsList.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigsList__checks.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference.go",
+        "GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference__checks.go",
+        "GoogleHealthcareHl7V2StoreParserConfig.go",
+        "GoogleHealthcareHl7V2StoreParserConfigOutputReference.go",
+        "GoogleHealthcareHl7V2StoreParserConfigOutputReference__checks.go",
+        "GoogleHealthcareHl7V2StoreTimeouts.go",
+        "GoogleHealthcareHl7V2StoreTimeoutsOutputReference.go",
+        "GoogleHealthcareHl7V2StoreTimeoutsOutputReference__checks.go",
+        "GoogleHealthcareHl7V2Store__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlehealthcarehl7v2store",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlehealthcarehl7v2store/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

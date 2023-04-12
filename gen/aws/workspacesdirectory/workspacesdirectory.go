@@ -1,257 +1,1150 @@
 package workspacesdirectory
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/workspacesdirectory/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.workspacesDirectory.WorkspacesDirectory",
-		reflect.TypeOf((*WorkspacesDirectory)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "customerUserName", GoGetter: "CustomerUserName"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "directoryId", GoGetter: "DirectoryId"},
-			_jsii_.MemberProperty{JsiiProperty: "directoryIdInput", GoGetter: "DirectoryIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "directoryName", GoGetter: "DirectoryName"},
-			_jsii_.MemberProperty{JsiiProperty: "directoryType", GoGetter: "DirectoryType"},
-			_jsii_.MemberProperty{JsiiProperty: "dnsIpAddresses", GoGetter: "DnsIpAddresses"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iamRoleId", GoGetter: "IamRoleId"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipGroupIds", GoGetter: "IpGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "ipGroupIdsInput", GoGetter: "IpGroupIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putSelfServicePermissions", GoMethod: "PutSelfServicePermissions"},
-			_jsii_.MemberMethod{JsiiMethod: "putWorkspaceAccessProperties", GoMethod: "PutWorkspaceAccessProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "putWorkspaceCreationProperties", GoMethod: "PutWorkspaceCreationProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "registrationCode", GoGetter: "RegistrationCode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpGroupIds", GoMethod: "ResetIpGroupIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSelfServicePermissions", GoMethod: "ResetSelfServicePermissions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnetIds", GoMethod: "ResetSubnetIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceAccessProperties", GoMethod: "ResetWorkspaceAccessProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceCreationProperties", GoMethod: "ResetWorkspaceCreationProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "selfServicePermissions", GoGetter: "SelfServicePermissions"},
-			_jsii_.MemberProperty{JsiiProperty: "selfServicePermissionsInput", GoGetter: "SelfServicePermissionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdsInput", GoGetter: "SubnetIdsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessProperties", GoGetter: "WorkspaceAccessProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessPropertiesInput", GoGetter: "WorkspaceAccessPropertiesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceCreationProperties", GoGetter: "WorkspaceCreationProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceCreationPropertiesInput", GoGetter: "WorkspaceCreationPropertiesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceSecurityGroupId", GoGetter: "WorkspaceSecurityGroupId"},
-		},
-		func() interface{} {
-			j := jsiiProxy_WorkspacesDirectory{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory aws_workspaces_directory}.
+type WorkspacesDirectory interface {
+	cdktf.TerraformResource
+	Alias() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CustomerUserName() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DirectoryId() *string
+	SetDirectoryId(val *string)
+	DirectoryIdInput() *string
+	DirectoryName() *string
+	DirectoryType() *string
+	DnsIpAddresses() *[]*string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	IamRoleId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IpGroupIds() *[]*string
+	SetIpGroupIds(val *[]*string)
+	IpGroupIdsInput() *[]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RegistrationCode() *string
+	SelfServicePermissions() WorkspacesDirectorySelfServicePermissionsOutputReference
+	SelfServicePermissionsInput() *WorkspacesDirectorySelfServicePermissions
+	SubnetIds() *[]*string
+	SetSubnetIds(val *[]*string)
+	SubnetIdsInput() *[]*string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	WorkspaceAccessProperties() WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
+	WorkspaceAccessPropertiesInput() *WorkspacesDirectoryWorkspaceAccessProperties
+	WorkspaceCreationProperties() WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
+	WorkspaceCreationPropertiesInput() *WorkspacesDirectoryWorkspaceCreationProperties
+	WorkspaceSecurityGroupId() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutSelfServicePermissions(value *WorkspacesDirectorySelfServicePermissions)
+	PutWorkspaceAccessProperties(value *WorkspacesDirectoryWorkspaceAccessProperties)
+	PutWorkspaceCreationProperties(value *WorkspacesDirectoryWorkspaceCreationProperties)
+	ResetId()
+	ResetIpGroupIds()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetSelfServicePermissions()
+	ResetSubnetIds()
+	ResetTags()
+	ResetTagsAll()
+	ResetWorkspaceAccessProperties()
+	ResetWorkspaceCreationProperties()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for WorkspacesDirectory
+type jsiiProxy_WorkspacesDirectory struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Alias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alias",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.workspacesDirectory.WorkspacesDirectoryConfig",
-		reflect.TypeOf((*WorkspacesDirectoryConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissions",
-		reflect.TypeOf((*WorkspacesDirectorySelfServicePermissions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
-		reflect.TypeOf((*WorkspacesDirectorySelfServicePermissionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "changeComputeType", GoGetter: "ChangeComputeType"},
-			_jsii_.MemberProperty{JsiiProperty: "changeComputeTypeInput", GoGetter: "ChangeComputeTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "increaseVolumeSize", GoGetter: "IncreaseVolumeSize"},
-			_jsii_.MemberProperty{JsiiProperty: "increaseVolumeSizeInput", GoGetter: "IncreaseVolumeSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "rebuildWorkspace", GoGetter: "RebuildWorkspace"},
-			_jsii_.MemberProperty{JsiiProperty: "rebuildWorkspaceInput", GoGetter: "RebuildWorkspaceInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetChangeComputeType", GoMethod: "ResetChangeComputeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncreaseVolumeSize", GoMethod: "ResetIncreaseVolumeSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRebuildWorkspace", GoMethod: "ResetRebuildWorkspace"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRestartWorkspace", GoMethod: "ResetRestartWorkspace"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSwitchRunningMode", GoMethod: "ResetSwitchRunningMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "restartWorkspace", GoGetter: "RestartWorkspace"},
-			_jsii_.MemberProperty{JsiiProperty: "restartWorkspaceInput", GoGetter: "RestartWorkspaceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "switchRunningMode", GoGetter: "SwitchRunningMode"},
-			_jsii_.MemberProperty{JsiiProperty: "switchRunningModeInput", GoGetter: "SwitchRunningModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessProperties",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceAccessProperties)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeAndroid", GoGetter: "DeviceTypeAndroid"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeAndroidInput", GoGetter: "DeviceTypeAndroidInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeChromeos", GoGetter: "DeviceTypeChromeos"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeChromeosInput", GoGetter: "DeviceTypeChromeosInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeIos", GoGetter: "DeviceTypeIos"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeIosInput", GoGetter: "DeviceTypeIosInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeLinux", GoGetter: "DeviceTypeLinux"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeLinuxInput", GoGetter: "DeviceTypeLinuxInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeOsx", GoGetter: "DeviceTypeOsx"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeOsxInput", GoGetter: "DeviceTypeOsxInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeWeb", GoGetter: "DeviceTypeWeb"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeWebInput", GoGetter: "DeviceTypeWebInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeWindows", GoGetter: "DeviceTypeWindows"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeWindowsInput", GoGetter: "DeviceTypeWindowsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeZeroclient", GoGetter: "DeviceTypeZeroclient"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeZeroclientInput", GoGetter: "DeviceTypeZeroclientInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeAndroid", GoMethod: "ResetDeviceTypeAndroid"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeChromeos", GoMethod: "ResetDeviceTypeChromeos"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeIos", GoMethod: "ResetDeviceTypeIos"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeLinux", GoMethod: "ResetDeviceTypeLinux"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeOsx", GoMethod: "ResetDeviceTypeOsx"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeWeb", GoMethod: "ResetDeviceTypeWeb"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeWindows", GoMethod: "ResetDeviceTypeWindows"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceTypeZeroclient", GoMethod: "ResetDeviceTypeZeroclient"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) CustomerUserName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerUserName",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationProperties",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceCreationProperties)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customSecurityGroupId", GoGetter: "CustomSecurityGroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "customSecurityGroupIdInput", GoGetter: "CustomSecurityGroupIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultOu", GoGetter: "DefaultOu"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultOuInput", GoGetter: "DefaultOuInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableInternetAccess", GoGetter: "EnableInternetAccess"},
-			_jsii_.MemberProperty{JsiiProperty: "enableInternetAccessInput", GoGetter: "EnableInternetAccessInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableMaintenanceMode", GoGetter: "EnableMaintenanceMode"},
-			_jsii_.MemberProperty{JsiiProperty: "enableMaintenanceModeInput", GoGetter: "EnableMaintenanceModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomSecurityGroupId", GoMethod: "ResetCustomSecurityGroupId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultOu", GoMethod: "ResetDefaultOu"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableInternetAccess", GoMethod: "ResetEnableInternetAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableMaintenanceMode", GoMethod: "ResetEnableMaintenanceMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserEnabledAsLocalAdministrator", GoMethod: "ResetUserEnabledAsLocalAdministrator"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "userEnabledAsLocalAdministrator", GoGetter: "UserEnabledAsLocalAdministrator"},
-			_jsii_.MemberProperty{JsiiProperty: "userEnabledAsLocalAdministratorInput", GoGetter: "UserEnabledAsLocalAdministratorInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) DirectoryId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) DirectoryIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) DirectoryName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) DirectoryType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) DnsIpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsIpAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) IamRoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamRoleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) IpGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) IpGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) RegistrationCode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registrationCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) SelfServicePermissions() WorkspacesDirectorySelfServicePermissionsOutputReference {
+	var returns WorkspacesDirectorySelfServicePermissionsOutputReference
+	_jsii_.Get(
+		j,
+		"selfServicePermissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) SelfServicePermissionsInput() *WorkspacesDirectorySelfServicePermissions {
+	var returns *WorkspacesDirectorySelfServicePermissions
+	_jsii_.Get(
+		j,
+		"selfServicePermissionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) SubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) SubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceAccessProperties() WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference {
+	var returns WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceAccessProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceAccessPropertiesInput() *WorkspacesDirectoryWorkspaceAccessProperties {
+	var returns *WorkspacesDirectoryWorkspaceAccessProperties
+	_jsii_.Get(
+		j,
+		"workspaceAccessPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceCreationProperties() WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference {
+	var returns WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceCreationProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceCreationPropertiesInput() *WorkspacesDirectoryWorkspaceCreationProperties {
+	var returns *WorkspacesDirectoryWorkspaceCreationProperties
+	_jsii_.Get(
+		j,
+		"workspaceCreationPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceSecurityGroupId",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory aws_workspaces_directory} Resource.
+func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
+	_init_.Initialize()
+
+	if err := validateNewWorkspacesDirectoryParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_WorkspacesDirectory{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory aws_workspaces_directory} Resource.
+func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		[]interface{}{scope, id, config},
+		w,
 	)
 }
+
+func (j *jsiiProxy_WorkspacesDirectory)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetDirectoryId(val *string) {
+	if err := j.validateSetDirectoryIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"directoryId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetIpGroupIds(val *[]*string) {
+	if err := j.validateSetIpGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetSubnetIds(val *[]*string) {
+	if err := j.validateSetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func WorkspacesDirectory_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkspacesDirectory_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WorkspacesDirectory_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkspacesDirectory_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WorkspacesDirectory_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkspacesDirectory_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func WorkspacesDirectory_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		w,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		w,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		w,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		w,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		w,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		w,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		w,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		w,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		w,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		w,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) PutSelfServicePermissions(value *WorkspacesDirectorySelfServicePermissions) {
+	if err := w.validatePutSelfServicePermissionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putSelfServicePermissions",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) PutWorkspaceAccessProperties(value *WorkspacesDirectoryWorkspaceAccessProperties) {
+	if err := w.validatePutWorkspaceAccessPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putWorkspaceAccessProperties",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) PutWorkspaceCreationProperties(value *WorkspacesDirectoryWorkspaceCreationProperties) {
+	if err := w.validatePutWorkspaceCreationPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putWorkspaceCreationProperties",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetIpGroupIds() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetIpGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetSelfServicePermissions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSelfServicePermissions",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetSubnetIds() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSubnetIds",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetTags() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceAccessProperties() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceAccessProperties",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceCreationProperties() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceCreationProperties",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		w,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		w,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

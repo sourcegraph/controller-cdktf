@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "organizationiamauditconfig",
+    srcs = [
+        "OrganizationIamAuditConfig.go",
+        "OrganizationIamAuditConfigAuditLogConfig.go",
+        "OrganizationIamAuditConfigAuditLogConfigList.go",
+        "OrganizationIamAuditConfigAuditLogConfigList__checks.go",
+        "OrganizationIamAuditConfigAuditLogConfigOutputReference.go",
+        "OrganizationIamAuditConfigAuditLogConfigOutputReference__checks.go",
+        "OrganizationIamAuditConfigConfig.go",
+        "OrganizationIamAuditConfig__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/organizationiamauditconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/organizationiamauditconfig/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

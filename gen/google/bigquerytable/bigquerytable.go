@@ -1,585 +1,1496 @@
 package bigquerytable
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerytable/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTable",
-		reflect.TypeOf((*BigqueryTable)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "clustering", GoGetter: "Clustering"},
-			_jsii_.MemberProperty{JsiiProperty: "clusteringInput", GoGetter: "ClusteringInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationTime", GoGetter: "CreationTime"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetId", GoGetter: "DatasetId"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetIdInput", GoGetter: "DatasetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
-			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionInput", GoGetter: "DeletionProtectionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionConfiguration", GoGetter: "EncryptionConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionConfigurationInput", GoGetter: "EncryptionConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "etag", GoGetter: "Etag"},
-			_jsii_.MemberProperty{JsiiProperty: "expirationTime", GoGetter: "ExpirationTime"},
-			_jsii_.MemberProperty{JsiiProperty: "expirationTimeInput", GoGetter: "ExpirationTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "externalDataConfiguration", GoGetter: "ExternalDataConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "externalDataConfigurationInput", GoGetter: "ExternalDataConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyName", GoGetter: "FriendlyName"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyNameInput", GoGetter: "FriendlyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lastModifiedTime", GoGetter: "LastModifiedTime"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "materializedView", GoGetter: "MaterializedView"},
-			_jsii_.MemberProperty{JsiiProperty: "materializedViewInput", GoGetter: "MaterializedViewInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "numBytes", GoGetter: "NumBytes"},
-			_jsii_.MemberProperty{JsiiProperty: "numLongTermBytes", GoGetter: "NumLongTermBytes"},
-			_jsii_.MemberProperty{JsiiProperty: "numRows", GoGetter: "NumRows"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putEncryptionConfiguration", GoMethod: "PutEncryptionConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putExternalDataConfiguration", GoMethod: "PutExternalDataConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putMaterializedView", GoMethod: "PutMaterializedView"},
-			_jsii_.MemberMethod{JsiiMethod: "putRangePartitioning", GoMethod: "PutRangePartitioning"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimePartitioning", GoMethod: "PutTimePartitioning"},
-			_jsii_.MemberMethod{JsiiMethod: "putView", GoMethod: "PutView"},
-			_jsii_.MemberProperty{JsiiProperty: "rangePartitioning", GoGetter: "RangePartitioning"},
-			_jsii_.MemberProperty{JsiiProperty: "rangePartitioningInput", GoGetter: "RangePartitioningInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClustering", GoMethod: "ResetClustering"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionConfiguration", GoMethod: "ResetEncryptionConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpirationTime", GoMethod: "ResetExpirationTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExternalDataConfiguration", GoMethod: "ResetExternalDataConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFriendlyName", GoMethod: "ResetFriendlyName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaterializedView", GoMethod: "ResetMaterializedView"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRangePartitioning", GoMethod: "ResetRangePartitioning"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimePartitioning", GoMethod: "ResetTimePartitioning"},
-			_jsii_.MemberMethod{JsiiMethod: "resetView", GoMethod: "ResetView"},
-			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
-			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tableId", GoGetter: "TableId"},
-			_jsii_.MemberProperty{JsiiProperty: "tableIdInput", GoGetter: "TableIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timePartitioning", GoGetter: "TimePartitioning"},
-			_jsii_.MemberProperty{JsiiProperty: "timePartitioningInput", GoGetter: "TimePartitioningInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
-			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_table google_bigquery_table}.
+type BigqueryTable interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	Clustering() *[]*string
+	SetClustering(val *[]*string)
+	ClusteringInput() *[]*string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreationTime() *float64
+	DatasetId() *string
+	SetDatasetId(val *string)
+	DatasetIdInput() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	EncryptionConfiguration() BigqueryTableEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *BigqueryTableEncryptionConfiguration
+	Etag() *string
+	ExpirationTime() *float64
+	SetExpirationTime(val *float64)
+	ExpirationTimeInput() *float64
+	ExternalDataConfiguration() BigqueryTableExternalDataConfigurationOutputReference
+	ExternalDataConfigurationInput() *BigqueryTableExternalDataConfiguration
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	FriendlyName() *string
+	SetFriendlyName(val *string)
+	FriendlyNameInput() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	LastModifiedTime() *float64
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	MaterializedView() BigqueryTableMaterializedViewOutputReference
+	MaterializedViewInput() *BigqueryTableMaterializedView
+	// The tree node.
+	Node() constructs.Node
+	NumBytes() *float64
+	NumLongTermBytes() *float64
+	NumRows() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	RangePartitioning() BigqueryTableRangePartitioningOutputReference
+	RangePartitioningInput() *BigqueryTableRangePartitioning
+	// Experimental.
+	RawOverrides() interface{}
+	Schema() *string
+	SetSchema(val *string)
+	SchemaInput() *string
+	SelfLink() *string
+	TableId() *string
+	SetTableId(val *string)
+	TableIdInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	TimePartitioning() BigqueryTableTimePartitioningOutputReference
+	TimePartitioningInput() *BigqueryTableTimePartitioning
+	Type() *string
+	View() BigqueryTableViewOutputReference
+	ViewInput() *BigqueryTableView
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *BigqueryTableEncryptionConfiguration)
+	PutExternalDataConfiguration(value *BigqueryTableExternalDataConfiguration)
+	PutMaterializedView(value *BigqueryTableMaterializedView)
+	PutRangePartitioning(value *BigqueryTableRangePartitioning)
+	PutTimePartitioning(value *BigqueryTableTimePartitioning)
+	PutView(value *BigqueryTableView)
+	ResetClustering()
+	ResetDeletionProtection()
+	ResetDescription()
+	ResetEncryptionConfiguration()
+	ResetExpirationTime()
+	ResetExternalDataConfiguration()
+	ResetFriendlyName()
+	ResetId()
+	ResetLabels()
+	ResetMaterializedView()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetRangePartitioning()
+	ResetSchema()
+	ResetTimePartitioning()
+	ResetView()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for BigqueryTable
+type jsiiProxy_BigqueryTable struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BigqueryTable) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableConfig",
-		reflect.TypeOf((*BigqueryTableConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Clustering() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clustering",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableEncryptionConfiguration",
-		reflect.TypeOf((*BigqueryTableEncryptionConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ClusteringInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"clusteringInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*BigqueryTableEncryptionConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyName", GoGetter: "KmsKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyNameInput", GoGetter: "KmsKeyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyVersion", GoGetter: "KmsKeyVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableExternalDataConfiguration",
-		reflect.TypeOf((*BigqueryTableExternalDataConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationCsvOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationCsvOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRows", GoGetter: "AllowJaggedRows"},
-			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRowsInput", GoGetter: "AllowJaggedRowsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "allowQuotedNewlines", GoGetter: "AllowQuotedNewlines"},
-			_jsii_.MemberProperty{JsiiProperty: "allowQuotedNewlinesInput", GoGetter: "AllowQuotedNewlinesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "encoding", GoGetter: "Encoding"},
-			_jsii_.MemberProperty{JsiiProperty: "encodingInput", GoGetter: "EncodingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fieldDelimiter", GoGetter: "FieldDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "fieldDelimiterInput", GoGetter: "FieldDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "quote", GoGetter: "Quote"},
-			_jsii_.MemberProperty{JsiiProperty: "quoteInput", GoGetter: "QuoteInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowJaggedRows", GoMethod: "ResetAllowJaggedRows"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowQuotedNewlines", GoMethod: "ResetAllowQuotedNewlines"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncoding", GoMethod: "ResetEncoding"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFieldDelimiter", GoMethod: "ResetFieldDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSkipLeadingRows", GoMethod: "ResetSkipLeadingRows"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "skipLeadingRows", GoGetter: "SkipLeadingRows"},
-			_jsii_.MemberProperty{JsiiProperty: "skipLeadingRowsInput", GoGetter: "SkipLeadingRowsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) CreationTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"creationTime",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptions",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationGoogleSheetsOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) DatasetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetId",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "range", GoGetter: "Range"},
-			_jsii_.MemberProperty{JsiiProperty: "rangeInput", GoGetter: "RangeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRange", GoMethod: "ResetRange"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSkipLeadingRows", GoMethod: "ResetSkipLeadingRows"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "skipLeadingRows", GoGetter: "SkipLeadingRows"},
-			_jsii_.MemberProperty{JsiiProperty: "skipLeadingRowsInput", GoGetter: "SkipLeadingRowsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) DatasetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetIdInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationHivePartitioningOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
-			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requirePartitionFilter", GoGetter: "RequirePartitionFilter"},
-			_jsii_.MemberProperty{JsiiProperty: "requirePartitionFilterInput", GoGetter: "RequirePartitionFilterInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequirePartitionFilter", GoMethod: "ResetRequirePartitionFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceUriPrefix", GoMethod: "ResetSourceUriPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUriPrefix", GoGetter: "SourceUriPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUriPrefixInput", GoGetter: "SourceUriPrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference",
-		reflect.TypeOf((*BigqueryTableExternalDataConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "autodetect", GoGetter: "Autodetect"},
-			_jsii_.MemberProperty{JsiiProperty: "autodetectInput", GoGetter: "AutodetectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberProperty{JsiiProperty: "compression", GoGetter: "Compression"},
-			_jsii_.MemberProperty{JsiiProperty: "compressionInput", GoGetter: "CompressionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "connectionId", GoGetter: "ConnectionId"},
-			_jsii_.MemberProperty{JsiiProperty: "connectionIdInput", GoGetter: "ConnectionIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "csvOptions", GoGetter: "CsvOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "csvOptionsInput", GoGetter: "CsvOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "googleSheetsOptions", GoGetter: "GoogleSheetsOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "googleSheetsOptionsInput", GoGetter: "GoogleSheetsOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "hivePartitioningOptions", GoGetter: "HivePartitioningOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "hivePartitioningOptionsInput", GoGetter: "HivePartitioningOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreUnknownValues", GoGetter: "IgnoreUnknownValues"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreUnknownValuesInput", GoGetter: "IgnoreUnknownValuesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxBadRecords", GoGetter: "MaxBadRecords"},
-			_jsii_.MemberProperty{JsiiProperty: "maxBadRecordsInput", GoGetter: "MaxBadRecordsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCsvOptions", GoMethod: "PutCsvOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putGoogleSheetsOptions", GoMethod: "PutGoogleSheetsOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putHivePartitioningOptions", GoMethod: "PutHivePartitioningOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCompression", GoMethod: "ResetCompression"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvOptions", GoMethod: "ResetCsvOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGoogleSheetsOptions", GoMethod: "ResetGoogleSheetsOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHivePartitioningOptions", GoMethod: "ResetHivePartitioningOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreUnknownValues", GoMethod: "ResetIgnoreUnknownValues"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxBadRecords", GoMethod: "ResetMaxBadRecords"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
-			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceFormat", GoGetter: "SourceFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceFormatInput", GoGetter: "SourceFormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUris", GoGetter: "SourceUris"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUrisInput", GoGetter: "SourceUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableMaterializedView",
-		reflect.TypeOf((*BigqueryTableMaterializedView)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
-		reflect.TypeOf((*BigqueryTableMaterializedViewOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enableRefresh", GoGetter: "EnableRefresh"},
-			_jsii_.MemberProperty{JsiiProperty: "enableRefreshInput", GoGetter: "EnableRefreshInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
-			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
-			_jsii_.MemberProperty{JsiiProperty: "refreshIntervalMs", GoGetter: "RefreshIntervalMs"},
-			_jsii_.MemberProperty{JsiiProperty: "refreshIntervalMsInput", GoGetter: "RefreshIntervalMsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableRefresh", GoMethod: "ResetEnableRefresh"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRefreshIntervalMs", GoMethod: "ResetRefreshIntervalMs"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableMaterializedViewOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableRangePartitioning",
-		reflect.TypeOf((*BigqueryTableRangePartitioning)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) EncryptionConfiguration() BigqueryTableEncryptionConfigurationOutputReference {
+	var returns BigqueryTableEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableRangePartitioningOutputReference",
-		reflect.TypeOf((*BigqueryTableRangePartitioningOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "field", GoGetter: "Field"},
-			_jsii_.MemberProperty{JsiiProperty: "fieldInput", GoGetter: "FieldInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putRange", GoMethod: "PutRange"},
-			_jsii_.MemberProperty{JsiiProperty: "range", GoGetter: "Range"},
-			_jsii_.MemberProperty{JsiiProperty: "rangeInput", GoGetter: "RangeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableRangePartitioningOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) EncryptionConfigurationInput() *BigqueryTableEncryptionConfiguration {
+	var returns *BigqueryTableEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableRangePartitioningRange",
-		reflect.TypeOf((*BigqueryTableRangePartitioningRange)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference",
-		reflect.TypeOf((*BigqueryTableRangePartitioningRangeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "end", GoGetter: "End"},
-			_jsii_.MemberProperty{JsiiProperty: "endInput", GoGetter: "EndInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "start", GoGetter: "Start"},
-			_jsii_.MemberProperty{JsiiProperty: "startInput", GoGetter: "StartInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ExpirationTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationTime",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableTimePartitioning",
-		reflect.TypeOf((*BigqueryTableTimePartitioning)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ExpirationTimeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationTimeInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableTimePartitioningOutputReference",
-		reflect.TypeOf((*BigqueryTableTimePartitioningOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expirationMs", GoGetter: "ExpirationMs"},
-			_jsii_.MemberProperty{JsiiProperty: "expirationMsInput", GoGetter: "ExpirationMsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "field", GoGetter: "Field"},
-			_jsii_.MemberProperty{JsiiProperty: "fieldInput", GoGetter: "FieldInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "requirePartitionFilter", GoGetter: "RequirePartitionFilter"},
-			_jsii_.MemberProperty{JsiiProperty: "requirePartitionFilterInput", GoGetter: "RequirePartitionFilterInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpirationMs", GoMethod: "ResetExpirationMs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetField", GoMethod: "ResetField"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequirePartitionFilter", GoMethod: "ResetRequirePartitionFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableTimePartitioningOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ExternalDataConfiguration() BigqueryTableExternalDataConfigurationOutputReference {
+	var returns BigqueryTableExternalDataConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"externalDataConfiguration",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.bigqueryTable.BigqueryTableView",
-		reflect.TypeOf((*BigqueryTableView)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ExternalDataConfigurationInput() *BigqueryTableExternalDataConfiguration {
+	var returns *BigqueryTableExternalDataConfiguration
+	_jsii_.Get(
+		j,
+		"externalDataConfigurationInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.bigqueryTable.BigqueryTableViewOutputReference",
-		reflect.TypeOf((*BigqueryTableViewOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
-			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseLegacySql", GoMethod: "ResetUseLegacySql"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "useLegacySql", GoGetter: "UseLegacySql"},
-			_jsii_.MemberProperty{JsiiProperty: "useLegacySqlInput", GoGetter: "UseLegacySqlInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BigqueryTableViewOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) FriendlyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) FriendlyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) LastModifiedTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"lastModifiedTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) MaterializedView() BigqueryTableMaterializedViewOutputReference {
+	var returns BigqueryTableMaterializedViewOutputReference
+	_jsii_.Get(
+		j,
+		"materializedView",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) MaterializedViewInput() *BigqueryTableMaterializedView {
+	var returns *BigqueryTableMaterializedView
+	_jsii_.Get(
+		j,
+		"materializedViewInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) NumBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) NumLongTermBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numLongTermBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) NumRows() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numRows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) RangePartitioning() BigqueryTableRangePartitioningOutputReference {
+	var returns BigqueryTableRangePartitioningOutputReference
+	_jsii_.Get(
+		j,
+		"rangePartitioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) RangePartitioningInput() *BigqueryTableRangePartitioning {
+	var returns *BigqueryTableRangePartitioning
+	_jsii_.Get(
+		j,
+		"rangePartitioningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Schema() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) SchemaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TableIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TimePartitioning() BigqueryTableTimePartitioningOutputReference {
+	var returns BigqueryTableTimePartitioningOutputReference
+	_jsii_.Get(
+		j,
+		"timePartitioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TimePartitioningInput() *BigqueryTableTimePartitioning {
+	var returns *BigqueryTableTimePartitioning
+	_jsii_.Get(
+		j,
+		"timePartitioningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) View() BigqueryTableViewOutputReference {
+	var returns BigqueryTableViewOutputReference
+	_jsii_.Get(
+		j,
+		"view",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
+	var returns *BigqueryTableView
+	_jsii_.Get(
+		j,
+		"viewInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_table google_bigquery_table} Resource.
+func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
+	_init_.Initialize()
+
+	if err := validateNewBigqueryTableParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_BigqueryTable{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_table google_bigquery_table} Resource.
+func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		[]interface{}{scope, id, config},
+		b,
 	)
 }
+
+func (j *jsiiProxy_BigqueryTable)SetClustering(val *[]*string) {
+	if err := j.validateSetClusteringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clustering",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetDatasetId(val *string) {
+	if err := j.validateSetDatasetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datasetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetExpirationTime(val *float64) {
+	if err := j.validateSetExpirationTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetFriendlyName(val *string) {
+	if err := j.validateSetFriendlyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"friendlyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetSchema(val *string) {
+	if err := j.validateSetSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetTableId(val *string) {
+	if err := j.validateSetTableIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func BigqueryTable_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryTable_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryTable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryTable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryTable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryTable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func BigqueryTable_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) AddOverride(path *string, value interface{}) {
+	if err := b.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		b,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		b,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) OverrideLogicalId(newLogicalId *string) {
+	if err := b.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutEncryptionConfiguration(value *BigqueryTableEncryptionConfiguration) {
+	if err := b.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutExternalDataConfiguration(value *BigqueryTableExternalDataConfiguration) {
+	if err := b.validatePutExternalDataConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putExternalDataConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutMaterializedView(value *BigqueryTableMaterializedView) {
+	if err := b.validatePutMaterializedViewParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putMaterializedView",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutRangePartitioning(value *BigqueryTableRangePartitioning) {
+	if err := b.validatePutRangePartitioningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putRangePartitioning",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutTimePartitioning(value *BigqueryTableTimePartitioning) {
+	if err := b.validatePutTimePartitioningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimePartitioning",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutView(value *BigqueryTableView) {
+	if err := b.validatePutViewParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putView",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetClustering() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetClustering",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetDescription() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEncryptionConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetExpirationTime() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetExpirationTime",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetExternalDataConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetExternalDataConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetFriendlyName() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetFriendlyName",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetLabels() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetMaterializedView() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMaterializedView",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetProject() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetRangePartitioning() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRangePartitioning",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetSchema() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetTimePartitioning() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimePartitioning",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetView() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetView",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryTable) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

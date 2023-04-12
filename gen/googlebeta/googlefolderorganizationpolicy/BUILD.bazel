@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefolderorganizationpolicy",
+    srcs = [
+        "GoogleFolderOrganizationPolicy.go",
+        "GoogleFolderOrganizationPolicyBooleanPolicy.go",
+        "GoogleFolderOrganizationPolicyBooleanPolicyOutputReference.go",
+        "GoogleFolderOrganizationPolicyBooleanPolicyOutputReference__checks.go",
+        "GoogleFolderOrganizationPolicyConfig.go",
+        "GoogleFolderOrganizationPolicyListPolicy.go",
+        "GoogleFolderOrganizationPolicyListPolicyAllow.go",
+        "GoogleFolderOrganizationPolicyListPolicyAllowOutputReference.go",
+        "GoogleFolderOrganizationPolicyListPolicyAllowOutputReference__checks.go",
+        "GoogleFolderOrganizationPolicyListPolicyDeny.go",
+        "GoogleFolderOrganizationPolicyListPolicyDenyOutputReference.go",
+        "GoogleFolderOrganizationPolicyListPolicyDenyOutputReference__checks.go",
+        "GoogleFolderOrganizationPolicyListPolicyOutputReference.go",
+        "GoogleFolderOrganizationPolicyListPolicyOutputReference__checks.go",
+        "GoogleFolderOrganizationPolicyRestorePolicy.go",
+        "GoogleFolderOrganizationPolicyRestorePolicyOutputReference.go",
+        "GoogleFolderOrganizationPolicyRestorePolicyOutputReference__checks.go",
+        "GoogleFolderOrganizationPolicyTimeouts.go",
+        "GoogleFolderOrganizationPolicyTimeoutsOutputReference.go",
+        "GoogleFolderOrganizationPolicyTimeoutsOutputReference__checks.go",
+        "GoogleFolderOrganizationPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlefolderorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlefolderorganizationpolicy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

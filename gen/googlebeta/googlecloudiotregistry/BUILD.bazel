@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudiotregistry",
+    srcs = [
+        "GoogleCloudiotRegistry.go",
+        "GoogleCloudiotRegistryConfig.go",
+        "GoogleCloudiotRegistryCredentials.go",
+        "GoogleCloudiotRegistryCredentialsList.go",
+        "GoogleCloudiotRegistryCredentialsList__checks.go",
+        "GoogleCloudiotRegistryCredentialsOutputReference.go",
+        "GoogleCloudiotRegistryCredentialsOutputReference__checks.go",
+        "GoogleCloudiotRegistryEventNotificationConfigs.go",
+        "GoogleCloudiotRegistryEventNotificationConfigsList.go",
+        "GoogleCloudiotRegistryEventNotificationConfigsList__checks.go",
+        "GoogleCloudiotRegistryEventNotificationConfigsOutputReference.go",
+        "GoogleCloudiotRegistryEventNotificationConfigsOutputReference__checks.go",
+        "GoogleCloudiotRegistryTimeouts.go",
+        "GoogleCloudiotRegistryTimeoutsOutputReference.go",
+        "GoogleCloudiotRegistryTimeoutsOutputReference__checks.go",
+        "GoogleCloudiotRegistry__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecloudiotregistry",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecloudiotregistry/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

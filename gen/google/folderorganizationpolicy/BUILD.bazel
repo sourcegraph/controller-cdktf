@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "folderorganizationpolicy",
+    srcs = [
+        "FolderOrganizationPolicy.go",
+        "FolderOrganizationPolicyBooleanPolicy.go",
+        "FolderOrganizationPolicyBooleanPolicyOutputReference.go",
+        "FolderOrganizationPolicyBooleanPolicyOutputReference__checks.go",
+        "FolderOrganizationPolicyConfig.go",
+        "FolderOrganizationPolicyListPolicy.go",
+        "FolderOrganizationPolicyListPolicyAllow.go",
+        "FolderOrganizationPolicyListPolicyAllowOutputReference.go",
+        "FolderOrganizationPolicyListPolicyAllowOutputReference__checks.go",
+        "FolderOrganizationPolicyListPolicyDeny.go",
+        "FolderOrganizationPolicyListPolicyDenyOutputReference.go",
+        "FolderOrganizationPolicyListPolicyDenyOutputReference__checks.go",
+        "FolderOrganizationPolicyListPolicyOutputReference.go",
+        "FolderOrganizationPolicyListPolicyOutputReference__checks.go",
+        "FolderOrganizationPolicyRestorePolicy.go",
+        "FolderOrganizationPolicyRestorePolicyOutputReference.go",
+        "FolderOrganizationPolicyRestorePolicyOutputReference__checks.go",
+        "FolderOrganizationPolicyTimeouts.go",
+        "FolderOrganizationPolicyTimeoutsOutputReference.go",
+        "FolderOrganizationPolicyTimeoutsOutputReference__checks.go",
+        "FolderOrganizationPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/folderorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/folderorganizationpolicy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

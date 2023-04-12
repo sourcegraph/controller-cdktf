@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "defaultserviceaccount",
+    srcs = [
+        "DefaultServiceAccount.go",
+        "DefaultServiceAccountConfig.go",
+        "DefaultServiceAccountImagePullSecret.go",
+        "DefaultServiceAccountImagePullSecretList.go",
+        "DefaultServiceAccountImagePullSecretList__checks.go",
+        "DefaultServiceAccountImagePullSecretOutputReference.go",
+        "DefaultServiceAccountImagePullSecretOutputReference__checks.go",
+        "DefaultServiceAccountMetadata.go",
+        "DefaultServiceAccountMetadataOutputReference.go",
+        "DefaultServiceAccountMetadataOutputReference__checks.go",
+        "DefaultServiceAccountSecret.go",
+        "DefaultServiceAccountSecretList.go",
+        "DefaultServiceAccountSecretList__checks.go",
+        "DefaultServiceAccountSecretOutputReference.go",
+        "DefaultServiceAccountSecretOutputReference__checks.go",
+        "DefaultServiceAccountTimeouts.go",
+        "DefaultServiceAccountTimeoutsOutputReference.go",
+        "DefaultServiceAccountTimeoutsOutputReference__checks.go",
+        "DefaultServiceAccount__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/defaultserviceaccount",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/defaultserviceaccount/internal",
+        "//gen/kubernetes/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

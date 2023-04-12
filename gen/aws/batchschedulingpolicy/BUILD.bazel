@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "batchschedulingpolicy",
+    srcs = [
+        "BatchSchedulingPolicy.go",
+        "BatchSchedulingPolicyConfig.go",
+        "BatchSchedulingPolicyFairSharePolicy.go",
+        "BatchSchedulingPolicyFairSharePolicyOutputReference.go",
+        "BatchSchedulingPolicyFairSharePolicyOutputReference__checks.go",
+        "BatchSchedulingPolicyFairSharePolicyShareDistribution.go",
+        "BatchSchedulingPolicyFairSharePolicyShareDistributionList.go",
+        "BatchSchedulingPolicyFairSharePolicyShareDistributionList__checks.go",
+        "BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference.go",
+        "BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference__checks.go",
+        "BatchSchedulingPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/batchschedulingpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/batchschedulingpolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "timestreamwritetable",
+    srcs = [
+        "TimestreamwriteTable.go",
+        "TimestreamwriteTableConfig.go",
+        "TimestreamwriteTableMagneticStoreWriteProperties.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference__checks.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference__checks.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesOutputReference.go",
+        "TimestreamwriteTableMagneticStoreWritePropertiesOutputReference__checks.go",
+        "TimestreamwriteTableRetentionProperties.go",
+        "TimestreamwriteTableRetentionPropertiesOutputReference.go",
+        "TimestreamwriteTableRetentionPropertiesOutputReference__checks.go",
+        "TimestreamwriteTable__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/timestreamwritetable",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/timestreamwritetable/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "appbasicauth",
+    srcs = [
+        "AppBasicAuth.go",
+        "AppBasicAuthConfig.go",
+        "AppBasicAuthTimeouts.go",
+        "AppBasicAuthTimeoutsOutputReference.go",
+        "AppBasicAuthTimeoutsOutputReference__checks.go",
+        "AppBasicAuthUsers.go",
+        "AppBasicAuthUsersList.go",
+        "AppBasicAuthUsersList__checks.go",
+        "AppBasicAuthUsersOutputReference.go",
+        "AppBasicAuthUsersOutputReference__checks.go",
+        "AppBasicAuth__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/appbasicauth",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/appbasicauth/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

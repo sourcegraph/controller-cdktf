@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "acmpcacertificateauthority",
+    srcs = [
+        "AcmpcaCertificateAuthority.go",
+        "AcmpcaCertificateAuthorityCertificateAuthorityConfiguration.go",
+        "AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference.go",
+        "AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference__checks.go",
+        "AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject.go",
+        "AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference.go",
+        "AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference__checks.go",
+        "AcmpcaCertificateAuthorityConfig.go",
+        "AcmpcaCertificateAuthorityRevocationConfiguration.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference__checks.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference__checks.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationOutputReference.go",
+        "AcmpcaCertificateAuthorityRevocationConfigurationOutputReference__checks.go",
+        "AcmpcaCertificateAuthorityTimeouts.go",
+        "AcmpcaCertificateAuthorityTimeoutsOutputReference.go",
+        "AcmpcaCertificateAuthorityTimeoutsOutputReference__checks.go",
+        "AcmpcaCertificateAuthority__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/acmpcacertificateauthority",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/acmpcacertificateauthority/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

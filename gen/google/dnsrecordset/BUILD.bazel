@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dnsrecordset",
+    srcs = [
+        "DnsRecordSet.go",
+        "DnsRecordSetConfig.go",
+        "DnsRecordSetRoutingPolicy.go",
+        "DnsRecordSetRoutingPolicyGeo.go",
+        "DnsRecordSetRoutingPolicyGeoList.go",
+        "DnsRecordSetRoutingPolicyGeoList__checks.go",
+        "DnsRecordSetRoutingPolicyGeoOutputReference.go",
+        "DnsRecordSetRoutingPolicyGeoOutputReference__checks.go",
+        "DnsRecordSetRoutingPolicyOutputReference.go",
+        "DnsRecordSetRoutingPolicyOutputReference__checks.go",
+        "DnsRecordSetRoutingPolicyWrr.go",
+        "DnsRecordSetRoutingPolicyWrrList.go",
+        "DnsRecordSetRoutingPolicyWrrList__checks.go",
+        "DnsRecordSetRoutingPolicyWrrOutputReference.go",
+        "DnsRecordSetRoutingPolicyWrrOutputReference__checks.go",
+        "DnsRecordSet__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dnsrecordset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dnsrecordset/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

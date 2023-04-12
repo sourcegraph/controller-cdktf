@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleiamdenypolicy",
+    srcs = [
+        "GoogleIamDenyPolicy.go",
+        "GoogleIamDenyPolicyConfig.go",
+        "GoogleIamDenyPolicyRules.go",
+        "GoogleIamDenyPolicyRulesDenyRule.go",
+        "GoogleIamDenyPolicyRulesDenyRuleDenialCondition.go",
+        "GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference.go",
+        "GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference__checks.go",
+        "GoogleIamDenyPolicyRulesDenyRuleOutputReference.go",
+        "GoogleIamDenyPolicyRulesDenyRuleOutputReference__checks.go",
+        "GoogleIamDenyPolicyRulesList.go",
+        "GoogleIamDenyPolicyRulesList__checks.go",
+        "GoogleIamDenyPolicyRulesOutputReference.go",
+        "GoogleIamDenyPolicyRulesOutputReference__checks.go",
+        "GoogleIamDenyPolicyTimeouts.go",
+        "GoogleIamDenyPolicyTimeoutsOutputReference.go",
+        "GoogleIamDenyPolicyTimeoutsOutputReference__checks.go",
+        "GoogleIamDenyPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googleiamdenypolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googleiamdenypolicy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

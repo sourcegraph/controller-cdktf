@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connectuserhierarchystructure",
+    srcs = [
+        "ConnectUserHierarchyStructure.go",
+        "ConnectUserHierarchyStructureConfig.go",
+        "ConnectUserHierarchyStructureHierarchyStructure.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelFive.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference__checks.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelFour.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference__checks.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelOne.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference__checks.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelThree.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference__checks.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelTwo.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference.go",
+        "ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference__checks.go",
+        "ConnectUserHierarchyStructureHierarchyStructureOutputReference.go",
+        "ConnectUserHierarchyStructureHierarchyStructureOutputReference__checks.go",
+        "ConnectUserHierarchyStructure__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/connectuserhierarchystructure",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/connectuserhierarchystructure/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

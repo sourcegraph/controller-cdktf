@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowcxwebhook",
+    srcs = [
+        "DialogflowCxWebhook.go",
+        "DialogflowCxWebhookConfig.go",
+        "DialogflowCxWebhookGenericWebService.go",
+        "DialogflowCxWebhookGenericWebServiceOutputReference.go",
+        "DialogflowCxWebhookGenericWebServiceOutputReference__checks.go",
+        "DialogflowCxWebhookServiceDirectory.go",
+        "DialogflowCxWebhookServiceDirectoryGenericWebService.go",
+        "DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.go",
+        "DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference__checks.go",
+        "DialogflowCxWebhookServiceDirectoryOutputReference.go",
+        "DialogflowCxWebhookServiceDirectoryOutputReference__checks.go",
+        "DialogflowCxWebhookTimeouts.go",
+        "DialogflowCxWebhookTimeoutsOutputReference.go",
+        "DialogflowCxWebhookTimeoutsOutputReference__checks.go",
+        "DialogflowCxWebhook__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxwebhook",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowcxwebhook/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

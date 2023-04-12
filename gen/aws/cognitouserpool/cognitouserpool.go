@@ -1,1058 +1,1870 @@
 package cognitouserpool
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/cognitouserpool/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPool",
-		reflect.TypeOf((*CognitoUserPool)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accountRecoverySetting", GoGetter: "AccountRecoverySetting"},
-			_jsii_.MemberProperty{JsiiProperty: "accountRecoverySettingInput", GoGetter: "AccountRecoverySettingInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "adminCreateUserConfig", GoGetter: "AdminCreateUserConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "adminCreateUserConfigInput", GoGetter: "AdminCreateUserConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "aliasAttributes", GoGetter: "AliasAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "aliasAttributesInput", GoGetter: "AliasAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "autoVerifiedAttributes", GoGetter: "AutoVerifiedAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "autoVerifiedAttributesInput", GoGetter: "AutoVerifiedAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationDate", GoGetter: "CreationDate"},
-			_jsii_.MemberProperty{JsiiProperty: "customDomain", GoGetter: "CustomDomain"},
-			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
-			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionInput", GoGetter: "DeletionProtectionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceConfiguration", GoGetter: "DeviceConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceConfigurationInput", GoGetter: "DeviceConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "domain", GoGetter: "Domain"},
-			_jsii_.MemberProperty{JsiiProperty: "emailConfiguration", GoGetter: "EmailConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "emailConfigurationInput", GoGetter: "EmailConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailVerificationMessage", GoGetter: "EmailVerificationMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "emailVerificationMessageInput", GoGetter: "EmailVerificationMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailVerificationSubject", GoGetter: "EmailVerificationSubject"},
-			_jsii_.MemberProperty{JsiiProperty: "emailVerificationSubjectInput", GoGetter: "EmailVerificationSubjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "estimatedNumberOfUsers", GoGetter: "EstimatedNumberOfUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaConfig", GoGetter: "LambdaConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaConfigInput", GoGetter: "LambdaConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lastModifiedDate", GoGetter: "LastModifiedDate"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "mfaConfiguration", GoGetter: "MfaConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "mfaConfigurationInput", GoGetter: "MfaConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordPolicy", GoGetter: "PasswordPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordPolicyInput", GoGetter: "PasswordPolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAccountRecoverySetting", GoMethod: "PutAccountRecoverySetting"},
-			_jsii_.MemberMethod{JsiiMethod: "putAdminCreateUserConfig", GoMethod: "PutAdminCreateUserConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putDeviceConfiguration", GoMethod: "PutDeviceConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putEmailConfiguration", GoMethod: "PutEmailConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putLambdaConfig", GoMethod: "PutLambdaConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putPasswordPolicy", GoMethod: "PutPasswordPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putSchema", GoMethod: "PutSchema"},
-			_jsii_.MemberMethod{JsiiMethod: "putSmsConfiguration", GoMethod: "PutSmsConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putSoftwareTokenMfaConfiguration", GoMethod: "PutSoftwareTokenMfaConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putUserAttributeUpdateSettings", GoMethod: "PutUserAttributeUpdateSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putUsernameConfiguration", GoMethod: "PutUsernameConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putUserPoolAddOns", GoMethod: "PutUserPoolAddOns"},
-			_jsii_.MemberMethod{JsiiMethod: "putVerificationMessageTemplate", GoMethod: "PutVerificationMessageTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountRecoverySetting", GoMethod: "ResetAccountRecoverySetting"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdminCreateUserConfig", GoMethod: "ResetAdminCreateUserConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAliasAttributes", GoMethod: "ResetAliasAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoVerifiedAttributes", GoMethod: "ResetAutoVerifiedAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceConfiguration", GoMethod: "ResetDeviceConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailConfiguration", GoMethod: "ResetEmailConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailVerificationMessage", GoMethod: "ResetEmailVerificationMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailVerificationSubject", GoMethod: "ResetEmailVerificationSubject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLambdaConfig", GoMethod: "ResetLambdaConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfiguration", GoMethod: "ResetMfaConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPasswordPolicy", GoMethod: "ResetPasswordPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSmsAuthenticationMessage", GoMethod: "ResetSmsAuthenticationMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSmsConfiguration", GoMethod: "ResetSmsConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSmsVerificationMessage", GoMethod: "ResetSmsVerificationMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSoftwareTokenMfaConfiguration", GoMethod: "ResetSoftwareTokenMfaConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserAttributeUpdateSettings", GoMethod: "ResetUserAttributeUpdateSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUsernameAttributes", GoMethod: "ResetUsernameAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUsernameConfiguration", GoMethod: "ResetUsernameConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserPoolAddOns", GoMethod: "ResetUserPoolAddOns"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVerificationMessageTemplate", GoMethod: "ResetVerificationMessageTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
-			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
-			_jsii_.MemberProperty{JsiiProperty: "smsAuthenticationMessage", GoGetter: "SmsAuthenticationMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "smsAuthenticationMessageInput", GoGetter: "SmsAuthenticationMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "smsConfiguration", GoGetter: "SmsConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "smsConfigurationInput", GoGetter: "SmsConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "smsVerificationMessage", GoGetter: "SmsVerificationMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "smsVerificationMessageInput", GoGetter: "SmsVerificationMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "softwareTokenMfaConfiguration", GoGetter: "SoftwareTokenMfaConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "softwareTokenMfaConfigurationInput", GoGetter: "SoftwareTokenMfaConfigurationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "userAttributeUpdateSettings", GoGetter: "UserAttributeUpdateSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "userAttributeUpdateSettingsInput", GoGetter: "UserAttributeUpdateSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameAttributes", GoGetter: "UsernameAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameAttributesInput", GoGetter: "UsernameAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameConfiguration", GoGetter: "UsernameConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameConfigurationInput", GoGetter: "UsernameConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "userPoolAddOns", GoGetter: "UserPoolAddOns"},
-			_jsii_.MemberProperty{JsiiProperty: "userPoolAddOnsInput", GoGetter: "UserPoolAddOnsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "verificationMessageTemplate", GoGetter: "VerificationMessageTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "verificationMessageTemplateInput", GoGetter: "VerificationMessageTemplateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool aws_cognito_user_pool}.
+type CognitoUserPool interface {
+	cdktf.TerraformResource
+	AccountRecoverySetting() CognitoUserPoolAccountRecoverySettingOutputReference
+	AccountRecoverySettingInput() *CognitoUserPoolAccountRecoverySetting
+	AdminCreateUserConfig() CognitoUserPoolAdminCreateUserConfigOutputReference
+	AdminCreateUserConfigInput() *CognitoUserPoolAdminCreateUserConfig
+	AliasAttributes() *[]*string
+	SetAliasAttributes(val *[]*string)
+	AliasAttributesInput() *[]*string
+	Arn() *string
+	AutoVerifiedAttributes() *[]*string
+	SetAutoVerifiedAttributes(val *[]*string)
+	AutoVerifiedAttributesInput() *[]*string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreationDate() *string
+	CustomDomain() *string
+	DeletionProtection() *string
+	SetDeletionProtection(val *string)
+	DeletionProtectionInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DeviceConfiguration() CognitoUserPoolDeviceConfigurationOutputReference
+	DeviceConfigurationInput() *CognitoUserPoolDeviceConfiguration
+	Domain() *string
+	EmailConfiguration() CognitoUserPoolEmailConfigurationOutputReference
+	EmailConfigurationInput() *CognitoUserPoolEmailConfiguration
+	EmailVerificationMessage() *string
+	SetEmailVerificationMessage(val *string)
+	EmailVerificationMessageInput() *string
+	EmailVerificationSubject() *string
+	SetEmailVerificationSubject(val *string)
+	EmailVerificationSubjectInput() *string
+	Endpoint() *string
+	EstimatedNumberOfUsers() *float64
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	LambdaConfig() CognitoUserPoolLambdaConfigOutputReference
+	LambdaConfigInput() *CognitoUserPoolLambdaConfig
+	LastModifiedDate() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MfaConfiguration() *string
+	SetMfaConfiguration(val *string)
+	MfaConfigurationInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	PasswordPolicy() CognitoUserPoolPasswordPolicyOutputReference
+	PasswordPolicyInput() *CognitoUserPoolPasswordPolicy
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Schema() CognitoUserPoolSchemaList
+	SchemaInput() interface{}
+	SmsAuthenticationMessage() *string
+	SetSmsAuthenticationMessage(val *string)
+	SmsAuthenticationMessageInput() *string
+	SmsConfiguration() CognitoUserPoolSmsConfigurationOutputReference
+	SmsConfigurationInput() *CognitoUserPoolSmsConfiguration
+	SmsVerificationMessage() *string
+	SetSmsVerificationMessage(val *string)
+	SmsVerificationMessageInput() *string
+	SoftwareTokenMfaConfiguration() CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference
+	SoftwareTokenMfaConfigurationInput() *CognitoUserPoolSoftwareTokenMfaConfiguration
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	UserAttributeUpdateSettings() CognitoUserPoolUserAttributeUpdateSettingsOutputReference
+	UserAttributeUpdateSettingsInput() *CognitoUserPoolUserAttributeUpdateSettings
+	UsernameAttributes() *[]*string
+	SetUsernameAttributes(val *[]*string)
+	UsernameAttributesInput() *[]*string
+	UsernameConfiguration() CognitoUserPoolUsernameConfigurationOutputReference
+	UsernameConfigurationInput() *CognitoUserPoolUsernameConfiguration
+	UserPoolAddOns() CognitoUserPoolUserPoolAddOnsOutputReference
+	UserPoolAddOnsInput() *CognitoUserPoolUserPoolAddOns
+	VerificationMessageTemplate() CognitoUserPoolVerificationMessageTemplateOutputReference
+	VerificationMessageTemplateInput() *CognitoUserPoolVerificationMessageTemplate
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAccountRecoverySetting(value *CognitoUserPoolAccountRecoverySetting)
+	PutAdminCreateUserConfig(value *CognitoUserPoolAdminCreateUserConfig)
+	PutDeviceConfiguration(value *CognitoUserPoolDeviceConfiguration)
+	PutEmailConfiguration(value *CognitoUserPoolEmailConfiguration)
+	PutLambdaConfig(value *CognitoUserPoolLambdaConfig)
+	PutPasswordPolicy(value *CognitoUserPoolPasswordPolicy)
+	PutSchema(value interface{})
+	PutSmsConfiguration(value *CognitoUserPoolSmsConfiguration)
+	PutSoftwareTokenMfaConfiguration(value *CognitoUserPoolSoftwareTokenMfaConfiguration)
+	PutUserAttributeUpdateSettings(value *CognitoUserPoolUserAttributeUpdateSettings)
+	PutUsernameConfiguration(value *CognitoUserPoolUsernameConfiguration)
+	PutUserPoolAddOns(value *CognitoUserPoolUserPoolAddOns)
+	PutVerificationMessageTemplate(value *CognitoUserPoolVerificationMessageTemplate)
+	ResetAccountRecoverySetting()
+	ResetAdminCreateUserConfig()
+	ResetAliasAttributes()
+	ResetAutoVerifiedAttributes()
+	ResetDeletionProtection()
+	ResetDeviceConfiguration()
+	ResetEmailConfiguration()
+	ResetEmailVerificationMessage()
+	ResetEmailVerificationSubject()
+	ResetId()
+	ResetLambdaConfig()
+	ResetMfaConfiguration()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPasswordPolicy()
+	ResetSchema()
+	ResetSmsAuthenticationMessage()
+	ResetSmsConfiguration()
+	ResetSmsVerificationMessage()
+	ResetSoftwareTokenMfaConfiguration()
+	ResetTags()
+	ResetTagsAll()
+	ResetUserAttributeUpdateSettings()
+	ResetUsernameAttributes()
+	ResetUsernameConfiguration()
+	ResetUserPoolAddOns()
+	ResetVerificationMessageTemplate()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for CognitoUserPool
+type jsiiProxy_CognitoUserPool struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CognitoUserPool) AccountRecoverySetting() CognitoUserPoolAccountRecoverySettingOutputReference {
+	var returns CognitoUserPoolAccountRecoverySettingOutputReference
+	_jsii_.Get(
+		j,
+		"accountRecoverySetting",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySetting)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AccountRecoverySettingInput() *CognitoUserPoolAccountRecoverySetting {
+	var returns *CognitoUserPoolAccountRecoverySetting
+	_jsii_.Get(
+		j,
+		"accountRecoverySettingInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putRecoveryMechanism", GoMethod: "PutRecoveryMechanism"},
-			_jsii_.MemberProperty{JsiiProperty: "recoveryMechanism", GoGetter: "RecoveryMechanism"},
-			_jsii_.MemberProperty{JsiiProperty: "recoveryMechanismInput", GoGetter: "RecoveryMechanismInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AdminCreateUserConfig() CognitoUserPoolAdminCreateUserConfigOutputReference {
+	var returns CognitoUserPoolAdminCreateUserConfigOutputReference
+	_jsii_.Get(
+		j,
+		"adminCreateUserConfig",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanism)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AdminCreateUserConfigInput() *CognitoUserPoolAdminCreateUserConfig {
+	var returns *CognitoUserPoolAdminCreateUserConfig
+	_jsii_.Get(
+		j,
+		"adminCreateUserConfigInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanismList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AliasAttributes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aliasAttributes",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "priority", GoGetter: "Priority"},
-			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AliasAttributesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aliasAttributesInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfig",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AutoVerifiedAttributes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autoVerifiedAttributes",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "emailMessage", GoGetter: "EmailMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "emailMessageInput", GoGetter: "EmailMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSubject", GoGetter: "EmailSubject"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSubjectInput", GoGetter: "EmailSubjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailMessage", GoMethod: "ResetEmailMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailSubject", GoMethod: "ResetEmailSubject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSmsMessage", GoMethod: "ResetSmsMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "smsMessage", GoGetter: "SmsMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "smsMessageInput", GoGetter: "SmsMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) AutoVerifiedAttributesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autoVerifiedAttributesInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allowAdminCreateUserOnly", GoGetter: "AllowAdminCreateUserOnly"},
-			_jsii_.MemberProperty{JsiiProperty: "allowAdminCreateUserOnlyInput", GoGetter: "AllowAdminCreateUserOnlyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "inviteMessageTemplate", GoGetter: "InviteMessageTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "inviteMessageTemplateInput", GoGetter: "InviteMessageTemplateInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putInviteMessageTemplate", GoMethod: "PutInviteMessageTemplate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowAdminCreateUserOnly", GoMethod: "ResetAllowAdminCreateUserOnly"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInviteMessageTemplate", GoMethod: "ResetInviteMessageTemplate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolConfig",
-		reflect.TypeOf((*CognitoUserPoolConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolDeviceConfiguration",
-		reflect.TypeOf((*CognitoUserPoolDeviceConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolDeviceConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolDeviceConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "challengeRequiredOnNewDevice", GoGetter: "ChallengeRequiredOnNewDevice"},
-			_jsii_.MemberProperty{JsiiProperty: "challengeRequiredOnNewDeviceInput", GoGetter: "ChallengeRequiredOnNewDeviceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceOnlyRememberedOnUserPrompt", GoGetter: "DeviceOnlyRememberedOnUserPrompt"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceOnlyRememberedOnUserPromptInput", GoGetter: "DeviceOnlyRememberedOnUserPromptInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetChallengeRequiredOnNewDevice", GoMethod: "ResetChallengeRequiredOnNewDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeviceOnlyRememberedOnUserPrompt", GoMethod: "ResetDeviceOnlyRememberedOnUserPrompt"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolEmailConfiguration",
-		reflect.TypeOf((*CognitoUserPoolEmailConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) CreationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationDate",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolEmailConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationSet", GoGetter: "ConfigurationSet"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationSetInput", GoGetter: "ConfigurationSetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSendingAccount", GoGetter: "EmailSendingAccount"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSendingAccountInput", GoGetter: "EmailSendingAccountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "fromEmailAddress", GoGetter: "FromEmailAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "fromEmailAddressInput", GoGetter: "FromEmailAddressInput"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "replyToEmailAddress", GoGetter: "ReplyToEmailAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "replyToEmailAddressInput", GoGetter: "ReplyToEmailAddressInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigurationSet", GoMethod: "ResetConfigurationSet"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailSendingAccount", GoMethod: "ResetEmailSendingAccount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFromEmailAddress", GoMethod: "ResetFromEmailAddress"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplyToEmailAddress", GoMethod: "ResetReplyToEmailAddress"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceArn", GoMethod: "ResetSourceArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceArn", GoGetter: "SourceArn"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceArnInput", GoGetter: "SourceArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) CustomDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customDomain",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfig",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DeletionProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSender",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomEmailSender)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DeletionProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaArn", GoGetter: "LambdaArn"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaArnInput", GoGetter: "LambdaArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaVersion", GoGetter: "LambdaVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaVersionInput", GoGetter: "LambdaVersionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSender",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomSmsSender)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DeviceConfiguration() CognitoUserPoolDeviceConfigurationOutputReference {
+	var returns CognitoUserPoolDeviceConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"deviceConfiguration",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaArn", GoGetter: "LambdaArn"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaArnInput", GoGetter: "LambdaArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaVersion", GoGetter: "LambdaVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaVersionInput", GoGetter: "LambdaVersionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DeviceConfigurationInput() *CognitoUserPoolDeviceConfiguration {
+	var returns *CognitoUserPoolDeviceConfiguration
+	_jsii_.Get(
+		j,
+		"deviceConfigurationInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "createAuthChallenge", GoGetter: "CreateAuthChallenge"},
-			_jsii_.MemberProperty{JsiiProperty: "createAuthChallengeInput", GoGetter: "CreateAuthChallengeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customEmailSender", GoGetter: "CustomEmailSender"},
-			_jsii_.MemberProperty{JsiiProperty: "customEmailSenderInput", GoGetter: "CustomEmailSenderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "customMessage", GoGetter: "CustomMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "customMessageInput", GoGetter: "CustomMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "customSmsSender", GoGetter: "CustomSmsSender"},
-			_jsii_.MemberProperty{JsiiProperty: "customSmsSenderInput", GoGetter: "CustomSmsSenderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "defineAuthChallenge", GoGetter: "DefineAuthChallenge"},
-			_jsii_.MemberProperty{JsiiProperty: "defineAuthChallengeInput", GoGetter: "DefineAuthChallengeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "postAuthentication", GoGetter: "PostAuthentication"},
-			_jsii_.MemberProperty{JsiiProperty: "postAuthenticationInput", GoGetter: "PostAuthenticationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "postConfirmation", GoGetter: "PostConfirmation"},
-			_jsii_.MemberProperty{JsiiProperty: "postConfirmationInput", GoGetter: "PostConfirmationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preAuthentication", GoGetter: "PreAuthentication"},
-			_jsii_.MemberProperty{JsiiProperty: "preAuthenticationInput", GoGetter: "PreAuthenticationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preSignUp", GoGetter: "PreSignUp"},
-			_jsii_.MemberProperty{JsiiProperty: "preSignUpInput", GoGetter: "PreSignUpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preTokenGeneration", GoGetter: "PreTokenGeneration"},
-			_jsii_.MemberProperty{JsiiProperty: "preTokenGenerationInput", GoGetter: "PreTokenGenerationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomEmailSender", GoMethod: "PutCustomEmailSender"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomSmsSender", GoMethod: "PutCustomSmsSender"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreateAuthChallenge", GoMethod: "ResetCreateAuthChallenge"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomEmailSender", GoMethod: "ResetCustomEmailSender"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomMessage", GoMethod: "ResetCustomMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomSmsSender", GoMethod: "ResetCustomSmsSender"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefineAuthChallenge", GoMethod: "ResetDefineAuthChallenge"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPostAuthentication", GoMethod: "ResetPostAuthentication"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPostConfirmation", GoMethod: "ResetPostConfirmation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreAuthentication", GoMethod: "ResetPreAuthentication"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreSignUp", GoMethod: "ResetPreSignUp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreTokenGeneration", GoMethod: "ResetPreTokenGeneration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserMigration", GoMethod: "ResetUserMigration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVerifyAuthChallengeResponse", GoMethod: "ResetVerifyAuthChallengeResponse"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "userMigration", GoGetter: "UserMigration"},
-			_jsii_.MemberProperty{JsiiProperty: "userMigrationInput", GoGetter: "UserMigrationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "verifyAuthChallengeResponse", GoGetter: "VerifyAuthChallengeResponse"},
-			_jsii_.MemberProperty{JsiiProperty: "verifyAuthChallengeResponseInput", GoGetter: "VerifyAuthChallengeResponseInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolLambdaConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Domain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domain",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolPasswordPolicy",
-		reflect.TypeOf((*CognitoUserPoolPasswordPolicy)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailConfiguration() CognitoUserPoolEmailConfigurationOutputReference {
+	var returns CognitoUserPoolEmailConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"emailConfiguration",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
-		reflect.TypeOf((*CognitoUserPoolPasswordPolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "minimumLength", GoGetter: "MinimumLength"},
-			_jsii_.MemberProperty{JsiiProperty: "minimumLengthInput", GoGetter: "MinimumLengthInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireLowercase", GoGetter: "RequireLowercase"},
-			_jsii_.MemberProperty{JsiiProperty: "requireLowercaseInput", GoGetter: "RequireLowercaseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireNumbers", GoGetter: "RequireNumbers"},
-			_jsii_.MemberProperty{JsiiProperty: "requireNumbersInput", GoGetter: "RequireNumbersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireSymbols", GoGetter: "RequireSymbols"},
-			_jsii_.MemberProperty{JsiiProperty: "requireSymbolsInput", GoGetter: "RequireSymbolsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireUppercase", GoGetter: "RequireUppercase"},
-			_jsii_.MemberProperty{JsiiProperty: "requireUppercaseInput", GoGetter: "RequireUppercaseInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinimumLength", GoMethod: "ResetMinimumLength"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireLowercase", GoMethod: "ResetRequireLowercase"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireNumbers", GoMethod: "ResetRequireNumbers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireSymbols", GoMethod: "ResetRequireSymbols"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireUppercase", GoMethod: "ResetRequireUppercase"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTemporaryPasswordValidityDays", GoMethod: "ResetTemporaryPasswordValidityDays"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "temporaryPasswordValidityDays", GoGetter: "TemporaryPasswordValidityDays"},
-			_jsii_.MemberProperty{JsiiProperty: "temporaryPasswordValidityDaysInput", GoGetter: "TemporaryPasswordValidityDaysInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailConfigurationInput() *CognitoUserPoolEmailConfiguration {
+	var returns *CognitoUserPoolEmailConfiguration
+	_jsii_.Get(
+		j,
+		"emailConfigurationInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSchema",
-		reflect.TypeOf((*CognitoUserPoolSchema)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailVerificationMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailVerificationMessage",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaList",
-		reflect.TypeOf((*CognitoUserPoolSchemaList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolSchemaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailVerificationMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailVerificationMessageInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraints",
-		reflect.TypeOf((*CognitoUserPoolSchemaNumberAttributeConstraints)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailVerificationSubject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailVerificationSubject",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxValue", GoGetter: "MaxValue"},
-			_jsii_.MemberProperty{JsiiProperty: "maxValueInput", GoGetter: "MaxValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minValue", GoGetter: "MinValue"},
-			_jsii_.MemberProperty{JsiiProperty: "minValueInput", GoGetter: "MinValueInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxValue", GoMethod: "ResetMaxValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinValue", GoMethod: "ResetMinValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailVerificationSubjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailVerificationSubjectInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSchemaOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "attributeDataType", GoGetter: "AttributeDataType"},
-			_jsii_.MemberProperty{JsiiProperty: "attributeDataTypeInput", GoGetter: "AttributeDataTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "developerOnlyAttribute", GoGetter: "DeveloperOnlyAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "developerOnlyAttributeInput", GoGetter: "DeveloperOnlyAttributeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mutable", GoGetter: "Mutable"},
-			_jsii_.MemberProperty{JsiiProperty: "mutableInput", GoGetter: "MutableInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "numberAttributeConstraints", GoGetter: "NumberAttributeConstraints"},
-			_jsii_.MemberProperty{JsiiProperty: "numberAttributeConstraintsInput", GoGetter: "NumberAttributeConstraintsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putNumberAttributeConstraints", GoMethod: "PutNumberAttributeConstraints"},
-			_jsii_.MemberMethod{JsiiMethod: "putStringAttributeConstraints", GoMethod: "PutStringAttributeConstraints"},
-			_jsii_.MemberProperty{JsiiProperty: "required", GoGetter: "Required"},
-			_jsii_.MemberProperty{JsiiProperty: "requiredInput", GoGetter: "RequiredInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeveloperOnlyAttribute", GoMethod: "ResetDeveloperOnlyAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMutable", GoMethod: "ResetMutable"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNumberAttributeConstraints", GoMethod: "ResetNumberAttributeConstraints"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequired", GoMethod: "ResetRequired"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStringAttributeConstraints", GoMethod: "ResetStringAttributeConstraints"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "stringAttributeConstraints", GoGetter: "StringAttributeConstraints"},
-			_jsii_.MemberProperty{JsiiProperty: "stringAttributeConstraintsInput", GoGetter: "StringAttributeConstraintsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpoint",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraints",
-		reflect.TypeOf((*CognitoUserPoolSchemaStringAttributeConstraints)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EstimatedNumberOfUsers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"estimatedNumberOfUsers",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraintsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSchemaStringAttributeConstraintsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxLength", GoGetter: "MaxLength"},
-			_jsii_.MemberProperty{JsiiProperty: "maxLengthInput", GoGetter: "MaxLengthInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minLength", GoGetter: "MinLength"},
-			_jsii_.MemberProperty{JsiiProperty: "minLengthInput", GoGetter: "MinLengthInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxLength", GoMethod: "ResetMaxLength"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinLength", GoMethod: "ResetMinLength"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolSchemaStringAttributeConstraintsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSmsConfiguration",
-		reflect.TypeOf((*CognitoUserPoolSmsConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSmsConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "externalId", GoGetter: "ExternalId"},
-			_jsii_.MemberProperty{JsiiProperty: "externalIdInput", GoGetter: "ExternalIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnsRegion", GoMethod: "ResetSnsRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "snsCallerArn", GoGetter: "SnsCallerArn"},
-			_jsii_.MemberProperty{JsiiProperty: "snsCallerArnInput", GoGetter: "SnsCallerArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "snsRegion", GoGetter: "SnsRegion"},
-			_jsii_.MemberProperty{JsiiProperty: "snsRegionInput", GoGetter: "SnsRegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfiguration",
-		reflect.TypeOf((*CognitoUserPoolSoftwareTokenMfaConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettings",
-		reflect.TypeOf((*CognitoUserPoolUserAttributeUpdateSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) LambdaConfig() CognitoUserPoolLambdaConfigOutputReference {
+	var returns CognitoUserPoolLambdaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"lambdaConfig",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolUserAttributeUpdateSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "attributesRequireVerificationBeforeUpdate", GoGetter: "AttributesRequireVerificationBeforeUpdate"},
-			_jsii_.MemberProperty{JsiiProperty: "attributesRequireVerificationBeforeUpdateInput", GoGetter: "AttributesRequireVerificationBeforeUpdateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) LambdaConfigInput() *CognitoUserPoolLambdaConfig {
+	var returns *CognitoUserPoolLambdaConfig
+	_jsii_.Get(
+		j,
+		"lambdaConfigInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolUserPoolAddOns",
-		reflect.TypeOf((*CognitoUserPoolUserPoolAddOns)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) LastModifiedDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedDate",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolUserPoolAddOnsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityMode", GoGetter: "AdvancedSecurityMode"},
-			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityModeInput", GoGetter: "AdvancedSecurityModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolUsernameConfiguration",
-		reflect.TypeOf((*CognitoUserPoolUsernameConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) MfaConfiguration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mfaConfiguration",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolUsernameConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolUsernameConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "caseSensitive", GoGetter: "CaseSensitive"},
-			_jsii_.MemberProperty{JsiiProperty: "caseSensitiveInput", GoGetter: "CaseSensitiveInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) MfaConfigurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mfaConfigurationInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplate",
-		reflect.TypeOf((*CognitoUserPoolVerificationMessageTemplate)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
-		reflect.TypeOf((*CognitoUserPoolVerificationMessageTemplateOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultEmailOption", GoGetter: "DefaultEmailOption"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultEmailOptionInput", GoGetter: "DefaultEmailOptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailMessage", GoGetter: "EmailMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "emailMessageByLink", GoGetter: "EmailMessageByLink"},
-			_jsii_.MemberProperty{JsiiProperty: "emailMessageByLinkInput", GoGetter: "EmailMessageByLinkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailMessageInput", GoGetter: "EmailMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSubject", GoGetter: "EmailSubject"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSubjectByLink", GoGetter: "EmailSubjectByLink"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSubjectByLinkInput", GoGetter: "EmailSubjectByLinkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailSubjectInput", GoGetter: "EmailSubjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultEmailOption", GoMethod: "ResetDefaultEmailOption"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailMessage", GoMethod: "ResetEmailMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailMessageByLink", GoMethod: "ResetEmailMessageByLink"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailSubject", GoMethod: "ResetEmailSubject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailSubjectByLink", GoMethod: "ResetEmailSubjectByLink"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSmsMessage", GoMethod: "ResetSmsMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "smsMessage", GoGetter: "SmsMessage"},
-			_jsii_.MemberProperty{JsiiProperty: "smsMessageInput", GoGetter: "SmsMessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CognitoUserPoolVerificationMessageTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) PasswordPolicy() CognitoUserPoolPasswordPolicyOutputReference {
+	var returns CognitoUserPoolPasswordPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) PasswordPolicyInput() *CognitoUserPoolPasswordPolicy {
+	var returns *CognitoUserPoolPasswordPolicy
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Schema() CognitoUserPoolSchemaList {
+	var returns CognitoUserPoolSchemaList
+	_jsii_.Get(
+		j,
+		"schema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SchemaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SmsAuthenticationMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"smsAuthenticationMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SmsAuthenticationMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"smsAuthenticationMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SmsConfiguration() CognitoUserPoolSmsConfigurationOutputReference {
+	var returns CognitoUserPoolSmsConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"smsConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SmsConfigurationInput() *CognitoUserPoolSmsConfiguration {
+	var returns *CognitoUserPoolSmsConfiguration
+	_jsii_.Get(
+		j,
+		"smsConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SmsVerificationMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"smsVerificationMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SmsVerificationMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"smsVerificationMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SoftwareTokenMfaConfiguration() CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference {
+	var returns CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"softwareTokenMfaConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SoftwareTokenMfaConfigurationInput() *CognitoUserPoolSoftwareTokenMfaConfiguration {
+	var returns *CognitoUserPoolSoftwareTokenMfaConfiguration
+	_jsii_.Get(
+		j,
+		"softwareTokenMfaConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UserAttributeUpdateSettings() CognitoUserPoolUserAttributeUpdateSettingsOutputReference {
+	var returns CognitoUserPoolUserAttributeUpdateSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"userAttributeUpdateSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UserAttributeUpdateSettingsInput() *CognitoUserPoolUserAttributeUpdateSettings {
+	var returns *CognitoUserPoolUserAttributeUpdateSettings
+	_jsii_.Get(
+		j,
+		"userAttributeUpdateSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UsernameAttributes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usernameAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UsernameAttributesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usernameAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UsernameConfiguration() CognitoUserPoolUsernameConfigurationOutputReference {
+	var returns CognitoUserPoolUsernameConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"usernameConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UsernameConfigurationInput() *CognitoUserPoolUsernameConfiguration {
+	var returns *CognitoUserPoolUsernameConfiguration
+	_jsii_.Get(
+		j,
+		"usernameConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UserPoolAddOns() CognitoUserPoolUserPoolAddOnsOutputReference {
+	var returns CognitoUserPoolUserPoolAddOnsOutputReference
+	_jsii_.Get(
+		j,
+		"userPoolAddOns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UserPoolAddOnsInput() *CognitoUserPoolUserPoolAddOns {
+	var returns *CognitoUserPoolUserPoolAddOns
+	_jsii_.Get(
+		j,
+		"userPoolAddOnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) VerificationMessageTemplate() CognitoUserPoolVerificationMessageTemplateOutputReference {
+	var returns CognitoUserPoolVerificationMessageTemplateOutputReference
+	_jsii_.Get(
+		j,
+		"verificationMessageTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) VerificationMessageTemplateInput() *CognitoUserPoolVerificationMessageTemplate {
+	var returns *CognitoUserPoolVerificationMessageTemplate
+	_jsii_.Get(
+		j,
+		"verificationMessageTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool aws_cognito_user_pool} Resource.
+func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoUserPoolConfig) CognitoUserPool {
+	_init_.Initialize()
+
+	if err := validateNewCognitoUserPoolParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_CognitoUserPool{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool aws_cognito_user_pool} Resource.
+func NewCognitoUserPool_Override(c CognitoUserPool, scope constructs.Construct, id *string, config *CognitoUserPoolConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
+		[]interface{}{scope, id, config},
+		c,
 	)
 }
+
+func (j *jsiiProxy_CognitoUserPool)SetAliasAttributes(val *[]*string) {
+	if err := j.validateSetAliasAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasAttributes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetAutoVerifiedAttributes(val *[]*string) {
+	if err := j.validateSetAutoVerifiedAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoVerifiedAttributes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetDeletionProtection(val *string) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetEmailVerificationMessage(val *string) {
+	if err := j.validateSetEmailVerificationMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailVerificationMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetEmailVerificationSubject(val *string) {
+	if err := j.validateSetEmailVerificationSubjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailVerificationSubject",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetMfaConfiguration(val *string) {
+	if err := j.validateSetMfaConfigurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mfaConfiguration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetSmsAuthenticationMessage(val *string) {
+	if err := j.validateSetSmsAuthenticationMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smsAuthenticationMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetSmsVerificationMessage(val *string) {
+	if err := j.validateSetSmsVerificationMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smsVerificationMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetUsernameAttributes(val *[]*string) {
+	if err := j.validateSetUsernameAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameAttributes",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func CognitoUserPool_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCognitoUserPool_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CognitoUserPool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCognitoUserPool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CognitoUserPool_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCognitoUserPool_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func CognitoUserPool_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutAccountRecoverySetting(value *CognitoUserPoolAccountRecoverySetting) {
+	if err := c.validatePutAccountRecoverySettingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAccountRecoverySetting",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutAdminCreateUserConfig(value *CognitoUserPoolAdminCreateUserConfig) {
+	if err := c.validatePutAdminCreateUserConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdminCreateUserConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutDeviceConfiguration(value *CognitoUserPoolDeviceConfiguration) {
+	if err := c.validatePutDeviceConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeviceConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutEmailConfiguration(value *CognitoUserPoolEmailConfiguration) {
+	if err := c.validatePutEmailConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEmailConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutLambdaConfig(value *CognitoUserPoolLambdaConfig) {
+	if err := c.validatePutLambdaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLambdaConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutPasswordPolicy(value *CognitoUserPoolPasswordPolicy) {
+	if err := c.validatePutPasswordPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPasswordPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutSchema(value interface{}) {
+	if err := c.validatePutSchemaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSchema",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutSmsConfiguration(value *CognitoUserPoolSmsConfiguration) {
+	if err := c.validatePutSmsConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSmsConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutSoftwareTokenMfaConfiguration(value *CognitoUserPoolSoftwareTokenMfaConfiguration) {
+	if err := c.validatePutSoftwareTokenMfaConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSoftwareTokenMfaConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutUserAttributeUpdateSettings(value *CognitoUserPoolUserAttributeUpdateSettings) {
+	if err := c.validatePutUserAttributeUpdateSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUserAttributeUpdateSettings",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutUsernameConfiguration(value *CognitoUserPoolUsernameConfiguration) {
+	if err := c.validatePutUsernameConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUsernameConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutUserPoolAddOns(value *CognitoUserPoolUserPoolAddOns) {
+	if err := c.validatePutUserPoolAddOnsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUserPoolAddOns",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutVerificationMessageTemplate(value *CognitoUserPoolVerificationMessageTemplate) {
+	if err := c.validatePutVerificationMessageTemplateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVerificationMessageTemplate",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetAccountRecoverySetting() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountRecoverySetting",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetAdminCreateUserConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdminCreateUserConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetAliasAttributes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAliasAttributes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetAutoVerifiedAttributes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoVerifiedAttributes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetDeviceConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeviceConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetEmailConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmailConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetEmailVerificationMessage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmailVerificationMessage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetEmailVerificationSubject() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmailVerificationSubject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetLambdaConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLambdaConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetMfaConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMfaConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPasswordPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetSchema() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetSmsAuthenticationMessage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSmsAuthenticationMessage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetSmsConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSmsConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetSmsVerificationMessage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSmsVerificationMessage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetSoftwareTokenMfaConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSoftwareTokenMfaConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetUserAttributeUpdateSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserAttributeUpdateSettings",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetUsernameAttributes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUsernameAttributes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetUsernameConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUsernameConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetUserPoolAddOns() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserPoolAddOns",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetVerificationMessageTemplate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVerificationMessageTemplate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPool) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

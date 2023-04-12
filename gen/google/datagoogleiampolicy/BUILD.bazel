@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagoogleiampolicy",
+    srcs = [
+        "DataGoogleIamPolicy.go",
+        "DataGoogleIamPolicyAuditConfig.go",
+        "DataGoogleIamPolicyAuditConfigAuditLogConfigs.go",
+        "DataGoogleIamPolicyAuditConfigAuditLogConfigsList.go",
+        "DataGoogleIamPolicyAuditConfigAuditLogConfigsList__checks.go",
+        "DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference.go",
+        "DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference__checks.go",
+        "DataGoogleIamPolicyAuditConfigList.go",
+        "DataGoogleIamPolicyAuditConfigList__checks.go",
+        "DataGoogleIamPolicyAuditConfigOutputReference.go",
+        "DataGoogleIamPolicyAuditConfigOutputReference__checks.go",
+        "DataGoogleIamPolicyBinding.go",
+        "DataGoogleIamPolicyBindingCondition.go",
+        "DataGoogleIamPolicyBindingConditionOutputReference.go",
+        "DataGoogleIamPolicyBindingConditionOutputReference__checks.go",
+        "DataGoogleIamPolicyBindingList.go",
+        "DataGoogleIamPolicyBindingList__checks.go",
+        "DataGoogleIamPolicyBindingOutputReference.go",
+        "DataGoogleIamPolicyBindingOutputReference__checks.go",
+        "DataGoogleIamPolicyConfig.go",
+        "DataGoogleIamPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagoogleiampolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagoogleiampolicy/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

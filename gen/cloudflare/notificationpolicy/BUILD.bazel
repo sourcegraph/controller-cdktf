@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "notificationpolicy",
+    srcs = [
+        "NotificationPolicy.go",
+        "NotificationPolicyConfig.go",
+        "NotificationPolicyEmailIntegration.go",
+        "NotificationPolicyEmailIntegrationList.go",
+        "NotificationPolicyEmailIntegrationList__checks.go",
+        "NotificationPolicyEmailIntegrationOutputReference.go",
+        "NotificationPolicyEmailIntegrationOutputReference__checks.go",
+        "NotificationPolicyFilters.go",
+        "NotificationPolicyFiltersOutputReference.go",
+        "NotificationPolicyFiltersOutputReference__checks.go",
+        "NotificationPolicyPagerdutyIntegration.go",
+        "NotificationPolicyPagerdutyIntegrationList.go",
+        "NotificationPolicyPagerdutyIntegrationList__checks.go",
+        "NotificationPolicyPagerdutyIntegrationOutputReference.go",
+        "NotificationPolicyPagerdutyIntegrationOutputReference__checks.go",
+        "NotificationPolicyWebhooksIntegration.go",
+        "NotificationPolicyWebhooksIntegrationList.go",
+        "NotificationPolicyWebhooksIntegrationList__checks.go",
+        "NotificationPolicyWebhooksIntegrationOutputReference.go",
+        "NotificationPolicyWebhooksIntegrationOutputReference__checks.go",
+        "NotificationPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/cloudflare/notificationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/cloudflare/jsii",
+        "//gen/cloudflare/notificationpolicy/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

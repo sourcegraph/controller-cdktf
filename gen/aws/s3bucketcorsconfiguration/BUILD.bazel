@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketcorsconfiguration",
+    srcs = [
+        "S3BucketCorsConfiguration.go",
+        "S3BucketCorsConfigurationConfig.go",
+        "S3BucketCorsConfigurationCorsRule.go",
+        "S3BucketCorsConfigurationCorsRuleList.go",
+        "S3BucketCorsConfigurationCorsRuleList__checks.go",
+        "S3BucketCorsConfigurationCorsRuleOutputReference.go",
+        "S3BucketCorsConfigurationCorsRuleOutputReference__checks.go",
+        "S3BucketCorsConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketcorsconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketcorsconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

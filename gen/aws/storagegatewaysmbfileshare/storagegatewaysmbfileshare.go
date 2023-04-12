@@ -1,228 +1,1894 @@
 package storagegatewaysmbfileshare
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/storagegatewaysmbfileshare/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
-		reflect.TypeOf((*StoragegatewaySmbFileShare)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessBasedEnumeration", GoGetter: "AccessBasedEnumeration"},
-			_jsii_.MemberProperty{JsiiProperty: "accessBasedEnumerationInput", GoGetter: "AccessBasedEnumerationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "adminUserList", GoGetter: "AdminUserList"},
-			_jsii_.MemberProperty{JsiiProperty: "adminUserListInput", GoGetter: "AdminUserListInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "auditDestinationArn", GoGetter: "AuditDestinationArn"},
-			_jsii_.MemberProperty{JsiiProperty: "auditDestinationArnInput", GoGetter: "AuditDestinationArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
-			_jsii_.MemberProperty{JsiiProperty: "authenticationInput", GoGetter: "AuthenticationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketRegion", GoGetter: "BucketRegion"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketRegionInput", GoGetter: "BucketRegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheAttributes", GoGetter: "CacheAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheAttributesInput", GoGetter: "CacheAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "caseSensitivity", GoGetter: "CaseSensitivity"},
-			_jsii_.MemberProperty{JsiiProperty: "caseSensitivityInput", GoGetter: "CaseSensitivityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultStorageClass", GoGetter: "DefaultStorageClass"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultStorageClassInput", GoGetter: "DefaultStorageClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "fileshareId", GoGetter: "FileshareId"},
-			_jsii_.MemberProperty{JsiiProperty: "fileShareName", GoGetter: "FileShareName"},
-			_jsii_.MemberProperty{JsiiProperty: "fileShareNameInput", GoGetter: "FileShareNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberProperty{JsiiProperty: "gatewayArn", GoGetter: "GatewayArn"},
-			_jsii_.MemberProperty{JsiiProperty: "gatewayArnInput", GoGetter: "GatewayArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "guessMimeTypeEnabled", GoGetter: "GuessMimeTypeEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "guessMimeTypeEnabledInput", GoGetter: "GuessMimeTypeEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "invalidUserList", GoGetter: "InvalidUserList"},
-			_jsii_.MemberProperty{JsiiProperty: "invalidUserListInput", GoGetter: "InvalidUserListInput"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsEncrypted", GoGetter: "KmsEncrypted"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsEncryptedInput", GoGetter: "KmsEncryptedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "locationArn", GoGetter: "LocationArn"},
-			_jsii_.MemberProperty{JsiiProperty: "locationArnInput", GoGetter: "LocationArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationPolicy", GoGetter: "NotificationPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationPolicyInput", GoGetter: "NotificationPolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "objectAcl", GoGetter: "ObjectAcl"},
-			_jsii_.MemberProperty{JsiiProperty: "objectAclInput", GoGetter: "ObjectAclInput"},
-			_jsii_.MemberProperty{JsiiProperty: "oplocksEnabled", GoGetter: "OplocksEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "oplocksEnabledInput", GoGetter: "OplocksEnabledInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putCacheAttributes", GoMethod: "PutCacheAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
-			_jsii_.MemberProperty{JsiiProperty: "readOnlyInput", GoGetter: "ReadOnlyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requesterPays", GoGetter: "RequesterPays"},
-			_jsii_.MemberProperty{JsiiProperty: "requesterPaysInput", GoGetter: "RequesterPaysInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessBasedEnumeration", GoMethod: "ResetAccessBasedEnumeration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdminUserList", GoMethod: "ResetAdminUserList"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuditDestinationArn", GoMethod: "ResetAuditDestinationArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthentication", GoMethod: "ResetAuthentication"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketRegion", GoMethod: "ResetBucketRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCacheAttributes", GoMethod: "ResetCacheAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCaseSensitivity", GoMethod: "ResetCaseSensitivity"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultStorageClass", GoMethod: "ResetDefaultStorageClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFileShareName", GoMethod: "ResetFileShareName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGuessMimeTypeEnabled", GoMethod: "ResetGuessMimeTypeEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInvalidUserList", GoMethod: "ResetInvalidUserList"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsEncrypted", GoMethod: "ResetKmsEncrypted"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyArn", GoMethod: "ResetKmsKeyArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotificationPolicy", GoMethod: "ResetNotificationPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetObjectAcl", GoMethod: "ResetObjectAcl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOplocksEnabled", GoMethod: "ResetOplocksEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReadOnly", GoMethod: "ResetReadOnly"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequesterPays", GoMethod: "ResetRequesterPays"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSmbAclEnabled", GoMethod: "ResetSmbAclEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValidUserList", GoMethod: "ResetValidUserList"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcEndpointDnsName", GoMethod: "ResetVpcEndpointDnsName"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "smbAclEnabled", GoGetter: "SmbAclEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "smbAclEnabledInput", GoGetter: "SmbAclEnabledInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "validUserList", GoGetter: "ValidUserList"},
-			_jsii_.MemberProperty{JsiiProperty: "validUserListInput", GoGetter: "ValidUserListInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointDnsName", GoGetter: "VpcEndpointDnsName"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointDnsNameInput", GoGetter: "VpcEndpointDnsNameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StoragegatewaySmbFileShare{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share aws_storagegateway_smb_file_share}.
+type StoragegatewaySmbFileShare interface {
+	cdktf.TerraformResource
+	AccessBasedEnumeration() interface{}
+	SetAccessBasedEnumeration(val interface{})
+	AccessBasedEnumerationInput() interface{}
+	AdminUserList() *[]*string
+	SetAdminUserList(val *[]*string)
+	AdminUserListInput() *[]*string
+	Arn() *string
+	AuditDestinationArn() *string
+	SetAuditDestinationArn(val *string)
+	AuditDestinationArnInput() *string
+	Authentication() *string
+	SetAuthentication(val *string)
+	AuthenticationInput() *string
+	BucketRegion() *string
+	SetBucketRegion(val *string)
+	BucketRegionInput() *string
+	CacheAttributes() StoragegatewaySmbFileShareCacheAttributesOutputReference
+	CacheAttributesInput() *StoragegatewaySmbFileShareCacheAttributes
+	CaseSensitivity() *string
+	SetCaseSensitivity(val *string)
+	CaseSensitivityInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DefaultStorageClass() *string
+	SetDefaultStorageClass(val *string)
+	DefaultStorageClassInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	FileshareId() *string
+	FileShareName() *string
+	SetFileShareName(val *string)
+	FileShareNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GatewayArn() *string
+	SetGatewayArn(val *string)
+	GatewayArnInput() *string
+	GuessMimeTypeEnabled() interface{}
+	SetGuessMimeTypeEnabled(val interface{})
+	GuessMimeTypeEnabledInput() interface{}
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InvalidUserList() *[]*string
+	SetInvalidUserList(val *[]*string)
+	InvalidUserListInput() *[]*string
+	KmsEncrypted() interface{}
+	SetKmsEncrypted(val interface{})
+	KmsEncryptedInput() interface{}
+	KmsKeyArn() *string
+	SetKmsKeyArn(val *string)
+	KmsKeyArnInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocationArn() *string
+	SetLocationArn(val *string)
+	LocationArnInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NotificationPolicy() *string
+	SetNotificationPolicy(val *string)
+	NotificationPolicyInput() *string
+	ObjectAcl() *string
+	SetObjectAcl(val *string)
+	ObjectAclInput() *string
+	OplocksEnabled() interface{}
+	SetOplocksEnabled(val interface{})
+	OplocksEnabledInput() interface{}
+	Path() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ReadOnly() interface{}
+	SetReadOnly(val interface{})
+	ReadOnlyInput() interface{}
+	RequesterPays() interface{}
+	SetRequesterPays(val interface{})
+	RequesterPaysInput() interface{}
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
+	SmbAclEnabled() interface{}
+	SetSmbAclEnabled(val interface{})
+	SmbAclEnabledInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() StoragegatewaySmbFileShareTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	ValidUserList() *[]*string
+	SetValidUserList(val *[]*string)
+	ValidUserListInput() *[]*string
+	VpcEndpointDnsName() *string
+	SetVpcEndpointDnsName(val *string)
+	VpcEndpointDnsNameInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutCacheAttributes(value *StoragegatewaySmbFileShareCacheAttributes)
+	PutTimeouts(value *StoragegatewaySmbFileShareTimeouts)
+	ResetAccessBasedEnumeration()
+	ResetAdminUserList()
+	ResetAuditDestinationArn()
+	ResetAuthentication()
+	ResetBucketRegion()
+	ResetCacheAttributes()
+	ResetCaseSensitivity()
+	ResetDefaultStorageClass()
+	ResetFileShareName()
+	ResetGuessMimeTypeEnabled()
+	ResetId()
+	ResetInvalidUserList()
+	ResetKmsEncrypted()
+	ResetKmsKeyArn()
+	ResetNotificationPolicy()
+	ResetObjectAcl()
+	ResetOplocksEnabled()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetReadOnly()
+	ResetRequesterPays()
+	ResetSmbAclEnabled()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	ResetValidUserList()
+	ResetVpcEndpointDnsName()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for StoragegatewaySmbFileShare
+type jsiiProxy_StoragegatewaySmbFileShare struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumeration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessBasedEnumeration",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributes",
-		reflect.TypeOf((*StoragegatewaySmbFileShareCacheAttributes)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumerationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessBasedEnumerationInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
-		reflect.TypeOf((*StoragegatewaySmbFileShareCacheAttributesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSecondsInput", GoGetter: "CacheStaleTimeoutInSecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCacheStaleTimeoutInSeconds", GoMethod: "ResetCacheStaleTimeoutInSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StoragegatewaySmbFileShareCacheAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AdminUserList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"adminUserList",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareConfig",
-		reflect.TypeOf((*StoragegatewaySmbFileShareConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AdminUserListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"adminUserListInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeouts",
-		reflect.TypeOf((*StoragegatewaySmbFileShareTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
-		reflect.TypeOf((*StoragegatewaySmbFileShareTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StoragegatewaySmbFileShareTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AuditDestinationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auditDestinationArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AuditDestinationArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auditDestinationArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Authentication() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AuthenticationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) BucketRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) BucketRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) CacheAttributes() StoragegatewaySmbFileShareCacheAttributesOutputReference {
+	var returns StoragegatewaySmbFileShareCacheAttributesOutputReference
+	_jsii_.Get(
+		j,
+		"cacheAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) CacheAttributesInput() *StoragegatewaySmbFileShareCacheAttributes {
+	var returns *StoragegatewaySmbFileShareCacheAttributes
+	_jsii_.Get(
+		j,
+		"cacheAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) CaseSensitivity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caseSensitivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) CaseSensitivityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caseSensitivityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) DefaultStorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultStorageClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) DefaultStorageClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultStorageClassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) FileshareId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileshareId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) FileShareName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileShareName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) FileShareNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileShareNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) GatewayArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) GatewayArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guessMimeTypeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guessMimeTypeEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) InvalidUserList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"invalidUserList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) InvalidUserListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"invalidUserListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncrypted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kmsEncrypted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncryptedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kmsEncryptedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) LocationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) LocationArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) NotificationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) NotificationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ObjectAcl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ObjectAclInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectAclInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oplocksEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oplocksEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPays() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requesterPays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPaysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requesterPaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbAclEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbAclEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Timeouts() StoragegatewaySmbFileShareTimeoutsOutputReference {
+	var returns StoragegatewaySmbFileShareTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ValidUserList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validUserList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ValidUserListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validUserListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) VpcEndpointDnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcEndpointDnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) VpcEndpointDnsNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcEndpointDnsNameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
+func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) StoragegatewaySmbFileShare {
+	_init_.Initialize()
+
+	if err := validateNewStoragegatewaySmbFileShareParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_StoragegatewaySmbFileShare{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
+func NewStoragegatewaySmbFileShare_Override(s StoragegatewaySmbFileShare, scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		[]interface{}{scope, id, config},
+		s,
 	)
 }
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAccessBasedEnumeration(val interface{}) {
+	if err := j.validateSetAccessBasedEnumerationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessBasedEnumeration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAdminUserList(val *[]*string) {
+	if err := j.validateSetAdminUserListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminUserList",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAuditDestinationArn(val *string) {
+	if err := j.validateSetAuditDestinationArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditDestinationArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAuthentication(val *string) {
+	if err := j.validateSetAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetBucketRegion(val *string) {
+	if err := j.validateSetBucketRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCaseSensitivity(val *string) {
+	if err := j.validateSetCaseSensitivityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caseSensitivity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetDefaultStorageClass(val *string) {
+	if err := j.validateSetDefaultStorageClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultStorageClass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetFileShareName(val *string) {
+	if err := j.validateSetFileShareNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileShareName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetGatewayArn(val *string) {
+	if err := j.validateSetGatewayArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gatewayArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetGuessMimeTypeEnabled(val interface{}) {
+	if err := j.validateSetGuessMimeTypeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guessMimeTypeEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetInvalidUserList(val *[]*string) {
+	if err := j.validateSetInvalidUserListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"invalidUserList",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetKmsEncrypted(val interface{}) {
+	if err := j.validateSetKmsEncryptedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsEncrypted",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetKmsKeyArn(val *string) {
+	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetLocationArn(val *string) {
+	if err := j.validateSetLocationArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locationArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetNotificationPolicy(val *string) {
+	if err := j.validateSetNotificationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetObjectAcl(val *string) {
+	if err := j.validateSetObjectAclParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectAcl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetOplocksEnabled(val interface{}) {
+	if err := j.validateSetOplocksEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oplocksEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetReadOnly(val interface{}) {
+	if err := j.validateSetReadOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRequesterPays(val interface{}) {
+	if err := j.validateSetRequesterPaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requesterPays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetSmbAclEnabled(val interface{}) {
+	if err := j.validateSetSmbAclEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smbAclEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetValidUserList(val *[]*string) {
+	if err := j.validateSetValidUserListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validUserList",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetVpcEndpointDnsName(val *string) {
+	if err := j.validateSetVpcEndpointDnsNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcEndpointDnsName",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func StoragegatewaySmbFileShare_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewaySmbFileShare_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StoragegatewaySmbFileShare_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewaySmbFileShare_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StoragegatewaySmbFileShare_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewaySmbFileShare_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func StoragegatewaySmbFileShare_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		s,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		s,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) PutCacheAttributes(value *StoragegatewaySmbFileShareCacheAttributes) {
+	if err := s.validatePutCacheAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCacheAttributes",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) PutTimeouts(value *StoragegatewaySmbFileShareTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetAccessBasedEnumeration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessBasedEnumeration",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetAdminUserList() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAdminUserList",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetAuditDestinationArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuditDestinationArn",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetAuthentication() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetBucketRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBucketRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetCacheAttributes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCacheAttributes",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetCaseSensitivity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCaseSensitivity",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetDefaultStorageClass() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultStorageClass",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetFileShareName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFileShareName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetGuessMimeTypeEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGuessMimeTypeEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetInvalidUserList() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInvalidUserList",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetKmsEncrypted() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsEncrypted",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetKmsKeyArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKeyArn",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetNotificationPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotificationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetObjectAcl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObjectAcl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetOplocksEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOplocksEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetReadOnly() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetRequesterPays() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequesterPays",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetSmbAclEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSmbAclEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetValidUserList() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValidUserList",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetVpcEndpointDnsName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVpcEndpointDnsName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

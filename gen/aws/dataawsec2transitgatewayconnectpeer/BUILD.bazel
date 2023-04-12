@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgatewayconnectpeer",
+    srcs = [
+        "DataAwsEc2TransitGatewayConnectPeer.go",
+        "DataAwsEc2TransitGatewayConnectPeerConfig.go",
+        "DataAwsEc2TransitGatewayConnectPeerFilter.go",
+        "DataAwsEc2TransitGatewayConnectPeerFilterList.go",
+        "DataAwsEc2TransitGatewayConnectPeerFilterList__checks.go",
+        "DataAwsEc2TransitGatewayConnectPeerFilterOutputReference.go",
+        "DataAwsEc2TransitGatewayConnectPeerFilterOutputReference__checks.go",
+        "DataAwsEc2TransitGatewayConnectPeerTimeouts.go",
+        "DataAwsEc2TransitGatewayConnectPeerTimeoutsOutputReference.go",
+        "DataAwsEc2TransitGatewayConnectPeerTimeoutsOutputReference__checks.go",
+        "DataAwsEc2TransitGatewayConnectPeer__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgatewayconnectpeer",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgatewayconnectpeer/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

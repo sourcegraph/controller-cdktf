@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "fsxontapvolume",
+    srcs = [
+        "FsxOntapVolume.go",
+        "FsxOntapVolumeConfig.go",
+        "FsxOntapVolumeTieringPolicy.go",
+        "FsxOntapVolumeTieringPolicyOutputReference.go",
+        "FsxOntapVolumeTieringPolicyOutputReference__checks.go",
+        "FsxOntapVolumeTimeouts.go",
+        "FsxOntapVolumeTimeoutsOutputReference.go",
+        "FsxOntapVolumeTimeoutsOutputReference__checks.go",
+        "FsxOntapVolume__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/fsxontapvolume",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/fsxontapvolume/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

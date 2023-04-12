@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsprefixlist",
+    srcs = [
+        "DataAwsPrefixList.go",
+        "DataAwsPrefixListConfig.go",
+        "DataAwsPrefixListFilter.go",
+        "DataAwsPrefixListFilterList.go",
+        "DataAwsPrefixListFilterList__checks.go",
+        "DataAwsPrefixListFilterOutputReference.go",
+        "DataAwsPrefixListFilterOutputReference__checks.go",
+        "DataAwsPrefixListTimeouts.go",
+        "DataAwsPrefixListTimeoutsOutputReference.go",
+        "DataAwsPrefixListTimeoutsOutputReference__checks.go",
+        "DataAwsPrefixList__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsprefixlist",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsprefixlist/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

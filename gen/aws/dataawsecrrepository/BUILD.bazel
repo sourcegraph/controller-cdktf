@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsecrrepository",
+    srcs = [
+        "DataAwsEcrRepository.go",
+        "DataAwsEcrRepositoryConfig.go",
+        "DataAwsEcrRepositoryEncryptionConfiguration.go",
+        "DataAwsEcrRepositoryEncryptionConfigurationList.go",
+        "DataAwsEcrRepositoryEncryptionConfigurationList__checks.go",
+        "DataAwsEcrRepositoryEncryptionConfigurationOutputReference.go",
+        "DataAwsEcrRepositoryEncryptionConfigurationOutputReference__checks.go",
+        "DataAwsEcrRepositoryImageScanningConfiguration.go",
+        "DataAwsEcrRepositoryImageScanningConfigurationList.go",
+        "DataAwsEcrRepositoryImageScanningConfigurationList__checks.go",
+        "DataAwsEcrRepositoryImageScanningConfigurationOutputReference.go",
+        "DataAwsEcrRepositoryImageScanningConfigurationOutputReference__checks.go",
+        "DataAwsEcrRepository__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsecrrepository",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsecrrepository/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

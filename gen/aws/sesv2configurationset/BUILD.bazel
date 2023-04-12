@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sesv2configurationset",
+    srcs = [
+        "Sesv2ConfigurationSet.go",
+        "Sesv2ConfigurationSetConfig.go",
+        "Sesv2ConfigurationSetDeliveryOptions.go",
+        "Sesv2ConfigurationSetDeliveryOptionsOutputReference.go",
+        "Sesv2ConfigurationSetDeliveryOptionsOutputReference__checks.go",
+        "Sesv2ConfigurationSetReputationOptions.go",
+        "Sesv2ConfigurationSetReputationOptionsOutputReference.go",
+        "Sesv2ConfigurationSetReputationOptionsOutputReference__checks.go",
+        "Sesv2ConfigurationSetSendingOptions.go",
+        "Sesv2ConfigurationSetSendingOptionsOutputReference.go",
+        "Sesv2ConfigurationSetSendingOptionsOutputReference__checks.go",
+        "Sesv2ConfigurationSetSuppressionOptions.go",
+        "Sesv2ConfigurationSetSuppressionOptionsOutputReference.go",
+        "Sesv2ConfigurationSetSuppressionOptionsOutputReference__checks.go",
+        "Sesv2ConfigurationSetTrackingOptions.go",
+        "Sesv2ConfigurationSetTrackingOptionsOutputReference.go",
+        "Sesv2ConfigurationSetTrackingOptionsOutputReference__checks.go",
+        "Sesv2ConfigurationSet__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/sesv2configurationset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/sesv2configurationset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

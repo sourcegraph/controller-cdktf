@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleapigeeendpointattachment",
+    srcs = [
+        "GoogleApigeeEndpointAttachment.go",
+        "GoogleApigeeEndpointAttachmentConfig.go",
+        "GoogleApigeeEndpointAttachmentTimeouts.go",
+        "GoogleApigeeEndpointAttachmentTimeoutsOutputReference.go",
+        "GoogleApigeeEndpointAttachmentTimeoutsOutputReference__checks.go",
+        "GoogleApigeeEndpointAttachment__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googleapigeeendpointattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googleapigeeendpointattachment/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

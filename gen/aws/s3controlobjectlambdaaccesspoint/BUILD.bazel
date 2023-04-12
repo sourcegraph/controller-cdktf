@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3controlobjectlambdaaccesspoint",
+    srcs = [
+        "S3ControlObjectLambdaAccessPoint.go",
+        "S3ControlObjectLambdaAccessPointConfig.go",
+        "S3ControlObjectLambdaAccessPointConfiguration.go",
+        "S3ControlObjectLambdaAccessPointConfigurationOutputReference.go",
+        "S3ControlObjectLambdaAccessPointConfigurationOutputReference__checks.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference__checks.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference__checks.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList__checks.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference.go",
+        "S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference__checks.go",
+        "S3ControlObjectLambdaAccessPoint__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3controlobjectlambdaaccesspoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3controlobjectlambdaaccesspoint/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

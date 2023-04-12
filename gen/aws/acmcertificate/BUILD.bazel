@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "acmcertificate",
+    srcs = [
+        "AcmCertificate.go",
+        "AcmCertificateConfig.go",
+        "AcmCertificateDomainValidationOptions.go",
+        "AcmCertificateDomainValidationOptionsList.go",
+        "AcmCertificateDomainValidationOptionsList__checks.go",
+        "AcmCertificateDomainValidationOptionsOutputReference.go",
+        "AcmCertificateDomainValidationOptionsOutputReference__checks.go",
+        "AcmCertificateOptions.go",
+        "AcmCertificateOptionsOutputReference.go",
+        "AcmCertificateOptionsOutputReference__checks.go",
+        "AcmCertificateRenewalSummary.go",
+        "AcmCertificateRenewalSummaryList.go",
+        "AcmCertificateRenewalSummaryList__checks.go",
+        "AcmCertificateRenewalSummaryOutputReference.go",
+        "AcmCertificateRenewalSummaryOutputReference__checks.go",
+        "AcmCertificateValidationOption.go",
+        "AcmCertificateValidationOptionList.go",
+        "AcmCertificateValidationOptionList__checks.go",
+        "AcmCertificateValidationOptionOutputReference.go",
+        "AcmCertificateValidationOptionOutputReference__checks.go",
+        "AcmCertificate__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/acmcertificate",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/acmcertificate/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

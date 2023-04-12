@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlepubsubschema",
+    srcs = [
+        "GooglePubsubSchema.go",
+        "GooglePubsubSchemaConfig.go",
+        "GooglePubsubSchemaTimeouts.go",
+        "GooglePubsubSchemaTimeoutsOutputReference.go",
+        "GooglePubsubSchemaTimeoutsOutputReference__checks.go",
+        "GooglePubsubSchema__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlepubsubschema",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlepubsubschema/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

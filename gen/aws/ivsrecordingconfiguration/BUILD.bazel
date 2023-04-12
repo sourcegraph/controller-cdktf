@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ivsrecordingconfiguration",
+    srcs = [
+        "IvsRecordingConfiguration.go",
+        "IvsRecordingConfigurationConfig.go",
+        "IvsRecordingConfigurationDestinationConfiguration.go",
+        "IvsRecordingConfigurationDestinationConfigurationOutputReference.go",
+        "IvsRecordingConfigurationDestinationConfigurationOutputReference__checks.go",
+        "IvsRecordingConfigurationDestinationConfigurationS3.go",
+        "IvsRecordingConfigurationDestinationConfigurationS3OutputReference.go",
+        "IvsRecordingConfigurationDestinationConfigurationS3OutputReference__checks.go",
+        "IvsRecordingConfigurationThumbnailConfiguration.go",
+        "IvsRecordingConfigurationThumbnailConfigurationOutputReference.go",
+        "IvsRecordingConfigurationThumbnailConfigurationOutputReference__checks.go",
+        "IvsRecordingConfigurationTimeouts.go",
+        "IvsRecordingConfigurationTimeoutsOutputReference.go",
+        "IvsRecordingConfigurationTimeoutsOutputReference__checks.go",
+        "IvsRecordingConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ivsrecordingconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ivsrecordingconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

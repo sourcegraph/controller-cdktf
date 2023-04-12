@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgatewayvpcattachments",
+    srcs = [
+        "DataAwsEc2TransitGatewayVpcAttachments.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsConfig.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsFilter.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsFilterList.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsFilterList__checks.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsFilterOutputReference.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsFilterOutputReference__checks.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsTimeouts.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsTimeoutsOutputReference.go",
+        "DataAwsEc2TransitGatewayVpcAttachmentsTimeoutsOutputReference__checks.go",
+        "DataAwsEc2TransitGatewayVpcAttachments__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgatewayvpcattachments",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgatewayvpcattachments/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

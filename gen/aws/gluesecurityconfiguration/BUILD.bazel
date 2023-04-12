@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gluesecurityconfiguration",
+    srcs = [
+        "GlueSecurityConfiguration.go",
+        "GlueSecurityConfigurationConfig.go",
+        "GlueSecurityConfigurationEncryptionConfiguration.go",
+        "GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.go",
+        "GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference.go",
+        "GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference__checks.go",
+        "GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.go",
+        "GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference.go",
+        "GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference__checks.go",
+        "GlueSecurityConfigurationEncryptionConfigurationOutputReference.go",
+        "GlueSecurityConfigurationEncryptionConfigurationOutputReference__checks.go",
+        "GlueSecurityConfigurationEncryptionConfigurationS3Encryption.go",
+        "GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference.go",
+        "GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference__checks.go",
+        "GlueSecurityConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gluesecurityconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gluesecurityconfiguration/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

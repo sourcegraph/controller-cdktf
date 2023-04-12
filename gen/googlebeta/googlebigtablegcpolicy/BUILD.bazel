@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebigtablegcpolicy",
+    srcs = [
+        "GoogleBigtableGcPolicy.go",
+        "GoogleBigtableGcPolicyConfig.go",
+        "GoogleBigtableGcPolicyMaxAge.go",
+        "GoogleBigtableGcPolicyMaxAgeOutputReference.go",
+        "GoogleBigtableGcPolicyMaxAgeOutputReference__checks.go",
+        "GoogleBigtableGcPolicyMaxVersion.go",
+        "GoogleBigtableGcPolicyMaxVersionList.go",
+        "GoogleBigtableGcPolicyMaxVersionList__checks.go",
+        "GoogleBigtableGcPolicyMaxVersionOutputReference.go",
+        "GoogleBigtableGcPolicyMaxVersionOutputReference__checks.go",
+        "GoogleBigtableGcPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlebigtablegcpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlebigtablegcpolicy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

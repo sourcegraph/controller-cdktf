@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsemrcontainersvirtualcluster",
+    srcs = [
+        "DataAwsEmrcontainersVirtualCluster.go",
+        "DataAwsEmrcontainersVirtualClusterConfig.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProvider.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfo.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfo.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList__checks.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference__checks.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoList.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoList__checks.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference__checks.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderList.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderList__checks.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference.go",
+        "DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference__checks.go",
+        "DataAwsEmrcontainersVirtualCluster__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsemrcontainersvirtualcluster",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsemrcontainersvirtualcluster/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

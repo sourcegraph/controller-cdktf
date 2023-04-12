@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2clientvpnendpoint",
+    srcs = [
+        "Ec2ClientVpnEndpoint.go",
+        "Ec2ClientVpnEndpointAuthenticationOptions.go",
+        "Ec2ClientVpnEndpointAuthenticationOptionsList.go",
+        "Ec2ClientVpnEndpointAuthenticationOptionsList__checks.go",
+        "Ec2ClientVpnEndpointAuthenticationOptionsOutputReference.go",
+        "Ec2ClientVpnEndpointAuthenticationOptionsOutputReference__checks.go",
+        "Ec2ClientVpnEndpointClientConnectOptions.go",
+        "Ec2ClientVpnEndpointClientConnectOptionsOutputReference.go",
+        "Ec2ClientVpnEndpointClientConnectOptionsOutputReference__checks.go",
+        "Ec2ClientVpnEndpointClientLoginBannerOptions.go",
+        "Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference.go",
+        "Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference__checks.go",
+        "Ec2ClientVpnEndpointConfig.go",
+        "Ec2ClientVpnEndpointConnectionLogOptions.go",
+        "Ec2ClientVpnEndpointConnectionLogOptionsOutputReference.go",
+        "Ec2ClientVpnEndpointConnectionLogOptionsOutputReference__checks.go",
+        "Ec2ClientVpnEndpoint__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2clientvpnendpoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2clientvpnendpoint/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

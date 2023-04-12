@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlegkehubmembership",
+    srcs = [
+        "GoogleGkeHubMembership.go",
+        "GoogleGkeHubMembershipAuthority.go",
+        "GoogleGkeHubMembershipAuthorityOutputReference.go",
+        "GoogleGkeHubMembershipAuthorityOutputReference__checks.go",
+        "GoogleGkeHubMembershipConfig.go",
+        "GoogleGkeHubMembershipEndpoint.go",
+        "GoogleGkeHubMembershipEndpointGkeCluster.go",
+        "GoogleGkeHubMembershipEndpointGkeClusterOutputReference.go",
+        "GoogleGkeHubMembershipEndpointGkeClusterOutputReference__checks.go",
+        "GoogleGkeHubMembershipEndpointOutputReference.go",
+        "GoogleGkeHubMembershipEndpointOutputReference__checks.go",
+        "GoogleGkeHubMembershipTimeouts.go",
+        "GoogleGkeHubMembershipTimeoutsOutputReference.go",
+        "GoogleGkeHubMembershipTimeoutsOutputReference__checks.go",
+        "GoogleGkeHubMembership__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlegkehubmembership",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlegkehubmembership/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

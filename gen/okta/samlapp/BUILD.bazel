@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "samlapp",
+    srcs = [
+        "SamlApp.go",
+        "SamlAppAttributeStatements.go",
+        "SamlAppAttributeStatementsList.go",
+        "SamlAppAttributeStatementsList__checks.go",
+        "SamlAppAttributeStatementsOutputReference.go",
+        "SamlAppAttributeStatementsOutputReference__checks.go",
+        "SamlAppConfig.go",
+        "SamlAppKeys.go",
+        "SamlAppKeysList.go",
+        "SamlAppKeysList__checks.go",
+        "SamlAppKeysOutputReference.go",
+        "SamlAppKeysOutputReference__checks.go",
+        "SamlAppTimeouts.go",
+        "SamlAppTimeoutsOutputReference.go",
+        "SamlAppTimeoutsOutputReference__checks.go",
+        "SamlAppUsers.go",
+        "SamlAppUsersList.go",
+        "SamlAppUsersList__checks.go",
+        "SamlAppUsersOutputReference.go",
+        "SamlAppUsersOutputReference__checks.go",
+        "SamlApp__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/samlapp",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/jsii",
+        "//gen/okta/samlapp/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

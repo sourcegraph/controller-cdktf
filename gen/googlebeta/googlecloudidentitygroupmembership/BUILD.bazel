@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudidentitygroupmembership",
+    srcs = [
+        "GoogleCloudIdentityGroupMembership.go",
+        "GoogleCloudIdentityGroupMembershipConfig.go",
+        "GoogleCloudIdentityGroupMembershipMemberKey.go",
+        "GoogleCloudIdentityGroupMembershipMemberKeyOutputReference.go",
+        "GoogleCloudIdentityGroupMembershipMemberKeyOutputReference__checks.go",
+        "GoogleCloudIdentityGroupMembershipPreferredMemberKey.go",
+        "GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference.go",
+        "GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference__checks.go",
+        "GoogleCloudIdentityGroupMembershipRoles.go",
+        "GoogleCloudIdentityGroupMembershipRolesList.go",
+        "GoogleCloudIdentityGroupMembershipRolesList__checks.go",
+        "GoogleCloudIdentityGroupMembershipRolesOutputReference.go",
+        "GoogleCloudIdentityGroupMembershipRolesOutputReference__checks.go",
+        "GoogleCloudIdentityGroupMembershipTimeouts.go",
+        "GoogleCloudIdentityGroupMembershipTimeoutsOutputReference.go",
+        "GoogleCloudIdentityGroupMembershipTimeoutsOutputReference__checks.go",
+        "GoogleCloudIdentityGroupMembership__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecloudidentitygroupmembership",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecloudidentitygroupmembership/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

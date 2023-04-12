@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "servicecatalogprovisionedproduct",
+    srcs = [
+        "ServicecatalogProvisionedProduct.go",
+        "ServicecatalogProvisionedProductConfig.go",
+        "ServicecatalogProvisionedProductOutputs.go",
+        "ServicecatalogProvisionedProductOutputsList.go",
+        "ServicecatalogProvisionedProductOutputsList__checks.go",
+        "ServicecatalogProvisionedProductOutputsOutputReference.go",
+        "ServicecatalogProvisionedProductOutputsOutputReference__checks.go",
+        "ServicecatalogProvisionedProductProvisioningParameters.go",
+        "ServicecatalogProvisionedProductProvisioningParametersList.go",
+        "ServicecatalogProvisionedProductProvisioningParametersList__checks.go",
+        "ServicecatalogProvisionedProductProvisioningParametersOutputReference.go",
+        "ServicecatalogProvisionedProductProvisioningParametersOutputReference__checks.go",
+        "ServicecatalogProvisionedProductStackSetProvisioningPreferences.go",
+        "ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference.go",
+        "ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference__checks.go",
+        "ServicecatalogProvisionedProductTimeouts.go",
+        "ServicecatalogProvisionedProductTimeoutsOutputReference.go",
+        "ServicecatalogProvisionedProductTimeoutsOutputReference__checks.go",
+        "ServicecatalogProvisionedProduct__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/servicecatalogprovisionedproduct",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/servicecatalogprovisionedproduct/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

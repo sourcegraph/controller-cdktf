@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computesnapshot",
+    srcs = [
+        "ComputeSnapshot.go",
+        "ComputeSnapshotConfig.go",
+        "ComputeSnapshotSnapshotEncryptionKey.go",
+        "ComputeSnapshotSnapshotEncryptionKeyOutputReference.go",
+        "ComputeSnapshotSnapshotEncryptionKeyOutputReference__checks.go",
+        "ComputeSnapshotSourceDiskEncryptionKey.go",
+        "ComputeSnapshotSourceDiskEncryptionKeyOutputReference.go",
+        "ComputeSnapshotSourceDiskEncryptionKeyOutputReference__checks.go",
+        "ComputeSnapshotTimeouts.go",
+        "ComputeSnapshotTimeoutsOutputReference.go",
+        "ComputeSnapshotTimeoutsOutputReference__checks.go",
+        "ComputeSnapshot__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computesnapshot",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computesnapshot/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

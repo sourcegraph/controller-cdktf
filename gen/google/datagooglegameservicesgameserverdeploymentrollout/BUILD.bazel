@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "datagooglegameservicesgameserverdeploymentrollout",
+    srcs = [
+        "DataGoogleGameServicesGameServerDeploymentRollout.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutConfig.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrides.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList__checks.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference__checks.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorList.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorList__checks.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference.go",
+        "DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference__checks.go",
+        "DataGoogleGameServicesGameServerDeploymentRollout__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/datagooglegameservicesgameserverdeploymentrollout",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/datagooglegameservicesgameserverdeploymentrollout/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

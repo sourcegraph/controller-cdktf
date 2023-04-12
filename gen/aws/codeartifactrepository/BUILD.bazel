@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codeartifactrepository",
+    srcs = [
+        "CodeartifactRepository.go",
+        "CodeartifactRepositoryConfig.go",
+        "CodeartifactRepositoryExternalConnections.go",
+        "CodeartifactRepositoryExternalConnectionsOutputReference.go",
+        "CodeartifactRepositoryExternalConnectionsOutputReference__checks.go",
+        "CodeartifactRepositoryUpstream.go",
+        "CodeartifactRepositoryUpstreamList.go",
+        "CodeartifactRepositoryUpstreamList__checks.go",
+        "CodeartifactRepositoryUpstreamOutputReference.go",
+        "CodeartifactRepositoryUpstreamOutputReference__checks.go",
+        "CodeartifactRepository__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codeartifactrepository",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codeartifactrepository/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

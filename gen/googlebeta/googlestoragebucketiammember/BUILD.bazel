@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlestoragebucketiammember",
+    srcs = [
+        "GoogleStorageBucketIamMember.go",
+        "GoogleStorageBucketIamMemberCondition.go",
+        "GoogleStorageBucketIamMemberConditionOutputReference.go",
+        "GoogleStorageBucketIamMemberConditionOutputReference__checks.go",
+        "GoogleStorageBucketIamMemberConfig.go",
+        "GoogleStorageBucketIamMember__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlestoragebucketiammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlestoragebucketiammember/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

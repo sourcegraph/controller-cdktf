@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lakeformationdatalakesettings",
+    srcs = [
+        "LakeformationDataLakeSettings.go",
+        "LakeformationDataLakeSettingsConfig.go",
+        "LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions.go",
+        "LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList.go",
+        "LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList__checks.go",
+        "LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference.go",
+        "LakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference__checks.go",
+        "LakeformationDataLakeSettingsCreateTableDefaultPermissions.go",
+        "LakeformationDataLakeSettingsCreateTableDefaultPermissionsList.go",
+        "LakeformationDataLakeSettingsCreateTableDefaultPermissionsList__checks.go",
+        "LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference.go",
+        "LakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference__checks.go",
+        "LakeformationDataLakeSettings__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/lakeformationdatalakesettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/lakeformationdatalakesettings/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

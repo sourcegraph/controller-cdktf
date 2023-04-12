@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputesubnetwork",
+    srcs = [
+        "GoogleComputeSubnetwork.go",
+        "GoogleComputeSubnetworkConfig.go",
+        "GoogleComputeSubnetworkLogConfig.go",
+        "GoogleComputeSubnetworkLogConfigOutputReference.go",
+        "GoogleComputeSubnetworkLogConfigOutputReference__checks.go",
+        "GoogleComputeSubnetworkSecondaryIpRange.go",
+        "GoogleComputeSubnetworkSecondaryIpRangeList.go",
+        "GoogleComputeSubnetworkSecondaryIpRangeList__checks.go",
+        "GoogleComputeSubnetworkSecondaryIpRangeOutputReference.go",
+        "GoogleComputeSubnetworkSecondaryIpRangeOutputReference__checks.go",
+        "GoogleComputeSubnetworkTimeouts.go",
+        "GoogleComputeSubnetworkTimeoutsOutputReference.go",
+        "GoogleComputeSubnetworkTimeoutsOutputReference__checks.go",
+        "GoogleComputeSubnetwork__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecomputesubnetwork",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecomputesubnetwork/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeregiondisk",
+    srcs = [
+        "ComputeRegionDisk.go",
+        "ComputeRegionDiskConfig.go",
+        "ComputeRegionDiskDiskEncryptionKey.go",
+        "ComputeRegionDiskDiskEncryptionKeyOutputReference.go",
+        "ComputeRegionDiskDiskEncryptionKeyOutputReference__checks.go",
+        "ComputeRegionDiskSourceSnapshotEncryptionKey.go",
+        "ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference.go",
+        "ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference__checks.go",
+        "ComputeRegionDiskTimeouts.go",
+        "ComputeRegionDiskTimeoutsOutputReference.go",
+        "ComputeRegionDiskTimeoutsOutputReference__checks.go",
+        "ComputeRegionDisk__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeregiondisk",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeregiondisk/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

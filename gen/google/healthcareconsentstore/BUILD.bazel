@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "healthcareconsentstore",
+    srcs = [
+        "HealthcareConsentStore.go",
+        "HealthcareConsentStoreConfig.go",
+        "HealthcareConsentStoreTimeouts.go",
+        "HealthcareConsentStoreTimeoutsOutputReference.go",
+        "HealthcareConsentStoreTimeoutsOutputReference__checks.go",
+        "HealthcareConsentStore__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/healthcareconsentstore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/healthcareconsentstore/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

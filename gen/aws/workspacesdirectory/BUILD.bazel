@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "workspacesdirectory",
+    srcs = [
+        "WorkspacesDirectory.go",
+        "WorkspacesDirectoryConfig.go",
+        "WorkspacesDirectorySelfServicePermissions.go",
+        "WorkspacesDirectorySelfServicePermissionsOutputReference.go",
+        "WorkspacesDirectorySelfServicePermissionsOutputReference__checks.go",
+        "WorkspacesDirectoryWorkspaceAccessProperties.go",
+        "WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference.go",
+        "WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference__checks.go",
+        "WorkspacesDirectoryWorkspaceCreationProperties.go",
+        "WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference.go",
+        "WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference__checks.go",
+        "WorkspacesDirectory__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/workspacesdirectory",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/workspacesdirectory/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

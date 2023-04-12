@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowintent",
+    srcs = [
+        "DialogflowIntent.go",
+        "DialogflowIntentConfig.go",
+        "DialogflowIntentFollowupIntentInfo.go",
+        "DialogflowIntentFollowupIntentInfoList.go",
+        "DialogflowIntentFollowupIntentInfoList__checks.go",
+        "DialogflowIntentFollowupIntentInfoOutputReference.go",
+        "DialogflowIntentFollowupIntentInfoOutputReference__checks.go",
+        "DialogflowIntentTimeouts.go",
+        "DialogflowIntentTimeoutsOutputReference.go",
+        "DialogflowIntentTimeoutsOutputReference__checks.go",
+        "DialogflowIntent__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowintent",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowintent/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

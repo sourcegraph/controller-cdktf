@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsami",
+    srcs = [
+        "DataAwsAmi.go",
+        "DataAwsAmiBlockDeviceMappings.go",
+        "DataAwsAmiBlockDeviceMappingsList.go",
+        "DataAwsAmiBlockDeviceMappingsList__checks.go",
+        "DataAwsAmiBlockDeviceMappingsOutputReference.go",
+        "DataAwsAmiBlockDeviceMappingsOutputReference__checks.go",
+        "DataAwsAmiConfig.go",
+        "DataAwsAmiFilter.go",
+        "DataAwsAmiFilterList.go",
+        "DataAwsAmiFilterList__checks.go",
+        "DataAwsAmiFilterOutputReference.go",
+        "DataAwsAmiFilterOutputReference__checks.go",
+        "DataAwsAmiProductCodes.go",
+        "DataAwsAmiProductCodesList.go",
+        "DataAwsAmiProductCodesList__checks.go",
+        "DataAwsAmiProductCodesOutputReference.go",
+        "DataAwsAmiProductCodesOutputReference__checks.go",
+        "DataAwsAmiTimeouts.go",
+        "DataAwsAmiTimeoutsOutputReference.go",
+        "DataAwsAmiTimeoutsOutputReference__checks.go",
+        "DataAwsAmi__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsami",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsami/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

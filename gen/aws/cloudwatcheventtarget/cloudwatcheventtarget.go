@@ -1,770 +1,1440 @@
 package cloudwatcheventtarget
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatcheventtarget/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
-		reflect.TypeOf((*CloudwatchEventTarget)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "batchTarget", GoGetter: "BatchTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "batchTargetInput", GoGetter: "BatchTargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "deadLetterConfig", GoGetter: "DeadLetterConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "deadLetterConfigInput", GoGetter: "DeadLetterConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "ecsTarget", GoGetter: "EcsTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "ecsTargetInput", GoGetter: "EcsTargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "eventBusName", GoGetter: "EventBusName"},
-			_jsii_.MemberProperty{JsiiProperty: "eventBusNameInput", GoGetter: "EventBusNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "httpTarget", GoGetter: "HttpTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "httpTargetInput", GoGetter: "HttpTargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
-			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inputPath", GoGetter: "InputPath"},
-			_jsii_.MemberProperty{JsiiProperty: "inputPathInput", GoGetter: "InputPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inputTransformer", GoGetter: "InputTransformer"},
-			_jsii_.MemberProperty{JsiiProperty: "inputTransformerInput", GoGetter: "InputTransformerInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kinesisTarget", GoGetter: "KinesisTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "kinesisTargetInput", GoGetter: "KinesisTargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putBatchTarget", GoMethod: "PutBatchTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "putDeadLetterConfig", GoMethod: "PutDeadLetterConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putEcsTarget", GoMethod: "PutEcsTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "putHttpTarget", GoMethod: "PutHttpTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "putInputTransformer", GoMethod: "PutInputTransformer"},
-			_jsii_.MemberMethod{JsiiMethod: "putKinesisTarget", GoMethod: "PutKinesisTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "putRedshiftTarget", GoMethod: "PutRedshiftTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "putRetryPolicy", GoMethod: "PutRetryPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putRunCommandTargets", GoMethod: "PutRunCommandTargets"},
-			_jsii_.MemberMethod{JsiiMethod: "putSqsTarget", GoMethod: "PutSqsTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "redshiftTarget", GoGetter: "RedshiftTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "redshiftTargetInput", GoGetter: "RedshiftTargetInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBatchTarget", GoMethod: "ResetBatchTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeadLetterConfig", GoMethod: "ResetDeadLetterConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEcsTarget", GoMethod: "ResetEcsTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEventBusName", GoMethod: "ResetEventBusName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpTarget", GoMethod: "ResetHttpTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInput", GoMethod: "ResetInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInputPath", GoMethod: "ResetInputPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInputTransformer", GoMethod: "ResetInputTransformer"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKinesisTarget", GoMethod: "ResetKinesisTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedshiftTarget", GoMethod: "ResetRedshiftTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetryPolicy", GoMethod: "ResetRetryPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRoleArn", GoMethod: "ResetRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRunCommandTargets", GoMethod: "ResetRunCommandTargets"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSqsTarget", GoMethod: "ResetSqsTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetId", GoMethod: "ResetTargetId"},
-			_jsii_.MemberProperty{JsiiProperty: "retryPolicy", GoGetter: "RetryPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "retryPolicyInput", GoGetter: "RetryPolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rule", GoGetter: "Rule"},
-			_jsii_.MemberProperty{JsiiProperty: "ruleInput", GoGetter: "RuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "runCommandTargets", GoGetter: "RunCommandTargets"},
-			_jsii_.MemberProperty{JsiiProperty: "runCommandTargetsInput", GoGetter: "RunCommandTargetsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sqsTarget", GoGetter: "SqsTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "sqsTargetInput", GoGetter: "SqsTargetInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "targetId", GoGetter: "TargetId"},
-			_jsii_.MemberProperty{JsiiProperty: "targetIdInput", GoGetter: "TargetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTarget{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target aws_cloudwatch_event_target}.
+type CloudwatchEventTarget interface {
+	cdktf.TerraformResource
+	Arn() *string
+	SetArn(val *string)
+	ArnInput() *string
+	BatchTarget() CloudwatchEventTargetBatchTargetOutputReference
+	BatchTargetInput() *CloudwatchEventTargetBatchTarget
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DeadLetterConfig() CloudwatchEventTargetDeadLetterConfigOutputReference
+	DeadLetterConfigInput() *CloudwatchEventTargetDeadLetterConfig
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EcsTarget() CloudwatchEventTargetEcsTargetOutputReference
+	EcsTargetInput() *CloudwatchEventTargetEcsTarget
+	EventBusName() *string
+	SetEventBusName(val *string)
+	EventBusNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	HttpTarget() CloudwatchEventTargetHttpTargetOutputReference
+	HttpTargetInput() *CloudwatchEventTargetHttpTarget
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Input() *string
+	SetInput(val *string)
+	InputInput() *string
+	InputPath() *string
+	SetInputPath(val *string)
+	InputPathInput() *string
+	InputTransformer() CloudwatchEventTargetInputTransformerOutputReference
+	InputTransformerInput() *CloudwatchEventTargetInputTransformer
+	KinesisTarget() CloudwatchEventTargetKinesisTargetOutputReference
+	KinesisTargetInput() *CloudwatchEventTargetKinesisTarget
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RedshiftTarget() CloudwatchEventTargetRedshiftTargetOutputReference
+	RedshiftTargetInput() *CloudwatchEventTargetRedshiftTarget
+	RetryPolicy() CloudwatchEventTargetRetryPolicyOutputReference
+	RetryPolicyInput() *CloudwatchEventTargetRetryPolicy
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
+	Rule() *string
+	SetRule(val *string)
+	RuleInput() *string
+	RunCommandTargets() CloudwatchEventTargetRunCommandTargetsList
+	RunCommandTargetsInput() interface{}
+	SqsTarget() CloudwatchEventTargetSqsTargetOutputReference
+	SqsTargetInput() *CloudwatchEventTargetSqsTarget
+	TargetId() *string
+	SetTargetId(val *string)
+	TargetIdInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutBatchTarget(value *CloudwatchEventTargetBatchTarget)
+	PutDeadLetterConfig(value *CloudwatchEventTargetDeadLetterConfig)
+	PutEcsTarget(value *CloudwatchEventTargetEcsTarget)
+	PutHttpTarget(value *CloudwatchEventTargetHttpTarget)
+	PutInputTransformer(value *CloudwatchEventTargetInputTransformer)
+	PutKinesisTarget(value *CloudwatchEventTargetKinesisTarget)
+	PutRedshiftTarget(value *CloudwatchEventTargetRedshiftTarget)
+	PutRetryPolicy(value *CloudwatchEventTargetRetryPolicy)
+	PutRunCommandTargets(value interface{})
+	PutSqsTarget(value *CloudwatchEventTargetSqsTarget)
+	ResetBatchTarget()
+	ResetDeadLetterConfig()
+	ResetEcsTarget()
+	ResetEventBusName()
+	ResetHttpTarget()
+	ResetId()
+	ResetInput()
+	ResetInputPath()
+	ResetInputTransformer()
+	ResetKinesisTarget()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRedshiftTarget()
+	ResetRetryPolicy()
+	ResetRoleArn()
+	ResetRunCommandTargets()
+	ResetSqsTarget()
+	ResetTargetId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for CloudwatchEventTarget
+type jsiiProxy_CloudwatchEventTarget struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTarget",
-		reflect.TypeOf((*CloudwatchEventTargetBatchTarget)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) ArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arnInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetBatchTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "arraySize", GoGetter: "ArraySize"},
-			_jsii_.MemberProperty{JsiiProperty: "arraySizeInput", GoGetter: "ArraySizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jobAttempts", GoGetter: "JobAttempts"},
-			_jsii_.MemberProperty{JsiiProperty: "jobAttemptsInput", GoGetter: "JobAttemptsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "jobDefinition", GoGetter: "JobDefinition"},
-			_jsii_.MemberProperty{JsiiProperty: "jobDefinitionInput", GoGetter: "JobDefinitionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "jobName", GoGetter: "JobName"},
-			_jsii_.MemberProperty{JsiiProperty: "jobNameInput", GoGetter: "JobNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArraySize", GoMethod: "ResetArraySize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJobAttempts", GoMethod: "ResetJobAttempts"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetBatchTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) BatchTarget() CloudwatchEventTargetBatchTargetOutputReference {
+	var returns CloudwatchEventTargetBatchTargetOutputReference
+	_jsii_.Get(
+		j,
+		"batchTarget",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetConfig",
-		reflect.TypeOf((*CloudwatchEventTargetConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) BatchTargetInput() *CloudwatchEventTargetBatchTarget {
+	var returns *CloudwatchEventTargetBatchTarget
+	_jsii_.Get(
+		j,
+		"batchTargetInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfig",
-		reflect.TypeOf((*CloudwatchEventTargetDeadLetterConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetDeadLetterConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArn", GoMethod: "ResetArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetDeadLetterConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTarget",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTarget)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategy",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetCapacityProviderStrategy)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyList",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetCapacityProviderStrategyList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) DeadLetterConfig() CloudwatchEventTargetDeadLetterConfigOutputReference {
+	var returns CloudwatchEventTargetDeadLetterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"deadLetterConfig",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},
-			_jsii_.MemberProperty{JsiiProperty: "baseInput", GoGetter: "BaseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "capacityProvider", GoGetter: "CapacityProvider"},
-			_jsii_.MemberProperty{JsiiProperty: "capacityProviderInput", GoGetter: "CapacityProviderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBase", GoMethod: "ResetBase"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWeight", GoMethod: "ResetWeight"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
-			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) DeadLetterConfigInput() *CloudwatchEventTargetDeadLetterConfig {
+	var returns *CloudwatchEventTargetDeadLetterConfig
+	_jsii_.Get(
+		j,
+		"deadLetterConfigInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfiguration",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetNetworkConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "assignPublicIp", GoGetter: "AssignPublicIp"},
-			_jsii_.MemberProperty{JsiiProperty: "assignPublicIpInput", GoGetter: "AssignPublicIpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAssignPublicIp", GoMethod: "ResetAssignPublicIp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroups", GoMethod: "ResetSecurityGroups"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroups", GoGetter: "SecurityGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupsInput", GoGetter: "SecurityGroupsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnets", GoGetter: "Subnets"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetsInput", GoGetter: "SubnetsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) EcsTarget() CloudwatchEventTargetEcsTargetOutputReference {
+	var returns CloudwatchEventTargetEcsTargetOutputReference
+	_jsii_.Get(
+		j,
+		"ecsTarget",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategy", GoGetter: "CapacityProviderStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategyInput", GoGetter: "CapacityProviderStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enableEcsManagedTags", GoGetter: "EnableEcsManagedTags"},
-			_jsii_.MemberProperty{JsiiProperty: "enableEcsManagedTagsInput", GoGetter: "EnableEcsManagedTagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableExecuteCommand", GoGetter: "EnableExecuteCommand"},
-			_jsii_.MemberProperty{JsiiProperty: "enableExecuteCommandInput", GoGetter: "EnableExecuteCommandInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "group", GoGetter: "Group"},
-			_jsii_.MemberProperty{JsiiProperty: "groupInput", GoGetter: "GroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "launchType", GoGetter: "LaunchType"},
-			_jsii_.MemberProperty{JsiiProperty: "launchTypeInput", GoGetter: "LaunchTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "networkConfiguration", GoGetter: "NetworkConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "networkConfigurationInput", GoGetter: "NetworkConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "placementConstraint", GoGetter: "PlacementConstraint"},
-			_jsii_.MemberProperty{JsiiProperty: "placementConstraintInput", GoGetter: "PlacementConstraintInput"},
-			_jsii_.MemberProperty{JsiiProperty: "platformVersion", GoGetter: "PlatformVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "platformVersionInput", GoGetter: "PlatformVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "propagateTags", GoGetter: "PropagateTags"},
-			_jsii_.MemberProperty{JsiiProperty: "propagateTagsInput", GoGetter: "PropagateTagsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCapacityProviderStrategy", GoMethod: "PutCapacityProviderStrategy"},
-			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfiguration", GoMethod: "PutNetworkConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putPlacementConstraint", GoMethod: "PutPlacementConstraint"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCapacityProviderStrategy", GoMethod: "ResetCapacityProviderStrategy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableEcsManagedTags", GoMethod: "ResetEnableEcsManagedTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableExecuteCommand", GoMethod: "ResetEnableExecuteCommand"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroup", GoMethod: "ResetGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLaunchType", GoMethod: "ResetLaunchType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetworkConfiguration", GoMethod: "ResetNetworkConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPlacementConstraint", GoMethod: "ResetPlacementConstraint"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPlatformVersion", GoMethod: "ResetPlatformVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPropagateTags", GoMethod: "ResetPropagateTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTaskCount", GoMethod: "ResetTaskCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "taskCount", GoGetter: "TaskCount"},
-			_jsii_.MemberProperty{JsiiProperty: "taskCountInput", GoGetter: "TaskCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "taskDefinitionArn", GoGetter: "TaskDefinitionArn"},
-			_jsii_.MemberProperty{JsiiProperty: "taskDefinitionArnInput", GoGetter: "TaskDefinitionArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) EcsTargetInput() *CloudwatchEventTargetEcsTarget {
+	var returns *CloudwatchEventTargetEcsTarget
+	_jsii_.Get(
+		j,
+		"ecsTargetInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraint",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetPlacementConstraint)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) EventBusName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventBusName",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetPlacementConstraintList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) EventBusNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventBusNameInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expression", GoGetter: "Expression"},
-			_jsii_.MemberProperty{JsiiProperty: "expressionInput", GoGetter: "ExpressionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpression", GoMethod: "ResetExpression"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTarget",
-		reflect.TypeOf((*CloudwatchEventTargetHttpTarget)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetHttpTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "headerParameters", GoGetter: "HeaderParameters"},
-			_jsii_.MemberProperty{JsiiProperty: "headerParametersInput", GoGetter: "HeaderParametersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "pathParameterValues", GoGetter: "PathParameterValues"},
-			_jsii_.MemberProperty{JsiiProperty: "pathParameterValuesInput", GoGetter: "PathParameterValuesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "queryStringParameters", GoGetter: "QueryStringParameters"},
-			_jsii_.MemberProperty{JsiiProperty: "queryStringParametersInput", GoGetter: "QueryStringParametersInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHeaderParameters", GoMethod: "ResetHeaderParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPathParameterValues", GoMethod: "ResetPathParameterValues"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryStringParameters", GoMethod: "ResetQueryStringParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetHttpTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformer",
-		reflect.TypeOf((*CloudwatchEventTargetInputTransformer)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) HttpTarget() CloudwatchEventTargetHttpTargetOutputReference {
+	var returns CloudwatchEventTargetHttpTargetOutputReference
+	_jsii_.Get(
+		j,
+		"httpTarget",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformerOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetInputTransformerOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "inputPaths", GoGetter: "InputPaths"},
-			_jsii_.MemberProperty{JsiiProperty: "inputPathsInput", GoGetter: "InputPathsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inputTemplate", GoGetter: "InputTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "inputTemplateInput", GoGetter: "InputTemplateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInputPaths", GoMethod: "ResetInputPaths"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetInputTransformerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) HttpTargetInput() *CloudwatchEventTargetHttpTarget {
+	var returns *CloudwatchEventTargetHttpTarget
+	_jsii_.Get(
+		j,
+		"httpTargetInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTarget",
-		reflect.TypeOf((*CloudwatchEventTargetKinesisTarget)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetKinesisTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionKeyPath", GoGetter: "PartitionKeyPath"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionKeyPathInput", GoGetter: "PartitionKeyPathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPartitionKeyPath", GoMethod: "ResetPartitionKeyPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetKinesisTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTarget",
-		reflect.TypeOf((*CloudwatchEventTargetRedshiftTarget)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"input",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetRedshiftTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "database", GoGetter: "Database"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseInput", GoGetter: "DatabaseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dbUser", GoGetter: "DbUser"},
-			_jsii_.MemberProperty{JsiiProperty: "dbUserInput", GoGetter: "DbUserInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDbUser", GoMethod: "ResetDbUser"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecretsManagerArn", GoMethod: "ResetSecretsManagerArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSql", GoMethod: "ResetSql"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatementName", GoMethod: "ResetStatementName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWithEvent", GoMethod: "ResetWithEvent"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "secretsManagerArn", GoGetter: "SecretsManagerArn"},
-			_jsii_.MemberProperty{JsiiProperty: "secretsManagerArnInput", GoGetter: "SecretsManagerArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sql", GoGetter: "Sql"},
-			_jsii_.MemberProperty{JsiiProperty: "sqlInput", GoGetter: "SqlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "statementName", GoGetter: "StatementName"},
-			_jsii_.MemberProperty{JsiiProperty: "statementNameInput", GoGetter: "StatementNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "withEvent", GoGetter: "WithEvent"},
-			_jsii_.MemberProperty{JsiiProperty: "withEventInput", GoGetter: "WithEventInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) InputInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicy",
-		reflect.TypeOf((*CloudwatchEventTargetRetryPolicy)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) InputPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputPath",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicyOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetRetryPolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumEventAgeInSeconds", GoGetter: "MaximumEventAgeInSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumEventAgeInSecondsInput", GoGetter: "MaximumEventAgeInSecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttempts", GoGetter: "MaximumRetryAttempts"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttemptsInput", GoGetter: "MaximumRetryAttemptsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaximumEventAgeInSeconds", GoMethod: "ResetMaximumEventAgeInSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaximumRetryAttempts", GoMethod: "ResetMaximumRetryAttempts"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetRetryPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) InputPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputPathInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargets",
-		reflect.TypeOf((*CloudwatchEventTargetRunCommandTargets)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) InputTransformer() CloudwatchEventTargetInputTransformerOutputReference {
+	var returns CloudwatchEventTargetInputTransformerOutputReference
+	_jsii_.Get(
+		j,
+		"inputTransformer",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList",
-		reflect.TypeOf((*CloudwatchEventTargetRunCommandTargetsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetRunCommandTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) InputTransformerInput() *CloudwatchEventTargetInputTransformer {
+	var returns *CloudwatchEventTargetInputTransformer
+	_jsii_.Get(
+		j,
+		"inputTransformerInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetRunCommandTargetsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
-			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
-			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) KinesisTarget() CloudwatchEventTargetKinesisTargetOutputReference {
+	var returns CloudwatchEventTargetKinesisTargetOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisTarget",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTarget",
-		reflect.TypeOf((*CloudwatchEventTargetSqsTarget)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) KinesisTargetInput() *CloudwatchEventTargetKinesisTarget {
+	var returns *CloudwatchEventTargetKinesisTarget
+	_jsii_.Get(
+		j,
+		"kinesisTargetInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetSqsTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "messageGroupId", GoGetter: "MessageGroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "messageGroupIdInput", GoGetter: "MessageGroupIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMessageGroupId", GoMethod: "ResetMessageGroupId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchEventTargetSqsTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RedshiftTarget() CloudwatchEventTargetRedshiftTargetOutputReference {
+	var returns CloudwatchEventTargetRedshiftTargetOutputReference
+	_jsii_.Get(
+		j,
+		"redshiftTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RedshiftTargetInput() *CloudwatchEventTargetRedshiftTarget {
+	var returns *CloudwatchEventTargetRedshiftTarget
+	_jsii_.Get(
+		j,
+		"redshiftTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RetryPolicy() CloudwatchEventTargetRetryPolicyOutputReference {
+	var returns CloudwatchEventTargetRetryPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"retryPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RetryPolicyInput() *CloudwatchEventTargetRetryPolicy {
+	var returns *CloudwatchEventTargetRetryPolicy
+	_jsii_.Get(
+		j,
+		"retryPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) Rule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RuleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RunCommandTargets() CloudwatchEventTargetRunCommandTargetsList {
+	var returns CloudwatchEventTargetRunCommandTargetsList
+	_jsii_.Get(
+		j,
+		"runCommandTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RunCommandTargetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runCommandTargetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) SqsTarget() CloudwatchEventTargetSqsTargetOutputReference {
+	var returns CloudwatchEventTargetSqsTargetOutputReference
+	_jsii_.Get(
+		j,
+		"sqsTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) SqsTargetInput() *CloudwatchEventTargetSqsTarget {
+	var returns *CloudwatchEventTargetSqsTarget
+	_jsii_.Get(
+		j,
+		"sqsTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) TargetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) TargetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) CloudwatchEventTarget {
+	_init_.Initialize()
+
+	if err := validateNewCloudwatchEventTargetParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_CloudwatchEventTarget{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+func NewCloudwatchEventTarget_Override(c CloudwatchEventTarget, scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		[]interface{}{scope, id, config},
+		c,
 	)
 }
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetArn(val *string) {
+	if err := j.validateSetArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"arn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetEventBusName(val *string) {
+	if err := j.validateSetEventBusNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventBusName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetInput(val *string) {
+	if err := j.validateSetInputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"input",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetInputPath(val *string) {
+	if err := j.validateSetInputPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetRule(val *string) {
+	if err := j.validateSetRuleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetTargetId(val *string) {
+	if err := j.validateSetTargetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func CloudwatchEventTarget_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchEventTarget_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudwatchEventTarget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchEventTarget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudwatchEventTarget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchEventTarget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func CloudwatchEventTarget_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutBatchTarget(value *CloudwatchEventTargetBatchTarget) {
+	if err := c.validatePutBatchTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBatchTarget",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutDeadLetterConfig(value *CloudwatchEventTargetDeadLetterConfig) {
+	if err := c.validatePutDeadLetterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeadLetterConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutEcsTarget(value *CloudwatchEventTargetEcsTarget) {
+	if err := c.validatePutEcsTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEcsTarget",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutHttpTarget(value *CloudwatchEventTargetHttpTarget) {
+	if err := c.validatePutHttpTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHttpTarget",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutInputTransformer(value *CloudwatchEventTargetInputTransformer) {
+	if err := c.validatePutInputTransformerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInputTransformer",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutKinesisTarget(value *CloudwatchEventTargetKinesisTarget) {
+	if err := c.validatePutKinesisTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putKinesisTarget",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutRedshiftTarget(value *CloudwatchEventTargetRedshiftTarget) {
+	if err := c.validatePutRedshiftTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRedshiftTarget",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutRetryPolicy(value *CloudwatchEventTargetRetryPolicy) {
+	if err := c.validatePutRetryPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRetryPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutRunCommandTargets(value interface{}) {
+	if err := c.validatePutRunCommandTargetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRunCommandTargets",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) PutSqsTarget(value *CloudwatchEventTargetSqsTarget) {
+	if err := c.validatePutSqsTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSqsTarget",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetBatchTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBatchTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetDeadLetterConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeadLetterConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetEcsTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEcsTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetEventBusName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEventBusName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetHttpTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHttpTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetInput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInput",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetInputPath() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInputPath",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetInputTransformer() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInputTransformer",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetKinesisTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKinesisTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetRedshiftTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRedshiftTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetRetryPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRetryPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetRunCommandTargets() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRunCommandTargets",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetSqsTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSqsTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetTargetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTargetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

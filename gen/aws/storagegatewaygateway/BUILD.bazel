@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storagegatewaygateway",
+    srcs = [
+        "StoragegatewayGateway.go",
+        "StoragegatewayGatewayConfig.go",
+        "StoragegatewayGatewayGatewayNetworkInterface.go",
+        "StoragegatewayGatewayGatewayNetworkInterfaceList.go",
+        "StoragegatewayGatewayGatewayNetworkInterfaceList__checks.go",
+        "StoragegatewayGatewayGatewayNetworkInterfaceOutputReference.go",
+        "StoragegatewayGatewayGatewayNetworkInterfaceOutputReference__checks.go",
+        "StoragegatewayGatewayMaintenanceStartTime.go",
+        "StoragegatewayGatewayMaintenanceStartTimeOutputReference.go",
+        "StoragegatewayGatewayMaintenanceStartTimeOutputReference__checks.go",
+        "StoragegatewayGatewaySmbActiveDirectorySettings.go",
+        "StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference.go",
+        "StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference__checks.go",
+        "StoragegatewayGatewayTimeouts.go",
+        "StoragegatewayGatewayTimeoutsOutputReference.go",
+        "StoragegatewayGatewayTimeoutsOutputReference__checks.go",
+        "StoragegatewayGateway__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/storagegatewaygateway",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/storagegatewaygateway/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

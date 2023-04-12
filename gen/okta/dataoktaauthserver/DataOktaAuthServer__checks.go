@@ -1,0 +1,180 @@
+//go:build !no_runtime_type_checking
+
+package dataoktaauthserver
+
+import (
+	"fmt"
+
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+func (d *jsiiProxy_DataOktaAuthServer) validateAddOverrideParameters(path *string, value interface{}) error {
+	if path == nil {
+		return fmt.Errorf("parameter path is required, but nil was provided")
+	}
+
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetListAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataOktaAuthServer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	if newLogicalId == nil {
+		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOktaAuthServer_IsConstructParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOktaAuthServer_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataOktaAuthServer_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaAuthServer) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaAuthServer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaAuthServer) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewDataOktaAuthServerParameters(scope constructs.Construct, id *string, config *DataOktaAuthServerConfig) error {
+	if scope == nil {
+		return fmt.Errorf("parameter scope is required, but nil was provided")
+	}
+
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+

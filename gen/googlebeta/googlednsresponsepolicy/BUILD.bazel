@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlednsresponsepolicy",
+    srcs = [
+        "GoogleDnsResponsePolicy.go",
+        "GoogleDnsResponsePolicyConfig.go",
+        "GoogleDnsResponsePolicyNetworks.go",
+        "GoogleDnsResponsePolicyNetworksList.go",
+        "GoogleDnsResponsePolicyNetworksList__checks.go",
+        "GoogleDnsResponsePolicyNetworksOutputReference.go",
+        "GoogleDnsResponsePolicyNetworksOutputReference__checks.go",
+        "GoogleDnsResponsePolicyTimeouts.go",
+        "GoogleDnsResponsePolicyTimeoutsOutputReference.go",
+        "GoogleDnsResponsePolicyTimeoutsOutputReference__checks.go",
+        "GoogleDnsResponsePolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlednsresponsepolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlednsresponsepolicy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

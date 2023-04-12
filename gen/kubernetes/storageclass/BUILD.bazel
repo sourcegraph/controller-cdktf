@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storageclass",
+    srcs = [
+        "StorageClass.go",
+        "StorageClassAllowedTopologies.go",
+        "StorageClassAllowedTopologiesMatchLabelExpressions.go",
+        "StorageClassAllowedTopologiesMatchLabelExpressionsList.go",
+        "StorageClassAllowedTopologiesMatchLabelExpressionsList__checks.go",
+        "StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference.go",
+        "StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference__checks.go",
+        "StorageClassAllowedTopologiesOutputReference.go",
+        "StorageClassAllowedTopologiesOutputReference__checks.go",
+        "StorageClassConfig.go",
+        "StorageClassMetadata.go",
+        "StorageClassMetadataOutputReference.go",
+        "StorageClassMetadataOutputReference__checks.go",
+        "StorageClass__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/storageclass",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/storageclass/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)
