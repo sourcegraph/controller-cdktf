@@ -1,0 +1,4 @@
+name: random
+provider:
+  source: registry.terraform.io/hashicorp/random
+  version: ~> 3.1.0

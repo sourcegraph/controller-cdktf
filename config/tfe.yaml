@@ -1,0 +1,4 @@
+name: tfe
+provider:
+  source: registry.terraform.io/hashicorp/tfe
+  version: 0.43.0

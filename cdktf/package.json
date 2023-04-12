@@ -1,0 +1,48 @@
+{
+    "name": "@cdktf/provider-{{ .Config.Name }}",
+    "version": "0.0.1",
+    "author": "Sourcegraph Cloud <cloud-team@sourcegraph.com>",
+    "repository": {
+      "type": "https",
+      "url": "github.com/sourcegraph/controller-cdktf"
+    },
+    "license": "MIT",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "devDependencies": {
+      "@cdktf/provider-generator": "^0.15.5",
+      "cdktf": "^0.15.5",
+      "cdktf-cli": "^0.15.5",
+      "jsii": "^1.53.0",
+      "jsii-pacmak": "^1.79.0",
+      "constructs": "^10.0.0"
+    },
+    "peerDependencies": {
+      "cdktf": "^0.15.5",
+      "constructs": "^10.0.0"
+    },
+    "scripts": {
+      {{- if .Config.Provider }}
+      "fetch": "mkdir -p src && rm -rf ./src/* && cdktf get && cp -R .gen/providers/{{ .Config.Provider.Name }}/* ./src/ && cp .gen/versions.json ./src/version.json",
+      {{- end }}
+      {{- if .Config.Module }}
+      "fetch": "mkdir -p src && rm -rf ./src/* && cdktf get && cp .gen/modules/{{ .Config.Name }}.ts ./src/index.ts && cp .gen/versions.json ./src/version.json",
+      {{- end }}
+      "compile": "jsii --silence-warnings=reserved-word",
+      "pkg:go": "jsii-pacmak -v --target go"
+    },
+    "jsii": {
+      "outdir": "dist",
+      "targets": {
+        "go": {
+          "moduleName": "{{ .ModuleName }}",
+          "packageName": "{{ .PackageName }}"
+        }
+      },
+      "tsc": {
+        "outDir": "lib",
+        "rootDir": "src"
+      }
+    }
+  }
+  

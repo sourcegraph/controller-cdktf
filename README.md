@@ -1,80 +1,148 @@
-# controller-cdktf
+# cdktf-provider-generator
 
-This repo contains the generated code for [cdktf](https://github.com/hashicorp/terraform-cdk) in Go. The implementation is being developed in [sourcegraph/controller].
+> EXPERIMENTAL
 
-This package is only used internally at Sourcegraph - the generated code is public for ease of use and avoid performance issue with large amount of generated content being tracked in a Git repository.
+Generate your own pre-built CDKTF providers for Go.
 
-## Development
+CDKTF publishes pre-built providers but they do not follow the upstream providers version. Usually, you want to pin to a specific version to fit your own needs. This project aims to solve this problem by generating your own pre-built providers.
 
-### Adding a new provider or module to CDKTF
+To do so, we replicate the setup from the CDKTF pre-built provider repo, e.g., https://github.com/cdktf/cdktf-provider-tfe, but use Bazel to generate all assets.
 
-Edit [`cdktf.json`](./cdktf.json), and make sure modules and providers are pinned to a specific version. e.g.
+## Usage
 
-```json
-{
-  "terraformProviders": [
-    {
-      "name": "google",
-      "source": "hashicorp/google",
-      "version": "~> 4.38.0"
-    }
-  ],
-  "terraformModules": [
-    {
-      "name": "googlesqldb",
-      "source": "git::https://github.com/michaellzc/terraform-google-sql-db//modules/postgresql?ref=feat/support-dynamic-iam-users"
-    }
-  ]
-}
-```
+If you're just looking to consume the generated code, all available providers are under `gen/` under its own Go module.
 
-Run the command below to auto-gen codes for added providers or modules:
+Use `hashicorp/tfe` provider:
 
 ```sh
-go generate .
+go get github.com/controller-cdktf/gen/tfe
 ```
 
-Commit all generated changes.
+Use `hashicorp/google` provider:
 
-### Upgrading CDKTF
+```sh
+go get github.com/controller-cdktf/gen/google
+```
 
-Review the [changelog](https://developer.hashicorp.com/terraform/cdktf/release#upgrade-guides) of the target release.
-Watch out for breaking changes and adjust the upgrade plan if neccessary.
+## Tasks
 
-Bump the version in [`gen.go`](./gen.go):
+### Add a new provider
 
-> no `v` prefix
+> NOTE: The name of the provider should always be one word and no special characters, e.g., use `googlebeta` instead of `google-beta`.
+
+For example, let's add the `kubernetes` provider:
+
+Create a config file at `config/kubernetes.yaml`
+
+```yaml
+name: kubernetes
+provider:
+  source: registry.terraform.io/hashicorp/kubernetes
+  version: ~> 2.15.0
+```
+
+Add a new target in `BUILD.bazel`
 
 ```diff
---- a/gen.go
-+++ b/gen.go
-@@ -1,3 +1,3 @@
- package cdktf
+--- a/BUILD.bazel
++++ b/BUILD.bazel
 
--//go:generate go run . --version 0.13.3
-+//go:generate go run . --version 0.13.0
++
++cdktf(
++    name = "kubernetes",
++    config = "kubernetes.yaml",
++    module_name = module_name,
++)
 ```
 
-Re-generate the providers and modules code:
+Generate the code
 
 ```sh
-go generate ./
+bazel run //:kubernetes
+bazel run //:gazelle
 ```
 
-Commit all changes in this repo. Upon merging the PR, then open another pull request in [sourcegraph/controller] to upgrade all `github.com/sourcegraph/controller-cdktf/gen/*` packages:
+Finally, commit all generated code and open a pull request.
+
+### Add a new module
+
+For example, let's add the `awsvpc` module:
+
+Create a config file at `config/awsvpc.yaml`
+
+```yaml
+name: awsvpc
+module:
+  source: terraform-aws-modules/vpc/aws
+  version: 3.19.0
+```
+
+Add a new target in `BUILD.bazel`
+
+```diff
+--- a/BUILD.bazel
++++ b/BUILD.bazel
+
++
++cdktf(
++    name = "awsvpc",
++    config = "awsvpc.yaml",
++    module_name = module_name,
++)
+```
+
+Generate the code
 
 ```sh
-go get -u github.com/sourcegraph/controller-cdktf/gen/...
+bazel run //:awsvpc
+bazel run //:gazelle
 ```
+
+Finally, commit all generated code and open a pull request.
+
+### Update a provider or module version
+
+First, update the version in the corresponding config file, e.g., `gen/kubernetes.yaml`.
+
+```diff
+--- a/config/kubernetes.yaml
++++ b/config/kubernetes.yaml
+@@ -1,4 +1,4 @@
+ name: kubernetes
+ provider:
+   source: registry.terraform.io/hashicorp/kubernetes
+-  version: 2.15.0
++  version: 2.29.0
+```
+
+Then, generate the code:
+
+```sh
+bazel run //:kubernetes
+bazel run //:gazelle
+```
+
+Finally, commit all generated code and open a pull request.
+
+## Roadmap
+
+- [ ] Add support to configure target `cdktf` and `jsii` version
+- [ ] Add support to configure target Terraform version
 
 ## FAQ
 
-### Why not use the pre-built providers?
+### Why not use `cdktf get`?
 
-We would like to use specific versions of provides, hence we are not using pre-built providers, such as [cdktf/cdktf-provider-google-go](https://github.com/cdktf/cdktf-provider-google-go).
+With a centralized `cdktf.json` where you declare all the providers and modules, changes to the file will require re-generating all providers and modules, which is slow.
 
-### Why multiple modules instead of one?
+By utilizing Bazel, we can only generate the code for the provider or module that has changed with its caching strategy.
 
-Generated code combined from all providers and modules exceed the limit of `go get`, and this cannot be changed.
+### Weird things happen during generation with Bazel?
 
-[sourcegraph/controller]: https://github.com/sourcegraph/controller
+First, try to clean the Bazel cache:
+
+```sh
+bazel clean --expunge
+```
+
+Then, try again.

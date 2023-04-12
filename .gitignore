@@ -1,0 +1,6 @@
+src/
+.gen/
+dist/
+node_modules/
+lib/
+bazel*
