@@ -1,0 +1,107 @@
+# gazelle:prefix github.com/sourcegraph/controller-cdktf
+# gazelle:build_file_name BUILD.bazel
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("//cdktf:cdktf.bzl", "cdktf")
+
+# go stuff
+gazelle(name = "gazelle")
+
+gazelle(
+    name = "gazelle-update-repos",
+    args = [
+        "-from_file=go.mod",
+        "-to_macro=deps.bzl%go_dependencies",
+        "-prune",
+        "-build_file_proto_mode=disable_global",
+    ],
+    command = "update-repos",
+)
+
+# cdktf stuff
+module_prefix = "github.com/sourcegraph/controller-cdktf"
+
+out_pkg = "gen"
+
+cdktf(
+    name = "aws",
+    config = "config/aws.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "cloudflare",
+    config = "config/cloudflare.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "google",
+    config = "config/google.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "googlebeta",
+    config = "config/googlebeta.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "kubernetes",
+    config = "config/kubernetes.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "okta",
+    config = "config/okta.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "postgresql",
+    config = "config/postgresql.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "random",
+    config = "config/random.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "tfe",
+    config = "config/tfe.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "awsvpc",
+    config = "config/awsvpc.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "gkeprivate",
+    config = "config/gkeprivate.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)
+
+cdktf(
+    name = "budget",
+    config = "config/budget.yaml",
+    module_prefix = module_prefix,
+    out_pkg = out_pkg,
+)

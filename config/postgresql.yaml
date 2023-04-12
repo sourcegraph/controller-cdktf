@@ -1,0 +1,4 @@
+name: postgresql
+provider:
+  source: registry.terraform.io/sourcegraph/postgresql
+  version: ~> 1.18.0

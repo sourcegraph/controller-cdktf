@@ -1,0 +1,4 @@
+name: gkeprivate
+module:
+  source: terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster
+  version: 24.0.0

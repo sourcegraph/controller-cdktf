@@ -1,0 +1,4 @@
+name: cloudflare
+provider:
+  source: registry.terraform.io/cloudflare/cloudflare
+  version: ~> 3.16.0

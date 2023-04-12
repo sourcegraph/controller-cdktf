@@ -1,0 +1,4 @@
+name: aws
+provider:
+  source: registry.terraform.io/hashicorp/aws
+  version: 4.54.0

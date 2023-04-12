@@ -1,0 +1,4 @@
+name: googlebeta
+provider:
+  source: registry.terraform.io/hashicorp/google-beta
+  version: ~> 4.38.0
