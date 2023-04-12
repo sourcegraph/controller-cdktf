@@ -1,191 +1,1346 @@
 package apigatewaystage
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/apigatewaystage/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.apiGatewayStage.ApiGatewayStage",
-		reflect.TypeOf((*ApiGatewayStage)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessLogSettings", GoGetter: "AccessLogSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "accessLogSettingsInput", GoGetter: "AccessLogSettingsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheClusterEnabled", GoGetter: "CacheClusterEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheClusterEnabledInput", GoGetter: "CacheClusterEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheClusterSize", GoGetter: "CacheClusterSize"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheClusterSizeInput", GoGetter: "CacheClusterSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "canarySettings", GoGetter: "CanarySettings"},
-			_jsii_.MemberProperty{JsiiProperty: "canarySettingsInput", GoGetter: "CanarySettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "clientCertificateId", GoGetter: "ClientCertificateId"},
-			_jsii_.MemberProperty{JsiiProperty: "clientCertificateIdInput", GoGetter: "ClientCertificateIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentId", GoGetter: "DeploymentId"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentIdInput", GoGetter: "DeploymentIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "documentationVersion", GoGetter: "DocumentationVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "documentationVersionInput", GoGetter: "DocumentationVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "executionArn", GoGetter: "ExecutionArn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "invokeUrl", GoGetter: "InvokeUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAccessLogSettings", GoMethod: "PutAccessLogSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putCanarySettings", GoMethod: "PutCanarySettings"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessLogSettings", GoMethod: "ResetAccessLogSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCacheClusterEnabled", GoMethod: "ResetCacheClusterEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCacheClusterSize", GoMethod: "ResetCacheClusterSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCanarySettings", GoMethod: "ResetCanarySettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificateId", GoMethod: "ResetClientCertificateId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDocumentationVersion", GoMethod: "ResetDocumentationVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVariables", GoMethod: "ResetVariables"},
-			_jsii_.MemberMethod{JsiiMethod: "resetXrayTracingEnabled", GoMethod: "ResetXrayTracingEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "restApiId", GoGetter: "RestApiId"},
-			_jsii_.MemberProperty{JsiiProperty: "restApiIdInput", GoGetter: "RestApiIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stageName", GoGetter: "StageName"},
-			_jsii_.MemberProperty{JsiiProperty: "stageNameInput", GoGetter: "StageNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
-			_jsii_.MemberProperty{JsiiProperty: "variablesInput", GoGetter: "VariablesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "webAclArn", GoGetter: "WebAclArn"},
-			_jsii_.MemberProperty{JsiiProperty: "xrayTracingEnabled", GoGetter: "XrayTracingEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "xrayTracingEnabledInput", GoGetter: "XrayTracingEnabledInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ApiGatewayStage{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage aws_api_gateway_stage}.
+type ApiGatewayStage interface {
+	cdktf.TerraformResource
+	AccessLogSettings() ApiGatewayStageAccessLogSettingsOutputReference
+	AccessLogSettingsInput() *ApiGatewayStageAccessLogSettings
+	Arn() *string
+	CacheClusterEnabled() interface{}
+	SetCacheClusterEnabled(val interface{})
+	CacheClusterEnabledInput() interface{}
+	CacheClusterSize() *string
+	SetCacheClusterSize(val *string)
+	CacheClusterSizeInput() *string
+	CanarySettings() ApiGatewayStageCanarySettingsOutputReference
+	CanarySettingsInput() *ApiGatewayStageCanarySettings
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClientCertificateId() *string
+	SetClientCertificateId(val *string)
+	ClientCertificateIdInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DeploymentId() *string
+	SetDeploymentId(val *string)
+	DeploymentIdInput() *string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DocumentationVersion() *string
+	SetDocumentationVersion(val *string)
+	DocumentationVersionInput() *string
+	ExecutionArn() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InvokeUrl() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RestApiId() *string
+	SetRestApiId(val *string)
+	RestApiIdInput() *string
+	StageName() *string
+	SetStageName(val *string)
+	StageNameInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Variables() *map[string]*string
+	SetVariables(val *map[string]*string)
+	VariablesInput() *map[string]*string
+	WebAclArn() *string
+	XrayTracingEnabled() interface{}
+	SetXrayTracingEnabled(val interface{})
+	XrayTracingEnabledInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAccessLogSettings(value *ApiGatewayStageAccessLogSettings)
+	PutCanarySettings(value *ApiGatewayStageCanarySettings)
+	ResetAccessLogSettings()
+	ResetCacheClusterEnabled()
+	ResetCacheClusterSize()
+	ResetCanarySettings()
+	ResetClientCertificateId()
+	ResetDescription()
+	ResetDocumentationVersion()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
+	ResetVariables()
+	ResetXrayTracingEnabled()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ApiGatewayStage
+type jsiiProxy_ApiGatewayStage struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApiGatewayStage) AccessLogSettings() ApiGatewayStageAccessLogSettingsOutputReference {
+	var returns ApiGatewayStageAccessLogSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"accessLogSettings",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.apiGatewayStage.ApiGatewayStageAccessLogSettings",
-		reflect.TypeOf((*ApiGatewayStageAccessLogSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) AccessLogSettingsInput() *ApiGatewayStageAccessLogSettings {
+	var returns *ApiGatewayStageAccessLogSettings
+	_jsii_.Get(
+		j,
+		"accessLogSettingsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayStageAccessLogSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationArn", GoGetter: "DestinationArn"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationArnInput", GoGetter: "DestinationArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "format", GoGetter: "Format"},
-			_jsii_.MemberProperty{JsiiProperty: "formatInput", GoGetter: "FormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.apiGatewayStage.ApiGatewayStageCanarySettings",
-		reflect.TypeOf((*ApiGatewayStageCanarySettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CacheClusterEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheClusterEnabled",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayStageCanarySettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "percentTraffic", GoGetter: "PercentTraffic"},
-			_jsii_.MemberProperty{JsiiProperty: "percentTrafficInput", GoGetter: "PercentTrafficInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPercentTraffic", GoMethod: "ResetPercentTraffic"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStageVariableOverrides", GoMethod: "ResetStageVariableOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseStageCache", GoMethod: "ResetUseStageCache"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "stageVariableOverrides", GoGetter: "StageVariableOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "stageVariableOverridesInput", GoGetter: "StageVariableOverridesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "useStageCache", GoGetter: "UseStageCache"},
-			_jsii_.MemberProperty{JsiiProperty: "useStageCacheInput", GoGetter: "UseStageCacheInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ApiGatewayStageCanarySettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CacheClusterEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheClusterEnabledInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.apiGatewayStage.ApiGatewayStageConfig",
-		reflect.TypeOf((*ApiGatewayStageConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CacheClusterSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cacheClusterSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CacheClusterSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cacheClusterSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CanarySettings() ApiGatewayStageCanarySettingsOutputReference {
+	var returns ApiGatewayStageCanarySettingsOutputReference
+	_jsii_.Get(
+		j,
+		"canarySettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CanarySettingsInput() *ApiGatewayStageCanarySettings {
+	var returns *ApiGatewayStageCanarySettings
+	_jsii_.Get(
+		j,
+		"canarySettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) ClientCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) ClientCertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) DeploymentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) DeploymentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) DocumentationVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentationVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) DocumentationVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentationVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) ExecutionArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) InvokeUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"invokeUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) RestApiId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restApiId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) RestApiIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restApiIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) StageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stageName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) StageNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stageNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) Variables() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"variables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) VariablesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"variablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) WebAclArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webAclArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) XrayTracingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"xrayTracingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStage) XrayTracingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"xrayTracingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage aws_api_gateway_stage} Resource.
+func NewApiGatewayStage(scope constructs.Construct, id *string, config *ApiGatewayStageConfig) ApiGatewayStage {
+	_init_.Initialize()
+
+	if err := validateNewApiGatewayStageParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_ApiGatewayStage{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage aws_api_gateway_stage} Resource.
+func NewApiGatewayStage_Override(a ApiGatewayStage, scope constructs.Construct, id *string, config *ApiGatewayStageConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		[]interface{}{scope, id, config},
+		a,
 	)
 }
+
+func (j *jsiiProxy_ApiGatewayStage)SetCacheClusterEnabled(val interface{}) {
+	if err := j.validateSetCacheClusterEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheClusterEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetCacheClusterSize(val *string) {
+	if err := j.validateSetCacheClusterSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheClusterSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetClientCertificateId(val *string) {
+	if err := j.validateSetClientCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificateId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetDeploymentId(val *string) {
+	if err := j.validateSetDeploymentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetDocumentationVersion(val *string) {
+	if err := j.validateSetDocumentationVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"documentationVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetRestApiId(val *string) {
+	if err := j.validateSetRestApiIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restApiId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetStageName(val *string) {
+	if err := j.validateSetStageNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stageName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetVariables(val *map[string]*string) {
+	if err := j.validateSetVariablesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"variables",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStage)SetXrayTracingEnabled(val interface{}) {
+	if err := j.validateSetXrayTracingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xrayTracingEnabled",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ApiGatewayStage_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayStage_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayStage_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayStage_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayStage_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayStage_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ApiGatewayStage_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		a,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		a,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) PutAccessLogSettings(value *ApiGatewayStageAccessLogSettings) {
+	if err := a.validatePutAccessLogSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAccessLogSettings",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) PutCanarySettings(value *ApiGatewayStageCanarySettings) {
+	if err := a.validatePutCanarySettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCanarySettings",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetAccessLogSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccessLogSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetCacheClusterEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCacheClusterEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetCacheClusterSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCacheClusterSize",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetCanarySettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCanarySettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetClientCertificateId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientCertificateId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetDocumentationVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDocumentationVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetVariables() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVariables",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ResetXrayTracingEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetXrayTracingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayStage) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayStage) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

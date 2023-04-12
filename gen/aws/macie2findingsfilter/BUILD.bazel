@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "macie2findingsfilter",
+    srcs = [
+        "Macie2FindingsFilter.go",
+        "Macie2FindingsFilterConfig.go",
+        "Macie2FindingsFilterFindingCriteria.go",
+        "Macie2FindingsFilterFindingCriteriaCriterion.go",
+        "Macie2FindingsFilterFindingCriteriaCriterionList.go",
+        "Macie2FindingsFilterFindingCriteriaCriterionList__checks.go",
+        "Macie2FindingsFilterFindingCriteriaCriterionOutputReference.go",
+        "Macie2FindingsFilterFindingCriteriaCriterionOutputReference__checks.go",
+        "Macie2FindingsFilterFindingCriteriaOutputReference.go",
+        "Macie2FindingsFilterFindingCriteriaOutputReference__checks.go",
+        "Macie2FindingsFilter__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/macie2findingsfilter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/macie2findingsfilter/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

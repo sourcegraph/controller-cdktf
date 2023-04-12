@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "fsxdatarepositoryassociation",
+    srcs = [
+        "FsxDataRepositoryAssociation.go",
+        "FsxDataRepositoryAssociationConfig.go",
+        "FsxDataRepositoryAssociationS3.go",
+        "FsxDataRepositoryAssociationS3AutoExportPolicy.go",
+        "FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference.go",
+        "FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference__checks.go",
+        "FsxDataRepositoryAssociationS3AutoImportPolicy.go",
+        "FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference.go",
+        "FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference__checks.go",
+        "FsxDataRepositoryAssociationS3OutputReference.go",
+        "FsxDataRepositoryAssociationS3OutputReference__checks.go",
+        "FsxDataRepositoryAssociationTimeouts.go",
+        "FsxDataRepositoryAssociationTimeoutsOutputReference.go",
+        "FsxDataRepositoryAssociationTimeoutsOutputReference__checks.go",
+        "FsxDataRepositoryAssociation__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/fsxdatarepositoryassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/fsxdatarepositoryassociation/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkmanagerdevice",
+    srcs = [
+        "NetworkmanagerDevice.go",
+        "NetworkmanagerDeviceAwsLocation.go",
+        "NetworkmanagerDeviceAwsLocationOutputReference.go",
+        "NetworkmanagerDeviceAwsLocationOutputReference__checks.go",
+        "NetworkmanagerDeviceConfig.go",
+        "NetworkmanagerDeviceLocation.go",
+        "NetworkmanagerDeviceLocationOutputReference.go",
+        "NetworkmanagerDeviceLocationOutputReference__checks.go",
+        "NetworkmanagerDeviceTimeouts.go",
+        "NetworkmanagerDeviceTimeoutsOutputReference.go",
+        "NetworkmanagerDeviceTimeoutsOutputReference__checks.go",
+        "NetworkmanagerDevice__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkmanagerdevice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkmanagerdevice/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputefirewall",
+    srcs = [
+        "GoogleComputeFirewall.go",
+        "GoogleComputeFirewallAllow.go",
+        "GoogleComputeFirewallAllowList.go",
+        "GoogleComputeFirewallAllowList__checks.go",
+        "GoogleComputeFirewallAllowOutputReference.go",
+        "GoogleComputeFirewallAllowOutputReference__checks.go",
+        "GoogleComputeFirewallConfig.go",
+        "GoogleComputeFirewallDeny.go",
+        "GoogleComputeFirewallDenyList.go",
+        "GoogleComputeFirewallDenyList__checks.go",
+        "GoogleComputeFirewallDenyOutputReference.go",
+        "GoogleComputeFirewallDenyOutputReference__checks.go",
+        "GoogleComputeFirewallLogConfig.go",
+        "GoogleComputeFirewallLogConfigOutputReference.go",
+        "GoogleComputeFirewallLogConfigOutputReference__checks.go",
+        "GoogleComputeFirewallTimeouts.go",
+        "GoogleComputeFirewallTimeoutsOutputReference.go",
+        "GoogleComputeFirewallTimeoutsOutputReference__checks.go",
+        "GoogleComputeFirewall__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecomputefirewall",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecomputefirewall/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

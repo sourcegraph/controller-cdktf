@@ -1,572 +1,1322 @@
 package sesreceiptrule
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/sesreceiptrule/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRule",
-		reflect.TypeOf((*SesReceiptRule)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "addHeaderAction", GoGetter: "AddHeaderAction"},
-			_jsii_.MemberProperty{JsiiProperty: "addHeaderActionInput", GoGetter: "AddHeaderActionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "after", GoGetter: "After"},
-			_jsii_.MemberProperty{JsiiProperty: "afterInput", GoGetter: "AfterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "bounceAction", GoGetter: "BounceAction"},
-			_jsii_.MemberProperty{JsiiProperty: "bounceActionInput", GoGetter: "BounceActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaAction", GoGetter: "LambdaAction"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaActionInput", GoGetter: "LambdaActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAddHeaderAction", GoMethod: "PutAddHeaderAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putBounceAction", GoMethod: "PutBounceAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putLambdaAction", GoMethod: "PutLambdaAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putS3Action", GoMethod: "PutS3Action"},
-			_jsii_.MemberMethod{JsiiMethod: "putSnsAction", GoMethod: "PutSnsAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putStopAction", GoMethod: "PutStopAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putWorkmailAction", GoMethod: "PutWorkmailAction"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "recipients", GoGetter: "Recipients"},
-			_jsii_.MemberProperty{JsiiProperty: "recipientsInput", GoGetter: "RecipientsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAddHeaderAction", GoMethod: "ResetAddHeaderAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAfter", GoMethod: "ResetAfter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBounceAction", GoMethod: "ResetBounceAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLambdaAction", GoMethod: "ResetLambdaAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRecipients", GoMethod: "ResetRecipients"},
-			_jsii_.MemberMethod{JsiiMethod: "resetS3Action", GoMethod: "ResetS3Action"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScanEnabled", GoMethod: "ResetScanEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnsAction", GoMethod: "ResetSnsAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStopAction", GoMethod: "ResetStopAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTlsPolicy", GoMethod: "ResetTlsPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkmailAction", GoMethod: "ResetWorkmailAction"},
-			_jsii_.MemberProperty{JsiiProperty: "ruleSetName", GoGetter: "RuleSetName"},
-			_jsii_.MemberProperty{JsiiProperty: "ruleSetNameInput", GoGetter: "RuleSetNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "s3Action", GoGetter: "S3Action"},
-			_jsii_.MemberProperty{JsiiProperty: "s3ActionInput", GoGetter: "S3ActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "scanEnabled", GoGetter: "ScanEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "scanEnabledInput", GoGetter: "ScanEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "snsAction", GoGetter: "SnsAction"},
-			_jsii_.MemberProperty{JsiiProperty: "snsActionInput", GoGetter: "SnsActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stopAction", GoGetter: "StopAction"},
-			_jsii_.MemberProperty{JsiiProperty: "stopActionInput", GoGetter: "StopActionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsPolicy", GoGetter: "TlsPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsPolicyInput", GoGetter: "TlsPolicyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "workmailAction", GoGetter: "WorkmailAction"},
-			_jsii_.MemberProperty{JsiiProperty: "workmailActionInput", GoGetter: "WorkmailActionInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule aws_ses_receipt_rule}.
+type SesReceiptRule interface {
+	cdktf.TerraformResource
+	AddHeaderAction() SesReceiptRuleAddHeaderActionList
+	AddHeaderActionInput() interface{}
+	After() *string
+	SetAfter(val *string)
+	AfterInput() *string
+	Arn() *string
+	BounceAction() SesReceiptRuleBounceActionList
+	BounceActionInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	LambdaAction() SesReceiptRuleLambdaActionList
+	LambdaActionInput() interface{}
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Recipients() *[]*string
+	SetRecipients(val *[]*string)
+	RecipientsInput() *[]*string
+	RuleSetName() *string
+	SetRuleSetName(val *string)
+	RuleSetNameInput() *string
+	S3Action() SesReceiptRuleS3ActionList
+	S3ActionInput() interface{}
+	ScanEnabled() interface{}
+	SetScanEnabled(val interface{})
+	ScanEnabledInput() interface{}
+	SnsAction() SesReceiptRuleSnsActionList
+	SnsActionInput() interface{}
+	StopAction() SesReceiptRuleStopActionList
+	StopActionInput() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	TlsPolicy() *string
+	SetTlsPolicy(val *string)
+	TlsPolicyInput() *string
+	WorkmailAction() SesReceiptRuleWorkmailActionList
+	WorkmailActionInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAddHeaderAction(value interface{})
+	PutBounceAction(value interface{})
+	PutLambdaAction(value interface{})
+	PutS3Action(value interface{})
+	PutSnsAction(value interface{})
+	PutStopAction(value interface{})
+	PutWorkmailAction(value interface{})
+	ResetAddHeaderAction()
+	ResetAfter()
+	ResetBounceAction()
+	ResetEnabled()
+	ResetId()
+	ResetLambdaAction()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRecipients()
+	ResetS3Action()
+	ResetScanEnabled()
+	ResetSnsAction()
+	ResetStopAction()
+	ResetTlsPolicy()
+	ResetWorkmailAction()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for SesReceiptRule
+type jsiiProxy_SesReceiptRule struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SesReceiptRule) AddHeaderAction() SesReceiptRuleAddHeaderActionList {
+	var returns SesReceiptRuleAddHeaderActionList
+	_jsii_.Get(
+		j,
+		"addHeaderAction",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleAddHeaderAction",
-		reflect.TypeOf((*SesReceiptRuleAddHeaderAction)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) AddHeaderActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addHeaderActionInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
-		reflect.TypeOf((*SesReceiptRuleAddHeaderActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleAddHeaderActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) After() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"after",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleAddHeaderActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "headerName", GoGetter: "HeaderName"},
-			_jsii_.MemberProperty{JsiiProperty: "headerNameInput", GoGetter: "HeaderNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "headerValue", GoGetter: "HeaderValue"},
-			_jsii_.MemberProperty{JsiiProperty: "headerValueInput", GoGetter: "HeaderValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleAddHeaderActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) AfterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"afterInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleBounceAction",
-		reflect.TypeOf((*SesReceiptRuleBounceAction)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleBounceActionList",
-		reflect.TypeOf((*SesReceiptRuleBounceActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleBounceActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) BounceAction() SesReceiptRuleBounceActionList {
+	var returns SesReceiptRuleBounceActionList
+	_jsii_.Get(
+		j,
+		"bounceAction",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleBounceActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
-			_jsii_.MemberProperty{JsiiProperty: "messageInput", GoGetter: "MessageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatusCode", GoMethod: "ResetStatusCode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopicArn", GoMethod: "ResetTopicArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sender", GoGetter: "Sender"},
-			_jsii_.MemberProperty{JsiiProperty: "senderInput", GoGetter: "SenderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "smtpReplyCode", GoGetter: "SmtpReplyCode"},
-			_jsii_.MemberProperty{JsiiProperty: "smtpReplyCodeInput", GoGetter: "SmtpReplyCodeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "statusCode", GoGetter: "StatusCode"},
-			_jsii_.MemberProperty{JsiiProperty: "statusCodeInput", GoGetter: "StatusCodeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArn", GoGetter: "TopicArn"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleBounceActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) BounceActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bounceActionInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleConfig",
-		reflect.TypeOf((*SesReceiptRuleConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleLambdaAction",
-		reflect.TypeOf((*SesReceiptRuleLambdaAction)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
-		reflect.TypeOf((*SesReceiptRuleLambdaActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleLambdaActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleLambdaActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "functionArn", GoGetter: "FunctionArn"},
-			_jsii_.MemberProperty{JsiiProperty: "functionArnInput", GoGetter: "FunctionArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "invocationType", GoGetter: "InvocationType"},
-			_jsii_.MemberProperty{JsiiProperty: "invocationTypeInput", GoGetter: "InvocationTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInvocationType", GoMethod: "ResetInvocationType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopicArn", GoMethod: "ResetTopicArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArn", GoGetter: "TopicArn"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleLambdaActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleS3Action",
-		reflect.TypeOf((*SesReceiptRuleS3Action)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleS3ActionList",
-		reflect.TypeOf((*SesReceiptRuleS3ActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleS3ActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleS3ActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "objectKeyPrefix", GoGetter: "ObjectKeyPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "objectKeyPrefixInput", GoGetter: "ObjectKeyPrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyArn", GoMethod: "ResetKmsKeyArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetObjectKeyPrefix", GoMethod: "ResetObjectKeyPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopicArn", GoMethod: "ResetTopicArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArn", GoGetter: "TopicArn"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleS3ActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleSnsAction",
-		reflect.TypeOf((*SesReceiptRuleSnsAction)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleSnsActionList",
-		reflect.TypeOf((*SesReceiptRuleSnsActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleSnsActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleSnsActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "encoding", GoGetter: "Encoding"},
-			_jsii_.MemberProperty{JsiiProperty: "encodingInput", GoGetter: "EncodingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncoding", GoMethod: "ResetEncoding"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArn", GoGetter: "TopicArn"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleSnsActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleStopAction",
-		reflect.TypeOf((*SesReceiptRuleStopAction)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleStopActionList",
-		reflect.TypeOf((*SesReceiptRuleStopActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleStopActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleStopActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopicArn", GoMethod: "ResetTopicArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scope", GoGetter: "Scope"},
-			_jsii_.MemberProperty{JsiiProperty: "scopeInput", GoGetter: "ScopeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArn", GoGetter: "TopicArn"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleStopActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) LambdaAction() SesReceiptRuleLambdaActionList {
+	var returns SesReceiptRuleLambdaActionList
+	_jsii_.Get(
+		j,
+		"lambdaAction",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailAction",
-		reflect.TypeOf((*SesReceiptRuleWorkmailAction)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) LambdaActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambdaActionInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailActionList",
-		reflect.TypeOf((*SesReceiptRuleWorkmailActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleWorkmailActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleWorkmailActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "organizationArn", GoGetter: "OrganizationArn"},
-			_jsii_.MemberProperty{JsiiProperty: "organizationArnInput", GoGetter: "OrganizationArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopicArn", GoMethod: "ResetTopicArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArn", GoGetter: "TopicArn"},
-			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SesReceiptRuleWorkmailActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) Recipients() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"recipients",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) RecipientsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"recipientsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) RuleSetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleSetName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) RuleSetNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleSetNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) S3Action() SesReceiptRuleS3ActionList {
+	var returns SesReceiptRuleS3ActionList
+	_jsii_.Get(
+		j,
+		"s3Action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) S3ActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"s3ActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) ScanEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scanEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) ScanEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scanEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) SnsAction() SesReceiptRuleSnsActionList {
+	var returns SesReceiptRuleSnsActionList
+	_jsii_.Get(
+		j,
+		"snsAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) SnsActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"snsActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) StopAction() SesReceiptRuleStopActionList {
+	var returns SesReceiptRuleStopActionList
+	_jsii_.Get(
+		j,
+		"stopAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) StopActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stopActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) TlsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) TlsPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) WorkmailAction() SesReceiptRuleWorkmailActionList {
+	var returns SesReceiptRuleWorkmailActionList
+	_jsii_.Get(
+		j,
+		"workmailAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) WorkmailActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workmailActionInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule aws_ses_receipt_rule} Resource.
+func NewSesReceiptRule(scope constructs.Construct, id *string, config *SesReceiptRuleConfig) SesReceiptRule {
+	_init_.Initialize()
+
+	if err := validateNewSesReceiptRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_SesReceiptRule{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule aws_ses_receipt_rule} Resource.
+func NewSesReceiptRule_Override(s SesReceiptRule, scope constructs.Construct, id *string, config *SesReceiptRuleConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		[]interface{}{scope, id, config},
+		s,
 	)
 }
+
+func (j *jsiiProxy_SesReceiptRule)SetAfter(val *string) {
+	if err := j.validateSetAfterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"after",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetRecipients(val *[]*string) {
+	if err := j.validateSetRecipientsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recipients",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetRuleSetName(val *string) {
+	if err := j.validateSetRuleSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ruleSetName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetScanEnabled(val interface{}) {
+	if err := j.validateSetScanEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scanEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetTlsPolicy(val *string) {
+	if err := j.validateSetTlsPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsPolicy",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func SesReceiptRule_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesReceiptRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SesReceiptRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesReceiptRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SesReceiptRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesReceiptRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func SesReceiptRule_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		s,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		s,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutAddHeaderAction(value interface{}) {
+	if err := s.validatePutAddHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAddHeaderAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutBounceAction(value interface{}) {
+	if err := s.validatePutBounceActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putBounceAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutLambdaAction(value interface{}) {
+	if err := s.validatePutLambdaActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLambdaAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutS3Action(value interface{}) {
+	if err := s.validatePutS3ActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putS3Action",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutSnsAction(value interface{}) {
+	if err := s.validatePutSnsActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSnsAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutStopAction(value interface{}) {
+	if err := s.validatePutStopActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putStopAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) PutWorkmailAction(value interface{}) {
+	if err := s.validatePutWorkmailActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWorkmailAction",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetAddHeaderAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAddHeaderAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetAfter() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAfter",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetBounceAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBounceAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetLambdaAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLambdaAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetRecipients() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRecipients",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetS3Action() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetS3Action",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetScanEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScanEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetSnsAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSnsAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetStopAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStopAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetTlsPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTlsPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetWorkmailAction() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkmailAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRule) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

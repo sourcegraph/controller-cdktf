@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "launchconfiguration",
+    srcs = [
+        "LaunchConfiguration.go",
+        "LaunchConfigurationConfig.go",
+        "LaunchConfigurationEbsBlockDevice.go",
+        "LaunchConfigurationEbsBlockDeviceList.go",
+        "LaunchConfigurationEbsBlockDeviceList__checks.go",
+        "LaunchConfigurationEbsBlockDeviceOutputReference.go",
+        "LaunchConfigurationEbsBlockDeviceOutputReference__checks.go",
+        "LaunchConfigurationEphemeralBlockDevice.go",
+        "LaunchConfigurationEphemeralBlockDeviceList.go",
+        "LaunchConfigurationEphemeralBlockDeviceList__checks.go",
+        "LaunchConfigurationEphemeralBlockDeviceOutputReference.go",
+        "LaunchConfigurationEphemeralBlockDeviceOutputReference__checks.go",
+        "LaunchConfigurationMetadataOptions.go",
+        "LaunchConfigurationMetadataOptionsOutputReference.go",
+        "LaunchConfigurationMetadataOptionsOutputReference__checks.go",
+        "LaunchConfigurationRootBlockDevice.go",
+        "LaunchConfigurationRootBlockDeviceOutputReference.go",
+        "LaunchConfigurationRootBlockDeviceOutputReference__checks.go",
+        "LaunchConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/launchconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/launchconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "resourcegroupsgroup",
+    srcs = [
+        "ResourcegroupsGroup.go",
+        "ResourcegroupsGroupConfig.go",
+        "ResourcegroupsGroupConfiguration.go",
+        "ResourcegroupsGroupConfigurationList.go",
+        "ResourcegroupsGroupConfigurationList__checks.go",
+        "ResourcegroupsGroupConfigurationOutputReference.go",
+        "ResourcegroupsGroupConfigurationOutputReference__checks.go",
+        "ResourcegroupsGroupConfigurationParameters.go",
+        "ResourcegroupsGroupConfigurationParametersList.go",
+        "ResourcegroupsGroupConfigurationParametersList__checks.go",
+        "ResourcegroupsGroupConfigurationParametersOutputReference.go",
+        "ResourcegroupsGroupConfigurationParametersOutputReference__checks.go",
+        "ResourcegroupsGroupResourceQuery.go",
+        "ResourcegroupsGroupResourceQueryOutputReference.go",
+        "ResourcegroupsGroupResourceQueryOutputReference__checks.go",
+        "ResourcegroupsGroupTimeouts.go",
+        "ResourcegroupsGroupTimeoutsOutputReference.go",
+        "ResourcegroupsGroupTimeoutsOutputReference__checks.go",
+        "ResourcegroupsGroup__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/resourcegroupsgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/resourcegroupsgroup/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

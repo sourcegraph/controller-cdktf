@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "resourcequotav1",
+    srcs = [
+        "ResourceQuotaV1.go",
+        "ResourceQuotaV1Config.go",
+        "ResourceQuotaV1Metadata.go",
+        "ResourceQuotaV1MetadataOutputReference.go",
+        "ResourceQuotaV1MetadataOutputReference__checks.go",
+        "ResourceQuotaV1Spec.go",
+        "ResourceQuotaV1SpecOutputReference.go",
+        "ResourceQuotaV1SpecOutputReference__checks.go",
+        "ResourceQuotaV1SpecScopeSelector.go",
+        "ResourceQuotaV1SpecScopeSelectorMatchExpression.go",
+        "ResourceQuotaV1SpecScopeSelectorMatchExpressionList.go",
+        "ResourceQuotaV1SpecScopeSelectorMatchExpressionList__checks.go",
+        "ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference.go",
+        "ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference__checks.go",
+        "ResourceQuotaV1SpecScopeSelectorOutputReference.go",
+        "ResourceQuotaV1SpecScopeSelectorOutputReference__checks.go",
+        "ResourceQuotaV1Timeouts.go",
+        "ResourceQuotaV1TimeoutsOutputReference.go",
+        "ResourceQuotaV1TimeoutsOutputReference__checks.go",
+        "ResourceQuotaV1__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/kubernetes/resourcequotav1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/kubernetes/jsii",
+        "//gen/kubernetes/resourcequotav1/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

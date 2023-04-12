@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ec2trafficmirrorfilterrule",
+    srcs = [
+        "Ec2TrafficMirrorFilterRule.go",
+        "Ec2TrafficMirrorFilterRuleConfig.go",
+        "Ec2TrafficMirrorFilterRuleDestinationPortRange.go",
+        "Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference.go",
+        "Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference__checks.go",
+        "Ec2TrafficMirrorFilterRuleSourcePortRange.go",
+        "Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference.go",
+        "Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference__checks.go",
+        "Ec2TrafficMirrorFilterRule__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ec2trafficmirrorfilterrule",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ec2trafficmirrorfilterrule/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

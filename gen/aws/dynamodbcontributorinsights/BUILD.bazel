@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dynamodbcontributorinsights",
+    srcs = [
+        "DynamodbContributorInsights.go",
+        "DynamodbContributorInsightsConfig.go",
+        "DynamodbContributorInsightsTimeouts.go",
+        "DynamodbContributorInsightsTimeoutsOutputReference.go",
+        "DynamodbContributorInsightsTimeoutsOutputReference__checks.go",
+        "DynamodbContributorInsights__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dynamodbcontributorinsights",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dynamodbcontributorinsights/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

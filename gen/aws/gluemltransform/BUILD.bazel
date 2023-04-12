@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gluemltransform",
+    srcs = [
+        "GlueMlTransform.go",
+        "GlueMlTransformConfig.go",
+        "GlueMlTransformInputRecordTables.go",
+        "GlueMlTransformInputRecordTablesList.go",
+        "GlueMlTransformInputRecordTablesList__checks.go",
+        "GlueMlTransformInputRecordTablesOutputReference.go",
+        "GlueMlTransformInputRecordTablesOutputReference__checks.go",
+        "GlueMlTransformParameters.go",
+        "GlueMlTransformParametersFindMatchesParameters.go",
+        "GlueMlTransformParametersFindMatchesParametersOutputReference.go",
+        "GlueMlTransformParametersFindMatchesParametersOutputReference__checks.go",
+        "GlueMlTransformParametersOutputReference.go",
+        "GlueMlTransformParametersOutputReference__checks.go",
+        "GlueMlTransformSchema.go",
+        "GlueMlTransformSchemaList.go",
+        "GlueMlTransformSchemaList__checks.go",
+        "GlueMlTransformSchemaOutputReference.go",
+        "GlueMlTransformSchemaOutputReference__checks.go",
+        "GlueMlTransform__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/gluemltransform",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/gluemltransform/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

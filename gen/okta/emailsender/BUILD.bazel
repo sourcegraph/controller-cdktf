@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "emailsender",
+    srcs = [
+        "EmailSender.go",
+        "EmailSenderConfig.go",
+        "EmailSenderDnsRecords.go",
+        "EmailSenderDnsRecordsList.go",
+        "EmailSenderDnsRecordsList__checks.go",
+        "EmailSenderDnsRecordsOutputReference.go",
+        "EmailSenderDnsRecordsOutputReference__checks.go",
+        "EmailSender__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/okta/emailsender",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/okta/emailsender/internal",
+        "//gen/okta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

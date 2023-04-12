@@ -1,297 +1,1609 @@
 package albtargetgroup
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/albtargetgroup/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroup",
-		reflect.TypeOf((*AlbTargetGroup)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "arnSuffix", GoGetter: "ArnSuffix"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "connectionTermination", GoGetter: "ConnectionTermination"},
-			_jsii_.MemberProperty{JsiiProperty: "connectionTerminationInput", GoGetter: "ConnectionTerminationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "deregistrationDelay", GoGetter: "DeregistrationDelay"},
-			_jsii_.MemberProperty{JsiiProperty: "deregistrationDelayInput", GoGetter: "DeregistrationDelayInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "healthCheck", GoGetter: "HealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "healthCheckInput", GoGetter: "HealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipAddressType", GoGetter: "IpAddressType"},
-			_jsii_.MemberProperty{JsiiProperty: "ipAddressTypeInput", GoGetter: "IpAddressTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaMultiValueHeadersEnabled", GoGetter: "LambdaMultiValueHeadersEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "lambdaMultiValueHeadersEnabledInput", GoGetter: "LambdaMultiValueHeadersEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmType", GoGetter: "LoadBalancingAlgorithmType"},
-			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmTypeInput", GoGetter: "LoadBalancingAlgorithmTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "namePrefix", GoGetter: "NamePrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "namePrefixInput", GoGetter: "NamePrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preserveClientIp", GoGetter: "PreserveClientIp"},
-			_jsii_.MemberProperty{JsiiProperty: "preserveClientIpInput", GoGetter: "PreserveClientIpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolVersion", GoGetter: "ProtocolVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolVersionInput", GoGetter: "ProtocolVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyProtocolV2", GoGetter: "ProxyProtocolV2"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyProtocolV2Input", GoGetter: "ProxyProtocolV2Input"},
-			_jsii_.MemberMethod{JsiiMethod: "putHealthCheck", GoMethod: "PutHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putStickiness", GoMethod: "PutStickiness"},
-			_jsii_.MemberMethod{JsiiMethod: "putTargetFailover", GoMethod: "PutTargetFailover"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConnectionTermination", GoMethod: "ResetConnectionTermination"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeregistrationDelay", GoMethod: "ResetDeregistrationDelay"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheck", GoMethod: "ResetHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpAddressType", GoMethod: "ResetIpAddressType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLambdaMultiValueHeadersEnabled", GoMethod: "ResetLambdaMultiValueHeadersEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancingAlgorithmType", GoMethod: "ResetLoadBalancingAlgorithmType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamePrefix", GoMethod: "ResetNamePrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreserveClientIp", GoMethod: "ResetPreserveClientIp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocolVersion", GoMethod: "ResetProtocolVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyProtocolV2", GoMethod: "ResetProxyProtocolV2"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSlowStart", GoMethod: "ResetSlowStart"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStickiness", GoMethod: "ResetStickiness"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetFailover", GoMethod: "ResetTargetFailover"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetType", GoMethod: "ResetTargetType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcId", GoMethod: "ResetVpcId"},
-			_jsii_.MemberProperty{JsiiProperty: "slowStart", GoGetter: "SlowStart"},
-			_jsii_.MemberProperty{JsiiProperty: "slowStartInput", GoGetter: "SlowStartInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stickiness", GoGetter: "Stickiness"},
-			_jsii_.MemberProperty{JsiiProperty: "stickinessInput", GoGetter: "StickinessInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetFailover", GoGetter: "TargetFailover"},
-			_jsii_.MemberProperty{JsiiProperty: "targetFailoverInput", GoGetter: "TargetFailoverInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetType", GoGetter: "TargetType"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTypeInput", GoGetter: "TargetTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AlbTargetGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group aws_alb_target_group}.
+type AlbTargetGroup interface {
+	cdktf.TerraformResource
+	Arn() *string
+	ArnSuffix() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	ConnectionTermination() interface{}
+	SetConnectionTermination(val interface{})
+	ConnectionTerminationInput() interface{}
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DeregistrationDelay() *string
+	SetDeregistrationDelay(val *string)
+	DeregistrationDelayInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	HealthCheck() AlbTargetGroupHealthCheckOutputReference
+	HealthCheckInput() *AlbTargetGroupHealthCheck
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
+	LambdaMultiValueHeadersEnabled() interface{}
+	SetLambdaMultiValueHeadersEnabled(val interface{})
+	LambdaMultiValueHeadersEnabledInput() interface{}
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancingAlgorithmType() *string
+	SetLoadBalancingAlgorithmType(val *string)
+	LoadBalancingAlgorithmTypeInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
+	PreserveClientIp() *string
+	SetPreserveClientIp(val *string)
+	PreserveClientIpInput() *string
+	Protocol() *string
+	SetProtocol(val *string)
+	ProtocolInput() *string
+	ProtocolVersion() *string
+	SetProtocolVersion(val *string)
+	ProtocolVersionInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	ProxyProtocolV2() interface{}
+	SetProxyProtocolV2(val interface{})
+	ProxyProtocolV2Input() interface{}
+	// Experimental.
+	RawOverrides() interface{}
+	SlowStart() *float64
+	SetSlowStart(val *float64)
+	SlowStartInput() *float64
+	Stickiness() AlbTargetGroupStickinessOutputReference
+	StickinessInput() *AlbTargetGroupStickiness
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	TargetFailover() AlbTargetGroupTargetFailoverList
+	TargetFailoverInput() interface{}
+	TargetType() *string
+	SetTargetType(val *string)
+	TargetTypeInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutHealthCheck(value *AlbTargetGroupHealthCheck)
+	PutStickiness(value *AlbTargetGroupStickiness)
+	PutTargetFailover(value interface{})
+	ResetConnectionTermination()
+	ResetDeregistrationDelay()
+	ResetHealthCheck()
+	ResetId()
+	ResetIpAddressType()
+	ResetLambdaMultiValueHeadersEnabled()
+	ResetLoadBalancingAlgorithmType()
+	ResetName()
+	ResetNamePrefix()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPort()
+	ResetPreserveClientIp()
+	ResetProtocol()
+	ResetProtocolVersion()
+	ResetProxyProtocolV2()
+	ResetSlowStart()
+	ResetStickiness()
+	ResetTags()
+	ResetTagsAll()
+	ResetTargetFailover()
+	ResetTargetType()
+	ResetVpcId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for AlbTargetGroup
+type jsiiProxy_AlbTargetGroup struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupConfig",
-		reflect.TypeOf((*AlbTargetGroupConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ArnSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arnSuffix",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupHealthCheck",
-		reflect.TypeOf((*AlbTargetGroupHealthCheck)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
-		reflect.TypeOf((*AlbTargetGroupHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "healthyThreshold", GoGetter: "HealthyThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "healthyThresholdInput", GoGetter: "HealthyThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "matcher", GoGetter: "Matcher"},
-			_jsii_.MemberProperty{JsiiProperty: "matcherInput", GoGetter: "MatcherInput"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHealthyThreshold", GoMethod: "ResetHealthyThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMatcher", GoMethod: "ResetMatcher"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnhealthyThreshold", GoMethod: "ResetUnhealthyThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AlbTargetGroupHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupStickiness",
-		reflect.TypeOf((*AlbTargetGroupStickiness)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ConnectionTermination() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionTermination",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
-		reflect.TypeOf((*AlbTargetGroupStickinessOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "cookieDuration", GoGetter: "CookieDuration"},
-			_jsii_.MemberProperty{JsiiProperty: "cookieDurationInput", GoGetter: "CookieDurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cookieName", GoGetter: "CookieName"},
-			_jsii_.MemberProperty{JsiiProperty: "cookieNameInput", GoGetter: "CookieNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCookieDuration", GoMethod: "ResetCookieDuration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCookieName", GoMethod: "ResetCookieName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AlbTargetGroupStickinessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ConnectionTerminationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionTerminationInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailover",
-		reflect.TypeOf((*AlbTargetGroupTargetFailover)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
-		reflect.TypeOf((*AlbTargetGroupTargetFailoverList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AlbTargetGroupTargetFailoverList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
-		reflect.TypeOf((*AlbTargetGroupTargetFailoverOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "onDeregistration", GoGetter: "OnDeregistration"},
-			_jsii_.MemberProperty{JsiiProperty: "onDeregistrationInput", GoGetter: "OnDeregistrationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "onUnhealthy", GoGetter: "OnUnhealthy"},
-			_jsii_.MemberProperty{JsiiProperty: "onUnhealthyInput", GoGetter: "OnUnhealthyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AlbTargetGroupTargetFailoverOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) DeregistrationDelay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deregistrationDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) DeregistrationDelayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deregistrationDelayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) HealthCheck() AlbTargetGroupHealthCheckOutputReference {
+	var returns AlbTargetGroupHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) HealthCheckInput() *AlbTargetGroupHealthCheck {
+	var returns *AlbTargetGroupHealthCheck
+	_jsii_.Get(
+		j,
+		"healthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) LambdaMultiValueHeadersEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambdaMultiValueHeadersEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) LambdaMultiValueHeadersEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambdaMultiValueHeadersEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) LoadBalancingAlgorithmType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingAlgorithmType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) LoadBalancingAlgorithmTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingAlgorithmTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) PreserveClientIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preserveClientIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) PreserveClientIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preserveClientIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ProtocolVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ProtocolVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ProxyProtocolV2() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"proxyProtocolV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) ProxyProtocolV2Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"proxyProtocolV2Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) SlowStart() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"slowStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) SlowStartInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"slowStartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Stickiness() AlbTargetGroupStickinessOutputReference {
+	var returns AlbTargetGroupStickinessOutputReference
+	_jsii_.Get(
+		j,
+		"stickiness",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) StickinessInput() *AlbTargetGroupStickiness {
+	var returns *AlbTargetGroupStickiness
+	_jsii_.Get(
+		j,
+		"stickinessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TargetFailover() AlbTargetGroupTargetFailoverList {
+	var returns AlbTargetGroupTargetFailoverList
+	_jsii_.Get(
+		j,
+		"targetFailover",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TargetFailoverInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetFailoverInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TargetType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TargetTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group aws_alb_target_group} Resource.
+func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTargetGroupConfig) AlbTargetGroup {
+	_init_.Initialize()
+
+	if err := validateNewAlbTargetGroupParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_AlbTargetGroup{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group aws_alb_target_group} Resource.
+func NewAlbTargetGroup_Override(a AlbTargetGroup, scope constructs.Construct, id *string, config *AlbTargetGroupConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		[]interface{}{scope, id, config},
+		a,
 	)
 }
+
+func (j *jsiiProxy_AlbTargetGroup)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetConnectionTermination(val interface{}) {
+	if err := j.validateSetConnectionTerminationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionTermination",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetDeregistrationDelay(val *string) {
+	if err := j.validateSetDeregistrationDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deregistrationDelay",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetLambdaMultiValueHeadersEnabled(val interface{}) {
+	if err := j.validateSetLambdaMultiValueHeadersEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lambdaMultiValueHeadersEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetLoadBalancingAlgorithmType(val *string) {
+	if err := j.validateSetLoadBalancingAlgorithmTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loadBalancingAlgorithmType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetPreserveClientIp(val *string) {
+	if err := j.validateSetPreserveClientIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preserveClientIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetProtocolVersion(val *string) {
+	if err := j.validateSetProtocolVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocolVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetProxyProtocolV2(val interface{}) {
+	if err := j.validateSetProxyProtocolV2Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"proxyProtocolV2",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetSlowStart(val *float64) {
+	if err := j.validateSetSlowStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"slowStart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetTargetType(val *string) {
+	if err := j.validateSetTargetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func AlbTargetGroup_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAlbTargetGroup_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AlbTargetGroup_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAlbTargetGroup_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AlbTargetGroup_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAlbTargetGroup_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func AlbTargetGroup_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		a,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		a,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) PutHealthCheck(value *AlbTargetGroupHealthCheck) {
+	if err := a.validatePutHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) PutStickiness(value *AlbTargetGroupStickiness) {
+	if err := a.validatePutStickinessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putStickiness",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) PutTargetFailover(value interface{}) {
+	if err := a.validatePutTargetFailoverParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTargetFailover",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetConnectionTermination() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionTermination",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetDeregistrationDelay() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeregistrationDelay",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetHealthCheck() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpAddressType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetLambdaMultiValueHeadersEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLambdaMultiValueHeadersEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetLoadBalancingAlgorithmType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLoadBalancingAlgorithmType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetPreserveClientIp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPreserveClientIp",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetProtocolVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProtocolVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetProxyProtocolV2() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProxyProtocolV2",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetSlowStart() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSlowStart",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetStickiness() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStickiness",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetTargetFailover() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetFailover",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetTargetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVpcId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

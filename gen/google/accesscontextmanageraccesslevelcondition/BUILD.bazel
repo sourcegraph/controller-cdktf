@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "accesscontextmanageraccesslevelcondition",
+    srcs = [
+        "AccessContextManagerAccessLevelCondition.go",
+        "AccessContextManagerAccessLevelConditionConfig.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicy.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOsConstraints.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList__checks.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference__checks.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOutputReference.go",
+        "AccessContextManagerAccessLevelConditionDevicePolicyOutputReference__checks.go",
+        "AccessContextManagerAccessLevelConditionTimeouts.go",
+        "AccessContextManagerAccessLevelConditionTimeoutsOutputReference.go",
+        "AccessContextManagerAccessLevelConditionTimeoutsOutputReference__checks.go",
+        "AccessContextManagerAccessLevelCondition__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/accesscontextmanageraccesslevelcondition",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/accesscontextmanageraccesslevelcondition/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

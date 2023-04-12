@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3controlmultiregionaccesspoint",
+    srcs = [
+        "S3ControlMultiRegionAccessPoint.go",
+        "S3ControlMultiRegionAccessPointConfig.go",
+        "S3ControlMultiRegionAccessPointDetails.go",
+        "S3ControlMultiRegionAccessPointDetailsOutputReference.go",
+        "S3ControlMultiRegionAccessPointDetailsOutputReference__checks.go",
+        "S3ControlMultiRegionAccessPointDetailsPublicAccessBlock.go",
+        "S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference.go",
+        "S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference__checks.go",
+        "S3ControlMultiRegionAccessPointDetailsRegion.go",
+        "S3ControlMultiRegionAccessPointDetailsRegionList.go",
+        "S3ControlMultiRegionAccessPointDetailsRegionList__checks.go",
+        "S3ControlMultiRegionAccessPointDetailsRegionOutputReference.go",
+        "S3ControlMultiRegionAccessPointDetailsRegionOutputReference__checks.go",
+        "S3ControlMultiRegionAccessPointTimeouts.go",
+        "S3ControlMultiRegionAccessPointTimeoutsOutputReference.go",
+        "S3ControlMultiRegionAccessPointTimeoutsOutputReference__checks.go",
+        "S3ControlMultiRegionAccessPoint__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3controlmultiregionaccesspoint",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3controlmultiregionaccesspoint/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

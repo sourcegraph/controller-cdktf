@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "ecrrepository",
+    srcs = [
+        "EcrRepository.go",
+        "EcrRepositoryConfig.go",
+        "EcrRepositoryEncryptionConfiguration.go",
+        "EcrRepositoryEncryptionConfigurationList.go",
+        "EcrRepositoryEncryptionConfigurationList__checks.go",
+        "EcrRepositoryEncryptionConfigurationOutputReference.go",
+        "EcrRepositoryEncryptionConfigurationOutputReference__checks.go",
+        "EcrRepositoryImageScanningConfiguration.go",
+        "EcrRepositoryImageScanningConfigurationOutputReference.go",
+        "EcrRepositoryImageScanningConfigurationOutputReference__checks.go",
+        "EcrRepositoryTimeouts.go",
+        "EcrRepositoryTimeoutsOutputReference.go",
+        "EcrRepositoryTimeoutsOutputReference__checks.go",
+        "EcrRepository__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/ecrrepository",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/ecrrepository/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

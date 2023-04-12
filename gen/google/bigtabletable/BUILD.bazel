@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "bigtabletable",
+    srcs = [
+        "BigtableTable.go",
+        "BigtableTableColumnFamily.go",
+        "BigtableTableColumnFamilyList.go",
+        "BigtableTableColumnFamilyList__checks.go",
+        "BigtableTableColumnFamilyOutputReference.go",
+        "BigtableTableColumnFamilyOutputReference__checks.go",
+        "BigtableTableConfig.go",
+        "BigtableTableTimeouts.go",
+        "BigtableTableTimeoutsOutputReference.go",
+        "BigtableTableTimeoutsOutputReference__checks.go",
+        "BigtableTable__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/bigtabletable",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/bigtabletable/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

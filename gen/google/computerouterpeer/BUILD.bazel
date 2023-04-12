@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computerouterpeer",
+    srcs = [
+        "ComputeRouterPeer.go",
+        "ComputeRouterPeerAdvertisedIpRanges.go",
+        "ComputeRouterPeerAdvertisedIpRangesList.go",
+        "ComputeRouterPeerAdvertisedIpRangesList__checks.go",
+        "ComputeRouterPeerAdvertisedIpRangesOutputReference.go",
+        "ComputeRouterPeerAdvertisedIpRangesOutputReference__checks.go",
+        "ComputeRouterPeerBfd.go",
+        "ComputeRouterPeerBfdOutputReference.go",
+        "ComputeRouterPeerBfdOutputReference__checks.go",
+        "ComputeRouterPeerConfig.go",
+        "ComputeRouterPeerTimeouts.go",
+        "ComputeRouterPeerTimeoutsOutputReference.go",
+        "ComputeRouterPeerTimeoutsOutputReference__checks.go",
+        "ComputeRouterPeer__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computerouterpeer",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computerouterpeer/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

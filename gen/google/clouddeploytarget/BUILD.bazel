@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "clouddeploytarget",
+    srcs = [
+        "ClouddeployTarget.go",
+        "ClouddeployTargetAnthosCluster.go",
+        "ClouddeployTargetAnthosClusterOutputReference.go",
+        "ClouddeployTargetAnthosClusterOutputReference__checks.go",
+        "ClouddeployTargetConfig.go",
+        "ClouddeployTargetExecutionConfigs.go",
+        "ClouddeployTargetExecutionConfigsList.go",
+        "ClouddeployTargetExecutionConfigsList__checks.go",
+        "ClouddeployTargetExecutionConfigsOutputReference.go",
+        "ClouddeployTargetExecutionConfigsOutputReference__checks.go",
+        "ClouddeployTargetGke.go",
+        "ClouddeployTargetGkeOutputReference.go",
+        "ClouddeployTargetGkeOutputReference__checks.go",
+        "ClouddeployTargetTimeouts.go",
+        "ClouddeployTargetTimeoutsOutputReference.go",
+        "ClouddeployTargetTimeoutsOutputReference__checks.go",
+        "ClouddeployTarget__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/clouddeploytarget",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/clouddeploytarget/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

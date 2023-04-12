@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsbackupreportplan",
+    srcs = [
+        "DataAwsBackupReportPlan.go",
+        "DataAwsBackupReportPlanConfig.go",
+        "DataAwsBackupReportPlanReportDeliveryChannel.go",
+        "DataAwsBackupReportPlanReportDeliveryChannelList.go",
+        "DataAwsBackupReportPlanReportDeliveryChannelList__checks.go",
+        "DataAwsBackupReportPlanReportDeliveryChannelOutputReference.go",
+        "DataAwsBackupReportPlanReportDeliveryChannelOutputReference__checks.go",
+        "DataAwsBackupReportPlanReportSetting.go",
+        "DataAwsBackupReportPlanReportSettingList.go",
+        "DataAwsBackupReportPlanReportSettingList__checks.go",
+        "DataAwsBackupReportPlanReportSettingOutputReference.go",
+        "DataAwsBackupReportPlanReportSettingOutputReference__checks.go",
+        "DataAwsBackupReportPlan__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsbackupreportplan",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsbackupreportplan/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

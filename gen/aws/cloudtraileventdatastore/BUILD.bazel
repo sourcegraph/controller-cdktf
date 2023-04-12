@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudtraileventdatastore",
+    srcs = [
+        "CloudtrailEventDataStore.go",
+        "CloudtrailEventDataStoreAdvancedEventSelector.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList__checks.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference__checks.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorList.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorList__checks.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorOutputReference.go",
+        "CloudtrailEventDataStoreAdvancedEventSelectorOutputReference__checks.go",
+        "CloudtrailEventDataStoreConfig.go",
+        "CloudtrailEventDataStoreTimeouts.go",
+        "CloudtrailEventDataStoreTimeoutsOutputReference.go",
+        "CloudtrailEventDataStoreTimeoutsOutputReference__checks.go",
+        "CloudtrailEventDataStore__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudtraileventdatastore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudtraileventdatastore/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

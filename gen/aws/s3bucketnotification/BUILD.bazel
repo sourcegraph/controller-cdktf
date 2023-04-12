@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketnotification",
+    srcs = [
+        "S3BucketNotification.go",
+        "S3BucketNotificationConfig.go",
+        "S3BucketNotificationLambdaFunction.go",
+        "S3BucketNotificationLambdaFunctionList.go",
+        "S3BucketNotificationLambdaFunctionList__checks.go",
+        "S3BucketNotificationLambdaFunctionOutputReference.go",
+        "S3BucketNotificationLambdaFunctionOutputReference__checks.go",
+        "S3BucketNotificationQueue.go",
+        "S3BucketNotificationQueueList.go",
+        "S3BucketNotificationQueueList__checks.go",
+        "S3BucketNotificationQueueOutputReference.go",
+        "S3BucketNotificationQueueOutputReference__checks.go",
+        "S3BucketNotificationTopic.go",
+        "S3BucketNotificationTopicList.go",
+        "S3BucketNotificationTopicList__checks.go",
+        "S3BucketNotificationTopicOutputReference.go",
+        "S3BucketNotificationTopicOutputReference__checks.go",
+        "S3BucketNotification__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketnotification",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketnotification/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2managedprefixlist",
+    srcs = [
+        "DataAwsEc2ManagedPrefixList.go",
+        "DataAwsEc2ManagedPrefixListConfig.go",
+        "DataAwsEc2ManagedPrefixListEntries.go",
+        "DataAwsEc2ManagedPrefixListEntriesList.go",
+        "DataAwsEc2ManagedPrefixListEntriesList__checks.go",
+        "DataAwsEc2ManagedPrefixListEntriesOutputReference.go",
+        "DataAwsEc2ManagedPrefixListEntriesOutputReference__checks.go",
+        "DataAwsEc2ManagedPrefixListFilter.go",
+        "DataAwsEc2ManagedPrefixListFilterList.go",
+        "DataAwsEc2ManagedPrefixListFilterList__checks.go",
+        "DataAwsEc2ManagedPrefixListFilterOutputReference.go",
+        "DataAwsEc2ManagedPrefixListFilterOutputReference__checks.go",
+        "DataAwsEc2ManagedPrefixListTimeouts.go",
+        "DataAwsEc2ManagedPrefixListTimeoutsOutputReference.go",
+        "DataAwsEc2ManagedPrefixListTimeoutsOutputReference__checks.go",
+        "DataAwsEc2ManagedPrefixList__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2managedprefixlist",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2managedprefixlist/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

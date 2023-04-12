@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketintelligenttieringconfiguration",
+    srcs = [
+        "S3BucketIntelligentTieringConfiguration.go",
+        "S3BucketIntelligentTieringConfigurationConfig.go",
+        "S3BucketIntelligentTieringConfigurationFilter.go",
+        "S3BucketIntelligentTieringConfigurationFilterOutputReference.go",
+        "S3BucketIntelligentTieringConfigurationFilterOutputReference__checks.go",
+        "S3BucketIntelligentTieringConfigurationTiering.go",
+        "S3BucketIntelligentTieringConfigurationTieringList.go",
+        "S3BucketIntelligentTieringConfigurationTieringList__checks.go",
+        "S3BucketIntelligentTieringConfigurationTieringOutputReference.go",
+        "S3BucketIntelligentTieringConfigurationTieringOutputReference__checks.go",
+        "S3BucketIntelligentTieringConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketintelligenttieringconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketintelligenttieringconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

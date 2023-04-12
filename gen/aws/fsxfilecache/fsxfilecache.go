@@ -1,473 +1,1284 @@
 package fsxfilecache
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/fsxfilecache/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCache",
-		reflect.TypeOf((*FsxFileCache)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "copyTagsToDataRepositoryAssociations", GoGetter: "CopyTagsToDataRepositoryAssociations"},
-			_jsii_.MemberProperty{JsiiProperty: "copyTagsToDataRepositoryAssociationsInput", GoGetter: "CopyTagsToDataRepositoryAssociationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositoryAssociation", GoGetter: "DataRepositoryAssociation"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositoryAssociationIds", GoGetter: "DataRepositoryAssociationIds"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositoryAssociationInput", GoGetter: "DataRepositoryAssociationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCacheId", GoGetter: "FileCacheId"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCacheType", GoGetter: "FileCacheType"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCacheTypeInput", GoGetter: "FileCacheTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCacheTypeVersion", GoGetter: "FileCacheTypeVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCacheTypeVersionInput", GoGetter: "FileCacheTypeVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "lustreConfiguration", GoGetter: "LustreConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "lustreConfigurationInput", GoGetter: "LustreConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceIds", GoGetter: "NetworkInterfaceIds"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "ownerId", GoGetter: "OwnerId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putDataRepositoryAssociation", GoMethod: "PutDataRepositoryAssociation"},
-			_jsii_.MemberMethod{JsiiMethod: "putLustreConfiguration", GoMethod: "PutLustreConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCopyTagsToDataRepositoryAssociations", GoMethod: "ResetCopyTagsToDataRepositoryAssociations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataRepositoryAssociation", GoMethod: "ResetDataRepositoryAssociation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLustreConfiguration", GoMethod: "ResetLustreConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "storageCapacity", GoGetter: "StorageCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "storageCapacityInput", GoGetter: "StorageCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdsInput", GoGetter: "SubnetIdsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCache{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_file_cache aws_fsx_file_cache}.
+type FsxFileCache interface {
+	cdktf.TerraformResource
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	CopyTagsToDataRepositoryAssociations() interface{}
+	SetCopyTagsToDataRepositoryAssociations(val interface{})
+	CopyTagsToDataRepositoryAssociationsInput() interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DataRepositoryAssociation() FsxFileCacheDataRepositoryAssociationList
+	DataRepositoryAssociationIds() *[]*string
+	DataRepositoryAssociationInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DnsName() *string
+	FileCacheId() *string
+	FileCacheType() *string
+	SetFileCacheType(val *string)
+	FileCacheTypeInput() *string
+	FileCacheTypeVersion() *string
+	SetFileCacheTypeVersion(val *string)
+	FileCacheTypeVersionInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LustreConfiguration() FsxFileCacheLustreConfigurationList
+	LustreConfigurationInput() interface{}
+	NetworkInterfaceIds() *[]*string
+	// The tree node.
+	Node() constructs.Node
+	OwnerId() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	SecurityGroupIds() *[]*string
+	SetSecurityGroupIds(val *[]*string)
+	SecurityGroupIdsInput() *[]*string
+	StorageCapacity() *float64
+	SetStorageCapacity(val *float64)
+	StorageCapacityInput() *float64
+	SubnetIds() *[]*string
+	SetSubnetIds(val *[]*string)
+	SubnetIdsInput() *[]*string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() FsxFileCacheTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VpcId() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutDataRepositoryAssociation(value interface{})
+	PutLustreConfiguration(value interface{})
+	PutTimeouts(value *FsxFileCacheTimeouts)
+	ResetCopyTagsToDataRepositoryAssociations()
+	ResetDataRepositoryAssociation()
+	ResetId()
+	ResetKmsKeyId()
+	ResetLustreConfiguration()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetSecurityGroupIds()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for FsxFileCache
+type jsiiProxy_FsxFileCache struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_FsxFileCache) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheConfig",
-		reflect.TypeOf((*FsxFileCacheConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociation",
-		reflect.TypeOf((*FsxFileCacheDataRepositoryAssociation)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationList",
-		reflect.TypeOf((*FsxFileCacheDataRepositoryAssociationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheDataRepositoryAssociationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfs",
-		reflect.TypeOf((*FsxFileCacheDataRepositoryAssociationNfs)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociations() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsToDataRepositoryAssociations",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfsList",
-		reflect.TypeOf((*FsxFileCacheDataRepositoryAssociationNfsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsToDataRepositoryAssociationsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfsOutputReference",
-		reflect.TypeOf((*FsxFileCacheDataRepositoryAssociationNfsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dnsIps", GoGetter: "DnsIps"},
-			_jsii_.MemberProperty{JsiiProperty: "dnsIpsInput", GoGetter: "DnsIpsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDnsIps", GoMethod: "ResetDnsIps"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
-			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
-		reflect.TypeOf((*FsxFileCacheDataRepositoryAssociationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "associationId", GoGetter: "AssociationId"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositoryPath", GoGetter: "DataRepositoryPath"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositoryPathInput", GoGetter: "DataRepositoryPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositorySubdirectories", GoGetter: "DataRepositorySubdirectories"},
-			_jsii_.MemberProperty{JsiiProperty: "dataRepositorySubdirectoriesInput", GoGetter: "DataRepositorySubdirectoriesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCacheId", GoGetter: "FileCacheId"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCachePath", GoGetter: "FileCachePath"},
-			_jsii_.MemberProperty{JsiiProperty: "fileCachePathInput", GoGetter: "FileCachePathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSystemId", GoGetter: "FileSystemId"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSystemPath", GoGetter: "FileSystemPath"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "importedFileChunkSize", GoGetter: "ImportedFileChunkSize"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "nfs", GoGetter: "Nfs"},
-			_jsii_.MemberProperty{JsiiProperty: "nfsInput", GoGetter: "NfsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putNfs", GoMethod: "PutNfs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataRepositorySubdirectories", GoMethod: "ResetDataRepositorySubdirectories"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNfs", GoMethod: "ResetNfs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceArn", GoGetter: "ResourceArn"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) DataRepositoryAssociation() FsxFileCacheDataRepositoryAssociationList {
+	var returns FsxFileCacheDataRepositoryAssociationList
+	_jsii_.Get(
+		j,
+		"dataRepositoryAssociation",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheLustreConfiguration",
-		reflect.TypeOf((*FsxFileCacheLustreConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) DataRepositoryAssociationIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataRepositoryAssociationIds",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationList",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheLustreConfigurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) DataRepositoryAssociationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataRepositoryAssociationInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfiguration",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationLogConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationList",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationLogConfigurationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheLustreConfigurationLogConfigurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) DnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsName",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationOutputReference",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationLogConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "destination", GoGetter: "Destination"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "level", GoGetter: "Level"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheLustreConfigurationLogConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) FileCacheId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileCacheId",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfiguration",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationMetadataConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) FileCacheType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileCacheType",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationList",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationMetadataConfigurationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) FileCacheTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileCacheTypeInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageCapacity", GoGetter: "StorageCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "storageCapacityInput", GoGetter: "StorageCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) FileCacheTypeVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileCacheTypeVersion",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationOutputReference",
-		reflect.TypeOf((*FsxFileCacheLustreConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentType", GoGetter: "DeploymentType"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentTypeInput", GoGetter: "DeploymentTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "logConfiguration", GoGetter: "LogConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "metadataConfiguration", GoGetter: "MetadataConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "metadataConfigurationInput", GoGetter: "MetadataConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mountName", GoGetter: "MountName"},
-			_jsii_.MemberProperty{JsiiProperty: "perUnitStorageThroughput", GoGetter: "PerUnitStorageThroughput"},
-			_jsii_.MemberProperty{JsiiProperty: "perUnitStorageThroughputInput", GoGetter: "PerUnitStorageThroughputInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putMetadataConfiguration", GoMethod: "PutMetadataConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWeeklyMaintenanceStartTime", GoMethod: "ResetWeeklyMaintenanceStartTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTime", GoGetter: "WeeklyMaintenanceStartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTimeInput", GoGetter: "WeeklyMaintenanceStartTimeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheLustreConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) FileCacheTypeVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileCacheTypeVersionInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.fsxFileCache.FsxFileCacheTimeouts",
-		reflect.TypeOf((*FsxFileCacheTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.fsxFileCache.FsxFileCacheTimeoutsOutputReference",
-		reflect.TypeOf((*FsxFileCacheTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_FsxFileCacheTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) LustreConfiguration() FsxFileCacheLustreConfigurationList {
+	var returns FsxFileCacheLustreConfigurationList
+	_jsii_.Get(
+		j,
+		"lustreConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) LustreConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lustreConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) NetworkInterfaceIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networkInterfaceIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) OwnerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) SecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) SecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) StorageCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) StorageCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) SubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) SubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) Timeouts() FsxFileCacheTimeoutsOutputReference {
+	var returns FsxFileCacheTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxFileCache) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_file_cache aws_fsx_file_cache} Resource.
+func NewFsxFileCache(scope constructs.Construct, id *string, config *FsxFileCacheConfig) FsxFileCache {
+	_init_.Initialize()
+
+	if err := validateNewFsxFileCacheParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_FsxFileCache{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_file_cache aws_fsx_file_cache} Resource.
+func NewFsxFileCache_Override(f FsxFileCache, scope constructs.Construct, id *string, config *FsxFileCacheConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
+		[]interface{}{scope, id, config},
+		f,
 	)
 }
+
+func (j *jsiiProxy_FsxFileCache)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetCopyTagsToDataRepositoryAssociations(val interface{}) {
+	if err := j.validateSetCopyTagsToDataRepositoryAssociationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"copyTagsToDataRepositoryAssociations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetFileCacheType(val *string) {
+	if err := j.validateSetFileCacheTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileCacheType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetFileCacheTypeVersion(val *string) {
+	if err := j.validateSetFileCacheTypeVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileCacheTypeVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetStorageCapacity(val *float64) {
+	if err := j.validateSetStorageCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetSubnetIds(val *[]*string) {
+	if err := j.validateSetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxFileCache)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func FsxFileCache_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxFileCache_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FsxFileCache_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxFileCache_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FsxFileCache_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxFileCache_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func FsxFileCache_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) AddOverride(path *string, value interface{}) {
+	if err := f.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		f,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		f,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := f.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		f,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := f.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		f,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := f.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		f,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := f.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		f,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := f.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		f,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetStringAttribute(terraformAttribute *string) *string {
+	if err := f.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		f,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := f.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		f,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		f,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) OverrideLogicalId(newLogicalId *string) {
+	if err := f.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) PutDataRepositoryAssociation(value interface{}) {
+	if err := f.validatePutDataRepositoryAssociationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putDataRepositoryAssociation",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) PutLustreConfiguration(value interface{}) {
+	if err := f.validatePutLustreConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLustreConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) PutTimeouts(value *FsxFileCacheTimeouts) {
+	if err := f.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetCopyTagsToDataRepositoryAssociations() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCopyTagsToDataRepositoryAssociations",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetDataRepositoryAssociation() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataRepositoryAssociation",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetLustreConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLustreConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxFileCache) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		f,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		f,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FsxFileCache) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

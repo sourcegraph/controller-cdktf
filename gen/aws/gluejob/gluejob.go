@@ -1,241 +1,1528 @@
 package gluejob
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/gluejob/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJob",
-		reflect.TypeOf((*GlueJob)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
-			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "connections", GoGetter: "Connections"},
-			_jsii_.MemberProperty{JsiiProperty: "connectionsInput", GoGetter: "ConnectionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultArguments", GoGetter: "DefaultArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultArgumentsInput", GoGetter: "DefaultArgumentsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "executionClass", GoGetter: "ExecutionClass"},
-			_jsii_.MemberProperty{JsiiProperty: "executionClassInput", GoGetter: "ExecutionClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "executionProperty", GoGetter: "ExecutionProperty"},
-			_jsii_.MemberProperty{JsiiProperty: "executionPropertyInput", GoGetter: "ExecutionPropertyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "glueVersion", GoGetter: "GlueVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "glueVersionInput", GoGetter: "GlueVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "maxCapacity", GoGetter: "MaxCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "maxCapacityInput", GoGetter: "MaxCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxRetries", GoGetter: "MaxRetries"},
-			_jsii_.MemberProperty{JsiiProperty: "maxRetriesInput", GoGetter: "MaxRetriesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "nonOverridableArguments", GoGetter: "NonOverridableArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "nonOverridableArgumentsInput", GoGetter: "NonOverridableArgumentsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationProperty", GoGetter: "NotificationProperty"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationPropertyInput", GoGetter: "NotificationPropertyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "numberOfWorkers", GoGetter: "NumberOfWorkers"},
-			_jsii_.MemberProperty{JsiiProperty: "numberOfWorkersInput", GoGetter: "NumberOfWorkersInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putCommand", GoMethod: "PutCommand"},
-			_jsii_.MemberMethod{JsiiMethod: "putExecutionProperty", GoMethod: "PutExecutionProperty"},
-			_jsii_.MemberMethod{JsiiMethod: "putNotificationProperty", GoMethod: "PutNotificationProperty"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConnections", GoMethod: "ResetConnections"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultArguments", GoMethod: "ResetDefaultArguments"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExecutionClass", GoMethod: "ResetExecutionClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExecutionProperty", GoMethod: "ResetExecutionProperty"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGlueVersion", GoMethod: "ResetGlueVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxCapacity", GoMethod: "ResetMaxCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxRetries", GoMethod: "ResetMaxRetries"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNonOverridableArguments", GoMethod: "ResetNonOverridableArguments"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotificationProperty", GoMethod: "ResetNotificationProperty"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfWorkers", GoMethod: "ResetNumberOfWorkers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityConfiguration", GoMethod: "ResetSecurityConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkerType", GoMethod: "ResetWorkerType"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityConfiguration", GoGetter: "SecurityConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "securityConfigurationInput", GoGetter: "SecurityConfigurationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "workerType", GoGetter: "WorkerType"},
-			_jsii_.MemberProperty{JsiiProperty: "workerTypeInput", GoGetter: "WorkerTypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GlueJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_job aws_glue_job}.
+type GlueJob interface {
+	cdktf.TerraformResource
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	Command() GlueJobCommandOutputReference
+	CommandInput() *GlueJobCommand
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	Connections() *[]*string
+	SetConnections(val *[]*string)
+	ConnectionsInput() *[]*string
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DefaultArguments() *map[string]*string
+	SetDefaultArguments(val *map[string]*string)
+	DefaultArgumentsInput() *map[string]*string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	ExecutionClass() *string
+	SetExecutionClass(val *string)
+	ExecutionClassInput() *string
+	ExecutionProperty() GlueJobExecutionPropertyOutputReference
+	ExecutionPropertyInput() *GlueJobExecutionProperty
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GlueVersion() *string
+	SetGlueVersion(val *string)
+	GlueVersionInput() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxCapacity() *float64
+	SetMaxCapacity(val *float64)
+	MaxCapacityInput() *float64
+	MaxRetries() *float64
+	SetMaxRetries(val *float64)
+	MaxRetriesInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NonOverridableArguments() *map[string]*string
+	SetNonOverridableArguments(val *map[string]*string)
+	NonOverridableArgumentsInput() *map[string]*string
+	NotificationProperty() GlueJobNotificationPropertyOutputReference
+	NotificationPropertyInput() *GlueJobNotificationProperty
+	NumberOfWorkers() *float64
+	SetNumberOfWorkers(val *float64)
+	NumberOfWorkersInput() *float64
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
+	SecurityConfiguration() *string
+	SetSecurityConfiguration(val *string)
+	SecurityConfigurationInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeout() *float64
+	SetTimeout(val *float64)
+	TimeoutInput() *float64
+	WorkerType() *string
+	SetWorkerType(val *string)
+	WorkerTypeInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutCommand(value *GlueJobCommand)
+	PutExecutionProperty(value *GlueJobExecutionProperty)
+	PutNotificationProperty(value *GlueJobNotificationProperty)
+	ResetConnections()
+	ResetDefaultArguments()
+	ResetDescription()
+	ResetExecutionClass()
+	ResetExecutionProperty()
+	ResetGlueVersion()
+	ResetId()
+	ResetMaxCapacity()
+	ResetMaxRetries()
+	ResetNonOverridableArguments()
+	ResetNotificationProperty()
+	ResetNumberOfWorkers()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetSecurityConfiguration()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeout()
+	ResetWorkerType()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GlueJob
+type jsiiProxy_GlueJob struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GlueJob) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobCommand",
-		reflect.TypeOf((*GlueJobCommand)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJobCommandOutputReference",
-		reflect.TypeOf((*GlueJobCommandOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "pythonVersion", GoGetter: "PythonVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "pythonVersionInput", GoGetter: "PythonVersionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPythonVersion", GoMethod: "ResetPythonVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptLocation", GoGetter: "ScriptLocation"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptLocationInput", GoGetter: "ScriptLocationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GlueJobCommandOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Command() GlueJobCommandOutputReference {
+	var returns GlueJobCommandOutputReference
+	_jsii_.Get(
+		j,
+		"command",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobConfig",
-		reflect.TypeOf((*GlueJobConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) CommandInput() *GlueJobCommand {
+	var returns *GlueJobCommand
+	_jsii_.Get(
+		j,
+		"commandInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobExecutionProperty",
-		reflect.TypeOf((*GlueJobExecutionProperty)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJobExecutionPropertyOutputReference",
-		reflect.TypeOf((*GlueJobExecutionPropertyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentRuns", GoGetter: "MaxConcurrentRuns"},
-			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentRunsInput", GoGetter: "MaxConcurrentRunsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxConcurrentRuns", GoMethod: "ResetMaxConcurrentRuns"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GlueJobExecutionPropertyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Connections() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"connections",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobNotificationProperty",
-		reflect.TypeOf((*GlueJobNotificationProperty)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ConnectionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"connectionsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJobNotificationPropertyOutputReference",
-		reflect.TypeOf((*GlueJobNotificationPropertyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "notifyDelayAfter", GoGetter: "NotifyDelayAfter"},
-			_jsii_.MemberProperty{JsiiProperty: "notifyDelayAfterInput", GoGetter: "NotifyDelayAfterInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotifyDelayAfter", GoMethod: "ResetNotifyDelayAfter"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GlueJobNotificationPropertyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) DefaultArguments() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"defaultArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) DefaultArgumentsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"defaultArgumentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ExecutionClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ExecutionClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionClassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ExecutionProperty() GlueJobExecutionPropertyOutputReference {
+	var returns GlueJobExecutionPropertyOutputReference
+	_jsii_.Get(
+		j,
+		"executionProperty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ExecutionPropertyInput() *GlueJobExecutionProperty {
+	var returns *GlueJobExecutionProperty
+	_jsii_.Get(
+		j,
+		"executionPropertyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) GlueVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"glueVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) GlueVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"glueVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) MaxCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) MaxCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) MaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) MaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NonOverridableArguments() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nonOverridableArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NonOverridableArgumentsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nonOverridableArgumentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NotificationProperty() GlueJobNotificationPropertyOutputReference {
+	var returns GlueJobNotificationPropertyOutputReference
+	_jsii_.Get(
+		j,
+		"notificationProperty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NotificationPropertyInput() *GlueJobNotificationProperty {
+	var returns *GlueJobNotificationProperty
+	_jsii_.Get(
+		j,
+		"notificationPropertyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NumberOfWorkers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numberOfWorkers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) NumberOfWorkersInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numberOfWorkersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) SecurityConfiguration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) SecurityConfigurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) Timeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) TimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) WorkerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) WorkerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_job aws_glue_job} Resource.
+func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) GlueJob {
+	_init_.Initialize()
+
+	if err := validateNewGlueJobParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GlueJob{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.glueJob.GlueJob",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_job aws_glue_job} Resource.
+func NewGlueJob_Override(g GlueJob, scope constructs.Construct, id *string, config *GlueJobConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.glueJob.GlueJob",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GlueJob)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetConnections(val *[]*string) {
+	if err := j.validateSetConnectionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connections",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetDefaultArguments(val *map[string]*string) {
+	if err := j.validateSetDefaultArgumentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultArguments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetExecutionClass(val *string) {
+	if err := j.validateSetExecutionClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionClass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetGlueVersion(val *string) {
+	if err := j.validateSetGlueVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"glueVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetMaxCapacity(val *float64) {
+	if err := j.validateSetMaxCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetMaxRetries(val *float64) {
+	if err := j.validateSetMaxRetriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRetries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetNonOverridableArguments(val *map[string]*string) {
+	if err := j.validateSetNonOverridableArgumentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nonOverridableArguments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetNumberOfWorkers(val *float64) {
+	if err := j.validateSetNumberOfWorkersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numberOfWorkers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetSecurityConfiguration(val *string) {
+	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityConfiguration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetWorkerType(val *string) {
+	if err := j.validateSetWorkerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workerType",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GlueJob_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlueJob_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.glueJob.GlueJob",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GlueJob_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlueJob_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.glueJob.GlueJob",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GlueJob_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlueJob_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.glueJob.GlueJob",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GlueJob_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.glueJob.GlueJob",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GlueJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GlueJob) PutCommand(value *GlueJobCommand) {
+	if err := g.validatePutCommandParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCommand",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueJob) PutExecutionProperty(value *GlueJobExecutionProperty) {
+	if err := g.validatePutExecutionPropertyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExecutionProperty",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueJob) PutNotificationProperty(value *GlueJobNotificationProperty) {
+	if err := g.validatePutNotificationPropertyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotificationProperty",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetConnections() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnections",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetDefaultArguments() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultArguments",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetExecutionClass() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExecutionClass",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetExecutionProperty() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExecutionProperty",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetGlueVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGlueVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetMaxCapacity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxCapacity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetMaxRetries() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetNonOverridableArguments() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNonOverridableArguments",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetNotificationProperty() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationProperty",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetNumberOfWorkers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNumberOfWorkers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetSecurityConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetWorkerType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkerType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GlueJob) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

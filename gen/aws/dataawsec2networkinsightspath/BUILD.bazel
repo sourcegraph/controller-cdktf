@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2networkinsightspath",
+    srcs = [
+        "DataAwsEc2NetworkInsightsPath.go",
+        "DataAwsEc2NetworkInsightsPathConfig.go",
+        "DataAwsEc2NetworkInsightsPathFilter.go",
+        "DataAwsEc2NetworkInsightsPathFilterList.go",
+        "DataAwsEc2NetworkInsightsPathFilterList__checks.go",
+        "DataAwsEc2NetworkInsightsPathFilterOutputReference.go",
+        "DataAwsEc2NetworkInsightsPathFilterOutputReference__checks.go",
+        "DataAwsEc2NetworkInsightsPath__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2networkinsightspath",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2networkinsightspath/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

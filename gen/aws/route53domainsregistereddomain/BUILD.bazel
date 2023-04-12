@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "route53domainsregistereddomain",
+    srcs = [
+        "Route53DomainsRegisteredDomain.go",
+        "Route53DomainsRegisteredDomainAdminContact.go",
+        "Route53DomainsRegisteredDomainAdminContactOutputReference.go",
+        "Route53DomainsRegisteredDomainAdminContactOutputReference__checks.go",
+        "Route53DomainsRegisteredDomainConfig.go",
+        "Route53DomainsRegisteredDomainNameServer.go",
+        "Route53DomainsRegisteredDomainNameServerList.go",
+        "Route53DomainsRegisteredDomainNameServerList__checks.go",
+        "Route53DomainsRegisteredDomainNameServerOutputReference.go",
+        "Route53DomainsRegisteredDomainNameServerOutputReference__checks.go",
+        "Route53DomainsRegisteredDomainRegistrantContact.go",
+        "Route53DomainsRegisteredDomainRegistrantContactOutputReference.go",
+        "Route53DomainsRegisteredDomainRegistrantContactOutputReference__checks.go",
+        "Route53DomainsRegisteredDomainTechContact.go",
+        "Route53DomainsRegisteredDomainTechContactOutputReference.go",
+        "Route53DomainsRegisteredDomainTechContactOutputReference__checks.go",
+        "Route53DomainsRegisteredDomainTimeouts.go",
+        "Route53DomainsRegisteredDomainTimeoutsOutputReference.go",
+        "Route53DomainsRegisteredDomainTimeoutsOutputReference__checks.go",
+        "Route53DomainsRegisteredDomain__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/route53domainsregistereddomain",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/route53domainsregistereddomain/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

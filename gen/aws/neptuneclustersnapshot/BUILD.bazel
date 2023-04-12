@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "neptuneclustersnapshot",
+    srcs = [
+        "NeptuneClusterSnapshot.go",
+        "NeptuneClusterSnapshotConfig.go",
+        "NeptuneClusterSnapshotTimeouts.go",
+        "NeptuneClusterSnapshotTimeoutsOutputReference.go",
+        "NeptuneClusterSnapshotTimeoutsOutputReference__checks.go",
+        "NeptuneClusterSnapshot__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/neptuneclustersnapshot",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/neptuneclustersnapshot/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

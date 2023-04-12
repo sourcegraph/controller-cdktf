@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataprocmetastoreservice",
+    srcs = [
+        "DataprocMetastoreService.go",
+        "DataprocMetastoreServiceConfig.go",
+        "DataprocMetastoreServiceEncryptionConfig.go",
+        "DataprocMetastoreServiceEncryptionConfigOutputReference.go",
+        "DataprocMetastoreServiceEncryptionConfigOutputReference__checks.go",
+        "DataprocMetastoreServiceHiveMetastoreConfig.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference__checks.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference__checks.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigOutputReference.go",
+        "DataprocMetastoreServiceHiveMetastoreConfigOutputReference__checks.go",
+        "DataprocMetastoreServiceMaintenanceWindow.go",
+        "DataprocMetastoreServiceMaintenanceWindowOutputReference.go",
+        "DataprocMetastoreServiceMaintenanceWindowOutputReference__checks.go",
+        "DataprocMetastoreServiceTimeouts.go",
+        "DataprocMetastoreServiceTimeoutsOutputReference.go",
+        "DataprocMetastoreServiceTimeoutsOutputReference__checks.go",
+        "DataprocMetastoreService__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dataprocmetastoreservice",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dataprocmetastoreservice/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

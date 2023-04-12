@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecontaineranalysisnote",
+    srcs = [
+        "GoogleContainerAnalysisNote.go",
+        "GoogleContainerAnalysisNoteAttestationAuthority.go",
+        "GoogleContainerAnalysisNoteAttestationAuthorityHint.go",
+        "GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference.go",
+        "GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference__checks.go",
+        "GoogleContainerAnalysisNoteAttestationAuthorityOutputReference.go",
+        "GoogleContainerAnalysisNoteAttestationAuthorityOutputReference__checks.go",
+        "GoogleContainerAnalysisNoteConfig.go",
+        "GoogleContainerAnalysisNoteRelatedUrl.go",
+        "GoogleContainerAnalysisNoteRelatedUrlList.go",
+        "GoogleContainerAnalysisNoteRelatedUrlList__checks.go",
+        "GoogleContainerAnalysisNoteRelatedUrlOutputReference.go",
+        "GoogleContainerAnalysisNoteRelatedUrlOutputReference__checks.go",
+        "GoogleContainerAnalysisNoteTimeouts.go",
+        "GoogleContainerAnalysisNoteTimeoutsOutputReference.go",
+        "GoogleContainerAnalysisNoteTimeoutsOutputReference__checks.go",
+        "GoogleContainerAnalysisNote__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecontaineranalysisnote",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecontaineranalysisnote/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

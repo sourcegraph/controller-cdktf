@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "s3bucketanalyticsconfiguration",
+    srcs = [
+        "S3BucketAnalyticsConfiguration.go",
+        "S3BucketAnalyticsConfigurationConfig.go",
+        "S3BucketAnalyticsConfigurationFilter.go",
+        "S3BucketAnalyticsConfigurationFilterOutputReference.go",
+        "S3BucketAnalyticsConfigurationFilterOutputReference__checks.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysis.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference__checks.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference__checks.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference__checks.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference.go",
+        "S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference__checks.go",
+        "S3BucketAnalyticsConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketanalyticsconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/s3bucketanalyticsconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

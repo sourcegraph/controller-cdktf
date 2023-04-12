@@ -1,1619 +1,2023 @@
 package emrcluster
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/emrcluster/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrCluster",
-		reflect.TypeOf((*EmrCluster)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "additionalInfo", GoGetter: "AdditionalInfo"},
-			_jsii_.MemberProperty{JsiiProperty: "additionalInfoInput", GoGetter: "AdditionalInfoInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "applications", GoGetter: "Applications"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationsInput", GoGetter: "ApplicationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "autoscalingRole", GoGetter: "AutoscalingRole"},
-			_jsii_.MemberProperty{JsiiProperty: "autoscalingRoleInput", GoGetter: "AutoscalingRoleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "autoTerminationPolicy", GoGetter: "AutoTerminationPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "autoTerminationPolicyInput", GoGetter: "AutoTerminationPolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bootstrapAction", GoGetter: "BootstrapAction"},
-			_jsii_.MemberProperty{JsiiProperty: "bootstrapActionInput", GoGetter: "BootstrapActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterState", GoGetter: "ClusterState"},
-			_jsii_.MemberProperty{JsiiProperty: "configurations", GoGetter: "Configurations"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationsInput", GoGetter: "ConfigurationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationsJson", GoGetter: "ConfigurationsJson"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationsJsonInput", GoGetter: "ConfigurationsJsonInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "coreInstanceFleet", GoGetter: "CoreInstanceFleet"},
-			_jsii_.MemberProperty{JsiiProperty: "coreInstanceFleetInput", GoGetter: "CoreInstanceFleetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "coreInstanceGroup", GoGetter: "CoreInstanceGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "coreInstanceGroupInput", GoGetter: "CoreInstanceGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "customAmiId", GoGetter: "CustomAmiId"},
-			_jsii_.MemberProperty{JsiiProperty: "customAmiIdInput", GoGetter: "CustomAmiIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsRootVolumeSize", GoGetter: "EbsRootVolumeSize"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsRootVolumeSizeInput", GoGetter: "EbsRootVolumeSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ec2Attributes", GoGetter: "Ec2Attributes"},
-			_jsii_.MemberProperty{JsiiProperty: "ec2AttributesInput", GoGetter: "Ec2AttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "keepJobFlowAliveWhenNoSteps", GoGetter: "KeepJobFlowAliveWhenNoSteps"},
-			_jsii_.MemberProperty{JsiiProperty: "keepJobFlowAliveWhenNoStepsInput", GoGetter: "KeepJobFlowAliveWhenNoStepsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "kerberosAttributes", GoGetter: "KerberosAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "kerberosAttributesInput", GoGetter: "KerberosAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "listStepsStates", GoGetter: "ListStepsStates"},
-			_jsii_.MemberProperty{JsiiProperty: "listStepsStatesInput", GoGetter: "ListStepsStatesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "logEncryptionKmsKeyId", GoGetter: "LogEncryptionKmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "logEncryptionKmsKeyIdInput", GoGetter: "LogEncryptionKmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "logUri", GoGetter: "LogUri"},
-			_jsii_.MemberProperty{JsiiProperty: "logUriInput", GoGetter: "LogUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterInstanceFleet", GoGetter: "MasterInstanceFleet"},
-			_jsii_.MemberProperty{JsiiProperty: "masterInstanceFleetInput", GoGetter: "MasterInstanceFleetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterInstanceGroup", GoGetter: "MasterInstanceGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "masterInstanceGroupInput", GoGetter: "MasterInstanceGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterPublicDns", GoGetter: "MasterPublicDns"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAutoTerminationPolicy", GoMethod: "PutAutoTerminationPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putBootstrapAction", GoMethod: "PutBootstrapAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putCoreInstanceFleet", GoMethod: "PutCoreInstanceFleet"},
-			_jsii_.MemberMethod{JsiiMethod: "putCoreInstanceGroup", GoMethod: "PutCoreInstanceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "putEc2Attributes", GoMethod: "PutEc2Attributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putKerberosAttributes", GoMethod: "PutKerberosAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "putMasterInstanceFleet", GoMethod: "PutMasterInstanceFleet"},
-			_jsii_.MemberMethod{JsiiMethod: "putMasterInstanceGroup", GoMethod: "PutMasterInstanceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "putStep", GoMethod: "PutStep"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "releaseLabel", GoGetter: "ReleaseLabel"},
-			_jsii_.MemberProperty{JsiiProperty: "releaseLabelInput", GoGetter: "ReleaseLabelInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalInfo", GoMethod: "ResetAdditionalInfo"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApplications", GoMethod: "ResetApplications"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingRole", GoMethod: "ResetAutoscalingRole"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoTerminationPolicy", GoMethod: "ResetAutoTerminationPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBootstrapAction", GoMethod: "ResetBootstrapAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigurations", GoMethod: "ResetConfigurations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigurationsJson", GoMethod: "ResetConfigurationsJson"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCoreInstanceFleet", GoMethod: "ResetCoreInstanceFleet"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCoreInstanceGroup", GoMethod: "ResetCoreInstanceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomAmiId", GoMethod: "ResetCustomAmiId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsRootVolumeSize", GoMethod: "ResetEbsRootVolumeSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEc2Attributes", GoMethod: "ResetEc2Attributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKeepJobFlowAliveWhenNoSteps", GoMethod: "ResetKeepJobFlowAliveWhenNoSteps"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKerberosAttributes", GoMethod: "ResetKerberosAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetListStepsStates", GoMethod: "ResetListStepsStates"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogEncryptionKmsKeyId", GoMethod: "ResetLogEncryptionKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogUri", GoMethod: "ResetLogUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterInstanceFleet", GoMethod: "ResetMasterInstanceFleet"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterInstanceGroup", GoMethod: "ResetMasterInstanceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScaleDownBehavior", GoMethod: "ResetScaleDownBehavior"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityConfiguration", GoMethod: "ResetSecurityConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStep", GoMethod: "ResetStep"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStepConcurrencyLevel", GoMethod: "ResetStepConcurrencyLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTerminationProtection", GoMethod: "ResetTerminationProtection"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVisibleToAllUsers", GoMethod: "ResetVisibleToAllUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "scaleDownBehavior", GoGetter: "ScaleDownBehavior"},
-			_jsii_.MemberProperty{JsiiProperty: "scaleDownBehaviorInput", GoGetter: "ScaleDownBehaviorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityConfiguration", GoGetter: "SecurityConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "securityConfigurationInput", GoGetter: "SecurityConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceRole", GoGetter: "ServiceRole"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceRoleInput", GoGetter: "ServiceRoleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "step", GoGetter: "Step"},
-			_jsii_.MemberProperty{JsiiProperty: "stepConcurrencyLevel", GoGetter: "StepConcurrencyLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "stepConcurrencyLevelInput", GoGetter: "StepConcurrencyLevelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stepInput", GoGetter: "StepInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terminationProtection", GoGetter: "TerminationProtection"},
-			_jsii_.MemberProperty{JsiiProperty: "terminationProtectionInput", GoGetter: "TerminationProtectionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "visibleToAllUsers", GoGetter: "VisibleToAllUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "visibleToAllUsersInput", GoGetter: "VisibleToAllUsersInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterAutoTerminationPolicy",
-		reflect.TypeOf((*EmrClusterAutoTerminationPolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
-		reflect.TypeOf((*EmrClusterAutoTerminationPolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "idleTimeout", GoGetter: "IdleTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInput", GoGetter: "IdleTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIdleTimeout", GoMethod: "ResetIdleTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterBootstrapAction",
-		reflect.TypeOf((*EmrClusterBootstrapAction)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterBootstrapActionList",
-		reflect.TypeOf((*EmrClusterBootstrapActionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterBootstrapActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterBootstrapActionOutputReference",
-		reflect.TypeOf((*EmrClusterBootstrapActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
-			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArgs", GoMethod: "ResetArgs"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterBootstrapActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterConfig",
-		reflect.TypeOf((*EmrClusterConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleet",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleet)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigs)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsList",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
-			_jsii_.MemberProperty{JsiiProperty: "classificationInput", GoGetter: "ClassificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClassification", GoMethod: "ResetClassification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumesPerInstance", GoMethod: "ResetVolumesPerInstance"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstance", GoGetter: "VolumesPerInstance"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstanceInput", GoGetter: "VolumesPerInstanceInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsList",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bidPrice", GoGetter: "BidPrice"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceAsPercentageOfOnDemandPrice", GoGetter: "BidPriceAsPercentageOfOnDemandPrice"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceAsPercentageOfOnDemandPriceInput", GoGetter: "BidPriceAsPercentageOfOnDemandPriceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceInput", GoGetter: "BidPriceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "configurations", GoGetter: "Configurations"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationsInput", GoGetter: "ConfigurationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfig", GoGetter: "EbsConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfigInput", GoGetter: "EbsConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putConfigurations", GoMethod: "PutConfigurations"},
-			_jsii_.MemberMethod{JsiiMethod: "putEbsConfig", GoMethod: "PutEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBidPrice", GoMethod: "ResetBidPrice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBidPriceAsPercentageOfOnDemandPrice", GoMethod: "ResetBidPriceAsPercentageOfOnDemandPrice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigurations", GoMethod: "ResetConfigurations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsConfig", GoMethod: "ResetEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWeightedCapacity", GoMethod: "ResetWeightedCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "weightedCapacity", GoGetter: "WeightedCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "weightedCapacityInput", GoGetter: "WeightedCapacityInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecifications",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecifications)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "onDemandSpecification", GoGetter: "OnDemandSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "onDemandSpecificationInput", GoGetter: "OnDemandSpecificationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putOnDemandSpecification", GoMethod: "PutOnDemandSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "putSpotSpecification", GoMethod: "PutSpotSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandSpecification", GoMethod: "ResetOnDemandSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSpotSpecification", GoMethod: "ResetSpotSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "spotSpecification", GoGetter: "SpotSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "spotSpecificationInput", GoGetter: "SpotSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutes", GoGetter: "BlockDurationMinutes"},
-			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutesInput", GoGetter: "BlockDurationMinutesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBlockDurationMinutes", GoMethod: "ResetBlockDurationMinutes"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutAction", GoGetter: "TimeoutAction"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutActionInput", GoGetter: "TimeoutActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutDurationMinutes", GoGetter: "TimeoutDurationMinutes"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutDurationMinutesInput", GoGetter: "TimeoutDurationMinutesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceFleetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeConfigs", GoGetter: "InstanceTypeConfigs"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeConfigsInput", GoGetter: "InstanceTypeConfigsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "launchSpecifications", GoGetter: "LaunchSpecifications"},
-			_jsii_.MemberProperty{JsiiProperty: "launchSpecificationsInput", GoGetter: "LaunchSpecificationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provisionedOnDemandCapacity", GoGetter: "ProvisionedOnDemandCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "provisionedSpotCapacity", GoGetter: "ProvisionedSpotCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "putInstanceTypeConfigs", GoMethod: "PutInstanceTypeConfigs"},
-			_jsii_.MemberMethod{JsiiMethod: "putLaunchSpecifications", GoMethod: "PutLaunchSpecifications"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypeConfigs", GoMethod: "ResetInstanceTypeConfigs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLaunchSpecifications", GoMethod: "ResetLaunchSpecifications"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetOnDemandCapacity", GoMethod: "ResetTargetOnDemandCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetSpotCapacity", GoMethod: "ResetTargetSpotCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetOnDemandCapacity", GoGetter: "TargetOnDemandCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "targetOnDemandCapacityInput", GoGetter: "TargetOnDemandCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSpotCapacity", GoGetter: "TargetSpotCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSpotCapacityInput", GoGetter: "TargetSpotCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceFleetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceGroup",
-		reflect.TypeOf((*EmrClusterCoreInstanceGroup)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig",
-		reflect.TypeOf((*EmrClusterCoreInstanceGroupEbsConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigList",
-		reflect.TypeOf((*EmrClusterCoreInstanceGroupEbsConfigList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceGroupEbsConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThroughput", GoMethod: "ResetThroughput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumesPerInstance", GoMethod: "ResetVolumesPerInstance"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "throughput", GoGetter: "Throughput"},
-			_jsii_.MemberProperty{JsiiProperty: "throughputInput", GoGetter: "ThroughputInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstance", GoGetter: "VolumesPerInstance"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstanceInput", GoGetter: "VolumesPerInstanceInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupOutputReference",
-		reflect.TypeOf((*EmrClusterCoreInstanceGroupOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "autoscalingPolicy", GoGetter: "AutoscalingPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "autoscalingPolicyInput", GoGetter: "AutoscalingPolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPrice", GoGetter: "BidPrice"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceInput", GoGetter: "BidPriceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfig", GoGetter: "EbsConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfigInput", GoGetter: "EbsConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceCount", GoGetter: "InstanceCount"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceCountInput", GoGetter: "InstanceCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putEbsConfig", GoMethod: "PutEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingPolicy", GoMethod: "ResetAutoscalingPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBidPrice", GoMethod: "ResetBidPrice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsConfig", GoMethod: "ResetEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceCount", GoMethod: "ResetInstanceCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterCoreInstanceGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterEc2Attributes",
-		reflect.TypeOf((*EmrClusterEc2Attributes)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterEc2AttributesOutputReference",
-		reflect.TypeOf((*EmrClusterEc2AttributesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "additionalMasterSecurityGroups", GoGetter: "AdditionalMasterSecurityGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "additionalMasterSecurityGroupsInput", GoGetter: "AdditionalMasterSecurityGroupsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "additionalSlaveSecurityGroups", GoGetter: "AdditionalSlaveSecurityGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "additionalSlaveSecurityGroupsInput", GoGetter: "AdditionalSlaveSecurityGroupsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "emrManagedMasterSecurityGroup", GoGetter: "EmrManagedMasterSecurityGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "emrManagedMasterSecurityGroupInput", GoGetter: "EmrManagedMasterSecurityGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emrManagedSlaveSecurityGroup", GoGetter: "EmrManagedSlaveSecurityGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "emrManagedSlaveSecurityGroupInput", GoGetter: "EmrManagedSlaveSecurityGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceProfile", GoGetter: "InstanceProfile"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceProfileInput", GoGetter: "InstanceProfileInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "keyName", GoGetter: "KeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "keyNameInput", GoGetter: "KeyNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalMasterSecurityGroups", GoMethod: "ResetAdditionalMasterSecurityGroups"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalSlaveSecurityGroups", GoMethod: "ResetAdditionalSlaveSecurityGroups"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmrManagedMasterSecurityGroup", GoMethod: "ResetEmrManagedMasterSecurityGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmrManagedSlaveSecurityGroup", GoMethod: "ResetEmrManagedSlaveSecurityGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKeyName", GoMethod: "ResetKeyName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessSecurityGroup", GoMethod: "ResetServiceAccessSecurityGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnetIds", GoMethod: "ResetSubnetIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessSecurityGroup", GoGetter: "ServiceAccessSecurityGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessSecurityGroupInput", GoGetter: "ServiceAccessSecurityGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdsInput", GoGetter: "SubnetIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterEc2AttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterKerberosAttributes",
-		reflect.TypeOf((*EmrClusterKerberosAttributes)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterKerberosAttributesOutputReference",
-		reflect.TypeOf((*EmrClusterKerberosAttributesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "adDomainJoinPassword", GoGetter: "AdDomainJoinPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "adDomainJoinPasswordInput", GoGetter: "AdDomainJoinPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "adDomainJoinUser", GoGetter: "AdDomainJoinUser"},
-			_jsii_.MemberProperty{JsiiProperty: "adDomainJoinUserInput", GoGetter: "AdDomainJoinUserInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "crossRealmTrustPrincipalPassword", GoGetter: "CrossRealmTrustPrincipalPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "crossRealmTrustPrincipalPasswordInput", GoGetter: "CrossRealmTrustPrincipalPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kdcAdminPassword", GoGetter: "KdcAdminPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "kdcAdminPasswordInput", GoGetter: "KdcAdminPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "realm", GoGetter: "Realm"},
-			_jsii_.MemberProperty{JsiiProperty: "realmInput", GoGetter: "RealmInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdDomainJoinPassword", GoMethod: "ResetAdDomainJoinPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdDomainJoinUser", GoMethod: "ResetAdDomainJoinUser"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCrossRealmTrustPrincipalPassword", GoMethod: "ResetCrossRealmTrustPrincipalPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterKerberosAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleet",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleet)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigs)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsList",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
-			_jsii_.MemberProperty{JsiiProperty: "classificationInput", GoGetter: "ClassificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClassification", GoMethod: "ResetClassification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumesPerInstance", GoMethod: "ResetVolumesPerInstance"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstance", GoGetter: "VolumesPerInstance"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstanceInput", GoGetter: "VolumesPerInstanceInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsList",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bidPrice", GoGetter: "BidPrice"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceAsPercentageOfOnDemandPrice", GoGetter: "BidPriceAsPercentageOfOnDemandPrice"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceAsPercentageOfOnDemandPriceInput", GoGetter: "BidPriceAsPercentageOfOnDemandPriceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceInput", GoGetter: "BidPriceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "configurations", GoGetter: "Configurations"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationsInput", GoGetter: "ConfigurationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfig", GoGetter: "EbsConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfigInput", GoGetter: "EbsConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putConfigurations", GoMethod: "PutConfigurations"},
-			_jsii_.MemberMethod{JsiiMethod: "putEbsConfig", GoMethod: "PutEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBidPrice", GoMethod: "ResetBidPrice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBidPriceAsPercentageOfOnDemandPrice", GoMethod: "ResetBidPriceAsPercentageOfOnDemandPrice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigurations", GoMethod: "ResetConfigurations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsConfig", GoMethod: "ResetEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWeightedCapacity", GoMethod: "ResetWeightedCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "weightedCapacity", GoGetter: "WeightedCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "weightedCapacityInput", GoGetter: "WeightedCapacityInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecifications",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecifications)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "onDemandSpecification", GoGetter: "OnDemandSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "onDemandSpecificationInput", GoGetter: "OnDemandSpecificationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putOnDemandSpecification", GoMethod: "PutOnDemandSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "putSpotSpecification", GoMethod: "PutSpotSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandSpecification", GoMethod: "ResetOnDemandSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSpotSpecification", GoMethod: "ResetSpotSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "spotSpecification", GoGetter: "SpotSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "spotSpecificationInput", GoGetter: "SpotSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationList",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutes", GoGetter: "BlockDurationMinutes"},
-			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutesInput", GoGetter: "BlockDurationMinutesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBlockDurationMinutes", GoMethod: "ResetBlockDurationMinutes"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutAction", GoGetter: "TimeoutAction"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutActionInput", GoGetter: "TimeoutActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutDurationMinutes", GoGetter: "TimeoutDurationMinutes"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutDurationMinutesInput", GoGetter: "TimeoutDurationMinutesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceFleetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeConfigs", GoGetter: "InstanceTypeConfigs"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeConfigsInput", GoGetter: "InstanceTypeConfigsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "launchSpecifications", GoGetter: "LaunchSpecifications"},
-			_jsii_.MemberProperty{JsiiProperty: "launchSpecificationsInput", GoGetter: "LaunchSpecificationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provisionedOnDemandCapacity", GoGetter: "ProvisionedOnDemandCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "provisionedSpotCapacity", GoGetter: "ProvisionedSpotCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "putInstanceTypeConfigs", GoMethod: "PutInstanceTypeConfigs"},
-			_jsii_.MemberMethod{JsiiMethod: "putLaunchSpecifications", GoMethod: "PutLaunchSpecifications"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypeConfigs", GoMethod: "ResetInstanceTypeConfigs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLaunchSpecifications", GoMethod: "ResetLaunchSpecifications"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetOnDemandCapacity", GoMethod: "ResetTargetOnDemandCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetSpotCapacity", GoMethod: "ResetTargetSpotCapacity"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetOnDemandCapacity", GoGetter: "TargetOnDemandCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "targetOnDemandCapacityInput", GoGetter: "TargetOnDemandCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSpotCapacity", GoGetter: "TargetSpotCapacity"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSpotCapacityInput", GoGetter: "TargetSpotCapacityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceFleetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceGroup",
-		reflect.TypeOf((*EmrClusterMasterInstanceGroup)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig",
-		reflect.TypeOf((*EmrClusterMasterInstanceGroupEbsConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigList",
-		reflect.TypeOf((*EmrClusterMasterInstanceGroupEbsConfigList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceGroupEbsConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceGroupEbsConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThroughput", GoMethod: "ResetThroughput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumesPerInstance", GoMethod: "ResetVolumesPerInstance"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "throughput", GoGetter: "Throughput"},
-			_jsii_.MemberProperty{JsiiProperty: "throughputInput", GoGetter: "ThroughputInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstance", GoGetter: "VolumesPerInstance"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstanceInput", GoGetter: "VolumesPerInstanceInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceGroupEbsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterMasterInstanceGroupOutputReference",
-		reflect.TypeOf((*EmrClusterMasterInstanceGroupOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bidPrice", GoGetter: "BidPrice"},
-			_jsii_.MemberProperty{JsiiProperty: "bidPriceInput", GoGetter: "BidPriceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfig", GoGetter: "EbsConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsConfigInput", GoGetter: "EbsConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceCount", GoGetter: "InstanceCount"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceCountInput", GoGetter: "InstanceCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putEbsConfig", GoMethod: "PutEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBidPrice", GoMethod: "ResetBidPrice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsConfig", GoMethod: "ResetEbsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceCount", GoMethod: "ResetInstanceCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterMasterInstanceGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterStep",
-		reflect.TypeOf((*EmrClusterStep)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.emrCluster.EmrClusterStepHadoopJarStep",
-		reflect.TypeOf((*EmrClusterStepHadoopJarStep)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterStepHadoopJarStepList",
-		reflect.TypeOf((*EmrClusterStepHadoopJarStepList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterStepHadoopJarStepList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
-		reflect.TypeOf((*EmrClusterStepHadoopJarStepOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
-			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jar", GoGetter: "Jar"},
-			_jsii_.MemberProperty{JsiiProperty: "jarInput", GoGetter: "JarInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mainClass", GoGetter: "MainClass"},
-			_jsii_.MemberProperty{JsiiProperty: "mainClassInput", GoGetter: "MainClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArgs", GoMethod: "ResetArgs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJar", GoMethod: "ResetJar"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainClass", GoMethod: "ResetMainClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterStepHadoopJarStepOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterStepList",
-		reflect.TypeOf((*EmrClusterStepList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterStepList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.emrCluster.EmrClusterStepOutputReference",
-		reflect.TypeOf((*EmrClusterStepOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "actionOnFailure", GoGetter: "ActionOnFailure"},
-			_jsii_.MemberProperty{JsiiProperty: "actionOnFailureInput", GoGetter: "ActionOnFailureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hadoopJarStep", GoGetter: "HadoopJarStep"},
-			_jsii_.MemberProperty{JsiiProperty: "hadoopJarStepInput", GoGetter: "HadoopJarStepInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putHadoopJarStep", GoMethod: "PutHadoopJarStep"},
-			_jsii_.MemberMethod{JsiiMethod: "resetActionOnFailure", GoMethod: "ResetActionOnFailure"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHadoopJarStep", GoMethod: "ResetHadoopJarStep"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EmrClusterStepOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster aws_emr_cluster}.
+type EmrCluster interface {
+	cdktf.TerraformResource
+	AdditionalInfo() *string
+	SetAdditionalInfo(val *string)
+	AdditionalInfoInput() *string
+	Applications() *[]*string
+	SetApplications(val *[]*string)
+	ApplicationsInput() *[]*string
+	Arn() *string
+	AutoscalingRole() *string
+	SetAutoscalingRole(val *string)
+	AutoscalingRoleInput() *string
+	AutoTerminationPolicy() EmrClusterAutoTerminationPolicyOutputReference
+	AutoTerminationPolicyInput() *EmrClusterAutoTerminationPolicy
+	BootstrapAction() EmrClusterBootstrapActionList
+	BootstrapActionInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClusterState() *string
+	Configurations() *string
+	SetConfigurations(val *string)
+	ConfigurationsInput() *string
+	ConfigurationsJson() *string
+	SetConfigurationsJson(val *string)
+	ConfigurationsJsonInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	CoreInstanceFleet() EmrClusterCoreInstanceFleetOutputReference
+	CoreInstanceFleetInput() *EmrClusterCoreInstanceFleet
+	CoreInstanceGroup() EmrClusterCoreInstanceGroupOutputReference
+	CoreInstanceGroupInput() *EmrClusterCoreInstanceGroup
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CustomAmiId() *string
+	SetCustomAmiId(val *string)
+	CustomAmiIdInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EbsRootVolumeSize() *float64
+	SetEbsRootVolumeSize(val *float64)
+	EbsRootVolumeSizeInput() *float64
+	Ec2Attributes() EmrClusterEc2AttributesOutputReference
+	Ec2AttributesInput() *EmrClusterEc2Attributes
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KeepJobFlowAliveWhenNoSteps() interface{}
+	SetKeepJobFlowAliveWhenNoSteps(val interface{})
+	KeepJobFlowAliveWhenNoStepsInput() interface{}
+	KerberosAttributes() EmrClusterKerberosAttributesOutputReference
+	KerberosAttributesInput() *EmrClusterKerberosAttributes
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListStepsStates() *[]*string
+	SetListStepsStates(val *[]*string)
+	ListStepsStatesInput() *[]*string
+	LogEncryptionKmsKeyId() *string
+	SetLogEncryptionKmsKeyId(val *string)
+	LogEncryptionKmsKeyIdInput() *string
+	LogUri() *string
+	SetLogUri(val *string)
+	LogUriInput() *string
+	MasterInstanceFleet() EmrClusterMasterInstanceFleetOutputReference
+	MasterInstanceFleetInput() *EmrClusterMasterInstanceFleet
+	MasterInstanceGroup() EmrClusterMasterInstanceGroupOutputReference
+	MasterInstanceGroupInput() *EmrClusterMasterInstanceGroup
+	MasterPublicDns() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ReleaseLabel() *string
+	SetReleaseLabel(val *string)
+	ReleaseLabelInput() *string
+	ScaleDownBehavior() *string
+	SetScaleDownBehavior(val *string)
+	ScaleDownBehaviorInput() *string
+	SecurityConfiguration() *string
+	SetSecurityConfiguration(val *string)
+	SecurityConfigurationInput() *string
+	ServiceRole() *string
+	SetServiceRole(val *string)
+	ServiceRoleInput() *string
+	Step() EmrClusterStepList
+	StepConcurrencyLevel() *float64
+	SetStepConcurrencyLevel(val *float64)
+	StepConcurrencyLevelInput() *float64
+	StepInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	TerminationProtection() interface{}
+	SetTerminationProtection(val interface{})
+	TerminationProtectionInput() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	VisibleToAllUsers() interface{}
+	SetVisibleToAllUsers(val interface{})
+	VisibleToAllUsersInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAutoTerminationPolicy(value *EmrClusterAutoTerminationPolicy)
+	PutBootstrapAction(value interface{})
+	PutCoreInstanceFleet(value *EmrClusterCoreInstanceFleet)
+	PutCoreInstanceGroup(value *EmrClusterCoreInstanceGroup)
+	PutEc2Attributes(value *EmrClusterEc2Attributes)
+	PutKerberosAttributes(value *EmrClusterKerberosAttributes)
+	PutMasterInstanceFleet(value *EmrClusterMasterInstanceFleet)
+	PutMasterInstanceGroup(value *EmrClusterMasterInstanceGroup)
+	PutStep(value interface{})
+	ResetAdditionalInfo()
+	ResetApplications()
+	ResetAutoscalingRole()
+	ResetAutoTerminationPolicy()
+	ResetBootstrapAction()
+	ResetConfigurations()
+	ResetConfigurationsJson()
+	ResetCoreInstanceFleet()
+	ResetCoreInstanceGroup()
+	ResetCustomAmiId()
+	ResetEbsRootVolumeSize()
+	ResetEc2Attributes()
+	ResetId()
+	ResetKeepJobFlowAliveWhenNoSteps()
+	ResetKerberosAttributes()
+	ResetListStepsStates()
+	ResetLogEncryptionKmsKeyId()
+	ResetLogUri()
+	ResetMasterInstanceFleet()
+	ResetMasterInstanceGroup()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetScaleDownBehavior()
+	ResetSecurityConfiguration()
+	ResetStep()
+	ResetStepConcurrencyLevel()
+	ResetTags()
+	ResetTagsAll()
+	ResetTerminationProtection()
+	ResetVisibleToAllUsers()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for EmrCluster
+type jsiiProxy_EmrCluster struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_EmrCluster) AdditionalInfo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) AdditionalInfoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additionalInfoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Applications() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ApplicationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) AutoscalingRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoscalingRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) AutoscalingRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoscalingRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) AutoTerminationPolicy() EmrClusterAutoTerminationPolicyOutputReference {
+	var returns EmrClusterAutoTerminationPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"autoTerminationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) AutoTerminationPolicyInput() *EmrClusterAutoTerminationPolicy {
+	var returns *EmrClusterAutoTerminationPolicy
+	_jsii_.Get(
+		j,
+		"autoTerminationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) BootstrapAction() EmrClusterBootstrapActionList {
+	var returns EmrClusterBootstrapActionList
+	_jsii_.Get(
+		j,
+		"bootstrapAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) BootstrapActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bootstrapActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ClusterState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Configurations() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ConfigurationsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ConfigurationsJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationsJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ConfigurationsJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationsJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CoreInstanceFleet() EmrClusterCoreInstanceFleetOutputReference {
+	var returns EmrClusterCoreInstanceFleetOutputReference
+	_jsii_.Get(
+		j,
+		"coreInstanceFleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CoreInstanceFleetInput() *EmrClusterCoreInstanceFleet {
+	var returns *EmrClusterCoreInstanceFleet
+	_jsii_.Get(
+		j,
+		"coreInstanceFleetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CoreInstanceGroup() EmrClusterCoreInstanceGroupOutputReference {
+	var returns EmrClusterCoreInstanceGroupOutputReference
+	_jsii_.Get(
+		j,
+		"coreInstanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CoreInstanceGroupInput() *EmrClusterCoreInstanceGroup {
+	var returns *EmrClusterCoreInstanceGroup
+	_jsii_.Get(
+		j,
+		"coreInstanceGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CustomAmiId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customAmiId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) CustomAmiIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customAmiIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) EbsRootVolumeSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsRootVolumeSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) EbsRootVolumeSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ebsRootVolumeSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Ec2Attributes() EmrClusterEc2AttributesOutputReference {
+	var returns EmrClusterEc2AttributesOutputReference
+	_jsii_.Get(
+		j,
+		"ec2Attributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Ec2AttributesInput() *EmrClusterEc2Attributes {
+	var returns *EmrClusterEc2Attributes
+	_jsii_.Get(
+		j,
+		"ec2AttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoSteps() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepJobFlowAliveWhenNoSteps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoStepsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepJobFlowAliveWhenNoStepsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) KerberosAttributes() EmrClusterKerberosAttributesOutputReference {
+	var returns EmrClusterKerberosAttributesOutputReference
+	_jsii_.Get(
+		j,
+		"kerberosAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) KerberosAttributesInput() *EmrClusterKerberosAttributes {
+	var returns *EmrClusterKerberosAttributes
+	_jsii_.Get(
+		j,
+		"kerberosAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ListStepsStates() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"listStepsStates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ListStepsStatesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"listStepsStatesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) LogEncryptionKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEncryptionKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) LogEncryptionKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logEncryptionKmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) LogUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) LogUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logUriInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) MasterInstanceFleet() EmrClusterMasterInstanceFleetOutputReference {
+	var returns EmrClusterMasterInstanceFleetOutputReference
+	_jsii_.Get(
+		j,
+		"masterInstanceFleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) MasterInstanceFleetInput() *EmrClusterMasterInstanceFleet {
+	var returns *EmrClusterMasterInstanceFleet
+	_jsii_.Get(
+		j,
+		"masterInstanceFleetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) MasterInstanceGroup() EmrClusterMasterInstanceGroupOutputReference {
+	var returns EmrClusterMasterInstanceGroupOutputReference
+	_jsii_.Get(
+		j,
+		"masterInstanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) MasterInstanceGroupInput() *EmrClusterMasterInstanceGroup {
+	var returns *EmrClusterMasterInstanceGroup
+	_jsii_.Get(
+		j,
+		"masterInstanceGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) MasterPublicDns() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPublicDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ReleaseLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releaseLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ReleaseLabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releaseLabelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ScaleDownBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleDownBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ScaleDownBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleDownBehaviorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) SecurityConfiguration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) SecurityConfigurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ServiceRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) ServiceRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Step() EmrClusterStepList {
+	var returns EmrClusterStepList
+	_jsii_.Get(
+		j,
+		"step",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) StepConcurrencyLevel() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"stepConcurrencyLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) StepConcurrencyLevelInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"stepConcurrencyLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) StepInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stepInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TerminationProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"terminationProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TerminationProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"terminationProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) VisibleToAllUsers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"visibleToAllUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"visibleToAllUsersInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster aws_emr_cluster} Resource.
+func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterConfig) EmrCluster {
+	_init_.Initialize()
+
+	if err := validateNewEmrClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_EmrCluster{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster aws_emr_cluster} Resource.
+func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string, config *EmrClusterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
+		[]interface{}{scope, id, config},
+		e,
 	)
 }
+
+func (j *jsiiProxy_EmrCluster)SetAdditionalInfo(val *string) {
+	if err := j.validateSetAdditionalInfoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalInfo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetApplications(val *[]*string) {
+	if err := j.validateSetApplicationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applications",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetAutoscalingRole(val *string) {
+	if err := j.validateSetAutoscalingRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingRole",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetConfigurations(val *string) {
+	if err := j.validateSetConfigurationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configurations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetConfigurationsJson(val *string) {
+	if err := j.validateSetConfigurationsJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configurationsJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetCustomAmiId(val *string) {
+	if err := j.validateSetCustomAmiIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customAmiId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetEbsRootVolumeSize(val *float64) {
+	if err := j.validateSetEbsRootVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsRootVolumeSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetKeepJobFlowAliveWhenNoSteps(val interface{}) {
+	if err := j.validateSetKeepJobFlowAliveWhenNoStepsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keepJobFlowAliveWhenNoSteps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetListStepsStates(val *[]*string) {
+	if err := j.validateSetListStepsStatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listStepsStates",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetLogEncryptionKmsKeyId(val *string) {
+	if err := j.validateSetLogEncryptionKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logEncryptionKmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetLogUri(val *string) {
+	if err := j.validateSetLogUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logUri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetReleaseLabel(val *string) {
+	if err := j.validateSetReleaseLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"releaseLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetScaleDownBehavior(val *string) {
+	if err := j.validateSetScaleDownBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scaleDownBehavior",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetSecurityConfiguration(val *string) {
+	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityConfiguration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetServiceRole(val *string) {
+	if err := j.validateSetServiceRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceRole",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetStepConcurrencyLevel(val *float64) {
+	if err := j.validateSetStepConcurrencyLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stepConcurrencyLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetTerminationProtection(val interface{}) {
+	if err := j.validateSetTerminationProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationProtection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetVisibleToAllUsers(val interface{}) {
+	if err := j.validateSetVisibleToAllUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"visibleToAllUsers",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func EmrCluster_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmrCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmrCluster_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmrCluster_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmrCluster_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmrCluster_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func EmrCluster_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		e,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		e,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		e,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		e,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		e,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutAutoTerminationPolicy(value *EmrClusterAutoTerminationPolicy) {
+	if err := e.validatePutAutoTerminationPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putAutoTerminationPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutBootstrapAction(value interface{}) {
+	if err := e.validatePutBootstrapActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putBootstrapAction",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutCoreInstanceFleet(value *EmrClusterCoreInstanceFleet) {
+	if err := e.validatePutCoreInstanceFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putCoreInstanceFleet",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutCoreInstanceGroup(value *EmrClusterCoreInstanceGroup) {
+	if err := e.validatePutCoreInstanceGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putCoreInstanceGroup",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutEc2Attributes(value *EmrClusterEc2Attributes) {
+	if err := e.validatePutEc2AttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putEc2Attributes",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutKerberosAttributes(value *EmrClusterKerberosAttributes) {
+	if err := e.validatePutKerberosAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putKerberosAttributes",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutMasterInstanceFleet(value *EmrClusterMasterInstanceFleet) {
+	if err := e.validatePutMasterInstanceFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putMasterInstanceFleet",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutMasterInstanceGroup(value *EmrClusterMasterInstanceGroup) {
+	if err := e.validatePutMasterInstanceGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putMasterInstanceGroup",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) PutStep(value interface{}) {
+	if err := e.validatePutStepParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putStep",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetAdditionalInfo() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAdditionalInfo",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetApplications() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetApplications",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetAutoscalingRole() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAutoscalingRole",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetAutoTerminationPolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAutoTerminationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetBootstrapAction() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetBootstrapAction",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetConfigurations() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetConfigurations",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetConfigurationsJson() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetConfigurationsJson",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetCoreInstanceFleet() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCoreInstanceFleet",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetCoreInstanceGroup() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCoreInstanceGroup",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetCustomAmiId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCustomAmiId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetEbsRootVolumeSize() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEbsRootVolumeSize",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetEc2Attributes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEc2Attributes",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetKeepJobFlowAliveWhenNoSteps() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetKeepJobFlowAliveWhenNoSteps",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetKerberosAttributes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetKerberosAttributes",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetListStepsStates() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetListStepsStates",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetLogEncryptionKmsKeyId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLogEncryptionKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetLogUri() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLogUri",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetMasterInstanceFleet() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMasterInstanceFleet",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetMasterInstanceGroup() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMasterInstanceGroup",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetScaleDownBehavior() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetScaleDownBehavior",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetSecurityConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSecurityConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetStep() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStep",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetStepConcurrencyLevel() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStepConcurrencyLevel",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetTerminationProtection() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTerminationProtection",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetVisibleToAllUsers() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetVisibleToAllUsers",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmrCluster) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

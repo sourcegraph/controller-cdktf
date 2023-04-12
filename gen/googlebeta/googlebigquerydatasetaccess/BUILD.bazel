@@ -1,0 +1,32 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebigquerydatasetaccess",
+    srcs = [
+        "GoogleBigqueryDatasetAccessA.go",
+        "GoogleBigqueryDatasetAccessAConfig.go",
+        "GoogleBigqueryDatasetAccessA__checks.go",
+        "GoogleBigqueryDatasetAccessDatasetA.go",
+        "GoogleBigqueryDatasetAccessDatasetAOutputReference.go",
+        "GoogleBigqueryDatasetAccessDatasetAOutputReference__checks.go",
+        "GoogleBigqueryDatasetAccessDatasetDatasetA.go",
+        "GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference.go",
+        "GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference__checks.go",
+        "GoogleBigqueryDatasetAccessTimeouts.go",
+        "GoogleBigqueryDatasetAccessTimeoutsOutputReference.go",
+        "GoogleBigqueryDatasetAccessTimeoutsOutputReference__checks.go",
+        "GoogleBigqueryDatasetAccessViewA.go",
+        "GoogleBigqueryDatasetAccessViewAOutputReference.go",
+        "GoogleBigqueryDatasetAccessViewAOutputReference__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlebigquerydatasetaccess",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlebigquerydatasetaccess/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

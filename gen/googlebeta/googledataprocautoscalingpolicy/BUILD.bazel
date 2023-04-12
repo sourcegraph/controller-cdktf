@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledataprocautoscalingpolicy",
+    srcs = [
+        "GoogleDataprocAutoscalingPolicy.go",
+        "GoogleDataprocAutoscalingPolicyBasicAlgorithm.go",
+        "GoogleDataprocAutoscalingPolicyBasicAlgorithmOutputReference.go",
+        "GoogleDataprocAutoscalingPolicyBasicAlgorithmOutputReference__checks.go",
+        "GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfig.go",
+        "GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference.go",
+        "GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference__checks.go",
+        "GoogleDataprocAutoscalingPolicyConfig.go",
+        "GoogleDataprocAutoscalingPolicySecondaryWorkerConfig.go",
+        "GoogleDataprocAutoscalingPolicySecondaryWorkerConfigOutputReference.go",
+        "GoogleDataprocAutoscalingPolicySecondaryWorkerConfigOutputReference__checks.go",
+        "GoogleDataprocAutoscalingPolicyTimeouts.go",
+        "GoogleDataprocAutoscalingPolicyTimeoutsOutputReference.go",
+        "GoogleDataprocAutoscalingPolicyTimeoutsOutputReference__checks.go",
+        "GoogleDataprocAutoscalingPolicyWorkerConfig.go",
+        "GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference.go",
+        "GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference__checks.go",
+        "GoogleDataprocAutoscalingPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googledataprocautoscalingpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googledataprocautoscalingpolicy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

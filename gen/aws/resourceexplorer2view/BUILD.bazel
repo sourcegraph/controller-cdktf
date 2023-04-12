@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "resourceexplorer2view",
+    srcs = [
+        "Resourceexplorer2View.go",
+        "Resourceexplorer2ViewConfig.go",
+        "Resourceexplorer2ViewFilters.go",
+        "Resourceexplorer2ViewFiltersList.go",
+        "Resourceexplorer2ViewFiltersList__checks.go",
+        "Resourceexplorer2ViewFiltersOutputReference.go",
+        "Resourceexplorer2ViewFiltersOutputReference__checks.go",
+        "Resourceexplorer2ViewIncludedProperty.go",
+        "Resourceexplorer2ViewIncludedPropertyList.go",
+        "Resourceexplorer2ViewIncludedPropertyList__checks.go",
+        "Resourceexplorer2ViewIncludedPropertyOutputReference.go",
+        "Resourceexplorer2ViewIncludedPropertyOutputReference__checks.go",
+        "Resourceexplorer2View__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/resourceexplorer2view",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/resourceexplorer2view/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "storagegatewaynfsfileshare",
+    srcs = [
+        "StoragegatewayNfsFileShare.go",
+        "StoragegatewayNfsFileShareCacheAttributes.go",
+        "StoragegatewayNfsFileShareCacheAttributesOutputReference.go",
+        "StoragegatewayNfsFileShareCacheAttributesOutputReference__checks.go",
+        "StoragegatewayNfsFileShareConfig.go",
+        "StoragegatewayNfsFileShareNfsFileShareDefaults.go",
+        "StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference.go",
+        "StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference__checks.go",
+        "StoragegatewayNfsFileShareTimeouts.go",
+        "StoragegatewayNfsFileShareTimeoutsOutputReference.go",
+        "StoragegatewayNfsFileShareTimeoutsOutputReference__checks.go",
+        "StoragegatewayNfsFileShare__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/storagegatewaynfsfileshare",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/storagegatewaynfsfileshare/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

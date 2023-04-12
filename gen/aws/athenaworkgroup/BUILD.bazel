@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "athenaworkgroup",
+    srcs = [
+        "AthenaWorkgroup.go",
+        "AthenaWorkgroupConfig.go",
+        "AthenaWorkgroupConfiguration.go",
+        "AthenaWorkgroupConfigurationEngineVersion.go",
+        "AthenaWorkgroupConfigurationEngineVersionOutputReference.go",
+        "AthenaWorkgroupConfigurationEngineVersionOutputReference__checks.go",
+        "AthenaWorkgroupConfigurationOutputReference.go",
+        "AthenaWorkgroupConfigurationOutputReference__checks.go",
+        "AthenaWorkgroupConfigurationResultConfiguration.go",
+        "AthenaWorkgroupConfigurationResultConfigurationAclConfiguration.go",
+        "AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference.go",
+        "AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference__checks.go",
+        "AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration.go",
+        "AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference.go",
+        "AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference__checks.go",
+        "AthenaWorkgroupConfigurationResultConfigurationOutputReference.go",
+        "AthenaWorkgroupConfigurationResultConfigurationOutputReference__checks.go",
+        "AthenaWorkgroup__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/athenaworkgroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/athenaworkgroup/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

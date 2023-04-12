@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2transitgatewaydxgatewayattachment",
+    srcs = [
+        "DataAwsEc2TransitGatewayDxGatewayAttachment.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentConfig.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentFilter.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList__checks.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference__checks.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference__checks.go",
+        "DataAwsEc2TransitGatewayDxGatewayAttachment__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2transitgatewaydxgatewayattachment",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2transitgatewaydxgatewayattachment/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

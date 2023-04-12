@@ -1,255 +1,1700 @@
 package cloudwatchmetricalarm
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatchmetricalarm/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
-		reflect.TypeOf((*CloudwatchMetricAlarm)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "actionsEnabled", GoGetter: "ActionsEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "actionsEnabledInput", GoGetter: "ActionsEnabledInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "alarmActions", GoGetter: "AlarmActions"},
-			_jsii_.MemberProperty{JsiiProperty: "alarmActionsInput", GoGetter: "AlarmActionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "alarmDescription", GoGetter: "AlarmDescription"},
-			_jsii_.MemberProperty{JsiiProperty: "alarmDescriptionInput", GoGetter: "AlarmDescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "alarmName", GoGetter: "AlarmName"},
-			_jsii_.MemberProperty{JsiiProperty: "alarmNameInput", GoGetter: "AlarmNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},
-			_jsii_.MemberProperty{JsiiProperty: "comparisonOperatorInput", GoGetter: "ComparisonOperatorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "datapointsToAlarm", GoGetter: "DatapointsToAlarm"},
-			_jsii_.MemberProperty{JsiiProperty: "datapointsToAlarmInput", GoGetter: "DatapointsToAlarmInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
-			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluateLowSampleCountPercentiles", GoGetter: "EvaluateLowSampleCountPercentiles"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluateLowSampleCountPercentilesInput", GoGetter: "EvaluateLowSampleCountPercentilesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluationPeriods", GoGetter: "EvaluationPeriods"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluationPeriodsInput", GoGetter: "EvaluationPeriodsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "extendedStatistic", GoGetter: "ExtendedStatistic"},
-			_jsii_.MemberProperty{JsiiProperty: "extendedStatisticInput", GoGetter: "ExtendedStatisticInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "insufficientDataActions", GoGetter: "InsufficientDataActions"},
-			_jsii_.MemberProperty{JsiiProperty: "insufficientDataActionsInput", GoGetter: "InsufficientDataActionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
-			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metricQuery", GoGetter: "MetricQuery"},
-			_jsii_.MemberProperty{JsiiProperty: "metricQueryInput", GoGetter: "MetricQueryInput"},
-			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
-			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "okActions", GoGetter: "OkActions"},
-			_jsii_.MemberProperty{JsiiProperty: "okActionsInput", GoGetter: "OkActionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "period", GoGetter: "Period"},
-			_jsii_.MemberProperty{JsiiProperty: "periodInput", GoGetter: "PeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putMetricQuery", GoMethod: "PutMetricQuery"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetActionsEnabled", GoMethod: "ResetActionsEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlarmActions", GoMethod: "ResetAlarmActions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlarmDescription", GoMethod: "ResetAlarmDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatapointsToAlarm", GoMethod: "ResetDatapointsToAlarm"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEvaluateLowSampleCountPercentiles", GoMethod: "ResetEvaluateLowSampleCountPercentiles"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExtendedStatistic", GoMethod: "ResetExtendedStatistic"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInsufficientDataActions", GoMethod: "ResetInsufficientDataActions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetricQuery", GoMethod: "ResetMetricQuery"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOkActions", GoMethod: "ResetOkActions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPeriod", GoMethod: "ResetPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatistic", GoMethod: "ResetStatistic"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThresholdMetricId", GoMethod: "ResetThresholdMetricId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTreatMissingData", GoMethod: "ResetTreatMissingData"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnit", GoMethod: "ResetUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "statistic", GoGetter: "Statistic"},
-			_jsii_.MemberProperty{JsiiProperty: "statisticInput", GoGetter: "StatisticInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "threshold", GoGetter: "Threshold"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdMetricId", GoGetter: "ThresholdMetricId"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdMetricIdInput", GoGetter: "ThresholdMetricIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "treatMissingData", GoGetter: "TreatMissingData"},
-			_jsii_.MemberProperty{JsiiProperty: "treatMissingDataInput", GoGetter: "TreatMissingDataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
-			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchMetricAlarm{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
+type CloudwatchMetricAlarm interface {
+	cdktf.TerraformResource
+	ActionsEnabled() interface{}
+	SetActionsEnabled(val interface{})
+	ActionsEnabledInput() interface{}
+	AlarmActions() *[]*string
+	SetAlarmActions(val *[]*string)
+	AlarmActionsInput() *[]*string
+	AlarmDescription() *string
+	SetAlarmDescription(val *string)
+	AlarmDescriptionInput() *string
+	AlarmName() *string
+	SetAlarmName(val *string)
+	AlarmNameInput() *string
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ComparisonOperator() *string
+	SetComparisonOperator(val *string)
+	ComparisonOperatorInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DatapointsToAlarm() *float64
+	SetDatapointsToAlarm(val *float64)
+	DatapointsToAlarmInput() *float64
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Dimensions() *map[string]*string
+	SetDimensions(val *map[string]*string)
+	DimensionsInput() *map[string]*string
+	EvaluateLowSampleCountPercentiles() *string
+	SetEvaluateLowSampleCountPercentiles(val *string)
+	EvaluateLowSampleCountPercentilesInput() *string
+	EvaluationPeriods() *float64
+	SetEvaluationPeriods(val *float64)
+	EvaluationPeriodsInput() *float64
+	ExtendedStatistic() *string
+	SetExtendedStatistic(val *string)
+	ExtendedStatisticInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InsufficientDataActions() *[]*string
+	SetInsufficientDataActions(val *[]*string)
+	InsufficientDataActionsInput() *[]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetricName() *string
+	SetMetricName(val *string)
+	MetricNameInput() *string
+	MetricQuery() CloudwatchMetricAlarmMetricQueryList
+	MetricQueryInput() interface{}
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
+	// The tree node.
+	Node() constructs.Node
+	OkActions() *[]*string
+	SetOkActions(val *[]*string)
+	OkActionsInput() *[]*string
+	Period() *float64
+	SetPeriod(val *float64)
+	PeriodInput() *float64
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Statistic() *string
+	SetStatistic(val *string)
+	StatisticInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Threshold() *float64
+	SetThreshold(val *float64)
+	ThresholdInput() *float64
+	ThresholdMetricId() *string
+	SetThresholdMetricId(val *string)
+	ThresholdMetricIdInput() *string
+	TreatMissingData() *string
+	SetTreatMissingData(val *string)
+	TreatMissingDataInput() *string
+	Unit() *string
+	SetUnit(val *string)
+	UnitInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutMetricQuery(value interface{})
+	ResetActionsEnabled()
+	ResetAlarmActions()
+	ResetAlarmDescription()
+	ResetDatapointsToAlarm()
+	ResetDimensions()
+	ResetEvaluateLowSampleCountPercentiles()
+	ResetExtendedStatistic()
+	ResetId()
+	ResetInsufficientDataActions()
+	ResetMetricName()
+	ResetMetricQuery()
+	ResetNamespace()
+	ResetOkActions()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPeriod()
+	ResetStatistic()
+	ResetTags()
+	ResetTagsAll()
+	ResetThreshold()
+	ResetThresholdMetricId()
+	ResetTreatMissingData()
+	ResetUnit()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for CloudwatchMetricAlarm
+type jsiiProxy_CloudwatchMetricAlarm struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ActionsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"actionsEnabled",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig",
-		reflect.TypeOf((*CloudwatchMetricAlarmConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ActionsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"actionsEnabledInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQuery)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) AlarmActions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alarmActions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchMetricAlarmMetricQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) AlarmActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alarmActionsInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryMetric)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) AlarmDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alarmDescription",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetricOutputReference",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryMetricOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dimensions", GoGetter: "Dimensions"},
-			_jsii_.MemberProperty{JsiiProperty: "dimensionsInput", GoGetter: "DimensionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "metricName", GoGetter: "MetricName"},
-			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
-			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "period", GoGetter: "Period"},
-			_jsii_.MemberProperty{JsiiProperty: "periodInput", GoGetter: "PeriodInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDimensions", GoMethod: "ResetDimensions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnit", GoMethod: "ResetUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "stat", GoGetter: "Stat"},
-			_jsii_.MemberProperty{JsiiProperty: "statInput", GoGetter: "StatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
-			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) AlarmDescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alarmDescriptionInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
-			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expression", GoGetter: "Expression"},
-			_jsii_.MemberProperty{JsiiProperty: "expressionInput", GoGetter: "ExpressionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
-			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metric", GoGetter: "Metric"},
-			_jsii_.MemberProperty{JsiiProperty: "metricInput", GoGetter: "MetricInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putMetric", GoMethod: "PutMetric"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpression", GoMethod: "ResetExpression"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetric", GoMethod: "ResetMetric"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReturnData", GoMethod: "ResetReturnData"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "returnData", GoGetter: "ReturnData"},
-			_jsii_.MemberProperty{JsiiProperty: "returnDataInput", GoGetter: "ReturnDataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) AlarmName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alarmName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) AlarmNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alarmNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ComparisonOperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comparisonOperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ComparisonOperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comparisonOperatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) DatapointsToAlarm() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"datapointsToAlarm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) DatapointsToAlarmInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"datapointsToAlarmInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Dimensions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"dimensions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) DimensionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"dimensionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) EvaluateLowSampleCountPercentiles() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"evaluateLowSampleCountPercentiles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) EvaluateLowSampleCountPercentilesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"evaluateLowSampleCountPercentilesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) EvaluationPeriods() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evaluationPeriods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) EvaluationPeriodsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evaluationPeriodsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ExtendedStatistic() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extendedStatistic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ExtendedStatisticInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extendedStatisticInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) InsufficientDataActions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"insufficientDataActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) InsufficientDataActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"insufficientDataActionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) MetricName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) MetricNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) MetricQuery() CloudwatchMetricAlarmMetricQueryList {
+	var returns CloudwatchMetricAlarmMetricQueryList
+	_jsii_.Get(
+		j,
+		"metricQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) MetricQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) OkActions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"okActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) OkActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"okActionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Period() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) PeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Statistic() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statistic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) StatisticInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statisticInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Threshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"threshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"thresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ThresholdMetricId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"thresholdMetricId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) ThresholdMetricIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"thresholdMetricIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TreatMissingData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"treatMissingData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) TreatMissingDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"treatMissingDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) Unit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm) UnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unitInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
+func NewCloudwatchMetricAlarm(scope constructs.Construct, id *string, config *CloudwatchMetricAlarmConfig) CloudwatchMetricAlarm {
+	_init_.Initialize()
+
+	if err := validateNewCloudwatchMetricAlarmParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_CloudwatchMetricAlarm{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
+func NewCloudwatchMetricAlarm_Override(c CloudwatchMetricAlarm, scope constructs.Construct, id *string, config *CloudwatchMetricAlarmConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		[]interface{}{scope, id, config},
+		c,
 	)
 }
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetActionsEnabled(val interface{}) {
+	if err := j.validateSetActionsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actionsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetAlarmActions(val *[]*string) {
+	if err := j.validateSetAlarmActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alarmActions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetAlarmDescription(val *string) {
+	if err := j.validateSetAlarmDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alarmDescription",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetAlarmName(val *string) {
+	if err := j.validateSetAlarmNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alarmName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetComparisonOperator(val *string) {
+	if err := j.validateSetComparisonOperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"comparisonOperator",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetDatapointsToAlarm(val *float64) {
+	if err := j.validateSetDatapointsToAlarmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datapointsToAlarm",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetDimensions(val *map[string]*string) {
+	if err := j.validateSetDimensionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dimensions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetEvaluateLowSampleCountPercentiles(val *string) {
+	if err := j.validateSetEvaluateLowSampleCountPercentilesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"evaluateLowSampleCountPercentiles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetEvaluationPeriods(val *float64) {
+	if err := j.validateSetEvaluationPeriodsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"evaluationPeriods",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetExtendedStatistic(val *string) {
+	if err := j.validateSetExtendedStatisticParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extendedStatistic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetInsufficientDataActions(val *[]*string) {
+	if err := j.validateSetInsufficientDataActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insufficientDataActions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetMetricName(val *string) {
+	if err := j.validateSetMetricNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetOkActions(val *[]*string) {
+	if err := j.validateSetOkActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"okActions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetStatistic(val *string) {
+	if err := j.validateSetStatisticParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"statistic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetThreshold(val *float64) {
+	if err := j.validateSetThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"threshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetThresholdMetricId(val *string) {
+	if err := j.validateSetThresholdMetricIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"thresholdMetricId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetTreatMissingData(val *string) {
+	if err := j.validateSetTreatMissingDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"treatMissingData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetUnit(val *string) {
+	if err := j.validateSetUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unit",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func CloudwatchMetricAlarm_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchMetricAlarm_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudwatchMetricAlarm_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchMetricAlarm_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudwatchMetricAlarm_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchMetricAlarm_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func CloudwatchMetricAlarm_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) PutMetricQuery(value interface{}) {
+	if err := c.validatePutMetricQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMetricQuery",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetActionsEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetActionsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetAlarmActions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAlarmActions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetAlarmDescription() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAlarmDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetDatapointsToAlarm() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDatapointsToAlarm",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetDimensions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDimensions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetEvaluateLowSampleCountPercentiles() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEvaluateLowSampleCountPercentiles",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetExtendedStatistic() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExtendedStatistic",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetInsufficientDataActions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInsufficientDataActions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetMetricName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMetricName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetMetricQuery() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMetricQuery",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetOkActions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOkActions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPeriod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetStatistic() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatistic",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetThreshold() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetThreshold",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetThresholdMetricId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetThresholdMetricId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetTreatMissingData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTreatMissingData",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ResetUnit() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUnit",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

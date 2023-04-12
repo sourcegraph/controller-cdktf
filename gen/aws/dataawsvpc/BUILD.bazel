@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsvpc",
+    srcs = [
+        "DataAwsVpc.go",
+        "DataAwsVpcCidrBlockAssociations.go",
+        "DataAwsVpcCidrBlockAssociationsList.go",
+        "DataAwsVpcCidrBlockAssociationsList__checks.go",
+        "DataAwsVpcCidrBlockAssociationsOutputReference.go",
+        "DataAwsVpcCidrBlockAssociationsOutputReference__checks.go",
+        "DataAwsVpcConfig.go",
+        "DataAwsVpcFilter.go",
+        "DataAwsVpcFilterList.go",
+        "DataAwsVpcFilterList__checks.go",
+        "DataAwsVpcFilterOutputReference.go",
+        "DataAwsVpcFilterOutputReference__checks.go",
+        "DataAwsVpcTimeouts.go",
+        "DataAwsVpcTimeoutsOutputReference.go",
+        "DataAwsVpcTimeoutsOutputReference__checks.go",
+        "DataAwsVpc__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsvpc",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsvpc/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

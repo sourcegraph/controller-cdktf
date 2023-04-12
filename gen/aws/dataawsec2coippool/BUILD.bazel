@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsec2coippool",
+    srcs = [
+        "DataAwsEc2CoipPool.go",
+        "DataAwsEc2CoipPoolConfig.go",
+        "DataAwsEc2CoipPoolFilter.go",
+        "DataAwsEc2CoipPoolFilterList.go",
+        "DataAwsEc2CoipPoolFilterList__checks.go",
+        "DataAwsEc2CoipPoolFilterOutputReference.go",
+        "DataAwsEc2CoipPoolFilterOutputReference__checks.go",
+        "DataAwsEc2CoipPoolTimeouts.go",
+        "DataAwsEc2CoipPoolTimeoutsOutputReference.go",
+        "DataAwsEc2CoipPoolTimeoutsOutputReference__checks.go",
+        "DataAwsEc2CoipPool__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsec2coippool",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsec2coippool/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

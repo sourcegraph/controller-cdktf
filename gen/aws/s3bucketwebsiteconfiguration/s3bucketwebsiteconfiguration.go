@@ -1,361 +1,1041 @@
 package s3bucketwebsiteconfiguration
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketwebsiteconfiguration/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
-		reflect.TypeOf((*S3BucketWebsiteConfiguration)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "errorDocument", GoGetter: "ErrorDocument"},
-			_jsii_.MemberProperty{JsiiProperty: "errorDocumentInput", GoGetter: "ErrorDocumentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedBucketOwner", GoGetter: "ExpectedBucketOwner"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedBucketOwnerInput", GoGetter: "ExpectedBucketOwnerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "indexDocument", GoGetter: "IndexDocument"},
-			_jsii_.MemberProperty{JsiiProperty: "indexDocumentInput", GoGetter: "IndexDocumentInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putErrorDocument", GoMethod: "PutErrorDocument"},
-			_jsii_.MemberMethod{JsiiMethod: "putIndexDocument", GoMethod: "PutIndexDocument"},
-			_jsii_.MemberMethod{JsiiMethod: "putRedirectAllRequestsTo", GoMethod: "PutRedirectAllRequestsTo"},
-			_jsii_.MemberMethod{JsiiMethod: "putRoutingRule", GoMethod: "PutRoutingRule"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectAllRequestsTo", GoGetter: "RedirectAllRequestsTo"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectAllRequestsToInput", GoGetter: "RedirectAllRequestsToInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetErrorDocument", GoMethod: "ResetErrorDocument"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpectedBucketOwner", GoMethod: "ResetExpectedBucketOwner"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIndexDocument", GoMethod: "ResetIndexDocument"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedirectAllRequestsTo", GoMethod: "ResetRedirectAllRequestsTo"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRoutingRule", GoMethod: "ResetRoutingRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRoutingRules", GoMethod: "ResetRoutingRules"},
-			_jsii_.MemberProperty{JsiiProperty: "routingRule", GoGetter: "RoutingRule"},
-			_jsii_.MemberProperty{JsiiProperty: "routingRuleInput", GoGetter: "RoutingRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "routingRules", GoGetter: "RoutingRules"},
-			_jsii_.MemberProperty{JsiiProperty: "routingRulesInput", GoGetter: "RoutingRulesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "websiteDomain", GoGetter: "WebsiteDomain"},
-			_jsii_.MemberProperty{JsiiProperty: "websiteEndpoint", GoGetter: "WebsiteEndpoint"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfiguration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_website_configuration aws_s3_bucket_website_configuration}.
+type S3BucketWebsiteConfiguration interface {
+	cdktf.TerraformResource
+	Bucket() *string
+	SetBucket(val *string)
+	BucketInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	ErrorDocument() S3BucketWebsiteConfigurationErrorDocumentOutputReference
+	ErrorDocumentInput() *S3BucketWebsiteConfigurationErrorDocument
+	ExpectedBucketOwner() *string
+	SetExpectedBucketOwner(val *string)
+	ExpectedBucketOwnerInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IndexDocument() S3BucketWebsiteConfigurationIndexDocumentOutputReference
+	IndexDocumentInput() *S3BucketWebsiteConfigurationIndexDocument
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RedirectAllRequestsTo() S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
+	RedirectAllRequestsToInput() *S3BucketWebsiteConfigurationRedirectAllRequestsTo
+	RoutingRule() S3BucketWebsiteConfigurationRoutingRuleList
+	RoutingRuleInput() interface{}
+	RoutingRules() *string
+	SetRoutingRules(val *string)
+	RoutingRulesInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	WebsiteDomain() *string
+	WebsiteEndpoint() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutErrorDocument(value *S3BucketWebsiteConfigurationErrorDocument)
+	PutIndexDocument(value *S3BucketWebsiteConfigurationIndexDocument)
+	PutRedirectAllRequestsTo(value *S3BucketWebsiteConfigurationRedirectAllRequestsTo)
+	PutRoutingRule(value interface{})
+	ResetErrorDocument()
+	ResetExpectedBucketOwner()
+	ResetId()
+	ResetIndexDocument()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRedirectAllRequestsTo()
+	ResetRoutingRule()
+	ResetRoutingRules()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for S3BucketWebsiteConfiguration
+type jsiiProxy_S3BucketWebsiteConfiguration struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Bucket() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucket",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) BucketInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationErrorDocument)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationErrorDocumentOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
-			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationIndexDocument)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationIndexDocumentOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "suffix", GoGetter: "Suffix"},
-			_jsii_.MemberProperty{JsiiProperty: "suffixInput", GoGetter: "SuffixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationIndexDocumentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRedirectAllRequestsTo)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hostName", GoGetter: "HostName"},
-			_jsii_.MemberProperty{JsiiProperty: "hostNameInput", GoGetter: "HostNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) ErrorDocument() S3BucketWebsiteConfigurationErrorDocumentOutputReference {
+	var returns S3BucketWebsiteConfigurationErrorDocumentOutputReference
+	_jsii_.Get(
+		j,
+		"errorDocument",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRule",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRule)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) ErrorDocumentInput() *S3BucketWebsiteConfigurationErrorDocument {
+	var returns *S3BucketWebsiteConfigurationErrorDocument
+	_jsii_.Get(
+		j,
+		"errorDocumentInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRuleCondition)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) ExpectedBucketOwner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedBucketOwner",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "httpErrorCodeReturnedEquals", GoGetter: "HttpErrorCodeReturnedEquals"},
-			_jsii_.MemberProperty{JsiiProperty: "httpErrorCodeReturnedEqualsInput", GoGetter: "HttpErrorCodeReturnedEqualsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "keyPrefixEquals", GoGetter: "KeyPrefixEquals"},
-			_jsii_.MemberProperty{JsiiProperty: "keyPrefixEqualsInput", GoGetter: "KeyPrefixEqualsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpErrorCodeReturnedEquals", GoMethod: "ResetHttpErrorCodeReturnedEquals"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKeyPrefixEquals", GoMethod: "ResetKeyPrefixEquals"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) ExpectedBucketOwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedBucketOwnerInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRuleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleOutputReference",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "condition", GoGetter: "Condition"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionInput", GoGetter: "ConditionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putCondition", GoMethod: "PutCondition"},
-			_jsii_.MemberMethod{JsiiMethod: "putRedirect", GoMethod: "PutRedirect"},
-			_jsii_.MemberProperty{JsiiProperty: "redirect", GoGetter: "Redirect"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectInput", GoGetter: "RedirectInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCondition", GoMethod: "ResetCondition"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRuleRedirect)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference",
-		reflect.TypeOf((*S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hostName", GoGetter: "HostName"},
-			_jsii_.MemberProperty{JsiiProperty: "hostNameInput", GoGetter: "HostNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "httpRedirectCode", GoGetter: "HttpRedirectCode"},
-			_jsii_.MemberProperty{JsiiProperty: "httpRedirectCodeInput", GoGetter: "HttpRedirectCodeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replaceKeyPrefixWith", GoGetter: "ReplaceKeyPrefixWith"},
-			_jsii_.MemberProperty{JsiiProperty: "replaceKeyPrefixWithInput", GoGetter: "ReplaceKeyPrefixWithInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replaceKeyWith", GoGetter: "ReplaceKeyWith"},
-			_jsii_.MemberProperty{JsiiProperty: "replaceKeyWithInput", GoGetter: "ReplaceKeyWithInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHostName", GoMethod: "ResetHostName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpRedirectCode", GoMethod: "ResetHttpRedirectCode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplaceKeyPrefixWith", GoMethod: "ResetReplaceKeyPrefixWith"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplaceKeyWith", GoMethod: "ResetReplaceKeyWith"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) IndexDocument() S3BucketWebsiteConfigurationIndexDocumentOutputReference {
+	var returns S3BucketWebsiteConfigurationIndexDocumentOutputReference
+	_jsii_.Get(
+		j,
+		"indexDocument",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) IndexDocumentInput() *S3BucketWebsiteConfigurationIndexDocument {
+	var returns *S3BucketWebsiteConfigurationIndexDocument
+	_jsii_.Get(
+		j,
+		"indexDocumentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RedirectAllRequestsTo() S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference {
+	var returns S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
+	_jsii_.Get(
+		j,
+		"redirectAllRequestsTo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RedirectAllRequestsToInput() *S3BucketWebsiteConfigurationRedirectAllRequestsTo {
+	var returns *S3BucketWebsiteConfigurationRedirectAllRequestsTo
+	_jsii_.Get(
+		j,
+		"redirectAllRequestsToInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RoutingRule() S3BucketWebsiteConfigurationRoutingRuleList {
+	var returns S3BucketWebsiteConfigurationRoutingRuleList
+	_jsii_.Get(
+		j,
+		"routingRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RoutingRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routingRuleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RoutingRules() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RoutingRulesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingRulesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) WebsiteDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"websiteDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) WebsiteEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"websiteEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
+func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration {
+	_init_.Initialize()
+
+	if err := validateNewS3BucketWebsiteConfigurationParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_S3BucketWebsiteConfiguration{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
+func NewS3BucketWebsiteConfiguration_Override(s S3BucketWebsiteConfiguration, scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
+		[]interface{}{scope, id, config},
+		s,
 	)
 }
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetBucket(val *string) {
+	if err := j.validateSetBucketParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetExpectedBucketOwner(val *string) {
+	if err := j.validateSetExpectedBucketOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedBucketOwner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetRoutingRules(val *string) {
+	if err := j.validateSetRoutingRulesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingRules",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func S3BucketWebsiteConfiguration_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketWebsiteConfiguration_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3BucketWebsiteConfiguration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketWebsiteConfiguration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3BucketWebsiteConfiguration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketWebsiteConfiguration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func S3BucketWebsiteConfiguration_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		s,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		s,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) PutErrorDocument(value *S3BucketWebsiteConfigurationErrorDocument) {
+	if err := s.validatePutErrorDocumentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putErrorDocument",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) PutIndexDocument(value *S3BucketWebsiteConfigurationIndexDocument) {
+	if err := s.validatePutIndexDocumentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIndexDocument",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) PutRedirectAllRequestsTo(value *S3BucketWebsiteConfigurationRedirectAllRequestsTo) {
+	if err := s.validatePutRedirectAllRequestsToParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRedirectAllRequestsTo",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) PutRoutingRule(value interface{}) {
+	if err := s.validatePutRoutingRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRoutingRule",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetErrorDocument() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetErrorDocument",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetExpectedBucketOwner() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpectedBucketOwner",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetIndexDocument() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIndexDocument",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetRedirectAllRequestsTo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRedirectAllRequestsTo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetRoutingRule() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRoutingRule",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetRoutingRules() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRoutingRules",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

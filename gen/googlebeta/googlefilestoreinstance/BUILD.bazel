@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefilestoreinstance",
+    srcs = [
+        "GoogleFilestoreInstance.go",
+        "GoogleFilestoreInstanceConfig.go",
+        "GoogleFilestoreInstanceFileShares.go",
+        "GoogleFilestoreInstanceFileSharesNfsExportOptions.go",
+        "GoogleFilestoreInstanceFileSharesNfsExportOptionsList.go",
+        "GoogleFilestoreInstanceFileSharesNfsExportOptionsList__checks.go",
+        "GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference.go",
+        "GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference__checks.go",
+        "GoogleFilestoreInstanceFileSharesOutputReference.go",
+        "GoogleFilestoreInstanceFileSharesOutputReference__checks.go",
+        "GoogleFilestoreInstanceNetworks.go",
+        "GoogleFilestoreInstanceNetworksList.go",
+        "GoogleFilestoreInstanceNetworksList__checks.go",
+        "GoogleFilestoreInstanceNetworksOutputReference.go",
+        "GoogleFilestoreInstanceNetworksOutputReference__checks.go",
+        "GoogleFilestoreInstanceTimeouts.go",
+        "GoogleFilestoreInstanceTimeoutsOutputReference.go",
+        "GoogleFilestoreInstanceTimeoutsOutputReference__checks.go",
+        "GoogleFilestoreInstance__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlefilestoreinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlefilestoreinstance/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

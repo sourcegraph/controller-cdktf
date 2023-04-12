@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "macies3bucketassociation",
+    srcs = [
+        "MacieS3BucketAssociation.go",
+        "MacieS3BucketAssociationClassificationType.go",
+        "MacieS3BucketAssociationClassificationTypeOutputReference.go",
+        "MacieS3BucketAssociationClassificationTypeOutputReference__checks.go",
+        "MacieS3BucketAssociationConfig.go",
+        "MacieS3BucketAssociation__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/macies3bucketassociation",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/macies3bucketassociation/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

@@ -1,697 +1,859 @@
 package zonesettingsoverride
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/zonesettingsoverride/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
-		reflect.TypeOf((*ZoneSettingsOverride)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "initialSettings", GoGetter: "InitialSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "initialSettingsReadAt", GoGetter: "InitialSettingsReadAt"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putSettings", GoMethod: "PutSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "readonlySettings", GoGetter: "ReadonlySettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSettings", GoMethod: "ResetSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "settings", GoGetter: "Settings"},
-			_jsii_.MemberProperty{JsiiProperty: "settingsInput", GoGetter: "SettingsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneStatus", GoGetter: "ZoneStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneType", GoGetter: "ZoneType"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverride{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override cloudflare_zone_settings_override}.
+type ZoneSettingsOverride interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InitialSettings() ZoneSettingsOverrideInitialSettingsList
+	InitialSettingsReadAt() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ReadonlySettings() *[]*string
+	Settings() ZoneSettingsOverrideSettingsOutputReference
+	SettingsInput() *ZoneSettingsOverrideSettings
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
+	ZoneStatus() *string
+	ZoneType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutSettings(value *ZoneSettingsOverrideSettings)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetSettings()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ZoneSettingsOverride
+type jsiiProxy_ZoneSettingsOverride struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideConfig",
-		reflect.TypeOf((*ZoneSettingsOverrideConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettings",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinify",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinify)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinifyList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinifyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "css", GoGetter: "Css"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "html", GoGetter: "Html"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "js", GoGetter: "Js"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirect",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirect)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirectList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mobileSubdomain", GoGetter: "MobileSubdomain"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "stripUri", GoGetter: "StripUri"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
-			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
-			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
-			_jsii_.MemberProperty{JsiiProperty: "binaryAst", GoGetter: "BinaryAst"},
-			_jsii_.MemberProperty{JsiiProperty: "brotli", GoGetter: "Brotli"},
-			_jsii_.MemberProperty{JsiiProperty: "browserCacheTtl", GoGetter: "BrowserCacheTtl"},
-			_jsii_.MemberProperty{JsiiProperty: "browserCheck", GoGetter: "BrowserCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheLevel", GoGetter: "CacheLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "challengeTtl", GoGetter: "ChallengeTtl"},
-			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
-			_jsii_.MemberProperty{JsiiProperty: "cnameFlattening", GoGetter: "CnameFlattening"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "developmentMode", GoGetter: "DevelopmentMode"},
-			_jsii_.MemberProperty{JsiiProperty: "earlyHints", GoGetter: "EarlyHints"},
-			_jsii_.MemberProperty{JsiiProperty: "emailObfuscation", GoGetter: "EmailObfuscation"},
-			_jsii_.MemberProperty{JsiiProperty: "filterLogsToCloudflare", GoGetter: "FilterLogsToCloudflare"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "h2Prioritization", GoGetter: "H2Prioritization"},
-			_jsii_.MemberProperty{JsiiProperty: "hotlinkProtection", GoGetter: "HotlinkProtection"},
-			_jsii_.MemberProperty{JsiiProperty: "http2", GoGetter: "Http2"},
-			_jsii_.MemberProperty{JsiiProperty: "http3", GoGetter: "Http3"},
-			_jsii_.MemberProperty{JsiiProperty: "imageResizing", GoGetter: "ImageResizing"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipGeolocation", GoGetter: "IpGeolocation"},
-			_jsii_.MemberProperty{JsiiProperty: "ipv6", GoGetter: "Ipv6"},
-			_jsii_.MemberProperty{JsiiProperty: "logToCloudflare", GoGetter: "LogToCloudflare"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUpload", GoGetter: "MaxUpload"},
-			_jsii_.MemberProperty{JsiiProperty: "minify", GoGetter: "Minify"},
-			_jsii_.MemberProperty{JsiiProperty: "minTlsVersion", GoGetter: "MinTlsVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "mirage", GoGetter: "Mirage"},
-			_jsii_.MemberProperty{JsiiProperty: "mobileRedirect", GoGetter: "MobileRedirect"},
-			_jsii_.MemberProperty{JsiiProperty: "opportunisticEncryption", GoGetter: "OpportunisticEncryption"},
-			_jsii_.MemberProperty{JsiiProperty: "opportunisticOnion", GoGetter: "OpportunisticOnion"},
-			_jsii_.MemberProperty{JsiiProperty: "orangeToOrange", GoGetter: "OrangeToOrange"},
-			_jsii_.MemberProperty{JsiiProperty: "originErrorPagePassThru", GoGetter: "OriginErrorPagePassThru"},
-			_jsii_.MemberProperty{JsiiProperty: "polish", GoGetter: "Polish"},
-			_jsii_.MemberProperty{JsiiProperty: "prefetchPreload", GoGetter: "PrefetchPreload"},
-			_jsii_.MemberProperty{JsiiProperty: "privacyPass", GoGetter: "PrivacyPass"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyReadTimeout", GoGetter: "ProxyReadTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "pseudoIpv4", GoGetter: "PseudoIpv4"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "responseBuffering", GoGetter: "ResponseBuffering"},
-			_jsii_.MemberProperty{JsiiProperty: "rocketLoader", GoGetter: "RocketLoader"},
-			_jsii_.MemberProperty{JsiiProperty: "securityHeader", GoGetter: "SecurityHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevel", GoGetter: "SecurityLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideExclude", GoGetter: "ServerSideExclude"},
-			_jsii_.MemberProperty{JsiiProperty: "sortQueryStringForCache", GoGetter: "SortQueryStringForCache"},
-			_jsii_.MemberProperty{JsiiProperty: "ssl", GoGetter: "Ssl"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "tls12Only", GoGetter: "Tls12Only"},
-			_jsii_.MemberProperty{JsiiProperty: "tls13", GoGetter: "Tls13"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsClientAuth", GoGetter: "TlsClientAuth"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "trueClientIpHeader", GoGetter: "TrueClientIpHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "universalSsl", GoGetter: "UniversalSsl"},
-			_jsii_.MemberProperty{JsiiProperty: "visitorIp", GoGetter: "VisitorIp"},
-			_jsii_.MemberProperty{JsiiProperty: "waf", GoGetter: "Waf"},
-			_jsii_.MemberProperty{JsiiProperty: "webp", GoGetter: "Webp"},
-			_jsii_.MemberProperty{JsiiProperty: "websockets", GoGetter: "Websockets"},
-			_jsii_.MemberProperty{JsiiProperty: "zeroRtt", GoGetter: "ZeroRtt"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) InitialSettings() ZoneSettingsOverrideInitialSettingsList {
+	var returns ZoneSettingsOverrideInitialSettingsList
+	_jsii_.Get(
+		j,
+		"initialSettings",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeader",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeader)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) InitialSettingsReadAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"initialSettingsReadAt",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeaderList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSubdomains", GoGetter: "IncludeSubdomains"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAge", GoGetter: "MaxAge"},
-			_jsii_.MemberProperty{JsiiProperty: "nosniff", GoGetter: "Nosniff"},
-			_jsii_.MemberProperty{JsiiProperty: "preload", GoGetter: "Preload"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings",
-		reflect.TypeOf((*ZoneSettingsOverrideSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMinify)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMinifyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "css", GoGetter: "Css"},
-			_jsii_.MemberProperty{JsiiProperty: "cssInput", GoGetter: "CssInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "html", GoGetter: "Html"},
-			_jsii_.MemberProperty{JsiiProperty: "htmlInput", GoGetter: "HtmlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "js", GoGetter: "Js"},
-			_jsii_.MemberProperty{JsiiProperty: "jsInput", GoGetter: "JsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMobileRedirect)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ReadonlySettings() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"readonlySettings",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMobileRedirectOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mobileSubdomain", GoGetter: "MobileSubdomain"},
-			_jsii_.MemberProperty{JsiiProperty: "mobileSubdomainInput", GoGetter: "MobileSubdomainInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stripUri", GoGetter: "StripUri"},
-			_jsii_.MemberProperty{JsiiProperty: "stripUriInput", GoGetter: "StripUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) Settings() ZoneSettingsOverrideSettingsOutputReference {
+	var returns ZoneSettingsOverrideSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"settings",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
-			_jsii_.MemberProperty{JsiiProperty: "alwaysOnlineInput", GoGetter: "AlwaysOnlineInput"},
-			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
-			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttpsInput", GoGetter: "AlwaysUseHttpsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
-			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewritesInput", GoGetter: "AutomaticHttpsRewritesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "binaryAst", GoGetter: "BinaryAst"},
-			_jsii_.MemberProperty{JsiiProperty: "binaryAstInput", GoGetter: "BinaryAstInput"},
-			_jsii_.MemberProperty{JsiiProperty: "brotli", GoGetter: "Brotli"},
-			_jsii_.MemberProperty{JsiiProperty: "brotliInput", GoGetter: "BrotliInput"},
-			_jsii_.MemberProperty{JsiiProperty: "browserCacheTtl", GoGetter: "BrowserCacheTtl"},
-			_jsii_.MemberProperty{JsiiProperty: "browserCacheTtlInput", GoGetter: "BrowserCacheTtlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "browserCheck", GoGetter: "BrowserCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "browserCheckInput", GoGetter: "BrowserCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheLevel", GoGetter: "CacheLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "cacheLevelInput", GoGetter: "CacheLevelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "challengeTtl", GoGetter: "ChallengeTtl"},
-			_jsii_.MemberProperty{JsiiProperty: "challengeTtlInput", GoGetter: "ChallengeTtlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
-			_jsii_.MemberProperty{JsiiProperty: "ciphersInput", GoGetter: "CiphersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cnameFlattening", GoGetter: "CnameFlattening"},
-			_jsii_.MemberProperty{JsiiProperty: "cnameFlatteningInput", GoGetter: "CnameFlatteningInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "developmentMode", GoGetter: "DevelopmentMode"},
-			_jsii_.MemberProperty{JsiiProperty: "developmentModeInput", GoGetter: "DevelopmentModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "earlyHints", GoGetter: "EarlyHints"},
-			_jsii_.MemberProperty{JsiiProperty: "earlyHintsInput", GoGetter: "EarlyHintsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "emailObfuscation", GoGetter: "EmailObfuscation"},
-			_jsii_.MemberProperty{JsiiProperty: "emailObfuscationInput", GoGetter: "EmailObfuscationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "filterLogsToCloudflare", GoGetter: "FilterLogsToCloudflare"},
-			_jsii_.MemberProperty{JsiiProperty: "filterLogsToCloudflareInput", GoGetter: "FilterLogsToCloudflareInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "h2Prioritization", GoGetter: "H2Prioritization"},
-			_jsii_.MemberProperty{JsiiProperty: "h2PrioritizationInput", GoGetter: "H2PrioritizationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "hotlinkProtection", GoGetter: "HotlinkProtection"},
-			_jsii_.MemberProperty{JsiiProperty: "hotlinkProtectionInput", GoGetter: "HotlinkProtectionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "http2", GoGetter: "Http2"},
-			_jsii_.MemberProperty{JsiiProperty: "http2Input", GoGetter: "Http2Input"},
-			_jsii_.MemberProperty{JsiiProperty: "http3", GoGetter: "Http3"},
-			_jsii_.MemberProperty{JsiiProperty: "http3Input", GoGetter: "Http3Input"},
-			_jsii_.MemberProperty{JsiiProperty: "imageResizing", GoGetter: "ImageResizing"},
-			_jsii_.MemberProperty{JsiiProperty: "imageResizingInput", GoGetter: "ImageResizingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipGeolocation", GoGetter: "IpGeolocation"},
-			_jsii_.MemberProperty{JsiiProperty: "ipGeolocationInput", GoGetter: "IpGeolocationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ipv6", GoGetter: "Ipv6"},
-			_jsii_.MemberProperty{JsiiProperty: "ipv6Input", GoGetter: "Ipv6Input"},
-			_jsii_.MemberProperty{JsiiProperty: "logToCloudflare", GoGetter: "LogToCloudflare"},
-			_jsii_.MemberProperty{JsiiProperty: "logToCloudflareInput", GoGetter: "LogToCloudflareInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUpload", GoGetter: "MaxUpload"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUploadInput", GoGetter: "MaxUploadInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minify", GoGetter: "Minify"},
-			_jsii_.MemberProperty{JsiiProperty: "minifyInput", GoGetter: "MinifyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minTlsVersion", GoGetter: "MinTlsVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "minTlsVersionInput", GoGetter: "MinTlsVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mirage", GoGetter: "Mirage"},
-			_jsii_.MemberProperty{JsiiProperty: "mirageInput", GoGetter: "MirageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mobileRedirect", GoGetter: "MobileRedirect"},
-			_jsii_.MemberProperty{JsiiProperty: "mobileRedirectInput", GoGetter: "MobileRedirectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "opportunisticEncryption", GoGetter: "OpportunisticEncryption"},
-			_jsii_.MemberProperty{JsiiProperty: "opportunisticEncryptionInput", GoGetter: "OpportunisticEncryptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "opportunisticOnion", GoGetter: "OpportunisticOnion"},
-			_jsii_.MemberProperty{JsiiProperty: "opportunisticOnionInput", GoGetter: "OpportunisticOnionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "orangeToOrange", GoGetter: "OrangeToOrange"},
-			_jsii_.MemberProperty{JsiiProperty: "orangeToOrangeInput", GoGetter: "OrangeToOrangeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "originErrorPagePassThru", GoGetter: "OriginErrorPagePassThru"},
-			_jsii_.MemberProperty{JsiiProperty: "originErrorPagePassThruInput", GoGetter: "OriginErrorPagePassThruInput"},
-			_jsii_.MemberProperty{JsiiProperty: "polish", GoGetter: "Polish"},
-			_jsii_.MemberProperty{JsiiProperty: "polishInput", GoGetter: "PolishInput"},
-			_jsii_.MemberProperty{JsiiProperty: "prefetchPreload", GoGetter: "PrefetchPreload"},
-			_jsii_.MemberProperty{JsiiProperty: "prefetchPreloadInput", GoGetter: "PrefetchPreloadInput"},
-			_jsii_.MemberProperty{JsiiProperty: "privacyPass", GoGetter: "PrivacyPass"},
-			_jsii_.MemberProperty{JsiiProperty: "privacyPassInput", GoGetter: "PrivacyPassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyReadTimeout", GoGetter: "ProxyReadTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyReadTimeoutInput", GoGetter: "ProxyReadTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "pseudoIpv4", GoGetter: "PseudoIpv4"},
-			_jsii_.MemberProperty{JsiiProperty: "pseudoIpv4Input", GoGetter: "PseudoIpv4Input"},
-			_jsii_.MemberMethod{JsiiMethod: "putMinify", GoMethod: "PutMinify"},
-			_jsii_.MemberMethod{JsiiMethod: "putMobileRedirect", GoMethod: "PutMobileRedirect"},
-			_jsii_.MemberMethod{JsiiMethod: "putSecurityHeader", GoMethod: "PutSecurityHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlwaysOnline", GoMethod: "ResetAlwaysOnline"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlwaysUseHttps", GoMethod: "ResetAlwaysUseHttps"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticHttpsRewrites", GoMethod: "ResetAutomaticHttpsRewrites"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBinaryAst", GoMethod: "ResetBinaryAst"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBrotli", GoMethod: "ResetBrotli"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBrowserCacheTtl", GoMethod: "ResetBrowserCacheTtl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBrowserCheck", GoMethod: "ResetBrowserCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCacheLevel", GoMethod: "ResetCacheLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetChallengeTtl", GoMethod: "ResetChallengeTtl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCiphers", GoMethod: "ResetCiphers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCnameFlattening", GoMethod: "ResetCnameFlattening"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDevelopmentMode", GoMethod: "ResetDevelopmentMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEarlyHints", GoMethod: "ResetEarlyHints"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmailObfuscation", GoMethod: "ResetEmailObfuscation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilterLogsToCloudflare", GoMethod: "ResetFilterLogsToCloudflare"},
-			_jsii_.MemberMethod{JsiiMethod: "resetH2Prioritization", GoMethod: "ResetH2Prioritization"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHotlinkProtection", GoMethod: "ResetHotlinkProtection"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttp2", GoMethod: "ResetHttp2"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttp3", GoMethod: "ResetHttp3"},
-			_jsii_.MemberMethod{JsiiMethod: "resetImageResizing", GoMethod: "ResetImageResizing"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpGeolocation", GoMethod: "ResetIpGeolocation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpv6", GoMethod: "ResetIpv6"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogToCloudflare", GoMethod: "ResetLogToCloudflare"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxUpload", GoMethod: "ResetMaxUpload"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinify", GoMethod: "ResetMinify"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinTlsVersion", GoMethod: "ResetMinTlsVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMirage", GoMethod: "ResetMirage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMobileRedirect", GoMethod: "ResetMobileRedirect"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOpportunisticEncryption", GoMethod: "ResetOpportunisticEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOpportunisticOnion", GoMethod: "ResetOpportunisticOnion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOrangeToOrange", GoMethod: "ResetOrangeToOrange"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOriginErrorPagePassThru", GoMethod: "ResetOriginErrorPagePassThru"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPolish", GoMethod: "ResetPolish"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPrefetchPreload", GoMethod: "ResetPrefetchPreload"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPrivacyPass", GoMethod: "ResetPrivacyPass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyReadTimeout", GoMethod: "ResetProxyReadTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPseudoIpv4", GoMethod: "ResetPseudoIpv4"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponseBuffering", GoMethod: "ResetResponseBuffering"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRocketLoader", GoMethod: "ResetRocketLoader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityHeader", GoMethod: "ResetSecurityHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityLevel", GoMethod: "ResetSecurityLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServerSideExclude", GoMethod: "ResetServerSideExclude"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSortQueryStringForCache", GoMethod: "ResetSortQueryStringForCache"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSsl", GoMethod: "ResetSsl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTls12Only", GoMethod: "ResetTls12Only"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTls13", GoMethod: "ResetTls13"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTlsClientAuth", GoMethod: "ResetTlsClientAuth"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTrueClientIpHeader", GoMethod: "ResetTrueClientIpHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUniversalSsl", GoMethod: "ResetUniversalSsl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVisitorIp", GoMethod: "ResetVisitorIp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWaf", GoMethod: "ResetWaf"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWebp", GoMethod: "ResetWebp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWebsockets", GoMethod: "ResetWebsockets"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZeroRtt", GoMethod: "ResetZeroRtt"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "responseBuffering", GoGetter: "ResponseBuffering"},
-			_jsii_.MemberProperty{JsiiProperty: "responseBufferingInput", GoGetter: "ResponseBufferingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rocketLoader", GoGetter: "RocketLoader"},
-			_jsii_.MemberProperty{JsiiProperty: "rocketLoaderInput", GoGetter: "RocketLoaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityHeader", GoGetter: "SecurityHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "securityHeaderInput", GoGetter: "SecurityHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevel", GoGetter: "SecurityLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevelInput", GoGetter: "SecurityLevelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideExclude", GoGetter: "ServerSideExclude"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideExcludeInput", GoGetter: "ServerSideExcludeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sortQueryStringForCache", GoGetter: "SortQueryStringForCache"},
-			_jsii_.MemberProperty{JsiiProperty: "sortQueryStringForCacheInput", GoGetter: "SortQueryStringForCacheInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ssl", GoGetter: "Ssl"},
-			_jsii_.MemberProperty{JsiiProperty: "sslInput", GoGetter: "SslInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "tls12Only", GoGetter: "Tls12Only"},
-			_jsii_.MemberProperty{JsiiProperty: "tls12OnlyInput", GoGetter: "Tls12OnlyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tls13", GoGetter: "Tls13"},
-			_jsii_.MemberProperty{JsiiProperty: "tls13Input", GoGetter: "Tls13Input"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsClientAuth", GoGetter: "TlsClientAuth"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsClientAuthInput", GoGetter: "TlsClientAuthInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "trueClientIpHeader", GoGetter: "TrueClientIpHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "trueClientIpHeaderInput", GoGetter: "TrueClientIpHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "universalSsl", GoGetter: "UniversalSsl"},
-			_jsii_.MemberProperty{JsiiProperty: "universalSslInput", GoGetter: "UniversalSslInput"},
-			_jsii_.MemberProperty{JsiiProperty: "visitorIp", GoGetter: "VisitorIp"},
-			_jsii_.MemberProperty{JsiiProperty: "visitorIpInput", GoGetter: "VisitorIpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "waf", GoGetter: "Waf"},
-			_jsii_.MemberProperty{JsiiProperty: "wafInput", GoGetter: "WafInput"},
-			_jsii_.MemberProperty{JsiiProperty: "webp", GoGetter: "Webp"},
-			_jsii_.MemberProperty{JsiiProperty: "webpInput", GoGetter: "WebpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "websockets", GoGetter: "Websockets"},
-			_jsii_.MemberProperty{JsiiProperty: "websocketsInput", GoGetter: "WebsocketsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zeroRtt", GoGetter: "ZeroRtt"},
-			_jsii_.MemberProperty{JsiiProperty: "zeroRttInput", GoGetter: "ZeroRttInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) SettingsInput() *ZoneSettingsOverrideSettings {
+	var returns *ZoneSettingsOverrideSettings
+	_jsii_.Get(
+		j,
+		"settingsInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsSecurityHeader)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSubdomains", GoGetter: "IncludeSubdomains"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSubdomainsInput", GoGetter: "IncludeSubdomainsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAge", GoGetter: "MaxAge"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAgeInput", GoGetter: "MaxAgeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nosniff", GoGetter: "Nosniff"},
-			_jsii_.MemberProperty{JsiiProperty: "nosniffInput", GoGetter: "NosniffInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preload", GoGetter: "Preload"},
-			_jsii_.MemberProperty{JsiiProperty: "preloadInput", GoGetter: "PreloadInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeSubdomains", GoMethod: "ResetIncludeSubdomains"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxAge", GoMethod: "ResetMaxAge"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNosniff", GoMethod: "ResetNosniff"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreload", GoMethod: "ResetPreload"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ZoneStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride) ZoneType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override cloudflare_zone_settings_override} Resource.
+func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) ZoneSettingsOverride {
+	_init_.Initialize()
+
+	if err := validateNewZoneSettingsOverrideParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_ZoneSettingsOverride{}
+
+	_jsii_.Create(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override cloudflare_zone_settings_override} Resource.
+func NewZoneSettingsOverride_Override(z ZoneSettingsOverride, scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		[]interface{}{scope, id, config},
+		z,
 	)
 }
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverride)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ZoneSettingsOverride_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateZoneSettingsOverride_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ZoneSettingsOverride_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateZoneSettingsOverride_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ZoneSettingsOverride_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateZoneSettingsOverride_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ZoneSettingsOverride_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) AddOverride(path *string, value interface{}) {
+	if err := z.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		z,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		z,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		z,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		z,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		z,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		z,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		z,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		z,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		z,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		z,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) OverrideLogicalId(newLogicalId *string) {
+	if err := z.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) PutSettings(value *ZoneSettingsOverrideSettings) {
+	if err := z.validatePutSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putSettings",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ResetId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ResetSettings() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSettings",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		z,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		z,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecloudfunctions2functioniammember",
+    srcs = [
+        "GoogleCloudfunctions2FunctionIamMember.go",
+        "GoogleCloudfunctions2FunctionIamMemberCondition.go",
+        "GoogleCloudfunctions2FunctionIamMemberConditionOutputReference.go",
+        "GoogleCloudfunctions2FunctionIamMemberConditionOutputReference__checks.go",
+        "GoogleCloudfunctions2FunctionIamMemberConfig.go",
+        "GoogleCloudfunctions2FunctionIamMember__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecloudfunctions2functioniammember",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecloudfunctions2functioniammember/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

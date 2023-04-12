@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkfirewallloggingconfiguration",
+    srcs = [
+        "NetworkfirewallLoggingConfiguration.go",
+        "NetworkfirewallLoggingConfigurationConfig.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfiguration.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfig.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList__checks.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigOutputReference.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigOutputReference__checks.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference.go",
+        "NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference__checks.go",
+        "NetworkfirewallLoggingConfiguration__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkfirewallloggingconfiguration",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkfirewallloggingconfiguration/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

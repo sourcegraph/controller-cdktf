@@ -1,276 +1,2186 @@
 package securepasswordstoreapp
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/okta/securepasswordstoreapp/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
-		reflect.TypeOf((*SecurePasswordStoreApp)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "accessibilityLoginRedirectUrl", GoGetter: "AccessibilityLoginRedirectUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "accessibilityLoginRedirectUrlInput", GoGetter: "AccessibilityLoginRedirectUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "accessibilitySelfService", GoGetter: "AccessibilitySelfService"},
-			_jsii_.MemberProperty{JsiiProperty: "accessibilitySelfServiceInput", GoGetter: "AccessibilitySelfServiceInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "adminNote", GoGetter: "AdminNote"},
-			_jsii_.MemberProperty{JsiiProperty: "adminNoteInput", GoGetter: "AdminNoteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "appLinksJson", GoGetter: "AppLinksJson"},
-			_jsii_.MemberProperty{JsiiProperty: "appLinksJsonInput", GoGetter: "AppLinksJsonInput"},
-			_jsii_.MemberProperty{JsiiProperty: "autoSubmitToolbar", GoGetter: "AutoSubmitToolbar"},
-			_jsii_.MemberProperty{JsiiProperty: "autoSubmitToolbarInput", GoGetter: "AutoSubmitToolbarInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "credentialsScheme", GoGetter: "CredentialsScheme"},
-			_jsii_.MemberProperty{JsiiProperty: "credentialsSchemeInput", GoGetter: "CredentialsSchemeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "enduserNote", GoGetter: "EnduserNote"},
-			_jsii_.MemberProperty{JsiiProperty: "enduserNoteInput", GoGetter: "EnduserNoteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groups", GoGetter: "Groups"},
-			_jsii_.MemberProperty{JsiiProperty: "groupsInput", GoGetter: "GroupsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "hideIos", GoGetter: "HideIos"},
-			_jsii_.MemberProperty{JsiiProperty: "hideIosInput", GoGetter: "HideIosInput"},
-			_jsii_.MemberProperty{JsiiProperty: "hideWeb", GoGetter: "HideWeb"},
-			_jsii_.MemberProperty{JsiiProperty: "hideWebInput", GoGetter: "HideWebInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
-			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "logo", GoGetter: "Logo"},
-			_jsii_.MemberProperty{JsiiProperty: "logoInput", GoGetter: "LogoInput"},
-			_jsii_.MemberProperty{JsiiProperty: "logoUrl", GoGetter: "LogoUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField1", GoGetter: "OptionalField1"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField1Input", GoGetter: "OptionalField1Input"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField1Value", GoGetter: "OptionalField1Value"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField1ValueInput", GoGetter: "OptionalField1ValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField2", GoGetter: "OptionalField2"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField2Input", GoGetter: "OptionalField2Input"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField2Value", GoGetter: "OptionalField2Value"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField2ValueInput", GoGetter: "OptionalField2ValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField3", GoGetter: "OptionalField3"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField3Input", GoGetter: "OptionalField3Input"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField3Value", GoGetter: "OptionalField3Value"},
-			_jsii_.MemberProperty{JsiiProperty: "optionalField3ValueInput", GoGetter: "OptionalField3ValueInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordField", GoGetter: "PasswordField"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordFieldInput", GoGetter: "PasswordFieldInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putUsers", GoMethod: "PutUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessibilityErrorRedirectUrl", GoMethod: "ResetAccessibilityErrorRedirectUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessibilityLoginRedirectUrl", GoMethod: "ResetAccessibilityLoginRedirectUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessibilitySelfService", GoMethod: "ResetAccessibilitySelfService"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdminNote", GoMethod: "ResetAdminNote"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAppLinksJson", GoMethod: "ResetAppLinksJson"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoSubmitToolbar", GoMethod: "ResetAutoSubmitToolbar"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCredentialsScheme", GoMethod: "ResetCredentialsScheme"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnduserNote", GoMethod: "ResetEnduserNote"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroups", GoMethod: "ResetGroups"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHideIos", GoMethod: "ResetHideIos"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHideWeb", GoMethod: "ResetHideWeb"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogo", GoMethod: "ResetLogo"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOptionalField1", GoMethod: "ResetOptionalField1"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOptionalField1Value", GoMethod: "ResetOptionalField1Value"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOptionalField2", GoMethod: "ResetOptionalField2"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOptionalField2Value", GoMethod: "ResetOptionalField2Value"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOptionalField3", GoMethod: "ResetOptionalField3"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOptionalField3Value", GoMethod: "ResetOptionalField3Value"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRevealPassword", GoMethod: "ResetRevealPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSharedPassword", GoMethod: "ResetSharedPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSharedUsername", GoMethod: "ResetSharedUsername"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSkipGroups", GoMethod: "ResetSkipGroups"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSkipUsers", GoMethod: "ResetSkipUsers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatus", GoMethod: "ResetStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserNameTemplate", GoMethod: "ResetUserNameTemplate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserNameTemplatePushStatus", GoMethod: "ResetUserNameTemplatePushStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserNameTemplateSuffix", GoMethod: "ResetUserNameTemplateSuffix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserNameTemplateType", GoMethod: "ResetUserNameTemplateType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUsers", GoMethod: "ResetUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "revealPassword", GoGetter: "RevealPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "revealPasswordInput", GoGetter: "RevealPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sharedPassword", GoGetter: "SharedPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "sharedPasswordInput", GoGetter: "SharedPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sharedUsername", GoGetter: "SharedUsername"},
-			_jsii_.MemberProperty{JsiiProperty: "sharedUsernameInput", GoGetter: "SharedUsernameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "signOnMode", GoGetter: "SignOnMode"},
-			_jsii_.MemberProperty{JsiiProperty: "skipGroups", GoGetter: "SkipGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "skipGroupsInput", GoGetter: "SkipGroupsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "skipUsers", GoGetter: "SkipUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "skipUsersInput", GoGetter: "SkipUsersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
-			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameField", GoGetter: "UsernameField"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameFieldInput", GoGetter: "UsernameFieldInput"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplate", GoGetter: "UserNameTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateInput", GoGetter: "UserNameTemplateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplatePushStatus", GoGetter: "UserNameTemplatePushStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplatePushStatusInput", GoGetter: "UserNameTemplatePushStatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateSuffix", GoGetter: "UserNameTemplateSuffix"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateSuffixInput", GoGetter: "UserNameTemplateSuffixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateType", GoGetter: "UserNameTemplateType"},
-			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateTypeInput", GoGetter: "UserNameTemplateTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
-			_jsii_.MemberProperty{JsiiProperty: "usersInput", GoGetter: "UsersInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SecurePasswordStoreApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app okta_secure_password_store_app}.
+type SecurePasswordStoreApp interface {
+	cdktf.TerraformResource
+	AccessibilityErrorRedirectUrl() *string
+	SetAccessibilityErrorRedirectUrl(val *string)
+	AccessibilityErrorRedirectUrlInput() *string
+	AccessibilityLoginRedirectUrl() *string
+	SetAccessibilityLoginRedirectUrl(val *string)
+	AccessibilityLoginRedirectUrlInput() *string
+	AccessibilitySelfService() interface{}
+	SetAccessibilitySelfService(val interface{})
+	AccessibilitySelfServiceInput() interface{}
+	AdminNote() *string
+	SetAdminNote(val *string)
+	AdminNoteInput() *string
+	AppLinksJson() *string
+	SetAppLinksJson(val *string)
+	AppLinksJsonInput() *string
+	AutoSubmitToolbar() interface{}
+	SetAutoSubmitToolbar(val interface{})
+	AutoSubmitToolbarInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CredentialsScheme() *string
+	SetCredentialsScheme(val *string)
+	CredentialsSchemeInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EnduserNote() *string
+	SetEnduserNote(val *string)
+	EnduserNoteInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Groups() *[]*string
+	SetGroups(val *[]*string)
+	GroupsInput() *[]*string
+	HideIos() interface{}
+	SetHideIos(val interface{})
+	HideIosInput() interface{}
+	HideWeb() interface{}
+	SetHideWeb(val interface{})
+	HideWebInput() interface{}
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Label() *string
+	SetLabel(val *string)
+	LabelInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Logo() *string
+	SetLogo(val *string)
+	LogoInput() *string
+	LogoUrl() *string
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	OptionalField1() *string
+	SetOptionalField1(val *string)
+	OptionalField1Input() *string
+	OptionalField1Value() *string
+	SetOptionalField1Value(val *string)
+	OptionalField1ValueInput() *string
+	OptionalField2() *string
+	SetOptionalField2(val *string)
+	OptionalField2Input() *string
+	OptionalField2Value() *string
+	SetOptionalField2Value(val *string)
+	OptionalField2ValueInput() *string
+	OptionalField3() *string
+	SetOptionalField3(val *string)
+	OptionalField3Input() *string
+	OptionalField3Value() *string
+	SetOptionalField3Value(val *string)
+	OptionalField3ValueInput() *string
+	PasswordField() *string
+	SetPasswordField(val *string)
+	PasswordFieldInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RevealPassword() interface{}
+	SetRevealPassword(val interface{})
+	RevealPasswordInput() interface{}
+	SharedPassword() *string
+	SetSharedPassword(val *string)
+	SharedPasswordInput() *string
+	SharedUsername() *string
+	SetSharedUsername(val *string)
+	SharedUsernameInput() *string
+	SignOnMode() *string
+	SkipGroups() interface{}
+	SetSkipGroups(val interface{})
+	SkipGroupsInput() interface{}
+	SkipUsers() interface{}
+	SetSkipUsers(val interface{})
+	SkipUsersInput() interface{}
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() SecurePasswordStoreAppTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
+	UsernameField() *string
+	SetUsernameField(val *string)
+	UsernameFieldInput() *string
+	UserNameTemplate() *string
+	SetUserNameTemplate(val *string)
+	UserNameTemplateInput() *string
+	UserNameTemplatePushStatus() *string
+	SetUserNameTemplatePushStatus(val *string)
+	UserNameTemplatePushStatusInput() *string
+	UserNameTemplateSuffix() *string
+	SetUserNameTemplateSuffix(val *string)
+	UserNameTemplateSuffixInput() *string
+	UserNameTemplateType() *string
+	SetUserNameTemplateType(val *string)
+	UserNameTemplateTypeInput() *string
+	Users() SecurePasswordStoreAppUsersList
+	UsersInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SecurePasswordStoreAppTimeouts)
+	PutUsers(value interface{})
+	ResetAccessibilityErrorRedirectUrl()
+	ResetAccessibilityLoginRedirectUrl()
+	ResetAccessibilitySelfService()
+	ResetAdminNote()
+	ResetAppLinksJson()
+	ResetAutoSubmitToolbar()
+	ResetCredentialsScheme()
+	ResetEnduserNote()
+	ResetGroups()
+	ResetHideIos()
+	ResetHideWeb()
+	ResetId()
+	ResetLogo()
+	ResetOptionalField1()
+	ResetOptionalField1Value()
+	ResetOptionalField2()
+	ResetOptionalField2Value()
+	ResetOptionalField3()
+	ResetOptionalField3Value()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRevealPassword()
+	ResetSharedPassword()
+	ResetSharedUsername()
+	ResetSkipGroups()
+	ResetSkipUsers()
+	ResetStatus()
+	ResetTimeouts()
+	ResetUserNameTemplate()
+	ResetUserNameTemplatePushStatus()
+	ResetUserNameTemplateSuffix()
+	ResetUserNameTemplateType()
+	ResetUsers()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for SecurePasswordStoreApp
+type jsiiProxy_SecurePasswordStoreApp struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AccessibilityErrorRedirectUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessibilityErrorRedirectUrl",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppConfig",
-		reflect.TypeOf((*SecurePasswordStoreAppConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AccessibilityErrorRedirectUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessibilityErrorRedirectUrlInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppTimeouts",
-		reflect.TypeOf((*SecurePasswordStoreAppTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AccessibilityLoginRedirectUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessibilityLoginRedirectUrl",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppTimeoutsOutputReference",
-		reflect.TypeOf((*SecurePasswordStoreAppTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "read", GoGetter: "Read"},
-			_jsii_.MemberProperty{JsiiProperty: "readInput", GoGetter: "ReadInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRead", GoMethod: "ResetRead"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SecurePasswordStoreAppTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AccessibilityLoginRedirectUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessibilityLoginRedirectUrlInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppUsers",
-		reflect.TypeOf((*SecurePasswordStoreAppUsers)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AccessibilitySelfService() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessibilitySelfService",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppUsersList",
-		reflect.TypeOf((*SecurePasswordStoreAppUsersList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SecurePasswordStoreAppUsersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AccessibilitySelfServiceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessibilitySelfServiceInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppUsersOutputReference",
-		reflect.TypeOf((*SecurePasswordStoreAppUsersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scope", GoGetter: "Scope"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SecurePasswordStoreAppUsersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AdminNote() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminNote",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AdminNoteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminNoteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AppLinksJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLinksJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AppLinksJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLinksJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AutoSubmitToolbar() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoSubmitToolbar",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) AutoSubmitToolbarInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoSubmitToolbarInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) CredentialsScheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) CredentialsSchemeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSchemeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) EnduserNote() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enduserNote",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) EnduserNoteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enduserNoteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Groups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) GroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) HideIos() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIos",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) HideIosInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIosInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) HideWeb() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideWeb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) HideWebInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideWebInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Label() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"label",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) LabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Logo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) LogoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) LogoUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logoUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField1() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField1",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField1Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField1Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField1Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField1Value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField1ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField1ValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField2() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField2Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField2Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField2Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField2Value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField2ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField2ValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField3() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField3",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField3Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField3Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField3Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField3Value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) OptionalField3ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalField3ValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) PasswordField() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordField",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) PasswordFieldInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordFieldInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) RevealPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"revealPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) RevealPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"revealPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SharedPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SharedPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SharedUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SharedUsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SignOnMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signOnMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SkipGroups() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SkipGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SkipUsers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) SkipUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUsersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Timeouts() SecurePasswordStoreAppTimeoutsOutputReference {
+	var returns SecurePasswordStoreAppTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UsernameField() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameField",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UsernameFieldInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameFieldInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplatePushStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplatePushStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplatePushStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplatePushStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplateSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplateSuffixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplateType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UserNameTemplateTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) Users() SecurePasswordStoreAppUsersList {
+	var returns SecurePasswordStoreAppUsersList
+	_jsii_.Get(
+		j,
+		"users",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) UsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usersInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app okta_secure_password_store_app} Resource.
+func NewSecurePasswordStoreApp(scope constructs.Construct, id *string, config *SecurePasswordStoreAppConfig) SecurePasswordStoreApp {
+	_init_.Initialize()
+
+	if err := validateNewSecurePasswordStoreAppParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_SecurePasswordStoreApp{}
+
+	_jsii_.Create(
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app okta_secure_password_store_app} Resource.
+func NewSecurePasswordStoreApp_Override(s SecurePasswordStoreApp, scope constructs.Construct, id *string, config *SecurePasswordStoreAppConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		[]interface{}{scope, id, config},
+		s,
 	)
 }
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetAccessibilityErrorRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessibilityErrorRedirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetAccessibilityLoginRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessibilityLoginRedirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetAccessibilitySelfService(val interface{}) {
+	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessibilitySelfService",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetAdminNote(val *string) {
+	if err := j.validateSetAdminNoteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminNote",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetAppLinksJson(val *string) {
+	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appLinksJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetAutoSubmitToolbar(val interface{}) {
+	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoSubmitToolbar",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetCredentialsScheme(val *string) {
+	if err := j.validateSetCredentialsSchemeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsScheme",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetEnduserNote(val *string) {
+	if err := j.validateSetEnduserNoteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enduserNote",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetGroups(val *[]*string) {
+	if err := j.validateSetGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetHideIos(val interface{}) {
+	if err := j.validateSetHideIosParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIos",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetHideWeb(val interface{}) {
+	if err := j.validateSetHideWebParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideWeb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"label",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetLogo(val *string) {
+	if err := j.validateSetLogoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetOptionalField1(val *string) {
+	if err := j.validateSetOptionalField1Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalField1",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetOptionalField1Value(val *string) {
+	if err := j.validateSetOptionalField1ValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalField1Value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetOptionalField2(val *string) {
+	if err := j.validateSetOptionalField2Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalField2",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetOptionalField2Value(val *string) {
+	if err := j.validateSetOptionalField2ValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalField2Value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetOptionalField3(val *string) {
+	if err := j.validateSetOptionalField3Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalField3",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetOptionalField3Value(val *string) {
+	if err := j.validateSetOptionalField3ValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalField3Value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetPasswordField(val *string) {
+	if err := j.validateSetPasswordFieldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordField",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetRevealPassword(val interface{}) {
+	if err := j.validateSetRevealPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"revealPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetSharedPassword(val *string) {
+	if err := j.validateSetSharedPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetSharedUsername(val *string) {
+	if err := j.validateSetSharedUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedUsername",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetSkipGroups(val interface{}) {
+	if err := j.validateSetSkipGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetSkipUsers(val interface{}) {
+	if err := j.validateSetSkipUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipUsers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"url",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetUsernameField(val *string) {
+	if err := j.validateSetUsernameFieldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameField",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetUserNameTemplate(val *string) {
+	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetUserNameTemplatePushStatus(val *string) {
+	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplatePushStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetUserNameTemplateSuffix(val *string) {
+	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplateSuffix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp)SetUserNameTemplateType(val *string) {
+	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplateType",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func SecurePasswordStoreApp_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurePasswordStoreApp_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurePasswordStoreApp_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurePasswordStoreApp_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurePasswordStoreApp_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurePasswordStoreApp_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func SecurePasswordStoreApp_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		s,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		s,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) PutTimeouts(value *SecurePasswordStoreAppTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) PutUsers(value interface{}) {
+	if err := s.validatePutUsersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putUsers",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetAccessibilityErrorRedirectUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessibilityErrorRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetAccessibilityLoginRedirectUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessibilityLoginRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetAccessibilitySelfService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessibilitySelfService",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetAdminNote() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAdminNote",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetAppLinksJson() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppLinksJson",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetAutoSubmitToolbar() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoSubmitToolbar",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetCredentialsScheme() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCredentialsScheme",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetEnduserNote() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnduserNote",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetGroups() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGroups",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetHideIos() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHideIos",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetHideWeb() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHideWeb",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetLogo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOptionalField1() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptionalField1",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOptionalField1Value() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptionalField1Value",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOptionalField2() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptionalField2",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOptionalField2Value() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptionalField2Value",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOptionalField3() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptionalField3",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOptionalField3Value() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOptionalField3Value",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetRevealPassword() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRevealPassword",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetSharedPassword() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharedPassword",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetSharedUsername() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharedUsername",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetSkipGroups() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSkipGroups",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetSkipUsers() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSkipUsers",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetUserNameTemplate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserNameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetUserNameTemplatePushStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserNameTemplatePushStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetUserNameTemplateSuffix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserNameTemplateSuffix",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetUserNameTemplateType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserNameTemplateType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetUsers() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUsers",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

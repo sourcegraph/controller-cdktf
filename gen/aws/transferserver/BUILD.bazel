@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "transferserver",
+    srcs = [
+        "TransferServer.go",
+        "TransferServerConfig.go",
+        "TransferServerEndpointDetails.go",
+        "TransferServerEndpointDetailsOutputReference.go",
+        "TransferServerEndpointDetailsOutputReference__checks.go",
+        "TransferServerWorkflowDetails.go",
+        "TransferServerWorkflowDetailsOnUpload.go",
+        "TransferServerWorkflowDetailsOnUploadOutputReference.go",
+        "TransferServerWorkflowDetailsOnUploadOutputReference__checks.go",
+        "TransferServerWorkflowDetailsOutputReference.go",
+        "TransferServerWorkflowDetailsOutputReference__checks.go",
+        "TransferServer__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/transferserver",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/transferserver/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

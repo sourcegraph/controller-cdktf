@@ -1,226 +1,1130 @@
 package certificatepack
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/certificatepack/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePack",
-		reflect.TypeOf((*CertificatePack)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateAuthority", GoGetter: "CertificateAuthority"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityInput", GoGetter: "CertificateAuthorityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudflareBranding", GoGetter: "CloudflareBranding"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudflareBrandingInput", GoGetter: "CloudflareBrandingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hosts", GoGetter: "Hosts"},
-			_jsii_.MemberProperty{JsiiProperty: "hostsInput", GoGetter: "HostsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putValidationErrors", GoMethod: "PutValidationErrors"},
-			_jsii_.MemberMethod{JsiiMethod: "putValidationRecords", GoMethod: "PutValidationRecords"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCertificateAuthority", GoMethod: "ResetCertificateAuthority"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloudflareBranding", GoMethod: "ResetCloudflareBranding"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValidationErrors", GoMethod: "ResetValidationErrors"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValidationMethod", GoMethod: "ResetValidationMethod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValidationRecords", GoMethod: "ResetValidationRecords"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValidityDays", GoMethod: "ResetValidityDays"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWaitForActiveStatus", GoMethod: "ResetWaitForActiveStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "validationErrors", GoGetter: "ValidationErrors"},
-			_jsii_.MemberProperty{JsiiProperty: "validationErrorsInput", GoGetter: "ValidationErrorsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "validationMethod", GoGetter: "ValidationMethod"},
-			_jsii_.MemberProperty{JsiiProperty: "validationMethodInput", GoGetter: "ValidationMethodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "validationRecords", GoGetter: "ValidationRecords"},
-			_jsii_.MemberProperty{JsiiProperty: "validationRecordsInput", GoGetter: "ValidationRecordsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "validityDays", GoGetter: "ValidityDays"},
-			_jsii_.MemberProperty{JsiiProperty: "validityDaysInput", GoGetter: "ValidityDaysInput"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForActiveStatus", GoGetter: "WaitForActiveStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForActiveStatusInput", GoGetter: "WaitForActiveStatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CertificatePack{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack cloudflare_certificate_pack}.
+type CertificatePack interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CertificateAuthority() *string
+	SetCertificateAuthority(val *string)
+	CertificateAuthorityInput() *string
+	CloudflareBranding() interface{}
+	SetCloudflareBranding(val interface{})
+	CloudflareBrandingInput() interface{}
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Hosts() *[]*string
+	SetHosts(val *[]*string)
+	HostsInput() *[]*string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	ValidationErrors() CertificatePackValidationErrorsList
+	ValidationErrorsInput() interface{}
+	ValidationMethod() *string
+	SetValidationMethod(val *string)
+	ValidationMethodInput() *string
+	ValidationRecords() CertificatePackValidationRecordsList
+	ValidationRecordsInput() interface{}
+	ValidityDays() *float64
+	SetValidityDays(val *float64)
+	ValidityDaysInput() *float64
+	WaitForActiveStatus() interface{}
+	SetWaitForActiveStatus(val interface{})
+	WaitForActiveStatusInput() interface{}
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutValidationErrors(value interface{})
+	PutValidationRecords(value interface{})
+	ResetCertificateAuthority()
+	ResetCloudflareBranding()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetValidationErrors()
+	ResetValidationMethod()
+	ResetValidationRecords()
+	ResetValidityDays()
+	ResetWaitForActiveStatus()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for CertificatePack
+type jsiiProxy_CertificatePack struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CertificatePack) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.certificatePack.CertificatePackConfig",
-		reflect.TypeOf((*CertificatePackConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) CertificateAuthority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.certificatePack.CertificatePackValidationErrors",
-		reflect.TypeOf((*CertificatePackValidationErrors)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) CertificateAuthorityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthorityInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationErrorsList",
-		reflect.TypeOf((*CertificatePackValidationErrorsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CertificatePackValidationErrorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) CloudflareBranding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareBranding",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference",
-		reflect.TypeOf((*CertificatePackValidationErrorsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CertificatePackValidationErrorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) CloudflareBrandingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareBrandingInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.certificatePack.CertificatePackValidationRecords",
-		reflect.TypeOf((*CertificatePackValidationRecords)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationRecordsList",
-		reflect.TypeOf((*CertificatePackValidationRecordsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CertificatePackValidationRecordsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
-		reflect.TypeOf((*CertificatePackValidationRecordsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cnameName", GoGetter: "CnameName"},
-			_jsii_.MemberProperty{JsiiProperty: "cnameNameInput", GoGetter: "CnameNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cnameTarget", GoGetter: "CnameTarget"},
-			_jsii_.MemberProperty{JsiiProperty: "cnameTargetInput", GoGetter: "CnameTargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "emails", GoGetter: "Emails"},
-			_jsii_.MemberProperty{JsiiProperty: "emailsInput", GoGetter: "EmailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "httpBody", GoGetter: "HttpBody"},
-			_jsii_.MemberProperty{JsiiProperty: "httpBodyInput", GoGetter: "HttpBodyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "httpUrl", GoGetter: "HttpUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "httpUrlInput", GoGetter: "HttpUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCnameName", GoMethod: "ResetCnameName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCnameTarget", GoMethod: "ResetCnameTarget"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmails", GoMethod: "ResetEmails"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpBody", GoMethod: "ResetHttpBody"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpUrl", GoMethod: "ResetHttpUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTxtName", GoMethod: "ResetTxtName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTxtValue", GoMethod: "ResetTxtValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "txtName", GoGetter: "TxtName"},
-			_jsii_.MemberProperty{JsiiProperty: "txtNameInput", GoGetter: "TxtNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "txtValue", GoGetter: "TxtValue"},
-			_jsii_.MemberProperty{JsiiProperty: "txtValueInput", GoGetter: "TxtValueInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CertificatePackValidationRecordsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Hosts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hosts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) HostsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hostsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationErrors() CertificatePackValidationErrorsList {
+	var returns CertificatePackValidationErrorsList
+	_jsii_.Get(
+		j,
+		"validationErrors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationErrorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validationErrorsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validationMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validationMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationRecords() CertificatePackValidationRecordsList {
+	var returns CertificatePackValidationRecordsList
+	_jsii_.Get(
+		j,
+		"validationRecords",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationRecordsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validationRecordsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidityDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"validityDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidityDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"validityDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) WaitForActiveStatus() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForActiveStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) WaitForActiveStatusInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForActiveStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack cloudflare_certificate_pack} Resource.
+func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
+	_init_.Initialize()
+
+	if err := validateNewCertificatePackParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_CertificatePack{}
+
+	_jsii_.Create(
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack cloudflare_certificate_pack} Resource.
+func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		[]interface{}{scope, id, config},
+		c,
 	)
 }
+
+func (j *jsiiProxy_CertificatePack)SetCertificateAuthority(val *string) {
+	if err := j.validateSetCertificateAuthorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateAuthority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetCloudflareBranding(val interface{}) {
+	if err := j.validateSetCloudflareBrandingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudflareBranding",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetHosts(val *[]*string) {
+	if err := j.validateSetHostsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hosts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetValidationMethod(val *string) {
+	if err := j.validateSetValidationMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validationMethod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetValidityDays(val *float64) {
+	if err := j.validateSetValidityDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validityDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetWaitForActiveStatus(val interface{}) {
+	if err := j.validateSetWaitForActiveStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForActiveStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificatePack)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func CertificatePack_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCertificatePack_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CertificatePack_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCertificatePack_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CertificatePack_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCertificatePack_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func CertificatePack_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) PutValidationErrors(value interface{}) {
+	if err := c.validatePutValidationErrorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putValidationErrors",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) PutValidationRecords(value interface{}) {
+	if err := c.validatePutValidationRecordsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putValidationRecords",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetCertificateAuthority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificateAuthority",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetCloudflareBranding() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCloudflareBranding",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetValidationErrors() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetValidationErrors",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetValidationMethod() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetValidationMethod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetValidationRecords() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetValidationRecords",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetValidityDays() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetValidityDays",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetWaitForActiveStatus() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWaitForActiveStatus",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CertificatePack) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

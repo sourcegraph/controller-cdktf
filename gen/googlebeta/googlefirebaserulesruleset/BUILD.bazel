@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlefirebaserulesruleset",
+    srcs = [
+        "GoogleFirebaserulesRuleset.go",
+        "GoogleFirebaserulesRulesetConfig.go",
+        "GoogleFirebaserulesRulesetMetadata.go",
+        "GoogleFirebaserulesRulesetMetadataList.go",
+        "GoogleFirebaserulesRulesetMetadataList__checks.go",
+        "GoogleFirebaserulesRulesetMetadataOutputReference.go",
+        "GoogleFirebaserulesRulesetMetadataOutputReference__checks.go",
+        "GoogleFirebaserulesRulesetSource.go",
+        "GoogleFirebaserulesRulesetSourceFiles.go",
+        "GoogleFirebaserulesRulesetSourceFilesList.go",
+        "GoogleFirebaserulesRulesetSourceFilesList__checks.go",
+        "GoogleFirebaserulesRulesetSourceFilesOutputReference.go",
+        "GoogleFirebaserulesRulesetSourceFilesOutputReference__checks.go",
+        "GoogleFirebaserulesRulesetSourceOutputReference.go",
+        "GoogleFirebaserulesRulesetSourceOutputReference__checks.go",
+        "GoogleFirebaserulesRulesetTimeouts.go",
+        "GoogleFirebaserulesRulesetTimeoutsOutputReference.go",
+        "GoogleFirebaserulesRulesetTimeoutsOutputReference__checks.go",
+        "GoogleFirebaserulesRuleset__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlefirebaserulesruleset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlefirebaserulesruleset/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

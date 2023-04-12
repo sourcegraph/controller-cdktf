@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleprojectorganizationpolicy",
+    srcs = [
+        "GoogleProjectOrganizationPolicy.go",
+        "GoogleProjectOrganizationPolicyBooleanPolicy.go",
+        "GoogleProjectOrganizationPolicyBooleanPolicyOutputReference.go",
+        "GoogleProjectOrganizationPolicyBooleanPolicyOutputReference__checks.go",
+        "GoogleProjectOrganizationPolicyConfig.go",
+        "GoogleProjectOrganizationPolicyListPolicy.go",
+        "GoogleProjectOrganizationPolicyListPolicyAllow.go",
+        "GoogleProjectOrganizationPolicyListPolicyAllowOutputReference.go",
+        "GoogleProjectOrganizationPolicyListPolicyAllowOutputReference__checks.go",
+        "GoogleProjectOrganizationPolicyListPolicyDeny.go",
+        "GoogleProjectOrganizationPolicyListPolicyDenyOutputReference.go",
+        "GoogleProjectOrganizationPolicyListPolicyDenyOutputReference__checks.go",
+        "GoogleProjectOrganizationPolicyListPolicyOutputReference.go",
+        "GoogleProjectOrganizationPolicyListPolicyOutputReference__checks.go",
+        "GoogleProjectOrganizationPolicyRestorePolicy.go",
+        "GoogleProjectOrganizationPolicyRestorePolicyOutputReference.go",
+        "GoogleProjectOrganizationPolicyRestorePolicyOutputReference__checks.go",
+        "GoogleProjectOrganizationPolicyTimeouts.go",
+        "GoogleProjectOrganizationPolicyTimeoutsOutputReference.go",
+        "GoogleProjectOrganizationPolicyTimeoutsOutputReference__checks.go",
+        "GoogleProjectOrganizationPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googleprojectorganizationpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googleprojectorganizationpolicy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

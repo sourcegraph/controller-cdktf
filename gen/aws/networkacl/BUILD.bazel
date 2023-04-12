@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkacl",
+    srcs = [
+        "NetworkAcl.go",
+        "NetworkAclConfig.go",
+        "NetworkAclEgress.go",
+        "NetworkAclEgressList.go",
+        "NetworkAclEgressList__checks.go",
+        "NetworkAclEgressOutputReference.go",
+        "NetworkAclEgressOutputReference__checks.go",
+        "NetworkAclIngress.go",
+        "NetworkAclIngressList.go",
+        "NetworkAclIngressList__checks.go",
+        "NetworkAclIngressOutputReference.go",
+        "NetworkAclIngressOutputReference__checks.go",
+        "NetworkAcl__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/networkacl",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/networkacl/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

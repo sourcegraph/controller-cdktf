@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "route53zone",
+    srcs = [
+        "Route53Zone.go",
+        "Route53ZoneConfig.go",
+        "Route53ZoneVpc.go",
+        "Route53ZoneVpcList.go",
+        "Route53ZoneVpcList__checks.go",
+        "Route53ZoneVpcOutputReference.go",
+        "Route53ZoneVpcOutputReference__checks.go",
+        "Route53Zone__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/route53zone",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/route53zone/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

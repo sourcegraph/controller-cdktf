@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kmskeyringimportjob",
+    srcs = [
+        "KmsKeyRingImportJob.go",
+        "KmsKeyRingImportJobAttestation.go",
+        "KmsKeyRingImportJobAttestationList.go",
+        "KmsKeyRingImportJobAttestationList__checks.go",
+        "KmsKeyRingImportJobAttestationOutputReference.go",
+        "KmsKeyRingImportJobAttestationOutputReference__checks.go",
+        "KmsKeyRingImportJobConfig.go",
+        "KmsKeyRingImportJobPublicKey.go",
+        "KmsKeyRingImportJobPublicKeyList.go",
+        "KmsKeyRingImportJobPublicKeyList__checks.go",
+        "KmsKeyRingImportJobPublicKeyOutputReference.go",
+        "KmsKeyRingImportJobPublicKeyOutputReference__checks.go",
+        "KmsKeyRingImportJobTimeouts.go",
+        "KmsKeyRingImportJobTimeoutsOutputReference.go",
+        "KmsKeyRingImportJobTimeoutsOutputReference__checks.go",
+        "KmsKeyRingImportJob__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/kmskeyringimportjob",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/kmskeyringimportjob/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

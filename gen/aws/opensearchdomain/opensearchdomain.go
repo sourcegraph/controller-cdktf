@@ -1,937 +1,1536 @@
 package opensearchdomain
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/opensearchdomain/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomain",
-		reflect.TypeOf((*OpensearchDomain)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessPolicies", GoGetter: "AccessPolicies"},
-			_jsii_.MemberProperty{JsiiProperty: "accessPoliciesInput", GoGetter: "AccessPoliciesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "advancedOptions", GoGetter: "AdvancedOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "advancedOptionsInput", GoGetter: "AdvancedOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityOptions", GoGetter: "AdvancedSecurityOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityOptionsInput", GoGetter: "AdvancedSecurityOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "autoTuneOptions", GoGetter: "AutoTuneOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "autoTuneOptionsInput", GoGetter: "AutoTuneOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterConfig", GoGetter: "ClusterConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterConfigInput", GoGetter: "ClusterConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cognitoOptions", GoGetter: "CognitoOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "cognitoOptionsInput", GoGetter: "CognitoOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "domainEndpointOptions", GoGetter: "DomainEndpointOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "domainEndpointOptionsInput", GoGetter: "DomainEndpointOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "domainId", GoGetter: "DomainId"},
-			_jsii_.MemberProperty{JsiiProperty: "domainName", GoGetter: "DomainName"},
-			_jsii_.MemberProperty{JsiiProperty: "domainNameInput", GoGetter: "DomainNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsOptions", GoGetter: "EbsOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsOptionsInput", GoGetter: "EbsOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptAtRest", GoGetter: "EncryptAtRest"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptAtRestInput", GoGetter: "EncryptAtRestInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "engineVersion", GoGetter: "EngineVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "engineVersionInput", GoGetter: "EngineVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kibanaEndpoint", GoGetter: "KibanaEndpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "logPublishingOptions", GoGetter: "LogPublishingOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "logPublishingOptionsInput", GoGetter: "LogPublishingOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeToNodeEncryption", GoGetter: "NodeToNodeEncryption"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeToNodeEncryptionInput", GoGetter: "NodeToNodeEncryptionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAdvancedSecurityOptions", GoMethod: "PutAdvancedSecurityOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putAutoTuneOptions", GoMethod: "PutAutoTuneOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putClusterConfig", GoMethod: "PutClusterConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putCognitoOptions", GoMethod: "PutCognitoOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putDomainEndpointOptions", GoMethod: "PutDomainEndpointOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putEbsOptions", GoMethod: "PutEbsOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putEncryptAtRest", GoMethod: "PutEncryptAtRest"},
-			_jsii_.MemberMethod{JsiiMethod: "putLogPublishingOptions", GoMethod: "PutLogPublishingOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putNodeToNodeEncryption", GoMethod: "PutNodeToNodeEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "putSnapshotOptions", GoMethod: "PutSnapshotOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putVpcOptions", GoMethod: "PutVpcOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessPolicies", GoMethod: "ResetAccessPolicies"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedOptions", GoMethod: "ResetAdvancedOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedSecurityOptions", GoMethod: "ResetAdvancedSecurityOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoTuneOptions", GoMethod: "ResetAutoTuneOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClusterConfig", GoMethod: "ResetClusterConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCognitoOptions", GoMethod: "ResetCognitoOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDomainEndpointOptions", GoMethod: "ResetDomainEndpointOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsOptions", GoMethod: "ResetEbsOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryptAtRest", GoMethod: "ResetEncryptAtRest"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEngineVersion", GoMethod: "ResetEngineVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogPublishingOptions", GoMethod: "ResetLogPublishingOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNodeToNodeEncryption", GoMethod: "ResetNodeToNodeEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotOptions", GoMethod: "ResetSnapshotOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcOptions", GoMethod: "ResetVpcOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotOptions", GoGetter: "SnapshotOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotOptionsInput", GoGetter: "SnapshotOptionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcOptions", GoGetter: "VpcOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcOptionsInput", GoGetter: "VpcOptionsInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomain{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain aws_opensearch_domain}.
+type OpensearchDomain interface {
+	cdktf.TerraformResource
+	AccessPolicies() *string
+	SetAccessPolicies(val *string)
+	AccessPoliciesInput() *string
+	AdvancedOptions() *map[string]*string
+	SetAdvancedOptions(val *map[string]*string)
+	AdvancedOptionsInput() *map[string]*string
+	AdvancedSecurityOptions() OpensearchDomainAdvancedSecurityOptionsOutputReference
+	AdvancedSecurityOptionsInput() *OpensearchDomainAdvancedSecurityOptions
+	Arn() *string
+	AutoTuneOptions() OpensearchDomainAutoTuneOptionsOutputReference
+	AutoTuneOptionsInput() *OpensearchDomainAutoTuneOptions
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClusterConfig() OpensearchDomainClusterConfigOutputReference
+	ClusterConfigInput() *OpensearchDomainClusterConfig
+	CognitoOptions() OpensearchDomainCognitoOptionsOutputReference
+	CognitoOptionsInput() *OpensearchDomainCognitoOptions
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DomainEndpointOptions() OpensearchDomainDomainEndpointOptionsOutputReference
+	DomainEndpointOptionsInput() *OpensearchDomainDomainEndpointOptions
+	DomainId() *string
+	DomainName() *string
+	SetDomainName(val *string)
+	DomainNameInput() *string
+	EbsOptions() OpensearchDomainEbsOptionsOutputReference
+	EbsOptionsInput() *OpensearchDomainEbsOptions
+	EncryptAtRest() OpensearchDomainEncryptAtRestOutputReference
+	EncryptAtRestInput() *OpensearchDomainEncryptAtRest
+	Endpoint() *string
+	EngineVersion() *string
+	SetEngineVersion(val *string)
+	EngineVersionInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KibanaEndpoint() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogPublishingOptions() OpensearchDomainLogPublishingOptionsList
+	LogPublishingOptionsInput() interface{}
+	// The tree node.
+	Node() constructs.Node
+	NodeToNodeEncryption() OpensearchDomainNodeToNodeEncryptionOutputReference
+	NodeToNodeEncryptionInput() *OpensearchDomainNodeToNodeEncryption
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	SnapshotOptions() OpensearchDomainSnapshotOptionsOutputReference
+	SnapshotOptionsInput() *OpensearchDomainSnapshotOptions
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() OpensearchDomainTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VpcOptions() OpensearchDomainVpcOptionsOutputReference
+	VpcOptionsInput() *OpensearchDomainVpcOptions
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedSecurityOptions(value *OpensearchDomainAdvancedSecurityOptions)
+	PutAutoTuneOptions(value *OpensearchDomainAutoTuneOptions)
+	PutClusterConfig(value *OpensearchDomainClusterConfig)
+	PutCognitoOptions(value *OpensearchDomainCognitoOptions)
+	PutDomainEndpointOptions(value *OpensearchDomainDomainEndpointOptions)
+	PutEbsOptions(value *OpensearchDomainEbsOptions)
+	PutEncryptAtRest(value *OpensearchDomainEncryptAtRest)
+	PutLogPublishingOptions(value interface{})
+	PutNodeToNodeEncryption(value *OpensearchDomainNodeToNodeEncryption)
+	PutSnapshotOptions(value *OpensearchDomainSnapshotOptions)
+	PutTimeouts(value *OpensearchDomainTimeouts)
+	PutVpcOptions(value *OpensearchDomainVpcOptions)
+	ResetAccessPolicies()
+	ResetAdvancedOptions()
+	ResetAdvancedSecurityOptions()
+	ResetAutoTuneOptions()
+	ResetClusterConfig()
+	ResetCognitoOptions()
+	ResetDomainEndpointOptions()
+	ResetEbsOptions()
+	ResetEncryptAtRest()
+	ResetEngineVersion()
+	ResetId()
+	ResetLogPublishingOptions()
+	ResetNodeToNodeEncryption()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetSnapshotOptions()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	ResetVpcOptions()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for OpensearchDomain
+type jsiiProxy_OpensearchDomain struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OpensearchDomain) AccessPolicies() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPolicies",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions",
-		reflect.TypeOf((*OpensearchDomainAdvancedSecurityOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AccessPoliciesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPoliciesInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions",
-		reflect.TypeOf((*OpensearchDomainAdvancedSecurityOptionsMasterUserOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AdvancedOptions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"advancedOptions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserArn", GoGetter: "MasterUserArn"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserArnInput", GoGetter: "MasterUserArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserName", GoGetter: "MasterUserName"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserNameInput", GoGetter: "MasterUserNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserPassword", GoGetter: "MasterUserPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserPasswordInput", GoGetter: "MasterUserPasswordInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterUserArn", GoMethod: "ResetMasterUserArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterUserName", GoMethod: "ResetMasterUserName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterUserPassword", GoMethod: "ResetMasterUserPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AdvancedOptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"advancedOptionsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainAdvancedSecurityOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "anonymousAuthEnabled", GoGetter: "AnonymousAuthEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "anonymousAuthEnabledInput", GoGetter: "AnonymousAuthEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalUserDatabaseEnabled", GoGetter: "InternalUserDatabaseEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "internalUserDatabaseEnabledInput", GoGetter: "InternalUserDatabaseEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserOptions", GoGetter: "MasterUserOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "masterUserOptionsInput", GoGetter: "MasterUserOptionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putMasterUserOptions", GoMethod: "PutMasterUserOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAnonymousAuthEnabled", GoMethod: "ResetAnonymousAuthEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInternalUserDatabaseEnabled", GoMethod: "ResetInternalUserDatabaseEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMasterUserOptions", GoMethod: "ResetMasterUserOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AdvancedSecurityOptions() OpensearchDomainAdvancedSecurityOptionsOutputReference {
+	var returns OpensearchDomainAdvancedSecurityOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSecurityOptions",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptions",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AdvancedSecurityOptionsInput() *OpensearchDomainAdvancedSecurityOptions {
+	var returns *OpensearchDomainAdvancedSecurityOptions
+	_jsii_.Get(
+		j,
+		"advancedSecurityOptionsInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptionsMaintenanceSchedule)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AutoTuneOptions() OpensearchDomainAutoTuneOptionsOutputReference {
+	var returns OpensearchDomainAutoTuneOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"autoTuneOptions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
-			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
-			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
-			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AutoTuneOptionsInput() *OpensearchDomainAutoTuneOptions {
+	var returns *OpensearchDomainAutoTuneOptions
+	_jsii_.Get(
+		j,
+		"autoTuneOptionsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptionsMaintenanceScheduleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "cronExpressionForRecurrence", GoGetter: "CronExpressionForRecurrence"},
-			_jsii_.MemberProperty{JsiiProperty: "cronExpressionForRecurrenceInput", GoGetter: "CronExpressionForRecurrenceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
-			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putDuration", GoMethod: "PutDuration"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "startAt", GoGetter: "StartAt"},
-			_jsii_.MemberProperty{JsiiProperty: "startAtInput", GoGetter: "StartAtInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) ClusterConfig() OpensearchDomainClusterConfigOutputReference {
+	var returns OpensearchDomainClusterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"clusterConfig",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainAutoTuneOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "desiredState", GoGetter: "DesiredState"},
-			_jsii_.MemberProperty{JsiiProperty: "desiredStateInput", GoGetter: "DesiredStateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceSchedule", GoGetter: "MaintenanceSchedule"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceScheduleInput", GoGetter: "MaintenanceScheduleInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceSchedule", GoMethod: "PutMaintenanceSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceSchedule", GoMethod: "ResetMaintenanceSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRollbackOnDisable", GoMethod: "ResetRollbackOnDisable"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rollbackOnDisable", GoGetter: "RollbackOnDisable"},
-			_jsii_.MemberProperty{JsiiProperty: "rollbackOnDisableInput", GoGetter: "RollbackOnDisableInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) ClusterConfigInput() *OpensearchDomainClusterConfig {
+	var returns *OpensearchDomainClusterConfig
+	_jsii_.Get(
+		j,
+		"clusterConfigInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainClusterConfig",
-		reflect.TypeOf((*OpensearchDomainClusterConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) CognitoOptions() OpensearchDomainCognitoOptionsOutputReference {
+	var returns OpensearchDomainCognitoOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cognitoOptions",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions",
-		reflect.TypeOf((*OpensearchDomainClusterConfigColdStorageOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) CognitoOptionsInput() *OpensearchDomainCognitoOptions {
+	var returns *OpensearchDomainCognitoOptions
+	_jsii_.Get(
+		j,
+		"cognitoOptionsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainClusterConfigColdStorageOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainClusterConfigColdStorageOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
-		reflect.TypeOf((*OpensearchDomainClusterConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "coldStorageOptions", GoGetter: "ColdStorageOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "coldStorageOptionsInput", GoGetter: "ColdStorageOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dedicatedMasterCount", GoGetter: "DedicatedMasterCount"},
-			_jsii_.MemberProperty{JsiiProperty: "dedicatedMasterCountInput", GoGetter: "DedicatedMasterCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dedicatedMasterEnabled", GoGetter: "DedicatedMasterEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "dedicatedMasterEnabledInput", GoGetter: "DedicatedMasterEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dedicatedMasterType", GoGetter: "DedicatedMasterType"},
-			_jsii_.MemberProperty{JsiiProperty: "dedicatedMasterTypeInput", GoGetter: "DedicatedMasterTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceCount", GoGetter: "InstanceCount"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceCountInput", GoGetter: "InstanceCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putColdStorageOptions", GoMethod: "PutColdStorageOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putZoneAwarenessConfig", GoMethod: "PutZoneAwarenessConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetColdStorageOptions", GoMethod: "ResetColdStorageOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDedicatedMasterCount", GoMethod: "ResetDedicatedMasterCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDedicatedMasterEnabled", GoMethod: "ResetDedicatedMasterEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDedicatedMasterType", GoMethod: "ResetDedicatedMasterType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceCount", GoMethod: "ResetInstanceCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceType", GoMethod: "ResetInstanceType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWarmCount", GoMethod: "ResetWarmCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWarmEnabled", GoMethod: "ResetWarmEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWarmType", GoMethod: "ResetWarmType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZoneAwarenessConfig", GoMethod: "ResetZoneAwarenessConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZoneAwarenessEnabled", GoMethod: "ResetZoneAwarenessEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "warmCount", GoGetter: "WarmCount"},
-			_jsii_.MemberProperty{JsiiProperty: "warmCountInput", GoGetter: "WarmCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "warmEnabled", GoGetter: "WarmEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "warmEnabledInput", GoGetter: "WarmEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "warmType", GoGetter: "WarmType"},
-			_jsii_.MemberProperty{JsiiProperty: "warmTypeInput", GoGetter: "WarmTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneAwarenessConfig", GoGetter: "ZoneAwarenessConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneAwarenessConfigInput", GoGetter: "ZoneAwarenessConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneAwarenessEnabled", GoGetter: "ZoneAwarenessEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneAwarenessEnabledInput", GoGetter: "ZoneAwarenessEnabledInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainClusterConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig",
-		reflect.TypeOf((*OpensearchDomainClusterConfigZoneAwarenessConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
-		reflect.TypeOf((*OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneCount", GoGetter: "AvailabilityZoneCount"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneCountInput", GoGetter: "AvailabilityZoneCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZoneCount", GoMethod: "ResetAvailabilityZoneCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainCognitoOptions",
-		reflect.TypeOf((*OpensearchDomainCognitoOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DomainEndpointOptions() OpensearchDomainDomainEndpointOptionsOutputReference {
+	var returns OpensearchDomainDomainEndpointOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"domainEndpointOptions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainCognitoOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "identityPoolId", GoGetter: "IdentityPoolId"},
-			_jsii_.MemberProperty{JsiiProperty: "identityPoolIdInput", GoGetter: "IdentityPoolIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
-			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainCognitoOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DomainEndpointOptionsInput() *OpensearchDomainDomainEndpointOptions {
+	var returns *OpensearchDomainDomainEndpointOptions
+	_jsii_.Get(
+		j,
+		"domainEndpointOptionsInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainConfig",
-		reflect.TypeOf((*OpensearchDomainConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DomainId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainId",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainDomainEndpointOptions",
-		reflect.TypeOf((*OpensearchDomainDomainEndpointOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainName",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainDomainEndpointOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customEndpoint", GoGetter: "CustomEndpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "customEndpointCertificateArn", GoGetter: "CustomEndpointCertificateArn"},
-			_jsii_.MemberProperty{JsiiProperty: "customEndpointCertificateArnInput", GoGetter: "CustomEndpointCertificateArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "customEndpointEnabled", GoGetter: "CustomEndpointEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "customEndpointEnabledInput", GoGetter: "CustomEndpointEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "customEndpointInput", GoGetter: "CustomEndpointInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enforceHttps", GoGetter: "EnforceHttps"},
-			_jsii_.MemberProperty{JsiiProperty: "enforceHttpsInput", GoGetter: "EnforceHttpsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomEndpoint", GoMethod: "ResetCustomEndpoint"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomEndpointCertificateArn", GoMethod: "ResetCustomEndpointCertificateArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomEndpointEnabled", GoMethod: "ResetCustomEndpointEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnforceHttps", GoMethod: "ResetEnforceHttps"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTlsSecurityPolicy", GoMethod: "ResetTlsSecurityPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsSecurityPolicy", GoGetter: "TlsSecurityPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "tlsSecurityPolicyInput", GoGetter: "TlsSecurityPolicyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DomainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainEbsOptions",
-		reflect.TypeOf((*OpensearchDomainEbsOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) EbsOptions() OpensearchDomainEbsOptionsOutputReference {
+	var returns OpensearchDomainEbsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"ebsOptions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainEbsOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainEbsOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsEnabled", GoGetter: "EbsEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsEnabledInput", GoGetter: "EbsEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThroughput", GoMethod: "ResetThroughput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumeSize", GoMethod: "ResetVolumeSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumeType", GoMethod: "ResetVolumeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "throughput", GoGetter: "Throughput"},
-			_jsii_.MemberProperty{JsiiProperty: "throughputInput", GoGetter: "ThroughputInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeSizeInput", GoGetter: "VolumeSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainEbsOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) EbsOptionsInput() *OpensearchDomainEbsOptions {
+	var returns *OpensearchDomainEbsOptions
+	_jsii_.Get(
+		j,
+		"ebsOptionsInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainEncryptAtRest",
-		reflect.TypeOf((*OpensearchDomainEncryptAtRest)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) EncryptAtRest() OpensearchDomainEncryptAtRestOutputReference {
+	var returns OpensearchDomainEncryptAtRestOutputReference
+	_jsii_.Get(
+		j,
+		"encryptAtRest",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
-		reflect.TypeOf((*OpensearchDomainEncryptAtRestOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainEncryptAtRestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) EncryptAtRestInput() *OpensearchDomainEncryptAtRest {
+	var returns *OpensearchDomainEncryptAtRest
+	_jsii_.Get(
+		j,
+		"encryptAtRestInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptions",
-		reflect.TypeOf((*OpensearchDomainLogPublishingOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpoint",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptionsList",
-		reflect.TypeOf((*OpensearchDomainLogPublishingOptionsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainLogPublishingOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) EngineVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineVersion",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainLogPublishingOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupArn", GoGetter: "CloudwatchLogGroupArn"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupArnInput", GoGetter: "CloudwatchLogGroupArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "logType", GoGetter: "LogType"},
-			_jsii_.MemberProperty{JsiiProperty: "logTypeInput", GoGetter: "LogTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainLogPublishingOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) EngineVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineVersionInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainNodeToNodeEncryption",
-		reflect.TypeOf((*OpensearchDomainNodeToNodeEncryption)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainNodeToNodeEncryptionOutputReference",
-		reflect.TypeOf((*OpensearchDomainNodeToNodeEncryptionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainSnapshotOptions",
-		reflect.TypeOf((*OpensearchDomainSnapshotOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainSnapshotOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainSnapshotOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotStartHour", GoGetter: "AutomatedSnapshotStartHour"},
-			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotStartHourInput", GoGetter: "AutomatedSnapshotStartHourInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainSnapshotOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainTimeouts",
-		reflect.TypeOf((*OpensearchDomainTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainTimeoutsOutputReference",
-		reflect.TypeOf((*OpensearchDomainTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) KibanaEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kibanaEndpoint",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opensearchDomain.OpensearchDomainVpcOptions",
-		reflect.TypeOf((*OpensearchDomainVpcOptions)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
-		reflect.TypeOf((*OpensearchDomainVpcOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnetIds", GoMethod: "ResetSubnetIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdsInput", GoGetter: "SubnetIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpensearchDomainVpcOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) LogPublishingOptions() OpensearchDomainLogPublishingOptionsList {
+	var returns OpensearchDomainLogPublishingOptionsList
+	_jsii_.Get(
+		j,
+		"logPublishingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) LogPublishingOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logPublishingOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) NodeToNodeEncryption() OpensearchDomainNodeToNodeEncryptionOutputReference {
+	var returns OpensearchDomainNodeToNodeEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"nodeToNodeEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) NodeToNodeEncryptionInput() *OpensearchDomainNodeToNodeEncryption {
+	var returns *OpensearchDomainNodeToNodeEncryption
+	_jsii_.Get(
+		j,
+		"nodeToNodeEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) SnapshotOptions() OpensearchDomainSnapshotOptionsOutputReference {
+	var returns OpensearchDomainSnapshotOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"snapshotOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) SnapshotOptionsInput() *OpensearchDomainSnapshotOptions {
+	var returns *OpensearchDomainSnapshotOptions
+	_jsii_.Get(
+		j,
+		"snapshotOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) Timeouts() OpensearchDomainTimeoutsOutputReference {
+	var returns OpensearchDomainTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) VpcOptions() OpensearchDomainVpcOptionsOutputReference {
+	var returns OpensearchDomainVpcOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"vpcOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptions {
+	var returns *OpensearchDomainVpcOptions
+	_jsii_.Get(
+		j,
+		"vpcOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain aws_opensearch_domain} Resource.
+func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
+	_init_.Initialize()
+
+	if err := validateNewOpensearchDomainParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_OpensearchDomain{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain aws_opensearch_domain} Resource.
+func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct, id *string, config *OpensearchDomainConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
+		[]interface{}{scope, id, config},
+		o,
 	)
 }
+
+func (j *jsiiProxy_OpensearchDomain)SetAccessPolicies(val *string) {
+	if err := j.validateSetAccessPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessPolicies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetAdvancedOptions(val *map[string]*string) {
+	if err := j.validateSetAdvancedOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"advancedOptions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetDomainName(val *string) {
+	if err := j.validateSetDomainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetEngineVersion(val *string) {
+	if err := j.validateSetEngineVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engineVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomain)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func OpensearchDomain_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpensearchDomain_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpensearchDomain_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpensearchDomain_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpensearchDomain_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpensearchDomain_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func OpensearchDomain_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		o,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		o,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutAdvancedSecurityOptions(value *OpensearchDomainAdvancedSecurityOptions) {
+	if err := o.validatePutAdvancedSecurityOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAdvancedSecurityOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutAutoTuneOptions(value *OpensearchDomainAutoTuneOptions) {
+	if err := o.validatePutAutoTuneOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAutoTuneOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutClusterConfig(value *OpensearchDomainClusterConfig) {
+	if err := o.validatePutClusterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putClusterConfig",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutCognitoOptions(value *OpensearchDomainCognitoOptions) {
+	if err := o.validatePutCognitoOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCognitoOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutDomainEndpointOptions(value *OpensearchDomainDomainEndpointOptions) {
+	if err := o.validatePutDomainEndpointOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDomainEndpointOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutEbsOptions(value *OpensearchDomainEbsOptions) {
+	if err := o.validatePutEbsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEbsOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutEncryptAtRest(value *OpensearchDomainEncryptAtRest) {
+	if err := o.validatePutEncryptAtRestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEncryptAtRest",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutLogPublishingOptions(value interface{}) {
+	if err := o.validatePutLogPublishingOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLogPublishingOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutNodeToNodeEncryption(value *OpensearchDomainNodeToNodeEncryption) {
+	if err := o.validatePutNodeToNodeEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNodeToNodeEncryption",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutSnapshotOptions(value *OpensearchDomainSnapshotOptions) {
+	if err := o.validatePutSnapshotOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSnapshotOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutTimeouts(value *OpensearchDomainTimeouts) {
+	if err := o.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) PutVpcOptions(value *OpensearchDomainVpcOptions) {
+	if err := o.validatePutVpcOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putVpcOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetAccessPolicies() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAccessPolicies",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetAdvancedOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAdvancedOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetAdvancedSecurityOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAdvancedSecurityOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetAutoTuneOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoTuneOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetClusterConfig() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetClusterConfig",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetCognitoOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCognitoOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetDomainEndpointOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDomainEndpointOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetEbsOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEbsOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetEncryptAtRest() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEncryptAtRest",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetEngineVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEngineVersion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetLogPublishingOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLogPublishingOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetNodeToNodeEncryption() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNodeToNodeEncryption",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetSnapshotOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSnapshotOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetTags() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetVpcOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVpcOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpensearchDomain) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

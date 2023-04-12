@@ -1,0 +1,37 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "healthcarefhirstore",
+    srcs = [
+        "HealthcareFhirStore.go",
+        "HealthcareFhirStoreConfig.go",
+        "HealthcareFhirStoreNotificationConfig.go",
+        "HealthcareFhirStoreNotificationConfigOutputReference.go",
+        "HealthcareFhirStoreNotificationConfigOutputReference__checks.go",
+        "HealthcareFhirStoreStreamConfigs.go",
+        "HealthcareFhirStoreStreamConfigsBigqueryDestination.go",
+        "HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.go",
+        "HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference__checks.go",
+        "HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig.go",
+        "HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.go",
+        "HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference__checks.go",
+        "HealthcareFhirStoreStreamConfigsList.go",
+        "HealthcareFhirStoreStreamConfigsList__checks.go",
+        "HealthcareFhirStoreStreamConfigsOutputReference.go",
+        "HealthcareFhirStoreStreamConfigsOutputReference__checks.go",
+        "HealthcareFhirStoreTimeouts.go",
+        "HealthcareFhirStoreTimeoutsOutputReference.go",
+        "HealthcareFhirStoreTimeoutsOutputReference__checks.go",
+        "HealthcareFhirStore__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/healthcarefhirstore",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/healthcarefhirstore/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

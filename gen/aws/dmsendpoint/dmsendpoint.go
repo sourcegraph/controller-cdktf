@@ -1,691 +1,1786 @@
 package dmsendpoint
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/dmsendpoint/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpoint",
-		reflect.TypeOf((*DmsEndpoint)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateArnInput", GoGetter: "CertificateArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseNameInput", GoGetter: "DatabaseNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "elasticsearchSettings", GoGetter: "ElasticsearchSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "elasticsearchSettingsInput", GoGetter: "ElasticsearchSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointArn", GoGetter: "EndpointArn"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointId", GoGetter: "EndpointId"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointIdInput", GoGetter: "EndpointIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointType", GoGetter: "EndpointType"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointTypeInput", GoGetter: "EndpointTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "engineName", GoGetter: "EngineName"},
-			_jsii_.MemberProperty{JsiiProperty: "engineNameInput", GoGetter: "EngineNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "extraConnectionAttributes", GoGetter: "ExtraConnectionAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "extraConnectionAttributesInput", GoGetter: "ExtraConnectionAttributesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kafkaSettings", GoGetter: "KafkaSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "kafkaSettingsInput", GoGetter: "KafkaSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "kinesisSettings", GoGetter: "KinesisSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "kinesisSettingsInput", GoGetter: "KinesisSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "mongodbSettings", GoGetter: "MongodbSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "mongodbSettingsInput", GoGetter: "MongodbSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putElasticsearchSettings", GoMethod: "PutElasticsearchSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putKafkaSettings", GoMethod: "PutKafkaSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putKinesisSettings", GoMethod: "PutKinesisSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putMongodbSettings", GoMethod: "PutMongodbSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putRedisSettings", GoMethod: "PutRedisSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putRedshiftSettings", GoMethod: "PutRedshiftSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putS3Settings", GoMethod: "PutS3Settings"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "redisSettings", GoGetter: "RedisSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "redisSettingsInput", GoGetter: "RedisSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "redshiftSettings", GoGetter: "RedshiftSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "redshiftSettingsInput", GoGetter: "RedshiftSettingsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCertificateArn", GoMethod: "ResetCertificateArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseName", GoMethod: "ResetDatabaseName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetElasticsearchSettings", GoMethod: "ResetElasticsearchSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExtraConnectionAttributes", GoMethod: "ResetExtraConnectionAttributes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKafkaSettings", GoMethod: "ResetKafkaSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKinesisSettings", GoMethod: "ResetKinesisSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyArn", GoMethod: "ResetKmsKeyArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMongodbSettings", GoMethod: "ResetMongodbSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedisSettings", GoMethod: "ResetRedisSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedshiftSettings", GoMethod: "ResetRedshiftSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetS3Settings", GoMethod: "ResetS3Settings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecretsManagerAccessRoleArn", GoMethod: "ResetSecretsManagerAccessRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecretsManagerArn", GoMethod: "ResetSecretsManagerArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServerName", GoMethod: "ResetServerName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRole", GoMethod: "ResetServiceAccessRole"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslMode", GoMethod: "ResetSslMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
-			_jsii_.MemberProperty{JsiiProperty: "s3Settings", GoGetter: "S3Settings"},
-			_jsii_.MemberProperty{JsiiProperty: "s3SettingsInput", GoGetter: "S3SettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "secretsManagerAccessRoleArn", GoGetter: "SecretsManagerAccessRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "secretsManagerAccessRoleArnInput", GoGetter: "SecretsManagerAccessRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "secretsManagerArn", GoGetter: "SecretsManagerArn"},
-			_jsii_.MemberProperty{JsiiProperty: "secretsManagerArnInput", GoGetter: "SecretsManagerArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serverName", GoGetter: "ServerName"},
-			_jsii_.MemberProperty{JsiiProperty: "serverNameInput", GoGetter: "ServerNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRole", GoGetter: "ServiceAccessRole"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleInput", GoGetter: "ServiceAccessRoleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslMode", GoGetter: "SslMode"},
-			_jsii_.MemberProperty{JsiiProperty: "sslModeInput", GoGetter: "SslModeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint aws_dms_endpoint}.
+type DmsEndpoint interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CertificateArn() *string
+	SetCertificateArn(val *string)
+	CertificateArnInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	DatabaseName() *string
+	SetDatabaseName(val *string)
+	DatabaseNameInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	ElasticsearchSettings() DmsEndpointElasticsearchSettingsOutputReference
+	ElasticsearchSettingsInput() *DmsEndpointElasticsearchSettings
+	EndpointArn() *string
+	EndpointId() *string
+	SetEndpointId(val *string)
+	EndpointIdInput() *string
+	EndpointType() *string
+	SetEndpointType(val *string)
+	EndpointTypeInput() *string
+	EngineName() *string
+	SetEngineName(val *string)
+	EngineNameInput() *string
+	ExtraConnectionAttributes() *string
+	SetExtraConnectionAttributes(val *string)
+	ExtraConnectionAttributesInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KafkaSettings() DmsEndpointKafkaSettingsOutputReference
+	KafkaSettingsInput() *DmsEndpointKafkaSettings
+	KinesisSettings() DmsEndpointKinesisSettingsOutputReference
+	KinesisSettingsInput() *DmsEndpointKinesisSettings
+	KmsKeyArn() *string
+	SetKmsKeyArn(val *string)
+	KmsKeyArnInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MongodbSettings() DmsEndpointMongodbSettingsOutputReference
+	MongodbSettingsInput() *DmsEndpointMongodbSettings
+	// The tree node.
+	Node() constructs.Node
+	Password() *string
+	SetPassword(val *string)
+	PasswordInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RedisSettings() DmsEndpointRedisSettingsOutputReference
+	RedisSettingsInput() *DmsEndpointRedisSettings
+	RedshiftSettings() DmsEndpointRedshiftSettingsOutputReference
+	RedshiftSettingsInput() *DmsEndpointRedshiftSettings
+	S3Settings() DmsEndpointS3SettingsOutputReference
+	S3SettingsInput() *DmsEndpointS3Settings
+	SecretsManagerAccessRoleArn() *string
+	SetSecretsManagerAccessRoleArn(val *string)
+	SecretsManagerAccessRoleArnInput() *string
+	SecretsManagerArn() *string
+	SetSecretsManagerArn(val *string)
+	SecretsManagerArnInput() *string
+	ServerName() *string
+	SetServerName(val *string)
+	ServerNameInput() *string
+	ServiceAccessRole() *string
+	SetServiceAccessRole(val *string)
+	ServiceAccessRoleInput() *string
+	SslMode() *string
+	SetSslMode(val *string)
+	SslModeInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() DmsEndpointTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Username() *string
+	SetUsername(val *string)
+	UsernameInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutElasticsearchSettings(value *DmsEndpointElasticsearchSettings)
+	PutKafkaSettings(value *DmsEndpointKafkaSettings)
+	PutKinesisSettings(value *DmsEndpointKinesisSettings)
+	PutMongodbSettings(value *DmsEndpointMongodbSettings)
+	PutRedisSettings(value *DmsEndpointRedisSettings)
+	PutRedshiftSettings(value *DmsEndpointRedshiftSettings)
+	PutS3Settings(value *DmsEndpointS3Settings)
+	PutTimeouts(value *DmsEndpointTimeouts)
+	ResetCertificateArn()
+	ResetDatabaseName()
+	ResetElasticsearchSettings()
+	ResetExtraConnectionAttributes()
+	ResetId()
+	ResetKafkaSettings()
+	ResetKinesisSettings()
+	ResetKmsKeyArn()
+	ResetMongodbSettings()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPassword()
+	ResetPort()
+	ResetRedisSettings()
+	ResetRedshiftSettings()
+	ResetS3Settings()
+	ResetSecretsManagerAccessRoleArn()
+	ResetSecretsManagerArn()
+	ResetServerName()
+	ResetServiceAccessRole()
+	ResetSslMode()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	ResetUsername()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DmsEndpoint
+type jsiiProxy_DmsEndpoint struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DmsEndpoint) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointConfig",
-		reflect.TypeOf((*DmsEndpointConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) CertificateArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateArn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointElasticsearchSettings",
-		reflect.TypeOf((*DmsEndpointElasticsearchSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) CertificateArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateArnInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointElasticsearchSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointUri", GoGetter: "EndpointUri"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointUriInput", GoGetter: "EndpointUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "errorRetryDuration", GoGetter: "ErrorRetryDuration"},
-			_jsii_.MemberProperty{JsiiProperty: "errorRetryDurationInput", GoGetter: "ErrorRetryDurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "fullLoadErrorPercentage", GoGetter: "FullLoadErrorPercentage"},
-			_jsii_.MemberProperty{JsiiProperty: "fullLoadErrorPercentageInput", GoGetter: "FullLoadErrorPercentageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetErrorRetryDuration", GoMethod: "ResetErrorRetryDuration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFullLoadErrorPercentage", GoMethod: "ResetFullLoadErrorPercentage"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointKafkaSettings",
-		reflect.TypeOf((*DmsEndpointKafkaSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointKafkaSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "broker", GoGetter: "Broker"},
-			_jsii_.MemberProperty{JsiiProperty: "brokerInput", GoGetter: "BrokerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "includeControlDetails", GoGetter: "IncludeControlDetails"},
-			_jsii_.MemberProperty{JsiiProperty: "includeControlDetailsInput", GoGetter: "IncludeControlDetailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeNullAndEmpty", GoGetter: "IncludeNullAndEmpty"},
-			_jsii_.MemberProperty{JsiiProperty: "includeNullAndEmptyInput", GoGetter: "IncludeNullAndEmptyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includePartitionValue", GoGetter: "IncludePartitionValue"},
-			_jsii_.MemberProperty{JsiiProperty: "includePartitionValueInput", GoGetter: "IncludePartitionValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTableAlterOperations", GoGetter: "IncludeTableAlterOperations"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTableAlterOperationsInput", GoGetter: "IncludeTableAlterOperationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTransactionDetails", GoGetter: "IncludeTransactionDetails"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTransactionDetailsInput", GoGetter: "IncludeTransactionDetailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "messageFormat", GoGetter: "MessageFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "messageFormatInput", GoGetter: "MessageFormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "messageMaxBytes", GoGetter: "MessageMaxBytes"},
-			_jsii_.MemberProperty{JsiiProperty: "messageMaxBytesInput", GoGetter: "MessageMaxBytesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "noHexPrefix", GoGetter: "NoHexPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "noHexPrefixInput", GoGetter: "NoHexPrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionIncludeSchemaTable", GoGetter: "PartitionIncludeSchemaTable"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionIncludeSchemaTableInput", GoGetter: "PartitionIncludeSchemaTableInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeControlDetails", GoMethod: "ResetIncludeControlDetails"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeNullAndEmpty", GoMethod: "ResetIncludeNullAndEmpty"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludePartitionValue", GoMethod: "ResetIncludePartitionValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeTableAlterOperations", GoMethod: "ResetIncludeTableAlterOperations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeTransactionDetails", GoMethod: "ResetIncludeTransactionDetails"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMessageFormat", GoMethod: "ResetMessageFormat"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMessageMaxBytes", GoMethod: "ResetMessageMaxBytes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNoHexPrefix", GoMethod: "ResetNoHexPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPartitionIncludeSchemaTable", GoMethod: "ResetPartitionIncludeSchemaTable"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSaslPassword", GoMethod: "ResetSaslPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSaslUsername", GoMethod: "ResetSaslUsername"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityProtocol", GoMethod: "ResetSecurityProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslCaCertificateArn", GoMethod: "ResetSslCaCertificateArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslClientCertificateArn", GoMethod: "ResetSslClientCertificateArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslClientKeyArn", GoMethod: "ResetSslClientKeyArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslClientKeyPassword", GoMethod: "ResetSslClientKeyPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopic", GoMethod: "ResetTopic"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "saslPassword", GoGetter: "SaslPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "saslPasswordInput", GoGetter: "SaslPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "saslUsername", GoGetter: "SaslUsername"},
-			_jsii_.MemberProperty{JsiiProperty: "saslUsernameInput", GoGetter: "SaslUsernameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityProtocol", GoGetter: "SecurityProtocol"},
-			_jsii_.MemberProperty{JsiiProperty: "securityProtocolInput", GoGetter: "SecurityProtocolInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateArn", GoGetter: "SslCaCertificateArn"},
-			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateArnInput", GoGetter: "SslCaCertificateArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslClientCertificateArn", GoGetter: "SslClientCertificateArn"},
-			_jsii_.MemberProperty{JsiiProperty: "sslClientCertificateArnInput", GoGetter: "SslClientCertificateArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslClientKeyArn", GoGetter: "SslClientKeyArn"},
-			_jsii_.MemberProperty{JsiiProperty: "sslClientKeyArnInput", GoGetter: "SslClientKeyArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslClientKeyPassword", GoGetter: "SslClientKeyPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "sslClientKeyPasswordInput", GoGetter: "SslClientKeyPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
-			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointKafkaSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointKinesisSettings",
-		reflect.TypeOf((*DmsEndpointKinesisSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) DatabaseName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseName",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointKinesisSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "includeControlDetails", GoGetter: "IncludeControlDetails"},
-			_jsii_.MemberProperty{JsiiProperty: "includeControlDetailsInput", GoGetter: "IncludeControlDetailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeNullAndEmpty", GoGetter: "IncludeNullAndEmpty"},
-			_jsii_.MemberProperty{JsiiProperty: "includeNullAndEmptyInput", GoGetter: "IncludeNullAndEmptyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includePartitionValue", GoGetter: "IncludePartitionValue"},
-			_jsii_.MemberProperty{JsiiProperty: "includePartitionValueInput", GoGetter: "IncludePartitionValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTableAlterOperations", GoGetter: "IncludeTableAlterOperations"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTableAlterOperationsInput", GoGetter: "IncludeTableAlterOperationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTransactionDetails", GoGetter: "IncludeTransactionDetails"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTransactionDetailsInput", GoGetter: "IncludeTransactionDetailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "messageFormat", GoGetter: "MessageFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "messageFormatInput", GoGetter: "MessageFormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionIncludeSchemaTable", GoGetter: "PartitionIncludeSchemaTable"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionIncludeSchemaTableInput", GoGetter: "PartitionIncludeSchemaTableInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeControlDetails", GoMethod: "ResetIncludeControlDetails"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeNullAndEmpty", GoMethod: "ResetIncludeNullAndEmpty"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludePartitionValue", GoMethod: "ResetIncludePartitionValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeTableAlterOperations", GoMethod: "ResetIncludeTableAlterOperations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeTransactionDetails", GoMethod: "ResetIncludeTransactionDetails"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMessageFormat", GoMethod: "ResetMessageFormat"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPartitionIncludeSchemaTable", GoMethod: "ResetPartitionIncludeSchemaTable"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRoleArn", GoMethod: "ResetServiceAccessRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStreamArn", GoMethod: "ResetStreamArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "streamArn", GoGetter: "StreamArn"},
-			_jsii_.MemberProperty{JsiiProperty: "streamArnInput", GoGetter: "StreamArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointKinesisSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) DatabaseNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseNameInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointMongodbSettings",
-		reflect.TypeOf((*DmsEndpointMongodbSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointMongodbSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authMechanism", GoGetter: "AuthMechanism"},
-			_jsii_.MemberProperty{JsiiProperty: "authMechanismInput", GoGetter: "AuthMechanismInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authSource", GoGetter: "AuthSource"},
-			_jsii_.MemberProperty{JsiiProperty: "authSourceInput", GoGetter: "AuthSourceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
-			_jsii_.MemberProperty{JsiiProperty: "authTypeInput", GoGetter: "AuthTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "docsToInvestigate", GoGetter: "DocsToInvestigate"},
-			_jsii_.MemberProperty{JsiiProperty: "docsToInvestigateInput", GoGetter: "DocsToInvestigateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "extractDocId", GoGetter: "ExtractDocId"},
-			_jsii_.MemberProperty{JsiiProperty: "extractDocIdInput", GoGetter: "ExtractDocIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "nestingLevel", GoGetter: "NestingLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "nestingLevelInput", GoGetter: "NestingLevelInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthMechanism", GoMethod: "ResetAuthMechanism"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthSource", GoMethod: "ResetAuthSource"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthType", GoMethod: "ResetAuthType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDocsToInvestigate", GoMethod: "ResetDocsToInvestigate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExtractDocId", GoMethod: "ResetExtractDocId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNestingLevel", GoMethod: "ResetNestingLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointMongodbSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ElasticsearchSettings() DmsEndpointElasticsearchSettingsOutputReference {
+	var returns DmsEndpointElasticsearchSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"elasticsearchSettings",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointRedisSettings",
-		reflect.TypeOf((*DmsEndpointRedisSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ElasticsearchSettingsInput() *DmsEndpointElasticsearchSettings {
+	var returns *DmsEndpointElasticsearchSettings
+	_jsii_.Get(
+		j,
+		"elasticsearchSettingsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointRedisSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authPassword", GoGetter: "AuthPassword"},
-			_jsii_.MemberProperty{JsiiProperty: "authPasswordInput", GoGetter: "AuthPasswordInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
-			_jsii_.MemberProperty{JsiiProperty: "authTypeInput", GoGetter: "AuthTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authUserName", GoGetter: "AuthUserName"},
-			_jsii_.MemberProperty{JsiiProperty: "authUserNameInput", GoGetter: "AuthUserNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthPassword", GoMethod: "ResetAuthPassword"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthUserName", GoMethod: "ResetAuthUserName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslCaCertificateArn", GoMethod: "ResetSslCaCertificateArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslSecurityProtocol", GoMethod: "ResetSslSecurityProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serverName", GoGetter: "ServerName"},
-			_jsii_.MemberProperty{JsiiProperty: "serverNameInput", GoGetter: "ServerNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateArn", GoGetter: "SslCaCertificateArn"},
-			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateArnInput", GoGetter: "SslCaCertificateArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslSecurityProtocol", GoGetter: "SslSecurityProtocol"},
-			_jsii_.MemberProperty{JsiiProperty: "sslSecurityProtocolInput", GoGetter: "SslSecurityProtocolInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointRedisSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EndpointArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointArn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointRedshiftSettings",
-		reflect.TypeOf((*DmsEndpointRedshiftSettings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointId",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointRedshiftSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bucketFolder", GoGetter: "BucketFolder"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketFolderInput", GoGetter: "BucketFolderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionMode", GoGetter: "EncryptionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionModeInput", GoGetter: "EncryptionModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketFolder", GoMethod: "ResetBucketFolder"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketName", GoMethod: "ResetBucketName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionMode", GoMethod: "ResetEncryptionMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServerSideEncryptionKmsKeyId", GoMethod: "ResetServerSideEncryptionKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRoleArn", GoMethod: "ResetServiceAccessRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionKmsKeyId", GoGetter: "ServerSideEncryptionKmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionKmsKeyIdInput", GoGetter: "ServerSideEncryptionKmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointRedshiftSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIdInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointS3Settings",
-		reflect.TypeOf((*DmsEndpointS3Settings)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointType",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointS3SettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
-			_jsii_.MemberProperty{JsiiProperty: "addColumnNameInput", GoGetter: "AddColumnNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketFolder", GoGetter: "BucketFolder"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketFolderInput", GoGetter: "BucketFolderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cannedAclForObjects", GoGetter: "CannedAclForObjects"},
-			_jsii_.MemberProperty{JsiiProperty: "cannedAclForObjectsInput", GoGetter: "CannedAclForObjectsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsAndUpdates", GoGetter: "CdcInsertsAndUpdates"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsAndUpdatesInput", GoGetter: "CdcInsertsAndUpdatesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsOnly", GoGetter: "CdcInsertsOnly"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsOnlyInput", GoGetter: "CdcInsertsOnlyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMaxBatchInterval", GoGetter: "CdcMaxBatchInterval"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMaxBatchIntervalInput", GoGetter: "CdcMaxBatchIntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMinFileSize", GoGetter: "CdcMinFileSize"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMinFileSizeInput", GoGetter: "CdcMinFileSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcPath", GoGetter: "CdcPath"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcPathInput", GoGetter: "CdcPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberProperty{JsiiProperty: "compressionType", GoGetter: "CompressionType"},
-			_jsii_.MemberProperty{JsiiProperty: "compressionTypeInput", GoGetter: "CompressionTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "csvDelimiter", GoGetter: "CsvDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "csvDelimiterInput", GoGetter: "CsvDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNoSupValue", GoGetter: "CsvNoSupValue"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNoSupValueInput", GoGetter: "CsvNoSupValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNullValue", GoGetter: "CsvNullValue"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNullValueInput", GoGetter: "CsvNullValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "csvRowDelimiter", GoGetter: "CsvRowDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "csvRowDelimiterInput", GoGetter: "CsvRowDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dataFormat", GoGetter: "DataFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "dataFormatInput", GoGetter: "DataFormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dataPageSize", GoGetter: "DataPageSize"},
-			_jsii_.MemberProperty{JsiiProperty: "dataPageSizeInput", GoGetter: "DataPageSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionDelimiter", GoGetter: "DatePartitionDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionDelimiterInput", GoGetter: "DatePartitionDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionEnabled", GoGetter: "DatePartitionEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionEnabledInput", GoGetter: "DatePartitionEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionSequence", GoGetter: "DatePartitionSequence"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionSequenceInput", GoGetter: "DatePartitionSequenceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dictPageSizeLimit", GoGetter: "DictPageSizeLimit"},
-			_jsii_.MemberProperty{JsiiProperty: "dictPageSizeLimitInput", GoGetter: "DictPageSizeLimitInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableStatistics", GoGetter: "EnableStatistics"},
-			_jsii_.MemberProperty{JsiiProperty: "enableStatisticsInput", GoGetter: "EnableStatisticsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encodingType", GoGetter: "EncodingType"},
-			_jsii_.MemberProperty{JsiiProperty: "encodingTypeInput", GoGetter: "EncodingTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionMode", GoGetter: "EncryptionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionModeInput", GoGetter: "EncryptionModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "externalTableDefinition", GoGetter: "ExternalTableDefinition"},
-			_jsii_.MemberProperty{JsiiProperty: "externalTableDefinitionInput", GoGetter: "ExternalTableDefinitionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRows", GoGetter: "IgnoreHeaderRows"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRowsInput", GoGetter: "IgnoreHeaderRowsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreHeadersRow", GoGetter: "IgnoreHeadersRow"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreHeadersRowInput", GoGetter: "IgnoreHeadersRowInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoad", GoGetter: "IncludeOpForFullLoad"},
-			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoadInput", GoGetter: "IncludeOpForFullLoadInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetTimestampInMillisecond", GoGetter: "ParquetTimestampInMillisecond"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetTimestampInMillisecondInput", GoGetter: "ParquetTimestampInMillisecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetVersion", GoGetter: "ParquetVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetVersionInput", GoGetter: "ParquetVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preserveTransactions", GoGetter: "PreserveTransactions"},
-			_jsii_.MemberProperty{JsiiProperty: "preserveTransactionsInput", GoGetter: "PreserveTransactionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAddColumnName", GoMethod: "ResetAddColumnName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketFolder", GoMethod: "ResetBucketFolder"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketName", GoMethod: "ResetBucketName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCannedAclForObjects", GoMethod: "ResetCannedAclForObjects"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcInsertsAndUpdates", GoMethod: "ResetCdcInsertsAndUpdates"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcInsertsOnly", GoMethod: "ResetCdcInsertsOnly"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcMaxBatchInterval", GoMethod: "ResetCdcMaxBatchInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcMinFileSize", GoMethod: "ResetCdcMinFileSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcPath", GoMethod: "ResetCdcPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCompressionType", GoMethod: "ResetCompressionType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvDelimiter", GoMethod: "ResetCsvDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvNoSupValue", GoMethod: "ResetCsvNoSupValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvNullValue", GoMethod: "ResetCsvNullValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvRowDelimiter", GoMethod: "ResetCsvRowDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataFormat", GoMethod: "ResetDataFormat"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataPageSize", GoMethod: "ResetDataPageSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionDelimiter", GoMethod: "ResetDatePartitionDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionEnabled", GoMethod: "ResetDatePartitionEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionSequence", GoMethod: "ResetDatePartitionSequence"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDictPageSizeLimit", GoMethod: "ResetDictPageSizeLimit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableStatistics", GoMethod: "ResetEnableStatistics"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncodingType", GoMethod: "ResetEncodingType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionMode", GoMethod: "ResetEncryptionMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExternalTableDefinition", GoMethod: "ResetExternalTableDefinition"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreHeaderRows", GoMethod: "ResetIgnoreHeaderRows"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreHeadersRow", GoMethod: "ResetIgnoreHeadersRow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeOpForFullLoad", GoMethod: "ResetIncludeOpForFullLoad"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxFileSize", GoMethod: "ResetMaxFileSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParquetTimestampInMillisecond", GoMethod: "ResetParquetTimestampInMillisecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParquetVersion", GoMethod: "ResetParquetVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreserveTransactions", GoMethod: "ResetPreserveTransactions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRfc4180", GoMethod: "ResetRfc4180"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRowGroupLength", GoMethod: "ResetRowGroupLength"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServerSideEncryptionKmsKeyId", GoMethod: "ResetServerSideEncryptionKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRoleArn", GoMethod: "ResetServiceAccessRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimestampColumnName", GoMethod: "ResetTimestampColumnName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseCsvNoSupValue", GoMethod: "ResetUseCsvNoSupValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseTaskStartTimeForFullLoadTimestamp", GoMethod: "ResetUseTaskStartTimeForFullLoadTimestamp"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rfc4180", GoGetter: "Rfc4180"},
-			_jsii_.MemberProperty{JsiiProperty: "rfc4180Input", GoGetter: "Rfc4180Input"},
-			_jsii_.MemberProperty{JsiiProperty: "rowGroupLength", GoGetter: "RowGroupLength"},
-			_jsii_.MemberProperty{JsiiProperty: "rowGroupLengthInput", GoGetter: "RowGroupLengthInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionKmsKeyId", GoGetter: "ServerSideEncryptionKmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionKmsKeyIdInput", GoGetter: "ServerSideEncryptionKmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampColumnName", GoGetter: "TimestampColumnName"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampColumnNameInput", GoGetter: "TimestampColumnNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValue", GoGetter: "UseCsvNoSupValue"},
-			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValueInput", GoGetter: "UseCsvNoSupValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestamp", GoGetter: "UseTaskStartTimeForFullLoadTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestampInput", GoGetter: "UseTaskStartTimeForFullLoadTimestampInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointS3SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EndpointTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointTypeInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsEndpoint.DmsEndpointTimeouts",
-		reflect.TypeOf((*DmsEndpointTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EngineName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineName",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsEndpoint.DmsEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*DmsEndpointTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsEndpointTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) EngineNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ExtraConnectionAttributes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extraConnectionAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ExtraConnectionAttributesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"extraConnectionAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) KafkaSettings() DmsEndpointKafkaSettingsOutputReference {
+	var returns DmsEndpointKafkaSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"kafkaSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) KafkaSettingsInput() *DmsEndpointKafkaSettings {
+	var returns *DmsEndpointKafkaSettings
+	_jsii_.Get(
+		j,
+		"kafkaSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) KinesisSettings() DmsEndpointKinesisSettingsOutputReference {
+	var returns DmsEndpointKinesisSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) KinesisSettingsInput() *DmsEndpointKinesisSettings {
+	var returns *DmsEndpointKinesisSettings
+	_jsii_.Get(
+		j,
+		"kinesisSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) KmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) KmsKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) MongodbSettings() DmsEndpointMongodbSettingsOutputReference {
+	var returns DmsEndpointMongodbSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"mongodbSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) MongodbSettingsInput() *DmsEndpointMongodbSettings {
+	var returns *DmsEndpointMongodbSettings
+	_jsii_.Get(
+		j,
+		"mongodbSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) PasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RedisSettings() DmsEndpointRedisSettingsOutputReference {
+	var returns DmsEndpointRedisSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"redisSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RedisSettingsInput() *DmsEndpointRedisSettings {
+	var returns *DmsEndpointRedisSettings
+	_jsii_.Get(
+		j,
+		"redisSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RedshiftSettings() DmsEndpointRedshiftSettingsOutputReference {
+	var returns DmsEndpointRedshiftSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"redshiftSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RedshiftSettingsInput() *DmsEndpointRedshiftSettings {
+	var returns *DmsEndpointRedshiftSettings
+	_jsii_.Get(
+		j,
+		"redshiftSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) S3Settings() DmsEndpointS3SettingsOutputReference {
+	var returns DmsEndpointS3SettingsOutputReference
+	_jsii_.Get(
+		j,
+		"s3Settings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) S3SettingsInput() *DmsEndpointS3Settings {
+	var returns *DmsEndpointS3Settings
+	_jsii_.Get(
+		j,
+		"s3SettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) SecretsManagerAccessRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsManagerAccessRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) SecretsManagerAccessRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsManagerAccessRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) SecretsManagerArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsManagerArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) SecretsManagerArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsManagerArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ServerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ServerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ServiceAccessRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) ServiceAccessRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) SslMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) SslModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Timeouts() DmsEndpointTimeoutsOutputReference {
+	var returns DmsEndpointTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) Username() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"username",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint aws_dms_endpoint} Resource.
+func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
+	_init_.Initialize()
+
+	if err := validateNewDmsEndpointParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DmsEndpoint{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint aws_dms_endpoint} Resource.
+func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		[]interface{}{scope, id, config},
+		d,
 	)
 }
+
+func (j *jsiiProxy_DmsEndpoint)SetCertificateArn(val *string) {
+	if err := j.validateSetCertificateArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetDatabaseName(val *string) {
+	if err := j.validateSetDatabaseNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetEndpointId(val *string) {
+	if err := j.validateSetEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetEndpointType(val *string) {
+	if err := j.validateSetEndpointTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetEngineName(val *string) {
+	if err := j.validateSetEngineNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engineName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetExtraConnectionAttributes(val *string) {
+	if err := j.validateSetExtraConnectionAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extraConnectionAttributes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetKmsKeyArn(val *string) {
+	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetSecretsManagerAccessRoleArn(val *string) {
+	if err := j.validateSetSecretsManagerAccessRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretsManagerAccessRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetSecretsManagerArn(val *string) {
+	if err := j.validateSetSecretsManagerArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretsManagerArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetServerName(val *string) {
+	if err := j.validateSetServerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetServiceAccessRole(val *string) {
+	if err := j.validateSetServiceAccessRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccessRole",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetSslMode(val *string) {
+	if err := j.validateSetSslModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"username",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DmsEndpoint_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsEndpoint_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DmsEndpoint_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsEndpoint_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DmsEndpoint_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsEndpoint_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DmsEndpoint_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutElasticsearchSettings(value *DmsEndpointElasticsearchSettings) {
+	if err := d.validatePutElasticsearchSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putElasticsearchSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutKafkaSettings(value *DmsEndpointKafkaSettings) {
+	if err := d.validatePutKafkaSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKafkaSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutKinesisSettings(value *DmsEndpointKinesisSettings) {
+	if err := d.validatePutKinesisSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKinesisSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutMongodbSettings(value *DmsEndpointMongodbSettings) {
+	if err := d.validatePutMongodbSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMongodbSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutRedisSettings(value *DmsEndpointRedisSettings) {
+	if err := d.validatePutRedisSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedisSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutRedshiftSettings(value *DmsEndpointRedshiftSettings) {
+	if err := d.validatePutRedshiftSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedshiftSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutS3Settings(value *DmsEndpointS3Settings) {
+	if err := d.validatePutS3SettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putS3Settings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) PutTimeouts(value *DmsEndpointTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetCertificateArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCertificateArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetDatabaseName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabaseName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetElasticsearchSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetElasticsearchSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetExtraConnectionAttributes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExtraConnectionAttributes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetKafkaSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKafkaSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetKinesisSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKinesisSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetKmsKeyArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKmsKeyArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetMongodbSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMongodbSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetPort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetRedisSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedisSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetRedshiftSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedshiftSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetS3Settings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetS3Settings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetSecretsManagerAccessRoleArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretsManagerAccessRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetSecretsManagerArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretsManagerArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetServerName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServerName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetServiceAccessRole() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccessRole",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetSslMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSslMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsEndpoint) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

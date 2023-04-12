@@ -1,549 +1,1247 @@
 package monitoringuptimecheckconfig
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/monitoringuptimecheckconfig/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
-		reflect.TypeOf((*MonitoringUptimeCheckConfig)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "checkerType", GoGetter: "CheckerType"},
-			_jsii_.MemberProperty{JsiiProperty: "checkerTypeInput", GoGetter: "CheckerTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "contentMatchers", GoGetter: "ContentMatchers"},
-			_jsii_.MemberProperty{JsiiProperty: "contentMatchersInput", GoGetter: "ContentMatchersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "httpCheck", GoGetter: "HttpCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "httpCheckInput", GoGetter: "HttpCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "monitoredResource", GoGetter: "MonitoredResource"},
-			_jsii_.MemberProperty{JsiiProperty: "monitoredResourceInput", GoGetter: "MonitoredResourceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "period", GoGetter: "Period"},
-			_jsii_.MemberProperty{JsiiProperty: "periodInput", GoGetter: "PeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putContentMatchers", GoMethod: "PutContentMatchers"},
-			_jsii_.MemberMethod{JsiiMethod: "putHttpCheck", GoMethod: "PutHttpCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putMonitoredResource", GoMethod: "PutMonitoredResource"},
-			_jsii_.MemberMethod{JsiiMethod: "putResourceGroup", GoMethod: "PutResourceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "putTcpCheck", GoMethod: "PutTcpCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCheckerType", GoMethod: "ResetCheckerType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContentMatchers", GoMethod: "ResetContentMatchers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpCheck", GoMethod: "ResetHttpCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMonitoredResource", GoMethod: "ResetMonitoredResource"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPeriod", GoMethod: "ResetPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroup", GoMethod: "ResetResourceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSelectedRegions", GoMethod: "ResetSelectedRegions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTcpCheck", GoMethod: "ResetTcpCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroup", GoGetter: "ResourceGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupInput", GoGetter: "ResourceGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "selectedRegions", GoGetter: "SelectedRegions"},
-			_jsii_.MemberProperty{JsiiProperty: "selectedRegionsInput", GoGetter: "SelectedRegionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tcpCheck", GoGetter: "TcpCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "tcpCheckInput", GoGetter: "TcpCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "uptimeCheckId", GoGetter: "UptimeCheckId"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/google/r/monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+type MonitoringUptimeCheckConfig interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CheckerType() *string
+	SetCheckerType(val *string)
+	CheckerTypeInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ContentMatchers() MonitoringUptimeCheckConfigContentMatchersList
+	ContentMatchersInput() interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	HttpCheck() MonitoringUptimeCheckConfigHttpCheckOutputReference
+	HttpCheckInput() *MonitoringUptimeCheckConfigHttpCheck
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MonitoredResource() MonitoringUptimeCheckConfigMonitoredResourceOutputReference
+	MonitoredResourceInput() *MonitoringUptimeCheckConfigMonitoredResource
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Period() *string
+	SetPeriod(val *string)
+	PeriodInput() *string
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ResourceGroup() MonitoringUptimeCheckConfigResourceGroupOutputReference
+	ResourceGroupInput() *MonitoringUptimeCheckConfigResourceGroup
+	SelectedRegions() *[]*string
+	SetSelectedRegions(val *[]*string)
+	SelectedRegionsInput() *[]*string
+	TcpCheck() MonitoringUptimeCheckConfigTcpCheckOutputReference
+	TcpCheckInput() *MonitoringUptimeCheckConfigTcpCheck
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeout() *string
+	SetTimeout(val *string)
+	TimeoutInput() *string
+	Timeouts() MonitoringUptimeCheckConfigTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	UptimeCheckId() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutContentMatchers(value interface{})
+	PutHttpCheck(value *MonitoringUptimeCheckConfigHttpCheck)
+	PutMonitoredResource(value *MonitoringUptimeCheckConfigMonitoredResource)
+	PutResourceGroup(value *MonitoringUptimeCheckConfigResourceGroup)
+	PutTcpCheck(value *MonitoringUptimeCheckConfigTcpCheck)
+	PutTimeouts(value *MonitoringUptimeCheckConfigTimeouts)
+	ResetCheckerType()
+	ResetContentMatchers()
+	ResetHttpCheck()
+	ResetId()
+	ResetMonitoredResource()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPeriod()
+	ResetProject()
+	ResetResourceGroup()
+	ResetSelectedRegions()
+	ResetTcpCheck()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for MonitoringUptimeCheckConfig
+type jsiiProxy_MonitoringUptimeCheckConfig struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigConfig",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) CheckerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checkerType",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchers",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigContentMatchers)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) CheckerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checkerTypeInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersJsonPathMatcher",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigContentMatchersJsonPathMatcher)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jsonMatcher", GoGetter: "JsonMatcher"},
-			_jsii_.MemberProperty{JsiiProperty: "jsonMatcherInput", GoGetter: "JsonMatcherInput"},
-			_jsii_.MemberProperty{JsiiProperty: "jsonPath", GoGetter: "JsonPath"},
-			_jsii_.MemberProperty{JsiiProperty: "jsonPathInput", GoGetter: "JsonPathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJsonMatcher", GoMethod: "ResetJsonMatcher"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersList",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigContentMatchersList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ContentMatchers() MonitoringUptimeCheckConfigContentMatchersList {
+	var returns MonitoringUptimeCheckConfigContentMatchersList
+	_jsii_.Get(
+		j,
+		"contentMatchers",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigContentMatchersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
-			_jsii_.MemberProperty{JsiiProperty: "contentInput", GoGetter: "ContentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jsonPathMatcher", GoGetter: "JsonPathMatcher"},
-			_jsii_.MemberProperty{JsiiProperty: "jsonPathMatcherInput", GoGetter: "JsonPathMatcherInput"},
-			_jsii_.MemberProperty{JsiiProperty: "matcher", GoGetter: "Matcher"},
-			_jsii_.MemberProperty{JsiiProperty: "matcherInput", GoGetter: "MatcherInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putJsonPathMatcher", GoMethod: "PutJsonPathMatcher"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJsonPathMatcher", GoMethod: "ResetJsonPathMatcher"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMatcher", GoMethod: "ResetMatcher"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ContentMatchersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentMatchersInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheck",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheck)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatusClass", GoMethod: "ResetStatusClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatusValue", GoMethod: "ResetStatusValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "statusClass", GoGetter: "StatusClass"},
-			_jsii_.MemberProperty{JsiiProperty: "statusClassInput", GoGetter: "StatusClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "statusValue", GoGetter: "StatusValue"},
-			_jsii_.MemberProperty{JsiiProperty: "statusValueInput", GoGetter: "StatusValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAuthInfo",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheckAuthInfo)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
-			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigHttpCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "acceptedResponseStatusCodes", GoGetter: "AcceptedResponseStatusCodes"},
-			_jsii_.MemberProperty{JsiiProperty: "acceptedResponseStatusCodesInput", GoGetter: "AcceptedResponseStatusCodesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authInfo", GoGetter: "AuthInfo"},
-			_jsii_.MemberProperty{JsiiProperty: "authInfoInput", GoGetter: "AuthInfoInput"},
-			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
-			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "contentType", GoGetter: "ContentType"},
-			_jsii_.MemberProperty{JsiiProperty: "contentTypeInput", GoGetter: "ContentTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "headers", GoGetter: "Headers"},
-			_jsii_.MemberProperty{JsiiProperty: "headersInput", GoGetter: "HeadersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maskHeaders", GoGetter: "MaskHeaders"},
-			_jsii_.MemberProperty{JsiiProperty: "maskHeadersInput", GoGetter: "MaskHeadersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putAcceptedResponseStatusCodes", GoMethod: "PutAcceptedResponseStatusCodes"},
-			_jsii_.MemberMethod{JsiiMethod: "putAuthInfo", GoMethod: "PutAuthInfo"},
-			_jsii_.MemberProperty{JsiiProperty: "requestMethod", GoGetter: "RequestMethod"},
-			_jsii_.MemberProperty{JsiiProperty: "requestMethodInput", GoGetter: "RequestMethodInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAcceptedResponseStatusCodes", GoMethod: "ResetAcceptedResponseStatusCodes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthInfo", GoMethod: "ResetAuthInfo"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBody", GoMethod: "ResetBody"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContentType", GoMethod: "ResetContentType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHeaders", GoMethod: "ResetHeaders"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaskHeaders", GoMethod: "ResetMaskHeaders"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequestMethod", GoMethod: "ResetRequestMethod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseSsl", GoMethod: "ResetUseSsl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValidateSsl", GoMethod: "ResetValidateSsl"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "useSsl", GoGetter: "UseSsl"},
-			_jsii_.MemberProperty{JsiiProperty: "useSslInput", GoGetter: "UseSslInput"},
-			_jsii_.MemberProperty{JsiiProperty: "validateSsl", GoGetter: "ValidateSsl"},
-			_jsii_.MemberProperty{JsiiProperty: "validateSslInput", GoGetter: "ValidateSslInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigMonitoredResource",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigMonitoredResource)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) HttpCheck() MonitoringUptimeCheckConfigHttpCheckOutputReference {
+	var returns MonitoringUptimeCheckConfigHttpCheckOutputReference
+	_jsii_.Get(
+		j,
+		"httpCheck",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigMonitoredResourceOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigMonitoredResourceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigMonitoredResourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) HttpCheckInput() *MonitoringUptimeCheckConfigHttpCheck {
+	var returns *MonitoringUptimeCheckConfigHttpCheck
+	_jsii_.Get(
+		j,
+		"httpCheckInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigResourceGroup",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigResourceGroup)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigResourceGroupOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigResourceGroupOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groupId", GoGetter: "GroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "groupIdInput", GoGetter: "GroupIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroupId", GoMethod: "ResetGroupId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResourceType", GoMethod: "ResetResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceType", GoGetter: "ResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceTypeInput", GoGetter: "ResourceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigResourceGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigTcpCheck",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigTcpCheck)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigTcpCheckOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigTcpCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) MonitoredResource() MonitoringUptimeCheckConfigMonitoredResourceOutputReference {
+	var returns MonitoringUptimeCheckConfigMonitoredResourceOutputReference
+	_jsii_.Get(
+		j,
+		"monitoredResource",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigTimeouts",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) MonitoredResourceInput() *MonitoringUptimeCheckConfigMonitoredResource {
+	var returns *MonitoringUptimeCheckConfigMonitoredResource
+	_jsii_.Get(
+		j,
+		"monitoredResourceInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigTimeoutsOutputReference",
-		reflect.TypeOf((*MonitoringUptimeCheckConfigTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Period() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) PeriodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"periodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ResourceGroup() MonitoringUptimeCheckConfigResourceGroupOutputReference {
+	var returns MonitoringUptimeCheckConfigResourceGroupOutputReference
+	_jsii_.Get(
+		j,
+		"resourceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ResourceGroupInput() *MonitoringUptimeCheckConfigResourceGroup {
+	var returns *MonitoringUptimeCheckConfigResourceGroup
+	_jsii_.Get(
+		j,
+		"resourceGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SelectedRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectedRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SelectedRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectedRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TcpCheck() MonitoringUptimeCheckConfigTcpCheckOutputReference {
+	var returns MonitoringUptimeCheckConfigTcpCheckOutputReference
+	_jsii_.Get(
+		j,
+		"tcpCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TcpCheckInput() *MonitoringUptimeCheckConfigTcpCheck {
+	var returns *MonitoringUptimeCheckConfigTcpCheck
+	_jsii_.Get(
+		j,
+		"tcpCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Timeout() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TimeoutInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Timeouts() MonitoringUptimeCheckConfigTimeoutsOutputReference {
+	var returns MonitoringUptimeCheckConfigTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) UptimeCheckId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uptimeCheckId",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/google/r/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) MonitoringUptimeCheckConfig {
+	_init_.Initialize()
+
+	if err := validateNewMonitoringUptimeCheckConfigParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_MonitoringUptimeCheckConfig{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/google/r/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+func NewMonitoringUptimeCheckConfig_Override(m MonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		[]interface{}{scope, id, config},
+		m,
 	)
 }
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetCheckerType(val *string) {
+	if err := j.validateSetCheckerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkerType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetPeriod(val *string) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetSelectedRegions(val *[]*string) {
+	if err := j.validateSetSelectedRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selectedRegions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetTimeout(val *string) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeout",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func MonitoringUptimeCheckConfig_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitoringUptimeCheckConfig_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MonitoringUptimeCheckConfig_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitoringUptimeCheckConfig_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MonitoringUptimeCheckConfig_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func MonitoringUptimeCheckConfig_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutContentMatchers(value interface{}) {
+	if err := m.validatePutContentMatchersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putContentMatchers",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutHttpCheck(value *MonitoringUptimeCheckConfigHttpCheck) {
+	if err := m.validatePutHttpCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putHttpCheck",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutMonitoredResource(value *MonitoringUptimeCheckConfigMonitoredResource) {
+	if err := m.validatePutMonitoredResourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMonitoredResource",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutResourceGroup(value *MonitoringUptimeCheckConfigResourceGroup) {
+	if err := m.validatePutResourceGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putResourceGroup",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutTcpCheck(value *MonitoringUptimeCheckConfigTcpCheck) {
+	if err := m.validatePutTcpCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTcpCheck",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutTimeouts(value *MonitoringUptimeCheckConfigTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetCheckerType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCheckerType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetContentMatchers() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetContentMatchers",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetHttpCheck() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetHttpCheck",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetMonitoredResource() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMonitoredResource",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPeriod",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetProject() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetResourceGroup() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetResourceGroup",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetSelectedRegions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSelectedRegions",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetTcpCheck() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTcpCheck",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

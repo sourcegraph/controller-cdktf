@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "vpcpeeringconnectionaccepter",
+    srcs = [
+        "VpcPeeringConnectionAccepterA.go",
+        "VpcPeeringConnectionAccepterAConfig.go",
+        "VpcPeeringConnectionAccepterA__checks.go",
+        "VpcPeeringConnectionAccepterAccepter.go",
+        "VpcPeeringConnectionAccepterAccepterOutputReference.go",
+        "VpcPeeringConnectionAccepterAccepterOutputReference__checks.go",
+        "VpcPeeringConnectionAccepterRequester.go",
+        "VpcPeeringConnectionAccepterRequesterOutputReference.go",
+        "VpcPeeringConnectionAccepterRequesterOutputReference__checks.go",
+        "VpcPeeringConnectionAccepterTimeouts.go",
+        "VpcPeeringConnectionAccepterTimeoutsOutputReference.go",
+        "VpcPeeringConnectionAccepterTimeoutsOutputReference__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/vpcpeeringconnectionaccepter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/vpcpeeringconnectionaccepter/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

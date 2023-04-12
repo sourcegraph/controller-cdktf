@@ -1,11 +1,9 @@
 module github.com/sourcegraph/controller-cdktf/gen/random
 
-go 1.20
+go 1.18
 
 require (
-	github.com/aws/constructs-go/constructs/v10 v10.1.113
-	github.com/aws/jsii-runtime-go v1.68.0
-	github.com/hashicorp/terraform-cdk-go/cdktf v0.13.3
+	github.com/aws/jsii-runtime-go v1.80.0
+	github.com/hashicorp/terraform-cdk-go/cdktf v0.15.5
+	github.com/aws/constructs-go/constructs/v10 v10.1.308
 )
-
-require github.com/Masterminds/semver/v3 v3.1.1 // indirect

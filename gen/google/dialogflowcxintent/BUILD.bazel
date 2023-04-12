@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dialogflowcxintent",
+    srcs = [
+        "DialogflowCxIntent.go",
+        "DialogflowCxIntentConfig.go",
+        "DialogflowCxIntentParameters.go",
+        "DialogflowCxIntentParametersList.go",
+        "DialogflowCxIntentParametersList__checks.go",
+        "DialogflowCxIntentParametersOutputReference.go",
+        "DialogflowCxIntentParametersOutputReference__checks.go",
+        "DialogflowCxIntentTimeouts.go",
+        "DialogflowCxIntentTimeoutsOutputReference.go",
+        "DialogflowCxIntentTimeoutsOutputReference__checks.go",
+        "DialogflowCxIntentTrainingPhrases.go",
+        "DialogflowCxIntentTrainingPhrasesList.go",
+        "DialogflowCxIntentTrainingPhrasesList__checks.go",
+        "DialogflowCxIntentTrainingPhrasesOutputReference.go",
+        "DialogflowCxIntentTrainingPhrasesOutputReference__checks.go",
+        "DialogflowCxIntentTrainingPhrasesParts.go",
+        "DialogflowCxIntentTrainingPhrasesPartsList.go",
+        "DialogflowCxIntentTrainingPhrasesPartsList__checks.go",
+        "DialogflowCxIntentTrainingPhrasesPartsOutputReference.go",
+        "DialogflowCxIntentTrainingPhrasesPartsOutputReference__checks.go",
+        "DialogflowCxIntent__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxintent",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/dialogflowcxintent/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

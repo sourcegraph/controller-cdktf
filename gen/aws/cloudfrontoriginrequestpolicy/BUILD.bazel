@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "cloudfrontoriginrequestpolicy",
+    srcs = [
+        "CloudfrontOriginRequestPolicy.go",
+        "CloudfrontOriginRequestPolicyConfig.go",
+        "CloudfrontOriginRequestPolicyCookiesConfig.go",
+        "CloudfrontOriginRequestPolicyCookiesConfigCookies.go",
+        "CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference.go",
+        "CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference__checks.go",
+        "CloudfrontOriginRequestPolicyCookiesConfigOutputReference.go",
+        "CloudfrontOriginRequestPolicyCookiesConfigOutputReference__checks.go",
+        "CloudfrontOriginRequestPolicyHeadersConfig.go",
+        "CloudfrontOriginRequestPolicyHeadersConfigHeaders.go",
+        "CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference.go",
+        "CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference__checks.go",
+        "CloudfrontOriginRequestPolicyHeadersConfigOutputReference.go",
+        "CloudfrontOriginRequestPolicyHeadersConfigOutputReference__checks.go",
+        "CloudfrontOriginRequestPolicyQueryStringsConfig.go",
+        "CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference.go",
+        "CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference__checks.go",
+        "CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings.go",
+        "CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference.go",
+        "CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference__checks.go",
+        "CloudfrontOriginRequestPolicy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/cloudfrontoriginrequestpolicy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/cloudfrontoriginrequestpolicy/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

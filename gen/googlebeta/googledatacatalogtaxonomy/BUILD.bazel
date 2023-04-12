@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledatacatalogtaxonomy",
+    srcs = [
+        "GoogleDataCatalogTaxonomy.go",
+        "GoogleDataCatalogTaxonomyConfig.go",
+        "GoogleDataCatalogTaxonomyTimeouts.go",
+        "GoogleDataCatalogTaxonomyTimeoutsOutputReference.go",
+        "GoogleDataCatalogTaxonomyTimeoutsOutputReference__checks.go",
+        "GoogleDataCatalogTaxonomy__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googledatacatalogtaxonomy",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googledatacatalogtaxonomy/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

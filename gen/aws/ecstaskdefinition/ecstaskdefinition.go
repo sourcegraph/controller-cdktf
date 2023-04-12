@@ -1,672 +1,1548 @@
 package ecstaskdefinition
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/ecstaskdefinition/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
-		reflect.TypeOf((*EcsTaskDefinition)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "containerDefinitions", GoGetter: "ContainerDefinitions"},
-			_jsii_.MemberProperty{JsiiProperty: "containerDefinitionsInput", GoGetter: "ContainerDefinitionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "cpu", GoGetter: "Cpu"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuInput", GoGetter: "CpuInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorage", GoGetter: "EphemeralStorage"},
-			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageInput", GoGetter: "EphemeralStorageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "executionRoleArn", GoGetter: "ExecutionRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "executionRoleArnInput", GoGetter: "ExecutionRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "family", GoGetter: "Family"},
-			_jsii_.MemberProperty{JsiiProperty: "familyInput", GoGetter: "FamilyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inferenceAccelerator", GoGetter: "InferenceAccelerator"},
-			_jsii_.MemberProperty{JsiiProperty: "inferenceAcceleratorInput", GoGetter: "InferenceAcceleratorInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipcMode", GoGetter: "IpcMode"},
-			_jsii_.MemberProperty{JsiiProperty: "ipcModeInput", GoGetter: "IpcModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "memory", GoGetter: "Memory"},
-			_jsii_.MemberProperty{JsiiProperty: "memoryInput", GoGetter: "MemoryInput"},
-			_jsii_.MemberProperty{JsiiProperty: "networkMode", GoGetter: "NetworkMode"},
-			_jsii_.MemberProperty{JsiiProperty: "networkModeInput", GoGetter: "NetworkModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "pidMode", GoGetter: "PidMode"},
-			_jsii_.MemberProperty{JsiiProperty: "pidModeInput", GoGetter: "PidModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "placementConstraints", GoGetter: "PlacementConstraints"},
-			_jsii_.MemberProperty{JsiiProperty: "placementConstraintsInput", GoGetter: "PlacementConstraintsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyConfiguration", GoGetter: "ProxyConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyConfigurationInput", GoGetter: "ProxyConfigurationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorage", GoMethod: "PutEphemeralStorage"},
-			_jsii_.MemberMethod{JsiiMethod: "putInferenceAccelerator", GoMethod: "PutInferenceAccelerator"},
-			_jsii_.MemberMethod{JsiiMethod: "putPlacementConstraints", GoMethod: "PutPlacementConstraints"},
-			_jsii_.MemberMethod{JsiiMethod: "putProxyConfiguration", GoMethod: "PutProxyConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putRuntimePlatform", GoMethod: "PutRuntimePlatform"},
-			_jsii_.MemberMethod{JsiiMethod: "putVolume", GoMethod: "PutVolume"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "requiresCompatibilities", GoGetter: "RequiresCompatibilities"},
-			_jsii_.MemberProperty{JsiiProperty: "requiresCompatibilitiesInput", GoGetter: "RequiresCompatibilitiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCpu", GoMethod: "ResetCpu"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralStorage", GoMethod: "ResetEphemeralStorage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExecutionRoleArn", GoMethod: "ResetExecutionRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInferenceAccelerator", GoMethod: "ResetInferenceAccelerator"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpcMode", GoMethod: "ResetIpcMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMemory", GoMethod: "ResetMemory"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetworkMode", GoMethod: "ResetNetworkMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPidMode", GoMethod: "ResetPidMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPlacementConstraints", GoMethod: "ResetPlacementConstraints"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyConfiguration", GoMethod: "ResetProxyConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequiresCompatibilities", GoMethod: "ResetRequiresCompatibilities"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRuntimePlatform", GoMethod: "ResetRuntimePlatform"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSkipDestroy", GoMethod: "ResetSkipDestroy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTaskRoleArn", GoMethod: "ResetTaskRoleArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolume", GoMethod: "ResetVolume"},
-			_jsii_.MemberProperty{JsiiProperty: "revision", GoGetter: "Revision"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimePlatform", GoGetter: "RuntimePlatform"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimePlatformInput", GoGetter: "RuntimePlatformInput"},
-			_jsii_.MemberProperty{JsiiProperty: "skipDestroy", GoGetter: "SkipDestroy"},
-			_jsii_.MemberProperty{JsiiProperty: "skipDestroyInput", GoGetter: "SkipDestroyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "taskRoleArn", GoGetter: "TaskRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "taskRoleArnInput", GoGetter: "TaskRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "volume", GoGetter: "Volume"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeInput", GoGetter: "VolumeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinition{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition aws_ecs_task_definition}.
+type EcsTaskDefinition interface {
+	cdktf.TerraformResource
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ContainerDefinitions() *string
+	SetContainerDefinitions(val *string)
+	ContainerDefinitionsInput() *string
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	Cpu() *string
+	SetCpu(val *string)
+	CpuInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EphemeralStorage() EcsTaskDefinitionEphemeralStorageOutputReference
+	EphemeralStorageInput() *EcsTaskDefinitionEphemeralStorage
+	ExecutionRoleArn() *string
+	SetExecutionRoleArn(val *string)
+	ExecutionRoleArnInput() *string
+	Family() *string
+	SetFamily(val *string)
+	FamilyInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InferenceAccelerator() EcsTaskDefinitionInferenceAcceleratorList
+	InferenceAcceleratorInput() interface{}
+	IpcMode() *string
+	SetIpcMode(val *string)
+	IpcModeInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Memory() *string
+	SetMemory(val *string)
+	MemoryInput() *string
+	NetworkMode() *string
+	SetNetworkMode(val *string)
+	NetworkModeInput() *string
+	// The tree node.
+	Node() constructs.Node
+	PidMode() *string
+	SetPidMode(val *string)
+	PidModeInput() *string
+	PlacementConstraints() EcsTaskDefinitionPlacementConstraintsList
+	PlacementConstraintsInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	ProxyConfiguration() EcsTaskDefinitionProxyConfigurationOutputReference
+	ProxyConfigurationInput() *EcsTaskDefinitionProxyConfiguration
+	// Experimental.
+	RawOverrides() interface{}
+	RequiresCompatibilities() *[]*string
+	SetRequiresCompatibilities(val *[]*string)
+	RequiresCompatibilitiesInput() *[]*string
+	Revision() *float64
+	RuntimePlatform() EcsTaskDefinitionRuntimePlatformOutputReference
+	RuntimePlatformInput() *EcsTaskDefinitionRuntimePlatform
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	TaskRoleArn() *string
+	SetTaskRoleArn(val *string)
+	TaskRoleArnInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Volume() EcsTaskDefinitionVolumeList
+	VolumeInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutEphemeralStorage(value *EcsTaskDefinitionEphemeralStorage)
+	PutInferenceAccelerator(value interface{})
+	PutPlacementConstraints(value interface{})
+	PutProxyConfiguration(value *EcsTaskDefinitionProxyConfiguration)
+	PutRuntimePlatform(value *EcsTaskDefinitionRuntimePlatform)
+	PutVolume(value interface{})
+	ResetCpu()
+	ResetEphemeralStorage()
+	ResetExecutionRoleArn()
+	ResetId()
+	ResetInferenceAccelerator()
+	ResetIpcMode()
+	ResetMemory()
+	ResetNetworkMode()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPidMode()
+	ResetPlacementConstraints()
+	ResetProxyConfiguration()
+	ResetRequiresCompatibilities()
+	ResetRuntimePlatform()
+	ResetSkipDestroy()
+	ResetTags()
+	ResetTagsAll()
+	ResetTaskRoleArn()
+	ResetVolume()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for EcsTaskDefinition
+type jsiiProxy_EcsTaskDefinition struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionConfig",
-		reflect.TypeOf((*EcsTaskDefinitionConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage",
-		reflect.TypeOf((*EcsTaskDefinitionEphemeralStorage)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionEphemeralStorageOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInGib", GoGetter: "SizeInGib"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInGibInput", GoGetter: "SizeInGibInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionEphemeralStorageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator",
-		reflect.TypeOf((*EcsTaskDefinitionInferenceAccelerator)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ContainerDefinitions() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerDefinitions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
-		reflect.TypeOf((*EcsTaskDefinitionInferenceAcceleratorList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ContainerDefinitionsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerDefinitionsInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionInferenceAcceleratorOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceName", GoGetter: "DeviceName"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceNameInput", GoGetter: "DeviceNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceType", GoGetter: "DeviceType"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceTypeInput", GoGetter: "DeviceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints",
-		reflect.TypeOf((*EcsTaskDefinitionPlacementConstraints)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Cpu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cpu",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
-		reflect.TypeOf((*EcsTaskDefinitionPlacementConstraintsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionPlacementConstraintsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) CpuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cpuInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionPlacementConstraintsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expression", GoGetter: "Expression"},
-			_jsii_.MemberProperty{JsiiProperty: "expressionInput", GoGetter: "ExpressionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpression", GoMethod: "ResetExpression"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration",
-		reflect.TypeOf((*EcsTaskDefinitionProxyConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) EphemeralStorage() EcsTaskDefinitionEphemeralStorageOutputReference {
+	var returns EcsTaskDefinitionEphemeralStorageOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeralStorage",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionProxyConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "containerName", GoGetter: "ContainerName"},
-			_jsii_.MemberProperty{JsiiProperty: "containerNameInput", GoGetter: "ContainerNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionProxyConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) EphemeralStorageInput() *EcsTaskDefinitionEphemeralStorage {
+	var returns *EcsTaskDefinitionEphemeralStorage
+	_jsii_.Get(
+		j,
+		"ephemeralStorageInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform",
-		reflect.TypeOf((*EcsTaskDefinitionRuntimePlatform)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ExecutionRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArn",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionRuntimePlatformOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuArchitecture", GoGetter: "CpuArchitecture"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuArchitectureInput", GoGetter: "CpuArchitectureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "operatingSystemFamily", GoGetter: "OperatingSystemFamily"},
-			_jsii_.MemberProperty{JsiiProperty: "operatingSystemFamilyInput", GoGetter: "OperatingSystemFamilyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCpuArchitecture", GoMethod: "ResetCpuArchitecture"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOperatingSystemFamily", GoMethod: "ResetOperatingSystemFamily"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionRuntimePlatformOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ExecutionRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArnInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolume",
-		reflect.TypeOf((*EcsTaskDefinitionVolume)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Family() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"family",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeDockerVolumeConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) FamilyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"familyInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "autoprovision", GoGetter: "Autoprovision"},
-			_jsii_.MemberProperty{JsiiProperty: "autoprovisionInput", GoGetter: "AutoprovisionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driver", GoGetter: "Driver"},
-			_jsii_.MemberProperty{JsiiProperty: "driverInput", GoGetter: "DriverInput"},
-			_jsii_.MemberProperty{JsiiProperty: "driverOpts", GoGetter: "DriverOpts"},
-			_jsii_.MemberProperty{JsiiProperty: "driverOptsInput", GoGetter: "DriverOptsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoprovision", GoMethod: "ResetAutoprovision"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDriver", GoMethod: "ResetDriver"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDriverOpts", GoMethod: "ResetDriverOpts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScope", GoMethod: "ResetScope"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scope", GoGetter: "Scope"},
-			_jsii_.MemberProperty{JsiiProperty: "scopeInput", GoGetter: "ScopeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessPointId", GoGetter: "AccessPointId"},
-			_jsii_.MemberProperty{JsiiProperty: "accessPointIdInput", GoGetter: "AccessPointIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iam", GoGetter: "Iam"},
-			_jsii_.MemberProperty{JsiiProperty: "iamInput", GoGetter: "IamInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessPointId", GoMethod: "ResetAccessPointId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIam", GoMethod: "ResetIam"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authorizationConfig", GoGetter: "AuthorizationConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizationConfigInput", GoGetter: "AuthorizationConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSystemId", GoGetter: "FileSystemId"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSystemIdInput", GoGetter: "FileSystemIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putAuthorizationConfig", GoMethod: "PutAuthorizationConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizationConfig", GoMethod: "ResetAuthorizationConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRootDirectory", GoMethod: "ResetRootDirectory"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTransitEncryption", GoMethod: "ResetTransitEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTransitEncryptionPort", GoMethod: "ResetTransitEncryptionPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDirectory", GoGetter: "RootDirectory"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDirectoryInput", GoGetter: "RootDirectoryInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "transitEncryption", GoGetter: "TransitEncryption"},
-			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionInput", GoGetter: "TransitEncryptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionPort", GoGetter: "TransitEncryptionPort"},
-			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionPortInput", GoGetter: "TransitEncryptionPortInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) InferenceAccelerator() EcsTaskDefinitionInferenceAcceleratorList {
+	var returns EcsTaskDefinitionInferenceAcceleratorList
+	_jsii_.Get(
+		j,
+		"inferenceAccelerator",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) InferenceAcceleratorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inferenceAcceleratorInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "credentialsParameter", GoGetter: "CredentialsParameter"},
-			_jsii_.MemberProperty{JsiiProperty: "credentialsParameterInput", GoGetter: "CredentialsParameterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "domain", GoGetter: "Domain"},
-			_jsii_.MemberProperty{JsiiProperty: "domainInput", GoGetter: "DomainInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) IpcMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipcMode",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authorizationConfig", GoGetter: "AuthorizationConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizationConfigInput", GoGetter: "AuthorizationConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSystemId", GoGetter: "FileSystemId"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSystemIdInput", GoGetter: "FileSystemIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putAuthorizationConfig", GoMethod: "PutAuthorizationConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDirectory", GoGetter: "RootDirectory"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDirectoryInput", GoGetter: "RootDirectoryInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) IpcModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipcModeInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference",
-		reflect.TypeOf((*EcsTaskDefinitionVolumeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dockerVolumeConfiguration", GoGetter: "DockerVolumeConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "dockerVolumeConfigurationInput", GoGetter: "DockerVolumeConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "efsVolumeConfiguration", GoGetter: "EfsVolumeConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "efsVolumeConfigurationInput", GoGetter: "EfsVolumeConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "fsxWindowsFileServerVolumeConfiguration", GoGetter: "FsxWindowsFileServerVolumeConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "fsxWindowsFileServerVolumeConfigurationInput", GoGetter: "FsxWindowsFileServerVolumeConfigurationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hostPath", GoGetter: "HostPath"},
-			_jsii_.MemberProperty{JsiiProperty: "hostPathInput", GoGetter: "HostPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putDockerVolumeConfiguration", GoMethod: "PutDockerVolumeConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putEfsVolumeConfiguration", GoMethod: "PutEfsVolumeConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putFsxWindowsFileServerVolumeConfiguration", GoMethod: "PutFsxWindowsFileServerVolumeConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDockerVolumeConfiguration", GoMethod: "ResetDockerVolumeConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEfsVolumeConfiguration", GoMethod: "ResetEfsVolumeConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFsxWindowsFileServerVolumeConfiguration", GoMethod: "ResetFsxWindowsFileServerVolumeConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHostPath", GoMethod: "ResetHostPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_EcsTaskDefinitionVolumeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Memory() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) MemoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) NetworkMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) NetworkModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) PidMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pidMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) PidModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pidModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) PlacementConstraints() EcsTaskDefinitionPlacementConstraintsList {
+	var returns EcsTaskDefinitionPlacementConstraintsList
+	_jsii_.Get(
+		j,
+		"placementConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) PlacementConstraintsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"placementConstraintsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ProxyConfiguration() EcsTaskDefinitionProxyConfigurationOutputReference {
+	var returns EcsTaskDefinitionProxyConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"proxyConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ProxyConfigurationInput() *EcsTaskDefinitionProxyConfiguration {
+	var returns *EcsTaskDefinitionProxyConfiguration
+	_jsii_.Get(
+		j,
+		"proxyConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) RequiresCompatibilities() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiresCompatibilities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) RequiresCompatibilitiesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiresCompatibilitiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Revision() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"revision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) RuntimePlatform() EcsTaskDefinitionRuntimePlatformOutputReference {
+	var returns EcsTaskDefinitionRuntimePlatformOutputReference
+	_jsii_.Get(
+		j,
+		"runtimePlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) RuntimePlatformInput() *EcsTaskDefinitionRuntimePlatform {
+	var returns *EcsTaskDefinitionRuntimePlatform
+	_jsii_.Get(
+		j,
+		"runtimePlatformInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TaskRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"taskRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TaskRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"taskRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Volume() EcsTaskDefinitionVolumeList {
+	var returns EcsTaskDefinitionVolumeList
+	_jsii_.Get(
+		j,
+		"volume",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition aws_ecs_task_definition} Resource.
+func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) EcsTaskDefinition {
+	_init_.Initialize()
+
+	if err := validateNewEcsTaskDefinitionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_EcsTaskDefinition{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition aws_ecs_task_definition} Resource.
+func NewEcsTaskDefinition_Override(e EcsTaskDefinition, scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		[]interface{}{scope, id, config},
+		e,
 	)
 }
+
+func (j *jsiiProxy_EcsTaskDefinition)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetContainerDefinitions(val *string) {
+	if err := j.validateSetContainerDefinitionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"containerDefinitions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetCpu(val *string) {
+	if err := j.validateSetCpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cpu",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetExecutionRoleArn(val *string) {
+	if err := j.validateSetExecutionRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetFamily(val *string) {
+	if err := j.validateSetFamilyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"family",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetIpcMode(val *string) {
+	if err := j.validateSetIpcModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipcMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetMemory(val *string) {
+	if err := j.validateSetMemoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetNetworkMode(val *string) {
+	if err := j.validateSetNetworkModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetPidMode(val *string) {
+	if err := j.validateSetPidModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pidMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetRequiresCompatibilities(val *[]*string) {
+	if err := j.validateSetRequiresCompatibilitiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requiresCompatibilities",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetTaskRoleArn(val *string) {
+	if err := j.validateSetTaskRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"taskRoleArn",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func EcsTaskDefinition_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEcsTaskDefinition_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEcsTaskDefinition_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EcsTaskDefinition_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEcsTaskDefinition_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func EcsTaskDefinition_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		e,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		e,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		e,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		e,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		e,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) PutEphemeralStorage(value *EcsTaskDefinitionEphemeralStorage) {
+	if err := e.validatePutEphemeralStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putEphemeralStorage",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) PutInferenceAccelerator(value interface{}) {
+	if err := e.validatePutInferenceAcceleratorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putInferenceAccelerator",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) PutPlacementConstraints(value interface{}) {
+	if err := e.validatePutPlacementConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putPlacementConstraints",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) PutProxyConfiguration(value *EcsTaskDefinitionProxyConfiguration) {
+	if err := e.validatePutProxyConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProxyConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) PutRuntimePlatform(value *EcsTaskDefinitionRuntimePlatform) {
+	if err := e.validatePutRuntimePlatformParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putRuntimePlatform",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) PutVolume(value interface{}) {
+	if err := e.validatePutVolumeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putVolume",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetCpu() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCpu",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetEphemeralStorage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEphemeralStorage",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetExecutionRoleArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetExecutionRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetInferenceAccelerator() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInferenceAccelerator",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetIpcMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpcMode",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetMemory() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMemory",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetNetworkMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNetworkMode",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetPidMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPidMode",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetPlacementConstraints() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPlacementConstraints",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetProxyConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProxyConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetRequiresCompatibilities() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRequiresCompatibilities",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetRuntimePlatform() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRuntimePlatform",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSkipDestroy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetTaskRoleArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTaskRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetVolume() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetVolume",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

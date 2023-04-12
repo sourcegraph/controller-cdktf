@@ -1,0 +1,36 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googleassuredworkloadsworkload",
+    srcs = [
+        "GoogleAssuredWorkloadsWorkload.go",
+        "GoogleAssuredWorkloadsWorkloadConfig.go",
+        "GoogleAssuredWorkloadsWorkloadKmsSettings.go",
+        "GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference.go",
+        "GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference__checks.go",
+        "GoogleAssuredWorkloadsWorkloadResourceSettings.go",
+        "GoogleAssuredWorkloadsWorkloadResourceSettingsList.go",
+        "GoogleAssuredWorkloadsWorkloadResourceSettingsList__checks.go",
+        "GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference.go",
+        "GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference__checks.go",
+        "GoogleAssuredWorkloadsWorkloadResources.go",
+        "GoogleAssuredWorkloadsWorkloadResourcesList.go",
+        "GoogleAssuredWorkloadsWorkloadResourcesList__checks.go",
+        "GoogleAssuredWorkloadsWorkloadResourcesOutputReference.go",
+        "GoogleAssuredWorkloadsWorkloadResourcesOutputReference__checks.go",
+        "GoogleAssuredWorkloadsWorkloadTimeouts.go",
+        "GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference.go",
+        "GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference__checks.go",
+        "GoogleAssuredWorkloadsWorkload__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googleassuredworkloadsworkload",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googleassuredworkloadsworkload/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

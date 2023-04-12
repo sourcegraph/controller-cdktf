@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "networkservicesedgecachekeyset",
+    srcs = [
+        "NetworkServicesEdgeCacheKeyset.go",
+        "NetworkServicesEdgeCacheKeysetConfig.go",
+        "NetworkServicesEdgeCacheKeysetPublicKey.go",
+        "NetworkServicesEdgeCacheKeysetPublicKeyList.go",
+        "NetworkServicesEdgeCacheKeysetPublicKeyList__checks.go",
+        "NetworkServicesEdgeCacheKeysetPublicKeyOutputReference.go",
+        "NetworkServicesEdgeCacheKeysetPublicKeyOutputReference__checks.go",
+        "NetworkServicesEdgeCacheKeysetTimeouts.go",
+        "NetworkServicesEdgeCacheKeysetTimeoutsOutputReference.go",
+        "NetworkServicesEdgeCacheKeysetTimeoutsOutputReference__checks.go",
+        "NetworkServicesEdgeCacheKeyset__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/networkservicesedgecachekeyset",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/jsii",
+        "//gen/google/networkservicesedgecachekeyset/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

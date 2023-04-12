@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "certificatemanagercertificatemap",
+    srcs = [
+        "CertificateManagerCertificateMap.go",
+        "CertificateManagerCertificateMapConfig.go",
+        "CertificateManagerCertificateMapGclbTargets.go",
+        "CertificateManagerCertificateMapGclbTargetsIpConfigs.go",
+        "CertificateManagerCertificateMapGclbTargetsIpConfigsList.go",
+        "CertificateManagerCertificateMapGclbTargetsIpConfigsList__checks.go",
+        "CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference.go",
+        "CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference__checks.go",
+        "CertificateManagerCertificateMapGclbTargetsList.go",
+        "CertificateManagerCertificateMapGclbTargetsList__checks.go",
+        "CertificateManagerCertificateMapGclbTargetsOutputReference.go",
+        "CertificateManagerCertificateMapGclbTargetsOutputReference__checks.go",
+        "CertificateManagerCertificateMapTimeouts.go",
+        "CertificateManagerCertificateMapTimeoutsOutputReference.go",
+        "CertificateManagerCertificateMapTimeoutsOutputReference__checks.go",
+        "CertificateManagerCertificateMap__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/certificatemanagercertificatemap",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/certificatemanagercertificatemap/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

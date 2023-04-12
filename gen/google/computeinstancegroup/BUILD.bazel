@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "computeinstancegroup",
+    srcs = [
+        "ComputeInstanceGroup.go",
+        "ComputeInstanceGroupConfig.go",
+        "ComputeInstanceGroupNamedPort.go",
+        "ComputeInstanceGroupNamedPortList.go",
+        "ComputeInstanceGroupNamedPortList__checks.go",
+        "ComputeInstanceGroupNamedPortOutputReference.go",
+        "ComputeInstanceGroupNamedPortOutputReference__checks.go",
+        "ComputeInstanceGroupTimeouts.go",
+        "ComputeInstanceGroupTimeoutsOutputReference.go",
+        "ComputeInstanceGroupTimeoutsOutputReference__checks.go",
+        "ComputeInstanceGroup__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/google/computeinstancegroup",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/google/computeinstancegroup/internal",
+        "//gen/google/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

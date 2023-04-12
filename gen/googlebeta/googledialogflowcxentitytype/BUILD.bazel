@@ -1,0 +1,33 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googledialogflowcxentitytype",
+    srcs = [
+        "GoogleDialogflowCxEntityType.go",
+        "GoogleDialogflowCxEntityTypeConfig.go",
+        "GoogleDialogflowCxEntityTypeEntities.go",
+        "GoogleDialogflowCxEntityTypeEntitiesList.go",
+        "GoogleDialogflowCxEntityTypeEntitiesList__checks.go",
+        "GoogleDialogflowCxEntityTypeEntitiesOutputReference.go",
+        "GoogleDialogflowCxEntityTypeEntitiesOutputReference__checks.go",
+        "GoogleDialogflowCxEntityTypeExcludedPhrases.go",
+        "GoogleDialogflowCxEntityTypeExcludedPhrasesList.go",
+        "GoogleDialogflowCxEntityTypeExcludedPhrasesList__checks.go",
+        "GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference.go",
+        "GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference__checks.go",
+        "GoogleDialogflowCxEntityTypeTimeouts.go",
+        "GoogleDialogflowCxEntityTypeTimeoutsOutputReference.go",
+        "GoogleDialogflowCxEntityTypeTimeoutsOutputReference__checks.go",
+        "GoogleDialogflowCxEntityType__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googledialogflowcxentitytype",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googledialogflowcxentitytype/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

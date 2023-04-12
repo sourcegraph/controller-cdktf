@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "redshiftclusteriamroles",
+    srcs = [
+        "RedshiftClusterIamRoles.go",
+        "RedshiftClusterIamRolesConfig.go",
+        "RedshiftClusterIamRolesTimeouts.go",
+        "RedshiftClusterIamRolesTimeoutsOutputReference.go",
+        "RedshiftClusterIamRolesTimeoutsOutputReference__checks.go",
+        "RedshiftClusterIamRoles__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/redshiftclusteriamroles",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/redshiftclusteriamroles/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

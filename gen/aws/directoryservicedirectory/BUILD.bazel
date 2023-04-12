@@ -1,0 +1,29 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "directoryservicedirectory",
+    srcs = [
+        "DirectoryServiceDirectory.go",
+        "DirectoryServiceDirectoryConfig.go",
+        "DirectoryServiceDirectoryConnectSettings.go",
+        "DirectoryServiceDirectoryConnectSettingsOutputReference.go",
+        "DirectoryServiceDirectoryConnectSettingsOutputReference__checks.go",
+        "DirectoryServiceDirectoryTimeouts.go",
+        "DirectoryServiceDirectoryTimeoutsOutputReference.go",
+        "DirectoryServiceDirectoryTimeoutsOutputReference__checks.go",
+        "DirectoryServiceDirectoryVpcSettings.go",
+        "DirectoryServiceDirectoryVpcSettingsOutputReference.go",
+        "DirectoryServiceDirectoryVpcSettingsOutputReference__checks.go",
+        "DirectoryServiceDirectory__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/directoryservicedirectory",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/directoryservicedirectory/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

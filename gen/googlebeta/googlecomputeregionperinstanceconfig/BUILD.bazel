@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlecomputeregionperinstanceconfig",
+    srcs = [
+        "GoogleComputeRegionPerInstanceConfig.go",
+        "GoogleComputeRegionPerInstanceConfigConfig.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedState.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateDisk.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateDiskList.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateDiskList__checks.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference__checks.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference.go",
+        "GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference__checks.go",
+        "GoogleComputeRegionPerInstanceConfigTimeouts.go",
+        "GoogleComputeRegionPerInstanceConfigTimeoutsOutputReference.go",
+        "GoogleComputeRegionPerInstanceConfigTimeoutsOutputReference__checks.go",
+        "GoogleComputeRegionPerInstanceConfig__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlecomputeregionperinstanceconfig",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlecomputeregionperinstanceconfig/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

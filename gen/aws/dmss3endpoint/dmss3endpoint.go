@@ -1,248 +1,2799 @@
 package dmss3endpoint
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/dmss3endpoint/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.dmsS3Endpoint.DmsS3Endpoint",
-		reflect.TypeOf((*DmsS3Endpoint)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
-			_jsii_.MemberProperty{JsiiProperty: "addColumnNameInput", GoGetter: "AddColumnNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "addTrailingPaddingCharacter", GoGetter: "AddTrailingPaddingCharacter"},
-			_jsii_.MemberProperty{JsiiProperty: "addTrailingPaddingCharacterInput", GoGetter: "AddTrailingPaddingCharacterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketFolder", GoGetter: "BucketFolder"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketFolderInput", GoGetter: "BucketFolderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cannedAclForObjects", GoGetter: "CannedAclForObjects"},
-			_jsii_.MemberProperty{JsiiProperty: "cannedAclForObjectsInput", GoGetter: "CannedAclForObjectsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsAndUpdates", GoGetter: "CdcInsertsAndUpdates"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsAndUpdatesInput", GoGetter: "CdcInsertsAndUpdatesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsOnly", GoGetter: "CdcInsertsOnly"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcInsertsOnlyInput", GoGetter: "CdcInsertsOnlyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMaxBatchInterval", GoGetter: "CdcMaxBatchInterval"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMaxBatchIntervalInput", GoGetter: "CdcMaxBatchIntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMinFileSize", GoGetter: "CdcMinFileSize"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcMinFileSizeInput", GoGetter: "CdcMinFileSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcPath", GoGetter: "CdcPath"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcPathInput", GoGetter: "CdcPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateArnInput", GoGetter: "CertificateArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "compressionType", GoGetter: "CompressionType"},
-			_jsii_.MemberProperty{JsiiProperty: "compressionTypeInput", GoGetter: "CompressionTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "csvDelimiter", GoGetter: "CsvDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "csvDelimiterInput", GoGetter: "CsvDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNoSupValue", GoGetter: "CsvNoSupValue"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNoSupValueInput", GoGetter: "CsvNoSupValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNullValue", GoGetter: "CsvNullValue"},
-			_jsii_.MemberProperty{JsiiProperty: "csvNullValueInput", GoGetter: "CsvNullValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "csvRowDelimiter", GoGetter: "CsvRowDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "csvRowDelimiterInput", GoGetter: "CsvRowDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dataFormat", GoGetter: "DataFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "dataFormatInput", GoGetter: "DataFormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dataPageSize", GoGetter: "DataPageSize"},
-			_jsii_.MemberProperty{JsiiProperty: "dataPageSizeInput", GoGetter: "DataPageSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionDelimiter", GoGetter: "DatePartitionDelimiter"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionDelimiterInput", GoGetter: "DatePartitionDelimiterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionEnabled", GoGetter: "DatePartitionEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionEnabledInput", GoGetter: "DatePartitionEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionSequence", GoGetter: "DatePartitionSequence"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionSequenceInput", GoGetter: "DatePartitionSequenceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionTimezone", GoGetter: "DatePartitionTimezone"},
-			_jsii_.MemberProperty{JsiiProperty: "datePartitionTimezoneInput", GoGetter: "DatePartitionTimezoneInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "dictPageSizeLimit", GoGetter: "DictPageSizeLimit"},
-			_jsii_.MemberProperty{JsiiProperty: "dictPageSizeLimitInput", GoGetter: "DictPageSizeLimitInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableStatistics", GoGetter: "EnableStatistics"},
-			_jsii_.MemberProperty{JsiiProperty: "enableStatisticsInput", GoGetter: "EnableStatisticsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encodingType", GoGetter: "EncodingType"},
-			_jsii_.MemberProperty{JsiiProperty: "encodingTypeInput", GoGetter: "EncodingTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionMode", GoGetter: "EncryptionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionModeInput", GoGetter: "EncryptionModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointArn", GoGetter: "EndpointArn"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointId", GoGetter: "EndpointId"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointIdInput", GoGetter: "EndpointIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointType", GoGetter: "EndpointType"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointTypeInput", GoGetter: "EndpointTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "engineDisplayName", GoGetter: "EngineDisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedBucketOwner", GoGetter: "ExpectedBucketOwner"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedBucketOwnerInput", GoGetter: "ExpectedBucketOwnerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "externalId", GoGetter: "ExternalId"},
-			_jsii_.MemberProperty{JsiiProperty: "externalTableDefinition", GoGetter: "ExternalTableDefinition"},
-			_jsii_.MemberProperty{JsiiProperty: "externalTableDefinitionInput", GoGetter: "ExternalTableDefinitionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRows", GoGetter: "IgnoreHeaderRows"},
-			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRowsInput", GoGetter: "IgnoreHeaderRowsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoad", GoGetter: "IncludeOpForFullLoad"},
-			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoadInput", GoGetter: "IncludeOpForFullLoadInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetTimestampInMillisecond", GoGetter: "ParquetTimestampInMillisecond"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetTimestampInMillisecondInput", GoGetter: "ParquetTimestampInMillisecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetVersion", GoGetter: "ParquetVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "parquetVersionInput", GoGetter: "ParquetVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "preserveTransactions", GoGetter: "PreserveTransactions"},
-			_jsii_.MemberProperty{JsiiProperty: "preserveTransactionsInput", GoGetter: "PreserveTransactionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAddColumnName", GoMethod: "ResetAddColumnName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAddTrailingPaddingCharacter", GoMethod: "ResetAddTrailingPaddingCharacter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucketFolder", GoMethod: "ResetBucketFolder"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCannedAclForObjects", GoMethod: "ResetCannedAclForObjects"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcInsertsAndUpdates", GoMethod: "ResetCdcInsertsAndUpdates"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcInsertsOnly", GoMethod: "ResetCdcInsertsOnly"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcMaxBatchInterval", GoMethod: "ResetCdcMaxBatchInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcMinFileSize", GoMethod: "ResetCdcMinFileSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcPath", GoMethod: "ResetCdcPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCertificateArn", GoMethod: "ResetCertificateArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCompressionType", GoMethod: "ResetCompressionType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvDelimiter", GoMethod: "ResetCsvDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvNoSupValue", GoMethod: "ResetCsvNoSupValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvNullValue", GoMethod: "ResetCsvNullValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsvRowDelimiter", GoMethod: "ResetCsvRowDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataFormat", GoMethod: "ResetDataFormat"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataPageSize", GoMethod: "ResetDataPageSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionDelimiter", GoMethod: "ResetDatePartitionDelimiter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionEnabled", GoMethod: "ResetDatePartitionEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionSequence", GoMethod: "ResetDatePartitionSequence"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatePartitionTimezone", GoMethod: "ResetDatePartitionTimezone"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDictPageSizeLimit", GoMethod: "ResetDictPageSizeLimit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableStatistics", GoMethod: "ResetEnableStatistics"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncodingType", GoMethod: "ResetEncodingType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionMode", GoMethod: "ResetEncryptionMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpectedBucketOwner", GoMethod: "ResetExpectedBucketOwner"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExternalTableDefinition", GoMethod: "ResetExternalTableDefinition"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreHeaderRows", GoMethod: "ResetIgnoreHeaderRows"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeOpForFullLoad", GoMethod: "ResetIncludeOpForFullLoad"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyArn", GoMethod: "ResetKmsKeyArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxFileSize", GoMethod: "ResetMaxFileSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParquetTimestampInMillisecond", GoMethod: "ResetParquetTimestampInMillisecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParquetVersion", GoMethod: "ResetParquetVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreserveTransactions", GoMethod: "ResetPreserveTransactions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRfc4180", GoMethod: "ResetRfc4180"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRowGroupLength", GoMethod: "ResetRowGroupLength"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServerSideEncryptionKmsKeyId", GoMethod: "ResetServerSideEncryptionKmsKeyId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslMode", GoMethod: "ResetSslMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimestampColumnName", GoMethod: "ResetTimestampColumnName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseCsvNoSupValue", GoMethod: "ResetUseCsvNoSupValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseTaskStartTimeForFullLoadTimestamp", GoMethod: "ResetUseTaskStartTimeForFullLoadTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "rfc4180", GoGetter: "Rfc4180"},
-			_jsii_.MemberProperty{JsiiProperty: "rfc4180Input", GoGetter: "Rfc4180Input"},
-			_jsii_.MemberProperty{JsiiProperty: "rowGroupLength", GoGetter: "RowGroupLength"},
-			_jsii_.MemberProperty{JsiiProperty: "rowGroupLengthInput", GoGetter: "RowGroupLengthInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionKmsKeyId", GoGetter: "ServerSideEncryptionKmsKeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "serverSideEncryptionKmsKeyIdInput", GoGetter: "ServerSideEncryptionKmsKeyIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sslMode", GoGetter: "SslMode"},
-			_jsii_.MemberProperty{JsiiProperty: "sslModeInput", GoGetter: "SslModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampColumnName", GoGetter: "TimestampColumnName"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampColumnNameInput", GoGetter: "TimestampColumnNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValue", GoGetter: "UseCsvNoSupValue"},
-			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValueInput", GoGetter: "UseCsvNoSupValueInput"},
-			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestamp", GoGetter: "UseTaskStartTimeForFullLoadTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestampInput", GoGetter: "UseTaskStartTimeForFullLoadTimestampInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsS3Endpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint aws_dms_s3_endpoint}.
+type DmsS3Endpoint interface {
+	cdktf.TerraformResource
+	AddColumnName() interface{}
+	SetAddColumnName(val interface{})
+	AddColumnNameInput() interface{}
+	AddTrailingPaddingCharacter() interface{}
+	SetAddTrailingPaddingCharacter(val interface{})
+	AddTrailingPaddingCharacterInput() interface{}
+	BucketFolder() *string
+	SetBucketFolder(val *string)
+	BucketFolderInput() *string
+	BucketName() *string
+	SetBucketName(val *string)
+	BucketNameInput() *string
+	CannedAclForObjects() *string
+	SetCannedAclForObjects(val *string)
+	CannedAclForObjectsInput() *string
+	CdcInsertsAndUpdates() interface{}
+	SetCdcInsertsAndUpdates(val interface{})
+	CdcInsertsAndUpdatesInput() interface{}
+	CdcInsertsOnly() interface{}
+	SetCdcInsertsOnly(val interface{})
+	CdcInsertsOnlyInput() interface{}
+	CdcMaxBatchInterval() *float64
+	SetCdcMaxBatchInterval(val *float64)
+	CdcMaxBatchIntervalInput() *float64
+	CdcMinFileSize() *float64
+	SetCdcMinFileSize(val *float64)
+	CdcMinFileSizeInput() *float64
+	CdcPath() *string
+	SetCdcPath(val *string)
+	CdcPathInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CertificateArn() *string
+	SetCertificateArn(val *string)
+	CertificateArnInput() *string
+	CompressionType() *string
+	SetCompressionType(val *string)
+	CompressionTypeInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CsvDelimiter() *string
+	SetCsvDelimiter(val *string)
+	CsvDelimiterInput() *string
+	CsvNoSupValue() *string
+	SetCsvNoSupValue(val *string)
+	CsvNoSupValueInput() *string
+	CsvNullValue() *string
+	SetCsvNullValue(val *string)
+	CsvNullValueInput() *string
+	CsvRowDelimiter() *string
+	SetCsvRowDelimiter(val *string)
+	CsvRowDelimiterInput() *string
+	DataFormat() *string
+	SetDataFormat(val *string)
+	DataFormatInput() *string
+	DataPageSize() *float64
+	SetDataPageSize(val *float64)
+	DataPageSizeInput() *float64
+	DatePartitionDelimiter() *string
+	SetDatePartitionDelimiter(val *string)
+	DatePartitionDelimiterInput() *string
+	DatePartitionEnabled() interface{}
+	SetDatePartitionEnabled(val interface{})
+	DatePartitionEnabledInput() interface{}
+	DatePartitionSequence() *string
+	SetDatePartitionSequence(val *string)
+	DatePartitionSequenceInput() *string
+	DatePartitionTimezone() *string
+	SetDatePartitionTimezone(val *string)
+	DatePartitionTimezoneInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DictPageSizeLimit() *float64
+	SetDictPageSizeLimit(val *float64)
+	DictPageSizeLimitInput() *float64
+	EnableStatistics() interface{}
+	SetEnableStatistics(val interface{})
+	EnableStatisticsInput() interface{}
+	EncodingType() *string
+	SetEncodingType(val *string)
+	EncodingTypeInput() *string
+	EncryptionMode() *string
+	SetEncryptionMode(val *string)
+	EncryptionModeInput() *string
+	EndpointArn() *string
+	EndpointId() *string
+	SetEndpointId(val *string)
+	EndpointIdInput() *string
+	EndpointType() *string
+	SetEndpointType(val *string)
+	EndpointTypeInput() *string
+	EngineDisplayName() *string
+	ExpectedBucketOwner() *string
+	SetExpectedBucketOwner(val *string)
+	ExpectedBucketOwnerInput() *string
+	ExternalId() *string
+	ExternalTableDefinition() *string
+	SetExternalTableDefinition(val *string)
+	ExternalTableDefinitionInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IgnoreHeaderRows() *float64
+	SetIgnoreHeaderRows(val *float64)
+	IgnoreHeaderRowsInput() *float64
+	IncludeOpForFullLoad() interface{}
+	SetIncludeOpForFullLoad(val interface{})
+	IncludeOpForFullLoadInput() interface{}
+	KmsKeyArn() *string
+	SetKmsKeyArn(val *string)
+	KmsKeyArnInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxFileSize() *float64
+	SetMaxFileSize(val *float64)
+	MaxFileSizeInput() *float64
+	// The tree node.
+	Node() constructs.Node
+	ParquetTimestampInMillisecond() interface{}
+	SetParquetTimestampInMillisecond(val interface{})
+	ParquetTimestampInMillisecondInput() interface{}
+	ParquetVersion() *string
+	SetParquetVersion(val *string)
+	ParquetVersionInput() *string
+	PreserveTransactions() interface{}
+	SetPreserveTransactions(val interface{})
+	PreserveTransactionsInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Rfc4180() interface{}
+	SetRfc4180(val interface{})
+	Rfc4180Input() interface{}
+	RowGroupLength() *float64
+	SetRowGroupLength(val *float64)
+	RowGroupLengthInput() *float64
+	ServerSideEncryptionKmsKeyId() *string
+	SetServerSideEncryptionKmsKeyId(val *string)
+	ServerSideEncryptionKmsKeyIdInput() *string
+	ServiceAccessRoleArn() *string
+	SetServiceAccessRoleArn(val *string)
+	ServiceAccessRoleArnInput() *string
+	SslMode() *string
+	SetSslMode(val *string)
+	SslModeInput() *string
+	Status() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() DmsS3EndpointTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	TimestampColumnName() *string
+	SetTimestampColumnName(val *string)
+	TimestampColumnNameInput() *string
+	UseCsvNoSupValue() interface{}
+	SetUseCsvNoSupValue(val interface{})
+	UseCsvNoSupValueInput() interface{}
+	UseTaskStartTimeForFullLoadTimestamp() interface{}
+	SetUseTaskStartTimeForFullLoadTimestamp(val interface{})
+	UseTaskStartTimeForFullLoadTimestampInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DmsS3EndpointTimeouts)
+	ResetAddColumnName()
+	ResetAddTrailingPaddingCharacter()
+	ResetBucketFolder()
+	ResetCannedAclForObjects()
+	ResetCdcInsertsAndUpdates()
+	ResetCdcInsertsOnly()
+	ResetCdcMaxBatchInterval()
+	ResetCdcMinFileSize()
+	ResetCdcPath()
+	ResetCertificateArn()
+	ResetCompressionType()
+	ResetCsvDelimiter()
+	ResetCsvNoSupValue()
+	ResetCsvNullValue()
+	ResetCsvRowDelimiter()
+	ResetDataFormat()
+	ResetDataPageSize()
+	ResetDatePartitionDelimiter()
+	ResetDatePartitionEnabled()
+	ResetDatePartitionSequence()
+	ResetDatePartitionTimezone()
+	ResetDictPageSizeLimit()
+	ResetEnableStatistics()
+	ResetEncodingType()
+	ResetEncryptionMode()
+	ResetExpectedBucketOwner()
+	ResetExternalTableDefinition()
+	ResetId()
+	ResetIgnoreHeaderRows()
+	ResetIncludeOpForFullLoad()
+	ResetKmsKeyArn()
+	ResetMaxFileSize()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetParquetTimestampInMillisecond()
+	ResetParquetVersion()
+	ResetPreserveTransactions()
+	ResetRfc4180()
+	ResetRowGroupLength()
+	ResetServerSideEncryptionKmsKeyId()
+	ResetSslMode()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	ResetTimestampColumnName()
+	ResetUseCsvNoSupValue()
+	ResetUseTaskStartTimeForFullLoadTimestamp()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DmsS3Endpoint
+type jsiiProxy_DmsS3Endpoint struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) AddColumnName() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addColumnName",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsS3Endpoint.DmsS3EndpointConfig",
-		reflect.TypeOf((*DmsS3EndpointConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) AddColumnNameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addColumnNameInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsS3Endpoint.DmsS3EndpointTimeouts",
-		reflect.TypeOf((*DmsS3EndpointTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) AddTrailingPaddingCharacter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addTrailingPaddingCharacter",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
-		reflect.TypeOf((*DmsS3EndpointTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsS3EndpointTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) AddTrailingPaddingCharacterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addTrailingPaddingCharacterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) BucketFolder() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketFolder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) BucketFolderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketFolderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) BucketName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) BucketNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CannedAclForObjects() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cannedAclForObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CannedAclForObjectsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cannedAclForObjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcInsertsAndUpdates() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cdcInsertsAndUpdates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcInsertsAndUpdatesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cdcInsertsAndUpdatesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcInsertsOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cdcInsertsOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcInsertsOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cdcInsertsOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcMaxBatchInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cdcMaxBatchInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcMaxBatchIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cdcMaxBatchIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcMinFileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cdcMinFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcMinFileSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cdcMinFileSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdcPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdcPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdcPathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CertificateArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CertificateArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CompressionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CompressionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvDelimiter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvDelimiter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvDelimiterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvDelimiterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvNoSupValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvNoSupValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvNoSupValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvNoSupValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvNullValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvNullValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvNullValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvNullValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvRowDelimiter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvRowDelimiter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) CsvRowDelimiterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csvRowDelimiterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DataFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DataFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataFormatInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DataPageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataPageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DataPageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataPageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionDelimiter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datePartitionDelimiter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionDelimiterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datePartitionDelimiterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"datePartitionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"datePartitionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionSequence() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datePartitionSequence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionSequenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datePartitionSequenceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionTimezone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datePartitionTimezone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DatePartitionTimezoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datePartitionTimezoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DictPageSizeLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dictPageSizeLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DictPageSizeLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dictPageSizeLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EnableStatistics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableStatistics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EnableStatisticsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableStatisticsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EncodingType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EncodingTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EndpointArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EndpointTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) EngineDisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineDisplayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ExpectedBucketOwner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedBucketOwner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ExpectedBucketOwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedBucketOwnerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ExternalTableDefinition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalTableDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ExternalTableDefinitionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalTableDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) IgnoreHeaderRows() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ignoreHeaderRows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) IgnoreHeaderRowsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ignoreHeaderRowsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) IncludeOpForFullLoad() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeOpForFullLoad",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) IncludeOpForFullLoadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeOpForFullLoadInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) KmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) KmsKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) MaxFileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) MaxFileSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxFileSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ParquetTimestampInMillisecond() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parquetTimestampInMillisecond",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ParquetTimestampInMillisecondInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parquetTimestampInMillisecondInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ParquetVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parquetVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ParquetVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parquetVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) PreserveTransactions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preserveTransactions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) PreserveTransactionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preserveTransactionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Rfc4180() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rfc4180",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Rfc4180Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rfc4180Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) RowGroupLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rowGroupLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) RowGroupLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rowGroupLengthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ServerSideEncryptionKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverSideEncryptionKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ServerSideEncryptionKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverSideEncryptionKmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ServiceAccessRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) ServiceAccessRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) SslMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) SslModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) Timeouts() DmsS3EndpointTimeoutsOutputReference {
+	var returns DmsS3EndpointTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TimestampColumnName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timestampColumnName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) TimestampColumnNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timestampColumnNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) UseCsvNoSupValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useCsvNoSupValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) UseCsvNoSupValueInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useCsvNoSupValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) UseTaskStartTimeForFullLoadTimestamp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTaskStartTimeForFullLoadTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) UseTaskStartTimeForFullLoadTimestampInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTaskStartTimeForFullLoadTimestampInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
+func NewDmsS3Endpoint(scope constructs.Construct, id *string, config *DmsS3EndpointConfig) DmsS3Endpoint {
+	_init_.Initialize()
+
+	if err := validateNewDmsS3EndpointParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DmsS3Endpoint{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
+func NewDmsS3Endpoint_Override(d DmsS3Endpoint, scope constructs.Construct, id *string, config *DmsS3EndpointConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		[]interface{}{scope, id, config},
+		d,
 	)
 }
+
+func (j *jsiiProxy_DmsS3Endpoint)SetAddColumnName(val interface{}) {
+	if err := j.validateSetAddColumnNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addColumnName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetAddTrailingPaddingCharacter(val interface{}) {
+	if err := j.validateSetAddTrailingPaddingCharacterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addTrailingPaddingCharacter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetBucketFolder(val *string) {
+	if err := j.validateSetBucketFolderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketFolder",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCannedAclForObjects(val *string) {
+	if err := j.validateSetCannedAclForObjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cannedAclForObjects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCdcInsertsAndUpdates(val interface{}) {
+	if err := j.validateSetCdcInsertsAndUpdatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcInsertsAndUpdates",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCdcInsertsOnly(val interface{}) {
+	if err := j.validateSetCdcInsertsOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcInsertsOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCdcMaxBatchInterval(val *float64) {
+	if err := j.validateSetCdcMaxBatchIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcMaxBatchInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCdcMinFileSize(val *float64) {
+	if err := j.validateSetCdcMinFileSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcMinFileSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCdcPath(val *string) {
+	if err := j.validateSetCdcPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCertificateArn(val *string) {
+	if err := j.validateSetCertificateArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCompressionType(val *string) {
+	if err := j.validateSetCompressionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressionType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCsvDelimiter(val *string) {
+	if err := j.validateSetCsvDelimiterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"csvDelimiter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCsvNoSupValue(val *string) {
+	if err := j.validateSetCsvNoSupValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"csvNoSupValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCsvNullValue(val *string) {
+	if err := j.validateSetCsvNullValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"csvNullValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetCsvRowDelimiter(val *string) {
+	if err := j.validateSetCsvRowDelimiterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"csvRowDelimiter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDataFormat(val *string) {
+	if err := j.validateSetDataFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDataPageSize(val *float64) {
+	if err := j.validateSetDataPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataPageSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDatePartitionDelimiter(val *string) {
+	if err := j.validateSetDatePartitionDelimiterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datePartitionDelimiter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDatePartitionEnabled(val interface{}) {
+	if err := j.validateSetDatePartitionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datePartitionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDatePartitionSequence(val *string) {
+	if err := j.validateSetDatePartitionSequenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datePartitionSequence",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDatePartitionTimezone(val *string) {
+	if err := j.validateSetDatePartitionTimezoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datePartitionTimezone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetDictPageSizeLimit(val *float64) {
+	if err := j.validateSetDictPageSizeLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dictPageSizeLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetEnableStatistics(val interface{}) {
+	if err := j.validateSetEnableStatisticsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableStatistics",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetEncodingType(val *string) {
+	if err := j.validateSetEncodingTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encodingType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetEncryptionMode(val *string) {
+	if err := j.validateSetEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetEndpointId(val *string) {
+	if err := j.validateSetEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetEndpointType(val *string) {
+	if err := j.validateSetEndpointTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetExpectedBucketOwner(val *string) {
+	if err := j.validateSetExpectedBucketOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedBucketOwner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetExternalTableDefinition(val *string) {
+	if err := j.validateSetExternalTableDefinitionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalTableDefinition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetIgnoreHeaderRows(val *float64) {
+	if err := j.validateSetIgnoreHeaderRowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreHeaderRows",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetIncludeOpForFullLoad(val interface{}) {
+	if err := j.validateSetIncludeOpForFullLoadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeOpForFullLoad",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetKmsKeyArn(val *string) {
+	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetMaxFileSize(val *float64) {
+	if err := j.validateSetMaxFileSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxFileSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetParquetTimestampInMillisecond(val interface{}) {
+	if err := j.validateSetParquetTimestampInMillisecondParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parquetTimestampInMillisecond",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetParquetVersion(val *string) {
+	if err := j.validateSetParquetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parquetVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetPreserveTransactions(val interface{}) {
+	if err := j.validateSetPreserveTransactionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preserveTransactions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetRfc4180(val interface{}) {
+	if err := j.validateSetRfc4180Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rfc4180",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetRowGroupLength(val *float64) {
+	if err := j.validateSetRowGroupLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowGroupLength",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetServerSideEncryptionKmsKeyId(val *string) {
+	if err := j.validateSetServerSideEncryptionKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverSideEncryptionKmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetServiceAccessRoleArn(val *string) {
+	if err := j.validateSetServiceAccessRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccessRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetSslMode(val *string) {
+	if err := j.validateSetSslModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetTimestampColumnName(val *string) {
+	if err := j.validateSetTimestampColumnNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timestampColumnName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetUseCsvNoSupValue(val interface{}) {
+	if err := j.validateSetUseCsvNoSupValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useCsvNoSupValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetUseTaskStartTimeForFullLoadTimestamp(val interface{}) {
+	if err := j.validateSetUseTaskStartTimeForFullLoadTimestampParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useTaskStartTimeForFullLoadTimestamp",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DmsS3Endpoint_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsS3Endpoint_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DmsS3Endpoint_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsS3Endpoint_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DmsS3Endpoint_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsS3Endpoint_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DmsS3Endpoint_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) PutTimeouts(value *DmsS3EndpointTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetAddColumnName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAddColumnName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetAddTrailingPaddingCharacter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAddTrailingPaddingCharacter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetBucketFolder() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBucketFolder",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCannedAclForObjects() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCannedAclForObjects",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCdcInsertsAndUpdates() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcInsertsAndUpdates",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCdcInsertsOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcInsertsOnly",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCdcMaxBatchInterval() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcMaxBatchInterval",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCdcMinFileSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcMinFileSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCdcPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcPath",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCertificateArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCertificateArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCompressionType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCompressionType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCsvDelimiter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCsvDelimiter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCsvNoSupValue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCsvNoSupValue",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCsvNullValue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCsvNullValue",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetCsvRowDelimiter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCsvRowDelimiter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDataFormat() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataFormat",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDataPageSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataPageSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDatePartitionDelimiter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatePartitionDelimiter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDatePartitionEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatePartitionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDatePartitionSequence() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatePartitionSequence",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDatePartitionTimezone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatePartitionTimezone",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDictPageSizeLimit() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDictPageSizeLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetEnableStatistics() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableStatistics",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetEncodingType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEncodingType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetEncryptionMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEncryptionMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetExpectedBucketOwner() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpectedBucketOwner",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetExternalTableDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExternalTableDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetIgnoreHeaderRows() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIgnoreHeaderRows",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetIncludeOpForFullLoad() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeOpForFullLoad",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetKmsKeyArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKmsKeyArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetMaxFileSize() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxFileSize",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetParquetTimestampInMillisecond() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParquetTimestampInMillisecond",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetParquetVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParquetVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetPreserveTransactions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreserveTransactions",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetRfc4180() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRfc4180",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetRowGroupLength() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRowGroupLength",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetServerSideEncryptionKmsKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServerSideEncryptionKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetSslMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSslMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetTimestampColumnName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimestampColumnName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetUseCsvNoSupValue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseCsvNoSupValue",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetUseTaskStartTimeForFullLoadTimestamp() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseTaskStartTimeForFullLoadTimestamp",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "codepipeline",
+    srcs = [
+        "Codepipeline.go",
+        "CodepipelineArtifactStore.go",
+        "CodepipelineArtifactStoreEncryptionKey.go",
+        "CodepipelineArtifactStoreEncryptionKeyOutputReference.go",
+        "CodepipelineArtifactStoreEncryptionKeyOutputReference__checks.go",
+        "CodepipelineArtifactStoreList.go",
+        "CodepipelineArtifactStoreList__checks.go",
+        "CodepipelineArtifactStoreOutputReference.go",
+        "CodepipelineArtifactStoreOutputReference__checks.go",
+        "CodepipelineConfig.go",
+        "CodepipelineStage.go",
+        "CodepipelineStageAction.go",
+        "CodepipelineStageActionList.go",
+        "CodepipelineStageActionList__checks.go",
+        "CodepipelineStageActionOutputReference.go",
+        "CodepipelineStageActionOutputReference__checks.go",
+        "CodepipelineStageList.go",
+        "CodepipelineStageList__checks.go",
+        "CodepipelineStageOutputReference.go",
+        "CodepipelineStageOutputReference__checks.go",
+        "Codepipeline__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/codepipeline",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/codepipeline/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

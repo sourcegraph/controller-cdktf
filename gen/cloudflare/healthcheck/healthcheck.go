@@ -1,230 +1,1702 @@
 package healthcheck
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/healthcheck/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.Healthcheck",
-		reflect.TypeOf((*Healthcheck)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
-			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
-			_jsii_.MemberProperty{JsiiProperty: "allowInsecure", GoGetter: "AllowInsecure"},
-			_jsii_.MemberProperty{JsiiProperty: "allowInsecureInput", GoGetter: "AllowInsecureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "checkRegions", GoGetter: "CheckRegions"},
-			_jsii_.MemberProperty{JsiiProperty: "checkRegionsInput", GoGetter: "CheckRegionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "consecutiveFails", GoGetter: "ConsecutiveFails"},
-			_jsii_.MemberProperty{JsiiProperty: "consecutiveFailsInput", GoGetter: "ConsecutiveFailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "consecutiveSuccesses", GoGetter: "ConsecutiveSuccesses"},
-			_jsii_.MemberProperty{JsiiProperty: "consecutiveSuccessesInput", GoGetter: "ConsecutiveSuccessesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdOn", GoGetter: "CreatedOn"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedBody", GoGetter: "ExpectedBody"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedBodyInput", GoGetter: "ExpectedBodyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedCodes", GoGetter: "ExpectedCodes"},
-			_jsii_.MemberProperty{JsiiProperty: "expectedCodesInput", GoGetter: "ExpectedCodesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "followRedirects", GoGetter: "FollowRedirects"},
-			_jsii_.MemberProperty{JsiiProperty: "followRedirectsInput", GoGetter: "FollowRedirectsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "header", GoGetter: "Header"},
-			_jsii_.MemberProperty{JsiiProperty: "headerInput", GoGetter: "HeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "method", GoGetter: "Method"},
-			_jsii_.MemberProperty{JsiiProperty: "methodInput", GoGetter: "MethodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "modifiedOn", GoGetter: "ModifiedOn"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationEmailAddresses", GoGetter: "NotificationEmailAddresses"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationEmailAddressesInput", GoGetter: "NotificationEmailAddressesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationSuspended", GoGetter: "NotificationSuspended"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationSuspendedInput", GoGetter: "NotificationSuspendedInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putHeader", GoMethod: "PutHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowInsecure", GoMethod: "ResetAllowInsecure"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCheckRegions", GoMethod: "ResetCheckRegions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConsecutiveFails", GoMethod: "ResetConsecutiveFails"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConsecutiveSuccesses", GoMethod: "ResetConsecutiveSuccesses"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpectedBody", GoMethod: "ResetExpectedBody"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpectedCodes", GoMethod: "ResetExpectedCodes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFollowRedirects", GoMethod: "ResetFollowRedirects"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHeader", GoMethod: "ResetHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMethod", GoMethod: "ResetMethod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotificationEmailAddresses", GoMethod: "ResetNotificationEmailAddresses"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotificationSuspended", GoMethod: "ResetNotificationSuspended"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetries", GoMethod: "ResetRetries"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSuspended", GoMethod: "ResetSuspended"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "retries", GoGetter: "Retries"},
-			_jsii_.MemberProperty{JsiiProperty: "retriesInput", GoGetter: "RetriesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "suspended", GoGetter: "Suspended"},
-			_jsii_.MemberProperty{JsiiProperty: "suspendedInput", GoGetter: "SuspendedInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_Healthcheck{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck cloudflare_healthcheck}.
+type Healthcheck interface {
+	cdktf.TerraformResource
+	Address() *string
+	SetAddress(val *string)
+	AddressInput() *string
+	AllowInsecure() interface{}
+	SetAllowInsecure(val interface{})
+	AllowInsecureInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CheckRegions() *[]*string
+	SetCheckRegions(val *[]*string)
+	CheckRegionsInput() *[]*string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	ConsecutiveFails() *float64
+	SetConsecutiveFails(val *float64)
+	ConsecutiveFailsInput() *float64
+	ConsecutiveSuccesses() *float64
+	SetConsecutiveSuccesses(val *float64)
+	ConsecutiveSuccessesInput() *float64
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreatedOn() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	ExpectedBody() *string
+	SetExpectedBody(val *string)
+	ExpectedBodyInput() *string
+	ExpectedCodes() *[]*string
+	SetExpectedCodes(val *[]*string)
+	ExpectedCodesInput() *[]*string
+	FollowRedirects() interface{}
+	SetFollowRedirects(val interface{})
+	FollowRedirectsInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Header() HealthcheckHeaderList
+	HeaderInput() interface{}
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Interval() *float64
+	SetInterval(val *float64)
+	IntervalInput() *float64
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Method() *string
+	SetMethod(val *string)
+	MethodInput() *string
+	ModifiedOn() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NotificationEmailAddresses() *[]*string
+	SetNotificationEmailAddresses(val *[]*string)
+	NotificationEmailAddressesInput() *[]*string
+	NotificationSuspended() interface{}
+	SetNotificationSuspended(val interface{})
+	NotificationSuspendedInput() interface{}
+	Path() *string
+	SetPath(val *string)
+	PathInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Retries() *float64
+	SetRetries(val *float64)
+	RetriesInput() *float64
+	Suspended() interface{}
+	SetSuspended(val interface{})
+	SuspendedInput() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeout() *float64
+	SetTimeout(val *float64)
+	TimeoutInput() *float64
+	Timeouts() HealthcheckTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutHeader(value interface{})
+	PutTimeouts(value *HealthcheckTimeouts)
+	ResetAllowInsecure()
+	ResetCheckRegions()
+	ResetConsecutiveFails()
+	ResetConsecutiveSuccesses()
+	ResetDescription()
+	ResetExpectedBody()
+	ResetExpectedCodes()
+	ResetFollowRedirects()
+	ResetHeader()
+	ResetId()
+	ResetInterval()
+	ResetMethod()
+	ResetNotificationEmailAddresses()
+	ResetNotificationSuspended()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPath()
+	ResetPort()
+	ResetRetries()
+	ResetSuspended()
+	ResetTimeout()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for Healthcheck
+type jsiiProxy_Healthcheck struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Healthcheck) Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"address",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.healthcheck.HealthcheckConfig",
-		reflect.TypeOf((*HealthcheckConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressInput",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.healthcheck.HealthcheckHeader",
-		reflect.TypeOf((*HealthcheckHeader)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) AllowInsecure() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInsecure",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.HealthcheckHeaderList",
-		reflect.TypeOf((*HealthcheckHeaderList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_HealthcheckHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) AllowInsecureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInsecureInput",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.HealthcheckHeaderOutputReference",
-		reflect.TypeOf((*HealthcheckHeaderOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "header", GoGetter: "Header"},
-			_jsii_.MemberProperty{JsiiProperty: "headerInput", GoGetter: "HeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
-			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_HealthcheckHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"cloudflare.healthcheck.HealthcheckTimeouts",
-		reflect.TypeOf((*HealthcheckTimeouts)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) CheckRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checkRegions",
+		&returns,
 	)
-	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
-		reflect.TypeOf((*HealthcheckTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_HealthcheckTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) CheckRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checkRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ConsecutiveFails() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveFails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ConsecutiveFailsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveFailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ConsecutiveSuccesses() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveSuccesses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ConsecutiveSuccessesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveSuccessesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ExpectedBody() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedBody",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ExpectedBodyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedBodyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ExpectedCodes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"expectedCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ExpectedCodesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"expectedCodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) FollowRedirects() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"followRedirects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) FollowRedirectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"followRedirectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Header() HealthcheckHeaderList {
+	var returns HealthcheckHeaderList
+	_jsii_.Get(
+		j,
+		"header",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) HeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Interval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"interval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) IntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"intervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Method() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"method",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) MethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"methodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) NotificationEmailAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationEmailAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) NotificationEmailAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationEmailAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) NotificationSuspended() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationSuspended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) NotificationSuspendedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationSuspendedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) PathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Retries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) RetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Suspended() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) SuspendedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspendedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Timeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Timeouts() HealthcheckTimeoutsOutputReference {
+	var returns HealthcheckTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck cloudflare_healthcheck} Resource.
+func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckConfig) Healthcheck {
+	_init_.Initialize()
+
+	if err := validateNewHealthcheckParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_Healthcheck{}
+
+	_jsii_.Create(
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck cloudflare_healthcheck} Resource.
+func NewHealthcheck_Override(h Healthcheck, scope constructs.Construct, id *string, config *HealthcheckConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		[]interface{}{scope, id, config},
+		h,
 	)
 }
+
+func (j *jsiiProxy_Healthcheck)SetAddress(val *string) {
+	if err := j.validateSetAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetAllowInsecure(val interface{}) {
+	if err := j.validateSetAllowInsecureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowInsecure",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetCheckRegions(val *[]*string) {
+	if err := j.validateSetCheckRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkRegions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetConsecutiveFails(val *float64) {
+	if err := j.validateSetConsecutiveFailsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consecutiveFails",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetConsecutiveSuccesses(val *float64) {
+	if err := j.validateSetConsecutiveSuccessesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consecutiveSuccesses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetExpectedBody(val *string) {
+	if err := j.validateSetExpectedBodyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedBody",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetExpectedCodes(val *[]*string) {
+	if err := j.validateSetExpectedCodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedCodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetFollowRedirects(val interface{}) {
+	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"followRedirects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetMethod(val *string) {
+	if err := j.validateSetMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"method",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetNotificationEmailAddresses(val *[]*string) {
+	if err := j.validateSetNotificationEmailAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationEmailAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetNotificationSuspended(val interface{}) {
+	if err := j.validateSetNotificationSuspendedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationSuspended",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetRetries(val *float64) {
+	if err := j.validateSetRetriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetSuspended(val interface{}) {
+	if err := j.validateSetSuspendedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspended",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Healthcheck)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func Healthcheck_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHealthcheck_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Healthcheck_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHealthcheck_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Healthcheck_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHealthcheck_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func Healthcheck_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) AddOverride(path *string, value interface{}) {
+	if err := h.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		h,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := h.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		h,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := h.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		h,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := h.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		h,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := h.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		h,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := h.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		h,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetStringAttribute(terraformAttribute *string) *string {
+	if err := h.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		h,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := h.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		h,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		h,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) OverrideLogicalId(newLogicalId *string) {
+	if err := h.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) PutHeader(value interface{}) {
+	if err := h.validatePutHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putHeader",
+		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) PutTimeouts(value *HealthcheckTimeouts) {
+	if err := h.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetAllowInsecure() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetAllowInsecure",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetCheckRegions() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetCheckRegions",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetConsecutiveFails() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetConsecutiveFails",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetConsecutiveSuccesses() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetConsecutiveSuccesses",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetDescription() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetExpectedBody() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetExpectedBody",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetExpectedCodes() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetExpectedCodes",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetFollowRedirects() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetFollowRedirects",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetHeader() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetHeader",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetInterval() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetInterval",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetMethod() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetMethod",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetNotificationEmailAddresses() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetNotificationEmailAddresses",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetNotificationSuspended() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetNotificationSuspended",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetPath() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetPort() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetRetries() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetRetries",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetSuspended() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetSuspended",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Healthcheck) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		h,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

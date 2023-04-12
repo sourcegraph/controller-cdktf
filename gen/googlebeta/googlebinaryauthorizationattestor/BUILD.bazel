@@ -1,0 +1,34 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "googlebinaryauthorizationattestor",
+    srcs = [
+        "GoogleBinaryAuthorizationAttestor.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNote.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference__checks.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList__checks.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference__checks.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference.go",
+        "GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference__checks.go",
+        "GoogleBinaryAuthorizationAttestorConfig.go",
+        "GoogleBinaryAuthorizationAttestorTimeouts.go",
+        "GoogleBinaryAuthorizationAttestorTimeoutsOutputReference.go",
+        "GoogleBinaryAuthorizationAttestorTimeoutsOutputReference__checks.go",
+        "GoogleBinaryAuthorizationAttestor__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/googlebeta/googlebinaryauthorizationattestor",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/googlebeta/googlebinaryauthorizationattestor/internal",
+        "//gen/googlebeta/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

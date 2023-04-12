@@ -1,0 +1,35 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "dataawsgluedatacatalogencryptionsettings",
+    srcs = [
+        "DataAwsGlueDataCatalogEncryptionSettings.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsConfig.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionList.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionList__checks.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference__checks.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList__checks.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference__checks.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList__checks.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference.go",
+        "DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference__checks.go",
+        "DataAwsGlueDataCatalogEncryptionSettings__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/dataawsgluedatacatalogencryptionsettings",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/dataawsgluedatacatalogencryptionsettings/internal",
+        "//gen/aws/jsii",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)

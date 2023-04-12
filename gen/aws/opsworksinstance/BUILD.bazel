@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "opsworksinstance",
+    srcs = [
+        "OpsworksInstance.go",
+        "OpsworksInstanceConfig.go",
+        "OpsworksInstanceEbsBlockDevice.go",
+        "OpsworksInstanceEbsBlockDeviceList.go",
+        "OpsworksInstanceEbsBlockDeviceList__checks.go",
+        "OpsworksInstanceEbsBlockDeviceOutputReference.go",
+        "OpsworksInstanceEbsBlockDeviceOutputReference__checks.go",
+        "OpsworksInstanceEphemeralBlockDevice.go",
+        "OpsworksInstanceEphemeralBlockDeviceList.go",
+        "OpsworksInstanceEphemeralBlockDeviceList__checks.go",
+        "OpsworksInstanceEphemeralBlockDeviceOutputReference.go",
+        "OpsworksInstanceEphemeralBlockDeviceOutputReference__checks.go",
+        "OpsworksInstanceRootBlockDevice.go",
+        "OpsworksInstanceRootBlockDeviceList.go",
+        "OpsworksInstanceRootBlockDeviceList__checks.go",
+        "OpsworksInstanceRootBlockDeviceOutputReference.go",
+        "OpsworksInstanceRootBlockDeviceOutputReference__checks.go",
+        "OpsworksInstanceTimeouts.go",
+        "OpsworksInstanceTimeoutsOutputReference.go",
+        "OpsworksInstanceTimeoutsOutputReference__checks.go",
+        "OpsworksInstance__checks.go",
+        "main.go",
+    ],
+    importpath = "github.com/sourcegraph/controller-cdktf/gen/aws/opsworksinstance",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/aws/jsii",
+        "//gen/aws/opsworksinstance/internal",
+        "@com_github_aws_constructs_go_constructs_v10//:go_default_library",
+        "@com_github_aws_jsii_runtime_go//runtime:go_default_library",
+        "@com_github_hashicorp_terraform_cdk_go_cdktf//:go_default_library",
+    ],
+)
