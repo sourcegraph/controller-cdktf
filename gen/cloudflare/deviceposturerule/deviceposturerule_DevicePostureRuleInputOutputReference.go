@@ -10,6 +10,9 @@ import (
 
 type DevicePostureRuleInputOutputReference interface {
 	cdktf.ComplexObject
+	CheckDisks() *[]*string
+	SetCheckDisks(val *[]*string)
+	CheckDisksInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -50,6 +53,18 @@ type DevicePostureRuleInputOutputReference interface {
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
+	Os() *string
+	SetOs(val *string)
+	OsDistroName() *string
+	SetOsDistroName(val *string)
+	OsDistroNameInput() *string
+	OsDistroRevision() *string
+	SetOsDistroRevision(val *string)
+	OsDistroRevisionInput() *string
+	OsInput() *string
+	Overall() *string
+	SetOverall(val *string)
+	OverallInput() *string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -59,6 +74,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Running() interface{}
 	SetRunning(val interface{})
 	RunningInput() interface{}
+	SensorConfig() *string
+	SetSensorConfig(val *string)
+	SensorConfigInput() *string
 	Sha256() *string
 	SetSha256(val *string)
 	Sha256Input() *string
@@ -76,6 +94,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
+	VersionOperator() *string
+	SetVersionOperator(val *string)
+	VersionOperatorInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -100,6 +121,7 @@ type DevicePostureRuleInputOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCheckDisks()
 	ResetComplianceStatus()
 	ResetConnectionId()
 	ResetDomain()
@@ -107,12 +129,18 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetExists()
 	ResetId()
 	ResetOperator()
+	ResetOs()
+	ResetOsDistroName()
+	ResetOsDistroRevision()
+	ResetOverall()
 	ResetPath()
 	ResetRequireAll()
 	ResetRunning()
+	ResetSensorConfig()
 	ResetSha256()
 	ResetThumbprint()
 	ResetVersion()
+	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -126,6 +154,26 @@ type DevicePostureRuleInputOutputReference interface {
 // The jsii proxy struct for DevicePostureRuleInputOutputReference
 type jsiiProxy_DevicePostureRuleInputOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checkDisks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checkDisksInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ComplexObjectIndex() interface{} {
@@ -318,6 +366,86 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OperatorInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Os() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroRevisionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroRevisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Overall() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overall",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OverallInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overallInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -373,6 +501,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RunningInput() interfa
 	_jsii_.Get(
 		j,
 		"runningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SensorConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sensorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SensorConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sensorConfigInput",
 		&returns,
 	)
 	return returns
@@ -458,6 +606,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) VersionInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) VersionOperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionOperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) VersionOperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionOperatorInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DevicePostureRuleInputOutputReference {
 	_init_.Initialize()
@@ -483,6 +651,17 @@ func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputO
 		"cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*string) {
+	if err := j.validateSetCheckDisksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkDisks",
+		val,
 	)
 }
 
@@ -596,6 +775,50 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperator(val *string
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOs(val *string) {
+	if err := j.validateSetOsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"os",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroName(val *string) {
+	if err := j.validateSetOsDistroNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osDistroName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroRevision(val *string) {
+	if err := j.validateSetOsDistroRevisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osDistroRevision",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOverall(val *string) {
+	if err := j.validateSetOverallParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overall",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -625,6 +848,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interfac
 	_jsii_.Set(
 		j,
 		"running",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSensorConfig(val *string) {
+	if err := j.validateSetSensorConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sensorConfig",
 		val,
 	)
 }
@@ -680,6 +914,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetVersion(val *string)
 	_jsii_.Set(
 		j,
 		"version",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetVersionOperator(val *string) {
+	if err := j.validateSetVersionOperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionOperator",
 		val,
 	)
 }
@@ -870,6 +1115,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCheckDisks() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCheckDisks",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetComplianceStatus() {
 	_jsii_.InvokeVoid(
 		d,
@@ -926,6 +1179,38 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOperator() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOs",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsDistroName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOsDistroName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsDistroRevision() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOsDistroRevision",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOverall() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverall",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetPath() {
 	_jsii_.InvokeVoid(
 		d,
@@ -950,6 +1235,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRunning() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetSensorConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSensorConfig",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetSha256() {
 	_jsii_.InvokeVoid(
 		d,
@@ -970,6 +1263,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetVersion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetVersionOperator() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVersionOperator",
 		nil, // no parameters
 	)
 }

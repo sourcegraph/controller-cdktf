@@ -59,6 +59,8 @@ type TeamsAccount interface {
 	LoggingInput() *TeamsAccountLogging
 	// The tree node.
 	Node() constructs.Node
+	PayloadLog() TeamsAccountPayloadLogOutputReference
+	PayloadLogInput() *TeamsAccountPayloadLog
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -112,6 +114,7 @@ type TeamsAccount interface {
 	PutBlockPage(value *TeamsAccountBlockPage)
 	PutFips(value *TeamsAccountFips)
 	PutLogging(value *TeamsAccountLogging)
+	PutPayloadLog(value *TeamsAccountPayloadLog)
 	PutProxy(value *TeamsAccountProxy)
 	ResetActivityLogEnabled()
 	ResetAntivirus()
@@ -122,6 +125,7 @@ type TeamsAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPayloadLog()
 	ResetProxy()
 	ResetTlsDecryptEnabled()
 	ResetUrlBrowserIsolationEnabled()
@@ -375,6 +379,26 @@ func (j *jsiiProxy_TeamsAccount) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) PayloadLog() TeamsAccountPayloadLogOutputReference {
+	var returns TeamsAccountPayloadLogOutputReference
+	_jsii_.Get(
+		j,
+		"payloadLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) PayloadLogInput() *TeamsAccountPayloadLog {
+	var returns *TeamsAccountPayloadLog
+	_jsii_.Get(
+		j,
+		"payloadLogInput",
 		&returns,
 	)
 	return returns
@@ -922,6 +946,17 @@ func (t *jsiiProxy_TeamsAccount) PutLogging(value *TeamsAccountLogging) {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutPayloadLog(value *TeamsAccountPayloadLog) {
+	if err := t.validatePutPayloadLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putPayloadLog",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) PutProxy(value *TeamsAccountProxy) {
 	if err := t.validatePutProxyParameters(value); err != nil {
 		panic(err)
@@ -985,6 +1020,14 @@ func (t *jsiiProxy_TeamsAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetPayloadLog() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPayloadLog",
 		nil, // no parameters
 	)
 }

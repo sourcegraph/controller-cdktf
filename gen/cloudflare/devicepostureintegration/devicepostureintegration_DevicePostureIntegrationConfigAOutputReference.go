@@ -19,6 +19,9 @@ type DevicePostureIntegrationConfigAOutputReference interface {
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
+	ClientKey() *string
+	SetClientKey(val *string)
+	ClientKeyInput() *string
 	ClientSecret() *string
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
@@ -37,6 +40,9 @@ type DevicePostureIntegrationConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomerId() *string
+	SetCustomerId(val *string)
+	CustomerIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -76,7 +82,9 @@ type DevicePostureIntegrationConfigAOutputReference interface {
 	ResetApiUrl()
 	ResetAuthUrl()
 	ResetClientId()
+	ResetClientKey()
 	ResetClientSecret()
+	ResetCustomerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -152,6 +160,26 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ClientIdInput
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ClientKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ClientKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ClientSecret() *string {
 	var returns *string
 	_jsii_.Get(
@@ -197,6 +225,26 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) CustomerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) CustomerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerIdInput",
 		&returns,
 	)
 	return returns
@@ -303,6 +351,17 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetClientId(va
 	)
 }
 
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetClientKey(val *string) {
+	if err := j.validateSetClientKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetClientSecret(val *string) {
 	if err := j.validateSetClientSecretParameters(val); err != nil {
 		panic(err)
@@ -332,6 +391,17 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetCustomerId(val *string) {
+	if err := j.validateSetCustomerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerId",
 		val,
 	)
 }
@@ -579,10 +649,26 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetClientId
 	)
 }
 
+func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetClientKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetCustomerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomerId",
 		nil, // no parameters
 	)
 }

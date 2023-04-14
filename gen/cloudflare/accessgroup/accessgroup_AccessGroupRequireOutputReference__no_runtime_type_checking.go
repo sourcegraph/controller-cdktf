@@ -128,6 +128,10 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetIpParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetIpListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetLoginMethodParameters(val *[]*string) error {
 	return nil
 }

@@ -477,6 +477,14 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetIpParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetIpListParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetLoginMethodParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

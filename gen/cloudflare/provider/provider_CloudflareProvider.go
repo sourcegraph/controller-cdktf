@@ -12,9 +12,6 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare cloudflare}.
 type CloudflareProvider interface {
 	cdktf.TerraformProvider
-	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -76,7 +73,6 @@ type CloudflareProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetAlias()
 	ResetApiBasePath()
 	ResetApiClientLogging()
@@ -105,26 +101,6 @@ type CloudflareProvider interface {
 // The jsii proxy struct for CloudflareProvider
 type jsiiProxy_CloudflareProvider struct {
 	internal.Type__cdktfTerraformProvider
-}
-
-func (j *jsiiProxy_CloudflareProvider) AccountId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) AccountIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountIdInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CloudflareProvider) Alias() *string {
@@ -497,14 +473,6 @@ func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider)SetAccountId(val *string) {
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_CloudflareProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
@@ -669,14 +637,6 @@ func (c *jsiiProxy_CloudflareProvider) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

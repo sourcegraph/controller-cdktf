@@ -155,6 +155,17 @@ func (t *jsiiProxy_TeamsAccount) validatePutLoggingParameters(value *TeamsAccoun
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutPayloadLogParameters(value *TeamsAccountPayloadLog) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validatePutProxyParameters(value *TeamsAccountProxy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

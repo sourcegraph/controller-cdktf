@@ -30,6 +30,9 @@ type ApiToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresOn() *string
+	SetExpiresOn(val *string)
+	ExpiresOnInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,6 +55,9 @@ type ApiToken interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotBefore() *string
+	SetNotBefore(val *string)
+	NotBeforeInput() *string
 	Policy() ApiTokenPolicyList
 	PolicyInput() interface{}
 	// Experimental.
@@ -100,7 +106,9 @@ type ApiToken interface {
 	PutCondition(value *ApiTokenCondition)
 	PutPolicy(value interface{})
 	ResetCondition()
+	ResetExpiresOn()
 	ResetId()
+	ResetNotBefore()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -184,6 +192,26 @@ func (j *jsiiProxy_ApiToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) ExpiresOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) ExpiresOnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresOnInput",
 		&returns,
 	)
 	return returns
@@ -294,6 +322,26 @@ func (j *jsiiProxy_ApiToken) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) NotBefore() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBefore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) NotBeforeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeInput",
 		&returns,
 	)
 	return returns
@@ -456,6 +504,17 @@ func (j *jsiiProxy_ApiToken)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_ApiToken)SetExpiresOn(val *string) {
+	if err := j.validateSetExpiresOnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiresOn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApiToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -493,6 +552,17 @@ func (j *jsiiProxy_ApiToken)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiToken)SetNotBefore(val *string) {
+	if err := j.validateSetNotBeforeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notBefore",
 		val,
 	)
 }
@@ -774,10 +844,26 @@ func (a *jsiiProxy_ApiToken) ResetCondition() {
 	)
 }
 
+func (a *jsiiProxy_ApiToken) ResetExpiresOn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExpiresOn",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApiToken) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiToken) ResetNotBefore() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNotBefore",
 		nil, // no parameters
 	)
 }

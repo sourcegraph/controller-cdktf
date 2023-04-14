@@ -19,7 +19,9 @@ type DataCloudflareOriginCaRootCertificateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}.
+	// The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
 	Algorithm *string `field:"required" json:"algorithm" yaml:"algorithm"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
 	//

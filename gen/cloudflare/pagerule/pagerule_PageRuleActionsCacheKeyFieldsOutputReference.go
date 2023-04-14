@@ -76,6 +76,8 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	PutHost(value *PageRuleActionsCacheKeyFieldsHost)
 	PutQueryString(value *PageRuleActionsCacheKeyFieldsQueryString)
 	PutUser(value *PageRuleActionsCacheKeyFieldsUser)
+	ResetCookie()
+	ResetHeader()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -582,6 +584,22 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) PutUser(value *
 		p,
 		"putUser",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetCookie() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCookie",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetHeader() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHeader",
+		nil, // no parameters
 	)
 }
 

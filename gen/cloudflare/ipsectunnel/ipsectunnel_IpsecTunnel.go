@@ -15,6 +15,9 @@ type IpsecTunnel interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowNullCipher() interface{}
+	SetAllowNullCipher(val interface{})
+	AllowNullCipherInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudflareEndpoint() *string
@@ -44,10 +47,25 @@ type IpsecTunnel interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	FqdnId() *string
+	SetFqdnId(val *string)
+	FqdnIdInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthCheckEnabled() interface{}
+	SetHealthCheckEnabled(val interface{})
+	HealthCheckEnabledInput() interface{}
+	HealthCheckTarget() *string
+	SetHealthCheckTarget(val *string)
+	HealthCheckTargetInput() *string
+	HealthCheckType() *string
+	SetHealthCheckType(val *string)
+	HealthCheckTypeInput() *string
+	HexId() *string
+	SetHexId(val *string)
+	HexIdInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -71,14 +89,23 @@ type IpsecTunnel interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Psk() *string
+	SetPsk(val *string)
+	PskInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteId() *string
+	SetRemoteId(val *string)
+	RemoteIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserId() *string
+	SetUserId(val *string)
+	UserIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,11 +132,20 @@ type IpsecTunnel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetAllowNullCipher()
 	ResetDescription()
+	ResetFqdnId()
+	ResetHealthCheckEnabled()
+	ResetHealthCheckTarget()
+	ResetHealthCheckType()
+	ResetHexId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPsk()
+	ResetRemoteId()
+	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -140,6 +176,26 @@ func (j *jsiiProxy_IpsecTunnel) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) AllowNullCipher() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNullCipher",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) AllowNullCipherInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNullCipherInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +321,26 @@ func (j *jsiiProxy_IpsecTunnel) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
+func (j *jsiiProxy_IpsecTunnel) FqdnId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqdnId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) FqdnIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqdnIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IpsecTunnel) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -280,6 +356,86 @@ func (j *jsiiProxy_IpsecTunnel) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"healthCheckEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckTargetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HexId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hexId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HexIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hexIdInput",
 		&returns,
 	)
 	return returns
@@ -385,11 +541,51 @@ func (j *jsiiProxy_IpsecTunnel) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IpsecTunnel) Psk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"psk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) PskInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IpsecTunnel) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) RemoteId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"remoteId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) RemoteIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"remoteIdInput",
 		&returns,
 	)
 	return returns
@@ -420,6 +616,26 @@ func (j *jsiiProxy_IpsecTunnel) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) UserId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userIdInput",
 		&returns,
 	)
 	return returns
@@ -462,6 +678,17 @@ func (j *jsiiProxy_IpsecTunnel)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetAllowNullCipher(val interface{}) {
+	if err := j.validateSetAllowNullCipherParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNullCipher",
 		val,
 	)
 }
@@ -534,6 +761,61 @@ func (j *jsiiProxy_IpsecTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_IpsecTunnel)SetFqdnId(val *string) {
+	if err := j.validateSetFqdnIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fqdnId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckEnabled(val interface{}) {
+	if err := j.validateSetHealthCheckEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckTarget(val *string) {
+	if err := j.validateSetHealthCheckTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckTarget",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckType(val *string) {
+	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetHexId(val *string) {
+	if err := j.validateSetHexIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hexId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IpsecTunnel)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -593,6 +875,39 @@ func (j *jsiiProxy_IpsecTunnel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetPsk(val *string) {
+	if err := j.validateSetPskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"psk",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetRemoteId(val *string) {
+	if err := j.validateSetRemoteIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userId",
 		val,
 	)
 }
@@ -833,10 +1148,58 @@ func (i *jsiiProxy_IpsecTunnel) ResetAccountId() {
 	)
 }
 
+func (i *jsiiProxy_IpsecTunnel) ResetAllowNullCipher() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAllowNullCipher",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IpsecTunnel) ResetDescription() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetFqdnId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetFqdnId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetHealthCheckEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHealthCheckEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetHealthCheckTarget() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHealthCheckTarget",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetHealthCheckType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHealthCheckType",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetHexId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHexId",
 		nil, // no parameters
 	)
 }
@@ -853,6 +1216,30 @@ func (i *jsiiProxy_IpsecTunnel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetPsk() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPsk",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetRemoteId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRemoteId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetUserId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetUserId",
 		nil, // no parameters
 	)
 }

@@ -17,6 +17,9 @@ type Record interface {
 	AllowOverwriteInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Comment() *string
+	SetComment(val *string)
+	CommentInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -74,6 +77,9 @@ type Record interface {
 	ProxiedInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,6 +128,7 @@ type Record interface {
 	PutData(value *RecordData)
 	PutTimeouts(value *RecordTimeouts)
 	ResetAllowOverwrite()
+	ResetComment()
 	ResetData()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -129,6 +136,7 @@ type Record interface {
 	ResetOverrideLogicalId()
 	ResetPriority()
 	ResetProxied()
+	ResetTags()
 	ResetTimeouts()
 	ResetTtl()
 	ResetValue()
@@ -172,6 +180,26 @@ func (j *jsiiProxy_Record) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Record) Comment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Record) CommentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commentInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +475,26 @@ func (j *jsiiProxy_Record) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Record) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Record) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Record) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -618,6 +666,17 @@ func (j *jsiiProxy_Record)SetAllowOverwrite(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Record)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"comment",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Record)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -723,6 +782,17 @@ func (j *jsiiProxy_Record)SetProxied(val interface{}) {
 	_jsii_.Set(
 		j,
 		"proxied",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Record)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1029,6 +1099,14 @@ func (r *jsiiProxy_Record) ResetAllowOverwrite() {
 	)
 }
 
+func (r *jsiiProxy_Record) ResetComment() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetComment",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_Record) ResetData() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1065,6 +1143,14 @@ func (r *jsiiProxy_Record) ResetProxied() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetProxied",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Record) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
 		nil, // no parameters
 	)
 }

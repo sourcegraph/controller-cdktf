@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool cloudflare_load_balancer_pool}.
 type LoadBalancerPool interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CheckRegions() *[]*string
@@ -151,6 +154,26 @@ type LoadBalancerPool interface {
 // The jsii proxy struct for LoadBalancerPool
 type jsiiProxy_LoadBalancerPool struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LoadBalancerPool) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPool) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LoadBalancerPool) CdktfStack() cdktf.TerraformStack {
@@ -620,6 +643,17 @@ func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct
 		"cloudflare.loadBalancerPool.LoadBalancerPool",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPool)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 

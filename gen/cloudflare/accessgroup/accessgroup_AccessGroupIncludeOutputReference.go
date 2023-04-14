@@ -70,6 +70,9 @@ type AccessGroupIncludeOutputReference interface {
 	Ip() *[]*string
 	SetIp(val *[]*string)
 	IpInput() *[]*string
+	IpList() *[]*string
+	SetIpList(val *[]*string)
+	IpListInput() *[]*string
 	LoginMethod() *[]*string
 	SetLoginMethod(val *[]*string)
 	LoginMethodInput() *[]*string
@@ -133,6 +136,7 @@ type AccessGroupIncludeOutputReference interface {
 	ResetGroup()
 	ResetGsuite()
 	ResetIp()
+	ResetIpList()
 	ResetLoginMethod()
 	ResetOkta()
 	ResetSaml()
@@ -502,6 +506,26 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) IpInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) IpList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) IpListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipListInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessGroupIncludeOutputReference) LoginMethod() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -780,6 +804,17 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetIp(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ip",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetIpList(val *[]*string) {
+	if err := j.validateSetIpListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipList",
 		val,
 	)
 }
@@ -1196,6 +1231,14 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetIp() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetIp",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetIpList() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpList",
 		nil, // no parameters
 	)
 }

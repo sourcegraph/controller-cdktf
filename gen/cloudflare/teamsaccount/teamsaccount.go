@@ -47,6 +47,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "payloadLog", GoGetter: "PayloadLog"},
+			_jsii_.MemberProperty{JsiiProperty: "payloadLogInput", GoGetter: "PayloadLogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "proxy", GoGetter: "Proxy"},
@@ -55,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBlockPage", GoMethod: "PutBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "putFips", GoMethod: "PutFips"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
+			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
 			_jsii_.MemberMethod{JsiiMethod: "putProxy", GoMethod: "PutProxy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActivityLogEnabled", GoMethod: "ResetActivityLogEnabled"},
@@ -64,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogging", GoMethod: "ResetLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPayloadLog", GoMethod: "ResetPayloadLog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProxy", GoMethod: "ResetProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsDecryptEnabled", GoMethod: "ResetTlsDecryptEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUrlBrowserIsolationEnabled", GoMethod: "ResetUrlBrowserIsolationEnabled"},
@@ -162,6 +166,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "logoPath", GoGetter: "LogoPath"},
 			_jsii_.MemberProperty{JsiiProperty: "logoPathInput", GoGetter: "LogoPathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mailtoAddress", GoGetter: "MailtoAddress"},
+			_jsii_.MemberProperty{JsiiProperty: "mailtoAddressInput", GoGetter: "MailtoAddressInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mailtoSubject", GoGetter: "MailtoSubject"},
+			_jsii_.MemberProperty{JsiiProperty: "mailtoSubjectInput", GoGetter: "MailtoSubjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackgroundColor", GoMethod: "ResetBackgroundColor"},
@@ -169,6 +177,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFooterText", GoMethod: "ResetFooterText"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHeaderText", GoMethod: "ResetHeaderText"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogoPath", GoMethod: "ResetLogoPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMailtoAddress", GoMethod: "ResetMailtoAddress"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMailtoSubject", GoMethod: "ResetMailtoSubject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -426,6 +436,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"cloudflare.teamsAccount.TeamsAccountPayloadLog",
+		reflect.TypeOf((*TeamsAccountPayloadLog)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"cloudflare.teamsAccount.TeamsAccountPayloadLogOutputReference",
+		reflect.TypeOf((*TeamsAccountPayloadLogOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "publicKey", GoGetter: "PublicKey"},
+			_jsii_.MemberProperty{JsiiProperty: "publicKeyInput", GoGetter: "PublicKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsAccountPayloadLogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

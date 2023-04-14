@@ -90,23 +90,63 @@ func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateInter
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutPathParameters(value *RulesetRulesActionParametersUriPath) error {
+func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutPathParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*RulesetRulesActionParametersUriPath:
+		value := value.(*[]*RulesetRulesActionParametersUriPath)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*RulesetRulesActionParametersUriPath:
+		value_ := value.([]*RulesetRulesActionParametersUriPath)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersUriPath; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutQueryParameters(value *RulesetRulesActionParametersUriQuery) error {
+func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutQueryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*RulesetRulesActionParametersUriQuery:
+		value := value.(*[]*RulesetRulesActionParametersUriQuery)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*RulesetRulesActionParametersUriQuery:
+		value_ := value.([]*RulesetRulesActionParametersUriQuery)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersUriQuery; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -185,9 +225,25 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersUri) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case *RulesetRulesActionParametersUri:
+		val := val.(*RulesetRulesActionParametersUri)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case RulesetRulesActionParametersUri:
+		val_ := val.(RulesetRulesActionParametersUri)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesActionParametersUri, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -229,13 +285,21 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersUriOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesActionParametersUriOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

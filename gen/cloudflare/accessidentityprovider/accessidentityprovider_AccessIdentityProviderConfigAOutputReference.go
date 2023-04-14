@@ -31,6 +31,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	CertsUrl() *string
 	SetCertsUrl(val *string)
 	CertsUrlInput() *string
+	Claims() *[]*string
+	SetClaims(val *[]*string)
+	ClaimsInput() *[]*string
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -74,9 +77,15 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	OneloginAccount() *string
 	SetOneloginAccount(val *string)
 	OneloginAccountInput() *string
+	PkceEnabled() interface{}
+	SetPkceEnabled(val interface{})
+	PkceEnabledInput() interface{}
 	RedirectUrl() *string
 	SetRedirectUrl(val *string)
 	RedirectUrlInput() *string
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	SignRequest() interface{}
 	SetSignRequest(val interface{})
 	SignRequestInput() interface{}
@@ -128,6 +137,7 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetCentrifyAccount()
 	ResetCentrifyAppId()
 	ResetCertsUrl()
+	ResetClaims()
 	ResetClientId()
 	ResetClientSecret()
 	ResetDirectoryId()
@@ -136,7 +146,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetIssuerUrl()
 	ResetOktaAccount()
 	ResetOneloginAccount()
+	ResetPkceEnabled()
 	ResetRedirectUrl()
+	ResetScopes()
 	ResetSignRequest()
 	ResetSsoTargetUrl()
 	ResetSupportGroups()
@@ -291,6 +303,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) CertsUrlInput()
 	_jsii_.Get(
 		j,
 		"certsUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) Claims() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"claims",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ClaimsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"claimsInput",
 		&returns,
 	)
 	return returns
@@ -506,6 +538,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) OneloginAccount
 	return returns
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) PkceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pkceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) PkceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pkceEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,6 +573,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrlInpu
 	_jsii_.Get(
 		j,
 		"redirectUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
 		&returns,
 	)
 	return returns
@@ -731,6 +803,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetCertsUrl(val 
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetClaims(val *[]*string) {
+	if err := j.validateSetClaimsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"claims",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
@@ -852,6 +935,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetOneloginAccou
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetPkceEnabled(val interface{}) {
+	if err := j.validateSetPkceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pkceEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetRedirectUrl(val *string) {
 	if err := j.validateSetRedirectUrlParameters(val); err != nil {
 		panic(err)
@@ -859,6 +953,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetRedirectUrl(v
 	_jsii_.Set(
 		j,
 		"redirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopes",
 		val,
 	)
 }
@@ -1171,6 +1276,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetCertsUrl()
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetClaims() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClaims",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetClientId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1235,10 +1348,26 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetOneloginAc
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetPkceEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPkceEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScopes",
 		nil, // no parameters
 	)
 }

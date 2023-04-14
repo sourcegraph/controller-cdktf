@@ -64,6 +64,10 @@ func (j *jsiiProxy_CustomHostname) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CustomHostname) validateSetCustomMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomHostname) validateSetCustomOriginServerParameters(val *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_CustomHostname) validateSetLifecycleParameters(val *cdktf.Ter
 }
 
 func (j *jsiiProxy_CustomHostname) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomHostname) validateSetWaitForSslPendingValidationParameters(val interface{}) error {
 	return nil
 }
 

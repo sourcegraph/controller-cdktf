@@ -16,6 +16,8 @@ type AccessIdentityProviderConfigA struct {
 	CentrifyAppId *string `field:"optional" json:"centrifyAppId" yaml:"centrifyAppId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#certs_url AccessIdentityProvider#certs_url}.
 	CertsUrl *string `field:"optional" json:"certsUrl" yaml:"certsUrl"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#claims AccessIdentityProvider#claims}.
+	Claims *[]*string `field:"optional" json:"claims" yaml:"claims"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#client_id AccessIdentityProvider#client_id}.
 	ClientId *string `field:"optional" json:"clientId" yaml:"clientId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#client_secret AccessIdentityProvider#client_secret}.
@@ -32,8 +34,12 @@ type AccessIdentityProviderConfigA struct {
 	OktaAccount *string `field:"optional" json:"oktaAccount" yaml:"oktaAccount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#onelogin_account AccessIdentityProvider#onelogin_account}.
 	OneloginAccount *string `field:"optional" json:"oneloginAccount" yaml:"oneloginAccount"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#pkce_enabled AccessIdentityProvider#pkce_enabled}.
+	PkceEnabled interface{} `field:"optional" json:"pkceEnabled" yaml:"pkceEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#redirect_url AccessIdentityProvider#redirect_url}.
 	RedirectUrl *string `field:"optional" json:"redirectUrl" yaml:"redirectUrl"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#scopes AccessIdentityProvider#scopes}.
+	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#sign_request AccessIdentityProvider#sign_request}.
 	SignRequest interface{} `field:"optional" json:"signRequest" yaml:"signRequest"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#sso_target_url AccessIdentityProvider#sso_target_url}.

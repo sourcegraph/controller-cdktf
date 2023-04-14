@@ -61,6 +61,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	OpportunisticOnion() *string
 	OrangeToOrange() *string
 	OriginErrorPagePassThru() *string
+	OriginMaxHttpVersion() *string
 	Polish() *string
 	PrefetchPreload() *string
 	PrivacyPass() *string
@@ -495,6 +496,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) OriginErr
 	_jsii_.Get(
 		j,
 		"originErrorPagePassThru",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) OriginMaxHttpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originMaxHttpVersion",
 		&returns,
 	)
 	return returns

@@ -83,6 +83,9 @@ type WaitingRoom interface {
 	QueueAll() interface{}
 	SetQueueAll(val interface{})
 	QueueAllInput() interface{}
+	QueueingMethod() *string
+	SetQueueingMethod(val *string)
+	QueueingMethodInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	SessionDuration() *float64
@@ -142,6 +145,7 @@ type WaitingRoom interface {
 	ResetOverrideLogicalId()
 	ResetPath()
 	ResetQueueAll()
+	ResetQueueingMethod()
 	ResetSessionDuration()
 	ResetSuspended()
 	ResetTimeouts()
@@ -495,6 +499,26 @@ func (j *jsiiProxy_WaitingRoom) QueueAllInput() interface{} {
 	_jsii_.Get(
 		j,
 		"queueAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) QueueingMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queueingMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) QueueingMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queueingMethodInput",
 		&returns,
 	)
 	return returns
@@ -856,6 +880,17 @@ func (j *jsiiProxy_WaitingRoom)SetQueueAll(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_WaitingRoom)SetQueueingMethod(val *string) {
+	if err := j.validateSetQueueingMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queueingMethod",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WaitingRoom)SetSessionDuration(val *float64) {
 	if err := j.validateSetSessionDurationParameters(val); err != nil {
 		panic(err)
@@ -1207,6 +1242,14 @@ func (w *jsiiProxy_WaitingRoom) ResetQueueAll() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetQueueAll",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetQueueingMethod() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetQueueingMethod",
 		nil, // no parameters
 	)
 }

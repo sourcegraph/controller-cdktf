@@ -40,6 +40,8 @@ type AccessPolicyInclude struct {
 	Gsuite interface{} `field:"optional" json:"gsuite" yaml:"gsuite"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#ip AccessPolicy#ip}.
 	Ip *[]*string `field:"optional" json:"ip" yaml:"ip"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#ip_list AccessPolicy#ip_list}.
+	IpList *[]*string `field:"optional" json:"ipList" yaml:"ipList"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#login_method AccessPolicy#login_method}.
 	LoginMethod *[]*string `field:"optional" json:"loginMethod" yaml:"loginMethod"`
 	// okta block.

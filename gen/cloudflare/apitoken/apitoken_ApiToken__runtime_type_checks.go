@@ -194,6 +194,14 @@ func (j *jsiiProxy_ApiToken) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_ApiToken) validateSetExpiresOnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiToken) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -211,6 +219,14 @@ func (j *jsiiProxy_ApiToken) validateSetLifecycleParameters(val *cdktf.Terraform
 }
 
 func (j *jsiiProxy_ApiToken) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApiToken) validateSetNotBeforeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -19,7 +19,9 @@ type DataCloudflareDevicesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/devices#account_id DataCloudflareDevices#account_id}.
+	// The account identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/devices#account_id DataCloudflareDevices#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/devices#id DataCloudflareDevices#id}.
 	//

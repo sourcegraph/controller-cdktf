@@ -63,6 +63,8 @@ type AccessIdentityProvider interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ScimConfig() AccessIdentityProviderScimConfigList
+	ScimConfigInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,12 +103,14 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value interface{})
+	PutScimConfig(value interface{})
 	ResetAccountId()
 	ResetConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScimConfig()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -328,6 +332,26 @@ func (j *jsiiProxy_AccessIdentityProvider) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProvider) ScimConfig() AccessIdentityProviderScimConfigList {
+	var returns AccessIdentityProviderScimConfigList
+	_jsii_.Get(
+		j,
+		"scimConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProvider) ScimConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scimConfigInput",
 		&returns,
 	)
 	return returns
@@ -792,6 +816,17 @@ func (a *jsiiProxy_AccessIdentityProvider) PutConfig(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProvider) PutScimConfig(value interface{}) {
+	if err := a.validatePutScimConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putScimConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProvider) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -820,6 +855,14 @@ func (a *jsiiProxy_AccessIdentityProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProvider) ResetScimConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScimConfig",
 		nil, // no parameters
 	)
 }

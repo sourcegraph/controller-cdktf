@@ -56,6 +56,10 @@ func validateAccountMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_AccountMember) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_AccountMember) validateSetProvisionersParameters(val *[]inter
 }
 
 func (j *jsiiProxy_AccountMember) validateSetRoleIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccountMember) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

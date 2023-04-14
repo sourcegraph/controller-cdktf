@@ -72,10 +72,6 @@ func (j *jsiiProxy_Ruleset) validateSetDescriptionParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Ruleset) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Ruleset) validateSetKindParameters(val *string) error {
 	return nil
 }

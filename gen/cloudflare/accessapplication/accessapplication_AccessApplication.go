@@ -91,6 +91,8 @@ type AccessApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SaasApp() AccessApplicationSaasAppOutputReference
+	SaasAppInput() *AccessApplicationSaasApp
 	SameSiteCookieAttribute() *string
 	SetSameSiteCookieAttribute(val *string)
 	SameSiteCookieAttributeInput() *string
@@ -141,6 +143,7 @@ type AccessApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCorsHeaders(value interface{})
+	PutSaasApp(value *AccessApplicationSaasApp)
 	ResetAccountId()
 	ResetAllowedIdps()
 	ResetAppLauncherVisible()
@@ -148,6 +151,7 @@ type AccessApplication interface {
 	ResetCorsHeaders()
 	ResetCustomDenyMessage()
 	ResetCustomDenyUrl()
+	ResetDomain()
 	ResetEnableBindingCookie()
 	ResetHttpOnlyCookieAttribute()
 	ResetId()
@@ -155,6 +159,7 @@ type AccessApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSaasApp()
 	ResetSameSiteCookieAttribute()
 	ResetServiceAuth401Redirect()
 	ResetSessionDuration()
@@ -571,6 +576,26 @@ func (j *jsiiProxy_AccessApplication) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) SaasApp() AccessApplicationSaasAppOutputReference {
+	var returns AccessApplicationSaasAppOutputReference
+	_jsii_.Get(
+		j,
+		"saasApp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) SaasAppInput() *AccessApplicationSaasApp {
+	var returns *AccessApplicationSaasApp
+	_jsii_.Get(
+		j,
+		"saasAppInput",
 		&returns,
 	)
 	return returns
@@ -1258,6 +1283,17 @@ func (a *jsiiProxy_AccessApplication) PutCorsHeaders(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) PutSaasApp(value *AccessApplicationSaasApp) {
+	if err := a.validatePutSaasAppParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSaasApp",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1314,6 +1350,14 @@ func (a *jsiiProxy_AccessApplication) ResetCustomDenyUrl() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetDomain() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDomain",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetEnableBindingCookie() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1350,6 +1394,14 @@ func (a *jsiiProxy_AccessApplication) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetSaasApp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSaasApp",
 		nil, // no parameters
 	)
 }

@@ -43,8 +43,6 @@ type Ruleset interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -112,7 +110,6 @@ type Ruleset interface {
 	PutRules(value interface{})
 	ResetAccountId()
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -259,16 +256,6 @@ func (j *jsiiProxy_Ruleset) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Ruleset) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -557,17 +544,6 @@ func (j *jsiiProxy_Ruleset)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Ruleset)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -908,14 +884,6 @@ func (r *jsiiProxy_Ruleset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Ruleset) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_FallbackDomain) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_FallbackDomain) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FallbackDomain) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

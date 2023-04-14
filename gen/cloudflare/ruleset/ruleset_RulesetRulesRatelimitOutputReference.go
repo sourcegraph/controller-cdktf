@@ -33,8 +33,8 @@ type RulesetRulesRatelimitOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesRatelimit
-	SetInternalValue(val *RulesetRulesRatelimit)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MitigationTimeout() *float64
 	SetMitigationTimeout(val *float64)
 	MitigationTimeoutInput() *float64
@@ -47,6 +47,12 @@ type RulesetRulesRatelimitOutputReference interface {
 	RequestsToOrigin() interface{}
 	SetRequestsToOrigin(val interface{})
 	RequestsToOriginInput() interface{}
+	ScorePerPeriod() *float64
+	SetScorePerPeriod(val *float64)
+	ScorePerPeriodInput() *float64
+	ScoreResponseHeaderName() *string
+	SetScoreResponseHeaderName(val *string)
+	ScoreResponseHeaderNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,6 +91,8 @@ type RulesetRulesRatelimitOutputReference interface {
 	ResetPeriod()
 	ResetRequestsPerPeriod()
 	ResetRequestsToOrigin()
+	ResetScorePerPeriod()
+	ResetScoreResponseHeaderName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -180,8 +188,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) InternalValue() *RulesetRulesRatelimit {
-	var returns *RulesetRulesRatelimit
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -270,6 +278,46 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOriginInput()
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScorePerPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scorePerPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScorePerPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scorePerPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScoreResponseHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scoreResponseHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScoreResponseHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scoreResponseHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -291,29 +339,29 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) TerraformResource() cdk
 }
 
 
-func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesRatelimitOutputReference {
+func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesRatelimitOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesRatelimitOutputReference{}
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -362,7 +410,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetCountingExpression(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetInternalValue(val *RulesetRulesRatelimit) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,6 +461,28 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetRequestsToOrigin(val 
 	_jsii_.Set(
 		j,
 		"requestsToOrigin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScorePerPeriod(val *float64) {
+	if err := j.validateSetScorePerPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scorePerPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScoreResponseHeaderName(val *string) {
+	if err := j.validateSetScoreResponseHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scoreResponseHeaderName",
 		val,
 	)
 }
@@ -669,6 +739,22 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetRequestsToOrigin()
 	_jsii_.InvokeVoid(
 		r,
 		"resetRequestsToOrigin",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetScorePerPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetScorePerPeriod",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetScoreResponseHeaderName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetScoreResponseHeaderName",
 		nil, // no parameters
 	)
 }

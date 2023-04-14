@@ -179,9 +179,25 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetCountingExpr
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetInternalValueParameters(val *RulesetRulesRatelimit) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case *RulesetRulesRatelimit:
+		val := val.(*RulesetRulesRatelimit)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case RulesetRulesRatelimit:
+		val_ := val.(RulesetRulesRatelimit)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesRatelimit, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -231,6 +247,22 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetRequestsToOr
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetScorePerPeriodParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetScoreResponseHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -247,13 +279,21 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

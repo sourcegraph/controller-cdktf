@@ -76,11 +76,19 @@ func (j *jsiiProxy_LogpushJob) validateSetEnabledParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_LogpushJob) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpushJob) validateSetFrequencyParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_LogpushJob) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogpushJob) validateSetKindParameters(val *string) error {
 	return nil
 }
 

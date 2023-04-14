@@ -40,6 +40,8 @@ type AccessGroupExclude struct {
 	Gsuite interface{} `field:"optional" json:"gsuite" yaml:"gsuite"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#ip AccessGroup#ip}.
 	Ip *[]*string `field:"optional" json:"ip" yaml:"ip"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#ip_list AccessGroup#ip_list}.
+	IpList *[]*string `field:"optional" json:"ipList" yaml:"ipList"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#login_method AccessGroup#login_method}.
 	LoginMethod *[]*string `field:"optional" json:"loginMethod" yaml:"loginMethod"`
 	// okta block.

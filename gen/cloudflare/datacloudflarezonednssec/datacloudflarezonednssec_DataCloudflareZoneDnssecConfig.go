@@ -19,7 +19,9 @@ type DataCloudflareZoneDnssecConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}.
+	// The zone identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec#id DataCloudflareZoneDnssec#id}.
 	//

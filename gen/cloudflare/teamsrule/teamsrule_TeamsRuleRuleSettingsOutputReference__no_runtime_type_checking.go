@@ -44,6 +44,10 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutAuditSshParameters(value *TeamsRuleRuleSettingsAuditSsh) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutBisoAdminControlsParameters(value *TeamsRuleRuleSettingsBisoAdminControls) error {
 	return nil
 }
@@ -52,7 +56,19 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutCheckSession
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutEgressParameters(value *TeamsRuleRuleSettingsEgress) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutL4OverrideParameters(value *TeamsRuleRuleSettingsL4Override) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutPayloadLogParameters(value *TeamsRuleRuleSettingsPayloadLog) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutUntrustedCertParameters(value *TeamsRuleRuleSettingsUntrustedCert) error {
 	return nil
 }
 
@@ -64,11 +80,19 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetAddHeadersPa
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetAllowChildBypassParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBlockPageEnabledParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBlockPageReasonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBypassParentRuleParameters(val interface{}) error {
 	return nil
 }
 
@@ -85,6 +109,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInsecureDisa
 }
 
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInternalValueParameters(val *TeamsRuleRuleSettings) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetIpCategoriesParameters(val interface{}) error {
 	return nil
 }
 

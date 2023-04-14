@@ -19,9 +19,13 @@ type CustomHostnameFallbackOriginConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#origin CustomHostnameFallbackOrigin#origin}.
+	// Hostname you intend to fallback requests to. Origin must be a proxied A/AAAA/CNAME DNS record within Clouldflare.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#origin CustomHostnameFallbackOrigin#origin}
 	Origin *string `field:"required" json:"origin" yaml:"origin"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#zone_id CustomHostnameFallbackOrigin#zone_id}.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#zone_id CustomHostnameFallbackOrigin#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#id CustomHostnameFallbackOrigin#id}.
 	//

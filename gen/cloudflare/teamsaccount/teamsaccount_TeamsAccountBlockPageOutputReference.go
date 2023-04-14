@@ -44,6 +44,12 @@ type TeamsAccountBlockPageOutputReference interface {
 	LogoPath() *string
 	SetLogoPath(val *string)
 	LogoPathInput() *string
+	MailtoAddress() *string
+	SetMailtoAddress(val *string)
+	MailtoAddressInput() *string
+	MailtoSubject() *string
+	SetMailtoSubject(val *string)
+	MailtoSubjectInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -84,6 +90,8 @@ type TeamsAccountBlockPageOutputReference interface {
 	ResetFooterText()
 	ResetHeaderText()
 	ResetLogoPath()
+	ResetMailtoAddress()
+	ResetMailtoSubject()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -250,6 +258,46 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) LogoPathInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) MailtoAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mailtoAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) MailtoAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mailtoAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) MailtoSubject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mailtoSubject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) MailtoSubjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mailtoSubjectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,6 +450,28 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetLogoPath(val *string)
 	_jsii_.Set(
 		j,
 		"logoPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetMailtoAddress(val *string) {
+	if err := j.validateSetMailtoAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mailtoAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetMailtoSubject(val *string) {
+	if err := j.validateSetMailtoSubjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mailtoSubject",
 		val,
 	)
 }
@@ -661,6 +731,22 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ResetLogoPath() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetLogoPath",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ResetMailtoAddress() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetMailtoAddress",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ResetMailtoSubject() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetMailtoSubject",
 		nil, // no parameters
 	)
 }

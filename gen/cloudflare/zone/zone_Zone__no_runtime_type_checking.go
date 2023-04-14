@@ -56,6 +56,10 @@ func validateZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Zone) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Zone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

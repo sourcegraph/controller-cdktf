@@ -51,6 +51,9 @@ type SplitTunnel interface {
 	ModeInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -99,6 +102,7 @@ type SplitTunnel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -269,6 +273,26 @@ func (j *jsiiProxy_SplitTunnel) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SplitTunnel) PolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SplitTunnel) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
 		&returns,
 	)
 	return returns
@@ -459,6 +483,17 @@ func (j *jsiiProxy_SplitTunnel)SetMode(val *string) {
 	_jsii_.Set(
 		j,
 		"mode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SplitTunnel)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -733,6 +768,14 @@ func (s *jsiiProxy_SplitTunnel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SplitTunnel) ResetPolicyId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPolicyId",
 		nil, // no parameters
 	)
 }

@@ -60,7 +60,19 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEnabledP
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventSourceParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventTypeParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetHealthCheckIdParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInputIdParameters(val *[]*string) error {
 	return nil
 }
 
@@ -72,11 +84,27 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetLimitPar
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewHealthParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPacketsPerSecondParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPoolIdParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProductParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProtocolParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetRequestsPerSecondParameters(val *[]*string) error {
 	return nil
 }
 
@@ -89,6 +117,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetSloParam
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetStatusParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetZoneNameParameters(val *[]*string) error {
 	return nil
 }
 

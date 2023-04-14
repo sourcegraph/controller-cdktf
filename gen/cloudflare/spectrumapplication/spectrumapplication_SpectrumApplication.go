@@ -33,12 +33,8 @@ type SpectrumApplication interface {
 	SetDependsOn(val *[]*string)
 	Dns() SpectrumApplicationDnsOutputReference
 	DnsInput() *SpectrumApplicationDns
-	EdgeIpConnectivity() *string
-	SetEdgeIpConnectivity(val *string)
-	EdgeIpConnectivityInput() *string
-	EdgeIps() *[]*string
-	SetEdgeIps(val *[]*string)
-	EdgeIpsInput() *[]*string
+	EdgeIps() SpectrumApplicationEdgeIpsOutputReference
+	EdgeIpsInput() *SpectrumApplicationEdgeIps
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,10 +122,10 @@ type SpectrumApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDns(value *SpectrumApplicationDns)
+	PutEdgeIps(value *SpectrumApplicationEdgeIps)
 	PutOriginDns(value *SpectrumApplicationOriginDns)
 	PutOriginPortRange(value *SpectrumApplicationOriginPortRange)
 	ResetArgoSmartRouting()
-	ResetEdgeIpConnectivity()
 	ResetEdgeIps()
 	ResetId()
 	ResetIpFirewall()
@@ -248,28 +244,8 @@ func (j *jsiiProxy_SpectrumApplication) DnsInput() *SpectrumApplicationDns {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) EdgeIpConnectivity() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"edgeIpConnectivity",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpectrumApplication) EdgeIpConnectivityInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"edgeIpConnectivityInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpectrumApplication) EdgeIps() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_SpectrumApplication) EdgeIps() SpectrumApplicationEdgeIpsOutputReference {
+	var returns SpectrumApplicationEdgeIpsOutputReference
 	_jsii_.Get(
 		j,
 		"edgeIps",
@@ -278,8 +254,8 @@ func (j *jsiiProxy_SpectrumApplication) EdgeIps() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) EdgeIpsInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_SpectrumApplication) EdgeIpsInput() *SpectrumApplicationEdgeIps {
+	var returns *SpectrumApplicationEdgeIps
 	_jsii_.Get(
 		j,
 		"edgeIpsInput",
@@ -686,28 +662,6 @@ func (j *jsiiProxy_SpectrumApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetEdgeIpConnectivity(val *string) {
-	if err := j.validateSetEdgeIpConnectivityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"edgeIpConnectivity",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SpectrumApplication)SetEdgeIps(val *[]*string) {
-	if err := j.validateSetEdgeIpsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"edgeIps",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SpectrumApplication)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1084,6 +1038,17 @@ func (s *jsiiProxy_SpectrumApplication) PutDns(value *SpectrumApplicationDns) {
 	)
 }
 
+func (s *jsiiProxy_SpectrumApplication) PutEdgeIps(value *SpectrumApplicationEdgeIps) {
+	if err := s.validatePutEdgeIpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEdgeIps",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpectrumApplication) PutOriginDns(value *SpectrumApplicationOriginDns) {
 	if err := s.validatePutOriginDnsParameters(value); err != nil {
 		panic(err)
@@ -1110,14 +1075,6 @@ func (s *jsiiProxy_SpectrumApplication) ResetArgoSmartRouting() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetArgoSmartRouting",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SpectrumApplication) ResetEdgeIpConnectivity() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEdgeIpConnectivity",
 		nil, // no parameters
 	)
 }

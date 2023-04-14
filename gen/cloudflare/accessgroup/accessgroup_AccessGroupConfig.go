@@ -25,7 +25,11 @@ type AccessGroupConfig struct {
 	Include interface{} `field:"required" json:"include" yaml:"include"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#name AccessGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#account_id AccessGroup#account_id}.
+	// The account identifier to target for the resource.
+	//
+	// Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#account_id AccessGroup#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// exclude block.
 	//
@@ -40,7 +44,9 @@ type AccessGroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#require AccessGroup#require}
 	Require interface{} `field:"optional" json:"require" yaml:"require"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#zone_id AccessGroup#zone_id}.
+	// The zone identifier to target for the resource. Conflicts with `account_id`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#zone_id AccessGroup#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -24,6 +24,9 @@ type CustomHostname interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomMetadata() *map[string]*string
+	SetCustomMetadata(val *map[string]*string)
+	CustomMetadataInput() *map[string]*string
 	CustomOriginServer() *string
 	SetCustomOriginServer(val *string)
 	CustomOriginServerInput() *string
@@ -75,6 +78,9 @@ type CustomHostname interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WaitForSslPendingValidation() interface{}
+	SetWaitForSslPendingValidation(val interface{})
+	WaitForSslPendingValidationInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -104,6 +110,7 @@ type CustomHostname interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSsl(value interface{})
+	ResetCustomMetadata()
 	ResetCustomOriginServer()
 	ResetCustomOriginSni()
 	ResetId()
@@ -111,6 +118,7 @@ type CustomHostname interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSsl()
+	ResetWaitForSslPendingValidation()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -161,6 +169,26 @@ func (j *jsiiProxy_CustomHostname) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) CustomMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) CustomMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customMetadataInput",
 		&returns,
 	)
 	return returns
@@ -416,6 +444,26 @@ func (j *jsiiProxy_CustomHostname) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForSslPendingValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForSslPendingValidationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomHostname) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -481,6 +529,17 @@ func (j *jsiiProxy_CustomHostname)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomHostname)SetCustomMetadata(val *map[string]*string) {
+	if err := j.validateSetCustomMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMetadata",
 		val,
 	)
 }
@@ -571,6 +630,17 @@ func (j *jsiiProxy_CustomHostname)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomHostname)SetWaitForSslPendingValidation(val interface{}) {
+	if err := j.validateSetWaitForSslPendingValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForSslPendingValidation",
 		val,
 	)
 }
@@ -825,6 +895,14 @@ func (c *jsiiProxy_CustomHostname) PutSsl(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CustomHostname) ResetCustomMetadata() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMetadata",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CustomHostname) ResetCustomOriginServer() {
 	_jsii_.InvokeVoid(
 		c,
@@ -861,6 +939,14 @@ func (c *jsiiProxy_CustomHostname) ResetSsl() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomHostname) ResetWaitForSslPendingValidation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWaitForSslPendingValidation",
 		nil, // no parameters
 	)
 }

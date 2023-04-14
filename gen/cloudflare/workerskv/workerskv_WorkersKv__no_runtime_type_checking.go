@@ -56,6 +56,10 @@ func validateWorkersKv_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKv) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKv) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

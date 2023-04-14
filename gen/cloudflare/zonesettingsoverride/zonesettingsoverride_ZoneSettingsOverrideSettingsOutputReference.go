@@ -123,6 +123,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	OriginErrorPagePassThru() *string
 	SetOriginErrorPagePassThru(val *string)
 	OriginErrorPagePassThruInput() *string
+	OriginMaxHttpVersion() *string
+	SetOriginMaxHttpVersion(val *string)
+	OriginMaxHttpVersionInput() *string
 	Polish() *string
 	SetPolish(val *string)
 	PolishInput() *string
@@ -255,6 +258,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetOpportunisticOnion()
 	ResetOrangeToOrange()
 	ResetOriginErrorPagePassThru()
+	ResetOriginMaxHttpVersion()
 	ResetPolish()
 	ResetPrefetchPreload()
 	ResetPrivacyPass()
@@ -977,6 +981,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) OriginErrorPageP
 	_jsii_.Get(
 		j,
 		"originErrorPagePassThruInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) OriginMaxHttpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originMaxHttpVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) OriginMaxHttpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originMaxHttpVersionInput",
 		&returns,
 	)
 	return returns
@@ -1833,6 +1857,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOriginErrorPag
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOriginMaxHttpVersion(val *string) {
+	if err := j.validateSetOriginMaxHttpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originMaxHttpVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPolish(val *string) {
 	if err := j.validateSetPolishParameters(val); err != nil {
 		panic(err)
@@ -2557,6 +2592,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetOriginError
 	_jsii_.InvokeVoid(
 		z,
 		"resetOriginErrorPagePassThru",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetOriginMaxHttpVersion() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetOriginMaxHttpVersion",
 		nil, // no parameters
 	)
 }

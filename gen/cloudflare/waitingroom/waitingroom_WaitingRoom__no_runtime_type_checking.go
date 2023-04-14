@@ -116,6 +116,10 @@ func (j *jsiiProxy_WaitingRoom) validateSetQueueAllParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_WaitingRoom) validateSetQueueingMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoom) validateSetSessionDurationParameters(val *float64) error {
 	return nil
 }

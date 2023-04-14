@@ -10,9 +10,6 @@ import (
 
 type PageRuleActionsOutputReference interface {
 	cdktf.ComplexObject
-	AlwaysOnline() *string
-	SetAlwaysOnline(val *string)
-	AlwaysOnlineInput() *string
 	AlwaysUseHttps() interface{}
 	SetAlwaysUseHttps(val interface{})
 	AlwaysUseHttpsInput() interface{}
@@ -175,7 +172,6 @@ type PageRuleActionsOutputReference interface {
 	PutCacheTtlByStatus(value interface{})
 	PutForwardingUrl(value *PageRuleActionsForwardingUrl)
 	PutMinify(value interface{})
-	ResetAlwaysOnline()
 	ResetAlwaysUseHttps()
 	ResetAutomaticHttpsRewrites()
 	ResetBrowserCacheTtl()
@@ -226,26 +222,6 @@ type PageRuleActionsOutputReference interface {
 // The jsii proxy struct for PageRuleActionsOutputReference
 type jsiiProxy_PageRuleActionsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysOnline() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"alwaysOnline",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysOnlineInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"alwaysOnlineInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_PageRuleActionsOutputReference) AlwaysUseHttps() interface{} {
@@ -1086,17 +1062,6 @@ func NewPageRuleActionsOutputReference_Override(p PageRuleActionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetAlwaysOnline(val *string) {
-	if err := j.validateSetAlwaysOnlineParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"alwaysOnline",
-		val,
-	)
-}
-
 func (j *jsiiProxy_PageRuleActionsOutputReference)SetAlwaysUseHttps(val interface{}) {
 	if err := j.validateSetAlwaysUseHttpsParameters(val); err != nil {
 		panic(err)
@@ -1742,14 +1707,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutMinify(value interface{}) 
 		p,
 		"putMinify",
 		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PageRuleActionsOutputReference) ResetAlwaysOnline() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetAlwaysOnline",
-		nil, // no parameters
 	)
 }
 

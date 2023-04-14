@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member}.
 type AccountMember interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -61,6 +64,9 @@ type AccountMember interface {
 	RoleIds() *[]*string
 	SetRoleIds(val *[]*string)
 	RoleIdsInput() *[]*string
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,6 +102,7 @@ type AccountMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -109,6 +116,26 @@ type AccountMember interface {
 // The jsii proxy struct for AccountMember
 type jsiiProxy_AccountMember struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AccountMember) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountMember) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccountMember) CdktfStack() cdktf.TerraformStack {
@@ -301,6 +328,26 @@ func (j *jsiiProxy_AccountMember) RoleIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountMember) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountMember) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountMember) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -358,6 +405,17 @@ func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *
 		"cloudflare.accountMember.AccountMember",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AccountMember)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -455,6 +513,17 @@ func (j *jsiiProxy_AccountMember)SetRoleIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roleIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountMember)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -699,6 +768,14 @@ func (a *jsiiProxy_AccountMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountMember) ResetStatus() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

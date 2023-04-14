@@ -60,7 +60,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersOrigin) error {
+func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) validateSe
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersOriginOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesActionParametersOriginOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

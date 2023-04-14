@@ -60,6 +60,10 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetCl
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetClientKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetClientSecretParameters(val *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetCo
 }
 
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetCustomerIdParameters(val *string) error {
 	return nil
 }
 

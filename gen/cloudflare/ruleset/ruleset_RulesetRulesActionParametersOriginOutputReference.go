@@ -30,8 +30,8 @@ type RulesetRulesActionParametersOriginOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
-	InternalValue() *RulesetRulesActionParametersOrigin
-	SetInternalValue(val *RulesetRulesActionParametersOrigin)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -144,8 +144,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) HostInput(
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) InternalValue() *RulesetRulesActionParametersOrigin {
-	var returns *RulesetRulesActionParametersOrigin
+func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference) TerraformR
 }
 
 
-func NewRulesetRulesActionParametersOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersOriginOutputReference {
+func NewRulesetRulesActionParametersOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersOriginOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersOriginOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersOriginOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersOriginOutputReference{}
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersOriginOutputReference_Override(r RulesetRulesActionParametersOriginOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersOriginOutputReference_Override(r RulesetRulesActionParametersOriginOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -255,7 +255,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference)SetHost(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference)SetInternalValue(val *RulesetRulesActionParametersOrigin) {
+func (j *jsiiProxy_RulesetRulesActionParametersOriginOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

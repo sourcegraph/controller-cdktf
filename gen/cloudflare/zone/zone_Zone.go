@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/zone cloudflare_zone}.
 type Zone interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -127,6 +130,26 @@ type Zone interface {
 // The jsii proxy struct for Zone
 type jsiiProxy_Zone struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Zone) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Zone) CdktfStack() cdktf.TerraformStack {
@@ -486,6 +509,17 @@ func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *Zo
 		"cloudflare.zone.Zone",
 		[]interface{}{scope, id, config},
 		z,
+	)
+}
+
+func (j *jsiiProxy_Zone)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 

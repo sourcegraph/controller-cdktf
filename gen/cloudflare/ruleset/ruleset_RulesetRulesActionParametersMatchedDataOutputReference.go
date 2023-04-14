@@ -27,8 +27,8 @@ type RulesetRulesActionParametersMatchedDataOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersMatchedData
-	SetInternalValue(val *RulesetRulesActionParametersMatchedData)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	PublicKey() *string
 	SetPublicKey(val *string)
 	PublicKeyInput() *string
@@ -120,8 +120,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) InternalValue() *RulesetRulesActionParametersMatchedData {
-	var returns *RulesetRulesActionParametersMatchedData
+func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -171,29 +171,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) Terra
 }
 
 
-func NewRulesetRulesActionParametersMatchedDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersMatchedDataOutputReference {
+func NewRulesetRulesActionParametersMatchedDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersMatchedDataOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersMatchedDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersMatchedDataOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference{}
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersMatchedDataOutputReference_Override(r RulesetRulesActionParametersMatchedDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersMatchedDataOutputReference_Override(r RulesetRulesActionParametersMatchedDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -220,7 +220,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference)SetInternalValue(val *RulesetRulesActionParametersMatchedData) {
+func (j *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

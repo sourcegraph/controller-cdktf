@@ -19,18 +19,26 @@ type AccessServiceTokenConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#name AccessServiceToken#name}.
+	// Friendly name of the token's intent.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#name AccessServiceToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#account_id AccessServiceToken#account_id}.
+	// The account identifier to target for the resource. Conflicts with `zone_id`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#account_id AccessServiceToken#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#id AccessServiceToken#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}.
+	// Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
 	MinDaysForRenewal *float64 `field:"optional" json:"minDaysForRenewal" yaml:"minDaysForRenewal"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#zone_id AccessServiceToken#zone_id}.
+	// The zone identifier to target for the resource. Conflicts with `account_id`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#zone_id AccessServiceToken#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

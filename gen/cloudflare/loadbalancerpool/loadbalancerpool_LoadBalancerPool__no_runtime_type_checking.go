@@ -68,6 +68,10 @@ func validateLoadBalancerPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPool) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPool) validateSetCheckRegionsParameters(val *[]*string) error {
 	return nil
 }

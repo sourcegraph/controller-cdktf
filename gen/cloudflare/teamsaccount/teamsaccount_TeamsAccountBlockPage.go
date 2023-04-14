@@ -2,17 +2,37 @@ package teamsaccount
 
 
 type TeamsAccountBlockPage struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#background_color TeamsAccount#background_color}.
+	// Hex code of block page background color.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#background_color TeamsAccount#background_color}
 	BackgroundColor *string `field:"optional" json:"backgroundColor" yaml:"backgroundColor"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled TeamsAccount#enabled}.
+	// Indicator of enablement.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled TeamsAccount#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#footer_text TeamsAccount#footer_text}.
+	// Block page footer text.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#footer_text TeamsAccount#footer_text}
 	FooterText *string `field:"optional" json:"footerText" yaml:"footerText"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#header_text TeamsAccount#header_text}.
+	// Block page header text.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#header_text TeamsAccount#header_text}
 	HeaderText *string `field:"optional" json:"headerText" yaml:"headerText"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#logo_path TeamsAccount#logo_path}.
+	// URL of block page logo.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#logo_path TeamsAccount#logo_path}
 	LogoPath *string `field:"optional" json:"logoPath" yaml:"logoPath"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#name TeamsAccount#name}.
+	// Admin email for users to contact.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#mailto_address TeamsAccount#mailto_address}
+	MailtoAddress *string `field:"optional" json:"mailtoAddress" yaml:"mailtoAddress"`
+	// Subject line for emails created from block page.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#mailto_subject TeamsAccount#mailto_subject}
+	MailtoSubject *string `field:"optional" json:"mailtoSubject" yaml:"mailtoSubject"`
+	// Name of block page configuration.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#name TeamsAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
