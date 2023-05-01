@@ -19,7 +19,9 @@ type ApiTokenConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#name ApiToken#name}.
+	// Name of the API Token.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#name ApiToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// policy block.
 	//
@@ -29,10 +31,18 @@ type ApiTokenConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#condition ApiToken#condition}
 	Condition *ApiTokenCondition `field:"optional" json:"condition" yaml:"condition"`
+	// The expiration time on or after which the token MUST NOT be accepted for processing.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#expires_on ApiToken#expires_on}
+	ExpiresOn *string `field:"optional" json:"expiresOn" yaml:"expiresOn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#id ApiToken#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The time before which the token MUST NOT be accepted for processing.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#not_before ApiToken#not_before}
+	NotBefore *string `field:"optional" json:"notBefore" yaml:"notBefore"`
 }
 

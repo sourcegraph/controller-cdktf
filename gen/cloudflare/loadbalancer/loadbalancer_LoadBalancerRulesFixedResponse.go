@@ -2,13 +2,21 @@ package loadbalancer
 
 
 type LoadBalancerRulesFixedResponse struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#content_type LoadBalancer#content_type}.
+	// The value of the HTTP context-type header for this fixed response.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#content_type LoadBalancer#content_type}
 	ContentType *string `field:"optional" json:"contentType" yaml:"contentType"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#location LoadBalancer#location}.
+	// The value of the HTTP location header for this fixed response.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#location LoadBalancer#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#message_body LoadBalancer#message_body}.
+	// The text used as the html body for this fixed response.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#message_body LoadBalancer#message_body}
 	MessageBody *string `field:"optional" json:"messageBody" yaml:"messageBody"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#status_code LoadBalancer#status_code}.
+	// The HTTP status code used for this fixed response.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#status_code LoadBalancer#status_code}
 	StatusCode *float64 `field:"optional" json:"statusCode" yaml:"statusCode"`
 }
 

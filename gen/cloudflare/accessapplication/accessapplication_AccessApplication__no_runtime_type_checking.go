@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value int
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validatePutSaasAppParameters(value *AccessApplicationSaasApp) error {
+	return nil
+}
+
 func validateAccessApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }

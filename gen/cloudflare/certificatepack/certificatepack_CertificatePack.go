@@ -116,16 +116,13 @@ type CertificatePack interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutValidationErrors(value interface{})
 	PutValidationRecords(value interface{})
-	ResetCertificateAuthority()
 	ResetCloudflareBranding()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValidationErrors()
-	ResetValidationMethod()
 	ResetValidationRecords()
-	ResetValidityDays()
 	ResetWaitForActiveStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -966,14 +963,6 @@ func (c *jsiiProxy_CertificatePack) PutValidationRecords(value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) ResetCertificateAuthority() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCertificateAuthority",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CertificatePack) ResetCloudflareBranding() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1006,26 +995,10 @@ func (c *jsiiProxy_CertificatePack) ResetValidationErrors() {
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) ResetValidationMethod() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetValidationMethod",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CertificatePack) ResetValidationRecords() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetValidationRecords",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CertificatePack) ResetValidityDays() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetValidityDays",
 		nil, // no parameters
 	)
 }

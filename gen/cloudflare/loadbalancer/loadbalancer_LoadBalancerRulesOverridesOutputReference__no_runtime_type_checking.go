@@ -44,11 +44,31 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolat
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountryPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPoolsParameters(value interface{}) error {
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value interface{}) error {
 	return nil
 }
 
@@ -77,10 +97,6 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInterna
 }
 
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetSessionAffinityParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetSessionAffinityAttributesParameters(val *map[string]*string) error {
 	return nil
 }
 

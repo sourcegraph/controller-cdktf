@@ -93,6 +93,44 @@ func init() {
 		reflect.TypeOf((*TeamsRuleRuleSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh",
+		reflect.TypeOf((*TeamsRuleRuleSettingsAuditSsh)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
+		reflect.TypeOf((*TeamsRuleRuleSettingsAuditSshOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "commandLogging", GoGetter: "CommandLogging"},
+			_jsii_.MemberProperty{JsiiProperty: "commandLoggingInput", GoGetter: "CommandLoggingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls",
 		reflect.TypeOf((*TeamsRuleRuleSettingsBisoAdminControls)(nil)).Elem(),
 	)
@@ -184,6 +222,49 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsEgress",
+		reflect.TypeOf((*TeamsRuleRuleSettingsEgress)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
+		reflect.TypeOf((*TeamsRuleRuleSettingsEgressOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv4", GoGetter: "Ipv4"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv4Fallback", GoGetter: "Ipv4Fallback"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv4FallbackInput", GoGetter: "Ipv4FallbackInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv4Input", GoGetter: "Ipv4Input"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv6", GoGetter: "Ipv6"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv6Input", GoGetter: "Ipv6Input"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpv4Fallback", GoMethod: "ResetIpv4Fallback"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override",
 		reflect.TypeOf((*TeamsRuleRuleSettingsL4Override)(nil)).Elem(),
 	)
@@ -229,18 +310,26 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addHeaders", GoGetter: "AddHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "addHeadersInput", GoGetter: "AddHeadersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowChildBypass", GoGetter: "AllowChildBypass"},
+			_jsii_.MemberProperty{JsiiProperty: "allowChildBypassInput", GoGetter: "AllowChildBypassInput"},
+			_jsii_.MemberProperty{JsiiProperty: "auditSsh", GoGetter: "AuditSsh"},
+			_jsii_.MemberProperty{JsiiProperty: "auditSshInput", GoGetter: "AuditSshInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bisoAdminControls", GoGetter: "BisoAdminControls"},
 			_jsii_.MemberProperty{JsiiProperty: "bisoAdminControlsInput", GoGetter: "BisoAdminControlsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPageEnabled", GoGetter: "BlockPageEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPageEnabledInput", GoGetter: "BlockPageEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPageReason", GoGetter: "BlockPageReason"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPageReasonInput", GoGetter: "BlockPageReasonInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bypassParentRule", GoGetter: "BypassParentRule"},
+			_jsii_.MemberProperty{JsiiProperty: "bypassParentRuleInput", GoGetter: "BypassParentRuleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "checkSession", GoGetter: "CheckSession"},
 			_jsii_.MemberProperty{JsiiProperty: "checkSessionInput", GoGetter: "CheckSessionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "egress", GoGetter: "Egress"},
+			_jsii_.MemberProperty{JsiiProperty: "egressInput", GoGetter: "EgressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -256,31 +345,125 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipCategories", GoGetter: "IpCategories"},
+			_jsii_.MemberProperty{JsiiProperty: "ipCategoriesInput", GoGetter: "IpCategoriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "l4Override", GoGetter: "L4Override"},
 			_jsii_.MemberProperty{JsiiProperty: "l4OverrideInput", GoGetter: "L4OverrideInput"},
 			_jsii_.MemberProperty{JsiiProperty: "overrideHost", GoGetter: "OverrideHost"},
 			_jsii_.MemberProperty{JsiiProperty: "overrideHostInput", GoGetter: "OverrideHostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "overrideIps", GoGetter: "OverrideIps"},
 			_jsii_.MemberProperty{JsiiProperty: "overrideIpsInput", GoGetter: "OverrideIpsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "payloadLog", GoGetter: "PayloadLog"},
+			_jsii_.MemberProperty{JsiiProperty: "payloadLogInput", GoGetter: "PayloadLogInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAuditSsh", GoMethod: "PutAuditSsh"},
 			_jsii_.MemberMethod{JsiiMethod: "putBisoAdminControls", GoMethod: "PutBisoAdminControls"},
 			_jsii_.MemberMethod{JsiiMethod: "putCheckSession", GoMethod: "PutCheckSession"},
+			_jsii_.MemberMethod{JsiiMethod: "putEgress", GoMethod: "PutEgress"},
 			_jsii_.MemberMethod{JsiiMethod: "putL4Override", GoMethod: "PutL4Override"},
+			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
+			_jsii_.MemberMethod{JsiiMethod: "putUntrustedCert", GoMethod: "PutUntrustedCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddHeaders", GoMethod: "ResetAddHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowChildBypass", GoMethod: "ResetAllowChildBypass"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuditSsh", GoMethod: "ResetAuditSsh"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBisoAdminControls", GoMethod: "ResetBisoAdminControls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPageEnabled", GoMethod: "ResetBlockPageEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPageReason", GoMethod: "ResetBlockPageReason"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBypassParentRule", GoMethod: "ResetBypassParentRule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCheckSession", GoMethod: "ResetCheckSession"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEgress", GoMethod: "ResetEgress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureDisableDnssecValidation", GoMethod: "ResetInsecureDisableDnssecValidation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpCategories", GoMethod: "ResetIpCategories"},
 			_jsii_.MemberMethod{JsiiMethod: "resetL4Override", GoMethod: "ResetL4Override"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideHost", GoMethod: "ResetOverrideHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideIps", GoMethod: "ResetOverrideIps"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPayloadLog", GoMethod: "ResetPayloadLog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUntrustedCert", GoMethod: "ResetUntrustedCert"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "untrustedCert", GoGetter: "UntrustedCert"},
+			_jsii_.MemberProperty{JsiiProperty: "untrustedCertInput", GoGetter: "UntrustedCertInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsRuleRuleSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog",
+		reflect.TypeOf((*TeamsRuleRuleSettingsPayloadLog)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
+		reflect.TypeOf((*TeamsRuleRuleSettingsPayloadLogOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_TeamsRuleRuleSettingsOutputReference{}
+			j := jsiiProxy_TeamsRuleRuleSettingsPayloadLogOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert",
+		reflect.TypeOf((*TeamsRuleRuleSettingsUntrustedCert)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
+		reflect.TypeOf((*TeamsRuleRuleSettingsUntrustedCertOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
+			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAction", GoMethod: "ResetAction"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

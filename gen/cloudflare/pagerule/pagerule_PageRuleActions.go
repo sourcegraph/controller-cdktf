@@ -2,9 +2,9 @@ package pagerule
 
 
 type PageRuleActions struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_online PageRule#always_online}.
-	AlwaysOnline *string `field:"optional" json:"alwaysOnline" yaml:"alwaysOnline"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_use_https PageRule#always_use_https}.
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_use_https PageRule#always_use_https}
 	AlwaysUseHttps interface{} `field:"optional" json:"alwaysUseHttps" yaml:"alwaysUseHttps"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}.
 	AutomaticHttpsRewrites *string `field:"optional" json:"automaticHttpsRewrites" yaml:"automaticHttpsRewrites"`
@@ -30,15 +30,25 @@ type PageRuleActions struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#cache_ttl_by_status PageRule#cache_ttl_by_status}
 	CacheTtlByStatus interface{} `field:"optional" json:"cacheTtlByStatus" yaml:"cacheTtlByStatus"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_apps PageRule#disable_apps}.
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_apps PageRule#disable_apps}
 	DisableApps interface{} `field:"optional" json:"disableApps" yaml:"disableApps"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_performance PageRule#disable_performance}.
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_performance PageRule#disable_performance}
 	DisablePerformance interface{} `field:"optional" json:"disablePerformance" yaml:"disablePerformance"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_railgun PageRule#disable_railgun}.
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_railgun PageRule#disable_railgun}
 	DisableRailgun interface{} `field:"optional" json:"disableRailgun" yaml:"disableRailgun"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_security PageRule#disable_security}.
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_security PageRule#disable_security}
 	DisableSecurity interface{} `field:"optional" json:"disableSecurity" yaml:"disableSecurity"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_zaraz PageRule#disable_zaraz}.
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_zaraz PageRule#disable_zaraz}
 	DisableZaraz interface{} `field:"optional" json:"disableZaraz" yaml:"disableZaraz"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}.
 	EdgeCacheTtl *float64 `field:"optional" json:"edgeCacheTtl" yaml:"edgeCacheTtl"`

@@ -85,12 +85,6 @@ type Healthcheck interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	NotificationEmailAddresses() *[]*string
-	SetNotificationEmailAddresses(val *[]*string)
-	NotificationEmailAddressesInput() *[]*string
-	NotificationSuspended() interface{}
-	SetNotificationSuspended(val interface{})
-	NotificationSuspendedInput() interface{}
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -169,8 +163,6 @@ type Healthcheck interface {
 	ResetId()
 	ResetInterval()
 	ResetMethod()
-	ResetNotificationEmailAddresses()
-	ResetNotificationSuspended()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -590,46 +582,6 @@ func (j *jsiiProxy_Healthcheck) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) NotificationEmailAddresses() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notificationEmailAddresses",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) NotificationEmailAddressesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notificationEmailAddressesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) NotificationSuspended() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"notificationSuspended",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) NotificationSuspendedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"notificationSuspendedInput",
 		&returns,
 	)
 	return returns
@@ -1074,28 +1026,6 @@ func (j *jsiiProxy_Healthcheck)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Healthcheck)SetNotificationEmailAddresses(val *[]*string) {
-	if err := j.validateSetNotificationEmailAddressesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notificationEmailAddresses",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetNotificationSuspended(val interface{}) {
-	if err := j.validateSetNotificationSuspendedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notificationSuspended",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Healthcheck)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -1534,22 +1464,6 @@ func (h *jsiiProxy_Healthcheck) ResetMethod() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetMethod",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetNotificationEmailAddresses() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetNotificationEmailAddresses",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetNotificationSuspended() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetNotificationSuspended",
 		nil, // no parameters
 	)
 }

@@ -40,6 +40,9 @@ type LogpushJob interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,6 +57,9 @@ type LogpushJob interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -115,8 +121,10 @@ type LogpushJob interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
 	ResetEnabled()
+	ResetFilter()
 	ResetFrequency()
 	ResetId()
+	ResetKind()
 	ResetLogpullOptions()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -269,6 +277,26 @@ func (j *jsiiProxy_LogpushJob) EnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LogpushJob) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogpushJob) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -334,6 +362,26 @@ func (j *jsiiProxy_LogpushJob) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
 		&returns,
 	)
 	return returns
@@ -600,6 +648,17 @@ func (j *jsiiProxy_LogpushJob)SetEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_LogpushJob)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LogpushJob)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -626,6 +685,17 @@ func (j *jsiiProxy_LogpushJob)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJob)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
 		val,
 	)
 }
@@ -948,6 +1018,14 @@ func (l *jsiiProxy_LogpushJob) ResetEnabled() {
 	)
 }
 
+func (l *jsiiProxy_LogpushJob) ResetFilter() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogpushJob) ResetFrequency() {
 	_jsii_.InvokeVoid(
 		l,
@@ -960,6 +1038,14 @@ func (l *jsiiProxy_LogpushJob) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetKind() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetKind",
 		nil, // no parameters
 	)
 }

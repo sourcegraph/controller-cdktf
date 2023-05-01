@@ -150,6 +150,14 @@ func validateLoadBalancerMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerMonitor) validateSetAllowInsecureParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -382,6 +390,9 @@ func validateNewLoadBalancerMonitorParameters(scope constructs.Construct, id *st
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

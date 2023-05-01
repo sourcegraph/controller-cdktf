@@ -60,6 +60,10 @@ func (j *jsiiProxy_IpsecTunnel) validateSetAccountIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_IpsecTunnel) validateSetAllowNullCipherParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpsecTunnel) validateSetCloudflareEndpointParameters(val *string) error {
 	return nil
 }
@@ -73,6 +77,26 @@ func (j *jsiiProxy_IpsecTunnel) validateSetCustomerEndpointParameters(val *strin
 }
 
 func (j *jsiiProxy_IpsecTunnel) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetFqdnIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetHealthCheckEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetHealthCheckTargetParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetHealthCheckTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetHexIdParameters(val *string) error {
 	return nil
 }
 
@@ -93,6 +117,18 @@ func (j *jsiiProxy_IpsecTunnel) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_IpsecTunnel) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetPskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetRemoteIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetUserIdParameters(val *string) error {
 	return nil
 }
 

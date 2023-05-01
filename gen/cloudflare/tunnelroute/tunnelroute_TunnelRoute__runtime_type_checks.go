@@ -246,6 +246,14 @@ func (j *jsiiProxy_TunnelRoute) validateSetTunnelIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_TunnelRoute) validateSetVirtualNetworkIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewTunnelRouteParameters(scope constructs.Construct, id *string, config *TunnelRouteConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

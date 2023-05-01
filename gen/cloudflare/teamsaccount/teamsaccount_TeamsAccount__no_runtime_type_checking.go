@@ -68,6 +68,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutLoggingParameters(value *TeamsAccoun
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutPayloadLogParameters(value *TeamsAccountPayloadLog) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validatePutProxyParameters(value *TeamsAccountProxy) error {
 	return nil
 }

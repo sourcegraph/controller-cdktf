@@ -50,6 +50,9 @@ type FallbackDomain interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PolicyId() *string
+	SetPolicyId(val *string)
+	PolicyIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -96,6 +99,7 @@ type FallbackDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -271,6 +275,26 @@ func (j *jsiiProxy_FallbackDomain) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_FallbackDomain) PolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FallbackDomain) PolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FallbackDomain) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -425,6 +449,17 @@ func (j *jsiiProxy_FallbackDomain)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FallbackDomain)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyId",
 		val,
 	)
 }
@@ -699,6 +734,14 @@ func (f *jsiiProxy_FallbackDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FallbackDomain) ResetPolicyId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPolicyId",
 		nil, // no parameters
 	)
 }

@@ -192,6 +192,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetOrigi
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetOriginMaxHttpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetPolishParameters(val *string) error {
 	return nil
 }

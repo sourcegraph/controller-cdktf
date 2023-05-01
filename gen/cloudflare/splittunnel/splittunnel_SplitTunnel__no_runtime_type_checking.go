@@ -80,6 +80,10 @@ func (j *jsiiProxy_SplitTunnel) validateSetModeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SplitTunnel) validateSetPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SplitTunnel) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

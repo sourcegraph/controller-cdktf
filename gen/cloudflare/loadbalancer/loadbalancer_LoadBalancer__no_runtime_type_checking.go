@@ -52,7 +52,23 @@ func (l *jsiiProxy_LoadBalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value interface{}) error {
 	return nil
 }
 
@@ -61,6 +77,10 @@ func (l *jsiiProxy_LoadBalancer) validatePutRegionPoolsParameters(value interfac
 }
 
 func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value interface{}) error {
 	return nil
 }
 
@@ -109,10 +129,6 @@ func (j *jsiiProxy_LoadBalancer) validateSetProxiedParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_LoadBalancer) validateSetSessionAffinityParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancer) validateSetSessionAffinityAttributesParameters(val *map[string]*string) error {
 	return nil
 }
 

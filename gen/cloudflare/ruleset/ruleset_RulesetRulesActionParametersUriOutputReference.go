@@ -27,15 +27,15 @@ type RulesetRulesActionParametersUriOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersUri
-	SetInternalValue(val *RulesetRulesActionParametersUri)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Origin() interface{}
 	SetOrigin(val interface{})
 	OriginInput() interface{}
-	Path() RulesetRulesActionParametersUriPathOutputReference
-	PathInput() *RulesetRulesActionParametersUriPath
-	Query() RulesetRulesActionParametersUriQueryOutputReference
-	QueryInput() *RulesetRulesActionParametersUriQuery
+	Path() RulesetRulesActionParametersUriPathList
+	PathInput() interface{}
+	Query() RulesetRulesActionParametersUriQueryList
+	QueryInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,8 +68,8 @@ type RulesetRulesActionParametersUriOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPath(value *RulesetRulesActionParametersUriPath)
-	PutQuery(value *RulesetRulesActionParametersUriQuery)
+	PutPath(value interface{})
+	PutQuery(value interface{})
 	ResetOrigin()
 	ResetPath()
 	ResetQuery()
@@ -128,8 +128,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) InternalValue() *RulesetRulesActionParametersUri {
-	var returns *RulesetRulesActionParametersUri
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) OriginInput()
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Path() RulesetRulesActionParametersUriPathOutputReference {
-	var returns RulesetRulesActionParametersUriPathOutputReference
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Path() RulesetRulesActionParametersUriPathList {
+	var returns RulesetRulesActionParametersUriPathList
 	_jsii_.Get(
 		j,
 		"path",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Path() Rulese
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PathInput() *RulesetRulesActionParametersUriPath {
-	var returns *RulesetRulesActionParametersUriPath
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PathInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"pathInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PathInput() *
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Query() RulesetRulesActionParametersUriQueryOutputReference {
-	var returns RulesetRulesActionParametersUriQueryOutputReference
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Query() RulesetRulesActionParametersUriQueryList {
+	var returns RulesetRulesActionParametersUriQueryList
 	_jsii_.Get(
 		j,
 		"query",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Query() Rules
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) QueryInput() *RulesetRulesActionParametersUriQuery {
-	var returns *RulesetRulesActionParametersUriQuery
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) QueryInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"queryInput",
@@ -219,29 +219,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) TerraformReso
 }
 
 
-func NewRulesetRulesActionParametersUriOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersUriOutputReference {
+func NewRulesetRulesActionParametersUriOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersUriOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersUriOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersUriOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersUriOutputReference{}
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersUriOutputReference_Override(r RulesetRulesActionParametersUriOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersUriOutputReference_Override(r RulesetRulesActionParametersUriOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -268,7 +268,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference)SetInternalValue(val *RulesetRulesActionParametersUri) {
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +498,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) Interpolation
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PutPath(value *RulesetRulesActionParametersUriPath) {
+func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PutPath(value interface{}) {
 	if err := r.validatePutPathParameters(value); err != nil {
 		panic(err)
 	}
@@ -509,7 +509,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PutPath(value
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PutQuery(value *RulesetRulesActionParametersUriQuery) {
+func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) PutQuery(value interface{}) {
 	if err := r.validatePutQueryParameters(value); err != nil {
 		panic(err)
 	}

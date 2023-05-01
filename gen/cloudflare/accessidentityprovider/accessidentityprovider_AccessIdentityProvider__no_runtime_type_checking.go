@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessIdentityProvider) validatePutConfigParameters(value int
 	return nil
 }
 
+func (a *jsiiProxy_AccessIdentityProvider) validatePutScimConfigParameters(value interface{}) error {
+	return nil
+}
+
 func validateAccessIdentityProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

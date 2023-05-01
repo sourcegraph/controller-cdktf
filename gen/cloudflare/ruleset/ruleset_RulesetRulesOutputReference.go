@@ -13,8 +13,8 @@ type RulesetRulesOutputReference interface {
 	Action() *string
 	SetAction(val *string)
 	ActionInput() *string
-	ActionParameters() RulesetRulesActionParametersOutputReference
-	ActionParametersInput() *RulesetRulesActionParameters
+	ActionParameters() RulesetRulesActionParametersList
+	ActionParametersInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,21 +36,28 @@ type RulesetRulesOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	ExposedCredentialCheck() RulesetRulesExposedCredentialCheckOutputReference
-	ExposedCredentialCheckInput() *RulesetRulesExposedCredentialCheck
+	ExposedCredentialCheck() RulesetRulesExposedCredentialCheckList
+	ExposedCredentialCheckInput() interface{}
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Logging() RulesetRulesLoggingOutputReference
-	LoggingInput() *RulesetRulesLogging
-	Ratelimit() RulesetRulesRatelimitOutputReference
-	RatelimitInput() *RulesetRulesRatelimit
+	LastUpdated() *string
+	SetLastUpdated(val *string)
+	LastUpdatedInput() *string
+	Logging() RulesetRulesLoggingList
+	LoggingInput() interface{}
+	Ratelimit() RulesetRulesRatelimitList
+	RatelimitInput() interface{}
 	Ref() *string
+	SetRef(val *string)
+	RefInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,6 +67,8 @@ type RulesetRulesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Version() *string
+	SetVersion(val *string)
+	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -84,17 +93,21 @@ type RulesetRulesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutActionParameters(value *RulesetRulesActionParameters)
-	PutExposedCredentialCheck(value *RulesetRulesExposedCredentialCheck)
-	PutLogging(value *RulesetRulesLogging)
-	PutRatelimit(value *RulesetRulesRatelimit)
+	PutActionParameters(value interface{})
+	PutExposedCredentialCheck(value interface{})
+	PutLogging(value interface{})
+	PutRatelimit(value interface{})
 	ResetAction()
 	ResetActionParameters()
 	ResetDescription()
 	ResetEnabled()
 	ResetExposedCredentialCheck()
+	ResetId()
+	ResetLastUpdated()
 	ResetLogging()
 	ResetRatelimit()
+	ResetRef()
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,8 +143,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) ActionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) ActionParameters() RulesetRulesActionParametersOutputReference {
-	var returns RulesetRulesActionParametersOutputReference
+func (j *jsiiProxy_RulesetRulesOutputReference) ActionParameters() RulesetRulesActionParametersList {
+	var returns RulesetRulesActionParametersList
 	_jsii_.Get(
 		j,
 		"actionParameters",
@@ -140,8 +153,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) ActionParameters() RulesetRulesA
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) ActionParametersInput() *RulesetRulesActionParameters {
-	var returns *RulesetRulesActionParameters
+func (j *jsiiProxy_RulesetRulesOutputReference) ActionParametersInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"actionParametersInput",
@@ -220,8 +233,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) ExposedCredentialCheck() RulesetRulesExposedCredentialCheckOutputReference {
-	var returns RulesetRulesExposedCredentialCheckOutputReference
+func (j *jsiiProxy_RulesetRulesOutputReference) ExposedCredentialCheck() RulesetRulesExposedCredentialCheckList {
+	var returns RulesetRulesExposedCredentialCheckList
 	_jsii_.Get(
 		j,
 		"exposedCredentialCheck",
@@ -230,8 +243,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) ExposedCredentialCheck() Ruleset
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) ExposedCredentialCheckInput() *RulesetRulesExposedCredentialCheck {
-	var returns *RulesetRulesExposedCredentialCheck
+func (j *jsiiProxy_RulesetRulesOutputReference) ExposedCredentialCheckInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"exposedCredentialCheckInput",
@@ -280,6 +293,16 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -290,8 +313,28 @@ func (j *jsiiProxy_RulesetRulesOutputReference) InternalValue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) Logging() RulesetRulesLoggingOutputReference {
-	var returns RulesetRulesLoggingOutputReference
+func (j *jsiiProxy_RulesetRulesOutputReference) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) LastUpdatedInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdatedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) Logging() RulesetRulesLoggingList {
+	var returns RulesetRulesLoggingList
 	_jsii_.Get(
 		j,
 		"logging",
@@ -300,8 +343,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Logging() RulesetRulesLoggingOut
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) LoggingInput() *RulesetRulesLogging {
-	var returns *RulesetRulesLogging
+func (j *jsiiProxy_RulesetRulesOutputReference) LoggingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"loggingInput",
@@ -310,8 +353,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) LoggingInput() *RulesetRulesLogg
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) Ratelimit() RulesetRulesRatelimitOutputReference {
-	var returns RulesetRulesRatelimitOutputReference
+func (j *jsiiProxy_RulesetRulesOutputReference) Ratelimit() RulesetRulesRatelimitList {
+	var returns RulesetRulesRatelimitList
 	_jsii_.Get(
 		j,
 		"ratelimit",
@@ -320,8 +363,8 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Ratelimit() RulesetRulesRatelimi
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) RatelimitInput() *RulesetRulesRatelimit {
-	var returns *RulesetRulesRatelimit
+func (j *jsiiProxy_RulesetRulesOutputReference) RatelimitInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ratelimitInput",
@@ -335,6 +378,16 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Ref() *string {
 	_jsii_.Get(
 		j,
 		"ref",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) RefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refInput",
 		&returns,
 	)
 	return returns
@@ -365,6 +418,16 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Version() *string {
 	_jsii_.Get(
 		j,
 		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) VersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionInput",
 		&returns,
 	)
 	return returns
@@ -464,6 +527,17 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetExpression(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -471,6 +545,28 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetInternalValue(val interface{})
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference)SetLastUpdated(val *string) {
+	if err := j.validateSetLastUpdatedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastUpdated",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference)SetRef(val *string) {
+	if err := j.validateSetRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ref",
 		val,
 	)
 }
@@ -493,6 +589,17 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetTerraformResource(val cdktf.II
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -683,7 +790,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) InterpolationForAttribute(proper
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) PutActionParameters(value *RulesetRulesActionParameters) {
+func (r *jsiiProxy_RulesetRulesOutputReference) PutActionParameters(value interface{}) {
 	if err := r.validatePutActionParametersParameters(value); err != nil {
 		panic(err)
 	}
@@ -694,7 +801,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) PutActionParameters(value *Rules
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) PutExposedCredentialCheck(value *RulesetRulesExposedCredentialCheck) {
+func (r *jsiiProxy_RulesetRulesOutputReference) PutExposedCredentialCheck(value interface{}) {
 	if err := r.validatePutExposedCredentialCheckParameters(value); err != nil {
 		panic(err)
 	}
@@ -705,7 +812,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) PutExposedCredentialCheck(value 
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) PutLogging(value *RulesetRulesLogging) {
+func (r *jsiiProxy_RulesetRulesOutputReference) PutLogging(value interface{}) {
 	if err := r.validatePutLoggingParameters(value); err != nil {
 		panic(err)
 	}
@@ -716,7 +823,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) PutLogging(value *RulesetRulesLo
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) PutRatelimit(value *RulesetRulesRatelimit) {
+func (r *jsiiProxy_RulesetRulesOutputReference) PutRatelimit(value interface{}) {
 	if err := r.validatePutRatelimitParameters(value); err != nil {
 		panic(err)
 	}
@@ -767,6 +874,22 @@ func (r *jsiiProxy_RulesetRulesOutputReference) ResetExposedCredentialCheck() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesOutputReference) ResetLastUpdated() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLastUpdated",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesOutputReference) ResetLogging() {
 	_jsii_.InvokeVoid(
 		r,
@@ -779,6 +902,22 @@ func (r *jsiiProxy_RulesetRulesOutputReference) ResetRatelimit() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRatelimit",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesOutputReference) ResetRef() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRef",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

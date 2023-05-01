@@ -124,14 +124,6 @@ func (j *jsiiProxy_Healthcheck) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetNotificationEmailAddressesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetNotificationSuspendedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Healthcheck) validateSetPathParameters(val *string) error {
 	return nil
 }

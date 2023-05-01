@@ -19,9 +19,11 @@ type SplitTunnelConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel#account_id SplitTunnel#account_id}.
+	// The account identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel#account_id SplitTunnel#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The mode of the split tunnel policy. Either 'include' or 'exclude'.
+	// The mode of the split tunnel policy. Available values: `include`, `exclude`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel#mode SplitTunnel#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
@@ -34,5 +36,9 @@ type SplitTunnelConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The settings policy for which to configure this split tunnel policy.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel#policy_id SplitTunnel#policy_id}
+	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
 }
 

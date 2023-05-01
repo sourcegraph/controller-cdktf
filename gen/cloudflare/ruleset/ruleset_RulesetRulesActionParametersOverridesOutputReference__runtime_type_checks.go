@@ -253,9 +253,33 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersOverrides) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case *RulesetRulesActionParametersOverrides:
+		val := val.(*RulesetRulesActionParametersOverrides)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case RulesetRulesActionParametersOverrides:
+		val_ := val.(RulesetRulesActionParametersOverrides)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesActionParametersOverrides, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetSensitivityLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -277,13 +301,21 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

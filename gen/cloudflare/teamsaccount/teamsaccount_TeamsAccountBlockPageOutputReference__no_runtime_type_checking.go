@@ -80,6 +80,14 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetLogoPathPara
 	return nil
 }
 
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetMailtoAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetMailtoSubjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

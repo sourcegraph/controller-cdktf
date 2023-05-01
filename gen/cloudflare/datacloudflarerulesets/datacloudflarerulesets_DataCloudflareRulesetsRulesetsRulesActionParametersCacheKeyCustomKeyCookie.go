@@ -1,0 +1,6 @@
+package datacloudflarerulesets
+
+
+type DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie struct {
+}
+

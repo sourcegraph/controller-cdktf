@@ -56,7 +56,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetInternalValueParameters(val *RulesetRulesExposedCredentialCheck) error {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSe
 	return nil
 }
 
-func validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

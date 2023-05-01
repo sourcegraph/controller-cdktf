@@ -72,7 +72,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersOverrides) error {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetSensitivityLevelParameters(val *string) error {
 	return nil
 }
 
@@ -84,7 +88,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

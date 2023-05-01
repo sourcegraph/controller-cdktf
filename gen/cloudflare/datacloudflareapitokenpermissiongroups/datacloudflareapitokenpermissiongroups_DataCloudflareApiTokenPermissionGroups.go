@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/api_token_permission_groups cloudflare_api_token_permission_groups}.
 type DataCloudflareApiTokenPermissionGroups interface {
 	cdktf.TerraformDataSource
+	Account() cdktf.StringMap
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -54,6 +55,8 @@ type DataCloudflareApiTokenPermissionGroups interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	User() cdktf.StringMap
+	Zone() cdktf.StringMap
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,6 +99,16 @@ type DataCloudflareApiTokenPermissionGroups interface {
 // The jsii proxy struct for DataCloudflareApiTokenPermissionGroups
 type jsiiProxy_DataCloudflareApiTokenPermissionGroups struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Account() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"account",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) CdktfStack() cdktf.TerraformStack {
@@ -263,6 +276,26 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) TerraformResourceType
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) User() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"user",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Zone() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"zone",
 		&returns,
 	)
 	return returns

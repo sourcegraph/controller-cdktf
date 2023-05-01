@@ -68,6 +68,10 @@ func (j *jsiiProxy_ApiToken) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_ApiToken) validateSetExpiresOnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiToken) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_ApiToken) validateSetLifecycleParameters(val *cdktf.Terraform
 }
 
 func (j *jsiiProxy_ApiToken) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiToken) validateSetNotBeforeParameters(val *string) error {
 	return nil
 }
 

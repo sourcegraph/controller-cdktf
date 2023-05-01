@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCorsHeaders", GoMethod: "PutCorsHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "putSaasApp", GoMethod: "PutSaasApp"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIdps", GoMethod: "ResetAllowedIdps"},
@@ -71,17 +72,21 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCorsHeaders", GoMethod: "ResetCorsHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomDenyMessage", GoMethod: "ResetCustomDenyMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomDenyUrl", GoMethod: "ResetCustomDenyUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDomain", GoMethod: "ResetDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableBindingCookie", GoMethod: "ResetEnableBindingCookie"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpOnlyCookieAttribute", GoMethod: "ResetHttpOnlyCookieAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogoUrl", GoMethod: "ResetLogoUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSaasApp", GoMethod: "ResetSaasApp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSameSiteCookieAttribute", GoMethod: "ResetSameSiteCookieAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAuth401Redirect", GoMethod: "ResetServiceAuth401Redirect"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipInterstitial", GoMethod: "ResetSkipInterstitial"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
+			_jsii_.MemberProperty{JsiiProperty: "saasApp", GoGetter: "SaasApp"},
+			_jsii_.MemberProperty{JsiiProperty: "saasAppInput", GoGetter: "SaasAppInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sameSiteCookieAttribute", GoGetter: "SameSiteCookieAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "sameSiteCookieAttributeInput", GoGetter: "SameSiteCookieAttributeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAuth401Redirect", GoGetter: "ServiceAuth401Redirect"},
@@ -189,6 +194,49 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessApplicationCorsHeadersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"cloudflare.accessApplication.AccessApplicationSaasApp",
+		reflect.TypeOf((*AccessApplicationSaasApp)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
+		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerServiceUrl", GoGetter: "ConsumerServiceUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerServiceUrlInput", GoGetter: "ConsumerServiceUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nameIdFormat", GoGetter: "NameIdFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "nameIdFormatInput", GoGetter: "NameIdFormatInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNameIdFormat", GoMethod: "ResetNameIdFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "spEntityId", GoGetter: "SpEntityId"},
+			_jsii_.MemberProperty{JsiiProperty: "spEntityIdInput", GoGetter: "SpEntityIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

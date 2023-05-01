@@ -88,6 +88,10 @@ func (j *jsiiProxy_TunnelRoute) validateSetTunnelIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_TunnelRoute) validateSetVirtualNetworkIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewTunnelRouteParameters(scope constructs.Construct, id *string, config *TunnelRouteConfig) error {
 	return nil
 }

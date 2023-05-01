@@ -70,6 +70,8 @@ type ZoneSettingsOverrideSettings struct {
 	OrangeToOrange *string `field:"optional" json:"orangeToOrange" yaml:"orangeToOrange"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#origin_error_page_pass_thru ZoneSettingsOverride#origin_error_page_pass_thru}.
 	OriginErrorPagePassThru *string `field:"optional" json:"originErrorPagePassThru" yaml:"originErrorPagePassThru"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#origin_max_http_version ZoneSettingsOverride#origin_max_http_version}.
+	OriginMaxHttpVersion *string `field:"optional" json:"originMaxHttpVersion" yaml:"originMaxHttpVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#polish ZoneSettingsOverride#polish}.
 	Polish *string `field:"optional" json:"polish" yaml:"polish"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#prefetch_preload ZoneSettingsOverride#prefetch_preload}.

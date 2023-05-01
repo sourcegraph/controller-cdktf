@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type WorkersKvNamespace interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -106,6 +109,26 @@ type WorkersKvNamespace interface {
 // The jsii proxy struct for WorkersKvNamespace
 type jsiiProxy_WorkersKvNamespace struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkersKvNamespace) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKvNamespace) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkersKvNamespace) CdktfStack() cdktf.TerraformStack {
@@ -335,6 +358,17 @@ func NewWorkersKvNamespace_Override(w WorkersKvNamespace, scope constructs.Const
 		"cloudflare.workersKvNamespace.WorkersKvNamespace",
 		[]interface{}{scope, id, config},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WorkersKvNamespace)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 

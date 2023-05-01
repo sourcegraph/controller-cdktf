@@ -27,8 +27,8 @@ type RulesetRulesExposedCredentialCheckOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesExposedCredentialCheck
-	SetInternalValue(val *RulesetRulesExposedCredentialCheck)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	PasswordExpression() *string
 	SetPasswordExpression(val *string)
 	PasswordExpressionInput() *string
@@ -124,8 +124,8 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) InternalValue() *RulesetRulesExposedCredentialCheck {
-	var returns *RulesetRulesExposedCredentialCheck
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) UsernameEx
 }
 
 
-func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesExposedCredentialCheckOutputReference {
+func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesExposedCredentialCheckOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference{}
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesExposedCredentialCheckOutputReference_Override(r RulesetRulesExposedCredentialCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesExposedCredentialCheckOutputReference_Override(r RulesetRulesExposedCredentialCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -244,7 +244,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetInternalValue(val *RulesetRulesExposedCredentialCheck) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

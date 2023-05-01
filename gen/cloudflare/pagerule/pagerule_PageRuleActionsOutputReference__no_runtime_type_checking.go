@@ -64,10 +64,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetAlwaysOnlineParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetAlwaysUseHttpsParameters(val interface{}) error {
 	return nil
 }

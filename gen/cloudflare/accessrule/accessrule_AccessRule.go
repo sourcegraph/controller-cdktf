@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule cloudflare_access_rule}.
 type AccessRule interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Configuration() AccessRuleConfigurationOutputReference
@@ -98,6 +101,7 @@ type AccessRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfiguration(value *AccessRuleConfiguration)
+	ResetAccountId()
 	ResetId()
 	ResetNotes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -117,6 +121,26 @@ type AccessRule interface {
 // The jsii proxy struct for AccessRule
 type jsiiProxy_AccessRule struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AccessRule) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessRule) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessRule) CdktfStack() cdktf.TerraformStack {
@@ -406,6 +430,17 @@ func NewAccessRule_Override(a AccessRule, scope constructs.Construct, id *string
 		"cloudflare.accessRule.AccessRule",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AccessRule)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -754,6 +789,14 @@ func (a *jsiiProxy_AccessRule) PutConfiguration(value *AccessRuleConfiguration) 
 		a,
 		"putConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessRule) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

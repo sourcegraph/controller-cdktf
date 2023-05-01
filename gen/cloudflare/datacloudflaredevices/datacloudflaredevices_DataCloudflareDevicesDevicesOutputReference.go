@@ -26,6 +26,7 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Deleted() cdktf.IResolvable
 	DeviceType() *string
 	// Experimental.
 	Fqn() *string
@@ -35,9 +36,15 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	Ip() *string
 	Key() *string
 	LastSeen() *string
+	MacAddress() *string
+	Manufacturer() *string
 	Model() *string
 	Name() *string
+	OsDistroName() *string
+	OsDistroRevision() *string
 	OsVersion() *string
+	RevokedAt() *string
+	SerialNumber() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -130,6 +137,16 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) CreationStack() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Deleted() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deleted",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) DeviceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -200,6 +217,26 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) LastSeen() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) MacAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"macAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Manufacturer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"manufacturer",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Model() *string {
 	var returns *string
 	_jsii_.Get(
@@ -220,11 +257,51 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsDistroName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsDistroRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroRevision",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsVersion() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"osVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) RevokedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"revokedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) SerialNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumber",
 		&returns,
 	)
 	return returns

@@ -76,6 +76,10 @@ func (j *jsiiProxy_OriginCaCertificate) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_OriginCaCertificate) validateSetMinDaysForRenewalParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OriginCaCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

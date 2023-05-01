@@ -2,7 +2,9 @@ package teamsaccount
 
 
 type TeamsAccountLogging struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#redact_pii TeamsAccount#redact_pii}.
+	// Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#redact_pii TeamsAccount#redact_pii}
 	RedactPii interface{} `field:"required" json:"redactPii" yaml:"redactPii"`
 	// settings_by_rule_type block.
 	//

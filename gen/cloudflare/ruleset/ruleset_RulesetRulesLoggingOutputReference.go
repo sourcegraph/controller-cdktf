@@ -30,8 +30,8 @@ type RulesetRulesLoggingOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesLogging
-	SetInternalValue(val *RulesetRulesLogging)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) InternalValue() *RulesetRulesLogging {
-	var returns *RulesetRulesLogging
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -171,29 +171,29 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) TerraformResource() cdktf
 }
 
 
-func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesLoggingOutputReference {
+func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesLoggingOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesLoggingOutputReference{}
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesLoggingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"cloudflare.ruleset.RulesetRulesLoggingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -231,7 +231,7 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetInternalValue(val *RulesetRulesLogging) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

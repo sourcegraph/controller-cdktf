@@ -68,6 +68,10 @@ func (j *jsiiProxy_Record) validateSetAllowOverwriteParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Record) validateSetCommentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Record) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (j *jsiiProxy_Record) validateSetProvisionersParameters(val *[]interface{})
 }
 
 func (j *jsiiProxy_Record) validateSetProxiedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Record) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

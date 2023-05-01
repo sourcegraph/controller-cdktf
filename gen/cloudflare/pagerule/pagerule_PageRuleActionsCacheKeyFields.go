@@ -2,14 +2,6 @@ package pagerule
 
 
 type PageRuleActionsCacheKeyFields struct {
-	// cookie block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#cookie PageRule#cookie}
-	Cookie *PageRuleActionsCacheKeyFieldsCookie `field:"required" json:"cookie" yaml:"cookie"`
-	// header block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#header PageRule#header}
-	Header *PageRuleActionsCacheKeyFieldsHeader `field:"required" json:"header" yaml:"header"`
 	// host block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#host PageRule#host}
@@ -22,5 +14,13 @@ type PageRuleActionsCacheKeyFields struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#user PageRule#user}
 	User *PageRuleActionsCacheKeyFieldsUser `field:"required" json:"user" yaml:"user"`
+	// cookie block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#cookie PageRule#cookie}
+	Cookie *PageRuleActionsCacheKeyFieldsCookie `field:"optional" json:"cookie" yaml:"cookie"`
+	// header block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#header PageRule#header}
+	Header *PageRuleActionsCacheKeyFieldsHeader `field:"optional" json:"header" yaml:"header"`
 }
 

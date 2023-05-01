@@ -73,6 +73,9 @@ type TunnelRoute interface {
 	TunnelId() *string
 	SetTunnelId(val *string)
 	TunnelIdInput() *string
+	VirtualNetworkId() *string
+	SetVirtualNetworkId(val *string)
+	VirtualNetworkIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -103,6 +106,7 @@ type TunnelRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetVirtualNetworkId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -378,6 +382,26 @@ func (j *jsiiProxy_TunnelRoute) TunnelIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TunnelRoute) VirtualNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TunnelRoute) VirtualNetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route cloudflare_tunnel_route} Resource.
 func NewTunnelRoute(scope constructs.Construct, id *string, config *TunnelRouteConfig) TunnelRoute {
@@ -524,6 +548,17 @@ func (j *jsiiProxy_TunnelRoute)SetTunnelId(val *string) {
 	_jsii_.Set(
 		j,
 		"tunnelId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TunnelRoute)SetVirtualNetworkId(val *string) {
+	if err := j.validateSetVirtualNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkId",
 		val,
 	)
 }
@@ -776,6 +811,14 @@ func (t *jsiiProxy_TunnelRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TunnelRoute) ResetVirtualNetworkId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetVirtualNetworkId",
 		nil, // no parameters
 	)
 }

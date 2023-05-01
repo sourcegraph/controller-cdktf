@@ -51,6 +51,9 @@ type OriginCaCertificate interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MinDaysForRenewal() *float64
+	SetMinDaysForRenewal(val *float64)
+	MinDaysForRenewalInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -102,6 +105,7 @@ type OriginCaCertificate interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetCsr()
 	ResetId()
+	ResetMinDaysForRenewal()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -286,6 +290,26 @@ func (j *jsiiProxy_OriginCaCertificate) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OriginCaCertificate) MinDaysForRenewal() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDaysForRenewal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OriginCaCertificate) MinDaysForRenewalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDaysForRenewalInput",
 		&returns,
 	)
 	return returns
@@ -506,6 +530,17 @@ func (j *jsiiProxy_OriginCaCertificate)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OriginCaCertificate)SetMinDaysForRenewal(val *float64) {
+	if err := j.validateSetMinDaysForRenewalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minDaysForRenewal",
 		val,
 	)
 }
@@ -791,6 +826,14 @@ func (o *jsiiProxy_OriginCaCertificate) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OriginCaCertificate) ResetMinDaysForRenewal() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMinDaysForRenewal",
 		nil, // no parameters
 	)
 }
