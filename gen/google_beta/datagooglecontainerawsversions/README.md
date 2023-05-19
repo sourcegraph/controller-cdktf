@@ -1,3 +1,3 @@
 # `data_google_container_aws_versions`
 
-Refer to the Terraform Registory for docs: [`data_google_container_aws_versions`](https://www.terraform.io/docs/providers/google-beta/d/google_container_aws_versions).
+Refer to the Terraform Registory for docs: [`data_google_container_aws_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_container_aws_versions).

@@ -1,93 +1,1214 @@
 package dmsreplicationtask
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/dmsreplicationtask/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.dmsReplicationTask.DmsReplicationTask",
-		reflect.TypeOf((*DmsReplicationTask)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcStartPosition", GoGetter: "CdcStartPosition"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcStartPositionInput", GoGetter: "CdcStartPositionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcStartTime", GoGetter: "CdcStartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "cdcStartTimeInput", GoGetter: "CdcStartTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "migrationType", GoGetter: "MigrationType"},
-			_jsii_.MemberProperty{JsiiProperty: "migrationTypeInput", GoGetter: "MigrationTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationInstanceArn", GoGetter: "ReplicationInstanceArn"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationInstanceArnInput", GoGetter: "ReplicationInstanceArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationTaskArn", GoGetter: "ReplicationTaskArn"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationTaskId", GoGetter: "ReplicationTaskId"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationTaskIdInput", GoGetter: "ReplicationTaskIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationTaskSettings", GoGetter: "ReplicationTaskSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "replicationTaskSettingsInput", GoGetter: "ReplicationTaskSettingsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcStartPosition", GoMethod: "ResetCdcStartPosition"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCdcStartTime", GoMethod: "ResetCdcStartTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplicationTaskSettings", GoMethod: "ResetReplicationTaskSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStartReplicationTask", GoMethod: "ResetStartReplicationTask"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceEndpointArn", GoGetter: "SourceEndpointArn"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceEndpointArnInput", GoGetter: "SourceEndpointArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "startReplicationTask", GoGetter: "StartReplicationTask"},
-			_jsii_.MemberProperty{JsiiProperty: "startReplicationTaskInput", GoGetter: "StartReplicationTaskInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tableMappings", GoGetter: "TableMappings"},
-			_jsii_.MemberProperty{JsiiProperty: "tableMappingsInput", GoGetter: "TableMappingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetEndpointArn", GoGetter: "TargetEndpointArn"},
-			_jsii_.MemberProperty{JsiiProperty: "targetEndpointArnInput", GoGetter: "TargetEndpointArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DmsReplicationTask{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dms_replication_task aws_dms_replication_task}.
+type DmsReplicationTask interface {
+	cdktf.TerraformResource
+	CdcStartPosition() *string
+	SetCdcStartPosition(val *string)
+	CdcStartPositionInput() *string
+	CdcStartTime() *string
+	SetCdcStartTime(val *string)
+	CdcStartTimeInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MigrationType() *string
+	SetMigrationType(val *string)
+	MigrationTypeInput() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ReplicationInstanceArn() *string
+	SetReplicationInstanceArn(val *string)
+	ReplicationInstanceArnInput() *string
+	ReplicationTaskArn() *string
+	ReplicationTaskId() *string
+	SetReplicationTaskId(val *string)
+	ReplicationTaskIdInput() *string
+	ReplicationTaskSettings() *string
+	SetReplicationTaskSettings(val *string)
+	ReplicationTaskSettingsInput() *string
+	SourceEndpointArn() *string
+	SetSourceEndpointArn(val *string)
+	SourceEndpointArnInput() *string
+	StartReplicationTask() interface{}
+	SetStartReplicationTask(val interface{})
+	StartReplicationTaskInput() interface{}
+	Status() *string
+	TableMappings() *string
+	SetTableMappings(val *string)
+	TableMappingsInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	TargetEndpointArn() *string
+	SetTargetEndpointArn(val *string)
+	TargetEndpointArnInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetCdcStartPosition()
+	ResetCdcStartTime()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetReplicationTaskSettings()
+	ResetStartReplicationTask()
+	ResetTags()
+	ResetTagsAll()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DmsReplicationTask
+type jsiiProxy_DmsReplicationTask struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DmsReplicationTask) CdcStartPosition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdcStartPosition",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dmsReplicationTask.DmsReplicationTaskConfig",
-		reflect.TypeOf((*DmsReplicationTaskConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) CdcStartPositionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdcStartPositionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) CdcStartTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdcStartTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) CdcStartTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdcStartTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) MigrationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) MigrationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationInstanceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationInstanceArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationInstanceArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationInstanceArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationTaskArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationTaskArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationTaskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationTaskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationTaskIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationTaskIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationTaskSettings() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationTaskSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ReplicationTaskSettingsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationTaskSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) SourceEndpointArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceEndpointArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) SourceEndpointArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceEndpointArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) StartReplicationTask() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startReplicationTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) StartReplicationTaskInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startReplicationTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TableMappings() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMappings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TableMappingsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMappingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TargetEndpointArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetEndpointArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TargetEndpointArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetEndpointArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource.
+func NewDmsReplicationTask(scope constructs.Construct, id *string, config *DmsReplicationTaskConfig) DmsReplicationTask {
+	_init_.Initialize()
+
+	if err := validateNewDmsReplicationTaskParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DmsReplicationTask{}
+
+	_jsii_.Create(
+		"aws.dmsReplicationTask.DmsReplicationTask",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource.
+func NewDmsReplicationTask_Override(d DmsReplicationTask, scope constructs.Construct, id *string, config *DmsReplicationTaskConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.dmsReplicationTask.DmsReplicationTask",
+		[]interface{}{scope, id, config},
+		d,
 	)
 }
+
+func (j *jsiiProxy_DmsReplicationTask)SetCdcStartPosition(val *string) {
+	if err := j.validateSetCdcStartPositionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcStartPosition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetCdcStartTime(val *string) {
+	if err := j.validateSetCdcStartTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdcStartTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetMigrationType(val *string) {
+	if err := j.validateSetMigrationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"migrationType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetReplicationInstanceArn(val *string) {
+	if err := j.validateSetReplicationInstanceArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationInstanceArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetReplicationTaskId(val *string) {
+	if err := j.validateSetReplicationTaskIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationTaskId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetReplicationTaskSettings(val *string) {
+	if err := j.validateSetReplicationTaskSettingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationTaskSettings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetSourceEndpointArn(val *string) {
+	if err := j.validateSetSourceEndpointArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceEndpointArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetStartReplicationTask(val interface{}) {
+	if err := j.validateSetStartReplicationTaskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startReplicationTask",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetTableMappings(val *string) {
+	if err := j.validateSetTableMappingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableMappings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetTargetEndpointArn(val *string) {
+	if err := j.validateSetTargetEndpointArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetEndpointArn",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DmsReplicationTask_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsReplicationTask_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.dmsReplicationTask.DmsReplicationTask",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DmsReplicationTask_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsReplicationTask_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.dmsReplicationTask.DmsReplicationTask",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DmsReplicationTask_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDmsReplicationTask_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.dmsReplicationTask.DmsReplicationTask",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DmsReplicationTask_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.dmsReplicationTask.DmsReplicationTask",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetCdcStartPosition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcStartPosition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetCdcStartTime() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCdcStartTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetReplicationTaskSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReplicationTaskSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetStartReplicationTask() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStartReplicationTask",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

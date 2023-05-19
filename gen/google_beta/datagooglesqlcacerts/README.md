@@ -1,3 +1,3 @@
 # `data_google_sql_ca_certs`
 
-Refer to the Terraform Registory for docs: [`data_google_sql_ca_certs`](https://www.terraform.io/docs/providers/google-beta/d/google_sql_ca_certs).
+Refer to the Terraform Registory for docs: [`data_google_sql_ca_certs`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_sql_ca_certs).

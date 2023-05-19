@@ -1,3 +1,3 @@
 # `data_google_netblock_ip_ranges`
 
-Refer to the Terraform Registory for docs: [`data_google_netblock_ip_ranges`](https://www.terraform.io/docs/providers/google-beta/d/google_netblock_ip_ranges).
+Refer to the Terraform Registory for docs: [`data_google_netblock_ip_ranges`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_netblock_ip_ranges).

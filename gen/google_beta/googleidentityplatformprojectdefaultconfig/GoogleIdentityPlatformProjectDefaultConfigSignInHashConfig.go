@@ -1,0 +1,6 @@
+package googleidentityplatformprojectdefaultconfig
+
+
+type GoogleIdentityPlatformProjectDefaultConfigSignInHashConfig struct {
+}
+

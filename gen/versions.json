@@ -1,0 +1,12 @@
+{
+  "registry.terraform.io/hashicorp/aws": "4.54.0",
+  "registry.terraform.io/hashicorp/google": "4.65.2",
+  "registry.terraform.io/hashicorp/google-beta": "4.65.2",
+  "registry.terraform.io/sourcegraph/postgresql": "1.18.0",
+  "registry.terraform.io/cloudflare/cloudflare": "4.3.0",
+  "registry.terraform.io/hashicorp/random": "3.1.3",
+  "registry.terraform.io/okta/okta": "3.41.0",
+  "registry.terraform.io/hashicorp/tfe": "0.42.0",
+  "registry.terraform.io/hashicorp/kubernetes": "2.15.0",
+  "registry.terraform.io/hashicorp/tls": "4.0.4"
+}

@@ -1,3 +1,3 @@
 # `okta_app_user_base_schema_property`
 
-Refer to the Terraform Registory for docs: [`okta_app_user_base_schema_property`](https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property).
+Refer to the Terraform Registory for docs: [`okta_app_user_base_schema_property`](https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/app_user_base_schema_property).

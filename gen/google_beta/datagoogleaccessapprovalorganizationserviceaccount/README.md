@@ -1,3 +1,3 @@
 # `data_google_access_approval_organization_service_account`
 
-Refer to the Terraform Registory for docs: [`data_google_access_approval_organization_service_account`](https://www.terraform.io/docs/providers/google-beta/d/google_access_approval_organization_service_account).
+Refer to the Terraform Registory for docs: [`data_google_access_approval_organization_service_account`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_access_approval_organization_service_account).

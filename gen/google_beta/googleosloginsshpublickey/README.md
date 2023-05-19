@@ -1,3 +1,3 @@
 # `google_os_login_ssh_public_key`
 
-Refer to the Terraform Registory for docs: [`google_os_login_ssh_public_key`](https://www.terraform.io/docs/providers/google-beta/r/google_os_login_ssh_public_key).
+Refer to the Terraform Registory for docs: [`google_os_login_ssh_public_key`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_os_login_ssh_public_key).

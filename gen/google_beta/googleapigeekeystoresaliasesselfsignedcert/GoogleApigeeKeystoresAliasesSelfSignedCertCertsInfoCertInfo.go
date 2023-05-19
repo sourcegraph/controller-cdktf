@@ -1,0 +1,6 @@
+package googleapigeekeystoresaliasesselfsignedcert
+
+
+type GoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo struct {
+}
+

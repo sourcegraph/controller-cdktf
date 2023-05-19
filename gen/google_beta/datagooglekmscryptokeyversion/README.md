@@ -1,3 +1,3 @@
 # `data_google_kms_crypto_key_version`
 
-Refer to the Terraform Registory for docs: [`data_google_kms_crypto_key_version`](https://www.terraform.io/docs/providers/google-beta/d/google_kms_crypto_key_version).
+Refer to the Terraform Registory for docs: [`data_google_kms_crypto_key_version`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_kms_crypto_key_version).

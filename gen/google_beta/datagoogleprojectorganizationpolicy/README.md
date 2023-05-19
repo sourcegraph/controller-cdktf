@@ -1,3 +1,3 @@
 # `data_google_project_organization_policy`
 
-Refer to the Terraform Registory for docs: [`data_google_project_organization_policy`](https://www.terraform.io/docs/providers/google-beta/d/google_project_organization_policy).
+Refer to the Terraform Registory for docs: [`data_google_project_organization_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_project_organization_policy).

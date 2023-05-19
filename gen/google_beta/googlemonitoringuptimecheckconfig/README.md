@@ -1,3 +1,3 @@
 # `google_monitoring_uptime_check_config`
 
-Refer to the Terraform Registory for docs: [`google_monitoring_uptime_check_config`](https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config).
+Refer to the Terraform Registory for docs: [`google_monitoring_uptime_check_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_uptime_check_config).

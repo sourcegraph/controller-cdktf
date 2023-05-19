@@ -1,3 +1,3 @@
 # `google_storage_default_object_acl`
 
-Refer to the Terraform Registory for docs: [`google_storage_default_object_acl`](https://www.terraform.io/docs/providers/google-beta/r/google_storage_default_object_acl).
+Refer to the Terraform Registory for docs: [`google_storage_default_object_acl`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_default_object_acl).

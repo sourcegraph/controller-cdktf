@@ -1,3 +1,3 @@
 # `google_storage_hmac_key`
 
-Refer to the Terraform Registory for docs: [`google_storage_hmac_key`](https://www.terraform.io/docs/providers/google-beta/r/google_storage_hmac_key).
+Refer to the Terraform Registory for docs: [`google_storage_hmac_key`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_hmac_key).

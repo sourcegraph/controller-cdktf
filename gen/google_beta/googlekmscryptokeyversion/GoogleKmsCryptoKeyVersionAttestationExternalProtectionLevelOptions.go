@@ -1,0 +1,6 @@
+package googlekmscryptokeyversion
+
+
+type GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptions struct {
+}
+

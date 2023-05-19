@@ -1,3 +1,3 @@
 # `kubernetes_deployment`
 
-Refer to the Terraform Registory for docs: [`kubernetes_deployment`](https://www.terraform.io/docs/providers/kubernetes/r/deployment).
+Refer to the Terraform Registory for docs: [`kubernetes_deployment`](https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment).

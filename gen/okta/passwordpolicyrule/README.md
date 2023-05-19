@@ -1,3 +1,3 @@
 # `okta_password_policy_rule`
 
-Refer to the Terraform Registory for docs: [`okta_password_policy_rule`](https://www.terraform.io/docs/providers/okta/r/password_policy_rule).
+Refer to the Terraform Registory for docs: [`okta_password_policy_rule`](https://registry.terraform.io/providers/okta/okta/3.41.0/docs/resources/password_policy_rule).
