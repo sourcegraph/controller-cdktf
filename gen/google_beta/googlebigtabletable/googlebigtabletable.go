@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtabletable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_table google_bigtable_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_table google_bigtable_table}.
 type GoogleBigtableTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GoogleBigtableTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_table google_bigtable_table} Resource.
 func NewGoogleBigtableTable(scope constructs.Construct, id *string, config *GoogleBigtableTableConfig) GoogleBigtableTable {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewGoogleBigtableTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_table google_bigtable_table} Resource.
 func NewGoogleBigtableTable_Override(g GoogleBigtableTable, scope constructs.Construct, id *string, config *GoogleBigtableTableConfig) {
 	_init_.Initialize()
 

@@ -39,8 +39,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRu
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WordList() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListOutputReference
-	WordListInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
+	WordList() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference
+	WordListInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -66,7 +66,7 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRu
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudStoragePath(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath)
-	PutWordList(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordList)
+	PutWordList(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct)
 	ResetCloudStoragePath()
 	ResetWordList()
 	// Produce the Token's value at resolution time.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference) WordList() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListOutputReference {
-	var returns GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListOutputReference
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference) WordList() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference {
+	var returns GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference
 	_jsii_.Get(
 		j,
 		"wordList",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference) WordListInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordList {
-	var returns *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference) WordListInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct {
+	var returns *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct
 	_jsii_.Get(
 		j,
 		"wordListInput",
@@ -474,7 +474,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference) PutWordList(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordList) {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference) PutWordList(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct) {
 	if err := g.validatePutWordListParameters(value); err != nil {
 		panic(err)
 	}

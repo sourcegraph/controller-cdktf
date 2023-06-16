@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestoreentitytypefeature/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature}.
 type GoogleVertexAiFeaturestoreEntitytypeFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeature) ValueTypeInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeFeature(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeFeatureConfig) GoogleVertexAiFeaturestoreEntitytypeFeature {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeFeature(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeFeature_Override(g GoogleVertexAiFeaturestoreEntitytypeFeature, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeFeatureConfig) {
 	_init_.Initialize()
 

@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutForecastOptionsParameters(value *GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutTriggerParameters(value *GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger) error {
 	return nil
 }

@@ -67,6 +67,7 @@ type GoogleGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHostname()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +482,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBloc
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference) ResetHostname() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostname",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

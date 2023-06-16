@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutAdvancedMachineFeaturesParameters(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutBackupConfigurationParameters(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration) error {
 	return nil
 }

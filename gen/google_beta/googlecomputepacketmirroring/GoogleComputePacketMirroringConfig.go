@@ -21,46 +21,46 @@ type GoogleComputePacketMirroringConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// collector_ilb block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#collector_ilb GoogleComputePacketMirroring#collector_ilb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#collector_ilb GoogleComputePacketMirroring#collector_ilb}
 	CollectorIlb *GoogleComputePacketMirroringCollectorIlb `field:"required" json:"collectorIlb" yaml:"collectorIlb"`
 	// mirrored_resources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#mirrored_resources GoogleComputePacketMirroring#mirrored_resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#mirrored_resources GoogleComputePacketMirroring#mirrored_resources}
 	MirroredResources *GoogleComputePacketMirroringMirroredResources `field:"required" json:"mirroredResources" yaml:"mirroredResources"`
 	// The name of the packet mirroring rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#name GoogleComputePacketMirroring#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#name GoogleComputePacketMirroring#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// network block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#network GoogleComputePacketMirroring#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#network GoogleComputePacketMirroring#network}
 	Network *GoogleComputePacketMirroringNetwork `field:"required" json:"network" yaml:"network"`
 	// A human-readable description of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#description GoogleComputePacketMirroring#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#description GoogleComputePacketMirroring#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#filter GoogleComputePacketMirroring#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#filter GoogleComputePacketMirroring#filter}
 	Filter *GoogleComputePacketMirroringFilter `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#id GoogleComputePacketMirroring#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#id GoogleComputePacketMirroring#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Since only one rule can be active at a time, priority is used to break ties in the case of two rules that apply to the same instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#priority GoogleComputePacketMirroring#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#priority GoogleComputePacketMirroring#priority}
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#project GoogleComputePacketMirroring#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#project GoogleComputePacketMirroring#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The Region in which the created address should reside. If it is not provided, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#region GoogleComputePacketMirroring#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#region GoogleComputePacketMirroring#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_packet_mirroring#timeouts GoogleComputePacketMirroring#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_packet_mirroring#timeouts GoogleComputePacketMirroring#timeouts}
 	Timeouts *GoogleComputePacketMirroringTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

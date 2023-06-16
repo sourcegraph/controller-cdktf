@@ -44,6 +44,9 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	SetInternalValue(val interface{})
 	LivenessProbe() GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference
 	LivenessProbeInput() *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	Ports() GoogleCloudRunServiceTemplateSpecContainersPortsList
 	PortsInput() interface{}
 	Resources() GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference
@@ -99,6 +102,7 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	ResetEnv()
 	ResetEnvFrom()
 	ResetLivenessProbe()
+	ResetName()
 	ResetPorts()
 	ResetResources()
 	ResetStartupProbe()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) L
 	_jsii_.Get(
 		j,
 		"livenessProbeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -499,6 +523,17 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -835,6 +870,14 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetLivenessProbe",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

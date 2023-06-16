@@ -44,6 +44,8 @@ type GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference inte
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
+	ForecastOptions() GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference
+	ForecastOptionsInput() *GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleMonitoringAlertPolicyConditionsConditionThreshold
@@ -87,12 +89,14 @@ type GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference inte
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAggregations(value interface{})
 	PutDenominatorAggregations(value interface{})
+	PutForecastOptions(value *GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions)
 	PutTrigger(value *GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger)
 	ResetAggregations()
 	ResetDenominatorAggregations()
 	ResetDenominatorFilter()
 	ResetEvaluationMissingData()
 	ResetFilter()
+	ResetForecastOptions()
 	ResetThresholdValue()
 	ResetTrigger()
 	// Produce the Token's value at resolution time.
@@ -275,6 +279,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	_jsii_.Get(
 		j,
 		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) ForecastOptions() GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference {
+	var returns GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"forecastOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) ForecastOptionsInput() *GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions {
+	var returns *GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions
+	_jsii_.Get(
+		j,
+		"forecastOptionsInput",
 		&returns,
 	)
 	return returns
@@ -717,6 +741,17 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) PutForecastOptions(value *GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions) {
+	if err := g.validatePutForecastOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putForecastOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) PutTrigger(value *GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger) {
 	if err := g.validatePutTriggerParameters(value); err != nil {
 		panic(err)
@@ -764,6 +799,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	_jsii_.InvokeVoid(
 		g,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) ResetForecastOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForecastOptions",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesccsourceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy}.
 type GoogleSccSourceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleSccSourceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
 func NewGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, config *GoogleSccSourceIamPolicyConfig) GoogleSccSourceIamPolicy {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
 func NewGoogleSccSourceIamPolicy_Override(g GoogleSccSourceIamPolicy, scope constructs.Construct, id *string, config *GoogleSccSourceIamPolicyConfig) {
 	_init_.Initialize()
 

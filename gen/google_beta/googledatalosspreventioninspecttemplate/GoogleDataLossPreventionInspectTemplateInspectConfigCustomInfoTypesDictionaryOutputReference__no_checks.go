@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInf
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryOutputReference) validatePutWordListParameters(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryWordList) error {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryOutputReference) validatePutWordListParameters(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryWordListStruct) error {
 	return nil
 }
 

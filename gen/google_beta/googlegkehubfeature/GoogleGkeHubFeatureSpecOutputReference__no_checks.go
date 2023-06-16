@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) validatePutFleetobservabilityParameters(value *GoogleGkeHubFeatureSpecFleetobservability) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) validatePutMulticlusteringressParameters(value *GoogleGkeHubFeatureSpecMulticlusteringress) error {
 	return nil
 }

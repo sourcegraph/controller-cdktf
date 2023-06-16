@@ -9,11 +9,17 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesgateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_network_services_gateway google_network_services_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway google_network_services_gateway}.
 type GoogleNetworkServicesGateway interface {
 	cdktf.TerraformResource
+	Addresses() *[]*string
+	SetAddresses(val *[]*string)
+	AddressesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateUrls() *[]*string
+	SetCertificateUrls(val *[]*string)
+	CertificateUrlsInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -25,6 +31,9 @@ type GoogleNetworkServicesGateway interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeleteSwgAutogenRouterOnDestroy() interface{}
+	SetDeleteSwgAutogenRouterOnDestroy(val interface{})
+	DeleteSwgAutogenRouterOnDestroyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,6 +49,9 @@ type GoogleNetworkServicesGateway interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewaySecurityPolicy() *string
+	SetGatewaySecurityPolicy(val *string)
+	GatewaySecurityPolicyInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -56,6 +68,9 @@ type GoogleNetworkServicesGateway interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() *string
+	SetNetwork(val *string)
+	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Ports() *[]*float64
@@ -81,6 +96,9 @@ type GoogleNetworkServicesGateway interface {
 	ServerTlsPolicy() *string
 	SetServerTlsPolicy(val *string)
 	ServerTlsPolicyInput() *string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,15 +137,21 @@ type GoogleNetworkServicesGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkServicesGatewayTimeouts)
+	ResetAddresses()
+	ResetCertificateUrls()
+	ResetDeleteSwgAutogenRouterOnDestroy()
 	ResetDescription()
+	ResetGatewaySecurityPolicy()
 	ResetId()
 	ResetLabels()
 	ResetLocation()
+	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetServerTlsPolicy()
+	ResetSubnetwork()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -144,11 +168,51 @@ type jsiiProxy_GoogleNetworkServicesGateway struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) Addresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"addresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) AddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"addressesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) CertificateUrls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateUrls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) CertificateUrlsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateUrlsInput",
 		&returns,
 	)
 	return returns
@@ -189,6 +253,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) DeleteSwgAutogenRouterOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteSwgAutogenRouterOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) DeleteSwgAutogenRouterOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteSwgAutogenRouterOnDestroyInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +333,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) GatewaySecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewaySecurityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) GatewaySecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewaySecurityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -339,6 +443,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) NetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +598,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) ServerTlsPolicyInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -555,7 +699,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
 func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, config *GoogleNetworkServicesGatewayConfig) GoogleNetworkServicesGateway {
 	_init_.Initialize()
 
@@ -573,7 +717,7 @@ func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
 func NewGoogleNetworkServicesGateway_Override(g GoogleNetworkServicesGateway, scope constructs.Construct, id *string, config *GoogleNetworkServicesGatewayConfig) {
 	_init_.Initialize()
 
@@ -581,6 +725,28 @@ func NewGoogleNetworkServicesGateway_Override(g GoogleNetworkServicesGateway, sc
 		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetAddresses(val *[]*string) {
+	if err := j.validateSetAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetCertificateUrls(val *[]*string) {
+	if err := j.validateSetCertificateUrlsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateUrls",
+		val,
 	)
 }
 
@@ -602,6 +768,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetDeleteSwgAutogenRouterOnDestroy(val interface{}) {
+	if err := j.validateSetDeleteSwgAutogenRouterOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteSwgAutogenRouterOnDestroy",
 		val,
 	)
 }
@@ -629,6 +806,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetGatewaySecurityPolicy(val *string) {
+	if err := j.validateSetGatewaySecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gatewaySecurityPolicy",
 		val,
 	)
 }
@@ -684,6 +872,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetNetwork(val *string) {
+	if err := j.validateSetNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"network",
 		val,
 	)
 }
@@ -747,6 +946,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway)SetServerTlsPolicy(val *string) 
 	_jsii_.Set(
 		j,
 		"serverTlsPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
 		val,
 	)
 }
@@ -1039,10 +1249,42 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) PutTimeouts(value *GoogleNetwor
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetAddresses() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAddresses",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetCertificateUrls() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCertificateUrls",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetDeleteSwgAutogenRouterOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteSwgAutogenRouterOnDestroy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetGatewaySecurityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGatewaySecurityPolicy",
 		nil, // no parameters
 	)
 }
@@ -1071,6 +1313,14 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetLocation() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1091,6 +1341,14 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetServerTlsPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetServerTlsPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubnetwork",
 		nil, // no parameters
 	)
 }

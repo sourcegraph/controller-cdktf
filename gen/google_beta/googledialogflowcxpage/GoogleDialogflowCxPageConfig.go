@@ -21,21 +21,21 @@ type GoogleDialogflowCxPageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the page, unique within the agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#display_name GoogleDialogflowCxPage#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#display_name GoogleDialogflowCxPage#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// entry_fulfillment block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#entry_fulfillment GoogleDialogflowCxPage#entry_fulfillment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#entry_fulfillment GoogleDialogflowCxPage#entry_fulfillment}
 	EntryFulfillment *GoogleDialogflowCxPageEntryFulfillment `field:"optional" json:"entryFulfillment" yaml:"entryFulfillment"`
 	// event_handlers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#event_handlers GoogleDialogflowCxPage#event_handlers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#event_handlers GoogleDialogflowCxPage#event_handlers}
 	EventHandlers interface{} `field:"optional" json:"eventHandlers" yaml:"eventHandlers"`
 	// form block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#form GoogleDialogflowCxPage#form}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#form GoogleDialogflowCxPage#form}
 	Form *GoogleDialogflowCxPageForm `field:"optional" json:"form" yaml:"form"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#id GoogleDialogflowCxPage#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#id GoogleDialogflowCxPage#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,15 +54,15 @@ type GoogleDialogflowCxPageConfig struct {
 	// Page.transition_routes.trigger_fulfillment.conditional_cases
 	// If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#language_code GoogleDialogflowCxPage#language_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#language_code GoogleDialogflowCxPage#language_code}
 	LanguageCode *string `field:"optional" json:"languageCode" yaml:"languageCode"`
 	// The flow to create a page for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#parent GoogleDialogflowCxPage#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#parent GoogleDialogflowCxPage#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#timeouts GoogleDialogflowCxPage#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#timeouts GoogleDialogflowCxPage#timeouts}
 	Timeouts *GoogleDialogflowCxPageTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Ordered list of TransitionRouteGroups associated with the page.
 	//
@@ -71,11 +71,11 @@ type GoogleDialogflowCxPageConfig struct {
 	// If multiple transition route groups within a page contain the same intent, then the first group in the ordered list takes precedence.
 	// Format:projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/transitionRouteGroups/<TransitionRouteGroup ID>.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#transition_route_groups GoogleDialogflowCxPage#transition_route_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#transition_route_groups GoogleDialogflowCxPage#transition_route_groups}
 	TransitionRouteGroups *[]*string `field:"optional" json:"transitionRouteGroups" yaml:"transitionRouteGroups"`
 	// transition_routes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page#transition_routes GoogleDialogflowCxPage#transition_routes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page#transition_routes GoogleDialogflowCxPage#transition_routes}
 	TransitionRoutes interface{} `field:"optional" json:"transitionRoutes" yaml:"transitionRoutes"`
 }
 

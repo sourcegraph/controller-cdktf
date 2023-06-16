@@ -44,7 +44,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsHiveJobQueryList) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct) error {
 	return nil
 }
 

@@ -39,8 +39,8 @@ type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WordList() GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputReference
-	WordListInput() *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList
+	WordList() GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference
+	WordListInput() *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -66,7 +66,7 @@ type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudStoragePath(value *GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath)
-	PutWordList(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList)
+	PutWordList(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct)
 	ResetCloudStoragePath()
 	ResetWordList()
 	// Produce the Token's value at resolution time.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) WordList() GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputReference {
-	var returns GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputReference
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) WordList() GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference {
+	var returns GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference
 	_jsii_.Get(
 		j,
 		"wordList",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) WordListInput() *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList {
-	var returns *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) WordListInput() *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct {
+	var returns *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct
 	_jsii_.Get(
 		j,
 		"wordListInput",
@@ -474,7 +474,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) PutWordList(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList) {
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) PutWordList(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct) {
 	if err := g.validatePutWordListParameters(value); err != nil {
 		panic(err)
 	}

@@ -64,6 +64,14 @@ func validateGoogleDataflowFlexTemplateJob_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAdditionalExperimentsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAutoscalingAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -76,7 +84,19 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetEnableStreamingEngineParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetIpConfigurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetKmsKeyNameParameters(val *string) error {
 	return nil
 }
 
@@ -84,11 +104,31 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLabelsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLauncherMachineTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetMaxWorkersParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetNumWorkersParameters(val *float64) error {
 	return nil
 }
 
@@ -112,7 +152,31 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetRegionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSdkContainerImageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSkipWaitOnJobTerminationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetStagingLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSubnetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetTempLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetTransformNameMappingParameters(val *map[string]*string) error {
 	return nil
 }
 

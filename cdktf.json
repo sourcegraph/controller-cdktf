@@ -13,17 +13,17 @@
     {
       "name": "google",
       "source": "hashicorp/google",
-      "version": "~> 4.38.0"
+      "version": "4.69.1"
     },
     {
       "name": "google-beta",
       "source": "hashicorp/google-beta",
-      "version": "~> 4.38.0"
+      "version": "4.69.1"
     },
     {
       "name": "postgresql",
       "source": "sourcegraph/postgresql",
-      "version": "~> 1.18.0"
+      "version": "1.18.0"
     },
     {
       "name": "cloudflare",
@@ -33,22 +33,22 @@
     {
       "name": "random",
       "source": "hashicorp/random",
-      "version": "~> 3.1.0"
+      "version": "3.1.3"
     },
     {
       "name": "okta",
       "source": "okta/okta",
-      "version": "~> 3.20"
+      "version": "3.41.0"
     },
     {
       "name": "tfe",
       "source": "hashicorp/tfe",
-      "version": "~> 0.42.0"
+      "version": "0.42.0"
     },
     {
       "name": "kubernetes",
       "source": "hashicorp/kubernetes",
-      "version": "~> 2.15.0"
+      "version": "2.15.0"
     },
     {
       "name": "tls",
@@ -58,28 +58,9 @@
   ],
   "terraformModules": [
     {
-      "name": "googlesqldb",
-      "source": "git::https://github.com/michaellzc/terraform-google-sql-db//modules/postgresql?ref=feat/support-dynamic-iam-users"
-    },
-    {
       "name": "gkeprivate",
       "source": "terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster",
       "version": "24.0.0"
-    },
-    {
-      "name": "executorsnetworking",
-      "source": "sourcegraph/executors/google//modules/networking",
-      "version": "4.0.1"
-    },
-    {
-      "name": "executorsdockermirror",
-      "source": "sourcegraph/executors/google//modules/docker-mirror",
-      "version": "4.0.1"
-    },
-    {
-      "name": "executors",
-      "source": "sourcegraph/executors/google//modules/executors",
-      "version": "4.0.1"
     },
     {
      "name": "budget",
@@ -90,7 +71,7 @@
       "name": "awsvpc",
        "source": "terraform-aws-modules/vpc/aws",
        "version": "3.19.0"
-     }
+    }
   ],
   "context": {
     "excludeStackIdFromLogicalIds": "true",

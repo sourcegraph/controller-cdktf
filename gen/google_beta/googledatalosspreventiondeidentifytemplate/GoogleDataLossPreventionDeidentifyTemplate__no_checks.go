@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetTemplateIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionDeidentifyTemplateParameters(scope constructs.Construct, id *string, config *GoogleDataLossPreventionDeidentifyTemplateConfig) error {
 	return nil
 }

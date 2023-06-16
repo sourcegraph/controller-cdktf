@@ -31,6 +31,8 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformat
 	FieldsInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InfoTypeTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformationsOutputReference
+	InfoTypeTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformations
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	PrimitiveTransformation() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationOutputReference
@@ -69,8 +71,11 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformat
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCondition(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsCondition)
 	PutFields(value interface{})
+	PutInfoTypeTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformations)
 	PutPrimitiveTransformation(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation)
 	ResetCondition()
+	ResetInfoTypeTransformations()
+	ResetPrimitiveTransformation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -161,6 +166,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRec
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsOutputReference) InfoTypeTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformationsOutputReference {
+	var returns GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformationsOutputReference
+	_jsii_.Get(
+		j,
+		"infoTypeTransformations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsOutputReference) InfoTypeTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformations {
+	var returns *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformations
+	_jsii_.Get(
+		j,
+		"infoTypeTransformationsInput",
 		&returns,
 	)
 	return returns
@@ -507,6 +532,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRec
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsOutputReference) PutInfoTypeTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsInfoTypeTransformations) {
+	if err := g.validatePutInfoTypeTransformationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInfoTypeTransformations",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsOutputReference) PutPrimitiveTransformation(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation) {
 	if err := g.validatePutPrimitiveTransformationParameters(value); err != nil {
 		panic(err)
@@ -522,6 +558,22 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRec
 	_jsii_.InvokeVoid(
 		g,
 		"resetCondition",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsOutputReference) ResetInfoTypeTransformations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInfoTypeTransformations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsOutputReference) ResetPrimitiveTransformation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrimitiveTransformation",
 		nil, // no parameters
 	)
 }

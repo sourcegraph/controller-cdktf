@@ -13,7 +13,7 @@ type GooglePubsubSubscriptionDeadLetterPolicy struct {
 	// Users should ensure that there is a subscription attached to this topic
 	// since messages published to a topic with no subscriptions are lost.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_pubsub_subscription#dead_letter_topic GooglePubsubSubscription#dead_letter_topic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_subscription#dead_letter_topic GooglePubsubSubscription#dead_letter_topic}
 	DeadLetterTopic *string `field:"optional" json:"deadLetterTopic" yaml:"deadLetterTopic"`
 	// The maximum number of delivery attempts for any message. The value must be between 5 and 100.
 	//
@@ -27,7 +27,7 @@ type GooglePubsubSubscriptionDeadLetterPolicy struct {
 	//
 	// If this parameter is 0, a default value of 5 is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_pubsub_subscription#max_delivery_attempts GooglePubsubSubscription#max_delivery_attempts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_subscription#max_delivery_attempts GooglePubsubSubscription#max_delivery_attempts}
 	MaxDeliveryAttempts *float64 `field:"optional" json:"maxDeliveryAttempts" yaml:"maxDeliveryAttempts"`
 }
 

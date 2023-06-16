@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetIdleTimeoutParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProjectParam
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetRunningTimeoutParameters(val *string) error {
 	return nil
 }
 

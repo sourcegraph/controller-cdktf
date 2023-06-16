@@ -25,6 +25,8 @@ type GoogleCloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EmptyDir() GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference
+	EmptyDirInput() *GoogleCloudRunServiceTemplateSpecVolumesEmptyDir
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -66,7 +68,10 @@ type GoogleCloudRunServiceTemplateSpecVolumesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEmptyDir(value *GoogleCloudRunServiceTemplateSpecVolumesEmptyDir)
 	PutSecret(value *GoogleCloudRunServiceTemplateSpecVolumesSecret)
+	ResetEmptyDir()
+	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +112,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) EmptyDir() GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference {
+	var returns GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference
+	_jsii_.Get(
+		j,
+		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) EmptyDirInput() *GoogleCloudRunServiceTemplateSpecVolumesEmptyDir {
+	var returns *GoogleCloudRunServiceTemplateSpecVolumesEmptyDir
+	_jsii_.Get(
+		j,
+		"emptyDirInput",
 		&returns,
 	)
 	return returns
@@ -472,6 +497,17 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) PutEmptyDir(value *GoogleCloudRunServiceTemplateSpecVolumesEmptyDir) {
+	if err := g.validatePutEmptyDirParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEmptyDir",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) PutSecret(value *GoogleCloudRunServiceTemplateSpecVolumesSecret) {
 	if err := g.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -480,6 +516,22 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) PutS
 		g,
 		"putSecret",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) ResetEmptyDir() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) ResetSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecret",
+		nil, // no parameters
 	)
 }
 

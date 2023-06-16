@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) validatePutNotificationChannelStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) validatePutNotificationRateLimitParameters(value *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit) error {
 	return nil
 }

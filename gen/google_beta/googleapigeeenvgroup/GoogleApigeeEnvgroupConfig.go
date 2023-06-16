@@ -21,24 +21,24 @@ type GoogleApigeeEnvgroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The resource ID of the environment group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_envgroup#name GoogleApigeeEnvgroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup#name GoogleApigeeEnvgroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The Apigee Organization associated with the Apigee environment group, in the format 'organizations/{{org_name}}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_envgroup#org_id GoogleApigeeEnvgroup#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup#org_id GoogleApigeeEnvgroup#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	// Hostnames of the environment group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_envgroup#hostnames GoogleApigeeEnvgroup#hostnames}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup#hostnames GoogleApigeeEnvgroup#hostnames}
 	Hostnames *[]*string `field:"optional" json:"hostnames" yaml:"hostnames"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_envgroup#id GoogleApigeeEnvgroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup#id GoogleApigeeEnvgroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_envgroup#timeouts GoogleApigeeEnvgroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup#timeouts GoogleApigeeEnvgroup#timeouts}
 	Timeouts *GoogleApigeeEnvgroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetStoredInfoTypeIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionStoredInfoTypeParameters(scope constructs.Construct, id *string, config *GoogleDataLossPreventionStoredInfoTypeConfig) error {
 	return nil
 }

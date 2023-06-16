@@ -6,7 +6,7 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab struc
 	//
 	// "projects/{projectNumber}/secrets/{secret_id}/versions/{version_id}".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataproc_metastore_service#cloud_secret GoogleDataprocMetastoreService#cloud_secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_metastore_service#cloud_secret GoogleDataprocMetastoreService#cloud_secret}
 	CloudSecret *string `field:"required" json:"cloudSecret" yaml:"cloudSecret"`
 }
 

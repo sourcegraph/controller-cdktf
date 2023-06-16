@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList) error {
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct) error {
 	return nil
 }
 

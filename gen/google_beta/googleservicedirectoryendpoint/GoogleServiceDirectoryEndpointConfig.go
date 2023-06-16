@@ -21,17 +21,17 @@ type GoogleServiceDirectoryEndpointConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#endpoint_id GoogleServiceDirectoryEndpoint#endpoint_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#endpoint_id GoogleServiceDirectoryEndpoint#endpoint_id}
 	EndpointId *string `field:"required" json:"endpointId" yaml:"endpointId"`
 	// The resource name of the service that this endpoint provides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#service GoogleServiceDirectoryEndpoint#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#service GoogleServiceDirectoryEndpoint#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// IPv4 or IPv6 address of the endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#address GoogleServiceDirectoryEndpoint#address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#address GoogleServiceDirectoryEndpoint#address}
 	Address *string `field:"optional" json:"address" yaml:"address"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#id GoogleServiceDirectoryEndpoint#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#id GoogleServiceDirectoryEndpoint#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,21 +43,21 @@ type GoogleServiceDirectoryEndpointConfig struct {
 	// up to 512 characters, spread across all key-value pairs.
 	// Metadata that goes beyond any these limits will be rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#metadata GoogleServiceDirectoryEndpoint#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#metadata GoogleServiceDirectoryEndpoint#metadata}
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
 	// The URL to the network, such as projects/PROJECT_NUMBER/locations/global/networks/NETWORK_NAME.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#network GoogleServiceDirectoryEndpoint#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#network GoogleServiceDirectoryEndpoint#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// Port that the endpoint is running on, must be in the range of [0, 65535].
 	//
 	// If unspecified, the default is 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#port GoogleServiceDirectoryEndpoint#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#port GoogleServiceDirectoryEndpoint#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_service_directory_endpoint#timeouts GoogleServiceDirectoryEndpoint#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_directory_endpoint#timeouts GoogleServiceDirectoryEndpoint#timeouts}
 	Timeouts *GoogleServiceDirectoryEndpointTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

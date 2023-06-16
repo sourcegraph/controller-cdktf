@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesslevels/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_levels google_access_context_manager_access_levels}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_levels google_access_context_manager_access_levels}.
 type GoogleAccessContextManagerAccessLevels interface {
 	cdktf.TerraformResource
 	AccessLevels() GoogleAccessContextManagerAccessLevelsAccessLevelsList
@@ -357,7 +357,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevels) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
 func NewGoogleAccessContextManagerAccessLevels(scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelsConfig) GoogleAccessContextManagerAccessLevels {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewGoogleAccessContextManagerAccessLevels(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
 func NewGoogleAccessContextManagerAccessLevels_Override(g GoogleAccessContextManagerAccessLevels, scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelsConfig) {
 	_init_.Initialize()
 

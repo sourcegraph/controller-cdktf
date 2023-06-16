@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -55,6 +55,9 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IdleTimeout() *string
+	SetIdleTimeout(val *string)
+	IdleTimeoutInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -83,6 +86,9 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RunningTimeout() *string
+	SetRunningTimeout(val *string)
+	RunningTimeoutInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -134,12 +140,14 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetEncryptionKey()
 	ResetHost()
 	ResetId()
+	ResetIdleTimeout()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPersistentDirectories()
 	ResetProject()
+	ResetRunningTimeout()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -396,6 +404,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) IdleTimeout() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) IdleTimeoutInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -536,6 +564,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RunningTimeout() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runningTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RunningTimeoutInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runningTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -637,7 +685,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
 
@@ -655,7 +703,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkstationConfigA, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) {
 	_init_.Initialize()
 
@@ -737,6 +785,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetIdleTimeout(val *string) {
+	if err := j.validateSetIdleTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"idleTimeout",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -796,6 +855,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetRunningTimeout(val *string) {
+	if err := j.validateSetRunningTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runningTimeout",
 		val,
 	)
 }
@@ -1191,6 +1261,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetIdleTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdleTimeout",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1219,6 +1297,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetRunningTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRunningTimeout",
 		nil, // no parameters
 	)
 }

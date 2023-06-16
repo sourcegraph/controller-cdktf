@@ -56,7 +56,7 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	ResourceArnList() *[]*string
 	SetResourceArnList(val *[]*string)
 	ResourceArnListInput() *[]*string
-	ResourceTagMappingList() DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList
+	ResourceTagMappingList() DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList
 	ResourceTypeFilters() *[]*string
 	SetResourceTypeFilters(val *[]*string)
 	ResourceTypeFiltersInput() *[]*string
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ResourceArnListInpu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ResourceTagMappingList() DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList {
-	var returns DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ResourceTagMappingList() DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList {
+	var returns DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList
 	_jsii_.Get(
 		j,
 		"resourceTagMappingList",

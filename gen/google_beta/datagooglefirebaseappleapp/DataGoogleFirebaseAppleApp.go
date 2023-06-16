@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglefirebaseappleapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}.
 type DataGoogleFirebaseAppleApp interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
 func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *DataGoogleFirebaseAppleAppConfig) DataGoogleFirebaseAppleApp {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
 func NewDataGoogleFirebaseAppleApp_Override(d DataGoogleFirebaseAppleApp, scope constructs.Construct, id *string, config *DataGoogleFirebaseAppleAppConfig) {
 	_init_.Initialize()
 

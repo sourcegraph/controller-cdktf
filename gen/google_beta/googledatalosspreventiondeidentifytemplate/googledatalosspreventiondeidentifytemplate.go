@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatalosspreventiondeidentifytemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
 type GoogleDataLossPreventionDeidentifyTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type GoogleDataLossPreventionDeidentifyTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TemplateId() *string
+	SetTemplateId(val *string)
+	TemplateIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,6 +113,7 @@ type GoogleDataLossPreventionDeidentifyTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTemplateId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -376,6 +380,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) TemplateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) TemplateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -437,7 +461,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) UpdateTime() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewGoogleDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *string, config *GoogleDataLossPreventionDeidentifyTemplateConfig) GoogleDataLossPreventionDeidentifyTemplate {
 	_init_.Initialize()
 
@@ -455,7 +479,7 @@ func NewGoogleDataLossPreventionDeidentifyTemplate(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewGoogleDataLossPreventionDeidentifyTemplate_Override(g GoogleDataLossPreventionDeidentifyTemplate, scope constructs.Construct, id *string, config *GoogleDataLossPreventionDeidentifyTemplateConfig) {
 	_init_.Initialize()
 
@@ -574,6 +598,17 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate)SetProvisioners(va
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate)SetTemplateId(val *string) {
+	if err := j.validateSetTemplateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"templateId",
 		val,
 	)
 }
@@ -894,6 +929,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) ResetTemplateId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTemplateId",
 		nil, // no parameters
 	)
 }

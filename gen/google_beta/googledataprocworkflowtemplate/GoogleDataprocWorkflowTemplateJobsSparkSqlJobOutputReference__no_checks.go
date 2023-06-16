@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct) error {
 	return nil
 }
 

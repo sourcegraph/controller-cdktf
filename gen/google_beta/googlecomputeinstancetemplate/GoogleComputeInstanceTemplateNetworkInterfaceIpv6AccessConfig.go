@@ -6,7 +6,7 @@ type GoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfig struct {
 	//
 	// Only PREMIUM tier is valid for IPv6
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_instance_template#network_tier GoogleComputeInstanceTemplate#network_tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_template#network_tier GoogleComputeInstanceTemplate#network_tier}
 	NetworkTier *string `field:"required" json:"networkTier" yaml:"networkTier"`
 }
 

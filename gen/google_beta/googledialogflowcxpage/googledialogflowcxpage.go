@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxpage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page}.
 type GoogleDialogflowCxPage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -512,7 +512,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPage) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewGoogleDialogflowCxPage(scope constructs.Construct, id *string, config *GoogleDialogflowCxPageConfig) GoogleDialogflowCxPage {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewGoogleDialogflowCxPage(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewGoogleDialogflowCxPage_Override(g GoogleDialogflowCxPage, scope constructs.Construct, id *string, config *GoogleDialogflowCxPageConfig) {
 	_init_.Initialize()
 

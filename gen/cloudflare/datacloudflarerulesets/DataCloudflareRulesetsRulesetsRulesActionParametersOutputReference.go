@@ -41,7 +41,7 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interfac
 	EmailObfuscation() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
-	FromList() DataCloudflareRulesetsRulesetsRulesActionParametersFromListList
+	FromList() DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList
 	FromValue() DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList
 	Headers() DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList
 	HostHeader() *string
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) FromList() DataCloudflareRulesetsRulesetsRulesActionParametersFromListList {
-	var returns DataCloudflareRulesetsRulesetsRulesActionParametersFromListList
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) FromList() DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList {
+	var returns DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList
 	_jsii_.Get(
 		j,
 		"fromList",

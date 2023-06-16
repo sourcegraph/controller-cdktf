@@ -6,7 +6,7 @@ type GoogleDataFusionInstanceCryptoKeyConfig struct {
 	//
 	// For key in Cloud KMS, the key should be in the format of projects/*\/locations/*\/keyRings/*\/cryptoKeys/*.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_fusion_instance#key_reference GoogleDataFusionInstance#key_reference}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_fusion_instance#key_reference GoogleDataFusionInstance#key_reference}
 	KeyReference *string `field:"required" json:"keyReference" yaml:"keyReference"`
 }
 

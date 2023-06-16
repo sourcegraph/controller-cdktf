@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudiotregistryiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudiot_registry_iam_member google_cloudiot_registry_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_member google_cloudiot_registry_iam_member}.
 type GoogleCloudiotRegistryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleCloudiotRegistryIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudiot_registry_iam_member google_cloudiot_registry_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_member google_cloudiot_registry_iam_member} Resource.
 func NewGoogleCloudiotRegistryIamMember(scope constructs.Construct, id *string, config *GoogleCloudiotRegistryIamMemberConfig) GoogleCloudiotRegistryIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleCloudiotRegistryIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudiot_registry_iam_member google_cloudiot_registry_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_member google_cloudiot_registry_iam_member} Resource.
 func NewGoogleCloudiotRegistryIamMember_Override(g GoogleCloudiotRegistryIamMember, scope constructs.Construct, id *string, config *GoogleCloudiotRegistryIamMemberConfig) {
 	_init_.Initialize()
 

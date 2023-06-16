@@ -10,7 +10,7 @@ type GoogleDataLossPreventionJobTriggerTriggersSchedule struct {
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_job_trigger#recurrence_period_duration GoogleDataLossPreventionJobTrigger#recurrence_period_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_job_trigger#recurrence_period_duration GoogleDataLossPreventionJobTrigger#recurrence_period_duration}
 	RecurrencePeriodDuration *string `field:"optional" json:"recurrencePeriodDuration" yaml:"recurrencePeriodDuration"`
 }
 

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) validateSetSourceSnapshotParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

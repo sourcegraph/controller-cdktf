@@ -19,7 +19,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicy struct {
 	// unhealthy backends regardless of protocol and session affinity. It is
 	// generally not recommended to use this mode overriding the default. Default value: "DEFAULT_FOR_PROTOCOL" Possible values: ["DEFAULT_FOR_PROTOCOL", "NEVER_PERSIST", "ALWAYS_PERSIST"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_backend_service#connection_persistence_on_unhealthy_backends GoogleComputeRegionBackendService#connection_persistence_on_unhealthy_backends}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#connection_persistence_on_unhealthy_backends GoogleComputeRegionBackendService#connection_persistence_on_unhealthy_backends}
 	ConnectionPersistenceOnUnhealthyBackends *string `field:"optional" json:"connectionPersistenceOnUnhealthyBackends" yaml:"connectionPersistenceOnUnhealthyBackends"`
 	// Specifies how long to keep a Connection Tracking entry while there is no matching traffic (in seconds).
 	//
@@ -27,7 +27,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicy struct {
 	//
 	// For NLB the minimum(default) is 60 seconds and the maximum is 16 hours.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_backend_service#idle_timeout_sec GoogleComputeRegionBackendService#idle_timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#idle_timeout_sec GoogleComputeRegionBackendService#idle_timeout_sec}
 	IdleTimeoutSec *float64 `field:"optional" json:"idleTimeoutSec" yaml:"idleTimeoutSec"`
 	// Specifies the key used for connection tracking.
 	//
@@ -38,7 +38,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicy struct {
 	// 'PER_SESSION': The Connection Tracking is performed as per the
 	// configured Session Affinity. It matches the configured Session Affinity. Default value: "PER_CONNECTION" Possible values: ["PER_CONNECTION", "PER_SESSION"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_backend_service#tracking_mode GoogleComputeRegionBackendService#tracking_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#tracking_mode GoogleComputeRegionBackendService#tracking_mode}
 	TrackingMode *string `field:"optional" json:"trackingMode" yaml:"trackingMode"`
 }
 

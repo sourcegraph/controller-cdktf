@@ -57,7 +57,7 @@ type Ec2NetworkInsightsAnalysisExplanationsOutputReference interface {
 	PacketField() *string
 	Port() *float64
 	PortRanges() Ec2NetworkInsightsAnalysisExplanationsPortRangesList
-	PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListList
+	PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList
 	Protocols() *[]*string
 	RouteTable() Ec2NetworkInsightsAnalysisExplanationsRouteTableList
 	RouteTableRoute() Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList
@@ -454,8 +454,8 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference) PortRa
 	return returns
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference) PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListList {
-	var returns Ec2NetworkInsightsAnalysisExplanationsPrefixListList
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference) PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList {
+	var returns Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList
 	_jsii_.Get(
 		j,
 		"prefixList",

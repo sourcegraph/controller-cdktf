@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesubnetworkiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding}.
 type GoogleComputeSubnetworkIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkIamBinding) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
 func NewGoogleComputeSubnetworkIamBinding(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkIamBindingConfig) GoogleComputeSubnetworkIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleComputeSubnetworkIamBinding(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
 func NewGoogleComputeSubnetworkIamBinding_Override(g GoogleComputeSubnetworkIamBinding, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkIamBindingConfig) {
 	_init_.Initialize()
 

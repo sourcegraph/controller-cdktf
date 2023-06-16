@@ -4,7 +4,7 @@ package googlecomputeregionbackendservice
 type GoogleComputeRegionBackendServiceLogConfig struct {
 	// Whether to enable logging for the load balancer traffic served by this backend service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_backend_service#enable GoogleComputeRegionBackendService#enable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#enable GoogleComputeRegionBackendService#enable}
 	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
 	// This field can only be specified if logging is enabled for this backend service.
 	//
@@ -13,7 +13,7 @@ type GoogleComputeRegionBackendServiceLogConfig struct {
 	// where 1.0 means all logged requests are reported and 0.0 means no logged requests are reported.
 	// The default value is 1.0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_backend_service#sample_rate GoogleComputeRegionBackendService#sample_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#sample_rate GoogleComputeRegionBackendService#sample_rate}
 	SampleRate *float64 `field:"optional" json:"sampleRate" yaml:"sampleRate"`
 }
 

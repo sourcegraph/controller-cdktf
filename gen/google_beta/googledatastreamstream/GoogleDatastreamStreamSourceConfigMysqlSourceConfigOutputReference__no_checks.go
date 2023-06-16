@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validateSetMaxConcurrentBackfillTasksParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validateSetMaxConcurrentCdcTasksParameters(val *float64) error {
 	return nil
 }

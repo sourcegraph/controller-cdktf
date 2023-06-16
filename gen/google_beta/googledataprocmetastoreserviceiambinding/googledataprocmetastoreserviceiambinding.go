@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoreserviceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding}.
 type GoogleDataprocMetastoreServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
 func NewGoogleDataprocMetastoreServiceIamBinding(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamBindingConfig) GoogleDataprocMetastoreServiceIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleDataprocMetastoreServiceIamBinding(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
 func NewGoogleDataprocMetastoreServiceIamBinding_Override(g GoogleDataprocMetastoreServiceIamBinding, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamBindingConfig) {
 	_init_.Initialize()
 

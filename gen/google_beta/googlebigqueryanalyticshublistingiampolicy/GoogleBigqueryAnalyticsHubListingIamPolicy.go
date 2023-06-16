@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryanalyticshublistingiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
 type GoogleBigqueryAnalyticsHubListingIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
 func NewGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingIamPolicyConfig) GoogleBigqueryAnalyticsHubListingIamPolicy {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
 func NewGoogleBigqueryAnalyticsHubListingIamPolicy_Override(g GoogleBigqueryAnalyticsHubListingIamPolicy, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingIamPolicyConfig) {
 	_init_.Initialize()
 

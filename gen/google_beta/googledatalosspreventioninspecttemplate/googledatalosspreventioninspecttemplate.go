@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatalosspreventioninspecttemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
 type GoogleDataLossPreventionInspectTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TemplateId() *string
+	SetTemplateId(val *string)
+	TemplateIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,6 +112,7 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTemplateId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -365,6 +369,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TemplateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TemplateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *string, config *GoogleDataLossPreventionInspectTemplateConfig) GoogleDataLossPreventionInspectTemplate {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewGoogleDataLossPreventionInspectTemplate_Override(g GoogleDataLossPreventionInspectTemplate, scope constructs.Construct, id *string, config *GoogleDataLossPreventionInspectTemplateConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetTemplateId(val *string) {
+	if err := j.validateSetTemplateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"templateId",
 		val,
 	)
 }
@@ -881,6 +916,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ResetTemplateId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTemplateId",
 		nil, // no parameters
 	)
 }

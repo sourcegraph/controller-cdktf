@@ -221,15 +221,15 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutFromL
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*RulesetRulesActionParametersFromList:
-		value := value.(*[]*RulesetRulesActionParametersFromList)
+	case *[]*RulesetRulesActionParametersFromListStruct:
+		value := value.(*[]*RulesetRulesActionParametersFromListStruct)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*RulesetRulesActionParametersFromList:
-		value_ := value.([]*RulesetRulesActionParametersFromList)
+	case []*RulesetRulesActionParametersFromListStruct:
+		value_ := value.([]*RulesetRulesActionParametersFromListStruct)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -238,7 +238,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutFromL
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersFromList; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersFromListStruct; received %#v (a %T)", value, value)
 		}
 	}
 

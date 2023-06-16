@@ -56,6 +56,10 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) validateSetEncodingFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) validateSetInternalValueParameters(val *GooglePrivatecaCaPoolPublishingOptions) error {
 	return nil
 }

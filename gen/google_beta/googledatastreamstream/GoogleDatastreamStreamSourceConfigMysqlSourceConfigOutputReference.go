@@ -33,6 +33,9 @@ type GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference interfac
 	IncludeObjectsInput() *GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 	InternalValue() *GoogleDatastreamStreamSourceConfigMysqlSourceConfig
 	SetInternalValue(val *GoogleDatastreamStreamSourceConfigMysqlSourceConfig)
+	MaxConcurrentBackfillTasks() *float64
+	SetMaxConcurrentBackfillTasks(val *float64)
+	MaxConcurrentBackfillTasksInput() *float64
 	MaxConcurrentCdcTasks() *float64
 	SetMaxConcurrentCdcTasks(val *float64)
 	MaxConcurrentCdcTasksInput() *float64
@@ -72,6 +75,7 @@ type GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference interfac
 	PutIncludeObjects(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects)
 	ResetExcludeObjects()
 	ResetIncludeObjects()
+	ResetMaxConcurrentBackfillTasks()
 	ResetMaxConcurrentCdcTasks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) MaxConcurrentBackfillTasks() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxConcurrentBackfillTasks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) MaxConcurrentBackfillTasksInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxConcurrentBackfillTasksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) MaxConcurrentCdcTasks() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -275,6 +299,17 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference)SetMaxConcurrentBackfillTasks(val *float64) {
+	if err := j.validateSetMaxConcurrentBackfillTasksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxConcurrentBackfillTasks",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludeObjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) ResetMaxConcurrentBackfillTasks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxConcurrentBackfillTasks",
 		nil, // no parameters
 	)
 }

@@ -6,9 +6,7 @@ type CronJobV1Spec struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#job_template CronJobV1#job_template}
 	JobTemplate *CronJobV1SpecJobTemplate `field:"required" json:"jobTemplate" yaml:"jobTemplate"`
-	// Cron format string, e.g. 0 * * * * or @hourly, as schedule time of its jobs to be created and executed.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#schedule CronJobV1#schedule}
+	// Cron format string, e.g. 0 * * * * or.
 	Schedule *string `field:"required" json:"schedule" yaml:"schedule"`
 	// Specifies how to treat concurrent executions of a Job. Defaults to Allow.
 	//

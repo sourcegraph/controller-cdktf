@@ -68,6 +68,14 @@ func validateGoogleNetworkServicesGateway_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCertificateUrlsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -76,7 +84,15 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDeleteSwgAutogenRouterOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetGatewaySecurityPolicyParameters(val *string) error {
 	return nil
 }
 
@@ -100,6 +116,10 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetPortsParameters(val *[]*float64) error {
 	return nil
 }
@@ -117,6 +137,10 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetScopeParameters(val 
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetServerTlsPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }
 

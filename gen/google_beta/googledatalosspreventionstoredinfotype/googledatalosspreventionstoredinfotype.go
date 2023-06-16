@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatalosspreventionstoredinfotype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type}.
 type GoogleDataLossPreventionStoredInfoType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type GoogleDataLossPreventionStoredInfoType interface {
 	RawOverrides() interface{}
 	Regex() GoogleDataLossPreventionStoredInfoTypeRegexOutputReference
 	RegexInput() *GoogleDataLossPreventionStoredInfoTypeRegex
+	StoredInfoTypeId() *string
+	SetStoredInfoTypeId(val *string)
+	StoredInfoTypeIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type GoogleDataLossPreventionStoredInfoType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegex()
+	ResetStoredInfoTypeId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -413,6 +417,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) RegexInput() *GoogleD
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) StoredInfoTypeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedInfoTypeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) StoredInfoTypeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedInfoTypeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -464,7 +488,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
 func NewGoogleDataLossPreventionStoredInfoType(scope constructs.Construct, id *string, config *GoogleDataLossPreventionStoredInfoTypeConfig) GoogleDataLossPreventionStoredInfoType {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewGoogleDataLossPreventionStoredInfoType(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
 func NewGoogleDataLossPreventionStoredInfoType_Override(g GoogleDataLossPreventionStoredInfoType, scope constructs.Construct, id *string, config *GoogleDataLossPreventionStoredInfoTypeConfig) {
 	_init_.Initialize()
 
@@ -601,6 +625,17 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType)SetProvisioners(val *[
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType)SetStoredInfoTypeId(val *string) {
+	if err := j.validateSetStoredInfoTypeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storedInfoTypeId",
 		val,
 	)
 }
@@ -967,6 +1002,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoType) ResetRegex() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegex",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoType) ResetStoredInfoTypeId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoredInfoTypeId",
 		nil, // no parameters
 	)
 }

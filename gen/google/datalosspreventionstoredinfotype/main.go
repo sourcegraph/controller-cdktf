@@ -62,7 +62,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLargeCustomDictionary", GoMethod: "ResetLargeCustomDictionary"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegex", GoMethod: "ResetRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStoredInfoTypeId", GoMethod: "ResetStoredInfoTypeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "storedInfoTypeId", GoGetter: "StoredInfoTypeId"},
+			_jsii_.MemberProperty{JsiiProperty: "storedInfoTypeIdInput", GoGetter: "StoredInfoTypeIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -166,12 +169,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryWordList",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryWordList)(nil)).Elem(),
+		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryWordListStruct",
+		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryWordListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryWordListOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryWordListOutputReference)(nil)).Elem(),
+		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference",
+		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wordsInput", GoGetter: "WordsInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryWordListOutputReference{}
+			j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

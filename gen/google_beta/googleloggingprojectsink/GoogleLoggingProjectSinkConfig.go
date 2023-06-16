@@ -23,33 +23,33 @@ type GoogleLoggingProjectSinkConfig struct {
 	//
 	// Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#destination GoogleLoggingProjectSink#destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#destination GoogleLoggingProjectSink#destination}
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
 	// The name of the logging sink.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#name GoogleLoggingProjectSink#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#name GoogleLoggingProjectSink#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// bigquery_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#bigquery_options GoogleLoggingProjectSink#bigquery_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#bigquery_options GoogleLoggingProjectSink#bigquery_options}
 	BigqueryOptions *GoogleLoggingProjectSinkBigqueryOptions `field:"optional" json:"bigqueryOptions" yaml:"bigqueryOptions"`
 	// A description of this sink. The maximum length of the description is 8000 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#description GoogleLoggingProjectSink#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#description GoogleLoggingProjectSink#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// If set to True, then this sink is disabled and it does not export any log entries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#disabled GoogleLoggingProjectSink#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#disabled GoogleLoggingProjectSink#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 	// exclusions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#exclusions GoogleLoggingProjectSink#exclusions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#exclusions GoogleLoggingProjectSink#exclusions}
 	Exclusions interface{} `field:"optional" json:"exclusions" yaml:"exclusions"`
 	// The filter to apply when exporting logs. Only log entries that match the filter are exported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#filter GoogleLoggingProjectSink#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#filter GoogleLoggingProjectSink#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#id GoogleLoggingProjectSink#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#id GoogleLoggingProjectSink#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,13 +58,13 @@ type GoogleLoggingProjectSinkConfig struct {
 	//
 	// If omitted, the project associated with the provider is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#project GoogleLoggingProjectSink#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#project GoogleLoggingProjectSink#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Whether or not to create a unique identity associated with this sink.
 	//
 	// If false (the default), then the writer_identity used is serviceAccount:cloud-logs@system.gserviceaccount.com. If true, then a unique service account is created and used for this sink. If you wish to publish logs across projects, you must set unique_writer_identity to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_logging_project_sink#unique_writer_identity GoogleLoggingProjectSink#unique_writer_identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_project_sink#unique_writer_identity GoogleLoggingProjectSink#unique_writer_identity}
 	UniqueWriterIdentity interface{} `field:"optional" json:"uniqueWriterIdentity" yaml:"uniqueWriterIdentity"`
 }
 

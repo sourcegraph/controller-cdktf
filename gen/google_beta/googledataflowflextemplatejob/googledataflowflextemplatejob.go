@@ -9,9 +9,15 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataflowflextemplatejob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job}.
 type GoogleDataflowFlexTemplateJob interface {
 	cdktf.TerraformResource
+	AdditionalExperiments() *[]*string
+	SetAdditionalExperiments(val *[]*string)
+	AdditionalExperimentsInput() *[]*string
+	AutoscalingAlgorithm() *string
+	SetAutoscalingAlgorithm(val *string)
+	AutoscalingAlgorithmInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -31,6 +37,9 @@ type GoogleDataflowFlexTemplateJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableStreamingEngine() interface{}
+	SetEnableStreamingEngine(val interface{})
+	EnableStreamingEngineInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -42,19 +51,40 @@ type GoogleDataflowFlexTemplateJob interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpConfiguration() *string
+	SetIpConfiguration(val *string)
+	IpConfigurationInput() *string
 	JobId() *string
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LauncherMachineType() *string
+	SetLauncherMachineType(val *string)
+	LauncherMachineTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MachineType() *string
+	SetMachineType(val *string)
+	MachineTypeInput() *string
+	MaxWorkers() *float64
+	SetMaxWorkers(val *float64)
+	MaxWorkersInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() *string
+	SetNetwork(val *string)
+	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumWorkers() *float64
+	SetNumWorkers(val *float64)
+	NumWorkersInput() *float64
 	OnDelete() *string
 	SetOnDelete(val *string)
 	OnDeleteInput() *string
@@ -77,16 +107,35 @@ type GoogleDataflowFlexTemplateJob interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SdkContainerImage() *string
+	SetSdkContainerImage(val *string)
+	SdkContainerImageInput() *string
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	SkipWaitOnJobTermination() interface{}
 	SetSkipWaitOnJobTermination(val interface{})
 	SkipWaitOnJobTerminationInput() interface{}
+	StagingLocation() *string
+	SetStagingLocation(val *string)
+	StagingLocationInput() *string
 	State() *string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
+	TempLocation() *string
+	SetTempLocation(val *string)
+	TempLocationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TransformNameMapping() *map[string]*string
+	SetTransformNameMapping(val *map[string]*string)
+	TransformNameMappingInput() *map[string]*string
+	Type() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,8 +161,18 @@ type GoogleDataflowFlexTemplateJob interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAdditionalExperiments()
+	ResetAutoscalingAlgorithm()
+	ResetEnableStreamingEngine()
 	ResetId()
+	ResetIpConfiguration()
+	ResetKmsKeyName()
 	ResetLabels()
+	ResetLauncherMachineType()
+	ResetMachineType()
+	ResetMaxWorkers()
+	ResetNetwork()
+	ResetNumWorkers()
 	ResetOnDelete()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -121,7 +180,13 @@ type GoogleDataflowFlexTemplateJob interface {
 	ResetParameters()
 	ResetProject()
 	ResetRegion()
+	ResetSdkContainerImage()
+	ResetServiceAccountEmail()
 	ResetSkipWaitOnJobTermination()
+	ResetStagingLocation()
+	ResetSubnetwork()
+	ResetTempLocation()
+	ResetTransformNameMapping()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -135,6 +200,46 @@ type GoogleDataflowFlexTemplateJob interface {
 // The jsii proxy struct for GoogleDataflowFlexTemplateJob
 type jsiiProxy_GoogleDataflowFlexTemplateJob struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AdditionalExperiments() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalExperiments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AdditionalExperimentsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalExperimentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AutoscalingAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoscalingAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AutoscalingAlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoscalingAlgorithmInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) CdktfStack() cdktf.TerraformStack {
@@ -207,6 +312,26 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) EnableStreamingEngine() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableStreamingEngine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) EnableStreamingEngineInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableStreamingEngineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -257,11 +382,51 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) IpConfiguration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) IpConfigurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) JobId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"jobId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -287,11 +452,71 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) LabelsInput() *map[string]*str
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) LauncherMachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"launcherMachineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) LauncherMachineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"launcherMachineTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) MachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) MachineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) MaxWorkers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxWorkers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) MaxWorkersInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxWorkersInput",
 		&returns,
 	)
 	return returns
@@ -317,11 +542,51 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) NetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) NumWorkers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numWorkers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) NumWorkersInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numWorkersInput",
 		&returns,
 	)
 	return returns
@@ -437,6 +702,46 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) SdkContainerImage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sdkContainerImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) SdkContainerImageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sdkContainerImageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) SkipWaitOnJobTermination() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -457,11 +762,71 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) SkipWaitOnJobTerminationInput(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) StagingLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stagingLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) StagingLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stagingLocationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) State() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) TempLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tempLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) TempLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tempLocationInput",
 		&returns,
 	)
 	return returns
@@ -497,8 +862,38 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) TerraformResourceType() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) TransformNameMapping() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"transformNameMapping",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) TransformNameMappingInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"transformNameMappingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
 func NewGoogleDataflowFlexTemplateJob(scope constructs.Construct, id *string, config *GoogleDataflowFlexTemplateJobConfig) GoogleDataflowFlexTemplateJob {
 	_init_.Initialize()
 
@@ -516,7 +911,7 @@ func NewGoogleDataflowFlexTemplateJob(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
 func NewGoogleDataflowFlexTemplateJob_Override(g GoogleDataflowFlexTemplateJob, scope constructs.Construct, id *string, config *GoogleDataflowFlexTemplateJobConfig) {
 	_init_.Initialize()
 
@@ -524,6 +919,28 @@ func NewGoogleDataflowFlexTemplateJob_Override(g GoogleDataflowFlexTemplateJob, 
 		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetAdditionalExperiments(val *[]*string) {
+	if err := j.validateSetAdditionalExperimentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalExperiments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetAutoscalingAlgorithm(val *string) {
+	if err := j.validateSetAutoscalingAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingAlgorithm",
+		val,
 	)
 }
 
@@ -568,6 +985,17 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetEnableStreamingEngine(val interface{}) {
+	if err := j.validateSetEnableStreamingEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableStreamingEngine",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -587,6 +1015,28 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetIpConfiguration(val *string) {
+	if err := j.validateSetIpConfigurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipConfiguration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -594,6 +1044,17 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetLabels(val *map[string]*stri
 	_jsii_.Set(
 		j,
 		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetLauncherMachineType(val *string) {
+	if err := j.validateSetLauncherMachineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"launcherMachineType",
 		val,
 	)
 }
@@ -609,6 +1070,28 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetMachineType(val *string) {
+	if err := j.validateSetMachineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetMaxWorkers(val *float64) {
+	if err := j.validateSetMaxWorkersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxWorkers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -616,6 +1099,28 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetNetwork(val *string) {
+	if err := j.validateSetNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetNumWorkers(val *float64) {
+	if err := j.validateSetNumWorkersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numWorkers",
 		val,
 	)
 }
@@ -683,6 +1188,28 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetRegion(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetSdkContainerImage(val *string) {
+	if err := j.validateSetSdkContainerImageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sdkContainerImage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetSkipWaitOnJobTermination(val interface{}) {
 	if err := j.validateSetSkipWaitOnJobTerminationParameters(val); err != nil {
 		panic(err)
@@ -690,6 +1217,50 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetSkipWaitOnJobTermination(val
 	_jsii_.Set(
 		j,
 		"skipWaitOnJobTermination",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetStagingLocation(val *string) {
+	if err := j.validateSetStagingLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stagingLocation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetTempLocation(val *string) {
+	if err := j.validateSetTempLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tempLocation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetTransformNameMapping(val *map[string]*string) {
+	if err := j.validateSetTransformNameMappingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transformNameMapping",
 		val,
 	)
 }
@@ -960,6 +1531,30 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) OverrideLogicalId(newLogicalId
 	)
 }
 
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetAdditionalExperiments() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalExperiments",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetAutoscalingAlgorithm() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingAlgorithm",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetEnableStreamingEngine() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableStreamingEngine",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -968,10 +1563,66 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetIpConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetLauncherMachineType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLauncherMachineType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetMachineType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetMaxWorkers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxWorkers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetNumWorkers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNumWorkers",
 		nil, // no parameters
 	)
 }
@@ -1016,10 +1667,58 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetRegion() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetSdkContainerImage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSdkContainerImage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountEmail",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetSkipWaitOnJobTermination() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSkipWaitOnJobTermination",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetStagingLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStagingLocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubnetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetTempLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTempLocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetTransformNameMapping() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransformNameMapping",
 		nil, // no parameters
 	)
 }

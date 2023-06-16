@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

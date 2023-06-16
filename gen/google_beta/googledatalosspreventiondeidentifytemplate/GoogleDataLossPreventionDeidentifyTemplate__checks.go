@@ -333,6 +333,14 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetTemplateIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionDeidentifyTemplateParameters(scope constructs.Construct, id *string, config *GoogleDataLossPreventionDeidentifyTemplateConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

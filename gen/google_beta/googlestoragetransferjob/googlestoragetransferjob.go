@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragetransferjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_transfer_job google_storage_transfer_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job google_storage_transfer_job}.
 type GoogleStorageTransferJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleStorageTransferJob) TransferSpecInput() *GoogleStorageT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
 func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config *GoogleStorageTransferJobConfig) GoogleStorageTransferJob {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
 func NewGoogleStorageTransferJob_Override(g GoogleStorageTransferJob, scope constructs.Construct, id *string, config *GoogleStorageTransferJobConfig) {
 	_init_.Initialize()
 

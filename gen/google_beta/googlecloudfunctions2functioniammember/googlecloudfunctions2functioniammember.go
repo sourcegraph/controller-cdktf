@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctions2functioniammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member}.
 type GoogleCloudfunctions2FunctionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamMember) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member} Resource.
 func NewGoogleCloudfunctions2FunctionIamMember(scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionIamMemberConfig) GoogleCloudfunctions2FunctionIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleCloudfunctions2FunctionIamMember(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member} Resource.
 func NewGoogleCloudfunctions2FunctionIamMember_Override(g GoogleCloudfunctions2FunctionIamMember, scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionIamMemberConfig) {
 	_init_.Initialize()
 

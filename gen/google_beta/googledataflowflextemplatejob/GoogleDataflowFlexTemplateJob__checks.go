@@ -135,6 +135,22 @@ func validateGoogleDataflowFlexTemplateJob_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAdditionalExperimentsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetAutoscalingAlgorithmParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -233,7 +249,43 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetEnableStreamingEngineParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetIpConfigurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetKmsKeyNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,6 +301,14 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLabelsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLauncherMachineTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -257,7 +317,39 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetMachineTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetMaxWorkersParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetNetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetNumWorkersParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,6 +435,22 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetRegionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSdkContainerImageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetServiceAccountEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSkipWaitOnJobTerminationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -358,6 +466,38 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSkipWaitOnJobTermin
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetStagingLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetSubnetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetTempLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetTransformNameMappingParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

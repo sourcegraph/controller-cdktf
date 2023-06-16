@@ -41,6 +41,9 @@ type GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReferenc
 	SizeGb() *float64
 	SetSizeGb(val *float64)
 	SizeGbInput() *float64
+	SourceSnapshot() *string
+	SetSourceSnapshot(val *string)
+	SourceSnapshotInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +80,7 @@ type GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReferenc
 	ResetFsType()
 	ResetReclaimPolicy()
 	ResetSizeGb()
+	ResetSourceSnapshot()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -222,6 +226,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) SourceSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,6 +367,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd
 	_jsii_.Set(
 		j,
 		"sizeGb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference)SetSourceSnapshot(val *string) {
+	if err := j.validateSetSourceSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceSnapshot",
 		val,
 	)
 }
@@ -583,6 +618,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd
 	_jsii_.InvokeVoid(
 		g,
 		"resetSizeGb",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference) ResetSourceSnapshot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceSnapshot",
 		nil, // no parameters
 	)
 }

@@ -25,11 +25,11 @@ type GoogleBigqueryDatasetConfig struct {
 	// must contain only letters (a-z, A-Z), numbers (0-9), or
 	// underscores (_). The maximum length is 1,024 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#dataset_id GoogleBigqueryDataset#dataset_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#dataset_id GoogleBigqueryDataset#dataset_id}
 	DatasetId *string `field:"required" json:"datasetId" yaml:"datasetId"`
 	// access block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#access GoogleBigqueryDataset#access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#access GoogleBigqueryDataset#access}
 	Access interface{} `field:"optional" json:"access" yaml:"access"`
 	// Defines the default collation specification of future tables created in the dataset.
 	//
@@ -43,11 +43,11 @@ type GoogleBigqueryDatasetConfig struct {
 	// - 'und:ci': undetermined locale, case insensitive.
 	// - '': empty string. Default to case-sensitive behavior.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#default_collation GoogleBigqueryDataset#default_collation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#default_collation GoogleBigqueryDataset#default_collation}
 	DefaultCollation *string `field:"optional" json:"defaultCollation" yaml:"defaultCollation"`
 	// default_encryption_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#default_encryption_configuration GoogleBigqueryDataset#default_encryption_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#default_encryption_configuration GoogleBigqueryDataset#default_encryption_configuration}
 	DefaultEncryptionConfiguration *GoogleBigqueryDatasetDefaultEncryptionConfiguration `field:"optional" json:"defaultEncryptionConfiguration" yaml:"defaultEncryptionConfiguration"`
 	// The default partition expiration for all partitioned tables in the dataset, in milliseconds.
 	//
@@ -63,7 +63,7 @@ type GoogleBigqueryDatasetConfig struct {
 	// creating or updating a partitioned table, that value takes precedence
 	// over the default partition expiration time indicated by this property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#default_partition_expiration_ms GoogleBigqueryDataset#default_partition_expiration_ms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#default_partition_expiration_ms GoogleBigqueryDataset#default_partition_expiration_ms}
 	DefaultPartitionExpirationMs *float64 `field:"optional" json:"defaultPartitionExpirationMs" yaml:"defaultPartitionExpirationMs"`
 	// The default lifetime of all tables in the dataset, in milliseconds. The minimum value is 3600000 milliseconds (one hour).
 	//
@@ -77,24 +77,24 @@ type GoogleBigqueryDatasetConfig struct {
 	// creating a table, that value takes precedence over the default
 	// expiration time indicated by this property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#default_table_expiration_ms GoogleBigqueryDataset#default_table_expiration_ms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#default_table_expiration_ms GoogleBigqueryDataset#default_table_expiration_ms}
 	DefaultTableExpirationMs *float64 `field:"optional" json:"defaultTableExpirationMs" yaml:"defaultTableExpirationMs"`
 	// If set to 'true', delete all the tables in the dataset when destroying the resource;
 	//
 	// otherwise,
 	// destroying the resource will fail if tables are present.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#delete_contents_on_destroy GoogleBigqueryDataset#delete_contents_on_destroy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#delete_contents_on_destroy GoogleBigqueryDataset#delete_contents_on_destroy}
 	DeleteContentsOnDestroy interface{} `field:"optional" json:"deleteContentsOnDestroy" yaml:"deleteContentsOnDestroy"`
 	// A user-friendly description of the dataset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#description GoogleBigqueryDataset#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#description GoogleBigqueryDataset#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// A descriptive name for the dataset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#friendly_name GoogleBigqueryDataset#friendly_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#friendly_name GoogleBigqueryDataset#friendly_name}
 	FriendlyName *string `field:"optional" json:"friendlyName" yaml:"friendlyName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#id GoogleBigqueryDataset#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#id GoogleBigqueryDataset#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -104,11 +104,11 @@ type GoogleBigqueryDatasetConfig struct {
 	// By default, this is FALSE, which means the dataset and its table names are
 	// case-sensitive. This field does not affect routine references.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#is_case_insensitive GoogleBigqueryDataset#is_case_insensitive}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#is_case_insensitive GoogleBigqueryDataset#is_case_insensitive}
 	IsCaseInsensitive interface{} `field:"optional" json:"isCaseInsensitive" yaml:"isCaseInsensitive"`
 	// The labels associated with this dataset. You can use these to organize and group your datasets.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#labels GoogleBigqueryDataset#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#labels GoogleBigqueryDataset#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The geographic location where the dataset should reside. See [official docs](https://cloud.google.com/bigquery/docs/dataset-locations).
 	//
@@ -121,19 +121,19 @@ type GoogleBigqueryDatasetConfig struct {
 	// The default value is multi-regional location 'US'.
 	// Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#location GoogleBigqueryDataset#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#location GoogleBigqueryDataset#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// Defines the time travel window in hours.
 	//
 	// The value can be from 48 to 168 hours (2 to 7 days).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#max_time_travel_hours GoogleBigqueryDataset#max_time_travel_hours}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#max_time_travel_hours GoogleBigqueryDataset#max_time_travel_hours}
 	MaxTimeTravelHours *string `field:"optional" json:"maxTimeTravelHours" yaml:"maxTimeTravelHours"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#project GoogleBigqueryDataset#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#project GoogleBigqueryDataset#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset#timeouts GoogleBigqueryDataset#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset#timeouts GoogleBigqueryDataset#timeouts}
 	Timeouts *GoogleBigqueryDatasetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

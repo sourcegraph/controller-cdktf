@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucketiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member}.
 type GoogleStorageBucketIamMember interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleStorageBucketIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
 func NewGoogleStorageBucketIamMember(scope constructs.Construct, id *string, config *GoogleStorageBucketIamMemberConfig) GoogleStorageBucketIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleStorageBucketIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member} Resource.
 func NewGoogleStorageBucketIamMember_Override(g GoogleStorageBucketIamMember, scope constructs.Construct, id *string, config *GoogleStorageBucketIamMemberConfig) {
 	_init_.Initialize()
 

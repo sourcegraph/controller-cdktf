@@ -23,6 +23,6 @@ type ComprehendEntityRecognizerInputDataConfig struct {
 	// entity_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/comprehend_entity_recognizer#entity_list ComprehendEntityRecognizer#entity_list}
-	EntityList *ComprehendEntityRecognizerInputDataConfigEntityList `field:"optional" json:"entityList" yaml:"entityList"`
+	EntityList *ComprehendEntityRecognizerInputDataConfigEntityListStruct `field:"optional" json:"entityList" yaml:"entityList"`
 }
 

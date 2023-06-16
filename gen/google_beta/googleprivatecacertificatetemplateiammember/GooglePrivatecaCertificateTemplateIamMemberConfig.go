@@ -19,24 +19,24 @@ type GooglePrivatecaCertificateTemplateIamMemberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#certificate_template GooglePrivatecaCertificateTemplateIamMember#certificate_template}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#certificate_template GooglePrivatecaCertificateTemplateIamMember#certificate_template}.
 	CertificateTemplate *string `field:"required" json:"certificateTemplate" yaml:"certificateTemplate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#member GooglePrivatecaCertificateTemplateIamMember#member}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#member GooglePrivatecaCertificateTemplateIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#role GooglePrivatecaCertificateTemplateIamMember#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#role GooglePrivatecaCertificateTemplateIamMember#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#condition GooglePrivatecaCertificateTemplateIamMember#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#condition GooglePrivatecaCertificateTemplateIamMember#condition}
 	Condition *GooglePrivatecaCertificateTemplateIamMemberCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#id GooglePrivatecaCertificateTemplateIamMember#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#id GooglePrivatecaCertificateTemplateIamMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#location GooglePrivatecaCertificateTemplateIamMember#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#location GooglePrivatecaCertificateTemplateIamMember#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_privateca_certificate_template_iam_member#project GooglePrivatecaCertificateTemplateIamMember#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_template_iam_member#project GooglePrivatecaCertificateTemplateIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -4,7 +4,7 @@ package googlecloudiotregistry
 type GoogleCloudiotRegistryEventNotificationConfigs struct {
 	// PubSub topic name to publish device events.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudiot_registry#pubsub_topic_name GoogleCloudiotRegistry#pubsub_topic_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry#pubsub_topic_name GoogleCloudiotRegistry#pubsub_topic_name}
 	PubsubTopicName *string `field:"required" json:"pubsubTopicName" yaml:"pubsubTopicName"`
 	// If the subfolder name matches this string exactly, this configuration will be used.
 	//
@@ -13,7 +13,7 @@ type GoogleCloudiotRegistryEventNotificationConfigs struct {
 	// value can only be used for the last 'event_notification_configs'
 	// item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloudiot_registry#subfolder_matches GoogleCloudiotRegistry#subfolder_matches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry#subfolder_matches GoogleCloudiotRegistry#subfolder_matches}
 	SubfolderMatches *string `field:"optional" json:"subfolderMatches" yaml:"subfolderMatches"`
 }
 

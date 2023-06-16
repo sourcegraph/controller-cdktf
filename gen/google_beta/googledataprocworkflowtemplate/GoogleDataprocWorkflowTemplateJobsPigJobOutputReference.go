@@ -43,8 +43,8 @@ type GoogleDataprocWorkflowTemplateJobsPigJobOutputReference interface {
 	QueryFileUri() *string
 	SetQueryFileUri(val *string)
 	QueryFileUriInput() *string
-	QueryList() GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference
-	QueryListInput() *GoogleDataprocWorkflowTemplateJobsPigJobQueryList
+	QueryList() GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference
+	QueryListInput() *GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct
 	ScriptVariables() *map[string]*string
 	SetScriptVariables(val *map[string]*string)
 	ScriptVariablesInput() *map[string]*string
@@ -81,7 +81,7 @@ type GoogleDataprocWorkflowTemplateJobsPigJobOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLoggingConfig(value *GoogleDataprocWorkflowTemplateJobsPigJobLoggingConfig)
-	PutQueryList(value *GoogleDataprocWorkflowTemplateJobsPigJobQueryList)
+	PutQueryList(value *GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct)
 	ResetContinueOnFailure()
 	ResetJarFileUris()
 	ResetLoggingConfig()
@@ -254,8 +254,8 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) Quer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) QueryList() GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference {
-	var returns GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) QueryList() GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference {
+	var returns GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference
 	_jsii_.Get(
 		j,
 		"queryList",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) Quer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) QueryListInput() *GoogleDataprocWorkflowTemplateJobsPigJobQueryList {
-	var returns *GoogleDataprocWorkflowTemplateJobsPigJobQueryList
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) QueryListInput() *GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct {
+	var returns *GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct
 	_jsii_.Get(
 		j,
 		"queryListInput",
@@ -649,7 +649,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) PutL
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) PutQueryList(value *GoogleDataprocWorkflowTemplateJobsPigJobQueryList) {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) PutQueryList(value *GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct) {
 	if err := g.validatePutQueryListParameters(value); err != nil {
 		panic(err)
 	}

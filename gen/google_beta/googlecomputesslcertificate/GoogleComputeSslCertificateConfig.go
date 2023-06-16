@@ -24,17 +24,17 @@ type GoogleComputeSslCertificateConfig struct {
 	// The certificate chain must be no greater than 5 certs long.
 	// The chain must include at least one intermediate cert.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#certificate GoogleComputeSslCertificate#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#certificate GoogleComputeSslCertificate#certificate}
 	Certificate *string `field:"required" json:"certificate" yaml:"certificate"`
 	// The write-only private key in PEM format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#private_key GoogleComputeSslCertificate#private_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#private_key GoogleComputeSslCertificate#private_key}
 	PrivateKey *string `field:"required" json:"privateKey" yaml:"privateKey"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#description GoogleComputeSslCertificate#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#description GoogleComputeSslCertificate#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#id GoogleComputeSslCertificate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#id GoogleComputeSslCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,17 +52,17 @@ type GoogleComputeSslCertificateConfig struct {
 	//
 	// These are in the same namespace as the managed SSL certificates.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#name GoogleComputeSslCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#name GoogleComputeSslCertificate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Creates a unique name beginning with the specified prefix. Conflicts with name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#name_prefix GoogleComputeSslCertificate#name_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#name_prefix GoogleComputeSslCertificate#name_prefix}
 	NamePrefix *string `field:"optional" json:"namePrefix" yaml:"namePrefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#project GoogleComputeSslCertificate#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#project GoogleComputeSslCertificate#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_ssl_certificate#timeouts GoogleComputeSslCertificate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_certificate#timeouts GoogleComputeSslCertificate#timeouts}
 	Timeouts *GoogleComputeSslCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

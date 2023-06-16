@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegameservicesrealm/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_game_services_realm google_game_services_realm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_realm google_game_services_realm}.
 type GoogleGameServicesRealm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_GoogleGameServicesRealm) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_game_services_realm google_game_services_realm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_realm google_game_services_realm} Resource.
 func NewGoogleGameServicesRealm(scope constructs.Construct, id *string, config *GoogleGameServicesRealmConfig) GoogleGameServicesRealm {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewGoogleGameServicesRealm(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_game_services_realm google_game_services_realm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_realm google_game_services_realm} Resource.
 func NewGoogleGameServicesRealm_Override(g GoogleGameServicesRealm, scope constructs.Construct, id *string, config *GoogleGameServicesRealmConfig) {
 	_init_.Initialize()
 

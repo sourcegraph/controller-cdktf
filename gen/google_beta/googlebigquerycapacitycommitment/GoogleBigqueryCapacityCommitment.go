@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerycapacitycommitment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_capacity_commitment google_bigquery_capacity_commitment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_capacity_commitment google_bigquery_capacity_commitment}.
 type GoogleBigqueryCapacityCommitment interface {
 	cdktf.TerraformResource
 	CapacityCommitmentId() *string
@@ -544,7 +544,7 @@ func (j *jsiiProxy_GoogleBigqueryCapacityCommitment) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource.
 func NewGoogleBigqueryCapacityCommitment(scope constructs.Construct, id *string, config *GoogleBigqueryCapacityCommitmentConfig) GoogleBigqueryCapacityCommitment {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewGoogleBigqueryCapacityCommitment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource.
 func NewGoogleBigqueryCapacityCommitment_Override(g GoogleBigqueryCapacityCommitment, scope constructs.Construct, id *string, config *GoogleBigqueryCapacityCommitmentConfig) {
 	_init_.Initialize()
 

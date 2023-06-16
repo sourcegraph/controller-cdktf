@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkloadidentitypoolprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
 type GoogleIamWorkloadIdentityPoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -570,7 +570,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) WorkloadIdentityPoolPr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolProviderConfig) GoogleIamWorkloadIdentityPoolProvider {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewGoogleIamWorkloadIdentityPoolProvider_Override(g GoogleIamWorkloadIdentityPoolProvider, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolProviderConfig) {
 	_init_.Initialize()
 

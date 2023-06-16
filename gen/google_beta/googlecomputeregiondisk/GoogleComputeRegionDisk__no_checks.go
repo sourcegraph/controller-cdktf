@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutDiskEncryptionKeyParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutGuestOsFeaturesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutSourceSnapshotEncryptionKeyParameters(value *GoogleComputeRegionDiskSourceSnapshotEncryptionKey) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetInterfaceParameters(val *
 }
 
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetLicensesParameters(val *[]*string) error {
 	return nil
 }
 

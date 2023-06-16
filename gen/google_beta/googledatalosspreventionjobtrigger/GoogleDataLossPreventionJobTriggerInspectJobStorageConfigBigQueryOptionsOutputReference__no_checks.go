@@ -44,7 +44,15 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutExcludedFieldsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIdentifyingFieldsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIncludedFieldsParameters(value interface{}) error {
 	return nil
 }
 

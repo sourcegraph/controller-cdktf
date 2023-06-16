@@ -25,6 +25,7 @@ type DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EmptyDir() DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecVolumes
@@ -103,6 +104,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) EmptyDir() DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList {
+	var returns DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList
+	_jsii_.Get(
+		j,
+		"emptyDir",
 		&returns,
 	)
 	return returns

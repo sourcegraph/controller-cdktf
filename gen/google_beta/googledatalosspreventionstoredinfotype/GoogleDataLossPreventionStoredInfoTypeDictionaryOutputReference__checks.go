@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordList) error {
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

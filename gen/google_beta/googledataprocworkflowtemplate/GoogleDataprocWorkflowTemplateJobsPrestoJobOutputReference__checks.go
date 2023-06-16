@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

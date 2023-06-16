@@ -431,6 +431,14 @@ func (j *jsiiProxy_GoogleComputeImage) validateSetSourceSnapshotParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeImage) validateSetStorageLocationsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleComputeImageParameters(scope constructs.Construct, id *string, config *GoogleComputeImageConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

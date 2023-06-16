@@ -257,12 +257,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityList",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityList)(nil)).Elem(),
+		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct",
+		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListOutputReference)(nil)).Elem(),
+		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference",
+		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -289,7 +289,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityListOutputReference{}
+			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

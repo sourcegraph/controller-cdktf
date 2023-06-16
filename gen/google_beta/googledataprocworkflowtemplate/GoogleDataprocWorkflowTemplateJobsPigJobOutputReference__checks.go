@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsPigJobQueryList) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

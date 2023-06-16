@@ -25,10 +25,14 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludedFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList
+	ExcludedFieldsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IdentifyingFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList
 	IdentifyingFieldsInput() interface{}
+	IncludedFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList
+	IncludedFieldsInput() interface{}
 	InternalValue() *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	SetInternalValue(val *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions)
 	RowsLimit() *float64
@@ -74,9 +78,13 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOut
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExcludedFields(value interface{})
 	PutIdentifyingFields(value interface{})
+	PutIncludedFields(value interface{})
 	PutTableReference(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference)
+	ResetExcludedFields()
 	ResetIdentifyingFields()
+	ResetIncludedFields()
 	ResetRowsLimit()
 	ResetRowsLimitPercent()
 	ResetSampleMethod()
@@ -125,6 +133,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ExcludedFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList
+	_jsii_.Get(
+		j,
+		"excludedFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ExcludedFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludedFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -150,6 +178,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	_jsii_.Get(
 		j,
 		"identifyingFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) IncludedFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList
+	_jsii_.Get(
+		j,
+		"includedFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) IncludedFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includedFieldsInput",
 		&returns,
 	)
 	return returns
@@ -567,6 +615,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) PutExcludedFields(value interface{}) {
+	if err := g.validatePutExcludedFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExcludedFields",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) PutIdentifyingFields(value interface{}) {
 	if err := g.validatePutIdentifyingFieldsParameters(value); err != nil {
 		panic(err)
@@ -574,6 +633,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	_jsii_.InvokeVoid(
 		g,
 		"putIdentifyingFields",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) PutIncludedFields(value interface{}) {
+	if err := g.validatePutIncludedFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIncludedFields",
 		[]interface{}{value},
 	)
 }
@@ -589,10 +659,26 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetExcludedFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExcludedFields",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetIdentifyingFields() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIdentifyingFields",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetIncludedFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIncludedFields",
 		nil, // no parameters
 	)
 }

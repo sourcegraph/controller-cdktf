@@ -4,7 +4,7 @@ package googlecomputeregionnetworkendpointgroup
 type GoogleComputeRegionNetworkEndpointGroupAppEngine struct {
 	// Optional serving service. The service name must be 1-63 characters long, and comply with RFC1035. Example value: "default", "my-service".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_network_endpoint_group#service GoogleComputeRegionNetworkEndpointGroup#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_network_endpoint_group#service GoogleComputeRegionNetworkEndpointGroup#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// A template to parse service and version fields from a request URL.
 	//
@@ -16,11 +16,11 @@ type GoogleComputeRegionNetworkEndpointGroupAppEngine struct {
 	// URL mask "-dot-appname.appspot.com/". The URL mask will parse
 	// them to { service = "foo1", version = "v1" } and { service = "foo1", version = "v2" } respectively.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
 	UrlMask *string `field:"optional" json:"urlMask" yaml:"urlMask"`
 	// Optional serving version. The version must be 1-63 characters long, and comply with RFC1035. Example value: "v1", "v2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_network_endpoint_group#version GoogleComputeRegionNetworkEndpointGroup#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_network_endpoint_group#version GoogleComputeRegionNetworkEndpointGroup#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

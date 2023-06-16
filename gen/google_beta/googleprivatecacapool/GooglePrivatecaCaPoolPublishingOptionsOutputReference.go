@@ -25,6 +25,9 @@ type GooglePrivatecaCaPoolPublishingOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncodingFormat() *string
+	SetEncodingFormat(val *string)
+	EncodingFormatInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GooglePrivatecaCaPoolPublishingOptions
@@ -67,6 +70,7 @@ type GooglePrivatecaCaPoolPublishingOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEncodingFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) EncodingFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) EncodingFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingFormatInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference)SetEncodingFormat(val *string) {
+	if err := j.validateSetEncodingFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encodingFormat",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) ResetEncodingFormat() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncodingFormat",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GooglePrivatecaCaPoolPublishingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

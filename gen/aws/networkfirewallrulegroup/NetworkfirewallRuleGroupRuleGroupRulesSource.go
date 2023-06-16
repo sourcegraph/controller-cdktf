@@ -5,7 +5,7 @@ type NetworkfirewallRuleGroupRuleGroupRulesSource struct {
 	// rules_source_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_rule_group#rules_source_list NetworkfirewallRuleGroup#rules_source_list}
-	RulesSourceList *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList `field:"optional" json:"rulesSourceList" yaml:"rulesSourceList"`
+	RulesSourceList *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct `field:"optional" json:"rulesSourceList" yaml:"rulesSourceList"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_rule_group#rules_string NetworkfirewallRuleGroup#rules_string}.
 	RulesString *string `field:"optional" json:"rulesString" yaml:"rulesString"`
 	// stateful_rule block.

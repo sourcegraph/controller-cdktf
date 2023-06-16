@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsublitesubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription}.
 type GooglePubsubLiteSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GooglePubsubLiteSubscription) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
 func NewGooglePubsubLiteSubscription(scope constructs.Construct, id *string, config *GooglePubsubLiteSubscriptionConfig) GooglePubsubLiteSubscription {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewGooglePubsubLiteSubscription(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
 func NewGooglePubsubLiteSubscription_Override(g GooglePubsubLiteSubscription, scope constructs.Construct, id *string, config *GooglePubsubLiteSubscriptionConfig) {
 	_init_.Initialize()
 

@@ -15,6 +15,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ActivationPolicyInput() *string
 	ActiveDirectoryConfig() GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference
 	ActiveDirectoryConfigInput() *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig
+	AdvancedMachineFeatures() GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
+	AdvancedMachineFeaturesInput() *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures
 	AvailabilityType() *string
 	SetAvailabilityType(val *string)
 	AvailabilityTypeInput() *string
@@ -122,6 +124,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActiveDirectoryConfig(value *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig)
+	PutAdvancedMachineFeatures(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration)
 	PutDatabaseFlags(value interface{})
 	PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)
@@ -133,6 +136,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PutSqlServerAuditConfig(value *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig)
 	ResetActivationPolicy()
 	ResetActiveDirectoryConfig()
+	ResetAdvancedMachineFeatures()
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
@@ -203,6 +207,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ActiveDirec
 	_jsii_.Get(
 		j,
 		"activeDirectoryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) AdvancedMachineFeatures() GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference {
+	var returns GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
+	_jsii_.Get(
+		j,
+		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) AdvancedMachineFeaturesInput() *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures {
+	var returns *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures
+	_jsii_.Get(
+		j,
+		"advancedMachineFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -1131,6 +1155,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutActiveDi
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutAdvancedMachineFeatures(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures) {
+	if err := g.validatePutAdvancedMachineFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedMachineFeatures",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration) {
 	if err := g.validatePutBackupConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1242,6 +1277,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetActive
 	_jsii_.InvokeVoid(
 		g,
 		"resetActiveDirectoryConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetAdvancedMachineFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedMachineFeatures",
 		nil, // no parameters
 	)
 }

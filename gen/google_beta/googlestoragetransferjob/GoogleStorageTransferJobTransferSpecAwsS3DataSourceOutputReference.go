@@ -34,6 +34,9 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobTransferSpecAwsS3DataSource
 	SetInternalValue(val *GoogleStorageTransferJobTransferSpecAwsS3DataSource)
+	Path() *string
+	SetPath(val *string)
+	PathInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -71,6 +74,7 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsAccessKey(value *GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)
 	ResetAwsAccessKey()
+	ResetPath()
 	ResetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -172,6 +176,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) PathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathInput",
 		&returns,
 	)
 	return returns
@@ -285,6 +309,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"path",
 		val,
 	)
 }
@@ -523,6 +558,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetAwsAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPath",
 		nil, // no parameters
 	)
 }

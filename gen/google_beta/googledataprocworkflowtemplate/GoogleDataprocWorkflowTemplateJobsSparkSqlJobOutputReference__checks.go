@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference) validatePutQueryListParameters(value *GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

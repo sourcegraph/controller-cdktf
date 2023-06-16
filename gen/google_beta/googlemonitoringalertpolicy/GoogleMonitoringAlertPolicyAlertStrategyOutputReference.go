@@ -32,6 +32,8 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleMonitoringAlertPolicyAlertStrategy
 	SetInternalValue(val *GoogleMonitoringAlertPolicyAlertStrategy)
+	NotificationChannelStrategy() GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
+	NotificationChannelStrategyInput() interface{}
 	NotificationRateLimit() GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference
 	NotificationRateLimitInput() *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	// Experimental.
@@ -66,8 +68,10 @@ type GoogleMonitoringAlertPolicyAlertStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNotificationChannelStrategy(value interface{})
 	PutNotificationRateLimit(value *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit)
 	ResetAutoClose()
+	ResetNotificationChannelStrategy()
 	ResetNotificationRateLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) NotificationChannelStrategy() GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList {
+	var returns GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
+	_jsii_.Get(
+		j,
+		"notificationChannelStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) NotificationChannelStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationChannelStrategyInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) PutNotificationChannelStrategy(value interface{}) {
+	if err := g.validatePutNotificationChannelStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotificationChannelStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) PutNotificationRateLimit(value *GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit) {
 	if err := g.validatePutNotificationRateLimitParameters(value); err != nil {
 		panic(err)
@@ -489,6 +524,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutoClose",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference) ResetNotificationChannelStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationChannelStrategy",
 		nil, // no parameters
 	)
 }

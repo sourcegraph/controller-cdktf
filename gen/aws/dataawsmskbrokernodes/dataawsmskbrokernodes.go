@@ -44,7 +44,7 @@ type DataAwsMskBrokerNodes interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	NodeInfoList() DataAwsMskBrokerNodesNodeInfoListList
+	NodeInfoList() DataAwsMskBrokerNodesNodeInfoListStructList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataAwsMskBrokerNodes) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMskBrokerNodes) NodeInfoList() DataAwsMskBrokerNodesNodeInfoListList {
-	var returns DataAwsMskBrokerNodesNodeInfoListList
+func (j *jsiiProxy_DataAwsMskBrokerNodes) NodeInfoList() DataAwsMskBrokerNodesNodeInfoListStructList {
+	var returns DataAwsMskBrokerNodesNodeInfoListStructList
 	_jsii_.Get(
 		j,
 		"nodeInfoList",

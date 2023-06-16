@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/data-sources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_image google_compute_image}.
 type DataGoogleComputeImage interface {
 	cdktf.TerraformDataSource
 	ArchiveSizeBytes() *float64
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DataGoogleComputeImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/data-sources/compute_image google_compute_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_image google_compute_image} Data Source.
 func NewDataGoogleComputeImage(scope constructs.Construct, id *string, config *DataGoogleComputeImageConfig) DataGoogleComputeImage {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDataGoogleComputeImage(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/data-sources/compute_image google_compute_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_image google_compute_image} Data Source.
 func NewDataGoogleComputeImage_Override(d DataGoogleComputeImage, scope constructs.Construct, id *string, config *DataGoogleComputeImageConfig) {
 	_init_.Initialize()
 

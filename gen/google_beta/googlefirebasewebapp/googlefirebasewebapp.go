@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebasewebapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_web_app google_firebase_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_web_app google_firebase_web_app}.
 type GoogleFirebaseWebApp interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleFirebaseWebApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
 func NewGoogleFirebaseWebApp(scope constructs.Construct, id *string, config *GoogleFirebaseWebAppConfig) GoogleFirebaseWebApp {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleFirebaseWebApp(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
 func NewGoogleFirebaseWebApp_Override(g GoogleFirebaseWebApp, scope constructs.Construct, id *string, config *GoogleFirebaseWebAppConfig) {
 	_init_.Initialize()
 

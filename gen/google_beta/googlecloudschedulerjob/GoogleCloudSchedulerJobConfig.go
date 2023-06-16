@@ -21,11 +21,11 @@ type GoogleCloudSchedulerJobConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the job.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#name GoogleCloudSchedulerJob#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#name GoogleCloudSchedulerJob#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// app_engine_http_target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#app_engine_http_target GoogleCloudSchedulerJob#app_engine_http_target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#app_engine_http_target GoogleCloudSchedulerJob#app_engine_http_target}
 	AppEngineHttpTarget *GoogleCloudSchedulerJobAppEngineHttpTarget `field:"optional" json:"appEngineHttpTarget" yaml:"appEngineHttpTarget"`
 	// The deadline for job attempts.
 	//
@@ -38,52 +38,52 @@ type GoogleCloudSchedulerJobConfig struct {
 	// **Note**: For PubSub targets, this field is ignored - setting it will introduce an unresolvable diff.
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#attempt_deadline GoogleCloudSchedulerJob#attempt_deadline}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#attempt_deadline GoogleCloudSchedulerJob#attempt_deadline}
 	AttemptDeadline *string `field:"optional" json:"attemptDeadline" yaml:"attemptDeadline"`
 	// A human-readable description for the job. This string must not contain more than 500 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#description GoogleCloudSchedulerJob#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#description GoogleCloudSchedulerJob#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// http_target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#http_target GoogleCloudSchedulerJob#http_target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#http_target GoogleCloudSchedulerJob#http_target}
 	HttpTarget *GoogleCloudSchedulerJobHttpTarget `field:"optional" json:"httpTarget" yaml:"httpTarget"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#id GoogleCloudSchedulerJob#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#id GoogleCloudSchedulerJob#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Sets the job to a paused state. Jobs default to being enabled when this property is not set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#paused GoogleCloudSchedulerJob#paused}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#paused GoogleCloudSchedulerJob#paused}
 	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#project GoogleCloudSchedulerJob#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#project GoogleCloudSchedulerJob#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// pubsub_target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#pubsub_target GoogleCloudSchedulerJob#pubsub_target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#pubsub_target GoogleCloudSchedulerJob#pubsub_target}
 	PubsubTarget *GoogleCloudSchedulerJobPubsubTarget `field:"optional" json:"pubsubTarget" yaml:"pubsubTarget"`
 	// Region where the scheduler job resides. If it is not provided, Terraform will use the provider default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#region GoogleCloudSchedulerJob#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#region GoogleCloudSchedulerJob#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// retry_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#retry_config GoogleCloudSchedulerJob#retry_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#retry_config GoogleCloudSchedulerJob#retry_config}
 	RetryConfig *GoogleCloudSchedulerJobRetryConfig `field:"optional" json:"retryConfig" yaml:"retryConfig"`
 	// Describes the schedule on which the job will be executed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#schedule GoogleCloudSchedulerJob#schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#schedule GoogleCloudSchedulerJob#schedule}
 	Schedule *string `field:"optional" json:"schedule" yaml:"schedule"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#timeouts GoogleCloudSchedulerJob#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#timeouts GoogleCloudSchedulerJob#timeouts}
 	Timeouts *GoogleCloudSchedulerJobTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Specifies the time zone to be used in interpreting schedule.
 	//
 	// The value of this field must be a time zone name from the tz database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_scheduler_job#time_zone GoogleCloudSchedulerJob#time_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_scheduler_job#time_zone GoogleCloudSchedulerJob#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
 

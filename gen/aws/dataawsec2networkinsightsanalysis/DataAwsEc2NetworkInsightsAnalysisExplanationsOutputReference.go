@@ -57,7 +57,7 @@ type DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference interface {
 	PacketField() *string
 	Port() *float64
 	PortRanges() DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesList
-	PrefixList() DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListList
+	PrefixList() DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList
 	Protocols() *[]*string
 	RouteTable() DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableList
 	RouteTableRoute() DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList
@@ -454,8 +454,8 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference) PrefixList() DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListList {
-	var returns DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListList
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference) PrefixList() DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList {
+	var returns DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList
 	_jsii_.Get(
 		j,
 		"prefixList",

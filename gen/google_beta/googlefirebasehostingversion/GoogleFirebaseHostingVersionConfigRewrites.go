@@ -4,19 +4,19 @@ package googlefirebasehostingversion
 type GoogleFirebaseHostingVersionConfigRewrites struct {
 	// The function to proxy requests to. Must match the exported function name exactly.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
 	Function *string `field:"optional" json:"function" yaml:"function"`
 	// The user-supplied glob to match against the request URL path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
 	Glob *string `field:"optional" json:"glob" yaml:"glob"`
 	// The user-supplied RE2 regular expression to match against the request URL path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
 	Regex *string `field:"optional" json:"regex" yaml:"regex"`
 	// run block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
 	Run *GoogleFirebaseHostingVersionConfigRewritesRun `field:"optional" json:"run" yaml:"run"`
 }
 

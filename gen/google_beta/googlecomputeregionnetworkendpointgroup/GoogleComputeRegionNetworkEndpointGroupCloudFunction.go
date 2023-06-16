@@ -4,7 +4,7 @@ package googlecomputeregionnetworkendpointgroup
 type GoogleComputeRegionNetworkEndpointGroupCloudFunction struct {
 	// A user-defined name of the Cloud Function. The function name is case-sensitive and must be 1-63 characters long. Example value: "func1".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_network_endpoint_group#function GoogleComputeRegionNetworkEndpointGroup#function}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_network_endpoint_group#function GoogleComputeRegionNetworkEndpointGroup#function}
 	Function *string `field:"optional" json:"function" yaml:"function"`
 	// A template to parse function field from a request URL.
 	//
@@ -16,7 +16,7 @@ type GoogleComputeRegionNetworkEndpointGroupCloudFunction struct {
 	// can be backed by the same Serverless NEG with URL mask "/". The URL mask
 	// will parse them to { function = "function1" } and { function = "function2" } respectively.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
 	UrlMask *string `field:"optional" json:"urlMask" yaml:"urlMask"`
 }
 

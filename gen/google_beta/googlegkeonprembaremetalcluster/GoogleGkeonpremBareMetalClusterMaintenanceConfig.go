@@ -8,7 +8,7 @@ type GoogleGkeonpremBareMetalClusterMaintenanceConfig struct {
 	// are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
 	// on the node resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalCluster#maintenance_address_cidr_blocks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalCluster#maintenance_address_cidr_blocks}
 	MaintenanceAddressCidrBlocks *[]*string `field:"required" json:"maintenanceAddressCidrBlocks" yaml:"maintenanceAddressCidrBlocks"`
 }
 

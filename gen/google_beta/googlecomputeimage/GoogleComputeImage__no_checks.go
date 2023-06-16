@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleComputeImage) validateSetSourceSnapshotParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeImage) validateSetStorageLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewGoogleComputeImageParameters(scope constructs.Construct, id *string, config *GoogleComputeImageConfig) error {
 	return nil
 }

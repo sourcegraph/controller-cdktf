@@ -6,13 +6,13 @@ type GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayO
 	//
 	// e.g. MONDAY Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_resource_policy#day GoogleComputeResourcePolicy#day}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_resource_policy#day GoogleComputeResourcePolicy#day}
 	Day *string `field:"required" json:"day" yaml:"day"`
 	// Time within the window to start the operations.
 	//
 	// It must be in format "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_resource_policy#start_time GoogleComputeResourcePolicy#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_resource_policy#start_time GoogleComputeResourcePolicy#start_time}
 	StartTime *string `field:"required" json:"startTime" yaml:"startTime"`
 }
 

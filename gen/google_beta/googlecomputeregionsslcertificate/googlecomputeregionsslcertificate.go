@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionsslcertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate}.
 type GoogleComputeRegionSslCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_GoogleComputeRegionSslCertificate) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
 func NewGoogleComputeRegionSslCertificate(scope constructs.Construct, id *string, config *GoogleComputeRegionSslCertificateConfig) GoogleComputeRegionSslCertificate {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewGoogleComputeRegionSslCertificate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_ssl_certificate google_compute_region_ssl_certificate} Resource.
 func NewGoogleComputeRegionSslCertificate_Override(g GoogleComputeRegionSslCertificate, scope constructs.Construct, id *string, config *GoogleComputeRegionSslCertificateConfig) {
 	_init_.Initialize()
 

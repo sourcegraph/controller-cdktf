@@ -65,7 +65,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	EmailObfuscationInput() interface{}
 	// Experimental.
 	Fqn() *string
-	FromList() RulesetRulesActionParametersFromListList
+	FromList() RulesetRulesActionParametersFromListStructList
 	FromListInput() interface{}
 	FromValue() RulesetRulesActionParametersFromValueList
 	FromValueInput() interface{}
@@ -584,8 +584,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) FromList() RulesetRulesActionParametersFromListList {
-	var returns RulesetRulesActionParametersFromListList
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) FromList() RulesetRulesActionParametersFromListStructList {
+	var returns RulesetRulesActionParametersFromListStructList
 	_jsii_.Get(
 		j,
 		"fromList",

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaitensorboard/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard}.
 type GoogleVertexAiTensorboard interface {
 	cdktf.TerraformResource
 	BlobStoragePathPrefix() *string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_GoogleVertexAiTensorboard) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewGoogleVertexAiTensorboard(scope constructs.Construct, id *string, config *GoogleVertexAiTensorboardConfig) GoogleVertexAiTensorboard {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewGoogleVertexAiTensorboard(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewGoogleVertexAiTensorboard_Override(g GoogleVertexAiTensorboard, scope constructs.Construct, id *string, config *GoogleVertexAiTensorboardConfig) {
 	_init_.Initialize()
 

@@ -146,6 +146,22 @@ func validateGoogleNetworkServicesGateway_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetAddressesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCertificateUrlsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -236,7 +252,35 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDeleteSwgAutogenRouterOnDestroyParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetGatewaySecurityPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -277,6 +321,14 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetLocationParameters(v
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetNetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -355,6 +407,14 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetScopeParameters(val 
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetServerTlsPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetSubnetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

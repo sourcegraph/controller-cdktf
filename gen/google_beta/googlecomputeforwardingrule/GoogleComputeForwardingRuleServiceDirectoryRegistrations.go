@@ -4,11 +4,11 @@ package googlecomputeforwardingrule
 type GoogleComputeForwardingRuleServiceDirectoryRegistrations struct {
 	// Service Directory namespace to register the forwarding rule under.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_forwarding_rule#namespace GoogleComputeForwardingRule#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_forwarding_rule#namespace GoogleComputeForwardingRule#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Service Directory service to register the forwarding rule under.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_forwarding_rule#service GoogleComputeForwardingRule#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_forwarding_rule#service GoogleComputeForwardingRule#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 }
 

@@ -355,6 +355,14 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetStoredInfoTypeIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionStoredInfoTypeParameters(scope constructs.Construct, id *string, config *GoogleDataLossPreventionStoredInfoTypeConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

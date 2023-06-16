@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_instance google_apigee_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_instance google_apigee_instance}.
 type GoogleApigeeInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -556,7 +556,7 @@ func (j *jsiiProxy_GoogleApigeeInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_instance google_apigee_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_instance google_apigee_instance} Resource.
 func NewGoogleApigeeInstance(scope constructs.Construct, id *string, config *GoogleApigeeInstanceConfig) GoogleApigeeInstance {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewGoogleApigeeInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_instance google_apigee_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_instance google_apigee_instance} Resource.
 func NewGoogleApigeeInstance_Override(g GoogleApigeeInstance, scope constructs.Construct, id *string, config *GoogleApigeeInstanceConfig) {
 	_init_.Initialize()
 

@@ -250,12 +250,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsHiveJobQueryList",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsHiveJobQueryList)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference{}
+			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -483,12 +483,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPigJobQueryList",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPigJobQueryList)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -515,7 +515,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference{}
+			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -619,12 +619,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -651,7 +651,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference{}
+			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1086,12 +1086,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference",
-		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference)(nil)).Elem(),
+		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference",
+		reflect.TypeOf((*GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1118,7 +1118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference{}
+			j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
