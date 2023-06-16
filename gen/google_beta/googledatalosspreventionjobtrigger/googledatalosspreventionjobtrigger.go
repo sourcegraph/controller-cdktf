@@ -1,939 +1,1057 @@
 package googledatalosspreventionjobtrigger
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatalosspreventionjobtrigger/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger}.
+type GoogleDataLossPreventionJobTrigger interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreateTime() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InspectJob() GoogleDataLossPreventionJobTriggerInspectJobOutputReference
+	InspectJobInput() *GoogleDataLossPreventionJobTriggerInspectJob
+	LastRunTime() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleDataLossPreventionJobTriggerTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Triggers() GoogleDataLossPreventionJobTriggerTriggersList
+	TriggersInput() interface{}
+	UpdateTime() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutInspectJob(value *GoogleDataLossPreventionJobTriggerInspectJob)
+	PutTimeouts(value *GoogleDataLossPreventionJobTriggerTimeouts)
+	PutTriggers(value interface{})
+	ResetDescription()
+	ResetDisplayName()
+	ResetId()
+	ResetInspectJob()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetStatus()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleDataLossPreventionJobTrigger
+type jsiiProxy_GoogleDataLossPreventionJobTrigger struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) InspectJob() GoogleDataLossPreventionJobTriggerInspectJobOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobOutputReference
+	_jsii_.Get(
+		j,
+		"inspectJob",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) InspectJobInput() *GoogleDataLossPreventionJobTriggerInspectJob {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJob
+	_jsii_.Get(
+		j,
+		"inspectJobInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) LastRunTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastRunTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Timeouts() GoogleDataLossPreventionJobTriggerTimeoutsOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) Triggers() GoogleDataLossPreventionJobTriggerTriggersList {
+	var returns GoogleDataLossPreventionJobTriggerTriggersList
+	_jsii_.Get(
+		j,
+		"triggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) TriggersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"triggersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
+func NewGoogleDataLossPreventionJobTrigger(scope constructs.Construct, id *string, config *GoogleDataLossPreventionJobTriggerConfig) GoogleDataLossPreventionJobTrigger {
+	_init_.Initialize()
+
+	if err := validateNewGoogleDataLossPreventionJobTriggerParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleDataLossPreventionJobTrigger{}
+
+	_jsii_.Create(
 		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTrigger)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inspectJob", GoGetter: "InspectJob"},
-			_jsii_.MemberProperty{JsiiProperty: "inspectJobInput", GoGetter: "InspectJobInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lastRunTime", GoGetter: "LastRunTime"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "parent", GoGetter: "Parent"},
-			_jsii_.MemberProperty{JsiiProperty: "parentInput", GoGetter: "ParentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putInspectJob", GoMethod: "PutInspectJob"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putTriggers", GoMethod: "PutTriggers"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInspectJob", GoMethod: "ResetInspectJob"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatus", GoMethod: "ResetStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "triggers", GoGetter: "Triggers"},
-			_jsii_.MemberProperty{JsiiProperty: "triggersInput", GoGetter: "TriggersInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTrigger{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerConfig",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJob",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJob)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActions",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsList",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putSaveFindings", GoMethod: "PutSaveFindings"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "saveFindings", GoGetter: "SaveFindings"},
-			_jsii_.MemberProperty{JsiiProperty: "saveFindingsInput", GoGetter: "SaveFindingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "outputSchema", GoGetter: "OutputSchema"},
-			_jsii_.MemberProperty{JsiiProperty: "outputSchemaInput", GoGetter: "OutputSchemaInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putTable", GoMethod: "PutTable"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOutputSchema", GoMethod: "ResetOutputSchema"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "table", GoGetter: "Table"},
-			_jsii_.MemberProperty{JsiiProperty: "tableInput", GoGetter: "TableInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetId", GoGetter: "DatasetId"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetIdInput", GoGetter: "DatasetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTableId", GoMethod: "ResetTableId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tableId", GoGetter: "TableId"},
-			_jsii_.MemberProperty{JsiiProperty: "tableIdInput", GoGetter: "TableIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "outputConfig", GoGetter: "OutputConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "outputConfigInput", GoGetter: "OutputConfigInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putOutputConfig", GoMethod: "PutOutputConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
-			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "inspectTemplateName", GoGetter: "InspectTemplateName"},
-			_jsii_.MemberProperty{JsiiProperty: "inspectTemplateNameInput", GoGetter: "InspectTemplateNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putActions", GoMethod: "PutActions"},
-			_jsii_.MemberMethod{JsiiMethod: "putStorageConfig", GoMethod: "PutStorageConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageConfig", GoGetter: "StorageConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "storageConfigInput", GoGetter: "StorageConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfig",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putTableReference", GoMethod: "PutTableReference"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tableReference", GoGetter: "TableReference"},
-			_jsii_.MemberProperty{JsiiProperty: "tableReferenceInput", GoGetter: "TableReferenceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetId", GoGetter: "DatasetId"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetIdInput", GoGetter: "DatasetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tableId", GoGetter: "TableId"},
-			_jsii_.MemberProperty{JsiiProperty: "tableIdInput", GoGetter: "TableIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptions",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSet",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSet)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putRegexFileSet", GoMethod: "PutRegexFileSet"},
-			_jsii_.MemberProperty{JsiiProperty: "regexFileSet", GoGetter: "RegexFileSet"},
-			_jsii_.MemberProperty{JsiiProperty: "regexFileSetInput", GoGetter: "RegexFileSetInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegexFileSet", GoMethod: "ResetRegexFileSet"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
-			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "excludeRegex", GoGetter: "ExcludeRegex"},
-			_jsii_.MemberProperty{JsiiProperty: "excludeRegexInput", GoGetter: "ExcludeRegexInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "includeRegex", GoGetter: "IncludeRegex"},
-			_jsii_.MemberProperty{JsiiProperty: "includeRegexInput", GoGetter: "IncludeRegexInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExcludeRegex", GoMethod: "ResetExcludeRegex"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeRegex", GoMethod: "ResetIncludeRegex"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bytesLimitPerFile", GoGetter: "BytesLimitPerFile"},
-			_jsii_.MemberProperty{JsiiProperty: "bytesLimitPerFileInput", GoGetter: "BytesLimitPerFileInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bytesLimitPerFilePercent", GoGetter: "BytesLimitPerFilePercent"},
-			_jsii_.MemberProperty{JsiiProperty: "bytesLimitPerFilePercentInput", GoGetter: "BytesLimitPerFilePercentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSet", GoGetter: "FileSet"},
-			_jsii_.MemberProperty{JsiiProperty: "fileSetInput", GoGetter: "FileSetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "filesLimitPercent", GoGetter: "FilesLimitPercent"},
-			_jsii_.MemberProperty{JsiiProperty: "filesLimitPercentInput", GoGetter: "FilesLimitPercentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fileTypes", GoGetter: "FileTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "fileTypesInput", GoGetter: "FileTypesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putFileSet", GoMethod: "PutFileSet"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBytesLimitPerFile", GoMethod: "ResetBytesLimitPerFile"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBytesLimitPerFilePercent", GoMethod: "ResetBytesLimitPerFilePercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilesLimitPercent", GoMethod: "ResetFilesLimitPercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFileTypes", GoMethod: "ResetFileTypes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSampleMethod", GoMethod: "ResetSampleMethod"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sampleMethod", GoGetter: "SampleMethod"},
-			_jsii_.MemberProperty{JsiiProperty: "sampleMethodInput", GoGetter: "SampleMethodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKind",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKind)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
-			_jsii_.MemberProperty{JsiiProperty: "kindInput", GoGetter: "KindInput"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionId", GoGetter: "PartitionId"},
-			_jsii_.MemberProperty{JsiiProperty: "partitionIdInput", GoGetter: "PartitionIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putKind", GoMethod: "PutKind"},
-			_jsii_.MemberMethod{JsiiMethod: "putPartitionId", GoMethod: "PutPartitionId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionId",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionId)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "namespaceId", GoGetter: "NamespaceId"},
-			_jsii_.MemberProperty{JsiiProperty: "namespaceIdInput", GoGetter: "NamespaceIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamespaceId", GoMethod: "ResetNamespaceId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bigQueryOptions", GoGetter: "BigQueryOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "bigQueryOptionsInput", GoGetter: "BigQueryOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudStorageOptions", GoGetter: "CloudStorageOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudStorageOptionsInput", GoGetter: "CloudStorageOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datastoreOptions", GoGetter: "DatastoreOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "datastoreOptionsInput", GoGetter: "DatastoreOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putBigQueryOptions", GoMethod: "PutBigQueryOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloudStorageOptions", GoMethod: "PutCloudStorageOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putDatastoreOptions", GoMethod: "PutDatastoreOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimespanConfig", GoMethod: "PutTimespanConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBigQueryOptions", GoMethod: "ResetBigQueryOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloudStorageOptions", GoMethod: "ResetCloudStorageOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatastoreOptions", GoMethod: "ResetDatastoreOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimespanConfig", GoMethod: "ResetTimespanConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timespanConfig", GoGetter: "TimespanConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "timespanConfigInput", GoGetter: "TimespanConfigInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enableAutoPopulationOfTimespanConfig", GoGetter: "EnableAutoPopulationOfTimespanConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "enableAutoPopulationOfTimespanConfigInput", GoGetter: "EnableAutoPopulationOfTimespanConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endTime", GoGetter: "EndTime"},
-			_jsii_.MemberProperty{JsiiProperty: "endTimeInput", GoGetter: "EndTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimestampField", GoMethod: "PutTimestampField"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableAutoPopulationOfTimespanConfig", GoMethod: "ResetEnableAutoPopulationOfTimespanConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEndTime", GoMethod: "ResetEndTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStartTime", GoMethod: "ResetStartTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampField", GoGetter: "TimestampField"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampFieldInput", GoGetter: "TimestampFieldInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampField",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampField)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTimeouts",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggers",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTriggers)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersList",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTriggersList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTriggersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchedule", GoMethod: "ResetSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "schedule", GoGetter: "Schedule"},
-			_jsii_.MemberProperty{JsiiProperty: "scheduleInput", GoGetter: "ScheduleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersSchedule",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTriggersSchedule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersScheduleOutputReference",
-		reflect.TypeOf((*GoogleDataLossPreventionJobTriggerTriggersScheduleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "recurrencePeriodDuration", GoGetter: "RecurrencePeriodDuration"},
-			_jsii_.MemberProperty{JsiiProperty: "recurrencePeriodDurationInput", GoGetter: "RecurrencePeriodDurationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRecurrencePeriodDuration", GoMethod: "ResetRecurrencePeriodDuration"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
+func NewGoogleDataLossPreventionJobTrigger_Override(g GoogleDataLossPreventionJobTrigger, scope constructs.Construct, id *string, config *GoogleDataLossPreventionJobTriggerConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleDataLossPreventionJobTrigger_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleDataLossPreventionJobTrigger_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleDataLossPreventionJobTrigger_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleDataLossPreventionJobTrigger_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleDataLossPreventionJobTrigger_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleDataLossPreventionJobTrigger_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleDataLossPreventionJobTrigger_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutInspectJob(value *GoogleDataLossPreventionJobTriggerInspectJob) {
+	if err := g.validatePutInspectJobParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInspectJob",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutTimeouts(value *GoogleDataLossPreventionJobTriggerTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) PutTriggers(value interface{}) {
+	if err := g.validatePutTriggersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTriggers",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetInspectJob() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInspectJob",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetStatus() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,3 +1,3 @@
 # `google_folder_access_approval_settings`
 
-Refer to the Terraform Registory for docs: [`google_folder_access_approval_settings`](https://www.terraform.io/docs/providers/google-beta/r/google_folder_access_approval_settings).
+Refer to the Terraform Registory for docs: [`google_folder_access_approval_settings`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_folder_access_approval_settings).

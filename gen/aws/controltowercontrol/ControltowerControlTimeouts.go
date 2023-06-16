@@ -1,0 +1,10 @@
+package controltowercontrol
+
+
+type ControltowerControlTimeouts struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/controltower_control#create ControltowerControl#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/controltower_control#delete ControltowerControl#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+}
+

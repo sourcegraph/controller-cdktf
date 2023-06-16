@@ -1,933 +1,972 @@
 package dlmlifecyclepolicy
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/dlmlifecyclepolicy/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
+type DlmLifecyclePolicy interface {
+	cdktf.TerraformResource
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	ExecutionRoleArn() *string
+	SetExecutionRoleArn(val *string)
+	ExecutionRoleArnInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	PolicyDetails() DlmLifecyclePolicyPolicyDetailsOutputReference
+	PolicyDetailsInput() *DlmLifecyclePolicyPolicyDetails
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	State() *string
+	SetState(val *string)
+	StateInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutPolicyDetails(value *DlmLifecyclePolicyPolicyDetails)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetState()
+	ResetTags()
+	ResetTagsAll()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DlmLifecyclePolicy
+type jsiiProxy_DlmLifecyclePolicy struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) ExecutionRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) ExecutionRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) PolicyDetails() DlmLifecyclePolicyPolicyDetailsOutputReference {
+	var returns DlmLifecyclePolicyPolicyDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"policyDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) PolicyDetailsInput() *DlmLifecyclePolicyPolicyDetails {
+	var returns *DlmLifecyclePolicyPolicyDetails
+	_jsii_.Get(
+		j,
+		"policyDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
+func NewDlmLifecyclePolicy(scope constructs.Construct, id *string, config *DlmLifecyclePolicyConfig) DlmLifecyclePolicy {
+	_init_.Initialize()
+
+	if err := validateNewDlmLifecyclePolicyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DlmLifecyclePolicy{}
+
+	_jsii_.Create(
 		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
-		reflect.TypeOf((*DlmLifecyclePolicy)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "executionRoleArn", GoGetter: "ExecutionRoleArn"},
-			_jsii_.MemberProperty{JsiiProperty: "executionRoleArnInput", GoGetter: "ExecutionRoleArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "policyDetails", GoGetter: "PolicyDetails"},
-			_jsii_.MemberProperty{JsiiProperty: "policyDetailsInput", GoGetter: "PolicyDetailsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putPolicyDetails", GoMethod: "PutPolicyDetails"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetState", GoMethod: "ResetState"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberProperty{JsiiProperty: "stateInput", GoGetter: "StateInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig",
-		reflect.TypeOf((*DlmLifecyclePolicyConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetails)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsAction)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cmkArn", GoGetter: "CmkArn"},
-			_jsii_.MemberProperty{JsiiProperty: "cmkArnInput", GoGetter: "CmkArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "encrypted", GoGetter: "Encrypted"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptedInput", GoGetter: "EncryptedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCmkArn", GoMethod: "ResetCmkArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncrypted", GoMethod: "ResetEncrypted"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionConfiguration", GoGetter: "EncryptionConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionConfigurationInput", GoGetter: "EncryptionConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putEncryptionConfiguration", GoMethod: "PutEncryptionConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putRetainRule", GoMethod: "PutRetainRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetainRule", GoMethod: "ResetRetainRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "retainRule", GoGetter: "RetainRule"},
-			_jsii_.MemberProperty{JsiiProperty: "retainRuleInput", GoGetter: "RetainRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
-			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "crossRegionCopy", GoGetter: "CrossRegionCopy"},
-			_jsii_.MemberProperty{JsiiProperty: "crossRegionCopyInput", GoGetter: "CrossRegionCopyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCrossRegionCopy", GoMethod: "PutCrossRegionCopy"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsEventSource)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "parameters", GoGetter: "Parameters"},
-			_jsii_.MemberProperty{JsiiProperty: "parametersInput", GoGetter: "ParametersInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putParameters", GoMethod: "PutParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsEventSourceParameters)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionRegex", GoGetter: "DescriptionRegex"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionRegexInput", GoGetter: "DescriptionRegexInput"},
-			_jsii_.MemberProperty{JsiiProperty: "eventType", GoGetter: "EventType"},
-			_jsii_.MemberProperty{JsiiProperty: "eventTypeInput", GoGetter: "EventTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotOwner", GoGetter: "SnapshotOwner"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotOwnerInput", GoGetter: "SnapshotOwnerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
-			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "eventSource", GoGetter: "EventSource"},
-			_jsii_.MemberProperty{JsiiProperty: "eventSourceInput", GoGetter: "EventSourceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "parameters", GoGetter: "Parameters"},
-			_jsii_.MemberProperty{JsiiProperty: "parametersInput", GoGetter: "ParametersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "policyType", GoGetter: "PolicyType"},
-			_jsii_.MemberProperty{JsiiProperty: "policyTypeInput", GoGetter: "PolicyTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putAction", GoMethod: "PutAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putEventSource", GoMethod: "PutEventSource"},
-			_jsii_.MemberMethod{JsiiMethod: "putParameters", GoMethod: "PutParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAction", GoMethod: "ResetAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEventSource", GoMethod: "ResetEventSource"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParameters", GoMethod: "ResetParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPolicyType", GoMethod: "ResetPolicyType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResourceLocations", GoMethod: "ResetResourceLocations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResourceTypes", GoMethod: "ResetResourceTypes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchedule", GoMethod: "ResetSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetTags", GoMethod: "ResetTargetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceLocations", GoGetter: "ResourceLocations"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceLocationsInput", GoGetter: "ResourceLocationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceTypes", GoGetter: "ResourceTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceTypesInput", GoGetter: "ResourceTypesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "schedule", GoGetter: "Schedule"},
-			_jsii_.MemberProperty{JsiiProperty: "scheduleInput", GoGetter: "ScheduleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTags", GoGetter: "TargetTags"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTagsInput", GoGetter: "TargetTagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsParameters)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParametersOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsParametersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "excludeBootVolume", GoGetter: "ExcludeBootVolume"},
-			_jsii_.MemberProperty{JsiiProperty: "excludeBootVolumeInput", GoGetter: "ExcludeBootVolumeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "noReboot", GoGetter: "NoReboot"},
-			_jsii_.MemberProperty{JsiiProperty: "noRebootInput", GoGetter: "NoRebootInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExcludeBootVolume", GoMethod: "ResetExcludeBootVolume"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNoReboot", GoMethod: "ResetNoReboot"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsSchedule)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCreateRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "cronExpression", GoGetter: "CronExpression"},
-			_jsii_.MemberProperty{JsiiProperty: "cronExpressionInput", GoGetter: "CronExpressionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCronExpression", GoMethod: "ResetCronExpression"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIntervalUnit", GoMethod: "ResetIntervalUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimes", GoMethod: "ResetTimes"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "times", GoGetter: "Times"},
-			_jsii_.MemberProperty{JsiiProperty: "timesInput", GoGetter: "TimesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cmkArn", GoGetter: "CmkArn"},
-			_jsii_.MemberProperty{JsiiProperty: "cmkArnInput", GoGetter: "CmkArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "copyTags", GoGetter: "CopyTags"},
-			_jsii_.MemberProperty{JsiiProperty: "copyTagsInput", GoGetter: "CopyTagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deprecateRule", GoGetter: "DeprecateRule"},
-			_jsii_.MemberProperty{JsiiProperty: "deprecateRuleInput", GoGetter: "DeprecateRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encrypted", GoGetter: "Encrypted"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptedInput", GoGetter: "EncryptedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putDeprecateRule", GoMethod: "PutDeprecateRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putRetainRule", GoMethod: "PutRetainRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCmkArn", GoMethod: "ResetCmkArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCopyTags", GoMethod: "ResetCopyTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeprecateRule", GoMethod: "ResetDeprecateRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetainRule", GoMethod: "ResetRetainRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "retainRule", GoGetter: "RetainRule"},
-			_jsii_.MemberProperty{JsiiProperty: "retainRuleInput", GoGetter: "RetainRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
-			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIntervalUnit", GoMethod: "ResetIntervalUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZonesInput", GoGetter: "AvailabilityZonesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIntervalUnit", GoMethod: "ResetIntervalUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleList",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "copyTags", GoGetter: "CopyTags"},
-			_jsii_.MemberProperty{JsiiProperty: "copyTagsInput", GoGetter: "CopyTagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "createRule", GoGetter: "CreateRule"},
-			_jsii_.MemberProperty{JsiiProperty: "createRuleInput", GoGetter: "CreateRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "crossRegionCopyRule", GoGetter: "CrossRegionCopyRule"},
-			_jsii_.MemberProperty{JsiiProperty: "crossRegionCopyRuleInput", GoGetter: "CrossRegionCopyRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deprecateRule", GoGetter: "DeprecateRule"},
-			_jsii_.MemberProperty{JsiiProperty: "deprecateRuleInput", GoGetter: "DeprecateRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fastRestoreRule", GoGetter: "FastRestoreRule"},
-			_jsii_.MemberProperty{JsiiProperty: "fastRestoreRuleInput", GoGetter: "FastRestoreRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCreateRule", GoMethod: "PutCreateRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putCrossRegionCopyRule", GoMethod: "PutCrossRegionCopyRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putDeprecateRule", GoMethod: "PutDeprecateRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putFastRestoreRule", GoMethod: "PutFastRestoreRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putRetainRule", GoMethod: "PutRetainRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putShareRule", GoMethod: "PutShareRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCopyTags", GoMethod: "ResetCopyTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCrossRegionCopyRule", GoMethod: "ResetCrossRegionCopyRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeprecateRule", GoMethod: "ResetDeprecateRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFastRestoreRule", GoMethod: "ResetFastRestoreRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetShareRule", GoMethod: "ResetShareRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsToAdd", GoMethod: "ResetTagsToAdd"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVariableTags", GoMethod: "ResetVariableTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "retainRule", GoGetter: "RetainRule"},
-			_jsii_.MemberProperty{JsiiProperty: "retainRuleInput", GoGetter: "RetainRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "shareRule", GoGetter: "ShareRule"},
-			_jsii_.MemberProperty{JsiiProperty: "shareRuleInput", GoGetter: "ShareRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsToAdd", GoGetter: "TagsToAdd"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsToAddInput", GoGetter: "TagsToAddInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "variableTags", GoGetter: "VariableTags"},
-			_jsii_.MemberProperty{JsiiProperty: "variableTagsInput", GoGetter: "VariableTagsInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleRetainRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnit", GoGetter: "IntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "intervalUnitInput", GoGetter: "IntervalUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIntervalUnit", GoMethod: "ResetIntervalUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleShareRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference",
-		reflect.TypeOf((*DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnshareInterval", GoMethod: "ResetUnshareInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnshareIntervalUnit", GoMethod: "ResetUnshareIntervalUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetAccounts", GoGetter: "TargetAccounts"},
-			_jsii_.MemberProperty{JsiiProperty: "targetAccountsInput", GoGetter: "TargetAccountsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "unshareInterval", GoGetter: "UnshareInterval"},
-			_jsii_.MemberProperty{JsiiProperty: "unshareIntervalInput", GoGetter: "UnshareIntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "unshareIntervalUnit", GoGetter: "UnshareIntervalUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "unshareIntervalUnitInput", GoGetter: "UnshareIntervalUnitInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
+func NewDlmLifecyclePolicy_Override(d DlmLifecyclePolicy, scope constructs.Construct, id *string, config *DlmLifecyclePolicyConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		[]interface{}{scope, id, config},
+		d,
 	)
 }
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetExecutionRoleArn(val *string) {
+	if err := j.validateSetExecutionRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DlmLifecyclePolicy_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDlmLifecyclePolicy_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DlmLifecyclePolicy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDlmLifecyclePolicy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DlmLifecyclePolicy_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDlmLifecyclePolicy_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DlmLifecyclePolicy_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) PutPolicyDetails(value *DlmLifecyclePolicyPolicyDetails) {
+	if err := d.validatePutPolicyDetailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPolicyDetails",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ResetState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,607 +1,1594 @@
 package storagebucket
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/storage_bucket google_storage_bucket}.
+type StorageBucket interface {
+	cdktf.TerraformResource
+	Autoclass() StorageBucketAutoclassOutputReference
+	AutoclassInput() *StorageBucketAutoclass
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	Cors() StorageBucketCorsList
+	CorsInput() interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CustomPlacementConfig() StorageBucketCustomPlacementConfigOutputReference
+	CustomPlacementConfigInput() *StorageBucketCustomPlacementConfig
+	DefaultEventBasedHold() interface{}
+	SetDefaultEventBasedHold(val interface{})
+	DefaultEventBasedHoldInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Encryption() StorageBucketEncryptionOutputReference
+	EncryptionInput() *StorageBucketEncryption
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LifecycleRule() StorageBucketLifecycleRuleList
+	LifecycleRuleInput() interface{}
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	Logging() StorageBucketLoggingOutputReference
+	LoggingInput() *StorageBucketLogging
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	PublicAccessPrevention() *string
+	SetPublicAccessPrevention(val *string)
+	PublicAccessPreventionInput() *string
+	// Experimental.
+	RawOverrides() interface{}
+	RequesterPays() interface{}
+	SetRequesterPays(val interface{})
+	RequesterPaysInput() interface{}
+	RetentionPolicy() StorageBucketRetentionPolicyOutputReference
+	RetentionPolicyInput() *StorageBucketRetentionPolicy
+	SelfLink() *string
+	StorageClass() *string
+	SetStorageClass(val *string)
+	StorageClassInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() StorageBucketTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	UniformBucketLevelAccess() interface{}
+	SetUniformBucketLevelAccess(val interface{})
+	UniformBucketLevelAccessInput() interface{}
+	Url() *string
+	Versioning() StorageBucketVersioningOutputReference
+	VersioningInput() *StorageBucketVersioning
+	Website() StorageBucketWebsiteOutputReference
+	WebsiteInput() *StorageBucketWebsite
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAutoclass(value *StorageBucketAutoclass)
+	PutCors(value interface{})
+	PutCustomPlacementConfig(value *StorageBucketCustomPlacementConfig)
+	PutEncryption(value *StorageBucketEncryption)
+	PutLifecycleRule(value interface{})
+	PutLogging(value *StorageBucketLogging)
+	PutRetentionPolicy(value *StorageBucketRetentionPolicy)
+	PutTimeouts(value *StorageBucketTimeouts)
+	PutVersioning(value *StorageBucketVersioning)
+	PutWebsite(value *StorageBucketWebsite)
+	ResetAutoclass()
+	ResetCors()
+	ResetCustomPlacementConfig()
+	ResetDefaultEventBasedHold()
+	ResetEncryption()
+	ResetForceDestroy()
+	ResetId()
+	ResetLabels()
+	ResetLifecycleRule()
+	ResetLogging()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetPublicAccessPrevention()
+	ResetRequesterPays()
+	ResetRetentionPolicy()
+	ResetStorageClass()
+	ResetTimeouts()
+	ResetUniformBucketLevelAccess()
+	ResetVersioning()
+	ResetWebsite()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for StorageBucket
+type jsiiProxy_StorageBucket struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StorageBucket) Autoclass() StorageBucketAutoclassOutputReference {
+	var returns StorageBucketAutoclassOutputReference
+	_jsii_.Get(
+		j,
+		"autoclass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) AutoclassInput() *StorageBucketAutoclass {
+	var returns *StorageBucketAutoclass
+	_jsii_.Get(
+		j,
+		"autoclassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Cors() StorageBucketCorsList {
+	var returns StorageBucketCorsList
+	_jsii_.Get(
+		j,
+		"cors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) CorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"corsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) CustomPlacementConfig() StorageBucketCustomPlacementConfigOutputReference {
+	var returns StorageBucketCustomPlacementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customPlacementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) CustomPlacementConfigInput() *StorageBucketCustomPlacementConfig {
+	var returns *StorageBucketCustomPlacementConfig
+	_jsii_.Get(
+		j,
+		"customPlacementConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) DefaultEventBasedHold() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultEventBasedHold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) DefaultEventBasedHoldInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultEventBasedHoldInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Encryption() StorageBucketEncryptionOutputReference {
+	var returns StorageBucketEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EncryptionInput() *StorageBucketEncryption {
+	var returns *StorageBucketEncryption
+	_jsii_.Get(
+		j,
+		"encryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) LifecycleRule() StorageBucketLifecycleRuleList {
+	var returns StorageBucketLifecycleRuleList
+	_jsii_.Get(
+		j,
+		"lifecycleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) LifecycleRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lifecycleRuleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Logging() StorageBucketLoggingOutputReference {
+	var returns StorageBucketLoggingOutputReference
+	_jsii_.Get(
+		j,
+		"logging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) LoggingInput() *StorageBucketLogging {
+	var returns *StorageBucketLogging
+	_jsii_.Get(
+		j,
+		"loggingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) PublicAccessPrevention() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicAccessPrevention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) PublicAccessPreventionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicAccessPreventionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) RequesterPays() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requesterPays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) RequesterPaysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requesterPaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) RetentionPolicy() StorageBucketRetentionPolicyOutputReference {
+	var returns StorageBucketRetentionPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"retentionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) RetentionPolicyInput() *StorageBucketRetentionPolicy {
+	var returns *StorageBucketRetentionPolicy
+	_jsii_.Get(
+		j,
+		"retentionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) StorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) StorageClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageClassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Timeouts() StorageBucketTimeoutsOutputReference {
+	var returns StorageBucketTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) UniformBucketLevelAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniformBucketLevelAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) UniformBucketLevelAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uniformBucketLevelAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Versioning() StorageBucketVersioningOutputReference {
+	var returns StorageBucketVersioningOutputReference
+	_jsii_.Get(
+		j,
+		"versioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) VersioningInput() *StorageBucketVersioning {
+	var returns *StorageBucketVersioning
+	_jsii_.Get(
+		j,
+		"versioningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Website() StorageBucketWebsiteOutputReference {
+	var returns StorageBucketWebsiteOutputReference
+	_jsii_.Get(
+		j,
+		"website",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) WebsiteInput() *StorageBucketWebsite {
+	var returns *StorageBucketWebsite
+	_jsii_.Get(
+		j,
+		"websiteInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/storage_bucket google_storage_bucket} Resource.
+func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
+	_init_.Initialize()
+
+	if err := validateNewStorageBucketParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_StorageBucket{}
+
+	_jsii_.Create(
 		"google.storageBucket.StorageBucket",
-		reflect.TypeOf((*StorageBucket)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "cors", GoGetter: "Cors"},
-			_jsii_.MemberProperty{JsiiProperty: "corsInput", GoGetter: "CorsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultEventBasedHold", GoGetter: "DefaultEventBasedHold"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultEventBasedHoldInput", GoGetter: "DefaultEventBasedHoldInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "encryption", GoGetter: "Encryption"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionInput", GoGetter: "EncryptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forceDestroy", GoGetter: "ForceDestroy"},
-			_jsii_.MemberProperty{JsiiProperty: "forceDestroyInput", GoGetter: "ForceDestroyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycleRule", GoGetter: "LifecycleRule"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycleRuleInput", GoGetter: "LifecycleRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "logging", GoGetter: "Logging"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
-			_jsii_.MemberMethod{JsiiMethod: "putEncryption", GoMethod: "PutEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "putLifecycleRule", GoMethod: "PutLifecycleRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
-			_jsii_.MemberMethod{JsiiMethod: "putRetentionPolicy", GoMethod: "PutRetentionPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putVersioning", GoMethod: "PutVersioning"},
-			_jsii_.MemberMethod{JsiiMethod: "putWebsite", GoMethod: "PutWebsite"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "requesterPays", GoGetter: "RequesterPays"},
-			_jsii_.MemberProperty{JsiiProperty: "requesterPaysInput", GoGetter: "RequesterPaysInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultEventBasedHold", GoMethod: "ResetDefaultEventBasedHold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryption", GoMethod: "ResetEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "resetForceDestroy", GoMethod: "ResetForceDestroy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleRule", GoMethod: "ResetLifecycleRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogging", GoMethod: "ResetLogging"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequesterPays", GoMethod: "ResetRequesterPays"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetentionPolicy", GoMethod: "ResetRetentionPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageClass", GoMethod: "ResetStorageClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUniformBucketLevelAccess", GoMethod: "ResetUniformBucketLevelAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVersioning", GoMethod: "ResetVersioning"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWebsite", GoMethod: "ResetWebsite"},
-			_jsii_.MemberProperty{JsiiProperty: "retentionPolicy", GoGetter: "RetentionPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "retentionPolicyInput", GoGetter: "RetentionPolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClass", GoGetter: "StorageClass"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClassInput", GoGetter: "StorageClassInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "uniformBucketLevelAccess", GoGetter: "UniformBucketLevelAccess"},
-			_jsii_.MemberProperty{JsiiProperty: "uniformBucketLevelAccessInput", GoGetter: "UniformBucketLevelAccessInput"},
-			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
-			_jsii_.MemberProperty{JsiiProperty: "versioning", GoGetter: "Versioning"},
-			_jsii_.MemberProperty{JsiiProperty: "versioningInput", GoGetter: "VersioningInput"},
-			_jsii_.MemberProperty{JsiiProperty: "website", GoGetter: "Website"},
-			_jsii_.MemberProperty{JsiiProperty: "websiteInput", GoGetter: "WebsiteInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucket{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketConfig",
-		reflect.TypeOf((*StorageBucketConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketCors",
-		reflect.TypeOf((*StorageBucketCors)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketCorsList",
-		reflect.TypeOf((*StorageBucketCorsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketCorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketCorsOutputReference",
-		reflect.TypeOf((*StorageBucketCorsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAgeSeconds", GoGetter: "MaxAgeSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAgeSecondsInput", GoGetter: "MaxAgeSecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "method", GoGetter: "Method"},
-			_jsii_.MemberProperty{JsiiProperty: "methodInput", GoGetter: "MethodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "origin", GoGetter: "Origin"},
-			_jsii_.MemberProperty{JsiiProperty: "originInput", GoGetter: "OriginInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxAgeSeconds", GoMethod: "ResetMaxAgeSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMethod", GoMethod: "ResetMethod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOrigin", GoMethod: "ResetOrigin"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponseHeader", GoMethod: "ResetResponseHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "responseHeader", GoGetter: "ResponseHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "responseHeaderInput", GoGetter: "ResponseHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketCorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketEncryption",
-		reflect.TypeOf((*StorageBucketEncryption)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketEncryptionOutputReference",
-		reflect.TypeOf((*StorageBucketEncryptionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultKmsKeyName", GoGetter: "DefaultKmsKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultKmsKeyNameInput", GoGetter: "DefaultKmsKeyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketLifecycleRule",
-		reflect.TypeOf((*StorageBucketLifecycleRule)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketLifecycleRuleAction",
-		reflect.TypeOf((*StorageBucketLifecycleRuleAction)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketLifecycleRuleActionOutputReference",
-		reflect.TypeOf((*StorageBucketLifecycleRuleActionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageClass", GoMethod: "ResetStorageClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClass", GoGetter: "StorageClass"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClassInput", GoGetter: "StorageClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketLifecycleRuleActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketLifecycleRuleCondition",
-		reflect.TypeOf((*StorageBucketLifecycleRuleCondition)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference",
-		reflect.TypeOf((*StorageBucketLifecycleRuleConditionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "age", GoGetter: "Age"},
-			_jsii_.MemberProperty{JsiiProperty: "ageInput", GoGetter: "AgeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "createdBefore", GoGetter: "CreatedBefore"},
-			_jsii_.MemberProperty{JsiiProperty: "createdBeforeInput", GoGetter: "CreatedBeforeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customTimeBefore", GoGetter: "CustomTimeBefore"},
-			_jsii_.MemberProperty{JsiiProperty: "customTimeBeforeInput", GoGetter: "CustomTimeBeforeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "daysSinceCustomTime", GoGetter: "DaysSinceCustomTime"},
-			_jsii_.MemberProperty{JsiiProperty: "daysSinceCustomTimeInput", GoGetter: "DaysSinceCustomTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "daysSinceNoncurrentTime", GoGetter: "DaysSinceNoncurrentTime"},
-			_jsii_.MemberProperty{JsiiProperty: "daysSinceNoncurrentTimeInput", GoGetter: "DaysSinceNoncurrentTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "matchesPrefix", GoGetter: "MatchesPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "matchesPrefixInput", GoGetter: "MatchesPrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "matchesStorageClass", GoGetter: "MatchesStorageClass"},
-			_jsii_.MemberProperty{JsiiProperty: "matchesStorageClassInput", GoGetter: "MatchesStorageClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "matchesSuffix", GoGetter: "MatchesSuffix"},
-			_jsii_.MemberProperty{JsiiProperty: "matchesSuffixInput", GoGetter: "MatchesSuffixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "noncurrentTimeBefore", GoGetter: "NoncurrentTimeBefore"},
-			_jsii_.MemberProperty{JsiiProperty: "noncurrentTimeBeforeInput", GoGetter: "NoncurrentTimeBeforeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "numNewerVersions", GoGetter: "NumNewerVersions"},
-			_jsii_.MemberProperty{JsiiProperty: "numNewerVersionsInput", GoGetter: "NumNewerVersionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAge", GoMethod: "ResetAge"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreatedBefore", GoMethod: "ResetCreatedBefore"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomTimeBefore", GoMethod: "ResetCustomTimeBefore"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDaysSinceCustomTime", GoMethod: "ResetDaysSinceCustomTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDaysSinceNoncurrentTime", GoMethod: "ResetDaysSinceNoncurrentTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMatchesPrefix", GoMethod: "ResetMatchesPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMatchesStorageClass", GoMethod: "ResetMatchesStorageClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMatchesSuffix", GoMethod: "ResetMatchesSuffix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNoncurrentTimeBefore", GoMethod: "ResetNoncurrentTimeBefore"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNumNewerVersions", GoMethod: "ResetNumNewerVersions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWithState", GoMethod: "ResetWithState"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "withState", GoGetter: "WithState"},
-			_jsii_.MemberProperty{JsiiProperty: "withStateInput", GoGetter: "WithStateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketLifecycleRuleList",
-		reflect.TypeOf((*StorageBucketLifecycleRuleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketLifecycleRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketLifecycleRuleOutputReference",
-		reflect.TypeOf((*StorageBucketLifecycleRuleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
-			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "condition", GoGetter: "Condition"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionInput", GoGetter: "ConditionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putAction", GoMethod: "PutAction"},
-			_jsii_.MemberMethod{JsiiMethod: "putCondition", GoMethod: "PutCondition"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketLifecycleRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketLogging",
-		reflect.TypeOf((*StorageBucketLogging)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketLoggingOutputReference",
-		reflect.TypeOf((*StorageBucketLoggingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "logBucket", GoGetter: "LogBucket"},
-			_jsii_.MemberProperty{JsiiProperty: "logBucketInput", GoGetter: "LogBucketInput"},
-			_jsii_.MemberProperty{JsiiProperty: "logObjectPrefix", GoGetter: "LogObjectPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "logObjectPrefixInput", GoGetter: "LogObjectPrefixInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogObjectPrefix", GoMethod: "ResetLogObjectPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketRetentionPolicy",
-		reflect.TypeOf((*StorageBucketRetentionPolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketRetentionPolicyOutputReference",
-		reflect.TypeOf((*StorageBucketRetentionPolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "isLocked", GoGetter: "IsLocked"},
-			_jsii_.MemberProperty{JsiiProperty: "isLockedInput", GoGetter: "IsLockedInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIsLocked", GoMethod: "ResetIsLocked"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "retentionPeriod", GoGetter: "RetentionPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "retentionPeriodInput", GoGetter: "RetentionPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketRetentionPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketTimeouts",
-		reflect.TypeOf((*StorageBucketTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketTimeoutsOutputReference",
-		reflect.TypeOf((*StorageBucketTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "read", GoGetter: "Read"},
-			_jsii_.MemberProperty{JsiiProperty: "readInput", GoGetter: "ReadInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRead", GoMethod: "ResetRead"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketVersioning",
-		reflect.TypeOf((*StorageBucketVersioning)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketVersioningOutputReference",
-		reflect.TypeOf((*StorageBucketVersioningOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketVersioningOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.storageBucket.StorageBucketWebsite",
-		reflect.TypeOf((*StorageBucketWebsite)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.storageBucket.StorageBucketWebsiteOutputReference",
-		reflect.TypeOf((*StorageBucketWebsiteOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mainPageSuffix", GoGetter: "MainPageSuffix"},
-			_jsii_.MemberProperty{JsiiProperty: "mainPageSuffixInput", GoGetter: "MainPageSuffixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "notFoundPage", GoGetter: "NotFoundPage"},
-			_jsii_.MemberProperty{JsiiProperty: "notFoundPageInput", GoGetter: "NotFoundPageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainPageSuffix", GoMethod: "ResetMainPageSuffix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotFoundPage", GoMethod: "ResetNotFoundPage"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_StorageBucketWebsiteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/storage_bucket google_storage_bucket} Resource.
+func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.storageBucket.StorageBucket",
+		[]interface{}{scope, id, config},
+		s,
 	)
 }
+
+func (j *jsiiProxy_StorageBucket)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetDefaultEventBasedHold(val interface{}) {
+	if err := j.validateSetDefaultEventBasedHoldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultEventBasedHold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetPublicAccessPrevention(val *string) {
+	if err := j.validateSetPublicAccessPreventionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicAccessPrevention",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetRequesterPays(val interface{}) {
+	if err := j.validateSetRequesterPaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requesterPays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetStorageClass(val *string) {
+	if err := j.validateSetStorageClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageClass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetUniformBucketLevelAccess(val interface{}) {
+	if err := j.validateSetUniformBucketLevelAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uniformBucketLevelAccess",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func StorageBucket_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageBucket_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.storageBucket.StorageBucket",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StorageBucket_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageBucket_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.storageBucket.StorageBucket",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StorageBucket_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageBucket_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.storageBucket.StorageBucket",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func StorageBucket_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.storageBucket.StorageBucket",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		s,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		s,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutAutoclass(value *StorageBucketAutoclass) {
+	if err := s.validatePutAutoclassParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAutoclass",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutCors(value interface{}) {
+	if err := s.validatePutCorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCors",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutCustomPlacementConfig(value *StorageBucketCustomPlacementConfig) {
+	if err := s.validatePutCustomPlacementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomPlacementConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutEncryption(value *StorageBucketEncryption) {
+	if err := s.validatePutEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEncryption",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutLifecycleRule(value interface{}) {
+	if err := s.validatePutLifecycleRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLifecycleRule",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutLogging(value *StorageBucketLogging) {
+	if err := s.validatePutLoggingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLogging",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutRetentionPolicy(value *StorageBucketRetentionPolicy) {
+	if err := s.validatePutRetentionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRetentionPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutTimeouts(value *StorageBucketTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutVersioning(value *StorageBucketVersioning) {
+	if err := s.validatePutVersioningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putVersioning",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) PutWebsite(value *StorageBucketWebsite) {
+	if err := s.validatePutWebsiteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWebsite",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetAutoclass() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoclass",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetCors() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetCustomPlacementConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomPlacementConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetDefaultEventBasedHold() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultEventBasedHold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetEncryption() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryption",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceDestroy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetLabels() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetLifecycleRule() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLifecycleRule",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetLogging() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogging",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetProject() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetPublicAccessPrevention() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicAccessPrevention",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetRequesterPays() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRequesterPays",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetRetentionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetStorageClass() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageClass",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetUniformBucketLevelAccess() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUniformBucketLevelAccess",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetVersioning() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVersioning",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetWebsite() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWebsite",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StorageBucket) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,451 +1,1004 @@
 package accesscontextmanageraccesslevel
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/accesscontextmanageraccesslevel/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/access_context_manager_access_level google_access_context_manager_access_level}.
+type AccessContextManagerAccessLevel interface {
+	cdktf.TerraformResource
+	Basic() AccessContextManagerAccessLevelBasicOutputReference
+	BasicInput() *AccessContextManagerAccessLevelBasic
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	Custom() AccessContextManagerAccessLevelCustomOutputReference
+	CustomInput() *AccessContextManagerAccessLevelCustom
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Parent() *string
+	SetParent(val *string)
+	ParentInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() AccessContextManagerAccessLevelTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutBasic(value *AccessContextManagerAccessLevelBasic)
+	PutCustom(value *AccessContextManagerAccessLevelCustom)
+	PutTimeouts(value *AccessContextManagerAccessLevelTimeouts)
+	ResetBasic()
+	ResetCustom()
+	ResetDescription()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for AccessContextManagerAccessLevel
+type jsiiProxy_AccessContextManagerAccessLevel struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Basic() AccessContextManagerAccessLevelBasicOutputReference {
+	var returns AccessContextManagerAccessLevelBasicOutputReference
+	_jsii_.Get(
+		j,
+		"basic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) BasicInput() *AccessContextManagerAccessLevelBasic {
+	var returns *AccessContextManagerAccessLevelBasic
+	_jsii_.Get(
+		j,
+		"basicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Custom() AccessContextManagerAccessLevelCustomOutputReference {
+	var returns AccessContextManagerAccessLevelCustomOutputReference
+	_jsii_.Get(
+		j,
+		"custom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) CustomInput() *AccessContextManagerAccessLevelCustom {
+	var returns *AccessContextManagerAccessLevelCustom
+	_jsii_.Get(
+		j,
+		"customInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Parent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) ParentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Timeouts() AccessContextManagerAccessLevelTimeoutsOutputReference {
+	var returns AccessContextManagerAccessLevelTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/access_context_manager_access_level google_access_context_manager_access_level} Resource.
+func NewAccessContextManagerAccessLevel(scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConfig) AccessContextManagerAccessLevel {
+	_init_.Initialize()
+
+	if err := validateNewAccessContextManagerAccessLevelParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_AccessContextManagerAccessLevel{}
+
+	_jsii_.Create(
 		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
-		reflect.TypeOf((*AccessContextManagerAccessLevel)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "basic", GoGetter: "Basic"},
-			_jsii_.MemberProperty{JsiiProperty: "basicInput", GoGetter: "BasicInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "custom", GoGetter: "Custom"},
-			_jsii_.MemberProperty{JsiiProperty: "customInput", GoGetter: "CustomInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "parent", GoGetter: "Parent"},
-			_jsii_.MemberProperty{JsiiProperty: "parentInput", GoGetter: "ParentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putBasic", GoMethod: "PutBasic"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustom", GoMethod: "PutCustom"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBasic", GoMethod: "ResetBasic"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustom", GoMethod: "ResetCustom"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
-			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevel{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasic",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasic)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditions",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditions)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicy",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "minimumVersion", GoGetter: "MinimumVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "minimumVersionInput", GoGetter: "MinimumVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "osType", GoGetter: "OsType"},
-			_jsii_.MemberProperty{JsiiProperty: "osTypeInput", GoGetter: "OsTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireVerifiedChromeOs", GoGetter: "RequireVerifiedChromeOs"},
-			_jsii_.MemberProperty{JsiiProperty: "requireVerifiedChromeOsInput", GoGetter: "RequireVerifiedChromeOsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinimumVersion", GoMethod: "ResetMinimumVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireVerifiedChromeOs", GoMethod: "ResetRequireVerifiedChromeOs"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allowedDeviceManagementLevels", GoGetter: "AllowedDeviceManagementLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "allowedDeviceManagementLevelsInput", GoGetter: "AllowedDeviceManagementLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "allowedEncryptionStatuses", GoGetter: "AllowedEncryptionStatuses"},
-			_jsii_.MemberProperty{JsiiProperty: "allowedEncryptionStatusesInput", GoGetter: "AllowedEncryptionStatusesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "osConstraints", GoGetter: "OsConstraints"},
-			_jsii_.MemberProperty{JsiiProperty: "osConstraintsInput", GoGetter: "OsConstraintsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putOsConstraints", GoMethod: "PutOsConstraints"},
-			_jsii_.MemberProperty{JsiiProperty: "requireAdminApproval", GoGetter: "RequireAdminApproval"},
-			_jsii_.MemberProperty{JsiiProperty: "requireAdminApprovalInput", GoGetter: "RequireAdminApprovalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireCorpOwned", GoGetter: "RequireCorpOwned"},
-			_jsii_.MemberProperty{JsiiProperty: "requireCorpOwnedInput", GoGetter: "RequireCorpOwnedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireScreenLock", GoGetter: "RequireScreenLock"},
-			_jsii_.MemberProperty{JsiiProperty: "requireScreenLockInput", GoGetter: "RequireScreenLockInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowedDeviceManagementLevels", GoMethod: "ResetAllowedDeviceManagementLevels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllowedEncryptionStatuses", GoMethod: "ResetAllowedEncryptionStatuses"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOsConstraints", GoMethod: "ResetOsConstraints"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireAdminApproval", GoMethod: "ResetRequireAdminApproval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireCorpOwned", GoMethod: "ResetRequireCorpOwned"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireScreenLock", GoMethod: "ResetRequireScreenLock"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "devicePolicy", GoGetter: "DevicePolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "devicePolicyInput", GoGetter: "DevicePolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipSubnetworks", GoGetter: "IpSubnetworks"},
-			_jsii_.MemberProperty{JsiiProperty: "ipSubnetworksInput", GoGetter: "IpSubnetworksInput"},
-			_jsii_.MemberProperty{JsiiProperty: "members", GoGetter: "Members"},
-			_jsii_.MemberProperty{JsiiProperty: "membersInput", GoGetter: "MembersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "negate", GoGetter: "Negate"},
-			_jsii_.MemberProperty{JsiiProperty: "negateInput", GoGetter: "NegateInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putDevicePolicy", GoMethod: "PutDevicePolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "regions", GoGetter: "Regions"},
-			_jsii_.MemberProperty{JsiiProperty: "regionsInput", GoGetter: "RegionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requiredAccessLevels", GoGetter: "RequiredAccessLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "requiredAccessLevelsInput", GoGetter: "RequiredAccessLevelsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDevicePolicy", GoMethod: "ResetDevicePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpSubnetworks", GoMethod: "ResetIpSubnetworks"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMembers", GoMethod: "ResetMembers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNegate", GoMethod: "ResetNegate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegions", GoMethod: "ResetRegions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequiredAccessLevels", GoMethod: "ResetRequiredAccessLevels"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "combiningFunction", GoGetter: "CombiningFunction"},
-			_jsii_.MemberProperty{JsiiProperty: "combiningFunctionInput", GoGetter: "CombiningFunctionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "conditions", GoGetter: "Conditions"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionsInput", GoGetter: "ConditionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putConditions", GoMethod: "PutConditions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCombiningFunction", GoMethod: "ResetCombiningFunction"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelBasicOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelConfig",
-		reflect.TypeOf((*AccessContextManagerAccessLevelConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustom",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustom)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExpr",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustomExpr)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustomExprOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "expression", GoGetter: "Expression"},
-			_jsii_.MemberProperty{JsiiProperty: "expressionInput", GoGetter: "ExpressionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
-			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelCustomExprOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustomOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expr", GoGetter: "Expr"},
-			_jsii_.MemberProperty{JsiiProperty: "exprInput", GoGetter: "ExprInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putExpr", GoMethod: "PutExpr"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeouts",
-		reflect.TypeOf((*AccessContextManagerAccessLevelTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeoutsOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AccessContextManagerAccessLevelTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/access_context_manager_access_level google_access_context_manager_access_level} Resource.
+func NewAccessContextManagerAccessLevel_Override(a AccessContextManagerAccessLevel, scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		[]interface{}{scope, id, config},
+		a,
 	)
 }
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetParent(val *string) {
+	if err := j.validateSetParentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevel)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func AccessContextManagerAccessLevel_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessContextManagerAccessLevel_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccessContextManagerAccessLevel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessContextManagerAccessLevel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccessContextManagerAccessLevel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessContextManagerAccessLevel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func AccessContextManagerAccessLevel_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		a,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		a,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) PutBasic(value *AccessContextManagerAccessLevelBasic) {
+	if err := a.validatePutBasicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBasic",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) PutCustom(value *AccessContextManagerAccessLevelCustom) {
+	if err := a.validatePutCustomParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustom",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) PutTimeouts(value *AccessContextManagerAccessLevelTimeouts) {
+	if err := a.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ResetBasic() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBasic",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ResetCustom() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustom",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ResetId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

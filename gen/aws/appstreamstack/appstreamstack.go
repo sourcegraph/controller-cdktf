@@ -1,331 +1,1259 @@
 package appstreamstack
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/appstreamstack/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack aws_appstream_stack}.
+type AppstreamStack interface {
+	cdktf.TerraformResource
+	AccessEndpoints() AppstreamStackAccessEndpointsList
+	AccessEndpointsInput() interface{}
+	ApplicationSettings() AppstreamStackApplicationSettingsOutputReference
+	ApplicationSettingsInput() *AppstreamStackApplicationSettings
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreatedTime() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	EmbedHostDomains() *[]*string
+	SetEmbedHostDomains(val *[]*string)
+	EmbedHostDomainsInput() *[]*string
+	FeedbackUrl() *string
+	SetFeedbackUrl(val *string)
+	FeedbackUrlInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RedirectUrl() *string
+	SetRedirectUrl(val *string)
+	RedirectUrlInput() *string
+	StorageConnectors() AppstreamStackStorageConnectorsList
+	StorageConnectorsInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	UserSettings() AppstreamStackUserSettingsList
+	UserSettingsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAccessEndpoints(value interface{})
+	PutApplicationSettings(value *AppstreamStackApplicationSettings)
+	PutStorageConnectors(value interface{})
+	PutUserSettings(value interface{})
+	ResetAccessEndpoints()
+	ResetApplicationSettings()
+	ResetDescription()
+	ResetDisplayName()
+	ResetEmbedHostDomains()
+	ResetFeedbackUrl()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRedirectUrl()
+	ResetStorageConnectors()
+	ResetTags()
+	ResetTagsAll()
+	ResetUserSettings()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for AppstreamStack
+type jsiiProxy_AppstreamStack struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AppstreamStack) AccessEndpoints() AppstreamStackAccessEndpointsList {
+	var returns AppstreamStackAccessEndpointsList
+	_jsii_.Get(
+		j,
+		"accessEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) AccessEndpointsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessEndpointsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) ApplicationSettings() AppstreamStackApplicationSettingsOutputReference {
+	var returns AppstreamStackApplicationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"applicationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) ApplicationSettingsInput() *AppstreamStackApplicationSettings {
+	var returns *AppstreamStackApplicationSettings
+	_jsii_.Get(
+		j,
+		"applicationSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) CreatedTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) EmbedHostDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"embedHostDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) EmbedHostDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"embedHostDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) FeedbackUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"feedbackUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) FeedbackUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"feedbackUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) RedirectUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirectUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) RedirectUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirectUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) StorageConnectors() AppstreamStackStorageConnectorsList {
+	var returns AppstreamStackStorageConnectorsList
+	_jsii_.Get(
+		j,
+		"storageConnectors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) StorageConnectorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageConnectorsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) UserSettings() AppstreamStackUserSettingsList {
+	var returns AppstreamStackUserSettingsList
+	_jsii_.Get(
+		j,
+		"userSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) UserSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
+func NewAppstreamStack(scope constructs.Construct, id *string, config *AppstreamStackConfig) AppstreamStack {
+	_init_.Initialize()
+
+	if err := validateNewAppstreamStackParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_AppstreamStack{}
+
+	_jsii_.Create(
 		"aws.appstreamStack.AppstreamStack",
-		reflect.TypeOf((*AppstreamStack)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessEndpoints", GoGetter: "AccessEndpoints"},
-			_jsii_.MemberProperty{JsiiProperty: "accessEndpointsInput", GoGetter: "AccessEndpointsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationSettings", GoGetter: "ApplicationSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationSettingsInput", GoGetter: "ApplicationSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdTime", GoGetter: "CreatedTime"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "embedHostDomains", GoGetter: "EmbedHostDomains"},
-			_jsii_.MemberProperty{JsiiProperty: "embedHostDomainsInput", GoGetter: "EmbedHostDomainsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "feedbackUrl", GoGetter: "FeedbackUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "feedbackUrlInput", GoGetter: "FeedbackUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAccessEndpoints", GoMethod: "PutAccessEndpoints"},
-			_jsii_.MemberMethod{JsiiMethod: "putApplicationSettings", GoMethod: "PutApplicationSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "putStorageConnectors", GoMethod: "PutStorageConnectors"},
-			_jsii_.MemberMethod{JsiiMethod: "putUserSettings", GoMethod: "PutUserSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectUrl", GoGetter: "RedirectUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectUrlInput", GoGetter: "RedirectUrlInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessEndpoints", GoMethod: "ResetAccessEndpoints"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApplicationSettings", GoMethod: "ResetApplicationSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEmbedHostDomains", GoMethod: "ResetEmbedHostDomains"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFeedbackUrl", GoMethod: "ResetFeedbackUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedirectUrl", GoMethod: "ResetRedirectUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageConnectors", GoMethod: "ResetStorageConnectors"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserSettings", GoMethod: "ResetUserSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "storageConnectors", GoGetter: "StorageConnectors"},
-			_jsii_.MemberProperty{JsiiProperty: "storageConnectorsInput", GoGetter: "StorageConnectorsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "userSettings", GoGetter: "UserSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "userSettingsInput", GoGetter: "UserSettingsInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStack{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackAccessEndpoints",
-		reflect.TypeOf((*AppstreamStackAccessEndpoints)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsList",
-		reflect.TypeOf((*AppstreamStackAccessEndpointsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackAccessEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
-		reflect.TypeOf((*AppstreamStackAccessEndpointsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointType", GoGetter: "EndpointType"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointTypeInput", GoGetter: "EndpointTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpceId", GoMethod: "ResetVpceId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "vpceId", GoGetter: "VpceId"},
-			_jsii_.MemberProperty{JsiiProperty: "vpceIdInput", GoGetter: "VpceIdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackAccessEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackApplicationSettings",
-		reflect.TypeOf((*AppstreamStackApplicationSettings)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
-		reflect.TypeOf((*AppstreamStackApplicationSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSettingsGroup", GoMethod: "ResetSettingsGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "settingsGroup", GoGetter: "SettingsGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "settingsGroupInput", GoGetter: "SettingsGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackApplicationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackConfig",
-		reflect.TypeOf((*AppstreamStackConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackStorageConnectors",
-		reflect.TypeOf((*AppstreamStackStorageConnectors)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsList",
-		reflect.TypeOf((*AppstreamStackStorageConnectorsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackStorageConnectorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
-		reflect.TypeOf((*AppstreamStackStorageConnectorsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "connectorType", GoGetter: "ConnectorType"},
-			_jsii_.MemberProperty{JsiiProperty: "connectorTypeInput", GoGetter: "ConnectorTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "domains", GoGetter: "Domains"},
-			_jsii_.MemberProperty{JsiiProperty: "domainsInput", GoGetter: "DomainsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDomains", GoMethod: "ResetDomains"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResourceIdentifier", GoMethod: "ResetResourceIdentifier"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceIdentifier", GoGetter: "ResourceIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceIdentifierInput", GoGetter: "ResourceIdentifierInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackStorageConnectorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackUserSettings",
-		reflect.TypeOf((*AppstreamStackUserSettings)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackUserSettingsList",
-		reflect.TypeOf((*AppstreamStackUserSettingsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackUserSettingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
-		reflect.TypeOf((*AppstreamStackUserSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
-			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "permission", GoGetter: "Permission"},
-			_jsii_.MemberProperty{JsiiProperty: "permissionInput", GoGetter: "PermissionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AppstreamStackUserSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
+func NewAppstreamStack_Override(a AppstreamStack, scope constructs.Construct, id *string, config *AppstreamStackConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.appstreamStack.AppstreamStack",
+		[]interface{}{scope, id, config},
+		a,
 	)
 }
+
+func (j *jsiiProxy_AppstreamStack)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetEmbedHostDomains(val *[]*string) {
+	if err := j.validateSetEmbedHostDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"embedHostDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetFeedbackUrl(val *string) {
+	if err := j.validateSetFeedbackUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"feedbackUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetRedirectUrl(val *string) {
+	if err := j.validateSetRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func AppstreamStack_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppstreamStack_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.appstreamStack.AppstreamStack",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppstreamStack_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppstreamStack_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.appstreamStack.AppstreamStack",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppstreamStack_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppstreamStack_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.appstreamStack.AppstreamStack",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func AppstreamStack_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.appstreamStack.AppstreamStack",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		a,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		a,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) PutAccessEndpoints(value interface{}) {
+	if err := a.validatePutAccessEndpointsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAccessEndpoints",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) PutApplicationSettings(value *AppstreamStackApplicationSettings) {
+	if err := a.validatePutApplicationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putApplicationSettings",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) PutStorageConnectors(value interface{}) {
+	if err := a.validatePutStorageConnectorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putStorageConnectors",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) PutUserSettings(value interface{}) {
+	if err := a.validatePutUserSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putUserSettings",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetAccessEndpoints() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccessEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetApplicationSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApplicationSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetEmbedHostDomains() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEmbedHostDomains",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetFeedbackUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFeedbackUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetRedirectUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetStorageConnectors() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStorageConnectors",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetUserSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppstreamStack) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

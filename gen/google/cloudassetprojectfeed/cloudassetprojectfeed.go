@@ -1,259 +1,1110 @@
 package cloudassetprojectfeed
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/cloudassetprojectfeed/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/cloud_asset_project_feed google_cloud_asset_project_feed}.
+type CloudAssetProjectFeed interface {
+	cdktf.TerraformResource
+	AssetNames() *[]*string
+	SetAssetNames(val *[]*string)
+	AssetNamesInput() *[]*string
+	AssetTypes() *[]*string
+	SetAssetTypes(val *[]*string)
+	AssetTypesInput() *[]*string
+	BillingProject() *string
+	SetBillingProject(val *string)
+	BillingProjectInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	Condition() CloudAssetProjectFeedConditionOutputReference
+	ConditionInput() *CloudAssetProjectFeedCondition
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ContentType() *string
+	SetContentType(val *string)
+	ContentTypeInput() *string
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	FeedId() *string
+	SetFeedId(val *string)
+	FeedIdInput() *string
+	FeedOutputConfig() CloudAssetProjectFeedFeedOutputConfigOutputReference
+	FeedOutputConfigInput() *CloudAssetProjectFeedFeedOutputConfig
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() CloudAssetProjectFeedTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutCondition(value *CloudAssetProjectFeedCondition)
+	PutFeedOutputConfig(value *CloudAssetProjectFeedFeedOutputConfig)
+	PutTimeouts(value *CloudAssetProjectFeedTimeouts)
+	ResetAssetNames()
+	ResetAssetTypes()
+	ResetBillingProject()
+	ResetCondition()
+	ResetContentType()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for CloudAssetProjectFeed
+type jsiiProxy_CloudAssetProjectFeed struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) AssetNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"assetNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) AssetNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"assetNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) AssetTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"assetTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) AssetTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"assetTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) BillingProject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingProject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) BillingProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingProjectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Condition() CloudAssetProjectFeedConditionOutputReference {
+	var returns CloudAssetProjectFeedConditionOutputReference
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) ConditionInput() *CloudAssetProjectFeedCondition {
+	var returns *CloudAssetProjectFeedCondition
+	_jsii_.Get(
+		j,
+		"conditionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) ContentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) ContentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) FeedId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"feedId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) FeedIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"feedIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) FeedOutputConfig() CloudAssetProjectFeedFeedOutputConfigOutputReference {
+	var returns CloudAssetProjectFeedFeedOutputConfigOutputReference
+	_jsii_.Get(
+		j,
+		"feedOutputConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) FeedOutputConfigInput() *CloudAssetProjectFeedFeedOutputConfig {
+	var returns *CloudAssetProjectFeedFeedOutputConfig
+	_jsii_.Get(
+		j,
+		"feedOutputConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) Timeouts() CloudAssetProjectFeedTimeoutsOutputReference {
+	var returns CloudAssetProjectFeedTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
+func NewCloudAssetProjectFeed(scope constructs.Construct, id *string, config *CloudAssetProjectFeedConfig) CloudAssetProjectFeed {
+	_init_.Initialize()
+
+	if err := validateNewCloudAssetProjectFeedParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_CloudAssetProjectFeed{}
+
+	_jsii_.Create(
 		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
-		reflect.TypeOf((*CloudAssetProjectFeed)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "assetNames", GoGetter: "AssetNames"},
-			_jsii_.MemberProperty{JsiiProperty: "assetNamesInput", GoGetter: "AssetNamesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "assetTypes", GoGetter: "AssetTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "assetTypesInput", GoGetter: "AssetTypesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "billingProject", GoGetter: "BillingProject"},
-			_jsii_.MemberProperty{JsiiProperty: "billingProjectInput", GoGetter: "BillingProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "condition", GoGetter: "Condition"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionInput", GoGetter: "ConditionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "contentType", GoGetter: "ContentType"},
-			_jsii_.MemberProperty{JsiiProperty: "contentTypeInput", GoGetter: "ContentTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "feedId", GoGetter: "FeedId"},
-			_jsii_.MemberProperty{JsiiProperty: "feedIdInput", GoGetter: "FeedIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "feedOutputConfig", GoGetter: "FeedOutputConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "feedOutputConfigInput", GoGetter: "FeedOutputConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putCondition", GoMethod: "PutCondition"},
-			_jsii_.MemberMethod{JsiiMethod: "putFeedOutputConfig", GoMethod: "PutFeedOutputConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAssetNames", GoMethod: "ResetAssetNames"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAssetTypes", GoMethod: "ResetAssetTypes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBillingProject", GoMethod: "ResetBillingProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCondition", GoMethod: "ResetCondition"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContentType", GoMethod: "ResetContentType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudAssetProjectFeed{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedCondition",
-		reflect.TypeOf((*CloudAssetProjectFeedCondition)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedConditionOutputReference",
-		reflect.TypeOf((*CloudAssetProjectFeedConditionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "expression", GoGetter: "Expression"},
-			_jsii_.MemberProperty{JsiiProperty: "expressionInput", GoGetter: "ExpressionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
-			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudAssetProjectFeedConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig",
-		reflect.TypeOf((*CloudAssetProjectFeedConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfig",
-		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigOutputReference",
-		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "pubsubDestination", GoGetter: "PubsubDestination"},
-			_jsii_.MemberProperty{JsiiProperty: "pubsubDestinationInput", GoGetter: "PubsubDestinationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putPubsubDestination", GoMethod: "PutPubsubDestination"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudAssetProjectFeedFeedOutputConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigPubsubDestination",
-		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfigPubsubDestination)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
-		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
-			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts",
-		reflect.TypeOf((*CloudAssetProjectFeedTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeoutsOutputReference",
-		reflect.TypeOf((*CloudAssetProjectFeedTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CloudAssetProjectFeedTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
+func NewCloudAssetProjectFeed_Override(c CloudAssetProjectFeed, scope constructs.Construct, id *string, config *CloudAssetProjectFeedConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		[]interface{}{scope, id, config},
+		c,
 	)
 }
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetAssetNames(val *[]*string) {
+	if err := j.validateSetAssetNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assetNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetAssetTypes(val *[]*string) {
+	if err := j.validateSetAssetTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assetTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetBillingProject(val *string) {
+	if err := j.validateSetBillingProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"billingProject",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetContentType(val *string) {
+	if err := j.validateSetContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetFeedId(val *string) {
+	if err := j.validateSetFeedIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"feedId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAssetProjectFeed)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func CloudAssetProjectFeed_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudAssetProjectFeed_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudAssetProjectFeed_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudAssetProjectFeed_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudAssetProjectFeed_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudAssetProjectFeed_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func CloudAssetProjectFeed_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) PutCondition(value *CloudAssetProjectFeedCondition) {
+	if err := c.validatePutConditionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCondition",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) PutFeedOutputConfig(value *CloudAssetProjectFeedFeedOutputConfig) {
+	if err := c.validatePutFeedOutputConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFeedOutputConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) PutTimeouts(value *CloudAssetProjectFeedTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetAssetNames() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAssetNames",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetAssetTypes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAssetTypes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetBillingProject() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBillingProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetCondition() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCondition",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetContentType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetContentType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetProject() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudAssetProjectFeed) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,931 +1,1155 @@
 package googlemonitoringalertpolicy
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringalertpolicy/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy}.
+type GoogleMonitoringAlertPolicy interface {
+	cdktf.TerraformResource
+	AlertStrategy() GoogleMonitoringAlertPolicyAlertStrategyOutputReference
+	AlertStrategyInput() *GoogleMonitoringAlertPolicyAlertStrategy
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	Combiner() *string
+	SetCombiner(val *string)
+	CombinerInput() *string
+	Conditions() GoogleMonitoringAlertPolicyConditionsList
+	ConditionsInput() interface{}
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreationRecord() GoogleMonitoringAlertPolicyCreationRecordList
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	Documentation() GoogleMonitoringAlertPolicyDocumentationOutputReference
+	DocumentationInput() *GoogleMonitoringAlertPolicyDocumentation
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	NotificationChannels() *[]*string
+	SetNotificationChannels(val *[]*string)
+	NotificationChannelsInput() *[]*string
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleMonitoringAlertPolicyTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	UserLabels() *map[string]*string
+	SetUserLabels(val *map[string]*string)
+	UserLabelsInput() *map[string]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAlertStrategy(value *GoogleMonitoringAlertPolicyAlertStrategy)
+	PutConditions(value interface{})
+	PutDocumentation(value *GoogleMonitoringAlertPolicyDocumentation)
+	PutTimeouts(value *GoogleMonitoringAlertPolicyTimeouts)
+	ResetAlertStrategy()
+	ResetDocumentation()
+	ResetEnabled()
+	ResetId()
+	ResetNotificationChannels()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetTimeouts()
+	ResetUserLabels()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleMonitoringAlertPolicy
+type jsiiProxy_GoogleMonitoringAlertPolicy struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) AlertStrategy() GoogleMonitoringAlertPolicyAlertStrategyOutputReference {
+	var returns GoogleMonitoringAlertPolicyAlertStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"alertStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) AlertStrategyInput() *GoogleMonitoringAlertPolicyAlertStrategy {
+	var returns *GoogleMonitoringAlertPolicyAlertStrategy
+	_jsii_.Get(
+		j,
+		"alertStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Combiner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"combiner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) CombinerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"combinerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Conditions() GoogleMonitoringAlertPolicyConditionsList {
+	var returns GoogleMonitoringAlertPolicyConditionsList
+	_jsii_.Get(
+		j,
+		"conditions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) ConditionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) CreationRecord() GoogleMonitoringAlertPolicyCreationRecordList {
+	var returns GoogleMonitoringAlertPolicyCreationRecordList
+	_jsii_.Get(
+		j,
+		"creationRecord",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Documentation() GoogleMonitoringAlertPolicyDocumentationOutputReference {
+	var returns GoogleMonitoringAlertPolicyDocumentationOutputReference
+	_jsii_.Get(
+		j,
+		"documentation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) DocumentationInput() *GoogleMonitoringAlertPolicyDocumentation {
+	var returns *GoogleMonitoringAlertPolicyDocumentation
+	_jsii_.Get(
+		j,
+		"documentationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) NotificationChannels() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationChannels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) NotificationChannelsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationChannelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Timeouts() GoogleMonitoringAlertPolicyTimeoutsOutputReference {
+	var returns GoogleMonitoringAlertPolicyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) UserLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) UserLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy} Resource.
+func NewGoogleMonitoringAlertPolicy(scope constructs.Construct, id *string, config *GoogleMonitoringAlertPolicyConfig) GoogleMonitoringAlertPolicy {
+	_init_.Initialize()
+
+	if err := validateNewGoogleMonitoringAlertPolicyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleMonitoringAlertPolicy{}
+
+	_jsii_.Create(
 		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicy)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "alertStrategy", GoGetter: "AlertStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "alertStrategyInput", GoGetter: "AlertStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "combiner", GoGetter: "Combiner"},
-			_jsii_.MemberProperty{JsiiProperty: "combinerInput", GoGetter: "CombinerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "conditions", GoGetter: "Conditions"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionsInput", GoGetter: "ConditionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationRecord", GoGetter: "CreationRecord"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "documentation", GoGetter: "Documentation"},
-			_jsii_.MemberProperty{JsiiProperty: "documentationInput", GoGetter: "DocumentationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationChannels", GoGetter: "NotificationChannels"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationChannelsInput", GoGetter: "NotificationChannelsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAlertStrategy", GoMethod: "PutAlertStrategy"},
-			_jsii_.MemberMethod{JsiiMethod: "putConditions", GoMethod: "PutConditions"},
-			_jsii_.MemberMethod{JsiiMethod: "putDocumentation", GoMethod: "PutDocumentation"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlertStrategy", GoMethod: "ResetAlertStrategy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDocumentation", GoMethod: "ResetDocumentation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotificationChannels", GoMethod: "ResetNotificationChannels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserLabels", GoMethod: "ResetUserLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "userLabels", GoGetter: "UserLabels"},
-			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategy",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategy)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "period", GoGetter: "Period"},
-			_jsii_.MemberProperty{JsiiProperty: "periodInput", GoGetter: "PeriodInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPeriod", GoMethod: "ResetPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "autoClose", GoGetter: "AutoClose"},
-			_jsii_.MemberProperty{JsiiProperty: "autoCloseInput", GoGetter: "AutoCloseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationRateLimit", GoGetter: "NotificationRateLimit"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationRateLimitInput", GoGetter: "NotificationRateLimitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putNotificationRateLimit", GoMethod: "PutNotificationRateLimit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoClose", GoMethod: "ResetAutoClose"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotificationRateLimit", GoMethod: "ResetNotificationRateLimit"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditions",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditions)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsent",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsent)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriodInput", GoGetter: "AlignmentPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "crossSeriesReducer", GoGetter: "CrossSeriesReducer"},
-			_jsii_.MemberProperty{JsiiProperty: "crossSeriesReducerInput", GoGetter: "CrossSeriesReducerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByFields", GoGetter: "GroupByFields"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByFieldsInput", GoGetter: "GroupByFieldsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "perSeriesAligner", GoGetter: "PerSeriesAligner"},
-			_jsii_.MemberProperty{JsiiProperty: "perSeriesAlignerInput", GoGetter: "PerSeriesAlignerInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlignmentPeriod", GoMethod: "ResetAlignmentPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCrossSeriesReducer", GoMethod: "ResetCrossSeriesReducer"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroupByFields", GoMethod: "ResetGroupByFields"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPerSeriesAligner", GoMethod: "ResetPerSeriesAligner"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
-			_jsii_.MemberProperty{JsiiProperty: "aggregationsInput", GoGetter: "AggregationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
-			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
-			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putAggregations", GoMethod: "PutAggregations"},
-			_jsii_.MemberMethod{JsiiMethod: "putTrigger", GoMethod: "PutTrigger"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAggregations", GoMethod: "ResetAggregations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTrigger", GoMethod: "ResetTrigger"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
-			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "percent", GoGetter: "Percent"},
-			_jsii_.MemberProperty{JsiiProperty: "percentInput", GoGetter: "PercentInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPercent", GoMethod: "ResetPercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLog",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMatchedLog)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
-			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labelExtractors", GoGetter: "LabelExtractors"},
-			_jsii_.MemberProperty{JsiiProperty: "labelExtractorsInput", GoGetter: "LabelExtractorsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabelExtractors", GoMethod: "ResetLabelExtractors"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
-			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluationMissingData", GoGetter: "EvaluationMissingData"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluationMissingDataInput", GoGetter: "EvaluationMissingDataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putTrigger", GoMethod: "PutTrigger"},
-			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
-			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationMissingData", GoMethod: "ResetEvaluationMissingData"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTrigger", GoMethod: "ResetTrigger"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
-			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "percent", GoGetter: "Percent"},
-			_jsii_.MemberProperty{JsiiProperty: "percentInput", GoGetter: "PercentInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPercent", GoMethod: "ResetPercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThreshold",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThreshold)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriodInput", GoGetter: "AlignmentPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "crossSeriesReducer", GoGetter: "CrossSeriesReducer"},
-			_jsii_.MemberProperty{JsiiProperty: "crossSeriesReducerInput", GoGetter: "CrossSeriesReducerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByFields", GoGetter: "GroupByFields"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByFieldsInput", GoGetter: "GroupByFieldsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "perSeriesAligner", GoGetter: "PerSeriesAligner"},
-			_jsii_.MemberProperty{JsiiProperty: "perSeriesAlignerInput", GoGetter: "PerSeriesAlignerInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlignmentPeriod", GoMethod: "ResetAlignmentPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCrossSeriesReducer", GoMethod: "ResetCrossSeriesReducer"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroupByFields", GoMethod: "ResetGroupByFields"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPerSeriesAligner", GoMethod: "ResetPerSeriesAligner"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriodInput", GoGetter: "AlignmentPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "crossSeriesReducer", GoGetter: "CrossSeriesReducer"},
-			_jsii_.MemberProperty{JsiiProperty: "crossSeriesReducerInput", GoGetter: "CrossSeriesReducerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByFields", GoGetter: "GroupByFields"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByFieldsInput", GoGetter: "GroupByFieldsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "perSeriesAligner", GoGetter: "PerSeriesAligner"},
-			_jsii_.MemberProperty{JsiiProperty: "perSeriesAlignerInput", GoGetter: "PerSeriesAlignerInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlignmentPeriod", GoMethod: "ResetAlignmentPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCrossSeriesReducer", GoMethod: "ResetCrossSeriesReducer"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroupByFields", GoMethod: "ResetGroupByFields"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPerSeriesAligner", GoMethod: "ResetPerSeriesAligner"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
-			_jsii_.MemberProperty{JsiiProperty: "aggregationsInput", GoGetter: "AggregationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
-			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "denominatorAggregations", GoGetter: "DenominatorAggregations"},
-			_jsii_.MemberProperty{JsiiProperty: "denominatorAggregationsInput", GoGetter: "DenominatorAggregationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "denominatorFilter", GoGetter: "DenominatorFilter"},
-			_jsii_.MemberProperty{JsiiProperty: "denominatorFilterInput", GoGetter: "DenominatorFilterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
-			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluationMissingData", GoGetter: "EvaluationMissingData"},
-			_jsii_.MemberProperty{JsiiProperty: "evaluationMissingDataInput", GoGetter: "EvaluationMissingDataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
-			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putAggregations", GoMethod: "PutAggregations"},
-			_jsii_.MemberMethod{JsiiMethod: "putDenominatorAggregations", GoMethod: "PutDenominatorAggregations"},
-			_jsii_.MemberMethod{JsiiMethod: "putTrigger", GoMethod: "PutTrigger"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAggregations", GoMethod: "ResetAggregations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDenominatorAggregations", GoMethod: "ResetDenominatorAggregations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDenominatorFilter", GoMethod: "ResetDenominatorFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationMissingData", GoMethod: "ResetEvaluationMissingData"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThresholdValue", GoMethod: "ResetThresholdValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTrigger", GoMethod: "ResetTrigger"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdValue", GoGetter: "ThresholdValue"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdValueInput", GoGetter: "ThresholdValueInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
-			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "percent", GoGetter: "Percent"},
-			_jsii_.MemberProperty{JsiiProperty: "percentInput", GoGetter: "PercentInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPercent", GoMethod: "ResetPercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionAbsent", GoGetter: "ConditionAbsent"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionAbsentInput", GoGetter: "ConditionAbsentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionMatchedLog", GoGetter: "ConditionMatchedLog"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionMatchedLogInput", GoGetter: "ConditionMatchedLogInput"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionMonitoringQueryLanguage", GoGetter: "ConditionMonitoringQueryLanguage"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionMonitoringQueryLanguageInput", GoGetter: "ConditionMonitoringQueryLanguageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionThreshold", GoGetter: "ConditionThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "conditionThresholdInput", GoGetter: "ConditionThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberMethod{JsiiMethod: "putConditionAbsent", GoMethod: "PutConditionAbsent"},
-			_jsii_.MemberMethod{JsiiMethod: "putConditionMatchedLog", GoMethod: "PutConditionMatchedLog"},
-			_jsii_.MemberMethod{JsiiMethod: "putConditionMonitoringQueryLanguage", GoMethod: "PutConditionMonitoringQueryLanguage"},
-			_jsii_.MemberMethod{JsiiMethod: "putConditionThreshold", GoMethod: "PutConditionThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConditionAbsent", GoMethod: "ResetConditionAbsent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConditionMatchedLog", GoMethod: "ResetConditionMatchedLog"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConditionMonitoringQueryLanguage", GoMethod: "ResetConditionMonitoringQueryLanguage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConditionThreshold", GoMethod: "ResetConditionThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecord",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyCreationRecord)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyCreationRecordList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyCreationRecordOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mutatedBy", GoGetter: "MutatedBy"},
-			_jsii_.MemberProperty{JsiiProperty: "mutateTime", GoGetter: "MutateTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentation)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
-			_jsii_.MemberProperty{JsiiProperty: "contentInput", GoGetter: "ContentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mimeType", GoGetter: "MimeType"},
-			_jsii_.MemberProperty{JsiiProperty: "mimeTypeInput", GoGetter: "MimeTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMimeType", GoMethod: "ResetMimeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleMonitoringAlertPolicyTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy} Resource.
+func NewGoogleMonitoringAlertPolicy_Override(g GoogleMonitoringAlertPolicy, scope constructs.Construct, id *string, config *GoogleMonitoringAlertPolicyConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetCombiner(val *string) {
+	if err := j.validateSetCombinerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"combiner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetNotificationChannels(val *[]*string) {
+	if err := j.validateSetNotificationChannelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationChannels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetUserLabels(val *map[string]*string) {
+	if err := j.validateSetUserLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userLabels",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleMonitoringAlertPolicy_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleMonitoringAlertPolicy_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleMonitoringAlertPolicy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleMonitoringAlertPolicy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleMonitoringAlertPolicy_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleMonitoringAlertPolicy_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleMonitoringAlertPolicy_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) PutAlertStrategy(value *GoogleMonitoringAlertPolicyAlertStrategy) {
+	if err := g.validatePutAlertStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAlertStrategy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) PutConditions(value interface{}) {
+	if err := g.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConditions",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) PutDocumentation(value *GoogleMonitoringAlertPolicyDocumentation) {
+	if err := g.validatePutDocumentationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDocumentation",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) PutTimeouts(value *GoogleMonitoringAlertPolicyTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetAlertStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAlertStrategy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetDocumentation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDocumentation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetNotificationChannels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationChannels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ResetUserLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

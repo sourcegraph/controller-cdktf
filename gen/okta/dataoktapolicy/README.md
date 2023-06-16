@@ -1,3 +1,3 @@
 # `data_okta_policy`
 
-Refer to the Terraform Registory for docs: [`data_okta_policy`](https://www.terraform.io/docs/providers/okta/d/policy).
+Refer to the Terraform Registory for docs: [`data_okta_policy`](https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/policy).

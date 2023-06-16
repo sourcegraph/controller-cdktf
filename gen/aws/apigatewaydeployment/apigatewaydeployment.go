@@ -1,81 +1,1012 @@
 package apigatewaydeployment
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/apigatewaydeployment/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
-		"aws.apiGatewayDeployment.ApiGatewayDeployment",
-		reflect.TypeOf((*ApiGatewayDeployment)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdDate", GoGetter: "CreatedDate"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "executionArn", GoGetter: "ExecutionArn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "invokeUrl", GoGetter: "InvokeUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStageDescription", GoMethod: "ResetStageDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStageName", GoMethod: "ResetStageName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTriggers", GoMethod: "ResetTriggers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVariables", GoMethod: "ResetVariables"},
-			_jsii_.MemberProperty{JsiiProperty: "restApiId", GoGetter: "RestApiId"},
-			_jsii_.MemberProperty{JsiiProperty: "restApiIdInput", GoGetter: "RestApiIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stageDescription", GoGetter: "StageDescription"},
-			_jsii_.MemberProperty{JsiiProperty: "stageDescriptionInput", GoGetter: "StageDescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stageName", GoGetter: "StageName"},
-			_jsii_.MemberProperty{JsiiProperty: "stageNameInput", GoGetter: "StageNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "triggers", GoGetter: "Triggers"},
-			_jsii_.MemberProperty{JsiiProperty: "triggersInput", GoGetter: "TriggersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
-			_jsii_.MemberProperty{JsiiProperty: "variablesInput", GoGetter: "VariablesInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ApiGatewayDeployment{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
+type ApiGatewayDeployment interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreatedDate() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	ExecutionArn() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InvokeUrl() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RestApiId() *string
+	SetRestApiId(val *string)
+	RestApiIdInput() *string
+	StageDescription() *string
+	SetStageDescription(val *string)
+	StageDescriptionInput() *string
+	StageName() *string
+	SetStageName(val *string)
+	StageNameInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Triggers() *map[string]*string
+	SetTriggers(val *map[string]*string)
+	TriggersInput() *map[string]*string
+	Variables() *map[string]*string
+	SetVariables(val *map[string]*string)
+	VariablesInput() *map[string]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetStageDescription()
+	ResetStageName()
+	ResetTriggers()
+	ResetVariables()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ApiGatewayDeployment
+type jsiiProxy_ApiGatewayDeployment struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
 	)
-	_jsii_.RegisterStruct(
-		"aws.apiGatewayDeployment.ApiGatewayDeploymentConfig",
-		reflect.TypeOf((*ApiGatewayDeploymentConfig)(nil)).Elem(),
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) CreatedDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) ExecutionArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) InvokeUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"invokeUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) RestApiId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restApiId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) RestApiIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restApiIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) StageDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stageDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) StageDescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stageDescriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) StageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stageName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) StageNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stageNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Triggers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) TriggersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) Variables() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"variables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) VariablesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"variablesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) ApiGatewayDeployment {
+	_init_.Initialize()
+
+	if err := validateNewApiGatewayDeploymentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_ApiGatewayDeployment{}
+
+	_jsii_.Create(
+		"aws.apiGatewayDeployment.ApiGatewayDeployment",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+func NewApiGatewayDeployment_Override(a ApiGatewayDeployment, scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.apiGatewayDeployment.ApiGatewayDeployment",
+		[]interface{}{scope, id, config},
+		a,
 	)
 }
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetRestApiId(val *string) {
+	if err := j.validateSetRestApiIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restApiId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetStageDescription(val *string) {
+	if err := j.validateSetStageDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stageDescription",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetStageName(val *string) {
+	if err := j.validateSetStageNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stageName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetTriggers(val *map[string]*string) {
+	if err := j.validateSetTriggersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment)SetVariables(val *map[string]*string) {
+	if err := j.validateSetVariablesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"variables",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ApiGatewayDeployment_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayDeployment_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.apiGatewayDeployment.ApiGatewayDeployment",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayDeployment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayDeployment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.apiGatewayDeployment.ApiGatewayDeployment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayDeployment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayDeployment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.apiGatewayDeployment.ApiGatewayDeployment",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ApiGatewayDeployment_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.apiGatewayDeployment.ApiGatewayDeployment",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		a,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		a,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		a,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		a,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		a,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetStageDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStageDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetStageName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStageName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetTriggers() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTriggers",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetVariables() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVariables",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		a,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

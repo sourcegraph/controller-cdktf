@@ -1,0 +1,6 @@
+package googlevertexaiendpoint
+
+
+type GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs struct {
+}
+

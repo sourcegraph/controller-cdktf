@@ -1,420 +1,2210 @@
 package opsworksinstance
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/opsworksinstance/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance aws_opsworks_instance}.
+type OpsworksInstance interface {
+	cdktf.TerraformResource
+	AgentVersion() *string
+	SetAgentVersion(val *string)
+	AgentVersionInput() *string
+	AmiId() *string
+	SetAmiId(val *string)
+	AmiIdInput() *string
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
+	AutoScalingType() *string
+	SetAutoScalingType(val *string)
+	AutoScalingTypeInput() *string
+	AvailabilityZone() *string
+	SetAvailabilityZone(val *string)
+	AvailabilityZoneInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreatedAt() *string
+	SetCreatedAt(val *string)
+	CreatedAtInput() *string
+	DeleteEbs() interface{}
+	SetDeleteEbs(val interface{})
+	DeleteEbsInput() interface{}
+	DeleteEip() interface{}
+	SetDeleteEip(val interface{})
+	DeleteEipInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EbsBlockDevice() OpsworksInstanceEbsBlockDeviceList
+	EbsBlockDeviceInput() interface{}
+	EbsOptimized() interface{}
+	SetEbsOptimized(val interface{})
+	EbsOptimizedInput() interface{}
+	Ec2InstanceId() *string
+	EcsClusterArn() *string
+	SetEcsClusterArn(val *string)
+	EcsClusterArnInput() *string
+	ElasticIp() *string
+	SetElasticIp(val *string)
+	ElasticIpInput() *string
+	EphemeralBlockDevice() OpsworksInstanceEphemeralBlockDeviceList
+	EphemeralBlockDeviceInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InfrastructureClass() *string
+	SetInfrastructureClass(val *string)
+	InfrastructureClassInput() *string
+	InstallUpdatesOnBoot() interface{}
+	SetInstallUpdatesOnBoot(val interface{})
+	InstallUpdatesOnBootInput() interface{}
+	InstanceProfileArn() *string
+	SetInstanceProfileArn(val *string)
+	InstanceProfileArnInput() *string
+	InstanceType() *string
+	SetInstanceType(val *string)
+	InstanceTypeInput() *string
+	LastServiceErrorId() *string
+	LayerIds() *[]*string
+	SetLayerIds(val *[]*string)
+	LayerIdsInput() *[]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	Os() *string
+	SetOs(val *string)
+	OsInput() *string
+	Platform() *string
+	PrivateDns() *string
+	PrivateIp() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	PublicDns() *string
+	PublicIp() *string
+	// Experimental.
+	RawOverrides() interface{}
+	RegisteredBy() *string
+	ReportedAgentVersion() *string
+	ReportedOsFamily() *string
+	ReportedOsName() *string
+	ReportedOsVersion() *string
+	RootBlockDevice() OpsworksInstanceRootBlockDeviceList
+	RootBlockDeviceInput() interface{}
+	RootDeviceType() *string
+	SetRootDeviceType(val *string)
+	RootDeviceTypeInput() *string
+	RootDeviceVolumeId() *string
+	SecurityGroupIds() *[]*string
+	SetSecurityGroupIds(val *[]*string)
+	SecurityGroupIdsInput() *[]*string
+	SshHostDsaKeyFingerprint() *string
+	SshHostRsaKeyFingerprint() *string
+	SshKeyName() *string
+	SetSshKeyName(val *string)
+	SshKeyNameInput() *string
+	StackId() *string
+	SetStackId(val *string)
+	StackIdInput() *string
+	State() *string
+	SetState(val *string)
+	StateInput() *string
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
+	SubnetId() *string
+	SetSubnetId(val *string)
+	SubnetIdInput() *string
+	Tenancy() *string
+	SetTenancy(val *string)
+	TenancyInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() OpsworksInstanceTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VirtualizationType() *string
+	SetVirtualizationType(val *string)
+	VirtualizationTypeInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutEbsBlockDevice(value interface{})
+	PutEphemeralBlockDevice(value interface{})
+	PutRootBlockDevice(value interface{})
+	PutTimeouts(value *OpsworksInstanceTimeouts)
+	ResetAgentVersion()
+	ResetAmiId()
+	ResetArchitecture()
+	ResetAutoScalingType()
+	ResetAvailabilityZone()
+	ResetCreatedAt()
+	ResetDeleteEbs()
+	ResetDeleteEip()
+	ResetEbsBlockDevice()
+	ResetEbsOptimized()
+	ResetEcsClusterArn()
+	ResetElasticIp()
+	ResetEphemeralBlockDevice()
+	ResetHostname()
+	ResetId()
+	ResetInfrastructureClass()
+	ResetInstallUpdatesOnBoot()
+	ResetInstanceProfileArn()
+	ResetInstanceType()
+	ResetOs()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRootBlockDevice()
+	ResetRootDeviceType()
+	ResetSecurityGroupIds()
+	ResetSshKeyName()
+	ResetState()
+	ResetStatus()
+	ResetSubnetId()
+	ResetTenancy()
+	ResetTimeouts()
+	ResetVirtualizationType()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for OpsworksInstance
+type jsiiProxy_OpsworksInstance struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OpsworksInstance) AgentVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agentVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AgentVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agentVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AmiId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amiId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AmiIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amiIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AutoScalingType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoScalingType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AutoScalingTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoScalingTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AvailabilityZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) AvailabilityZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityZoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) CreatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAtInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) DeleteEbs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteEbs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) DeleteEbsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteEbsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) DeleteEip() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteEip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) DeleteEipInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteEipInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EbsBlockDevice() OpsworksInstanceEbsBlockDeviceList {
+	var returns OpsworksInstanceEbsBlockDeviceList
+	_jsii_.Get(
+		j,
+		"ebsBlockDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EbsBlockDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ebsBlockDeviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EbsOptimized() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ebsOptimized",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EbsOptimizedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ebsOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Ec2InstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ec2InstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EcsClusterArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ecsClusterArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EcsClusterArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ecsClusterArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ElasticIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ElasticIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EphemeralBlockDevice() OpsworksInstanceEphemeralBlockDeviceList {
+	var returns OpsworksInstanceEphemeralBlockDeviceList
+	_jsii_.Get(
+		j,
+		"ephemeralBlockDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) EphemeralBlockDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ephemeralBlockDeviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InfrastructureClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InfrastructureClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureClassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBoot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"installUpdatesOnBoot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBootInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"installUpdatesOnBootInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InstanceProfileArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InstanceProfileArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceProfileArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) InstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) LastServiceErrorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastServiceErrorId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) LayerIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"layerIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) LayerIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"layerIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Os() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) OsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Platform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) PrivateDns() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) PrivateIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) PublicDns() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) PublicIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RegisteredBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registeredBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ReportedAgentVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reportedAgentVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ReportedOsFamily() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reportedOsFamily",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ReportedOsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reportedOsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) ReportedOsVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reportedOsVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RootBlockDevice() OpsworksInstanceRootBlockDeviceList {
+	var returns OpsworksInstanceRootBlockDeviceList
+	_jsii_.Get(
+		j,
+		"rootBlockDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RootBlockDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rootBlockDeviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RootDeviceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootDeviceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RootDeviceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootDeviceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) RootDeviceVolumeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootDeviceVolumeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SshHostDsaKeyFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshHostDsaKeyFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SshHostRsaKeyFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshHostRsaKeyFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SshKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SshKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) StackId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) StackIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SubnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) SubnetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Tenancy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenancy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) TenancyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenancyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) Timeouts() OpsworksInstanceTimeoutsOutputReference {
+	var returns OpsworksInstanceTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) VirtualizationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualizationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksInstance) VirtualizationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualizationTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
+func NewOpsworksInstance(scope constructs.Construct, id *string, config *OpsworksInstanceConfig) OpsworksInstance {
+	_init_.Initialize()
+
+	if err := validateNewOpsworksInstanceParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_OpsworksInstance{}
+
+	_jsii_.Create(
 		"aws.opsworksInstance.OpsworksInstance",
-		reflect.TypeOf((*OpsworksInstance)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "agentVersion", GoGetter: "AgentVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "agentVersionInput", GoGetter: "AgentVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "amiId", GoGetter: "AmiId"},
-			_jsii_.MemberProperty{JsiiProperty: "amiIdInput", GoGetter: "AmiIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
-			_jsii_.MemberProperty{JsiiProperty: "architectureInput", GoGetter: "ArchitectureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "autoScalingType", GoGetter: "AutoScalingType"},
-			_jsii_.MemberProperty{JsiiProperty: "autoScalingTypeInput", GoGetter: "AutoScalingTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
-			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneInput", GoGetter: "AvailabilityZoneInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAtInput", GoGetter: "CreatedAtInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteEbs", GoGetter: "DeleteEbs"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteEbsInput", GoGetter: "DeleteEbsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteEip", GoGetter: "DeleteEip"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteEipInput", GoGetter: "DeleteEipInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsBlockDevice", GoGetter: "EbsBlockDevice"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsBlockDeviceInput", GoGetter: "EbsBlockDeviceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsOptimized", GoGetter: "EbsOptimized"},
-			_jsii_.MemberProperty{JsiiProperty: "ebsOptimizedInput", GoGetter: "EbsOptimizedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ec2InstanceId", GoGetter: "Ec2InstanceId"},
-			_jsii_.MemberProperty{JsiiProperty: "ecsClusterArn", GoGetter: "EcsClusterArn"},
-			_jsii_.MemberProperty{JsiiProperty: "ecsClusterArnInput", GoGetter: "EcsClusterArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "elasticIp", GoGetter: "ElasticIp"},
-			_jsii_.MemberProperty{JsiiProperty: "elasticIpInput", GoGetter: "ElasticIpInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ephemeralBlockDevice", GoGetter: "EphemeralBlockDevice"},
-			_jsii_.MemberProperty{JsiiProperty: "ephemeralBlockDeviceInput", GoGetter: "EphemeralBlockDeviceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hostname", GoGetter: "Hostname"},
-			_jsii_.MemberProperty{JsiiProperty: "hostnameInput", GoGetter: "HostnameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "infrastructureClass", GoGetter: "InfrastructureClass"},
-			_jsii_.MemberProperty{JsiiProperty: "infrastructureClassInput", GoGetter: "InfrastructureClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "installUpdatesOnBoot", GoGetter: "InstallUpdatesOnBoot"},
-			_jsii_.MemberProperty{JsiiProperty: "installUpdatesOnBootInput", GoGetter: "InstallUpdatesOnBootInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceProfileArn", GoGetter: "InstanceProfileArn"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceProfileArnInput", GoGetter: "InstanceProfileArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lastServiceErrorId", GoGetter: "LastServiceErrorId"},
-			_jsii_.MemberProperty{JsiiProperty: "layerIds", GoGetter: "LayerIds"},
-			_jsii_.MemberProperty{JsiiProperty: "layerIdsInput", GoGetter: "LayerIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "os", GoGetter: "Os"},
-			_jsii_.MemberProperty{JsiiProperty: "osInput", GoGetter: "OsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "platform", GoGetter: "Platform"},
-			_jsii_.MemberProperty{JsiiProperty: "privateDns", GoGetter: "PrivateDns"},
-			_jsii_.MemberProperty{JsiiProperty: "privateIp", GoGetter: "PrivateIp"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberProperty{JsiiProperty: "publicDns", GoGetter: "PublicDns"},
-			_jsii_.MemberProperty{JsiiProperty: "publicIp", GoGetter: "PublicIp"},
-			_jsii_.MemberMethod{JsiiMethod: "putEbsBlockDevice", GoMethod: "PutEbsBlockDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "putEphemeralBlockDevice", GoMethod: "PutEphemeralBlockDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "putRootBlockDevice", GoMethod: "PutRootBlockDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "registeredBy", GoGetter: "RegisteredBy"},
-			_jsii_.MemberProperty{JsiiProperty: "reportedAgentVersion", GoGetter: "ReportedAgentVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "reportedOsFamily", GoGetter: "ReportedOsFamily"},
-			_jsii_.MemberProperty{JsiiProperty: "reportedOsName", GoGetter: "ReportedOsName"},
-			_jsii_.MemberProperty{JsiiProperty: "reportedOsVersion", GoGetter: "ReportedOsVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAgentVersion", GoMethod: "ResetAgentVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAmiId", GoMethod: "ResetAmiId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArchitecture", GoMethod: "ResetArchitecture"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoScalingType", GoMethod: "ResetAutoScalingType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZone", GoMethod: "ResetAvailabilityZone"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreatedAt", GoMethod: "ResetCreatedAt"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteEbs", GoMethod: "ResetDeleteEbs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteEip", GoMethod: "ResetDeleteEip"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsBlockDevice", GoMethod: "ResetEbsBlockDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEbsOptimized", GoMethod: "ResetEbsOptimized"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEcsClusterArn", GoMethod: "ResetEcsClusterArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetElasticIp", GoMethod: "ResetElasticIp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralBlockDevice", GoMethod: "ResetEphemeralBlockDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHostname", GoMethod: "ResetHostname"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInfrastructureClass", GoMethod: "ResetInfrastructureClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstallUpdatesOnBoot", GoMethod: "ResetInstallUpdatesOnBoot"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceProfileArn", GoMethod: "ResetInstanceProfileArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceType", GoMethod: "ResetInstanceType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOs", GoMethod: "ResetOs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRootBlockDevice", GoMethod: "ResetRootBlockDevice"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRootDeviceType", GoMethod: "ResetRootDeviceType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSshKeyName", GoMethod: "ResetSshKeyName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetState", GoMethod: "ResetState"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatus", GoMethod: "ResetStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTenancy", GoMethod: "ResetTenancy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVirtualizationType", GoMethod: "ResetVirtualizationType"},
-			_jsii_.MemberProperty{JsiiProperty: "rootBlockDevice", GoGetter: "RootBlockDevice"},
-			_jsii_.MemberProperty{JsiiProperty: "rootBlockDeviceInput", GoGetter: "RootBlockDeviceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDeviceType", GoGetter: "RootDeviceType"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDeviceTypeInput", GoGetter: "RootDeviceTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rootDeviceVolumeId", GoGetter: "RootDeviceVolumeId"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sshHostDsaKeyFingerprint", GoGetter: "SshHostDsaKeyFingerprint"},
-			_jsii_.MemberProperty{JsiiProperty: "sshHostRsaKeyFingerprint", GoGetter: "SshHostRsaKeyFingerprint"},
-			_jsii_.MemberProperty{JsiiProperty: "sshKeyName", GoGetter: "SshKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "sshKeyNameInput", GoGetter: "SshKeyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "stackId", GoGetter: "StackId"},
-			_jsii_.MemberProperty{JsiiProperty: "stackIdInput", GoGetter: "StackIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberProperty{JsiiProperty: "stateInput", GoGetter: "StateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tenancy", GoGetter: "Tenancy"},
-			_jsii_.MemberProperty{JsiiProperty: "tenancyInput", GoGetter: "TenancyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualizationType", GoGetter: "VirtualizationType"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualizationTypeInput", GoGetter: "VirtualizationTypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceConfig",
-		reflect.TypeOf((*OpsworksInstanceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDevice",
-		reflect.TypeOf((*OpsworksInstanceEbsBlockDevice)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
-		reflect.TypeOf((*OpsworksInstanceEbsBlockDeviceList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceEbsBlockDeviceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
-		reflect.TypeOf((*OpsworksInstanceEbsBlockDeviceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteOnTermination", GoGetter: "DeleteOnTermination"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteOnTerminationInput", GoGetter: "DeleteOnTerminationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceName", GoGetter: "DeviceName"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceNameInput", GoGetter: "DeviceNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteOnTermination", GoMethod: "ResetDeleteOnTermination"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotId", GoMethod: "ResetSnapshotId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumeSize", GoMethod: "ResetVolumeSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumeType", GoMethod: "ResetVolumeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotId", GoGetter: "SnapshotId"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotIdInput", GoGetter: "SnapshotIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeSizeInput", GoGetter: "VolumeSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDevice",
-		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDevice)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
-		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDeviceList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceEphemeralBlockDeviceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
-		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDeviceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceName", GoGetter: "DeviceName"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceNameInput", GoGetter: "DeviceNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualNameInput", GoGetter: "VirtualNameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceEphemeralBlockDeviceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDevice",
-		reflect.TypeOf((*OpsworksInstanceRootBlockDevice)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
-		reflect.TypeOf((*OpsworksInstanceRootBlockDeviceList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceRootBlockDeviceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
-		reflect.TypeOf((*OpsworksInstanceRootBlockDeviceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteOnTermination", GoGetter: "DeleteOnTermination"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteOnTerminationInput", GoGetter: "DeleteOnTerminationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
-			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteOnTermination", GoMethod: "ResetDeleteOnTermination"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumeSize", GoMethod: "ResetVolumeSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumeType", GoMethod: "ResetVolumeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeSizeInput", GoGetter: "VolumeSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceTimeouts",
-		reflect.TypeOf((*OpsworksInstanceTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*OpsworksInstanceTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_OpsworksInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
+func NewOpsworksInstance_Override(o OpsworksInstance, scope constructs.Construct, id *string, config *OpsworksInstanceConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.opsworksInstance.OpsworksInstance",
+		[]interface{}{scope, id, config},
+		o,
 	)
 }
+
+func (j *jsiiProxy_OpsworksInstance)SetAgentVersion(val *string) {
+	if err := j.validateSetAgentVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"agentVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetAmiId(val *string) {
+	if err := j.validateSetAmiIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"amiId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetAutoScalingType(val *string) {
+	if err := j.validateSetAutoScalingTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoScalingType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityZone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetCreatedAt(val *string) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createdAt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetDeleteEbs(val interface{}) {
+	if err := j.validateSetDeleteEbsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteEbs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetDeleteEip(val interface{}) {
+	if err := j.validateSetDeleteEipParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteEip",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetEbsOptimized(val interface{}) {
+	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebsOptimized",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetEcsClusterArn(val *string) {
+	if err := j.validateSetEcsClusterArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ecsClusterArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetElasticIp(val *string) {
+	if err := j.validateSetElasticIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetInfrastructureClass(val *string) {
+	if err := j.validateSetInfrastructureClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"infrastructureClass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetInstallUpdatesOnBoot(val interface{}) {
+	if err := j.validateSetInstallUpdatesOnBootParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"installUpdatesOnBoot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetInstanceProfileArn(val *string) {
+	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceProfileArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetLayerIds(val *[]*string) {
+	if err := j.validateSetLayerIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"layerIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetOs(val *string) {
+	if err := j.validateSetOsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"os",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetRootDeviceType(val *string) {
+	if err := j.validateSetRootDeviceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rootDeviceType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetSshKeyName(val *string) {
+	if err := j.validateSetSshKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sshKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetStackId(val *string) {
+	if err := j.validateSetStackIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetTenancy(val *string) {
+	if err := j.validateSetTenancyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tenancy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksInstance)SetVirtualizationType(val *string) {
+	if err := j.validateSetVirtualizationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualizationType",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func OpsworksInstance_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksInstance_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.opsworksInstance.OpsworksInstance",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksInstance_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksInstance_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.opsworksInstance.OpsworksInstance",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksInstance_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksInstance_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.opsworksInstance.OpsworksInstance",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func OpsworksInstance_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.opsworksInstance.OpsworksInstance",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		o,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		o,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) PutEbsBlockDevice(value interface{}) {
+	if err := o.validatePutEbsBlockDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEbsBlockDevice",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) PutEphemeralBlockDevice(value interface{}) {
+	if err := o.validatePutEphemeralBlockDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEphemeralBlockDevice",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) PutRootBlockDevice(value interface{}) {
+	if err := o.validatePutRootBlockDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRootBlockDevice",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) PutTimeouts(value *OpsworksInstanceTimeouts) {
+	if err := o.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetAgentVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAgentVersion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetAmiId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmiId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetAutoScalingType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoScalingType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetAvailabilityZone() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAvailabilityZone",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetCreatedAt() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCreatedAt",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetDeleteEbs() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDeleteEbs",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetDeleteEip() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDeleteEip",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetEbsBlockDevice() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEbsBlockDevice",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetEbsOptimized() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEbsOptimized",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetEcsClusterArn() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEcsClusterArn",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetElasticIp() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetElasticIp",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetEphemeralBlockDevice() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEphemeralBlockDevice",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetHostname() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetInfrastructureClass() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInfrastructureClass",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetInstallUpdatesOnBoot() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstallUpdatesOnBoot",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetInstanceProfileArn() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceProfileArn",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetInstanceType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetOs() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOs",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetRootBlockDevice() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRootBlockDevice",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetRootDeviceType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRootDeviceType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetSshKeyName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSshKeyName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetState() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetStatus() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetSubnetId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetTenancy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTenancy",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) ResetVirtualizationType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVirtualizationType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksInstance) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksInstance) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,359 +1,1153 @@
 package elastictranscoderpipeline
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/elastictranscoderpipeline/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
+type ElastictranscoderPipeline interface {
+	cdktf.TerraformResource
+	Arn() *string
+	AwsKmsKeyArn() *string
+	SetAwsKmsKeyArn(val *string)
+	AwsKmsKeyArnInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ContentConfig() ElastictranscoderPipelineContentConfigOutputReference
+	ContentConfigInput() *ElastictranscoderPipelineContentConfig
+	ContentConfigPermissions() ElastictranscoderPipelineContentConfigPermissionsList
+	ContentConfigPermissionsInput() interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InputBucket() *string
+	SetInputBucket(val *string)
+	InputBucketInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Notifications() ElastictranscoderPipelineNotificationsOutputReference
+	NotificationsInput() *ElastictranscoderPipelineNotifications
+	OutputBucket() *string
+	SetOutputBucket(val *string)
+	OutputBucketInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Role() *string
+	SetRole(val *string)
+	RoleInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	ThumbnailConfig() ElastictranscoderPipelineThumbnailConfigOutputReference
+	ThumbnailConfigInput() *ElastictranscoderPipelineThumbnailConfig
+	ThumbnailConfigPermissions() ElastictranscoderPipelineThumbnailConfigPermissionsList
+	ThumbnailConfigPermissionsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutContentConfig(value *ElastictranscoderPipelineContentConfig)
+	PutContentConfigPermissions(value interface{})
+	PutNotifications(value *ElastictranscoderPipelineNotifications)
+	PutThumbnailConfig(value *ElastictranscoderPipelineThumbnailConfig)
+	PutThumbnailConfigPermissions(value interface{})
+	ResetAwsKmsKeyArn()
+	ResetContentConfig()
+	ResetContentConfigPermissions()
+	ResetId()
+	ResetName()
+	ResetNotifications()
+	ResetOutputBucket()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetThumbnailConfig()
+	ResetThumbnailConfigPermissions()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ElastictranscoderPipeline
+type jsiiProxy_ElastictranscoderPipeline struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) AwsKmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsKmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) AwsKmsKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsKmsKeyArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfig() ElastictranscoderPipelineContentConfigOutputReference {
+	var returns ElastictranscoderPipelineContentConfigOutputReference
+	_jsii_.Get(
+		j,
+		"contentConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigInput() *ElastictranscoderPipelineContentConfig {
+	var returns *ElastictranscoderPipelineContentConfig
+	_jsii_.Get(
+		j,
+		"contentConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigPermissions() ElastictranscoderPipelineContentConfigPermissionsList {
+	var returns ElastictranscoderPipelineContentConfigPermissionsList
+	_jsii_.Get(
+		j,
+		"contentConfigPermissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigPermissionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentConfigPermissionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) InputBucket() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputBucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) InputBucketInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputBucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Notifications() ElastictranscoderPipelineNotificationsOutputReference {
+	var returns ElastictranscoderPipelineNotificationsOutputReference
+	_jsii_.Get(
+		j,
+		"notifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) NotificationsInput() *ElastictranscoderPipelineNotifications {
+	var returns *ElastictranscoderPipelineNotifications
+	_jsii_.Get(
+		j,
+		"notificationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) OutputBucket() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputBucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) OutputBucketInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputBucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) RoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfig() ElastictranscoderPipelineThumbnailConfigOutputReference {
+	var returns ElastictranscoderPipelineThumbnailConfigOutputReference
+	_jsii_.Get(
+		j,
+		"thumbnailConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigInput() *ElastictranscoderPipelineThumbnailConfig {
+	var returns *ElastictranscoderPipelineThumbnailConfig
+	_jsii_.Get(
+		j,
+		"thumbnailConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissions() ElastictranscoderPipelineThumbnailConfigPermissionsList {
+	var returns ElastictranscoderPipelineThumbnailConfigPermissionsList
+	_jsii_.Get(
+		j,
+		"thumbnailConfigPermissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"thumbnailConfigPermissionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
+func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) ElastictranscoderPipeline {
+	_init_.Initialize()
+
+	if err := validateNewElastictranscoderPipelineParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_ElastictranscoderPipeline{}
+
+	_jsii_.Create(
 		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
-		reflect.TypeOf((*ElastictranscoderPipeline)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "awsKmsKeyArn", GoGetter: "AwsKmsKeyArn"},
-			_jsii_.MemberProperty{JsiiProperty: "awsKmsKeyArnInput", GoGetter: "AwsKmsKeyArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "contentConfig", GoGetter: "ContentConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "contentConfigInput", GoGetter: "ContentConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "contentConfigPermissions", GoGetter: "ContentConfigPermissions"},
-			_jsii_.MemberProperty{JsiiProperty: "contentConfigPermissionsInput", GoGetter: "ContentConfigPermissionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inputBucket", GoGetter: "InputBucket"},
-			_jsii_.MemberProperty{JsiiProperty: "inputBucketInput", GoGetter: "InputBucketInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "notifications", GoGetter: "Notifications"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationsInput", GoGetter: "NotificationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "outputBucket", GoGetter: "OutputBucket"},
-			_jsii_.MemberProperty{JsiiProperty: "outputBucketInput", GoGetter: "OutputBucketInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putContentConfig", GoMethod: "PutContentConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putContentConfigPermissions", GoMethod: "PutContentConfigPermissions"},
-			_jsii_.MemberMethod{JsiiMethod: "putNotifications", GoMethod: "PutNotifications"},
-			_jsii_.MemberMethod{JsiiMethod: "putThumbnailConfig", GoMethod: "PutThumbnailConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putThumbnailConfigPermissions", GoMethod: "PutThumbnailConfigPermissions"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAwsKmsKeyArn", GoMethod: "ResetAwsKmsKeyArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContentConfig", GoMethod: "ResetContentConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContentConfigPermissions", GoMethod: "ResetContentConfigPermissions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotifications", GoMethod: "ResetNotifications"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOutputBucket", GoMethod: "ResetOutputBucket"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThumbnailConfig", GoMethod: "ResetThumbnailConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThumbnailConfigPermissions", GoMethod: "ResetThumbnailConfigPermissions"},
-			_jsii_.MemberProperty{JsiiProperty: "role", GoGetter: "Role"},
-			_jsii_.MemberProperty{JsiiProperty: "roleInput", GoGetter: "RoleInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "thumbnailConfig", GoGetter: "ThumbnailConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "thumbnailConfigInput", GoGetter: "ThumbnailConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "thumbnailConfigPermissions", GoGetter: "ThumbnailConfigPermissions"},
-			_jsii_.MemberProperty{JsiiProperty: "thumbnailConfigPermissionsInput", GoGetter: "ThumbnailConfigPermissionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipeline{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig",
-		reflect.TypeOf((*ElastictranscoderPipelineConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucket", GoMethod: "ResetBucket"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageClass", GoMethod: "ResetStorageClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClass", GoGetter: "StorageClass"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClassInput", GoGetter: "StorageClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineContentConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsList",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissionsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineContentConfigPermissionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
-			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "grantee", GoGetter: "Grantee"},
-			_jsii_.MemberProperty{JsiiProperty: "granteeInput", GoGetter: "GranteeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "granteeType", GoGetter: "GranteeType"},
-			_jsii_.MemberProperty{JsiiProperty: "granteeTypeInput", GoGetter: "GranteeTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGrantee", GoMethod: "ResetGrantee"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGranteeType", GoMethod: "ResetGranteeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineContentConfigPermissionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications",
-		reflect.TypeOf((*ElastictranscoderPipelineNotifications)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineNotificationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "completed", GoGetter: "Completed"},
-			_jsii_.MemberProperty{JsiiProperty: "completedInput", GoGetter: "CompletedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "error", GoGetter: "Error"},
-			_jsii_.MemberProperty{JsiiProperty: "errorInput", GoGetter: "ErrorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "progressing", GoGetter: "Progressing"},
-			_jsii_.MemberProperty{JsiiProperty: "progressingInput", GoGetter: "ProgressingInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCompleted", GoMethod: "ResetCompleted"},
-			_jsii_.MemberMethod{JsiiMethod: "resetError", GoMethod: "ResetError"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProgressing", GoMethod: "ResetProgressing"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWarning", GoMethod: "ResetWarning"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "warning", GoGetter: "Warning"},
-			_jsii_.MemberProperty{JsiiProperty: "warningInput", GoGetter: "WarningInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
-			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBucket", GoMethod: "ResetBucket"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageClass", GoMethod: "ResetStorageClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClass", GoGetter: "StorageClass"},
-			_jsii_.MemberProperty{JsiiProperty: "storageClassInput", GoGetter: "StorageClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissionsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
-			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "grantee", GoGetter: "Grantee"},
-			_jsii_.MemberProperty{JsiiProperty: "granteeInput", GoGetter: "GranteeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "granteeType", GoGetter: "GranteeType"},
-			_jsii_.MemberProperty{JsiiProperty: "granteeTypeInput", GoGetter: "GranteeTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGrantee", GoMethod: "ResetGrantee"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGranteeType", GoMethod: "ResetGranteeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
+func NewElastictranscoderPipeline_Override(e ElastictranscoderPipeline, scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		[]interface{}{scope, id, config},
+		e,
 	)
 }
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetAwsKmsKeyArn(val *string) {
+	if err := j.validateSetAwsKmsKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsKmsKeyArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetInputBucket(val *string) {
+	if err := j.validateSetInputBucketParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputBucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetOutputBucket(val *string) {
+	if err := j.validateSetOutputBucketParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outputBucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"role",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ElastictranscoderPipeline_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElastictranscoderPipeline_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ElastictranscoderPipeline_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElastictranscoderPipeline_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ElastictranscoderPipeline_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElastictranscoderPipeline_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ElastictranscoderPipeline_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		e,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		e,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		e,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		e,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		e,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		e,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) PutContentConfig(value *ElastictranscoderPipelineContentConfig) {
+	if err := e.validatePutContentConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putContentConfig",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) PutContentConfigPermissions(value interface{}) {
+	if err := e.validatePutContentConfigPermissionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putContentConfigPermissions",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) PutNotifications(value *ElastictranscoderPipelineNotifications) {
+	if err := e.validatePutNotificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putNotifications",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) PutThumbnailConfig(value *ElastictranscoderPipelineThumbnailConfig) {
+	if err := e.validatePutThumbnailConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putThumbnailConfig",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) PutThumbnailConfigPermissions(value interface{}) {
+	if err := e.validatePutThumbnailConfigPermissionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putThumbnailConfigPermissions",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetAwsKmsKeyArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAwsKmsKeyArn",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetContentConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetContentConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetContentConfigPermissions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetContentConfigPermissions",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetName() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetNotifications() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNotifications",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetOutputBucket() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOutputBucket",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetThumbnailConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetThumbnailConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetThumbnailConfigPermissions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetThumbnailConfigPermissions",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		e,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

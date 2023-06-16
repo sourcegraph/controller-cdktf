@@ -1,712 +1,1348 @@
 package containerazurecluster
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/containerazurecluster/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/container_azure_cluster google_container_azure_cluster}.
+type ContainerAzureCluster interface {
+	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
+	Authorization() ContainerAzureClusterAuthorizationOutputReference
+	AuthorizationInput() *ContainerAzureClusterAuthorization
+	AzureRegion() *string
+	SetAzureRegion(val *string)
+	AzureRegionInput() *string
+	AzureServicesAuthentication() ContainerAzureClusterAzureServicesAuthenticationOutputReference
+	AzureServicesAuthenticationInput() *ContainerAzureClusterAzureServicesAuthentication
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	Client() *string
+	SetClient(val *string)
+	ClientInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlane() ContainerAzureClusterControlPlaneOutputReference
+	ControlPlaneInput() *ContainerAzureClusterControlPlane
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreateTime() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	Endpoint() *string
+	Etag() *string
+	Fleet() ContainerAzureClusterFleetOutputReference
+	FleetInput() *ContainerAzureClusterFleet
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Networking() ContainerAzureClusterNetworkingOutputReference
+	NetworkingInput() *ContainerAzureClusterNetworking
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Reconciling() cdktf.IResolvable
+	ResourceGroupId() *string
+	SetResourceGroupId(val *string)
+	ResourceGroupIdInput() *string
+	State() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() ContainerAzureClusterTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Uid() *string
+	UpdateTime() *string
+	WorkloadIdentityConfig() ContainerAzureClusterWorkloadIdentityConfigList
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAuthorization(value *ContainerAzureClusterAuthorization)
+	PutAzureServicesAuthentication(value *ContainerAzureClusterAzureServicesAuthentication)
+	PutControlPlane(value *ContainerAzureClusterControlPlane)
+	PutFleet(value *ContainerAzureClusterFleet)
+	PutNetworking(value *ContainerAzureClusterNetworking)
+	PutTimeouts(value *ContainerAzureClusterTimeouts)
+	ResetAnnotations()
+	ResetAzureServicesAuthentication()
+	ResetClient()
+	ResetDescription()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ContainerAzureCluster
+type jsiiProxy_ContainerAzureCluster struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Authorization() ContainerAzureClusterAuthorizationOutputReference {
+	var returns ContainerAzureClusterAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"authorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AuthorizationInput() *ContainerAzureClusterAuthorization {
+	var returns *ContainerAzureClusterAuthorization
+	_jsii_.Get(
+		j,
+		"authorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AzureRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AzureRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AzureServicesAuthentication() ContainerAzureClusterAzureServicesAuthenticationOutputReference {
+	var returns ContainerAzureClusterAzureServicesAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"azureServicesAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AzureServicesAuthenticationInput() *ContainerAzureClusterAzureServicesAuthentication {
+	var returns *ContainerAzureClusterAzureServicesAuthentication
+	_jsii_.Get(
+		j,
+		"azureServicesAuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Client() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"client",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ClientInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ControlPlane() ContainerAzureClusterControlPlaneOutputReference {
+	var returns ContainerAzureClusterControlPlaneOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlane",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ControlPlaneInput() *ContainerAzureClusterControlPlane {
+	var returns *ContainerAzureClusterControlPlane
+	_jsii_.Get(
+		j,
+		"controlPlaneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Fleet() ContainerAzureClusterFleetOutputReference {
+	var returns ContainerAzureClusterFleetOutputReference
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) FleetInput() *ContainerAzureClusterFleet {
+	var returns *ContainerAzureClusterFleet
+	_jsii_.Get(
+		j,
+		"fleetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Networking() ContainerAzureClusterNetworkingOutputReference {
+	var returns ContainerAzureClusterNetworkingOutputReference
+	_jsii_.Get(
+		j,
+		"networking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) NetworkingInput() *ContainerAzureClusterNetworking {
+	var returns *ContainerAzureClusterNetworking
+	_jsii_.Get(
+		j,
+		"networkingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Reconciling() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"reconciling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ResourceGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceGroupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) ResourceGroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Timeouts() ContainerAzureClusterTimeoutsOutputReference {
+	var returns ContainerAzureClusterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) Uid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) WorkloadIdentityConfig() ContainerAzureClusterWorkloadIdentityConfigList {
+	var returns ContainerAzureClusterWorkloadIdentityConfigList
+	_jsii_.Get(
+		j,
+		"workloadIdentityConfig",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
+func NewContainerAzureCluster(scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) ContainerAzureCluster {
+	_init_.Initialize()
+
+	if err := validateNewContainerAzureClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_ContainerAzureCluster{}
+
+	_jsii_.Create(
 		"google.containerAzureCluster.ContainerAzureCluster",
-		reflect.TypeOf((*ContainerAzureCluster)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
-			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authorization", GoGetter: "Authorization"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizationInput", GoGetter: "AuthorizationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "azureRegion", GoGetter: "AzureRegion"},
-			_jsii_.MemberProperty{JsiiProperty: "azureRegionInput", GoGetter: "AzureRegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "client", GoGetter: "Client"},
-			_jsii_.MemberProperty{JsiiProperty: "clientInput", GoGetter: "ClientInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "controlPlane", GoGetter: "ControlPlane"},
-			_jsii_.MemberProperty{JsiiProperty: "controlPlaneInput", GoGetter: "ControlPlaneInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "etag", GoGetter: "Etag"},
-			_jsii_.MemberProperty{JsiiProperty: "fleet", GoGetter: "Fleet"},
-			_jsii_.MemberProperty{JsiiProperty: "fleetInput", GoGetter: "FleetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "networking", GoGetter: "Networking"},
-			_jsii_.MemberProperty{JsiiProperty: "networkingInput", GoGetter: "NetworkingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAuthorization", GoMethod: "PutAuthorization"},
-			_jsii_.MemberMethod{JsiiMethod: "putControlPlane", GoMethod: "PutControlPlane"},
-			_jsii_.MemberMethod{JsiiMethod: "putFleet", GoMethod: "PutFleet"},
-			_jsii_.MemberMethod{JsiiMethod: "putNetworking", GoMethod: "PutNetworking"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupId", GoGetter: "ResourceGroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupIdInput", GoGetter: "ResourceGroupIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
-			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityConfig", GoGetter: "WorkloadIdentityConfig"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorization",
-		reflect.TypeOf((*ContainerAzureClusterAuthorization)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsers",
-		reflect.TypeOf((*ContainerAzureClusterAuthorizationAdminUsers)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersList",
-		reflect.TypeOf((*ContainerAzureClusterAuthorizationAdminUsersList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterAuthorizationAdminUsersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
-			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterAuthorizationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "adminUsers", GoGetter: "AdminUsers"},
-			_jsii_.MemberProperty{JsiiProperty: "adminUsersInput", GoGetter: "AdminUsersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putAdminUsers", GoMethod: "PutAdminUsers"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterAuthorizationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterConfig",
-		reflect.TypeOf((*ContainerAzureClusterConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlane",
-		reflect.TypeOf((*ContainerAzureClusterControlPlane)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryption",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneDatabaseEncryption)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "keyId", GoGetter: "KeyId"},
-			_jsii_.MemberProperty{JsiiProperty: "keyIdInput", GoGetter: "KeyIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolume",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneMainVolume)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolumeOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneMainVolumeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSizeGib", GoMethod: "ResetSizeGib"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeGib", GoGetter: "SizeGib"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeGibInput", GoGetter: "SizeGibInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseEncryption", GoGetter: "DatabaseEncryption"},
-			_jsii_.MemberProperty{JsiiProperty: "databaseEncryptionInput", GoGetter: "DatabaseEncryptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mainVolume", GoGetter: "MainVolume"},
-			_jsii_.MemberProperty{JsiiProperty: "mainVolumeInput", GoGetter: "MainVolumeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyConfig", GoGetter: "ProxyConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyConfigInput", GoGetter: "ProxyConfigInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putDatabaseEncryption", GoMethod: "PutDatabaseEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "putMainVolume", GoMethod: "PutMainVolume"},
-			_jsii_.MemberMethod{JsiiMethod: "putProxyConfig", GoMethod: "PutProxyConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putReplicaPlacements", GoMethod: "PutReplicaPlacements"},
-			_jsii_.MemberMethod{JsiiMethod: "putRootVolume", GoMethod: "PutRootVolume"},
-			_jsii_.MemberMethod{JsiiMethod: "putSshConfig", GoMethod: "PutSshConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "replicaPlacements", GoGetter: "ReplicaPlacements"},
-			_jsii_.MemberProperty{JsiiProperty: "replicaPlacementsInput", GoGetter: "ReplicaPlacementsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseEncryption", GoMethod: "ResetDatabaseEncryption"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainVolume", GoMethod: "ResetMainVolume"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyConfig", GoMethod: "ResetProxyConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplicaPlacements", GoMethod: "ResetReplicaPlacements"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRootVolume", GoMethod: "ResetRootVolume"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVmSize", GoMethod: "ResetVmSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rootVolume", GoGetter: "RootVolume"},
-			_jsii_.MemberProperty{JsiiProperty: "rootVolumeInput", GoGetter: "RootVolumeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sshConfig", GoGetter: "SshConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "sshConfigInput", GoGetter: "SshConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
-			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vmSize", GoGetter: "VmSize"},
-			_jsii_.MemberProperty{JsiiProperty: "vmSizeInput", GoGetter: "VmSizeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfig",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneProxyConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneProxyConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupId", GoGetter: "ResourceGroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupIdInput", GoGetter: "ResourceGroupIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "secretId", GoGetter: "SecretId"},
-			_jsii_.MemberProperty{JsiiProperty: "secretIdInput", GoGetter: "SecretIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacements",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneReplicaPlacements)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsList",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneReplicaPlacementsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "azureAvailabilityZone", GoGetter: "AzureAvailabilityZone"},
-			_jsii_.MemberProperty{JsiiProperty: "azureAvailabilityZoneInput", GoGetter: "AzureAvailabilityZoneInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolume",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneRootVolume)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolumeOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneRootVolumeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSizeGib", GoMethod: "ResetSizeGib"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeGib", GoGetter: "SizeGib"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeGibInput", GoGetter: "SizeGibInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneRootVolumeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfig",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneSshConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterControlPlaneSshConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authorizedKey", GoGetter: "AuthorizedKey"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizedKeyInput", GoGetter: "AuthorizedKeyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterFleet",
-		reflect.TypeOf((*ContainerAzureClusterFleet)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterFleetOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterFleetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "membership", GoGetter: "Membership"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterFleetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterNetworking",
-		reflect.TypeOf((*ContainerAzureClusterNetworking)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterNetworkingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "podAddressCidrBlocks", GoGetter: "PodAddressCidrBlocks"},
-			_jsii_.MemberProperty{JsiiProperty: "podAddressCidrBlocksInput", GoGetter: "PodAddressCidrBlocksInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAddressCidrBlocks", GoGetter: "ServiceAddressCidrBlocks"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAddressCidrBlocksInput", GoGetter: "ServiceAddressCidrBlocksInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkId", GoGetter: "VirtualNetworkId"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIdInput", GoGetter: "VirtualNetworkIdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterNetworkingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterTimeouts",
-		reflect.TypeOf((*ContainerAzureClusterTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterTimeoutsOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfig",
-		reflect.TypeOf((*ContainerAzureClusterWorkloadIdentityConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigList",
-		reflect.TypeOf((*ContainerAzureClusterWorkloadIdentityConfigList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterWorkloadIdentityConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
-		reflect.TypeOf((*ContainerAzureClusterWorkloadIdentityConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "identityProvider", GoGetter: "IdentityProvider"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "issuerUri", GoGetter: "IssuerUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "workloadPool", GoGetter: "WorkloadPool"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerAzureClusterWorkloadIdentityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
+func NewContainerAzureCluster_Override(c ContainerAzureCluster, scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.containerAzureCluster.ContainerAzureCluster",
+		[]interface{}{scope, id, config},
+		c,
 	)
 }
+
+func (j *jsiiProxy_ContainerAzureCluster)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetAzureRegion(val *string) {
+	if err := j.validateSetAzureRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"azureRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetClient(val *string) {
+	if err := j.validateSetClientParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"client",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureCluster)SetResourceGroupId(val *string) {
+	if err := j.validateSetResourceGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceGroupId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ContainerAzureCluster_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateContainerAzureCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.containerAzureCluster.ContainerAzureCluster",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateContainerAzureCluster_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.containerAzureCluster.ContainerAzureCluster",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateContainerAzureCluster_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.containerAzureCluster.ContainerAzureCluster",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ContainerAzureCluster_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.containerAzureCluster.ContainerAzureCluster",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) PutAuthorization(value *ContainerAzureClusterAuthorization) {
+	if err := c.validatePutAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAuthorization",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) PutAzureServicesAuthentication(value *ContainerAzureClusterAzureServicesAuthentication) {
+	if err := c.validatePutAzureServicesAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAzureServicesAuthentication",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) PutControlPlane(value *ContainerAzureClusterControlPlane) {
+	if err := c.validatePutControlPlaneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putControlPlane",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) PutFleet(value *ContainerAzureClusterFleet) {
+	if err := c.validatePutFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFleet",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) PutNetworking(value *ContainerAzureClusterNetworking) {
+	if err := c.validatePutNetworkingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworking",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) PutTimeouts(value *ContainerAzureClusterTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetAzureServicesAuthentication() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAzureServicesAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetClient() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClient",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetDescription() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetProject() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

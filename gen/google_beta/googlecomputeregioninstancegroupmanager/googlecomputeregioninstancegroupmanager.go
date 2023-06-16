@@ -1,834 +1,1693 @@
 package googlecomputeregioninstancegroupmanager
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregioninstancegroupmanager/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+type GoogleComputeRegionInstanceGroupManager interface {
+	cdktf.TerraformResource
+	AllInstancesConfig() GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
+	AllInstancesConfigInput() *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig
+	AutoHealingPolicies() GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference
+	AutoHealingPoliciesInput() *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies
+	BaseInstanceName() *string
+	SetBaseInstanceName(val *string)
+	BaseInstanceNameInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DistributionPolicyTargetShape() *string
+	SetDistributionPolicyTargetShape(val *string)
+	DistributionPolicyTargetShapeInput() *string
+	DistributionPolicyZones() *[]*string
+	SetDistributionPolicyZones(val *[]*string)
+	DistributionPolicyZonesInput() *[]*string
+	Fingerprint() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InstanceGroup() *string
+	InstanceLifecyclePolicy() GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
+	InstanceLifecyclePolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListManagedInstancesResults() *string
+	SetListManagedInstancesResults(val *string)
+	ListManagedInstancesResultsInput() *string
+	Name() *string
+	SetName(val *string)
+	NamedPort() GoogleComputeRegionInstanceGroupManagerNamedPortList
+	NamedPortInput() interface{}
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	SelfLink() *string
+	StatefulDisk() GoogleComputeRegionInstanceGroupManagerStatefulDiskList
+	StatefulDiskInput() interface{}
+	StatefulExternalIp() GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
+	StatefulExternalIpInput() interface{}
+	StatefulInternalIp() GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList
+	StatefulInternalIpInput() interface{}
+	Status() GoogleComputeRegionInstanceGroupManagerStatusList
+	TargetPools() *[]*string
+	SetTargetPools(val *[]*string)
+	TargetPoolsInput() *[]*string
+	TargetSize() *float64
+	SetTargetSize(val *float64)
+	TargetSizeInput() *float64
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleComputeRegionInstanceGroupManagerTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	UpdatePolicy() GoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference
+	UpdatePolicyInput() *GoogleComputeRegionInstanceGroupManagerUpdatePolicy
+	Version() GoogleComputeRegionInstanceGroupManagerVersionList
+	VersionInput() interface{}
+	WaitForInstances() interface{}
+	SetWaitForInstances(val interface{})
+	WaitForInstancesInput() interface{}
+	WaitForInstancesStatus() *string
+	SetWaitForInstancesStatus(val *string)
+	WaitForInstancesStatusInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAllInstancesConfig(value *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig)
+	PutAutoHealingPolicies(value *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies)
+	PutInstanceLifecyclePolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
+	PutNamedPort(value interface{})
+	PutStatefulDisk(value interface{})
+	PutStatefulExternalIp(value interface{})
+	PutStatefulInternalIp(value interface{})
+	PutTimeouts(value *GoogleComputeRegionInstanceGroupManagerTimeouts)
+	PutUpdatePolicy(value *GoogleComputeRegionInstanceGroupManagerUpdatePolicy)
+	PutVersion(value interface{})
+	ResetAllInstancesConfig()
+	ResetAutoHealingPolicies()
+	ResetDescription()
+	ResetDistributionPolicyTargetShape()
+	ResetDistributionPolicyZones()
+	ResetId()
+	ResetInstanceLifecyclePolicy()
+	ResetListManagedInstancesResults()
+	ResetNamedPort()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetRegion()
+	ResetStatefulDisk()
+	ResetStatefulExternalIp()
+	ResetStatefulInternalIp()
+	ResetTargetPools()
+	ResetTargetSize()
+	ResetTimeouts()
+	ResetUpdatePolicy()
+	ResetWaitForInstances()
+	ResetWaitForInstancesStatus()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleComputeRegionInstanceGroupManager
+type jsiiProxy_GoogleComputeRegionInstanceGroupManager struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) AllInstancesConfig() GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"allInstancesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) AllInstancesConfigInput() *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig {
+	var returns *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig
+	_jsii_.Get(
+		j,
+		"allInstancesConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) AutoHealingPolicies() GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference
+	_jsii_.Get(
+		j,
+		"autoHealingPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) AutoHealingPoliciesInput() *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies {
+	var returns *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies
+	_jsii_.Get(
+		j,
+		"autoHealingPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) BaseInstanceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseInstanceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) BaseInstanceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseInstanceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) DistributionPolicyTargetShape() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"distributionPolicyTargetShape",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) DistributionPolicyTargetShapeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"distributionPolicyTargetShapeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) DistributionPolicyZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"distributionPolicyZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) DistributionPolicyZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"distributionPolicyZonesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Fingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceLifecyclePolicy() GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceLifecyclePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceLifecyclePolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy {
+	var returns *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
+	_jsii_.Get(
+		j,
+		"instanceLifecyclePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ListManagedInstancesResults() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ListManagedInstancesResultsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResultsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) NamedPort() GoogleComputeRegionInstanceGroupManagerNamedPortList {
+	var returns GoogleComputeRegionInstanceGroupManagerNamedPortList
+	_jsii_.Get(
+		j,
+		"namedPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) NamedPortInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"namedPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulDisk() GoogleComputeRegionInstanceGroupManagerStatefulDiskList {
+	var returns GoogleComputeRegionInstanceGroupManagerStatefulDiskList
+	_jsii_.Get(
+		j,
+		"statefulDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulDiskInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulExternalIp() GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList {
+	var returns GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
+	_jsii_.Get(
+		j,
+		"statefulExternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulExternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulInternalIp() GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList {
+	var returns GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList
+	_jsii_.Get(
+		j,
+		"statefulInternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulInternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulInternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Status() GoogleComputeRegionInstanceGroupManagerStatusList {
+	var returns GoogleComputeRegionInstanceGroupManagerStatusList
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetPools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetPools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetPoolsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetPoolsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Timeouts() GoogleComputeRegionInstanceGroupManagerTimeoutsOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) UpdatePolicy() GoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"updatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) UpdatePolicyInput() *GoogleComputeRegionInstanceGroupManagerUpdatePolicy {
+	var returns *GoogleComputeRegionInstanceGroupManagerUpdatePolicy
+	_jsii_.Get(
+		j,
+		"updatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Version() GoogleComputeRegionInstanceGroupManagerVersionList {
+	var returns GoogleComputeRegionInstanceGroupManagerVersionList
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) VersionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"versionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) WaitForInstances() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) WaitForInstancesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) WaitForInstancesStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"waitForInstancesStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) WaitForInstancesStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"waitForInstancesStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+func NewGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceGroupManagerConfig) GoogleComputeRegionInstanceGroupManager {
+	_init_.Initialize()
+
+	if err := validateNewGoogleComputeRegionInstanceGroupManagerParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleComputeRegionInstanceGroupManager{}
+
+	_jsii_.Create(
 		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManager)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "allInstancesConfig", GoGetter: "AllInstancesConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "allInstancesConfigInput", GoGetter: "AllInstancesConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "autoHealingPolicies", GoGetter: "AutoHealingPolicies"},
-			_jsii_.MemberProperty{JsiiProperty: "autoHealingPoliciesInput", GoGetter: "AutoHealingPoliciesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "baseInstanceName", GoGetter: "BaseInstanceName"},
-			_jsii_.MemberProperty{JsiiProperty: "baseInstanceNameInput", GoGetter: "BaseInstanceNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "distributionPolicyTargetShape", GoGetter: "DistributionPolicyTargetShape"},
-			_jsii_.MemberProperty{JsiiProperty: "distributionPolicyTargetShapeInput", GoGetter: "DistributionPolicyTargetShapeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "distributionPolicyZones", GoGetter: "DistributionPolicyZones"},
-			_jsii_.MemberProperty{JsiiProperty: "distributionPolicyZonesInput", GoGetter: "DistributionPolicyZonesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fingerprint", GoGetter: "Fingerprint"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceGroup", GoGetter: "InstanceGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "namedPort", GoGetter: "NamedPort"},
-			_jsii_.MemberProperty{JsiiProperty: "namedPortInput", GoGetter: "NamedPortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAllInstancesConfig", GoMethod: "PutAllInstancesConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putAutoHealingPolicies", GoMethod: "PutAutoHealingPolicies"},
-			_jsii_.MemberMethod{JsiiMethod: "putNamedPort", GoMethod: "PutNamedPort"},
-			_jsii_.MemberMethod{JsiiMethod: "putStatefulDisk", GoMethod: "PutStatefulDisk"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putUpdatePolicy", GoMethod: "PutUpdatePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putVersion", GoMethod: "PutVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
-			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllInstancesConfig", GoMethod: "ResetAllInstancesConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoHealingPolicies", GoMethod: "ResetAutoHealingPolicies"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDistributionPolicyTargetShape", GoMethod: "ResetDistributionPolicyTargetShape"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDistributionPolicyZones", GoMethod: "ResetDistributionPolicyZones"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamedPort", GoMethod: "ResetNamedPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStatefulDisk", GoMethod: "ResetStatefulDisk"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetPools", GoMethod: "ResetTargetPools"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetSize", GoMethod: "ResetTargetSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdatePolicy", GoMethod: "ResetUpdatePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWaitForInstances", GoMethod: "ResetWaitForInstances"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWaitForInstancesStatus", GoMethod: "ResetWaitForInstancesStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberProperty{JsiiProperty: "statefulDisk", GoGetter: "StatefulDisk"},
-			_jsii_.MemberProperty{JsiiProperty: "statefulDiskInput", GoGetter: "StatefulDiskInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "targetPools", GoGetter: "TargetPools"},
-			_jsii_.MemberProperty{JsiiProperty: "targetPoolsInput", GoGetter: "TargetPoolsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSize", GoGetter: "TargetSize"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSizeInput", GoGetter: "TargetSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "updatePolicy", GoGetter: "UpdatePolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "updatePolicyInput", GoGetter: "UpdatePolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
-			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForInstances", GoGetter: "WaitForInstances"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForInstancesInput", GoGetter: "WaitForInstancesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForInstancesStatus", GoGetter: "WaitForInstancesStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForInstancesStatusInput", GoGetter: "WaitForInstancesStatusInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManager{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerAllInstancesConfig",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerAllInstancesConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
-			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetadata", GoMethod: "ResetMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "healthCheck", GoGetter: "HealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "healthCheckInput", GoGetter: "HealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "initialDelaySec", GoGetter: "InitialDelaySec"},
-			_jsii_.MemberProperty{JsiiProperty: "initialDelaySecInput", GoGetter: "InitialDelaySecInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerConfig",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerNamedPort",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerNamedPort)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerNamedPortList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerNamedPortList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerNamedPortList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerNamedPortOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerNamedPortOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerNamedPortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDisk",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatefulDisk)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDiskList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatefulDiskList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulDiskList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDiskOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatefulDiskOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteRule", GoGetter: "DeleteRule"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteRuleInput", GoGetter: "DeleteRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceName", GoGetter: "DeviceName"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceNameInput", GoGetter: "DeviceNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteRule", GoMethod: "ResetDeleteRule"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatus",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatus)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "effective", GoGetter: "Effective"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allInstancesConfig", GoGetter: "AllInstancesConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "isStable", GoGetter: "IsStable"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "stateful", GoGetter: "Stateful"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "versionTarget", GoGetter: "VersionTarget"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStateful",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusStateful)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusStatefulList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusStatefulList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hasStatefulConfig", GoGetter: "HasStatefulConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "perInstanceConfigs", GoGetter: "PerInstanceConfigs"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allEffective", GoGetter: "AllEffective"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTarget",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusVersionTarget)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "isReached", GoGetter: "IsReached"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerTimeouts",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerUpdatePolicy",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerUpdatePolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceRedistributionType", GoGetter: "InstanceRedistributionType"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceRedistributionTypeInput", GoGetter: "InstanceRedistributionTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxSurgeFixed", GoGetter: "MaxSurgeFixed"},
-			_jsii_.MemberProperty{JsiiProperty: "maxSurgeFixedInput", GoGetter: "MaxSurgeFixedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxSurgePercent", GoGetter: "MaxSurgePercent"},
-			_jsii_.MemberProperty{JsiiProperty: "maxSurgePercentInput", GoGetter: "MaxSurgePercentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUnavailableFixed", GoGetter: "MaxUnavailableFixed"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUnavailableFixedInput", GoGetter: "MaxUnavailableFixedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUnavailablePercent", GoGetter: "MaxUnavailablePercent"},
-			_jsii_.MemberProperty{JsiiProperty: "maxUnavailablePercentInput", GoGetter: "MaxUnavailablePercentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minimalAction", GoGetter: "MinimalAction"},
-			_jsii_.MemberProperty{JsiiProperty: "minimalActionInput", GoGetter: "MinimalActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minReadySec", GoGetter: "MinReadySec"},
-			_jsii_.MemberProperty{JsiiProperty: "minReadySecInput", GoGetter: "MinReadySecInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mostDisruptiveAllowedAction", GoGetter: "MostDisruptiveAllowedAction"},
-			_jsii_.MemberProperty{JsiiProperty: "mostDisruptiveAllowedActionInput", GoGetter: "MostDisruptiveAllowedActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replacementMethod", GoGetter: "ReplacementMethod"},
-			_jsii_.MemberProperty{JsiiProperty: "replacementMethodInput", GoGetter: "ReplacementMethodInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceRedistributionType", GoMethod: "ResetInstanceRedistributionType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxSurgeFixed", GoMethod: "ResetMaxSurgeFixed"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxSurgePercent", GoMethod: "ResetMaxSurgePercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxUnavailableFixed", GoMethod: "ResetMaxUnavailableFixed"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxUnavailablePercent", GoMethod: "ResetMaxUnavailablePercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinReadySec", GoMethod: "ResetMinReadySec"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMostDisruptiveAllowedAction", GoMethod: "ResetMostDisruptiveAllowedAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplacementMethod", GoMethod: "ResetReplacementMethod"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerVersion",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerVersion)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerVersionList",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerVersionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerVersionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerVersionOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerVersionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTemplate", GoGetter: "InstanceTemplate"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTemplateInput", GoGetter: "InstanceTemplateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putTargetSize", GoMethod: "PutTargetSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetSize", GoMethod: "ResetTargetSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSize", GoGetter: "TargetSize"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSizeInput", GoGetter: "TargetSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerVersionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerVersionTargetSize",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerVersionTargetSize)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fixed", GoGetter: "Fixed"},
-			_jsii_.MemberProperty{JsiiProperty: "fixedInput", GoGetter: "FixedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "percent", GoGetter: "Percent"},
-			_jsii_.MemberProperty{JsiiProperty: "percentInput", GoGetter: "PercentInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFixed", GoMethod: "ResetFixed"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPercent", GoMethod: "ResetPercent"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+func NewGoogleComputeRegionInstanceGroupManager_Override(g GoogleComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceGroupManagerConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetBaseInstanceName(val *string) {
+	if err := j.validateSetBaseInstanceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"baseInstanceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetDistributionPolicyTargetShape(val *string) {
+	if err := j.validateSetDistributionPolicyTargetShapeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"distributionPolicyTargetShape",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetDistributionPolicyZones(val *[]*string) {
+	if err := j.validateSetDistributionPolicyZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"distributionPolicyZones",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetListManagedInstancesResults(val *string) {
+	if err := j.validateSetListManagedInstancesResultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listManagedInstancesResults",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetTargetPools(val *[]*string) {
+	if err := j.validateSetTargetPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetPools",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetTargetSize(val *float64) {
+	if err := j.validateSetTargetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetWaitForInstances(val interface{}) {
+	if err := j.validateSetWaitForInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForInstances",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetWaitForInstancesStatus(val *string) {
+	if err := j.validateSetWaitForInstancesStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForInstancesStatus",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleComputeRegionInstanceGroupManager_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeRegionInstanceGroupManager_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeRegionInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeRegionInstanceGroupManager_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeRegionInstanceGroupManager_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeRegionInstanceGroupManager_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleComputeRegionInstanceGroupManager_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutAllInstancesConfig(value *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig) {
+	if err := g.validatePutAllInstancesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAllInstancesConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutAutoHealingPolicies(value *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies) {
+	if err := g.validatePutAutoHealingPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoHealingPolicies",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutInstanceLifecyclePolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) {
+	if err := g.validatePutInstanceLifecyclePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInstanceLifecyclePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutNamedPort(value interface{}) {
+	if err := g.validatePutNamedPortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNamedPort",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStatefulDisk(value interface{}) {
+	if err := g.validatePutStatefulDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulDisk",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStatefulExternalIp(value interface{}) {
+	if err := g.validatePutStatefulExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStatefulInternalIp(value interface{}) {
+	if err := g.validatePutStatefulInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulInternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutTimeouts(value *GoogleComputeRegionInstanceGroupManagerTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutUpdatePolicy(value *GoogleComputeRegionInstanceGroupManagerUpdatePolicy) {
+	if err := g.validatePutUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutVersion(value interface{}) {
+	if err := g.validatePutVersionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVersion",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetAllInstancesConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllInstancesConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetAutoHealingPolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoHealingPolicies",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetDistributionPolicyTargetShape() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDistributionPolicyTargetShape",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetDistributionPolicyZones() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDistributionPolicyZones",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetInstanceLifecyclePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceLifecyclePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetListManagedInstancesResults() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetListManagedInstancesResults",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetNamedPort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNamedPort",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulExternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulInternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulInternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetTargetPools() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetPools",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetTargetSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpdatePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetWaitForInstances() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWaitForInstances",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetWaitForInstancesStatus() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWaitForInstancesStatus",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

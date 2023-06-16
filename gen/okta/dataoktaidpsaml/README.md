@@ -1,3 +1,3 @@
 # `data_okta_idp_saml`
 
-Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://www.terraform.io/docs/providers/okta/d/idp_saml).
+Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://registry.terraform.io/providers/okta/okta/3.41.0/docs/data-sources/idp_saml).

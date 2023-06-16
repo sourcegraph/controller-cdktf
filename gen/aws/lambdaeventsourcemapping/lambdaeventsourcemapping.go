@@ -1,533 +1,1733 @@
 package lambdaeventsourcemapping
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/lambdaeventsourcemapping/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+type LambdaEventSourceMapping interface {
+	cdktf.TerraformResource
+	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
+	AmazonManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
+	BatchSize() *float64
+	SetBatchSize(val *float64)
+	BatchSizeInput() *float64
+	BisectBatchOnFunctionError() interface{}
+	SetBisectBatchOnFunctionError(val interface{})
+	BisectBatchOnFunctionErrorInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DestinationConfig() LambdaEventSourceMappingDestinationConfigOutputReference
+	DestinationConfigInput() *LambdaEventSourceMappingDestinationConfig
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
+	EventSourceArn() *string
+	SetEventSourceArn(val *string)
+	EventSourceArnInput() *string
+	FilterCriteria() LambdaEventSourceMappingFilterCriteriaOutputReference
+	FilterCriteriaInput() *LambdaEventSourceMappingFilterCriteria
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	FunctionArn() *string
+	FunctionName() *string
+	SetFunctionName(val *string)
+	FunctionNameInput() *string
+	FunctionResponseTypes() *[]*string
+	SetFunctionResponseTypes(val *[]*string)
+	FunctionResponseTypesInput() *[]*string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	LastModified() *string
+	LastProcessingResult() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaximumBatchingWindowInSeconds() *float64
+	SetMaximumBatchingWindowInSeconds(val *float64)
+	MaximumBatchingWindowInSecondsInput() *float64
+	MaximumRecordAgeInSeconds() *float64
+	SetMaximumRecordAgeInSeconds(val *float64)
+	MaximumRecordAgeInSecondsInput() *float64
+	MaximumRetryAttempts() *float64
+	SetMaximumRetryAttempts(val *float64)
+	MaximumRetryAttemptsInput() *float64
+	// The tree node.
+	Node() constructs.Node
+	ParallelizationFactor() *float64
+	SetParallelizationFactor(val *float64)
+	ParallelizationFactorInput() *float64
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	Queues() *[]*string
+	SetQueues(val *[]*string)
+	QueuesInput() *[]*string
+	// Experimental.
+	RawOverrides() interface{}
+	ScalingConfig() LambdaEventSourceMappingScalingConfigOutputReference
+	ScalingConfigInput() *LambdaEventSourceMappingScalingConfig
+	SelfManagedEventSource() LambdaEventSourceMappingSelfManagedEventSourceOutputReference
+	SelfManagedEventSourceInput() *LambdaEventSourceMappingSelfManagedEventSource
+	SelfManagedKafkaEventSourceConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
+	SelfManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
+	SourceAccessConfiguration() LambdaEventSourceMappingSourceAccessConfigurationList
+	SourceAccessConfigurationInput() interface{}
+	StartingPosition() *string
+	SetStartingPosition(val *string)
+	StartingPositionInput() *string
+	StartingPositionTimestamp() *string
+	SetStartingPositionTimestamp(val *string)
+	StartingPositionTimestampInput() *string
+	State() *string
+	StateTransitionReason() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Topics() *[]*string
+	SetTopics(val *[]*string)
+	TopicsInput() *[]*string
+	TumblingWindowInSeconds() *float64
+	SetTumblingWindowInSeconds(val *float64)
+	TumblingWindowInSecondsInput() *float64
+	Uuid() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAmazonManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)
+	PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig)
+	PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria)
+	PutScalingConfig(value *LambdaEventSourceMappingScalingConfig)
+	PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource)
+	PutSelfManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)
+	PutSourceAccessConfiguration(value interface{})
+	ResetAmazonManagedKafkaEventSourceConfig()
+	ResetBatchSize()
+	ResetBisectBatchOnFunctionError()
+	ResetDestinationConfig()
+	ResetEnabled()
+	ResetEventSourceArn()
+	ResetFilterCriteria()
+	ResetFunctionResponseTypes()
+	ResetId()
+	ResetMaximumBatchingWindowInSeconds()
+	ResetMaximumRecordAgeInSeconds()
+	ResetMaximumRetryAttempts()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetParallelizationFactor()
+	ResetQueues()
+	ResetScalingConfig()
+	ResetSelfManagedEventSource()
+	ResetSelfManagedKafkaEventSourceConfig()
+	ResetSourceAccessConfiguration()
+	ResetStartingPosition()
+	ResetStartingPositionTimestamp()
+	ResetTopics()
+	ResetTumblingWindowInSeconds()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for LambdaEventSourceMapping
+type jsiiProxy_LambdaEventSourceMapping struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference {
+	var returns LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"amazonManagedKafkaEventSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) AmazonManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig {
+	var returns *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
+	_jsii_.Get(
+		j,
+		"amazonManagedKafkaEventSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) BatchSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"batchSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) BatchSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"batchSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) BisectBatchOnFunctionError() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bisectBatchOnFunctionError",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) BisectBatchOnFunctionErrorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bisectBatchOnFunctionErrorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) DestinationConfig() LambdaEventSourceMappingDestinationConfigOutputReference {
+	var returns LambdaEventSourceMappingDestinationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"destinationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) DestinationConfigInput() *LambdaEventSourceMappingDestinationConfig {
+	var returns *LambdaEventSourceMappingDestinationConfig
+	_jsii_.Get(
+		j,
+		"destinationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) EventSourceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventSourceArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) EventSourceArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventSourceArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FilterCriteria() LambdaEventSourceMappingFilterCriteriaOutputReference {
+	var returns LambdaEventSourceMappingFilterCriteriaOutputReference
+	_jsii_.Get(
+		j,
+		"filterCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FilterCriteriaInput() *LambdaEventSourceMappingFilterCriteria {
+	var returns *LambdaEventSourceMappingFilterCriteria
+	_jsii_.Get(
+		j,
+		"filterCriteriaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FunctionArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FunctionName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FunctionNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"functionNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FunctionResponseTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"functionResponseTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) FunctionResponseTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"functionResponseTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) LastModified() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) LastProcessingResult() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastProcessingResult",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MaximumBatchingWindowInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumBatchingWindowInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MaximumBatchingWindowInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumBatchingWindowInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MaximumRecordAgeInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumRecordAgeInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MaximumRecordAgeInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumRecordAgeInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MaximumRetryAttempts() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumRetryAttempts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MaximumRetryAttemptsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumRetryAttemptsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ParallelizationFactor() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"parallelizationFactor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ParallelizationFactorInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"parallelizationFactorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Queues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"queues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) QueuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"queuesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ScalingConfig() LambdaEventSourceMappingScalingConfigOutputReference {
+	var returns LambdaEventSourceMappingScalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ScalingConfigInput() *LambdaEventSourceMappingScalingConfig {
+	var returns *LambdaEventSourceMappingScalingConfig
+	_jsii_.Get(
+		j,
+		"scalingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedEventSource() LambdaEventSourceMappingSelfManagedEventSourceOutputReference {
+	var returns LambdaEventSourceMappingSelfManagedEventSourceOutputReference
+	_jsii_.Get(
+		j,
+		"selfManagedEventSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedEventSourceInput() *LambdaEventSourceMappingSelfManagedEventSource {
+	var returns *LambdaEventSourceMappingSelfManagedEventSource
+	_jsii_.Get(
+		j,
+		"selfManagedEventSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedKafkaEventSourceConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference {
+	var returns LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"selfManagedKafkaEventSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig {
+	var returns *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
+	_jsii_.Get(
+		j,
+		"selfManagedKafkaEventSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SourceAccessConfiguration() LambdaEventSourceMappingSourceAccessConfigurationList {
+	var returns LambdaEventSourceMappingSourceAccessConfigurationList
+	_jsii_.Get(
+		j,
+		"sourceAccessConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SourceAccessConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourceAccessConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) StartingPosition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startingPosition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) StartingPositionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startingPositionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) StartingPositionTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startingPositionTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) StartingPositionTimestampInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startingPositionTimestampInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) StateTransitionReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateTransitionReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Topics() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"topics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TopicsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"topicsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TumblingWindowInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tumblingWindowInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TumblingWindowInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tumblingWindowInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
+	_init_.Initialize()
+
+	if err := validateNewLambdaEventSourceMappingParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_LambdaEventSourceMapping{}
+
+	_jsii_.Create(
 		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
-		reflect.TypeOf((*LambdaEventSourceMapping)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "amazonManagedKafkaEventSourceConfig", GoGetter: "AmazonManagedKafkaEventSourceConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "amazonManagedKafkaEventSourceConfigInput", GoGetter: "AmazonManagedKafkaEventSourceConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "batchSize", GoGetter: "BatchSize"},
-			_jsii_.MemberProperty{JsiiProperty: "batchSizeInput", GoGetter: "BatchSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bisectBatchOnFunctionError", GoGetter: "BisectBatchOnFunctionError"},
-			_jsii_.MemberProperty{JsiiProperty: "bisectBatchOnFunctionErrorInput", GoGetter: "BisectBatchOnFunctionErrorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationConfig", GoGetter: "DestinationConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationConfigInput", GoGetter: "DestinationConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "eventSourceArn", GoGetter: "EventSourceArn"},
-			_jsii_.MemberProperty{JsiiProperty: "eventSourceArnInput", GoGetter: "EventSourceArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "filterCriteria", GoGetter: "FilterCriteria"},
-			_jsii_.MemberProperty{JsiiProperty: "filterCriteriaInput", GoGetter: "FilterCriteriaInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberProperty{JsiiProperty: "functionArn", GoGetter: "FunctionArn"},
-			_jsii_.MemberProperty{JsiiProperty: "functionName", GoGetter: "FunctionName"},
-			_jsii_.MemberProperty{JsiiProperty: "functionNameInput", GoGetter: "FunctionNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "functionResponseTypes", GoGetter: "FunctionResponseTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "functionResponseTypesInput", GoGetter: "FunctionResponseTypesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lastModified", GoGetter: "LastModified"},
-			_jsii_.MemberProperty{JsiiProperty: "lastProcessingResult", GoGetter: "LastProcessingResult"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumBatchingWindowInSeconds", GoGetter: "MaximumBatchingWindowInSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumBatchingWindowInSecondsInput", GoGetter: "MaximumBatchingWindowInSecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumRecordAgeInSeconds", GoGetter: "MaximumRecordAgeInSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumRecordAgeInSecondsInput", GoGetter: "MaximumRecordAgeInSecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttempts", GoGetter: "MaximumRetryAttempts"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttemptsInput", GoGetter: "MaximumRetryAttemptsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "parallelizationFactor", GoGetter: "ParallelizationFactor"},
-			_jsii_.MemberProperty{JsiiProperty: "parallelizationFactorInput", GoGetter: "ParallelizationFactorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAmazonManagedKafkaEventSourceConfig", GoMethod: "PutAmazonManagedKafkaEventSourceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putDestinationConfig", GoMethod: "PutDestinationConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putFilterCriteria", GoMethod: "PutFilterCriteria"},
-			_jsii_.MemberMethod{JsiiMethod: "putScalingConfig", GoMethod: "PutScalingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedEventSource", GoMethod: "PutSelfManagedEventSource"},
-			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedKafkaEventSourceConfig", GoMethod: "PutSelfManagedKafkaEventSourceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putSourceAccessConfiguration", GoMethod: "PutSourceAccessConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "queues", GoGetter: "Queues"},
-			_jsii_.MemberProperty{JsiiProperty: "queuesInput", GoGetter: "QueuesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAmazonManagedKafkaEventSourceConfig", GoMethod: "ResetAmazonManagedKafkaEventSourceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBatchSize", GoMethod: "ResetBatchSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBisectBatchOnFunctionError", GoMethod: "ResetBisectBatchOnFunctionError"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDestinationConfig", GoMethod: "ResetDestinationConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEventSourceArn", GoMethod: "ResetEventSourceArn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilterCriteria", GoMethod: "ResetFilterCriteria"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFunctionResponseTypes", GoMethod: "ResetFunctionResponseTypes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaximumBatchingWindowInSeconds", GoMethod: "ResetMaximumBatchingWindowInSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaximumRecordAgeInSeconds", GoMethod: "ResetMaximumRecordAgeInSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaximumRetryAttempts", GoMethod: "ResetMaximumRetryAttempts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParallelizationFactor", GoMethod: "ResetParallelizationFactor"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueues", GoMethod: "ResetQueues"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScalingConfig", GoMethod: "ResetScalingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSelfManagedEventSource", GoMethod: "ResetSelfManagedEventSource"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSelfManagedKafkaEventSourceConfig", GoMethod: "ResetSelfManagedKafkaEventSourceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceAccessConfiguration", GoMethod: "ResetSourceAccessConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStartingPosition", GoMethod: "ResetStartingPosition"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStartingPositionTimestamp", GoMethod: "ResetStartingPositionTimestamp"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTopics", GoMethod: "ResetTopics"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTumblingWindowInSeconds", GoMethod: "ResetTumblingWindowInSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "scalingConfig", GoGetter: "ScalingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "scalingConfigInput", GoGetter: "ScalingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "selfManagedEventSource", GoGetter: "SelfManagedEventSource"},
-			_jsii_.MemberProperty{JsiiProperty: "selfManagedEventSourceInput", GoGetter: "SelfManagedEventSourceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "selfManagedKafkaEventSourceConfig", GoGetter: "SelfManagedKafkaEventSourceConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "selfManagedKafkaEventSourceConfigInput", GoGetter: "SelfManagedKafkaEventSourceConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceAccessConfiguration", GoGetter: "SourceAccessConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceAccessConfigurationInput", GoGetter: "SourceAccessConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "startingPosition", GoGetter: "StartingPosition"},
-			_jsii_.MemberProperty{JsiiProperty: "startingPositionInput", GoGetter: "StartingPositionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "startingPositionTimestamp", GoGetter: "StartingPositionTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "startingPositionTimestampInput", GoGetter: "StartingPositionTimestampInput"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberProperty{JsiiProperty: "stateTransitionReason", GoGetter: "StateTransitionReason"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "topics", GoGetter: "Topics"},
-			_jsii_.MemberProperty{JsiiProperty: "topicsInput", GoGetter: "TopicsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "tumblingWindowInSeconds", GoGetter: "TumblingWindowInSeconds"},
-			_jsii_.MemberProperty{JsiiProperty: "tumblingWindowInSecondsInput", GoGetter: "TumblingWindowInSecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMapping{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "consumerGroupId", GoGetter: "ConsumerGroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "consumerGroupIdInput", GoGetter: "ConsumerGroupIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConsumerGroupId", GoMethod: "ResetConsumerGroupId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOnFailure)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOnFailureOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationArn", GoGetter: "DestinationArn"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationArnInput", GoGetter: "DestinationArnInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingDestinationConfigOnFailureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "onFailure", GoGetter: "OnFailure"},
-			_jsii_.MemberProperty{JsiiProperty: "onFailureInput", GoGetter: "OnFailureInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putOnFailure", GoMethod: "PutOnFailure"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOnFailure", GoMethod: "ResetOnFailure"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteria)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilter)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilterList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilterOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "pattern", GoGetter: "Pattern"},
-			_jsii_.MemberProperty{JsiiProperty: "patternInput", GoGetter: "PatternInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPattern", GoMethod: "ResetPattern"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
-			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingScalingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingScalingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumConcurrency", GoGetter: "MaximumConcurrency"},
-			_jsii_.MemberProperty{JsiiProperty: "maximumConcurrencyInput", GoGetter: "MaximumConcurrencyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaximumConcurrency", GoMethod: "ResetMaximumConcurrency"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingScalingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedEventSource)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedEventSourceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "endpoints", GoGetter: "Endpoints"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointsInput", GoGetter: "EndpointsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "consumerGroupId", GoGetter: "ConsumerGroupId"},
-			_jsii_.MemberProperty{JsiiProperty: "consumerGroupIdInput", GoGetter: "ConsumerGroupIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConsumerGroupId", GoMethod: "ResetConsumerGroupId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration",
-		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfiguration)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
-		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfigurationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
-			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		[]interface{}{scope, id, config},
+		l,
 	)
 }
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetBatchSize(val *float64) {
+	if err := j.validateSetBatchSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetBisectBatchOnFunctionError(val interface{}) {
+	if err := j.validateSetBisectBatchOnFunctionErrorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bisectBatchOnFunctionError",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetEventSourceArn(val *string) {
+	if err := j.validateSetEventSourceArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventSourceArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetFunctionName(val *string) {
+	if err := j.validateSetFunctionNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"functionName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetFunctionResponseTypes(val *[]*string) {
+	if err := j.validateSetFunctionResponseTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"functionResponseTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetMaximumBatchingWindowInSeconds(val *float64) {
+	if err := j.validateSetMaximumBatchingWindowInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximumBatchingWindowInSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetMaximumRecordAgeInSeconds(val *float64) {
+	if err := j.validateSetMaximumRecordAgeInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximumRecordAgeInSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetMaximumRetryAttempts(val *float64) {
+	if err := j.validateSetMaximumRetryAttemptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximumRetryAttempts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetParallelizationFactor(val *float64) {
+	if err := j.validateSetParallelizationFactorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parallelizationFactor",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetQueues(val *[]*string) {
+	if err := j.validateSetQueuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queues",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetStartingPosition(val *string) {
+	if err := j.validateSetStartingPositionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startingPosition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetStartingPositionTimestamp(val *string) {
+	if err := j.validateSetStartingPositionTimestampParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startingPositionTimestamp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetTopics(val *[]*string) {
+	if err := j.validateSetTopicsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"topics",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetTumblingWindowInSeconds(val *float64) {
+	if err := j.validateSetTumblingWindowInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tumblingWindowInSeconds",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func LambdaEventSourceMapping_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLambdaEventSourceMapping_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LambdaEventSourceMapping_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLambdaEventSourceMapping_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LambdaEventSourceMapping_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLambdaEventSourceMapping_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func LambdaEventSourceMapping_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		l,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		l,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		l,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		l,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		l,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		l,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		l,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		l,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		l,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		l,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutAmazonManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig) {
+	if err := l.validatePutAmazonManagedKafkaEventSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAmazonManagedKafkaEventSourceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig) {
+	if err := l.validatePutDestinationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDestinationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria) {
+	if err := l.validatePutFilterCriteriaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putFilterCriteria",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutScalingConfig(value *LambdaEventSourceMappingScalingConfig) {
+	if err := l.validatePutScalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putScalingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource) {
+	if err := l.validatePutSelfManagedEventSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSelfManagedEventSource",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutSelfManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig) {
+	if err := l.validatePutSelfManagedKafkaEventSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSelfManagedKafkaEventSourceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutSourceAccessConfiguration(value interface{}) {
+	if err := l.validatePutSourceAccessConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSourceAccessConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetAmazonManagedKafkaEventSourceConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAmazonManagedKafkaEventSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetBatchSize() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBatchSize",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetBisectBatchOnFunctionError() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBisectBatchOnFunctionError",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetDestinationConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDestinationConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetEventSourceArn() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEventSourceArn",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetFilterCriteria() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFilterCriteria",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetFunctionResponseTypes() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFunctionResponseTypes",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetMaximumBatchingWindowInSeconds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaximumBatchingWindowInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetMaximumRecordAgeInSeconds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaximumRecordAgeInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetMaximumRetryAttempts() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaximumRetryAttempts",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetParallelizationFactor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetParallelizationFactor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetQueues() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetQueues",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetScalingConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetSelfManagedEventSource() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSelfManagedEventSource",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetSelfManagedKafkaEventSourceConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSelfManagedKafkaEventSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetSourceAccessConfiguration() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSourceAccessConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetStartingPosition() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetStartingPosition",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetStartingPositionTimestamp() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetStartingPositionTimestamp",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetTopics() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTopics",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetTumblingWindowInSeconds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTumblingWindowInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		l,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		l,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

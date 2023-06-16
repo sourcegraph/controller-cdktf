@@ -1,0 +1,6 @@
+package googledatalosspreventionjobtrigger
+
+
+type GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog struct {
+}
+

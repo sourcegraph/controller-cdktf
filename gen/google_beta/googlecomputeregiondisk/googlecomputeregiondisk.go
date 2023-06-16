@@ -1,242 +1,1574 @@
 package googlecomputeregiondisk
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregiondisk/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_disk google_compute_region_disk}.
+type GoogleComputeRegionDisk interface {
+	cdktf.TerraformResource
+	AsyncPrimaryDisk() GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference
+	AsyncPrimaryDiskInput() *GoogleComputeRegionDiskAsyncPrimaryDisk
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreationTimestamp() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DiskEncryptionKey() GoogleComputeRegionDiskDiskEncryptionKeyOutputReference
+	DiskEncryptionKeyInput() *GoogleComputeRegionDiskDiskEncryptionKey
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GuestOsFeatures() GoogleComputeRegionDiskGuestOsFeaturesList
+	GuestOsFeaturesInput() interface{}
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	LastAttachTimestamp() *string
+	LastDetachTimestamp() *string
+	Licenses() *[]*string
+	SetLicenses(val *[]*string)
+	LicensesInput() *[]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	PhysicalBlockSizeBytes() *float64
+	SetPhysicalBlockSizeBytes(val *float64)
+	PhysicalBlockSizeBytesInput() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	ReplicaZones() *[]*string
+	SetReplicaZones(val *[]*string)
+	ReplicaZonesInput() *[]*string
+	SelfLink() *string
+	Size() *float64
+	SetSize(val *float64)
+	SizeInput() *float64
+	Snapshot() *string
+	SetSnapshot(val *string)
+	SnapshotInput() *string
+	SourceDisk() *string
+	SetSourceDisk(val *string)
+	SourceDiskId() *string
+	SourceDiskInput() *string
+	SourceSnapshotEncryptionKey() GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *GoogleComputeRegionDiskSourceSnapshotEncryptionKey
+	SourceSnapshotId() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleComputeRegionDiskTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	Users() *[]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAsyncPrimaryDisk(value *GoogleComputeRegionDiskAsyncPrimaryDisk)
+	PutDiskEncryptionKey(value *GoogleComputeRegionDiskDiskEncryptionKey)
+	PutGuestOsFeatures(value interface{})
+	PutSourceSnapshotEncryptionKey(value *GoogleComputeRegionDiskSourceSnapshotEncryptionKey)
+	PutTimeouts(value *GoogleComputeRegionDiskTimeouts)
+	ResetAsyncPrimaryDisk()
+	ResetDescription()
+	ResetDiskEncryptionKey()
+	ResetGuestOsFeatures()
+	ResetId()
+	ResetInterface()
+	ResetLabels()
+	ResetLicenses()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPhysicalBlockSizeBytes()
+	ResetProject()
+	ResetRegion()
+	ResetSize()
+	ResetSnapshot()
+	ResetSourceDisk()
+	ResetSourceSnapshotEncryptionKey()
+	ResetTimeouts()
+	ResetType()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleComputeRegionDisk
+type jsiiProxy_GoogleComputeRegionDisk struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) AsyncPrimaryDisk() GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference {
+	var returns GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) AsyncPrimaryDiskInput() *GoogleComputeRegionDiskAsyncPrimaryDisk {
+	var returns *GoogleComputeRegionDiskAsyncPrimaryDisk
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) DiskEncryptionKey() GoogleComputeRegionDiskDiskEncryptionKeyOutputReference {
+	var returns GoogleComputeRegionDiskDiskEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"diskEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) DiskEncryptionKeyInput() *GoogleComputeRegionDiskDiskEncryptionKey {
+	var returns *GoogleComputeRegionDiskDiskEncryptionKey
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) GuestOsFeatures() GoogleComputeRegionDiskGuestOsFeaturesList {
+	var returns GoogleComputeRegionDiskGuestOsFeaturesList
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) GuestOsFeaturesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) LastAttachTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastAttachTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) LastDetachTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastDetachTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Licenses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"licenses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) LicensesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"licensesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) PhysicalBlockSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"physicalBlockSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) PhysicalBlockSizeBytesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"physicalBlockSizeBytesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ReplicaZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) ReplicaZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZonesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Size() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceDiskInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceSnapshotEncryptionKey() GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference {
+	var returns GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceSnapshotEncryptionKeyInput() *GoogleComputeRegionDiskSourceSnapshotEncryptionKey {
+	var returns *GoogleComputeRegionDiskSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceSnapshotId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Timeouts() GoogleComputeRegionDiskTimeoutsOutputReference {
+	var returns GoogleComputeRegionDiskTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) Users() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"users",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
+func NewGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *GoogleComputeRegionDiskConfig) GoogleComputeRegionDisk {
+	_init_.Initialize()
+
+	if err := validateNewGoogleComputeRegionDiskParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleComputeRegionDisk{}
+
+	_jsii_.Create(
 		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
-		reflect.TypeOf((*GoogleComputeRegionDisk)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationTimestamp", GoGetter: "CreationTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKey", GoGetter: "DiskEncryptionKey"},
-			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeyInput", GoGetter: "DiskEncryptionKeyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "interface", GoGetter: "Interface"},
-			_jsii_.MemberProperty{JsiiProperty: "interfaceInput", GoGetter: "InterfaceInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labelFingerprint", GoGetter: "LabelFingerprint"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lastAttachTimestamp", GoGetter: "LastAttachTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "lastDetachTimestamp", GoGetter: "LastDetachTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "physicalBlockSizeBytes", GoGetter: "PhysicalBlockSizeBytes"},
-			_jsii_.MemberProperty{JsiiProperty: "physicalBlockSizeBytesInput", GoGetter: "PhysicalBlockSizeBytesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putDiskEncryptionKey", GoMethod: "PutDiskEncryptionKey"},
-			_jsii_.MemberMethod{JsiiMethod: "putSourceSnapshotEncryptionKey", GoMethod: "PutSourceSnapshotEncryptionKey"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
-			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replicaZones", GoGetter: "ReplicaZones"},
-			_jsii_.MemberProperty{JsiiProperty: "replicaZonesInput", GoGetter: "ReplicaZonesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionKey", GoMethod: "ResetDiskEncryptionKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterface", GoMethod: "ResetInterface"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPhysicalBlockSizeBytes", GoMethod: "ResetPhysicalBlockSizeBytes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSize", GoMethod: "ResetSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSnapshot", GoMethod: "ResetSnapshot"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceSnapshotEncryptionKey", GoMethod: "ResetSourceSnapshotEncryptionKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshot", GoGetter: "Snapshot"},
-			_jsii_.MemberProperty{JsiiProperty: "snapshotInput", GoGetter: "SnapshotInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKey", GoGetter: "SourceSnapshotEncryptionKey"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKeyInput", GoGetter: "SourceSnapshotEncryptionKeyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotId", GoGetter: "SourceSnapshotId"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionDisk{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig",
-		reflect.TypeOf((*GoogleComputeRegionDiskConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKey",
-		reflect.TypeOf((*GoogleComputeRegionDiskDiskEncryptionKey)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKeyOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionDiskDiskEncryptionKeyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyName", GoGetter: "KmsKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyNameInput", GoGetter: "KmsKeyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rawKey", GoGetter: "RawKey"},
-			_jsii_.MemberProperty{JsiiProperty: "rawKeyInput", GoGetter: "RawKeyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyName", GoMethod: "ResetKmsKeyName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRawKey", GoMethod: "ResetRawKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sha256", GoGetter: "Sha256"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionDiskDiskEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKey",
-		reflect.TypeOf((*GoogleComputeRegionDiskSourceSnapshotEncryptionKey)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyName", GoGetter: "KmsKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyNameInput", GoGetter: "KmsKeyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rawKey", GoGetter: "RawKey"},
-			_jsii_.MemberProperty{JsiiProperty: "rawKeyInput", GoGetter: "RawKeyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyName", GoMethod: "ResetKmsKeyName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRawKey", GoMethod: "ResetRawKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sha256", GoGetter: "Sha256"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts",
-		reflect.TypeOf((*GoogleComputeRegionDiskTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionDiskTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeRegionDiskTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_disk google_compute_region_disk} Resource.
+func NewGoogleComputeRegionDisk_Override(g GoogleComputeRegionDisk, scope constructs.Construct, id *string, config *GoogleComputeRegionDiskConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetLicenses(val *[]*string) {
+	if err := j.validateSetLicensesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"licenses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetPhysicalBlockSizeBytes(val *float64) {
+	if err := j.validateSetPhysicalBlockSizeBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"physicalBlockSizeBytes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetReplicaZones(val *[]*string) {
+	if err := j.validateSetReplicaZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaZones",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"size",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetSnapshot(val *string) {
+	if err := j.validateSetSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetSourceDisk(val *string) {
+	if err := j.validateSetSourceDiskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceDisk",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleComputeRegionDisk_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeRegionDisk_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeRegionDisk_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeRegionDisk_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeRegionDisk_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeRegionDisk_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleComputeRegionDisk_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) PutAsyncPrimaryDisk(value *GoogleComputeRegionDiskAsyncPrimaryDisk) {
+	if err := g.validatePutAsyncPrimaryDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAsyncPrimaryDisk",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) PutDiskEncryptionKey(value *GoogleComputeRegionDiskDiskEncryptionKey) {
+	if err := g.validatePutDiskEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDiskEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) PutGuestOsFeatures(value interface{}) {
+	if err := g.validatePutGuestOsFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGuestOsFeatures",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) PutSourceSnapshotEncryptionKey(value *GoogleComputeRegionDiskSourceSnapshotEncryptionKey) {
+	if err := g.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) PutTimeouts(value *GoogleComputeRegionDiskTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetAsyncPrimaryDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAsyncPrimaryDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetDiskEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiskEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGuestOsFeatures",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetInterface() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInterface",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetLicenses() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLicenses",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetPhysicalBlockSizeBytes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPhysicalBlockSizeBytes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetSnapshot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetSourceDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceSnapshotEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

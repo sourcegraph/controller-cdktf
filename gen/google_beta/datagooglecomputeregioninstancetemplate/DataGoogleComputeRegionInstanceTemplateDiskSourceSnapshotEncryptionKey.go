@@ -1,0 +1,6 @@
+package datagooglecomputeregioninstancetemplate
+
+
+type DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKey struct {
+}
+

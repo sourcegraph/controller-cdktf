@@ -1,782 +1,1046 @@
 package notebooksruntime
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/notebooksruntime/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/notebooks_runtime google_notebooks_runtime}.
+type NotebooksRuntime interface {
+	cdktf.TerraformResource
+	AccessConfig() NotebooksRuntimeAccessConfigOutputReference
+	AccessConfigInput() *NotebooksRuntimeAccessConfig
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	HealthState() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	Metrics() NotebooksRuntimeMetricsList
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	SoftwareConfig() NotebooksRuntimeSoftwareConfigOutputReference
+	SoftwareConfigInput() *NotebooksRuntimeSoftwareConfig
+	State() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() NotebooksRuntimeTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VirtualMachine() NotebooksRuntimeVirtualMachineOutputReference
+	VirtualMachineInput() *NotebooksRuntimeVirtualMachine
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAccessConfig(value *NotebooksRuntimeAccessConfig)
+	PutSoftwareConfig(value *NotebooksRuntimeSoftwareConfig)
+	PutTimeouts(value *NotebooksRuntimeTimeouts)
+	PutVirtualMachine(value *NotebooksRuntimeVirtualMachine)
+	ResetAccessConfig()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetSoftwareConfig()
+	ResetTimeouts()
+	ResetVirtualMachine()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for NotebooksRuntime
+type jsiiProxy_NotebooksRuntime struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NotebooksRuntime) AccessConfig() NotebooksRuntimeAccessConfigOutputReference {
+	var returns NotebooksRuntimeAccessConfigOutputReference
+	_jsii_.Get(
+		j,
+		"accessConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) AccessConfigInput() *NotebooksRuntimeAccessConfig {
+	var returns *NotebooksRuntimeAccessConfig
+	_jsii_.Get(
+		j,
+		"accessConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) HealthState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Metrics() NotebooksRuntimeMetricsList {
+	var returns NotebooksRuntimeMetricsList
+	_jsii_.Get(
+		j,
+		"metrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) SoftwareConfig() NotebooksRuntimeSoftwareConfigOutputReference {
+	var returns NotebooksRuntimeSoftwareConfigOutputReference
+	_jsii_.Get(
+		j,
+		"softwareConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) SoftwareConfigInput() *NotebooksRuntimeSoftwareConfig {
+	var returns *NotebooksRuntimeSoftwareConfig
+	_jsii_.Get(
+		j,
+		"softwareConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Timeouts() NotebooksRuntimeTimeoutsOutputReference {
+	var returns NotebooksRuntimeTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) VirtualMachine() NotebooksRuntimeVirtualMachineOutputReference {
+	var returns NotebooksRuntimeVirtualMachineOutputReference
+	_jsii_.Get(
+		j,
+		"virtualMachine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) VirtualMachineInput() *NotebooksRuntimeVirtualMachine {
+	var returns *NotebooksRuntimeVirtualMachine
+	_jsii_.Get(
+		j,
+		"virtualMachineInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+func NewNotebooksRuntime(scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) NotebooksRuntime {
+	_init_.Initialize()
+
+	if err := validateNewNotebooksRuntimeParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_NotebooksRuntime{}
+
+	_jsii_.Create(
 		"google.notebooksRuntime.NotebooksRuntime",
-		reflect.TypeOf((*NotebooksRuntime)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "accessConfigInput", GoGetter: "AccessConfigInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "healthState", GoGetter: "HealthState"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metrics", GoGetter: "Metrics"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAccessConfig", GoMethod: "PutAccessConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putSoftwareConfig", GoMethod: "PutSoftwareConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putVirtualMachine", GoMethod: "PutVirtualMachine"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessConfig", GoMethod: "ResetAccessConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSoftwareConfig", GoMethod: "ResetSoftwareConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVirtualMachine", GoMethod: "ResetVirtualMachine"},
-			_jsii_.MemberProperty{JsiiProperty: "softwareConfig", GoGetter: "SoftwareConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "softwareConfigInput", GoGetter: "SoftwareConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualMachine", GoGetter: "VirtualMachine"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualMachineInput", GoGetter: "VirtualMachineInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntime{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeAccessConfig",
-		reflect.TypeOf((*NotebooksRuntimeAccessConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeAccessConfigOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeAccessConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accessType", GoGetter: "AccessType"},
-			_jsii_.MemberProperty{JsiiProperty: "accessTypeInput", GoGetter: "AccessTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyUri", GoGetter: "ProxyUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccessType", GoMethod: "ResetAccessType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeOwner", GoMethod: "ResetRuntimeOwner"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeOwner", GoGetter: "RuntimeOwner"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeOwnerInput", GoGetter: "RuntimeOwnerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeAccessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeConfig",
-		reflect.TypeOf((*NotebooksRuntimeConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeMetrics",
-		reflect.TypeOf((*NotebooksRuntimeMetrics)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeMetricsList",
-		reflect.TypeOf((*NotebooksRuntimeMetricsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeMetricsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeMetricsOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeMetricsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "systemMetrics", GoGetter: "SystemMetrics"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfig",
-		reflect.TypeOf((*NotebooksRuntimeSoftwareConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernels",
-		reflect.TypeOf((*NotebooksRuntimeSoftwareConfigKernels)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernelsList",
-		reflect.TypeOf((*NotebooksRuntimeSoftwareConfigKernelsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernelsOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeSoftwareConfigKernelsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "repository", GoGetter: "Repository"},
-			_jsii_.MemberProperty{JsiiProperty: "repositoryInput", GoGetter: "RepositoryInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
-			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeSoftwareConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customGpuDriverPath", GoGetter: "CustomGpuDriverPath"},
-			_jsii_.MemberProperty{JsiiProperty: "customGpuDriverPathInput", GoGetter: "CustomGpuDriverPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableHealthMonitoring", GoGetter: "EnableHealthMonitoring"},
-			_jsii_.MemberProperty{JsiiProperty: "enableHealthMonitoringInput", GoGetter: "EnableHealthMonitoringInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "idleShutdown", GoGetter: "IdleShutdown"},
-			_jsii_.MemberProperty{JsiiProperty: "idleShutdownInput", GoGetter: "IdleShutdownInput"},
-			_jsii_.MemberProperty{JsiiProperty: "idleShutdownTimeout", GoGetter: "IdleShutdownTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "idleShutdownTimeoutInput", GoGetter: "IdleShutdownTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "installGpuDriver", GoGetter: "InstallGpuDriver"},
-			_jsii_.MemberProperty{JsiiProperty: "installGpuDriverInput", GoGetter: "InstallGpuDriverInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kernels", GoGetter: "Kernels"},
-			_jsii_.MemberProperty{JsiiProperty: "kernelsInput", GoGetter: "KernelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "notebookUpgradeSchedule", GoGetter: "NotebookUpgradeSchedule"},
-			_jsii_.MemberProperty{JsiiProperty: "notebookUpgradeScheduleInput", GoGetter: "NotebookUpgradeScheduleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "postStartupScript", GoGetter: "PostStartupScript"},
-			_jsii_.MemberProperty{JsiiProperty: "postStartupScriptBehavior", GoGetter: "PostStartupScriptBehavior"},
-			_jsii_.MemberProperty{JsiiProperty: "postStartupScriptBehaviorInput", GoGetter: "PostStartupScriptBehaviorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "postStartupScriptInput", GoGetter: "PostStartupScriptInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putKernels", GoMethod: "PutKernels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomGpuDriverPath", GoMethod: "ResetCustomGpuDriverPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableHealthMonitoring", GoMethod: "ResetEnableHealthMonitoring"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIdleShutdown", GoMethod: "ResetIdleShutdown"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIdleShutdownTimeout", GoMethod: "ResetIdleShutdownTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstallGpuDriver", GoMethod: "ResetInstallGpuDriver"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKernels", GoMethod: "ResetKernels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotebookUpgradeSchedule", GoMethod: "ResetNotebookUpgradeSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPostStartupScript", GoMethod: "ResetPostStartupScript"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPostStartupScriptBehavior", GoMethod: "ResetPostStartupScriptBehavior"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "upgradeable", GoGetter: "Upgradeable"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeTimeouts",
-		reflect.TypeOf((*NotebooksRuntimeTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeTimeoutsOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachine",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachine)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceId", GoGetter: "InstanceId"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceName", GoGetter: "InstanceName"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putVirtualMachineConfig", GoMethod: "PutVirtualMachineConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVirtualMachineConfig", GoMethod: "ResetVirtualMachineConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualMachineConfig", GoGetter: "VirtualMachineConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "virtualMachineConfigInput", GoGetter: "VirtualMachineConfigInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfig",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "coreCount", GoGetter: "CoreCount"},
-			_jsii_.MemberProperty{JsiiProperty: "coreCountInput", GoGetter: "CoreCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCoreCount", GoMethod: "ResetCoreCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImages",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImages)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "repository", GoGetter: "Repository"},
-			_jsii_.MemberProperty{JsiiProperty: "repositoryInput", GoGetter: "RepositoryInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
-			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "diskName", GoGetter: "DiskName"},
-			_jsii_.MemberProperty{JsiiProperty: "diskNameInput", GoGetter: "DiskNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "diskSizeGb", GoGetter: "DiskSizeGb"},
-			_jsii_.MemberProperty{JsiiProperty: "diskSizeGbInput", GoGetter: "DiskSizeGbInput"},
-			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
-			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskName", GoMethod: "ResetDiskName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskSizeGb", GoMethod: "ResetDiskSizeGb"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
-			_jsii_.MemberProperty{JsiiProperty: "boot", GoGetter: "Boot"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deviceName", GoGetter: "DeviceName"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "guestOsFeatures", GoGetter: "GuestOsFeatures"},
-			_jsii_.MemberProperty{JsiiProperty: "index", GoGetter: "Index"},
-			_jsii_.MemberProperty{JsiiProperty: "initializeParams", GoGetter: "InitializeParams"},
-			_jsii_.MemberProperty{JsiiProperty: "initializeParamsInput", GoGetter: "InitializeParamsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "interface", GoGetter: "Interface"},
-			_jsii_.MemberProperty{JsiiProperty: "interfaceInput", GoGetter: "InterfaceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
-			_jsii_.MemberProperty{JsiiProperty: "licenses", GoGetter: "Licenses"},
-			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
-			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putInitializeParams", GoMethod: "PutInitializeParams"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInitializeParams", GoMethod: "ResetInitializeParams"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterface", GoMethod: "ResetInterface"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
-			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKey", GoGetter: "KmsKey"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyInput", GoGetter: "KmsKeyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKmsKey", GoMethod: "ResetKmsKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigInput", GoGetter: "AcceleratorConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "containerImages", GoGetter: "ContainerImages"},
-			_jsii_.MemberProperty{JsiiProperty: "containerImagesInput", GoGetter: "ContainerImagesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dataDisk", GoGetter: "DataDisk"},
-			_jsii_.MemberProperty{JsiiProperty: "dataDiskInput", GoGetter: "DataDiskInput"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionConfig", GoGetter: "EncryptionConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "encryptionConfigInput", GoGetter: "EncryptionConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "guestAttributes", GoGetter: "GuestAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "internalIpOnly", GoGetter: "InternalIpOnly"},
-			_jsii_.MemberProperty{JsiiProperty: "internalIpOnlyInput", GoGetter: "InternalIpOnlyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "machineType", GoGetter: "MachineType"},
-			_jsii_.MemberProperty{JsiiProperty: "machineTypeInput", GoGetter: "MachineTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
-			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
-			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nicType", GoGetter: "NicType"},
-			_jsii_.MemberProperty{JsiiProperty: "nicTypeInput", GoGetter: "NicTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putAcceleratorConfig", GoMethod: "PutAcceleratorConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putContainerImages", GoMethod: "PutContainerImages"},
-			_jsii_.MemberMethod{JsiiMethod: "putDataDisk", GoMethod: "PutDataDisk"},
-			_jsii_.MemberMethod{JsiiMethod: "putEncryptionConfig", GoMethod: "PutEncryptionConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putShieldedInstanceConfig", GoMethod: "PutShieldedInstanceConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "reservedIpRange", GoGetter: "ReservedIpRange"},
-			_jsii_.MemberProperty{JsiiProperty: "reservedIpRangeInput", GoGetter: "ReservedIpRangeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorConfig", GoMethod: "ResetAcceleratorConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContainerImages", GoMethod: "ResetContainerImages"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionConfig", GoMethod: "ResetEncryptionConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInternalIpOnly", GoMethod: "ResetInternalIpOnly"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetadata", GoMethod: "ResetMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetwork", GoMethod: "ResetNetwork"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNicType", GoMethod: "ResetNicType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReservedIpRange", GoMethod: "ResetReservedIpRange"},
-			_jsii_.MemberMethod{JsiiMethod: "resetShieldedInstanceConfig", GoMethod: "ResetShieldedInstanceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnet", GoMethod: "ResetSubnet"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "shieldedInstanceConfig", GoGetter: "ShieldedInstanceConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "shieldedInstanceConfigInput", GoGetter: "ShieldedInstanceConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnet", GoGetter: "Subnet"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetInput", GoGetter: "SubnetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enableIntegrityMonitoring", GoGetter: "EnableIntegrityMonitoring"},
-			_jsii_.MemberProperty{JsiiProperty: "enableIntegrityMonitoringInput", GoGetter: "EnableIntegrityMonitoringInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableSecureBoot", GoGetter: "EnableSecureBoot"},
-			_jsii_.MemberProperty{JsiiProperty: "enableSecureBootInput", GoGetter: "EnableSecureBootInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableVtpm", GoGetter: "EnableVtpm"},
-			_jsii_.MemberProperty{JsiiProperty: "enableVtpmInput", GoGetter: "EnableVtpmInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableIntegrityMonitoring", GoMethod: "ResetEnableIntegrityMonitoring"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableSecureBoot", GoMethod: "ResetEnableSecureBoot"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableVtpm", GoMethod: "ResetEnableVtpm"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+func NewNotebooksRuntime_Override(n NotebooksRuntime, scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.notebooksRuntime.NotebooksRuntime",
+		[]interface{}{scope, id, config},
+		n,
 	)
 }
+
+func (j *jsiiProxy_NotebooksRuntime)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func NotebooksRuntime_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNotebooksRuntime_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.notebooksRuntime.NotebooksRuntime",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NotebooksRuntime_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNotebooksRuntime_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.notebooksRuntime.NotebooksRuntime",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NotebooksRuntime_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNotebooksRuntime_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.notebooksRuntime.NotebooksRuntime",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func NotebooksRuntime_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.notebooksRuntime.NotebooksRuntime",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) PutAccessConfig(value *NotebooksRuntimeAccessConfig) {
+	if err := n.validatePutAccessConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAccessConfig",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) PutSoftwareConfig(value *NotebooksRuntimeSoftwareConfig) {
+	if err := n.validatePutSoftwareConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putSoftwareConfig",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) PutTimeouts(value *NotebooksRuntimeTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) PutVirtualMachine(value *NotebooksRuntimeVirtualMachine) {
+	if err := n.validatePutVirtualMachineParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putVirtualMachine",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetAccessConfig() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAccessConfig",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetProject() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetSoftwareConfig() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSoftwareConfig",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetVirtualMachine() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetVirtualMachine",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,3 +1,3 @@
 # `kubernetes_job`
 
-Refer to the Terraform Registory for docs: [`kubernetes_job`](https://www.terraform.io/docs/providers/kubernetes/r/job).
+Refer to the Terraform Registory for docs: [`kubernetes_job`](https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job).

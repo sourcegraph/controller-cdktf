@@ -1,326 +1,1508 @@
 package googlecomputefirewall
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputefirewall/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_firewall google_compute_firewall}.
+type GoogleComputeFirewall interface {
+	cdktf.TerraformResource
+	Allow() GoogleComputeFirewallAllowList
+	AllowInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreationTimestamp() *string
+	Deny() GoogleComputeFirewallDenyList
+	DenyInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DestinationRanges() *[]*string
+	SetDestinationRanges(val *[]*string)
+	DestinationRangesInput() *[]*string
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
+	EnableLogging() interface{}
+	SetEnableLogging(val interface{})
+	EnableLoggingInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogConfig() GoogleComputeFirewallLogConfigOutputReference
+	LogConfigInput() *GoogleComputeFirewallLogConfig
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Network() *string
+	SetNetwork(val *string)
+	NetworkInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	SelfLink() *string
+	SourceRanges() *[]*string
+	SetSourceRanges(val *[]*string)
+	SourceRangesInput() *[]*string
+	SourceServiceAccounts() *[]*string
+	SetSourceServiceAccounts(val *[]*string)
+	SourceServiceAccountsInput() *[]*string
+	SourceTags() *[]*string
+	SetSourceTags(val *[]*string)
+	SourceTagsInput() *[]*string
+	TargetServiceAccounts() *[]*string
+	SetTargetServiceAccounts(val *[]*string)
+	TargetServiceAccountsInput() *[]*string
+	TargetTags() *[]*string
+	SetTargetTags(val *[]*string)
+	TargetTagsInput() *[]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleComputeFirewallTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAllow(value interface{})
+	PutDeny(value interface{})
+	PutLogConfig(value *GoogleComputeFirewallLogConfig)
+	PutTimeouts(value *GoogleComputeFirewallTimeouts)
+	ResetAllow()
+	ResetDeny()
+	ResetDescription()
+	ResetDestinationRanges()
+	ResetDirection()
+	ResetDisabled()
+	ResetEnableLogging()
+	ResetId()
+	ResetLogConfig()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPriority()
+	ResetProject()
+	ResetSourceRanges()
+	ResetSourceServiceAccounts()
+	ResetSourceTags()
+	ResetTargetServiceAccounts()
+	ResetTargetTags()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleComputeFirewall
+type jsiiProxy_GoogleComputeFirewall struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Allow() GoogleComputeFirewallAllowList {
+	var returns GoogleComputeFirewallAllowList
+	_jsii_.Get(
+		j,
+		"allow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) AllowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Deny() GoogleComputeFirewallDenyList {
+	var returns GoogleComputeFirewallDenyList
+	_jsii_.Get(
+		j,
+		"deny",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DenyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"denyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DestinationRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinationRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DestinationRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinationRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) EnableLogging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) EnableLoggingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLoggingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) LogConfig() GoogleComputeFirewallLogConfigOutputReference {
+	var returns GoogleComputeFirewallLogConfigOutputReference
+	_jsii_.Get(
+		j,
+		"logConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) LogConfigInput() *GoogleComputeFirewallLogConfig {
+	var returns *GoogleComputeFirewallLogConfig
+	_jsii_.Get(
+		j,
+		"logConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) NetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Priority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) PriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SourceRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SourceRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SourceServiceAccounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceServiceAccounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SourceServiceAccountsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceServiceAccountsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SourceTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) SourceTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TargetServiceAccounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetServiceAccounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TargetServiceAccountsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetServiceAccountsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TargetTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TargetTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) Timeouts() GoogleComputeFirewallTimeoutsOutputReference {
+	var returns GoogleComputeFirewallTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_firewall google_compute_firewall} Resource.
+func NewGoogleComputeFirewall(scope constructs.Construct, id *string, config *GoogleComputeFirewallConfig) GoogleComputeFirewall {
+	_init_.Initialize()
+
+	if err := validateNewGoogleComputeFirewallParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleComputeFirewall{}
+
+	_jsii_.Create(
 		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
-		reflect.TypeOf((*GoogleComputeFirewall)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
-			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationTimestamp", GoGetter: "CreationTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "deny", GoGetter: "Deny"},
-			_jsii_.MemberProperty{JsiiProperty: "denyInput", GoGetter: "DenyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationRanges", GoGetter: "DestinationRanges"},
-			_jsii_.MemberProperty{JsiiProperty: "destinationRangesInput", GoGetter: "DestinationRangesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "direction", GoGetter: "Direction"},
-			_jsii_.MemberProperty{JsiiProperty: "directionInput", GoGetter: "DirectionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "disabled", GoGetter: "Disabled"},
-			_jsii_.MemberProperty{JsiiProperty: "disabledInput", GoGetter: "DisabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "enableLogging", GoGetter: "EnableLogging"},
-			_jsii_.MemberProperty{JsiiProperty: "enableLoggingInput", GoGetter: "EnableLoggingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "logConfigInput", GoGetter: "LogConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
-			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "priority", GoGetter: "Priority"},
-			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAllow", GoMethod: "PutAllow"},
-			_jsii_.MemberMethod{JsiiMethod: "putDeny", GoMethod: "PutDeny"},
-			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllow", GoMethod: "ResetAllow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeny", GoMethod: "ResetDeny"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDestinationRanges", GoMethod: "ResetDestinationRanges"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDirection", GoMethod: "ResetDirection"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnableLogging", GoMethod: "ResetEnableLogging"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogConfig", GoMethod: "ResetLogConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceRanges", GoMethod: "ResetSourceRanges"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceServiceAccounts", GoMethod: "ResetSourceServiceAccounts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSourceTags", GoMethod: "ResetSourceTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetServiceAccounts", GoMethod: "ResetTargetServiceAccounts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetTags", GoMethod: "ResetTargetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceRanges", GoGetter: "SourceRanges"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceRangesInput", GoGetter: "SourceRangesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceServiceAccounts", GoGetter: "SourceServiceAccounts"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceServiceAccountsInput", GoGetter: "SourceServiceAccountsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceTags", GoGetter: "SourceTags"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceTagsInput", GoGetter: "SourceTagsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "targetServiceAccounts", GoGetter: "TargetServiceAccounts"},
-			_jsii_.MemberProperty{JsiiProperty: "targetServiceAccountsInput", GoGetter: "TargetServiceAccountsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTags", GoGetter: "TargetTags"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTagsInput", GoGetter: "TargetTagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewall{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllow",
-		reflect.TypeOf((*GoogleComputeFirewallAllow)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
-		reflect.TypeOf((*GoogleComputeFirewallAllowList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewallAllowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllowOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallAllowOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ports", GoGetter: "Ports"},
-			_jsii_.MemberProperty{JsiiProperty: "portsInput", GoGetter: "PortsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPorts", GoMethod: "ResetPorts"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewallAllowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallConfig",
-		reflect.TypeOf((*GoogleComputeFirewallConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDeny",
-		reflect.TypeOf((*GoogleComputeFirewallDeny)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
-		reflect.TypeOf((*GoogleComputeFirewallDenyList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewallDenyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDenyOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallDenyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ports", GoGetter: "Ports"},
-			_jsii_.MemberProperty{JsiiProperty: "portsInput", GoGetter: "PortsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPorts", GoMethod: "ResetPorts"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewallDenyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfig",
-		reflect.TypeOf((*GoogleComputeFirewallLogConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallLogConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
-			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewallLogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallTimeouts",
-		reflect.TypeOf((*GoogleComputeFirewallTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeFirewallTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_firewall google_compute_firewall} Resource.
+func NewGoogleComputeFirewall_Override(g GoogleComputeFirewall, scope constructs.Construct, id *string, config *GoogleComputeFirewallConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetDestinationRanges(val *[]*string) {
+	if err := j.validateSetDestinationRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetEnableLogging(val interface{}) {
+	if err := j.validateSetEnableLoggingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableLogging",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetNetwork(val *string) {
+	if err := j.validateSetNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetSourceRanges(val *[]*string) {
+	if err := j.validateSetSourceRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetSourceServiceAccounts(val *[]*string) {
+	if err := j.validateSetSourceServiceAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceServiceAccounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetSourceTags(val *[]*string) {
+	if err := j.validateSetSourceTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceTags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetTargetServiceAccounts(val *[]*string) {
+	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetServiceAccounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeFirewall)SetTargetTags(val *[]*string) {
+	if err := j.validateSetTargetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetTags",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleComputeFirewall_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeFirewall_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeFirewall_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeFirewall_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeFirewall_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeFirewall_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleComputeFirewall_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) PutAllow(value interface{}) {
+	if err := g.validatePutAllowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAllow",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) PutDeny(value interface{}) {
+	if err := g.validatePutDenyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeny",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) PutLogConfig(value *GoogleComputeFirewallLogConfig) {
+	if err := g.validatePutLogConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLogConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) PutTimeouts(value *GoogleComputeFirewallTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetAllow() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllow",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetDeny() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeny",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetDestinationRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDestinationRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetDirection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetEnableLogging() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableLogging",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetLogConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetPriority() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetSourceRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetSourceServiceAccounts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceServiceAccounts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetSourceTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetTargetServiceAccounts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetServiceAccounts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetTargetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

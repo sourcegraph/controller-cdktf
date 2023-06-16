@@ -1,0 +1,6 @@
+package googledatalosspreventionjobtrigger
+
+
+type GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateType struct {
+}
+

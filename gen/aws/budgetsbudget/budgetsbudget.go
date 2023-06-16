@@ -1,456 +1,1368 @@
 package budgetsbudget
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/budgetsbudget/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget aws_budgets_budget}.
+type BudgetsBudget interface {
+	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
+	Arn() *string
+	AutoAdjustData() BudgetsBudgetAutoAdjustDataOutputReference
+	AutoAdjustDataInput() *BudgetsBudgetAutoAdjustData
+	BudgetType() *string
+	SetBudgetType(val *string)
+	BudgetTypeInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	CostFilter() BudgetsBudgetCostFilterList
+	CostFilterInput() interface{}
+	CostFilters() *map[string]*string
+	SetCostFilters(val *map[string]*string)
+	CostFiltersInput() *map[string]*string
+	CostTypes() BudgetsBudgetCostTypesOutputReference
+	CostTypesInput() *BudgetsBudgetCostTypes
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LimitAmount() *string
+	SetLimitAmount(val *string)
+	LimitAmountInput() *string
+	LimitUnit() *string
+	SetLimitUnit(val *string)
+	LimitUnitInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Notification() BudgetsBudgetNotificationList
+	NotificationInput() interface{}
+	PlannedLimit() BudgetsBudgetPlannedLimitList
+	PlannedLimitInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	TimePeriodEnd() *string
+	SetTimePeriodEnd(val *string)
+	TimePeriodEndInput() *string
+	TimePeriodStart() *string
+	SetTimePeriodStart(val *string)
+	TimePeriodStartInput() *string
+	TimeUnit() *string
+	SetTimeUnit(val *string)
+	TimeUnitInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAutoAdjustData(value *BudgetsBudgetAutoAdjustData)
+	PutCostFilter(value interface{})
+	PutCostTypes(value *BudgetsBudgetCostTypes)
+	PutNotification(value interface{})
+	PutPlannedLimit(value interface{})
+	ResetAccountId()
+	ResetAutoAdjustData()
+	ResetCostFilter()
+	ResetCostFilters()
+	ResetCostTypes()
+	ResetId()
+	ResetLimitAmount()
+	ResetLimitUnit()
+	ResetName()
+	ResetNamePrefix()
+	ResetNotification()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPlannedLimit()
+	ResetTimePeriodEnd()
+	ResetTimePeriodStart()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for BudgetsBudget
+type jsiiProxy_BudgetsBudget struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BudgetsBudget) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) AutoAdjustData() BudgetsBudgetAutoAdjustDataOutputReference {
+	var returns BudgetsBudgetAutoAdjustDataOutputReference
+	_jsii_.Get(
+		j,
+		"autoAdjustData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) AutoAdjustDataInput() *BudgetsBudgetAutoAdjustData {
+	var returns *BudgetsBudgetAutoAdjustData
+	_jsii_.Get(
+		j,
+		"autoAdjustDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) BudgetType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) BudgetTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"budgetTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CostFilter() BudgetsBudgetCostFilterList {
+	var returns BudgetsBudgetCostFilterList
+	_jsii_.Get(
+		j,
+		"costFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CostFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"costFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CostFilters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"costFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CostFiltersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"costFiltersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CostTypes() BudgetsBudgetCostTypesOutputReference {
+	var returns BudgetsBudgetCostTypesOutputReference
+	_jsii_.Get(
+		j,
+		"costTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) CostTypesInput() *BudgetsBudgetCostTypes {
+	var returns *BudgetsBudgetCostTypes
+	_jsii_.Get(
+		j,
+		"costTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) LimitAmount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"limitAmount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) LimitAmountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"limitAmountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) LimitUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"limitUnit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) LimitUnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"limitUnitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Notification() BudgetsBudgetNotificationList {
+	var returns BudgetsBudgetNotificationList
+	_jsii_.Get(
+		j,
+		"notification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) NotificationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) PlannedLimit() BudgetsBudgetPlannedLimitList {
+	var returns BudgetsBudgetPlannedLimitList
+	_jsii_.Get(
+		j,
+		"plannedLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) PlannedLimitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"plannedLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TimePeriodEnd() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timePeriodEnd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TimePeriodEndInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timePeriodEndInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TimePeriodStart() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timePeriodStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TimePeriodStartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timePeriodStartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TimeUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeUnit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TimeUnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeUnitInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBudgetConfig) BudgetsBudget {
+	_init_.Initialize()
+
+	if err := validateNewBudgetsBudgetParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_BudgetsBudget{}
+
+	_jsii_.Create(
 		"aws.budgetsBudget.BudgetsBudget",
-		reflect.TypeOf((*BudgetsBudget)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
-			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "autoAdjustData", GoGetter: "AutoAdjustData"},
-			_jsii_.MemberProperty{JsiiProperty: "autoAdjustDataInput", GoGetter: "AutoAdjustDataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "budgetType", GoGetter: "BudgetType"},
-			_jsii_.MemberProperty{JsiiProperty: "budgetTypeInput", GoGetter: "BudgetTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "costFilter", GoGetter: "CostFilter"},
-			_jsii_.MemberProperty{JsiiProperty: "costFilterInput", GoGetter: "CostFilterInput"},
-			_jsii_.MemberProperty{JsiiProperty: "costFilters", GoGetter: "CostFilters"},
-			_jsii_.MemberProperty{JsiiProperty: "costFiltersInput", GoGetter: "CostFiltersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "costTypes", GoGetter: "CostTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "costTypesInput", GoGetter: "CostTypesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "limitAmount", GoGetter: "LimitAmount"},
-			_jsii_.MemberProperty{JsiiProperty: "limitAmountInput", GoGetter: "LimitAmountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "limitUnit", GoGetter: "LimitUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "limitUnitInput", GoGetter: "LimitUnitInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "namePrefix", GoGetter: "NamePrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "namePrefixInput", GoGetter: "NamePrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "notification", GoGetter: "Notification"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationInput", GoGetter: "NotificationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "plannedLimit", GoGetter: "PlannedLimit"},
-			_jsii_.MemberProperty{JsiiProperty: "plannedLimitInput", GoGetter: "PlannedLimitInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAutoAdjustData", GoMethod: "PutAutoAdjustData"},
-			_jsii_.MemberMethod{JsiiMethod: "putCostFilter", GoMethod: "PutCostFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "putCostTypes", GoMethod: "PutCostTypes"},
-			_jsii_.MemberMethod{JsiiMethod: "putNotification", GoMethod: "PutNotification"},
-			_jsii_.MemberMethod{JsiiMethod: "putPlannedLimit", GoMethod: "PutPlannedLimit"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutoAdjustData", GoMethod: "ResetAutoAdjustData"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCostFilter", GoMethod: "ResetCostFilter"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCostFilters", GoMethod: "ResetCostFilters"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCostTypes", GoMethod: "ResetCostTypes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLimitAmount", GoMethod: "ResetLimitAmount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLimitUnit", GoMethod: "ResetLimitUnit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamePrefix", GoMethod: "ResetNamePrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNotification", GoMethod: "ResetNotification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPlannedLimit", GoMethod: "ResetPlannedLimit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimePeriodEnd", GoMethod: "ResetTimePeriodEnd"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimePeriodStart", GoMethod: "ResetTimePeriodStart"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timePeriodEnd", GoGetter: "TimePeriodEnd"},
-			_jsii_.MemberProperty{JsiiProperty: "timePeriodEndInput", GoGetter: "TimePeriodEndInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timePeriodStart", GoGetter: "TimePeriodStart"},
-			_jsii_.MemberProperty{JsiiProperty: "timePeriodStartInput", GoGetter: "TimePeriodStartInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeUnit", GoGetter: "TimeUnit"},
-			_jsii_.MemberProperty{JsiiProperty: "timeUnitInput", GoGetter: "TimeUnitInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudget{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustData",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustData)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustDataHistoricalOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "budgetAdjustmentPeriod", GoGetter: "BudgetAdjustmentPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "budgetAdjustmentPeriodInput", GoGetter: "BudgetAdjustmentPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lookbackAvailablePeriods", GoGetter: "LookbackAvailablePeriods"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustDataOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "autoAdjustType", GoGetter: "AutoAdjustType"},
-			_jsii_.MemberProperty{JsiiProperty: "autoAdjustTypeInput", GoGetter: "AutoAdjustTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "historicalOptions", GoGetter: "HistoricalOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "historicalOptionsInput", GoGetter: "HistoricalOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lastAutoAdjustTime", GoGetter: "LastAutoAdjustTime"},
-			_jsii_.MemberMethod{JsiiMethod: "putHistoricalOptions", GoMethod: "PutHistoricalOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHistoricalOptions", GoMethod: "ResetHistoricalOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetAutoAdjustDataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetConfig",
-		reflect.TypeOf((*BudgetsBudgetConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetCostFilter",
-		reflect.TypeOf((*BudgetsBudgetCostFilter)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetCostFilterList",
-		reflect.TypeOf((*BudgetsBudgetCostFilterList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetCostFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference",
-		reflect.TypeOf((*BudgetsBudgetCostFilterOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
-			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetCostFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetCostTypes",
-		reflect.TypeOf((*BudgetsBudgetCostTypes)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
-		reflect.TypeOf((*BudgetsBudgetCostTypesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "includeCredit", GoGetter: "IncludeCredit"},
-			_jsii_.MemberProperty{JsiiProperty: "includeCreditInput", GoGetter: "IncludeCreditInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeDiscount", GoGetter: "IncludeDiscount"},
-			_jsii_.MemberProperty{JsiiProperty: "includeDiscountInput", GoGetter: "IncludeDiscountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeOtherSubscription", GoGetter: "IncludeOtherSubscription"},
-			_jsii_.MemberProperty{JsiiProperty: "includeOtherSubscriptionInput", GoGetter: "IncludeOtherSubscriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeRecurring", GoGetter: "IncludeRecurring"},
-			_jsii_.MemberProperty{JsiiProperty: "includeRecurringInput", GoGetter: "IncludeRecurringInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeRefund", GoGetter: "IncludeRefund"},
-			_jsii_.MemberProperty{JsiiProperty: "includeRefundInput", GoGetter: "IncludeRefundInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSubscription", GoGetter: "IncludeSubscription"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSubscriptionInput", GoGetter: "IncludeSubscriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSupport", GoGetter: "IncludeSupport"},
-			_jsii_.MemberProperty{JsiiProperty: "includeSupportInput", GoGetter: "IncludeSupportInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTax", GoGetter: "IncludeTax"},
-			_jsii_.MemberProperty{JsiiProperty: "includeTaxInput", GoGetter: "IncludeTaxInput"},
-			_jsii_.MemberProperty{JsiiProperty: "includeUpfront", GoGetter: "IncludeUpfront"},
-			_jsii_.MemberProperty{JsiiProperty: "includeUpfrontInput", GoGetter: "IncludeUpfrontInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeCredit", GoMethod: "ResetIncludeCredit"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeDiscount", GoMethod: "ResetIncludeDiscount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeOtherSubscription", GoMethod: "ResetIncludeOtherSubscription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeRecurring", GoMethod: "ResetIncludeRecurring"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeRefund", GoMethod: "ResetIncludeRefund"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeSubscription", GoMethod: "ResetIncludeSubscription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeSupport", GoMethod: "ResetIncludeSupport"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeTax", GoMethod: "ResetIncludeTax"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIncludeUpfront", GoMethod: "ResetIncludeUpfront"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseAmortized", GoMethod: "ResetUseAmortized"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseBlended", GoMethod: "ResetUseBlended"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "useAmortized", GoGetter: "UseAmortized"},
-			_jsii_.MemberProperty{JsiiProperty: "useAmortizedInput", GoGetter: "UseAmortizedInput"},
-			_jsii_.MemberProperty{JsiiProperty: "useBlended", GoGetter: "UseBlended"},
-			_jsii_.MemberProperty{JsiiProperty: "useBlendedInput", GoGetter: "UseBlendedInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetCostTypesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetNotification",
-		reflect.TypeOf((*BudgetsBudgetNotification)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetNotificationList",
-		reflect.TypeOf((*BudgetsBudgetNotificationList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetNotificationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
-		reflect.TypeOf((*BudgetsBudgetNotificationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},
-			_jsii_.MemberProperty{JsiiProperty: "comparisonOperatorInput", GoGetter: "ComparisonOperatorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationType", GoGetter: "NotificationType"},
-			_jsii_.MemberProperty{JsiiProperty: "notificationTypeInput", GoGetter: "NotificationTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubscriberEmailAddresses", GoMethod: "ResetSubscriberEmailAddresses"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubscriberSnsTopicArns", GoMethod: "ResetSubscriberSnsTopicArns"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "subscriberEmailAddresses", GoGetter: "SubscriberEmailAddresses"},
-			_jsii_.MemberProperty{JsiiProperty: "subscriberEmailAddressesInput", GoGetter: "SubscriberEmailAddressesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subscriberSnsTopicArns", GoGetter: "SubscriberSnsTopicArns"},
-			_jsii_.MemberProperty{JsiiProperty: "subscriberSnsTopicArnsInput", GoGetter: "SubscriberSnsTopicArnsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "threshold", GoGetter: "Threshold"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdType", GoGetter: "ThresholdType"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdTypeInput", GoGetter: "ThresholdTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetNotificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimit",
-		reflect.TypeOf((*BudgetsBudgetPlannedLimit)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimitList",
-		reflect.TypeOf((*BudgetsBudgetPlannedLimitList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetPlannedLimitList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference",
-		reflect.TypeOf((*BudgetsBudgetPlannedLimitOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "amount", GoGetter: "Amount"},
-			_jsii_.MemberProperty{JsiiProperty: "amountInput", GoGetter: "AmountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
-			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_BudgetsBudgetPlannedLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+func NewBudgetsBudget_Override(b BudgetsBudget, scope constructs.Construct, id *string, config *BudgetsBudgetConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.budgetsBudget.BudgetsBudget",
+		[]interface{}{scope, id, config},
+		b,
 	)
 }
+
+func (j *jsiiProxy_BudgetsBudget)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetBudgetType(val *string) {
+	if err := j.validateSetBudgetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"budgetType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetCostFilters(val *map[string]*string) {
+	if err := j.validateSetCostFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"costFilters",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetLimitAmount(val *string) {
+	if err := j.validateSetLimitAmountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"limitAmount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetLimitUnit(val *string) {
+	if err := j.validateSetLimitUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"limitUnit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetTimePeriodEnd(val *string) {
+	if err := j.validateSetTimePeriodEndParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timePeriodEnd",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetTimePeriodStart(val *string) {
+	if err := j.validateSetTimePeriodStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timePeriodStart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetTimeUnit(val *string) {
+	if err := j.validateSetTimeUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeUnit",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func BudgetsBudget_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBudgetsBudget_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.budgetsBudget.BudgetsBudget",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BudgetsBudget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBudgetsBudget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.budgetsBudget.BudgetsBudget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BudgetsBudget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBudgetsBudget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.budgetsBudget.BudgetsBudget",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func BudgetsBudget_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.budgetsBudget.BudgetsBudget",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) AddOverride(path *string, value interface{}) {
+	if err := b.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		b,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		b,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) OverrideLogicalId(newLogicalId *string) {
+	if err := b.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) PutAutoAdjustData(value *BudgetsBudgetAutoAdjustData) {
+	if err := b.validatePutAutoAdjustDataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putAutoAdjustData",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) PutCostFilter(value interface{}) {
+	if err := b.validatePutCostFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCostFilter",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) PutCostTypes(value *BudgetsBudgetCostTypes) {
+	if err := b.validatePutCostTypesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCostTypes",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) PutNotification(value interface{}) {
+	if err := b.validatePutNotificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putNotification",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) PutPlannedLimit(value interface{}) {
+	if err := b.validatePutPlannedLimitParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putPlannedLimit",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetAutoAdjustData() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAutoAdjustData",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetCostFilter() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCostFilter",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetCostFilters() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCostFilters",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetCostTypes() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCostTypes",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetLimitAmount() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLimitAmount",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetLimitUnit() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLimitUnit",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetName() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetNotification() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetNotification",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetPlannedLimit() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPlannedLimit",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetTimePeriodEnd() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimePeriodEnd",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetTimePeriodStart() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimePeriodStart",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BudgetsBudget) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

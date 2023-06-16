@@ -1,205 +1,1067 @@
 package macie2findingsfilter
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/aws/macie2findingsfilter/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
+type Macie2FindingsFilter interface {
+	cdktf.TerraformResource
+	Action() *string
+	SetAction(val *string)
+	ActionInput() *string
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	FindingCriteria() Macie2FindingsFilterFindingCriteriaOutputReference
+	FindingCriteriaInput() *Macie2FindingsFilterFindingCriteria
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Position() *float64
+	SetPosition(val *float64)
+	PositionInput() *float64
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutFindingCriteria(value *Macie2FindingsFilterFindingCriteria)
+	ResetDescription()
+	ResetId()
+	ResetName()
+	ResetNamePrefix()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPosition()
+	ResetTags()
+	ResetTagsAll()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for Macie2FindingsFilter
+type jsiiProxy_Macie2FindingsFilter struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) ActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) FindingCriteria() Macie2FindingsFilterFindingCriteriaOutputReference {
+	var returns Macie2FindingsFilterFindingCriteriaOutputReference
+	_jsii_.Get(
+		j,
+		"findingCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) FindingCriteriaInput() *Macie2FindingsFilterFindingCriteria {
+	var returns *Macie2FindingsFilterFindingCriteria
+	_jsii_.Get(
+		j,
+		"findingCriteriaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Position() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"position",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) PositionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"positionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) Macie2FindingsFilter {
+	_init_.Initialize()
+
+	if err := validateNewMacie2FindingsFilterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_Macie2FindingsFilter{}
+
+	_jsii_.Create(
 		"aws.macie2FindingsFilter.Macie2FindingsFilter",
-		reflect.TypeOf((*Macie2FindingsFilter)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
-			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "findingCriteria", GoGetter: "FindingCriteria"},
-			_jsii_.MemberProperty{JsiiProperty: "findingCriteriaInput", GoGetter: "FindingCriteriaInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "namePrefix", GoGetter: "NamePrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "namePrefixInput", GoGetter: "NamePrefixInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
-			_jsii_.MemberProperty{JsiiProperty: "positionInput", GoGetter: "PositionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putFindingCriteria", GoMethod: "PutFindingCriteria"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNamePrefix", GoMethod: "ResetNamePrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPosition", GoMethod: "ResetPosition"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
-			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_Macie2FindingsFilter{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterConfig",
-		reflect.TypeOf((*Macie2FindingsFilterConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteria)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaCriterion)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionList",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaCriterionList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionOutputReference",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaCriterionOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "eq", GoGetter: "Eq"},
-			_jsii_.MemberProperty{JsiiProperty: "eqExactMatch", GoGetter: "EqExactMatch"},
-			_jsii_.MemberProperty{JsiiProperty: "eqExactMatchInput", GoGetter: "EqExactMatchInput"},
-			_jsii_.MemberProperty{JsiiProperty: "eqInput", GoGetter: "EqInput"},
-			_jsii_.MemberProperty{JsiiProperty: "field", GoGetter: "Field"},
-			_jsii_.MemberProperty{JsiiProperty: "fieldInput", GoGetter: "FieldInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "gt", GoGetter: "Gt"},
-			_jsii_.MemberProperty{JsiiProperty: "gte", GoGetter: "Gte"},
-			_jsii_.MemberProperty{JsiiProperty: "gteInput", GoGetter: "GteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "gtInput", GoGetter: "GtInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lt", GoGetter: "Lt"},
-			_jsii_.MemberProperty{JsiiProperty: "lte", GoGetter: "Lte"},
-			_jsii_.MemberProperty{JsiiProperty: "lteInput", GoGetter: "LteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ltInput", GoGetter: "LtInput"},
-			_jsii_.MemberProperty{JsiiProperty: "neq", GoGetter: "Neq"},
-			_jsii_.MemberProperty{JsiiProperty: "neqInput", GoGetter: "NeqInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEq", GoMethod: "ResetEq"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEqExactMatch", GoMethod: "ResetEqExactMatch"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGt", GoMethod: "ResetGt"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGte", GoMethod: "ResetGte"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLt", GoMethod: "ResetLt"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLte", GoMethod: "ResetLte"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNeq", GoMethod: "ResetNeq"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "criterion", GoGetter: "Criterion"},
-			_jsii_.MemberProperty{JsiiProperty: "criterionInput", GoGetter: "CriterionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putCriterion", GoMethod: "PutCriterion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCriterion", GoMethod: "ResetCriterion"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+func NewMacie2FindingsFilter_Override(m Macie2FindingsFilter, scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		[]interface{}{scope, id, config},
+		m,
 	)
 }
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"action",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetPosition(val *float64) {
+	if err := j.validateSetPositionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"position",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func Macie2FindingsFilter_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2FindingsFilter_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Macie2FindingsFilter_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2FindingsFilter_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Macie2FindingsFilter_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2FindingsFilter_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func Macie2FindingsFilter_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) PutFindingCriteria(value *Macie2FindingsFilterFindingCriteria) {
+	if err := m.validatePutFindingCriteriaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putFindingCriteria",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetDescription() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetPosition() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPosition",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

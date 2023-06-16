@@ -1,507 +1,1317 @@
 package memcacheinstance
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/memcacheinstance/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/memcache_instance google_memcache_instance}.
+type MemcacheInstance interface {
+	cdktf.TerraformResource
+	AuthorizedNetwork() *string
+	SetAuthorizedNetwork(val *string)
+	AuthorizedNetworkInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreateTime() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DiscoveryEndpoint() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenancePolicy() MemcacheInstanceMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *MemcacheInstanceMaintenancePolicy
+	MaintenanceSchedule() MemcacheInstanceMaintenanceScheduleList
+	MemcacheFullVersion() *string
+	MemcacheNodes() MemcacheInstanceMemcacheNodesList
+	MemcacheParameters() MemcacheInstanceMemcacheParametersOutputReference
+	MemcacheParametersInput() *MemcacheInstanceMemcacheParameters
+	MemcacheVersion() *string
+	SetMemcacheVersion(val *string)
+	MemcacheVersionInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NodeConfig() MemcacheInstanceNodeConfigOutputReference
+	NodeConfigInput() *MemcacheInstanceNodeConfig
+	NodeCount() *float64
+	SetNodeCount(val *float64)
+	NodeCountInput() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() MemcacheInstanceTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutMaintenancePolicy(value *MemcacheInstanceMaintenancePolicy)
+	PutMemcacheParameters(value *MemcacheInstanceMemcacheParameters)
+	PutNodeConfig(value *MemcacheInstanceNodeConfig)
+	PutTimeouts(value *MemcacheInstanceTimeouts)
+	ResetAuthorizedNetwork()
+	ResetDisplayName()
+	ResetId()
+	ResetLabels()
+	ResetMaintenancePolicy()
+	ResetMemcacheParameters()
+	ResetMemcacheVersion()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetRegion()
+	ResetTimeouts()
+	ResetZones()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for MemcacheInstance
+type jsiiProxy_MemcacheInstance struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MemcacheInstance) AuthorizedNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) AuthorizedNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) DiscoveryEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MaintenancePolicy() MemcacheInstanceMaintenancePolicyOutputReference {
+	var returns MemcacheInstanceMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MaintenancePolicyInput() *MemcacheInstanceMaintenancePolicy {
+	var returns *MemcacheInstanceMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MaintenanceSchedule() MemcacheInstanceMaintenanceScheduleList {
+	var returns MemcacheInstanceMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MemcacheFullVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memcacheFullVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MemcacheNodes() MemcacheInstanceMemcacheNodesList {
+	var returns MemcacheInstanceMemcacheNodesList
+	_jsii_.Get(
+		j,
+		"memcacheNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MemcacheParameters() MemcacheInstanceMemcacheParametersOutputReference {
+	var returns MemcacheInstanceMemcacheParametersOutputReference
+	_jsii_.Get(
+		j,
+		"memcacheParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MemcacheParametersInput() *MemcacheInstanceMemcacheParameters {
+	var returns *MemcacheInstanceMemcacheParameters
+	_jsii_.Get(
+		j,
+		"memcacheParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MemcacheVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memcacheVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) MemcacheVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memcacheVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) NodeConfig() MemcacheInstanceNodeConfigOutputReference {
+	var returns MemcacheInstanceNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) NodeConfigInput() *MemcacheInstanceNodeConfig {
+	var returns *MemcacheInstanceNodeConfig
+	_jsii_.Get(
+		j,
+		"nodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) NodeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Timeouts() MemcacheInstanceTimeoutsOutputReference {
+	var returns MemcacheInstanceTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/memcache_instance google_memcache_instance} Resource.
+func NewMemcacheInstance(scope constructs.Construct, id *string, config *MemcacheInstanceConfig) MemcacheInstance {
+	_init_.Initialize()
+
+	if err := validateNewMemcacheInstanceParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_MemcacheInstance{}
+
+	_jsii_.Create(
 		"google.memcacheInstance.MemcacheInstance",
-		reflect.TypeOf((*MemcacheInstance)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizedNetwork", GoGetter: "AuthorizedNetwork"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizedNetworkInput", GoGetter: "AuthorizedNetworkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "discoveryEndpoint", GoGetter: "DiscoveryEndpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicy", GoGetter: "MaintenancePolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicyInput", GoGetter: "MaintenancePolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceSchedule", GoGetter: "MaintenanceSchedule"},
-			_jsii_.MemberProperty{JsiiProperty: "memcacheFullVersion", GoGetter: "MemcacheFullVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "memcacheNodes", GoGetter: "MemcacheNodes"},
-			_jsii_.MemberProperty{JsiiProperty: "memcacheParameters", GoGetter: "MemcacheParameters"},
-			_jsii_.MemberProperty{JsiiProperty: "memcacheParametersInput", GoGetter: "MemcacheParametersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "memcacheVersion", GoGetter: "MemcacheVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "memcacheVersionInput", GoGetter: "MemcacheVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeConfig", GoGetter: "NodeConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeConfigInput", GoGetter: "NodeConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeCount", GoGetter: "NodeCount"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeCountInput", GoGetter: "NodeCountInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putMaintenancePolicy", GoMethod: "PutMaintenancePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putMemcacheParameters", GoMethod: "PutMemcacheParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "putNodeConfig", GoMethod: "PutNodeConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
-			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedNetwork", GoMethod: "ResetAuthorizedNetwork"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaintenancePolicy", GoMethod: "ResetMaintenancePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMemcacheParameters", GoMethod: "ResetMemcacheParameters"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMemcacheVersion", GoMethod: "ResetMemcacheVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZones", GoMethod: "ResetZones"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
-			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceConfig",
-		reflect.TypeOf((*MemcacheInstanceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicy",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putWeeklyMaintenanceWindow", GoMethod: "PutWeeklyMaintenanceWindow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindow", GoGetter: "WeeklyMaintenanceWindow"},
-			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowInput", GoGetter: "WeeklyMaintenanceWindowInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "day", GoGetter: "Day"},
-			_jsii_.MemberProperty{JsiiProperty: "dayInput", GoGetter: "DayInput"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
-			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putStartTime", GoMethod: "PutStartTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hours", GoGetter: "Hours"},
-			_jsii_.MemberProperty{JsiiProperty: "hoursInput", GoGetter: "HoursInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "minutes", GoGetter: "Minutes"},
-			_jsii_.MemberProperty{JsiiProperty: "minutesInput", GoGetter: "MinutesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
-			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHours", GoMethod: "ResetHours"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinutes", GoMethod: "ResetMinutes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSeconds", GoMethod: "ResetSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
-			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceSchedule",
-		reflect.TypeOf((*MemcacheInstanceMaintenanceSchedule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
-		reflect.TypeOf((*MemcacheInstanceMaintenanceScheduleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMaintenanceScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenanceScheduleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "endTime", GoGetter: "EndTime"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scheduleDeadlineTime", GoGetter: "ScheduleDeadlineTime"},
-			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMaintenanceScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodes",
-		reflect.TypeOf((*MemcacheInstanceMemcacheNodes)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
-		reflect.TypeOf((*MemcacheInstanceMemcacheNodesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMemcacheNodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMemcacheNodesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "nodeId", GoGetter: "NodeId"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMemcacheParameters",
-		reflect.TypeOf((*MemcacheInstanceMemcacheParameters)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMemcacheParametersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "params", GoGetter: "Params"},
-			_jsii_.MemberProperty{JsiiProperty: "paramsInput", GoGetter: "ParamsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetParams", GoMethod: "ResetParams"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceMemcacheParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceNodeConfig",
-		reflect.TypeOf((*MemcacheInstanceNodeConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceNodeConfigOutputReference",
-		reflect.TypeOf((*MemcacheInstanceNodeConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuCount", GoGetter: "CpuCount"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuCountInput", GoGetter: "CpuCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "memorySizeMb", GoGetter: "MemorySizeMb"},
-			_jsii_.MemberProperty{JsiiProperty: "memorySizeMbInput", GoGetter: "MemorySizeMbInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceNodeConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceTimeouts",
-		reflect.TypeOf((*MemcacheInstanceTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*MemcacheInstanceTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MemcacheInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/memcache_instance google_memcache_instance} Resource.
+func NewMemcacheInstance_Override(m MemcacheInstance, scope constructs.Construct, id *string, config *MemcacheInstanceConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.memcacheInstance.MemcacheInstance",
+		[]interface{}{scope, id, config},
+		m,
 	)
 }
+
+func (j *jsiiProxy_MemcacheInstance)SetAuthorizedNetwork(val *string) {
+	if err := j.validateSetAuthorizedNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetMemcacheVersion(val *string) {
+	if err := j.validateSetMemcacheVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memcacheVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetNodeCount(val *float64) {
+	if err := j.validateSetNodeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func MemcacheInstance_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemcacheInstance_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.memcacheInstance.MemcacheInstance",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MemcacheInstance_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemcacheInstance_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.memcacheInstance.MemcacheInstance",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MemcacheInstance_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemcacheInstance_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.memcacheInstance.MemcacheInstance",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func MemcacheInstance_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.memcacheInstance.MemcacheInstance",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) PutMaintenancePolicy(value *MemcacheInstanceMaintenancePolicy) {
+	if err := m.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) PutMemcacheParameters(value *MemcacheInstanceMemcacheParameters) {
+	if err := m.validatePutMemcacheParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMemcacheParameters",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) PutNodeConfig(value *MemcacheInstanceNodeConfig) {
+	if err := m.validatePutNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putNodeConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) PutTimeouts(value *MemcacheInstanceTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetAuthorizedNetwork() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAuthorizedNetwork",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetLabels() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetMemcacheParameters() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMemcacheParameters",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetMemcacheVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMemcacheVersion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetProject() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetZones() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetZones",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MemcacheInstance) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

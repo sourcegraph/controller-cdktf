@@ -1,1356 +1,1995 @@
 package googleappengineflexibleappversion
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineflexibleappversion/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version}.
+type GoogleAppEngineFlexibleAppVersion interface {
+	cdktf.TerraformResource
+	ApiConfig() GoogleAppEngineFlexibleAppVersionApiConfigOutputReference
+	ApiConfigInput() *GoogleAppEngineFlexibleAppVersionApiConfig
+	AutomaticScaling() GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference
+	AutomaticScalingInput() *GoogleAppEngineFlexibleAppVersionAutomaticScaling
+	BetaSettings() *map[string]*string
+	SetBetaSettings(val *map[string]*string)
+	BetaSettingsInput() *map[string]*string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	DefaultExpiration() *string
+	SetDefaultExpiration(val *string)
+	DefaultExpirationInput() *string
+	DeleteServiceOnDestroy() interface{}
+	SetDeleteServiceOnDestroy(val interface{})
+	DeleteServiceOnDestroyInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Deployment() GoogleAppEngineFlexibleAppVersionDeploymentOutputReference
+	DeploymentInput() *GoogleAppEngineFlexibleAppVersionDeployment
+	EndpointsApiService() GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
+	EndpointsApiServiceInput() *GoogleAppEngineFlexibleAppVersionEndpointsApiService
+	Entrypoint() GoogleAppEngineFlexibleAppVersionEntrypointOutputReference
+	EntrypointInput() *GoogleAppEngineFlexibleAppVersionEntrypoint
+	EnvVariables() *map[string]*string
+	SetEnvVariables(val *map[string]*string)
+	EnvVariablesInput() *map[string]*string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Handlers() GoogleAppEngineFlexibleAppVersionHandlersList
+	HandlersInput() interface{}
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InboundServices() *[]*string
+	SetInboundServices(val *[]*string)
+	InboundServicesInput() *[]*string
+	InstanceClass() *string
+	SetInstanceClass(val *string)
+	InstanceClassInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LivenessCheck() GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference
+	LivenessCheckInput() *GoogleAppEngineFlexibleAppVersionLivenessCheck
+	ManualScaling() GoogleAppEngineFlexibleAppVersionManualScalingOutputReference
+	ManualScalingInput() *GoogleAppEngineFlexibleAppVersionManualScaling
+	Name() *string
+	Network() GoogleAppEngineFlexibleAppVersionNetworkOutputReference
+	NetworkInput() *GoogleAppEngineFlexibleAppVersionNetwork
+	NobuildFilesRegex() *string
+	SetNobuildFilesRegex(val *string)
+	NobuildFilesRegexInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NoopOnDestroy() interface{}
+	SetNoopOnDestroy(val interface{})
+	NoopOnDestroyInput() interface{}
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ReadinessCheck() GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference
+	ReadinessCheckInput() *GoogleAppEngineFlexibleAppVersionReadinessCheck
+	Resources() GoogleAppEngineFlexibleAppVersionResourcesOutputReference
+	ResourcesInput() *GoogleAppEngineFlexibleAppVersionResources
+	Runtime() *string
+	SetRuntime(val *string)
+	RuntimeApiVersion() *string
+	SetRuntimeApiVersion(val *string)
+	RuntimeApiVersionInput() *string
+	RuntimeChannel() *string
+	SetRuntimeChannel(val *string)
+	RuntimeChannelInput() *string
+	RuntimeInput() *string
+	RuntimeMainExecutablePath() *string
+	SetRuntimeMainExecutablePath(val *string)
+	RuntimeMainExecutablePathInput() *string
+	Service() *string
+	SetService(val *string)
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
+	ServiceInput() *string
+	ServingStatus() *string
+	SetServingStatus(val *string)
+	ServingStatusInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VersionId() *string
+	SetVersionId(val *string)
+	VersionIdInput() *string
+	VpcAccessConnector() GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference
+	VpcAccessConnectorInput() *GoogleAppEngineFlexibleAppVersionVpcAccessConnector
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutApiConfig(value *GoogleAppEngineFlexibleAppVersionApiConfig)
+	PutAutomaticScaling(value *GoogleAppEngineFlexibleAppVersionAutomaticScaling)
+	PutDeployment(value *GoogleAppEngineFlexibleAppVersionDeployment)
+	PutEndpointsApiService(value *GoogleAppEngineFlexibleAppVersionEndpointsApiService)
+	PutEntrypoint(value *GoogleAppEngineFlexibleAppVersionEntrypoint)
+	PutHandlers(value interface{})
+	PutLivenessCheck(value *GoogleAppEngineFlexibleAppVersionLivenessCheck)
+	PutManualScaling(value *GoogleAppEngineFlexibleAppVersionManualScaling)
+	PutNetwork(value *GoogleAppEngineFlexibleAppVersionNetwork)
+	PutReadinessCheck(value *GoogleAppEngineFlexibleAppVersionReadinessCheck)
+	PutResources(value *GoogleAppEngineFlexibleAppVersionResources)
+	PutTimeouts(value *GoogleAppEngineFlexibleAppVersionTimeouts)
+	PutVpcAccessConnector(value *GoogleAppEngineFlexibleAppVersionVpcAccessConnector)
+	ResetApiConfig()
+	ResetAutomaticScaling()
+	ResetBetaSettings()
+	ResetDefaultExpiration()
+	ResetDeleteServiceOnDestroy()
+	ResetDeployment()
+	ResetEndpointsApiService()
+	ResetEntrypoint()
+	ResetEnvVariables()
+	ResetHandlers()
+	ResetId()
+	ResetInboundServices()
+	ResetInstanceClass()
+	ResetManualScaling()
+	ResetNetwork()
+	ResetNobuildFilesRegex()
+	ResetNoopOnDestroy()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetResources()
+	ResetRuntimeApiVersion()
+	ResetRuntimeChannel()
+	ResetRuntimeMainExecutablePath()
+	ResetServiceAccount()
+	ResetServingStatus()
+	ResetTimeouts()
+	ResetVersionId()
+	ResetVpcAccessConnector()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleAppEngineFlexibleAppVersion
+type jsiiProxy_GoogleAppEngineFlexibleAppVersion struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ApiConfig() GoogleAppEngineFlexibleAppVersionApiConfigOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionApiConfigOutputReference
+	_jsii_.Get(
+		j,
+		"apiConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ApiConfigInput() *GoogleAppEngineFlexibleAppVersionApiConfig {
+	var returns *GoogleAppEngineFlexibleAppVersionApiConfig
+	_jsii_.Get(
+		j,
+		"apiConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) AutomaticScaling() GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference
+	_jsii_.Get(
+		j,
+		"automaticScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) AutomaticScalingInput() *GoogleAppEngineFlexibleAppVersionAutomaticScaling {
+	var returns *GoogleAppEngineFlexibleAppVersionAutomaticScaling
+	_jsii_.Get(
+		j,
+		"automaticScalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) BetaSettings() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"betaSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) BetaSettingsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"betaSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) DefaultExpiration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultExpiration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) DefaultExpirationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultExpirationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) DeleteServiceOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteServiceOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) DeleteServiceOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteServiceOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Deployment() GoogleAppEngineFlexibleAppVersionDeploymentOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionDeploymentOutputReference
+	_jsii_.Get(
+		j,
+		"deployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) DeploymentInput() *GoogleAppEngineFlexibleAppVersionDeployment {
+	var returns *GoogleAppEngineFlexibleAppVersionDeployment
+	_jsii_.Get(
+		j,
+		"deploymentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) EndpointsApiService() GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
+	_jsii_.Get(
+		j,
+		"endpointsApiService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) EndpointsApiServiceInput() *GoogleAppEngineFlexibleAppVersionEndpointsApiService {
+	var returns *GoogleAppEngineFlexibleAppVersionEndpointsApiService
+	_jsii_.Get(
+		j,
+		"endpointsApiServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Entrypoint() GoogleAppEngineFlexibleAppVersionEntrypointOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionEntrypointOutputReference
+	_jsii_.Get(
+		j,
+		"entrypoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) EntrypointInput() *GoogleAppEngineFlexibleAppVersionEntrypoint {
+	var returns *GoogleAppEngineFlexibleAppVersionEntrypoint
+	_jsii_.Get(
+		j,
+		"entrypointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) EnvVariables() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"envVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) EnvVariablesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"envVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Handlers() GoogleAppEngineFlexibleAppVersionHandlersList {
+	var returns GoogleAppEngineFlexibleAppVersionHandlersList
+	_jsii_.Get(
+		j,
+		"handlers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) HandlersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"handlersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) InboundServices() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"inboundServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) InboundServicesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"inboundServicesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) InstanceClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) InstanceClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceClassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) LivenessCheck() GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference
+	_jsii_.Get(
+		j,
+		"livenessCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) LivenessCheckInput() *GoogleAppEngineFlexibleAppVersionLivenessCheck {
+	var returns *GoogleAppEngineFlexibleAppVersionLivenessCheck
+	_jsii_.Get(
+		j,
+		"livenessCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ManualScaling() GoogleAppEngineFlexibleAppVersionManualScalingOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionManualScalingOutputReference
+	_jsii_.Get(
+		j,
+		"manualScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ManualScalingInput() *GoogleAppEngineFlexibleAppVersionManualScaling {
+	var returns *GoogleAppEngineFlexibleAppVersionManualScaling
+	_jsii_.Get(
+		j,
+		"manualScalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Network() GoogleAppEngineFlexibleAppVersionNetworkOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) NetworkInput() *GoogleAppEngineFlexibleAppVersionNetwork {
+	var returns *GoogleAppEngineFlexibleAppVersionNetwork
+	_jsii_.Get(
+		j,
+		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) NobuildFilesRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nobuildFilesRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) NobuildFilesRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nobuildFilesRegexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) NoopOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noopOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) NoopOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noopOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ReadinessCheck() GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference
+	_jsii_.Get(
+		j,
+		"readinessCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ReadinessCheckInput() *GoogleAppEngineFlexibleAppVersionReadinessCheck {
+	var returns *GoogleAppEngineFlexibleAppVersionReadinessCheck
+	_jsii_.Get(
+		j,
+		"readinessCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Resources() GoogleAppEngineFlexibleAppVersionResourcesOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionResourcesOutputReference
+	_jsii_.Get(
+		j,
+		"resources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResourcesInput() *GoogleAppEngineFlexibleAppVersionResources {
+	var returns *GoogleAppEngineFlexibleAppVersionResources
+	_jsii_.Get(
+		j,
+		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Runtime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeApiVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeApiVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeApiVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeApiVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeChannelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeMainExecutablePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeMainExecutablePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) RuntimeMainExecutablePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeMainExecutablePathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Service() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"service",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServingStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servingStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServingStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servingStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Timeouts() GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) VersionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) VersionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) VpcAccessConnector() GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference {
+	var returns GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference
+	_jsii_.Get(
+		j,
+		"vpcAccessConnector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) VpcAccessConnectorInput() *GoogleAppEngineFlexibleAppVersionVpcAccessConnector {
+	var returns *GoogleAppEngineFlexibleAppVersionVpcAccessConnector
+	_jsii_.Get(
+		j,
+		"vpcAccessConnectorInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+func NewGoogleAppEngineFlexibleAppVersion(scope constructs.Construct, id *string, config *GoogleAppEngineFlexibleAppVersionConfig) GoogleAppEngineFlexibleAppVersion {
+	_init_.Initialize()
+
+	if err := validateNewGoogleAppEngineFlexibleAppVersionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleAppEngineFlexibleAppVersion{}
+
+	_jsii_.Create(
 		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersion)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "apiConfig", GoGetter: "ApiConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "apiConfigInput", GoGetter: "ApiConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "automaticScaling", GoGetter: "AutomaticScaling"},
-			_jsii_.MemberProperty{JsiiProperty: "automaticScalingInput", GoGetter: "AutomaticScalingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "betaSettings", GoGetter: "BetaSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "betaSettingsInput", GoGetter: "BetaSettingsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultExpiration", GoGetter: "DefaultExpiration"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultExpirationInput", GoGetter: "DefaultExpirationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteServiceOnDestroy", GoGetter: "DeleteServiceOnDestroy"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteServiceOnDestroyInput", GoGetter: "DeleteServiceOnDestroyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "deployment", GoGetter: "Deployment"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentInput", GoGetter: "DeploymentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointsApiService", GoGetter: "EndpointsApiService"},
-			_jsii_.MemberProperty{JsiiProperty: "endpointsApiServiceInput", GoGetter: "EndpointsApiServiceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "entrypoint", GoGetter: "Entrypoint"},
-			_jsii_.MemberProperty{JsiiProperty: "entrypointInput", GoGetter: "EntrypointInput"},
-			_jsii_.MemberProperty{JsiiProperty: "envVariables", GoGetter: "EnvVariables"},
-			_jsii_.MemberProperty{JsiiProperty: "envVariablesInput", GoGetter: "EnvVariablesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "handlers", GoGetter: "Handlers"},
-			_jsii_.MemberProperty{JsiiProperty: "handlersInput", GoGetter: "HandlersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "inboundServices", GoGetter: "InboundServices"},
-			_jsii_.MemberProperty{JsiiProperty: "inboundServicesInput", GoGetter: "InboundServicesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceClass", GoGetter: "InstanceClass"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceClassInput", GoGetter: "InstanceClassInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "livenessCheck", GoGetter: "LivenessCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "livenessCheckInput", GoGetter: "LivenessCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "manualScaling", GoGetter: "ManualScaling"},
-			_jsii_.MemberProperty{JsiiProperty: "manualScalingInput", GoGetter: "ManualScalingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
-			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nobuildFilesRegex", GoGetter: "NobuildFilesRegex"},
-			_jsii_.MemberProperty{JsiiProperty: "nobuildFilesRegexInput", GoGetter: "NobuildFilesRegexInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "noopOnDestroy", GoGetter: "NoopOnDestroy"},
-			_jsii_.MemberProperty{JsiiProperty: "noopOnDestroyInput", GoGetter: "NoopOnDestroyInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putApiConfig", GoMethod: "PutApiConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putAutomaticScaling", GoMethod: "PutAutomaticScaling"},
-			_jsii_.MemberMethod{JsiiMethod: "putDeployment", GoMethod: "PutDeployment"},
-			_jsii_.MemberMethod{JsiiMethod: "putEndpointsApiService", GoMethod: "PutEndpointsApiService"},
-			_jsii_.MemberMethod{JsiiMethod: "putEntrypoint", GoMethod: "PutEntrypoint"},
-			_jsii_.MemberMethod{JsiiMethod: "putHandlers", GoMethod: "PutHandlers"},
-			_jsii_.MemberMethod{JsiiMethod: "putLivenessCheck", GoMethod: "PutLivenessCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putManualScaling", GoMethod: "PutManualScaling"},
-			_jsii_.MemberMethod{JsiiMethod: "putNetwork", GoMethod: "PutNetwork"},
-			_jsii_.MemberMethod{JsiiMethod: "putReadinessCheck", GoMethod: "PutReadinessCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putResources", GoMethod: "PutResources"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "putVpcAccessConnector", GoMethod: "PutVpcAccessConnector"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "readinessCheck", GoGetter: "ReadinessCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "readinessCheckInput", GoGetter: "ReadinessCheckInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApiConfig", GoMethod: "ResetApiConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticScaling", GoMethod: "ResetAutomaticScaling"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBetaSettings", GoMethod: "ResetBetaSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultExpiration", GoMethod: "ResetDefaultExpiration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteServiceOnDestroy", GoMethod: "ResetDeleteServiceOnDestroy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeployment", GoMethod: "ResetDeployment"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEndpointsApiService", GoMethod: "ResetEndpointsApiService"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEntrypoint", GoMethod: "ResetEntrypoint"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnvVariables", GoMethod: "ResetEnvVariables"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHandlers", GoMethod: "ResetHandlers"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInboundServices", GoMethod: "ResetInboundServices"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceClass", GoMethod: "ResetInstanceClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetManualScaling", GoMethod: "ResetManualScaling"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetwork", GoMethod: "ResetNetwork"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNobuildFilesRegex", GoMethod: "ResetNobuildFilesRegex"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNoopOnDestroy", GoMethod: "ResetNoopOnDestroy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResources", GoMethod: "ResetResources"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeApiVersion", GoMethod: "ResetRuntimeApiVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeChannel", GoMethod: "ResetRuntimeChannel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeMainExecutablePath", GoMethod: "ResetRuntimeMainExecutablePath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccount", GoMethod: "ResetServiceAccount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetServingStatus", GoMethod: "ResetServingStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVersionId", GoMethod: "ResetVersionId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcAccessConnector", GoMethod: "ResetVpcAccessConnector"},
-			_jsii_.MemberProperty{JsiiProperty: "resources", GoGetter: "Resources"},
-			_jsii_.MemberProperty{JsiiProperty: "resourcesInput", GoGetter: "ResourcesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "runtime", GoGetter: "Runtime"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeApiVersion", GoGetter: "RuntimeApiVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeApiVersionInput", GoGetter: "RuntimeApiVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeChannel", GoGetter: "RuntimeChannel"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeChannelInput", GoGetter: "RuntimeChannelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeInput", GoGetter: "RuntimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeMainExecutablePath", GoGetter: "RuntimeMainExecutablePath"},
-			_jsii_.MemberProperty{JsiiProperty: "runtimeMainExecutablePathInput", GoGetter: "RuntimeMainExecutablePathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccount", GoGetter: "ServiceAccount"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceAccountInput", GoGetter: "ServiceAccountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "servingStatus", GoGetter: "ServingStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "servingStatusInput", GoGetter: "ServingStatusInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
-			_jsii_.MemberProperty{JsiiProperty: "versionIdInput", GoGetter: "VersionIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcAccessConnector", GoGetter: "VpcAccessConnector"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcAccessConnectorInput", GoGetter: "VpcAccessConnectorInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersion{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionApiConfig",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionApiConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionApiConfigOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionApiConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authFailAction", GoGetter: "AuthFailAction"},
-			_jsii_.MemberProperty{JsiiProperty: "authFailActionInput", GoGetter: "AuthFailActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "login", GoGetter: "Login"},
-			_jsii_.MemberProperty{JsiiProperty: "loginInput", GoGetter: "LoginInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthFailAction", GoMethod: "ResetAuthFailAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogin", GoMethod: "ResetLogin"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityLevel", GoMethod: "ResetSecurityLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "script", GoGetter: "Script"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptInput", GoGetter: "ScriptInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevel", GoGetter: "SecurityLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevelInput", GoGetter: "SecurityLevelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
-			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionApiConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScaling",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScaling)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "aggregationWindowLength", GoGetter: "AggregationWindowLength"},
-			_jsii_.MemberProperty{JsiiProperty: "aggregationWindowLengthInput", GoGetter: "AggregationWindowLengthInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAggregationWindowLength", GoMethod: "ResetAggregationWindowLength"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetUtilization", GoGetter: "TargetUtilization"},
-			_jsii_.MemberProperty{JsiiProperty: "targetUtilizationInput", GoGetter: "TargetUtilizationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetReadBytesPerSecond", GoMethod: "ResetTargetReadBytesPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetReadOpsPerSecond", GoMethod: "ResetTargetReadOpsPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetWriteBytesPerSecond", GoMethod: "ResetTargetWriteBytesPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetWriteOpsPerSecond", GoMethod: "ResetTargetWriteOpsPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReadBytesPerSecond", GoGetter: "TargetReadBytesPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReadBytesPerSecondInput", GoGetter: "TargetReadBytesPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReadOpsPerSecond", GoGetter: "TargetReadOpsPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReadOpsPerSecondInput", GoGetter: "TargetReadOpsPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetWriteBytesPerSecond", GoGetter: "TargetWriteBytesPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetWriteBytesPerSecondInput", GoGetter: "TargetWriteBytesPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetWriteOpsPerSecond", GoGetter: "TargetWriteOpsPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetWriteOpsPerSecondInput", GoGetter: "TargetWriteOpsPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetReceivedBytesPerSecond", GoMethod: "ResetTargetReceivedBytesPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetReceivedPacketsPerSecond", GoMethod: "ResetTargetReceivedPacketsPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetSentBytesPerSecond", GoMethod: "ResetTargetSentBytesPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetSentPacketsPerSecond", GoMethod: "ResetTargetSentPacketsPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReceivedBytesPerSecond", GoGetter: "TargetReceivedBytesPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReceivedBytesPerSecondInput", GoGetter: "TargetReceivedBytesPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReceivedPacketsPerSecond", GoGetter: "TargetReceivedPacketsPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetReceivedPacketsPerSecondInput", GoGetter: "TargetReceivedPacketsPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSentBytesPerSecond", GoGetter: "TargetSentBytesPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSentBytesPerSecondInput", GoGetter: "TargetSentBytesPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSentPacketsPerSecond", GoGetter: "TargetSentPacketsPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSentPacketsPerSecondInput", GoGetter: "TargetSentPacketsPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "coolDownPeriod", GoGetter: "CoolDownPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "coolDownPeriodInput", GoGetter: "CoolDownPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuUtilization", GoGetter: "CpuUtilization"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuUtilizationInput", GoGetter: "CpuUtilizationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "diskUtilization", GoGetter: "DiskUtilization"},
-			_jsii_.MemberProperty{JsiiProperty: "diskUtilizationInput", GoGetter: "DiskUtilizationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentRequests", GoGetter: "MaxConcurrentRequests"},
-			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentRequestsInput", GoGetter: "MaxConcurrentRequestsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxIdleInstances", GoGetter: "MaxIdleInstances"},
-			_jsii_.MemberProperty{JsiiProperty: "maxIdleInstancesInput", GoGetter: "MaxIdleInstancesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxPendingLatency", GoGetter: "MaxPendingLatency"},
-			_jsii_.MemberProperty{JsiiProperty: "maxPendingLatencyInput", GoGetter: "MaxPendingLatencyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxTotalInstances", GoGetter: "MaxTotalInstances"},
-			_jsii_.MemberProperty{JsiiProperty: "maxTotalInstancesInput", GoGetter: "MaxTotalInstancesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minIdleInstances", GoGetter: "MinIdleInstances"},
-			_jsii_.MemberProperty{JsiiProperty: "minIdleInstancesInput", GoGetter: "MinIdleInstancesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minPendingLatency", GoGetter: "MinPendingLatency"},
-			_jsii_.MemberProperty{JsiiProperty: "minPendingLatencyInput", GoGetter: "MinPendingLatencyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "minTotalInstances", GoGetter: "MinTotalInstances"},
-			_jsii_.MemberProperty{JsiiProperty: "minTotalInstancesInput", GoGetter: "MinTotalInstancesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "networkUtilization", GoGetter: "NetworkUtilization"},
-			_jsii_.MemberProperty{JsiiProperty: "networkUtilizationInput", GoGetter: "NetworkUtilizationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCpuUtilization", GoMethod: "PutCpuUtilization"},
-			_jsii_.MemberMethod{JsiiMethod: "putDiskUtilization", GoMethod: "PutDiskUtilization"},
-			_jsii_.MemberMethod{JsiiMethod: "putNetworkUtilization", GoMethod: "PutNetworkUtilization"},
-			_jsii_.MemberMethod{JsiiMethod: "putRequestUtilization", GoMethod: "PutRequestUtilization"},
-			_jsii_.MemberProperty{JsiiProperty: "requestUtilization", GoGetter: "RequestUtilization"},
-			_jsii_.MemberProperty{JsiiProperty: "requestUtilizationInput", GoGetter: "RequestUtilizationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCoolDownPeriod", GoMethod: "ResetCoolDownPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskUtilization", GoMethod: "ResetDiskUtilization"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxConcurrentRequests", GoMethod: "ResetMaxConcurrentRequests"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxIdleInstances", GoMethod: "ResetMaxIdleInstances"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxPendingLatency", GoMethod: "ResetMaxPendingLatency"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxTotalInstances", GoMethod: "ResetMaxTotalInstances"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinIdleInstances", GoMethod: "ResetMinIdleInstances"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinPendingLatency", GoMethod: "ResetMinPendingLatency"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinTotalInstances", GoMethod: "ResetMinTotalInstances"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNetworkUtilization", GoMethod: "ResetNetworkUtilization"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequestUtilization", GoMethod: "ResetRequestUtilization"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetConcurrentRequests", GoMethod: "ResetTargetConcurrentRequests"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTargetRequestCountPerSecond", GoMethod: "ResetTargetRequestCountPerSecond"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetConcurrentRequests", GoGetter: "TargetConcurrentRequests"},
-			_jsii_.MemberProperty{JsiiProperty: "targetConcurrentRequestsInput", GoGetter: "TargetConcurrentRequestsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "targetRequestCountPerSecond", GoGetter: "TargetRequestCountPerSecond"},
-			_jsii_.MemberProperty{JsiiProperty: "targetRequestCountPerSecondInput", GoGetter: "TargetRequestCountPerSecondInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionConfig",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeployment",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeployment)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "appYamlPath", GoGetter: "AppYamlPath"},
-			_jsii_.MemberProperty{JsiiProperty: "appYamlPathInput", GoGetter: "AppYamlPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudBuildTimeout", GoGetter: "CloudBuildTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudBuildTimeoutInput", GoGetter: "CloudBuildTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloudBuildTimeout", GoMethod: "ResetCloudBuildTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentContainer",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentContainer)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentContainerOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentContainerOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "image", GoGetter: "Image"},
-			_jsii_.MemberProperty{JsiiProperty: "imageInput", GoGetter: "ImageInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentContainerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFiles",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentFiles)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFilesList",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentFilesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentFilesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFilesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentFilesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSha1Sum", GoMethod: "ResetSha1Sum"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sha1Sum", GoGetter: "Sha1Sum"},
-			_jsii_.MemberProperty{JsiiProperty: "sha1SumInput", GoGetter: "Sha1SumInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUrl", GoGetter: "SourceUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUrlInput", GoGetter: "SourceUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentFilesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cloudBuildOptions", GoGetter: "CloudBuildOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudBuildOptionsInput", GoGetter: "CloudBuildOptionsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "container", GoGetter: "Container"},
-			_jsii_.MemberProperty{JsiiProperty: "containerInput", GoGetter: "ContainerInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "files", GoGetter: "Files"},
-			_jsii_.MemberProperty{JsiiProperty: "filesInput", GoGetter: "FilesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putCloudBuildOptions", GoMethod: "PutCloudBuildOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putContainer", GoMethod: "PutContainer"},
-			_jsii_.MemberMethod{JsiiMethod: "putFiles", GoMethod: "PutFiles"},
-			_jsii_.MemberMethod{JsiiMethod: "putZip", GoMethod: "PutZip"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloudBuildOptions", GoMethod: "ResetCloudBuildOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContainer", GoMethod: "ResetContainer"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFiles", GoMethod: "ResetFiles"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZip", GoMethod: "ResetZip"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "zip", GoGetter: "Zip"},
-			_jsii_.MemberProperty{JsiiProperty: "zipInput", GoGetter: "ZipInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentZip",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentZip)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "filesCount", GoGetter: "FilesCount"},
-			_jsii_.MemberProperty{JsiiProperty: "filesCountInput", GoGetter: "FilesCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFilesCount", GoMethod: "ResetFilesCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUrl", GoGetter: "SourceUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "sourceUrlInput", GoGetter: "SourceUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionEndpointsApiService",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionEndpointsApiService)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "configId", GoGetter: "ConfigId"},
-			_jsii_.MemberProperty{JsiiProperty: "configIdInput", GoGetter: "ConfigIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "disableTraceSampling", GoGetter: "DisableTraceSampling"},
-			_jsii_.MemberProperty{JsiiProperty: "disableTraceSamplingInput", GoGetter: "DisableTraceSamplingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigId", GoMethod: "ResetConfigId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDisableTraceSampling", GoMethod: "ResetDisableTraceSampling"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRolloutStrategy", GoMethod: "ResetRolloutStrategy"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rolloutStrategy", GoGetter: "RolloutStrategy"},
-			_jsii_.MemberProperty{JsiiProperty: "rolloutStrategyInput", GoGetter: "RolloutStrategyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionEntrypoint",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionEntrypoint)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionEntrypointOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionEntrypointOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "shell", GoGetter: "Shell"},
-			_jsii_.MemberProperty{JsiiProperty: "shellInput", GoGetter: "ShellInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionEntrypointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlers",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlers)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlersList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlersOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "authFailAction", GoGetter: "AuthFailAction"},
-			_jsii_.MemberProperty{JsiiProperty: "authFailActionInput", GoGetter: "AuthFailActionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "login", GoGetter: "Login"},
-			_jsii_.MemberProperty{JsiiProperty: "loginInput", GoGetter: "LoginInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putScript", GoMethod: "PutScript"},
-			_jsii_.MemberMethod{JsiiMethod: "putStaticFiles", GoMethod: "PutStaticFiles"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectHttpResponseCode", GoGetter: "RedirectHttpResponseCode"},
-			_jsii_.MemberProperty{JsiiProperty: "redirectHttpResponseCodeInput", GoGetter: "RedirectHttpResponseCodeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthFailAction", GoMethod: "ResetAuthFailAction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogin", GoMethod: "ResetLogin"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedirectHttpResponseCode", GoMethod: "ResetRedirectHttpResponseCode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScript", GoMethod: "ResetScript"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityLevel", GoMethod: "ResetSecurityLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStaticFiles", GoMethod: "ResetStaticFiles"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUrlRegex", GoMethod: "ResetUrlRegex"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "script", GoGetter: "Script"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptInput", GoGetter: "ScriptInput"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevel", GoGetter: "SecurityLevel"},
-			_jsii_.MemberProperty{JsiiProperty: "securityLevelInput", GoGetter: "SecurityLevelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "staticFiles", GoGetter: "StaticFiles"},
-			_jsii_.MemberProperty{JsiiProperty: "staticFilesInput", GoGetter: "StaticFilesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "urlRegex", GoGetter: "UrlRegex"},
-			_jsii_.MemberProperty{JsiiProperty: "urlRegexInput", GoGetter: "UrlRegexInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersScript",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlersScript)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersScriptOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlersScriptOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptPath", GoGetter: "ScriptPath"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptPathInput", GoGetter: "ScriptPathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersScriptOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersStaticFiles",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlersStaticFiles)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "applicationReadable", GoGetter: "ApplicationReadable"},
-			_jsii_.MemberProperty{JsiiProperty: "applicationReadableInput", GoGetter: "ApplicationReadableInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expiration", GoGetter: "Expiration"},
-			_jsii_.MemberProperty{JsiiProperty: "expirationInput", GoGetter: "ExpirationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "httpHeaders", GoGetter: "HttpHeaders"},
-			_jsii_.MemberProperty{JsiiProperty: "httpHeadersInput", GoGetter: "HttpHeadersInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mimeType", GoGetter: "MimeType"},
-			_jsii_.MemberProperty{JsiiProperty: "mimeTypeInput", GoGetter: "MimeTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requireMatchingFile", GoGetter: "RequireMatchingFile"},
-			_jsii_.MemberProperty{JsiiProperty: "requireMatchingFileInput", GoGetter: "RequireMatchingFileInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApplicationReadable", GoMethod: "ResetApplicationReadable"},
-			_jsii_.MemberMethod{JsiiMethod: "resetExpiration", GoMethod: "ResetExpiration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpHeaders", GoMethod: "ResetHttpHeaders"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMimeType", GoMethod: "ResetMimeType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequireMatchingFile", GoMethod: "ResetRequireMatchingFile"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUploadPathRegex", GoMethod: "ResetUploadPathRegex"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "uploadPathRegex", GoGetter: "UploadPathRegex"},
-			_jsii_.MemberProperty{JsiiProperty: "uploadPathRegexInput", GoGetter: "UploadPathRegexInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionLivenessCheck",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionLivenessCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "checkInterval", GoGetter: "CheckInterval"},
-			_jsii_.MemberProperty{JsiiProperty: "checkIntervalInput", GoGetter: "CheckIntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "failureThreshold", GoGetter: "FailureThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "failureThresholdInput", GoGetter: "FailureThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
-			_jsii_.MemberProperty{JsiiProperty: "initialDelay", GoGetter: "InitialDelay"},
-			_jsii_.MemberProperty{JsiiProperty: "initialDelayInput", GoGetter: "InitialDelayInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCheckInterval", GoMethod: "ResetCheckInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFailureThreshold", GoMethod: "ResetFailureThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInitialDelay", GoMethod: "ResetInitialDelay"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSuccessThreshold", GoMethod: "ResetSuccessThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "successThreshold", GoGetter: "SuccessThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "successThresholdInput", GoGetter: "SuccessThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionManualScaling",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionManualScaling)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionManualScalingOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionManualScalingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instances", GoGetter: "Instances"},
-			_jsii_.MemberProperty{JsiiProperty: "instancesInput", GoGetter: "InstancesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionManualScalingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionNetwork",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionNetwork)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionNetworkOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionNetworkOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "forwardedPorts", GoGetter: "ForwardedPorts"},
-			_jsii_.MemberProperty{JsiiProperty: "forwardedPortsInput", GoGetter: "ForwardedPortsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTag", GoGetter: "InstanceTag"},
-			_jsii_.MemberProperty{JsiiProperty: "instanceTagInput", GoGetter: "InstanceTagInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetForwardedPorts", GoMethod: "ResetForwardedPorts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTag", GoMethod: "ResetInstanceTag"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSessionAffinity", GoMethod: "ResetSessionAffinity"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubnetwork", GoMethod: "ResetSubnetwork"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sessionAffinity", GoGetter: "SessionAffinity"},
-			_jsii_.MemberProperty{JsiiProperty: "sessionAffinityInput", GoGetter: "SessionAffinityInput"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetwork", GoGetter: "Subnetwork"},
-			_jsii_.MemberProperty{JsiiProperty: "subnetworkInput", GoGetter: "SubnetworkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionReadinessCheck",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionReadinessCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "appStartTimeout", GoGetter: "AppStartTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "appStartTimeoutInput", GoGetter: "AppStartTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "checkInterval", GoGetter: "CheckInterval"},
-			_jsii_.MemberProperty{JsiiProperty: "checkIntervalInput", GoGetter: "CheckIntervalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "failureThreshold", GoGetter: "FailureThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "failureThresholdInput", GoGetter: "FailureThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
-			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAppStartTimeout", GoMethod: "ResetAppStartTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCheckInterval", GoMethod: "ResetCheckInterval"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFailureThreshold", GoMethod: "ResetFailureThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSuccessThreshold", GoMethod: "ResetSuccessThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "successThreshold", GoGetter: "SuccessThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "successThresholdInput", GoGetter: "SuccessThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionResources",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionResources)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionResourcesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionResourcesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "cpu", GoGetter: "Cpu"},
-			_jsii_.MemberProperty{JsiiProperty: "cpuInput", GoGetter: "CpuInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "diskGb", GoGetter: "DiskGb"},
-			_jsii_.MemberProperty{JsiiProperty: "diskGbInput", GoGetter: "DiskGbInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "memoryGb", GoGetter: "MemoryGb"},
-			_jsii_.MemberProperty{JsiiProperty: "memoryGbInput", GoGetter: "MemoryGbInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putVolumes", GoMethod: "PutVolumes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCpu", GoMethod: "ResetCpu"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskGb", GoMethod: "ResetDiskGb"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMemoryGb", GoMethod: "ResetMemoryGb"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVolumes", GoMethod: "ResetVolumes"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "volumes", GoGetter: "Volumes"},
-			_jsii_.MemberProperty{JsiiProperty: "volumesInput", GoGetter: "VolumesInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionResourcesVolumes",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionResourcesVolumes)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionResourcesVolumesList",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionResourcesVolumesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeGb", GoGetter: "SizeGb"},
-			_jsii_.MemberProperty{JsiiProperty: "sizeGbInput", GoGetter: "SizeGbInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
-			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionTimeouts",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionVpcAccessConnector",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionVpcAccessConnector)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+func NewGoogleAppEngineFlexibleAppVersion_Override(g GoogleAppEngineFlexibleAppVersion, scope constructs.Construct, id *string, config *GoogleAppEngineFlexibleAppVersionConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetBetaSettings(val *map[string]*string) {
+	if err := j.validateSetBetaSettingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"betaSettings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetDefaultExpiration(val *string) {
+	if err := j.validateSetDefaultExpirationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultExpiration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetDeleteServiceOnDestroy(val interface{}) {
+	if err := j.validateSetDeleteServiceOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteServiceOnDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetEnvVariables(val *map[string]*string) {
+	if err := j.validateSetEnvVariablesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"envVariables",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetInboundServices(val *[]*string) {
+	if err := j.validateSetInboundServicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inboundServices",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetInstanceClass(val *string) {
+	if err := j.validateSetInstanceClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceClass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetNobuildFilesRegex(val *string) {
+	if err := j.validateSetNobuildFilesRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nobuildFilesRegex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetNoopOnDestroy(val interface{}) {
+	if err := j.validateSetNoopOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noopOnDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetRuntime(val *string) {
+	if err := j.validateSetRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetRuntimeApiVersion(val *string) {
+	if err := j.validateSetRuntimeApiVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeApiVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetRuntimeChannel(val *string) {
+	if err := j.validateSetRuntimeChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeChannel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetRuntimeMainExecutablePath(val *string) {
+	if err := j.validateSetRuntimeMainExecutablePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeMainExecutablePath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetServingStatus(val *string) {
+	if err := j.validateSetServingStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servingStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetVersionId(val *string) {
+	if err := j.validateSetVersionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionId",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleAppEngineFlexibleAppVersion_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleAppEngineFlexibleAppVersion_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleAppEngineFlexibleAppVersion_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleAppEngineFlexibleAppVersion_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleAppEngineFlexibleAppVersion_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleAppEngineFlexibleAppVersion_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleAppEngineFlexibleAppVersion_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutApiConfig(value *GoogleAppEngineFlexibleAppVersionApiConfig) {
+	if err := g.validatePutApiConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putApiConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutAutomaticScaling(value *GoogleAppEngineFlexibleAppVersionAutomaticScaling) {
+	if err := g.validatePutAutomaticScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutomaticScaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutDeployment(value *GoogleAppEngineFlexibleAppVersionDeployment) {
+	if err := g.validatePutDeploymentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeployment",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutEndpointsApiService(value *GoogleAppEngineFlexibleAppVersionEndpointsApiService) {
+	if err := g.validatePutEndpointsApiServiceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEndpointsApiService",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutEntrypoint(value *GoogleAppEngineFlexibleAppVersionEntrypoint) {
+	if err := g.validatePutEntrypointParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEntrypoint",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutHandlers(value interface{}) {
+	if err := g.validatePutHandlersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHandlers",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutLivenessCheck(value *GoogleAppEngineFlexibleAppVersionLivenessCheck) {
+	if err := g.validatePutLivenessCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLivenessCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutManualScaling(value *GoogleAppEngineFlexibleAppVersionManualScaling) {
+	if err := g.validatePutManualScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManualScaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutNetwork(value *GoogleAppEngineFlexibleAppVersionNetwork) {
+	if err := g.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetwork",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutReadinessCheck(value *GoogleAppEngineFlexibleAppVersionReadinessCheck) {
+	if err := g.validatePutReadinessCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReadinessCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutResources(value *GoogleAppEngineFlexibleAppVersionResources) {
+	if err := g.validatePutResourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putResources",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutTimeouts(value *GoogleAppEngineFlexibleAppVersionTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) PutVpcAccessConnector(value *GoogleAppEngineFlexibleAppVersionVpcAccessConnector) {
+	if err := g.validatePutVpcAccessConnectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVpcAccessConnector",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetApiConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApiConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetAutomaticScaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutomaticScaling",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetBetaSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBetaSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetDefaultExpiration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultExpiration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetDeleteServiceOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteServiceOnDestroy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetDeployment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeployment",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetEndpointsApiService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEndpointsApiService",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetEntrypoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEntrypoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetEnvVariables() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnvVariables",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetHandlers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHandlers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetInboundServices() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInboundServices",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetInstanceClass() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceClass",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetManualScaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManualScaling",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetNobuildFilesRegex() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNobuildFilesRegex",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetNoopOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNoopOnDestroy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetResources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetRuntimeApiVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRuntimeApiVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetRuntimeChannel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRuntimeChannel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetRuntimeMainExecutablePath() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRuntimeMainExecutablePath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetServingStatus() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServingStatus",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetVersionId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVersionId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetVpcAccessConnector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVpcAccessConnector",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

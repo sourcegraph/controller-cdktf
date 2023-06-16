@@ -1,974 +1,1399 @@
 package dataprocjob
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocjob/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/dataproc_job google_dataproc_job}.
+type DataprocJob interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DriverControlsFilesUri() *string
+	DriverOutputResourceUri() *string
+	ForceDelete() interface{}
+	SetForceDelete(val interface{})
+	ForceDeleteInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	HadoopConfig() DataprocJobHadoopConfigOutputReference
+	HadoopConfigInput() *DataprocJobHadoopConfig
+	HiveConfig() DataprocJobHiveConfigOutputReference
+	HiveConfigInput() *DataprocJobHiveConfig
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	PigConfig() DataprocJobPigConfigOutputReference
+	PigConfigInput() *DataprocJobPigConfig
+	Placement() DataprocJobPlacementOutputReference
+	PlacementInput() *DataprocJobPlacement
+	PrestoConfig() DataprocJobPrestoConfigOutputReference
+	PrestoConfigInput() *DataprocJobPrestoConfig
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	PysparkConfig() DataprocJobPysparkConfigOutputReference
+	PysparkConfigInput() *DataprocJobPysparkConfig
+	// Experimental.
+	RawOverrides() interface{}
+	Reference() DataprocJobReferenceOutputReference
+	ReferenceInput() *DataprocJobReference
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	Scheduling() DataprocJobSchedulingOutputReference
+	SchedulingInput() *DataprocJobScheduling
+	SparkConfig() DataprocJobSparkConfigOutputReference
+	SparkConfigInput() *DataprocJobSparkConfig
+	SparksqlConfig() DataprocJobSparksqlConfigOutputReference
+	SparksqlConfigInput() *DataprocJobSparksqlConfig
+	Status() DataprocJobStatusList
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() DataprocJobTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutHadoopConfig(value *DataprocJobHadoopConfig)
+	PutHiveConfig(value *DataprocJobHiveConfig)
+	PutPigConfig(value *DataprocJobPigConfig)
+	PutPlacement(value *DataprocJobPlacement)
+	PutPrestoConfig(value *DataprocJobPrestoConfig)
+	PutPysparkConfig(value *DataprocJobPysparkConfig)
+	PutReference(value *DataprocJobReference)
+	PutScheduling(value *DataprocJobScheduling)
+	PutSparkConfig(value *DataprocJobSparkConfig)
+	PutSparksqlConfig(value *DataprocJobSparksqlConfig)
+	PutTimeouts(value *DataprocJobTimeouts)
+	ResetForceDelete()
+	ResetHadoopConfig()
+	ResetHiveConfig()
+	ResetId()
+	ResetLabels()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPigConfig()
+	ResetPrestoConfig()
+	ResetProject()
+	ResetPysparkConfig()
+	ResetReference()
+	ResetRegion()
+	ResetScheduling()
+	ResetSparkConfig()
+	ResetSparksqlConfig()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataprocJob
+type jsiiProxy_DataprocJob struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DataprocJob) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) DriverControlsFilesUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"driverControlsFilesUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) DriverOutputResourceUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"driverOutputResourceUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) ForceDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) ForceDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) HadoopConfig() DataprocJobHadoopConfigOutputReference {
+	var returns DataprocJobHadoopConfigOutputReference
+	_jsii_.Get(
+		j,
+		"hadoopConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) HadoopConfigInput() *DataprocJobHadoopConfig {
+	var returns *DataprocJobHadoopConfig
+	_jsii_.Get(
+		j,
+		"hadoopConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) HiveConfig() DataprocJobHiveConfigOutputReference {
+	var returns DataprocJobHiveConfigOutputReference
+	_jsii_.Get(
+		j,
+		"hiveConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) HiveConfigInput() *DataprocJobHiveConfig {
+	var returns *DataprocJobHiveConfig
+	_jsii_.Get(
+		j,
+		"hiveConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PigConfig() DataprocJobPigConfigOutputReference {
+	var returns DataprocJobPigConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pigConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PigConfigInput() *DataprocJobPigConfig {
+	var returns *DataprocJobPigConfig
+	_jsii_.Get(
+		j,
+		"pigConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Placement() DataprocJobPlacementOutputReference {
+	var returns DataprocJobPlacementOutputReference
+	_jsii_.Get(
+		j,
+		"placement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PlacementInput() *DataprocJobPlacement {
+	var returns *DataprocJobPlacement
+	_jsii_.Get(
+		j,
+		"placementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PrestoConfig() DataprocJobPrestoConfigOutputReference {
+	var returns DataprocJobPrestoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"prestoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PrestoConfigInput() *DataprocJobPrestoConfig {
+	var returns *DataprocJobPrestoConfig
+	_jsii_.Get(
+		j,
+		"prestoConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PysparkConfig() DataprocJobPysparkConfigOutputReference {
+	var returns DataprocJobPysparkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pysparkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) PysparkConfigInput() *DataprocJobPysparkConfig {
+	var returns *DataprocJobPysparkConfig
+	_jsii_.Get(
+		j,
+		"pysparkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Reference() DataprocJobReferenceOutputReference {
+	var returns DataprocJobReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"reference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) ReferenceInput() *DataprocJobReference {
+	var returns *DataprocJobReference
+	_jsii_.Get(
+		j,
+		"referenceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Scheduling() DataprocJobSchedulingOutputReference {
+	var returns DataprocJobSchedulingOutputReference
+	_jsii_.Get(
+		j,
+		"scheduling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) SchedulingInput() *DataprocJobScheduling {
+	var returns *DataprocJobScheduling
+	_jsii_.Get(
+		j,
+		"schedulingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) SparkConfig() DataprocJobSparkConfigOutputReference {
+	var returns DataprocJobSparkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sparkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) SparkConfigInput() *DataprocJobSparkConfig {
+	var returns *DataprocJobSparkConfig
+	_jsii_.Get(
+		j,
+		"sparkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) SparksqlConfig() DataprocJobSparksqlConfigOutputReference {
+	var returns DataprocJobSparksqlConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sparksqlConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) SparksqlConfigInput() *DataprocJobSparksqlConfig {
+	var returns *DataprocJobSparksqlConfig
+	_jsii_.Get(
+		j,
+		"sparksqlConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Status() DataprocJobStatusList {
+	var returns DataprocJobStatusList
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) Timeouts() DataprocJobTimeoutsOutputReference {
+	var returns DataprocJobTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocJob) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/dataproc_job google_dataproc_job} Resource.
+func NewDataprocJob(scope constructs.Construct, id *string, config *DataprocJobConfig) DataprocJob {
+	_init_.Initialize()
+
+	if err := validateNewDataprocJobParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DataprocJob{}
+
+	_jsii_.Create(
 		"google.dataprocJob.DataprocJob",
-		reflect.TypeOf((*DataprocJob)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "driverControlsFilesUri", GoGetter: "DriverControlsFilesUri"},
-			_jsii_.MemberProperty{JsiiProperty: "driverOutputResourceUri", GoGetter: "DriverOutputResourceUri"},
-			_jsii_.MemberProperty{JsiiProperty: "forceDelete", GoGetter: "ForceDelete"},
-			_jsii_.MemberProperty{JsiiProperty: "forceDeleteInput", GoGetter: "ForceDeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hadoopConfig", GoGetter: "HadoopConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "hadoopConfigInput", GoGetter: "HadoopConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "hiveConfig", GoGetter: "HiveConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "hiveConfigInput", GoGetter: "HiveConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "pigConfig", GoGetter: "PigConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "pigConfigInput", GoGetter: "PigConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "placement", GoGetter: "Placement"},
-			_jsii_.MemberProperty{JsiiProperty: "placementInput", GoGetter: "PlacementInput"},
-			_jsii_.MemberProperty{JsiiProperty: "prestoConfig", GoGetter: "PrestoConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "prestoConfigInput", GoGetter: "PrestoConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putHadoopConfig", GoMethod: "PutHadoopConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putHiveConfig", GoMethod: "PutHiveConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putPigConfig", GoMethod: "PutPigConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putPlacement", GoMethod: "PutPlacement"},
-			_jsii_.MemberMethod{JsiiMethod: "putPrestoConfig", GoMethod: "PutPrestoConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putPysparkConfig", GoMethod: "PutPysparkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putReference", GoMethod: "PutReference"},
-			_jsii_.MemberMethod{JsiiMethod: "putScheduling", GoMethod: "PutScheduling"},
-			_jsii_.MemberMethod{JsiiMethod: "putSparkConfig", GoMethod: "PutSparkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putSparksqlConfig", GoMethod: "PutSparksqlConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "pysparkConfig", GoGetter: "PysparkConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "pysparkConfigInput", GoGetter: "PysparkConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "reference", GoGetter: "Reference"},
-			_jsii_.MemberProperty{JsiiProperty: "referenceInput", GoGetter: "ReferenceInput"},
-			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
-			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetForceDelete", GoMethod: "ResetForceDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHadoopConfig", GoMethod: "ResetHadoopConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHiveConfig", GoMethod: "ResetHiveConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPigConfig", GoMethod: "ResetPigConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPrestoConfig", GoMethod: "ResetPrestoConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPysparkConfig", GoMethod: "ResetPysparkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReference", GoMethod: "ResetReference"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScheduling", GoMethod: "ResetScheduling"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSparkConfig", GoMethod: "ResetSparkConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSparksqlConfig", GoMethod: "ResetSparksqlConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "scheduling", GoGetter: "Scheduling"},
-			_jsii_.MemberProperty{JsiiProperty: "schedulingInput", GoGetter: "SchedulingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sparkConfig", GoGetter: "SparkConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "sparkConfigInput", GoGetter: "SparkConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sparksqlConfig", GoGetter: "SparksqlConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "sparksqlConfigInput", GoGetter: "SparksqlConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobConfig",
-		reflect.TypeOf((*DataprocJobConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobHadoopConfig",
-		reflect.TypeOf((*DataprocJobHadoopConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobHadoopConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobHadoopConfigLoggingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobHadoopConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobHadoopConfigLoggingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevels", GoGetter: "DriverLogLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevelsInput", GoGetter: "DriverLogLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobHadoopConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobHadoopConfigOutputReference",
-		reflect.TypeOf((*DataprocJobHadoopConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
-			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
-			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fileUris", GoGetter: "FileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "fileUrisInput", GoGetter: "FileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUris", GoGetter: "JarFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUrisInput", GoGetter: "JarFileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mainClass", GoGetter: "MainClass"},
-			_jsii_.MemberProperty{JsiiProperty: "mainClassInput", GoGetter: "MainClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mainJarFileUri", GoGetter: "MainJarFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "mainJarFileUriInput", GoGetter: "MainJarFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArchiveUris", GoMethod: "ResetArchiveUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArgs", GoMethod: "ResetArgs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFileUris", GoMethod: "ResetFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJarFileUris", GoMethod: "ResetJarFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainClass", GoMethod: "ResetMainClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainJarFileUri", GoMethod: "ResetMainJarFileUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobHadoopConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobHiveConfig",
-		reflect.TypeOf((*DataprocJobHiveConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobHiveConfigOutputReference",
-		reflect.TypeOf((*DataprocJobHiveConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "continueOnFailure", GoGetter: "ContinueOnFailure"},
-			_jsii_.MemberProperty{JsiiProperty: "continueOnFailureInput", GoGetter: "ContinueOnFailureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUris", GoGetter: "JarFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUrisInput", GoGetter: "JarFileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUri", GoGetter: "QueryFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUriInput", GoGetter: "QueryFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "queryList", GoGetter: "QueryList"},
-			_jsii_.MemberProperty{JsiiProperty: "queryListInput", GoGetter: "QueryListInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContinueOnFailure", GoMethod: "ResetContinueOnFailure"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJarFileUris", GoMethod: "ResetJarFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryFileUri", GoMethod: "ResetQueryFileUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryList", GoMethod: "ResetQueryList"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScriptVariables", GoMethod: "ResetScriptVariables"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptVariables", GoGetter: "ScriptVariables"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptVariablesInput", GoGetter: "ScriptVariablesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobHiveConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPigConfig",
-		reflect.TypeOf((*DataprocJobPigConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPigConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobPigConfigLoggingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPigConfigLoggingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevels", GoGetter: "DriverLogLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevelsInput", GoGetter: "DriverLogLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPigConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPigConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "continueOnFailure", GoGetter: "ContinueOnFailure"},
-			_jsii_.MemberProperty{JsiiProperty: "continueOnFailureInput", GoGetter: "ContinueOnFailureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUris", GoGetter: "JarFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUrisInput", GoGetter: "JarFileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUri", GoGetter: "QueryFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUriInput", GoGetter: "QueryFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "queryList", GoGetter: "QueryList"},
-			_jsii_.MemberProperty{JsiiProperty: "queryListInput", GoGetter: "QueryListInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContinueOnFailure", GoMethod: "ResetContinueOnFailure"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJarFileUris", GoMethod: "ResetJarFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryFileUri", GoMethod: "ResetQueryFileUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryList", GoMethod: "ResetQueryList"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScriptVariables", GoMethod: "ResetScriptVariables"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptVariables", GoGetter: "ScriptVariables"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptVariablesInput", GoGetter: "ScriptVariablesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPigConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPlacement",
-		reflect.TypeOf((*DataprocJobPlacement)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPlacementOutputReference",
-		reflect.TypeOf((*DataprocJobPlacementOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterNameInput", GoGetter: "ClusterNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterUuid", GoGetter: "ClusterUuid"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPlacementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPrestoConfig",
-		reflect.TypeOf((*DataprocJobPrestoConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPrestoConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobPrestoConfigLoggingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPrestoConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPrestoConfigLoggingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevels", GoGetter: "DriverLogLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevelsInput", GoGetter: "DriverLogLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPrestoConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPrestoConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPrestoConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "clientTags", GoGetter: "ClientTags"},
-			_jsii_.MemberProperty{JsiiProperty: "clientTagsInput", GoGetter: "ClientTagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "continueOnFailure", GoGetter: "ContinueOnFailure"},
-			_jsii_.MemberProperty{JsiiProperty: "continueOnFailureInput", GoGetter: "ContinueOnFailureInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "outputFormat", GoGetter: "OutputFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "outputFormatInput", GoGetter: "OutputFormatInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUri", GoGetter: "QueryFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUriInput", GoGetter: "QueryFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "queryList", GoGetter: "QueryList"},
-			_jsii_.MemberProperty{JsiiProperty: "queryListInput", GoGetter: "QueryListInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetClientTags", GoMethod: "ResetClientTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetContinueOnFailure", GoMethod: "ResetContinueOnFailure"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOutputFormat", GoMethod: "ResetOutputFormat"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryFileUri", GoMethod: "ResetQueryFileUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryList", GoMethod: "ResetQueryList"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPrestoConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPysparkConfig",
-		reflect.TypeOf((*DataprocJobPysparkConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobPysparkConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobPysparkConfigLoggingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPysparkConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPysparkConfigLoggingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevels", GoGetter: "DriverLogLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevelsInput", GoGetter: "DriverLogLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPysparkConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobPysparkConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPysparkConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
-			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
-			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fileUris", GoGetter: "FileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "fileUrisInput", GoGetter: "FileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUris", GoGetter: "JarFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUrisInput", GoGetter: "JarFileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mainPythonFileUri", GoGetter: "MainPythonFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "mainPythonFileUriInput", GoGetter: "MainPythonFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "pythonFileUris", GoGetter: "PythonFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "pythonFileUrisInput", GoGetter: "PythonFileUrisInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArchiveUris", GoMethod: "ResetArchiveUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArgs", GoMethod: "ResetArgs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFileUris", GoMethod: "ResetFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJarFileUris", GoMethod: "ResetJarFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPythonFileUris", GoMethod: "ResetPythonFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobPysparkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobReference",
-		reflect.TypeOf((*DataprocJobReference)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobReferenceOutputReference",
-		reflect.TypeOf((*DataprocJobReferenceOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jobId", GoGetter: "JobId"},
-			_jsii_.MemberProperty{JsiiProperty: "jobIdInput", GoGetter: "JobIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJobId", GoMethod: "ResetJobId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobReferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobScheduling",
-		reflect.TypeOf((*DataprocJobScheduling)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobSchedulingOutputReference",
-		reflect.TypeOf((*DataprocJobSchedulingOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFailuresPerHour", GoGetter: "MaxFailuresPerHour"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFailuresPerHourInput", GoGetter: "MaxFailuresPerHourInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFailuresTotal", GoGetter: "MaxFailuresTotal"},
-			_jsii_.MemberProperty{JsiiProperty: "maxFailuresTotalInput", GoGetter: "MaxFailuresTotalInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobSchedulingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobSparkConfig",
-		reflect.TypeOf((*DataprocJobSparkConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobSparkConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobSparkConfigLoggingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobSparkConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparkConfigLoggingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevels", GoGetter: "DriverLogLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevelsInput", GoGetter: "DriverLogLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobSparkConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobSparkConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparkConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
-			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
-			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fileUris", GoGetter: "FileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "fileUrisInput", GoGetter: "FileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUris", GoGetter: "JarFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUrisInput", GoGetter: "JarFileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mainClass", GoGetter: "MainClass"},
-			_jsii_.MemberProperty{JsiiProperty: "mainClassInput", GoGetter: "MainClassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mainJarFileUri", GoGetter: "MainJarFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "mainJarFileUriInput", GoGetter: "MainJarFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArchiveUris", GoMethod: "ResetArchiveUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetArgs", GoMethod: "ResetArgs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFileUris", GoMethod: "ResetFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJarFileUris", GoMethod: "ResetJarFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainClass", GoMethod: "ResetMainClass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMainJarFileUri", GoMethod: "ResetMainJarFileUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobSparkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobSparksqlConfig",
-		reflect.TypeOf((*DataprocJobSparksqlConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobSparksqlConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobSparksqlConfigLoggingConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobSparksqlConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparksqlConfigLoggingConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevels", GoGetter: "DriverLogLevels"},
-			_jsii_.MemberProperty{JsiiProperty: "driverLogLevelsInput", GoGetter: "DriverLogLevelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobSparksqlConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobSparksqlConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparksqlConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUris", GoGetter: "JarFileUris"},
-			_jsii_.MemberProperty{JsiiProperty: "jarFileUrisInput", GoGetter: "JarFileUrisInput"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUri", GoGetter: "QueryFileUri"},
-			_jsii_.MemberProperty{JsiiProperty: "queryFileUriInput", GoGetter: "QueryFileUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "queryList", GoGetter: "QueryList"},
-			_jsii_.MemberProperty{JsiiProperty: "queryListInput", GoGetter: "QueryListInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJarFileUris", GoMethod: "ResetJarFileUris"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryFileUri", GoMethod: "ResetQueryFileUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetQueryList", GoMethod: "ResetQueryList"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScriptVariables", GoMethod: "ResetScriptVariables"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptVariables", GoGetter: "ScriptVariables"},
-			_jsii_.MemberProperty{JsiiProperty: "scriptVariablesInput", GoGetter: "ScriptVariablesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobSparksqlConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobStatus",
-		reflect.TypeOf((*DataprocJobStatus)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobStatusList",
-		reflect.TypeOf((*DataprocJobStatusList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobStatusOutputReference",
-		reflect.TypeOf((*DataprocJobStatusOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "details", GoGetter: "Details"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
-			_jsii_.MemberProperty{JsiiProperty: "stateStartTime", GoGetter: "StateStartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "substate", GoGetter: "Substate"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.dataprocJob.DataprocJobTimeouts",
-		reflect.TypeOf((*DataprocJobTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.dataprocJob.DataprocJobTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocJobTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataprocJobTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/dataproc_job google_dataproc_job} Resource.
+func NewDataprocJob_Override(d DataprocJob, scope constructs.Construct, id *string, config *DataprocJobConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.dataprocJob.DataprocJob",
+		[]interface{}{scope, id, config},
+		d,
 	)
 }
+
+func (j *jsiiProxy_DataprocJob)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetForceDelete(val interface{}) {
+	if err := j.validateSetForceDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDelete",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocJob)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataprocJob_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataprocJob_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.dataprocJob.DataprocJob",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataprocJob_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataprocJob_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.dataprocJob.DataprocJob",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataprocJob_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataprocJob_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.dataprocJob.DataprocJob",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataprocJob_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.dataprocJob.DataprocJob",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutHadoopConfig(value *DataprocJobHadoopConfig) {
+	if err := d.validatePutHadoopConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHadoopConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutHiveConfig(value *DataprocJobHiveConfig) {
+	if err := d.validatePutHiveConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHiveConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutPigConfig(value *DataprocJobPigConfig) {
+	if err := d.validatePutPigConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPigConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutPlacement(value *DataprocJobPlacement) {
+	if err := d.validatePutPlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPlacement",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutPrestoConfig(value *DataprocJobPrestoConfig) {
+	if err := d.validatePutPrestoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPrestoConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutPysparkConfig(value *DataprocJobPysparkConfig) {
+	if err := d.validatePutPysparkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPysparkConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutReference(value *DataprocJobReference) {
+	if err := d.validatePutReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putReference",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutScheduling(value *DataprocJobScheduling) {
+	if err := d.validatePutSchedulingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putScheduling",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutSparkConfig(value *DataprocJobSparkConfig) {
+	if err := d.validatePutSparkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSparkConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutSparksqlConfig(value *DataprocJobSparksqlConfig) {
+	if err := d.validatePutSparksqlConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSparksqlConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) PutTimeouts(value *DataprocJobTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetForceDelete() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetForceDelete",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetHadoopConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHadoopConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetHiveConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHiveConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetLabels() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetPigConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPigConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetPrestoConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrestoConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetProject() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetPysparkConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPysparkConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetReference() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReference",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetScheduling() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScheduling",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetSparkConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSparkConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetSparksqlConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSparksqlConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocJob) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataprocJob) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

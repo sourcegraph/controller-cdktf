@@ -1,0 +1,6 @@
+package datagooglecomputeregioninstancetemplate
+
+
+type DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDuration struct {
+}
+

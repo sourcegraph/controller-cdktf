@@ -1,389 +1,1410 @@
 package googlebigquerydataset
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydataset/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
+type GoogleBigqueryDataset interface {
+	cdktf.TerraformResource
+	Access() GoogleBigqueryDatasetAccessList
+	AccessInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreationTime() *float64
+	DatasetId() *string
+	SetDatasetId(val *string)
+	DatasetIdInput() *string
+	DefaultCollation() *string
+	SetDefaultCollation(val *string)
+	DefaultCollationInput() *string
+	DefaultEncryptionConfiguration() GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference
+	DefaultEncryptionConfigurationInput() *GoogleBigqueryDatasetDefaultEncryptionConfiguration
+	DefaultPartitionExpirationMs() *float64
+	SetDefaultPartitionExpirationMs(val *float64)
+	DefaultPartitionExpirationMsInput() *float64
+	DefaultTableExpirationMs() *float64
+	SetDefaultTableExpirationMs(val *float64)
+	DefaultTableExpirationMsInput() *float64
+	DeleteContentsOnDestroy() interface{}
+	SetDeleteContentsOnDestroy(val interface{})
+	DeleteContentsOnDestroyInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	Etag() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	FriendlyName() *string
+	SetFriendlyName(val *string)
+	FriendlyNameInput() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IsCaseInsensitive() interface{}
+	SetIsCaseInsensitive(val interface{})
+	IsCaseInsensitiveInput() interface{}
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	LastModifiedTime() *float64
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	MaxTimeTravelHours() *string
+	SetMaxTimeTravelHours(val *string)
+	MaxTimeTravelHoursInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	SelfLink() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleBigqueryDatasetTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAccess(value interface{})
+	PutDefaultEncryptionConfiguration(value *GoogleBigqueryDatasetDefaultEncryptionConfiguration)
+	PutTimeouts(value *GoogleBigqueryDatasetTimeouts)
+	ResetAccess()
+	ResetDefaultCollation()
+	ResetDefaultEncryptionConfiguration()
+	ResetDefaultPartitionExpirationMs()
+	ResetDefaultTableExpirationMs()
+	ResetDeleteContentsOnDestroy()
+	ResetDescription()
+	ResetFriendlyName()
+	ResetId()
+	ResetIsCaseInsensitive()
+	ResetLabels()
+	ResetLocation()
+	ResetMaxTimeTravelHours()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleBigqueryDataset
+type jsiiProxy_GoogleBigqueryDataset struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Access() GoogleBigqueryDatasetAccessList {
+	var returns GoogleBigqueryDatasetAccessList
+	_jsii_.Get(
+		j,
+		"access",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) AccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) CreationTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"creationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DatasetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DatasetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultCollation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCollation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultCollationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCollationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultEncryptionConfiguration() GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference {
+	var returns GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"defaultEncryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultEncryptionConfigurationInput() *GoogleBigqueryDatasetDefaultEncryptionConfiguration {
+	var returns *GoogleBigqueryDatasetDefaultEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"defaultEncryptionConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultPartitionExpirationMs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultPartitionExpirationMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultPartitionExpirationMsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultPartitionExpirationMsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultTableExpirationMs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultTableExpirationMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultTableExpirationMsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultTableExpirationMsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DeleteContentsOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteContentsOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DeleteContentsOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteContentsOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) FriendlyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) FriendlyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) IsCaseInsensitive() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isCaseInsensitive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) IsCaseInsensitiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isCaseInsensitiveInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) LastModifiedTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"lastModifiedTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) MaxTimeTravelHours() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTimeTravelHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) MaxTimeTravelHoursInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTimeTravelHoursInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) Timeouts() GoogleBigqueryDatasetTimeoutsOutputReference {
+	var returns GoogleBigqueryDatasetTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) GoogleBigqueryDataset {
+	_init_.Initialize()
+
+	if err := validateNewGoogleBigqueryDatasetParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleBigqueryDataset{}
+
+	_jsii_.Create(
 		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
-		reflect.TypeOf((*GoogleBigqueryDataset)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
-			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationTime", GoGetter: "CreationTime"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetId", GoGetter: "DatasetId"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetIdInput", GoGetter: "DatasetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultEncryptionConfiguration", GoGetter: "DefaultEncryptionConfiguration"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultEncryptionConfigurationInput", GoGetter: "DefaultEncryptionConfigurationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultPartitionExpirationMs", GoGetter: "DefaultPartitionExpirationMs"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultPartitionExpirationMsInput", GoGetter: "DefaultPartitionExpirationMsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultTableExpirationMs", GoGetter: "DefaultTableExpirationMs"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultTableExpirationMsInput", GoGetter: "DefaultTableExpirationMsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteContentsOnDestroy", GoGetter: "DeleteContentsOnDestroy"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteContentsOnDestroyInput", GoGetter: "DeleteContentsOnDestroyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "etag", GoGetter: "Etag"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyName", GoGetter: "FriendlyName"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyNameInput", GoGetter: "FriendlyNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lastModifiedTime", GoGetter: "LastModifiedTime"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
-			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putAccess", GoMethod: "PutAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "putDefaultEncryptionConfiguration", GoMethod: "PutDefaultEncryptionConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultEncryptionConfiguration", GoMethod: "ResetDefaultEncryptionConfiguration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultPartitionExpirationMs", GoMethod: "ResetDefaultPartitionExpirationMs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTableExpirationMs", GoMethod: "ResetDefaultTableExpirationMs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDeleteContentsOnDestroy", GoMethod: "ResetDeleteContentsOnDestroy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFriendlyName", GoMethod: "ResetFriendlyName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDataset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccess",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccess)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDataset",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDataset)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetDataset",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetDataset)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetDatasetOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetDatasetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetId", GoGetter: "DatasetId"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetIdInput", GoGetter: "DatasetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetAccessDatasetDatasetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dataset", GoGetter: "Dataset"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetInput", GoGetter: "DatasetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putDataset", GoMethod: "PutDataset"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTypes", GoGetter: "TargetTypes"},
-			_jsii_.MemberProperty{JsiiProperty: "targetTypesInput", GoGetter: "TargetTypesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetAccessDatasetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetAccessList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "dataset", GoGetter: "Dataset"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetInput", GoGetter: "DatasetInput"},
-			_jsii_.MemberProperty{JsiiProperty: "domain", GoGetter: "Domain"},
-			_jsii_.MemberProperty{JsiiProperty: "domainInput", GoGetter: "DomainInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByEmail", GoGetter: "GroupByEmail"},
-			_jsii_.MemberProperty{JsiiProperty: "groupByEmailInput", GoGetter: "GroupByEmailInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putDataset", GoMethod: "PutDataset"},
-			_jsii_.MemberMethod{JsiiMethod: "putView", GoMethod: "PutView"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDataset", GoMethod: "ResetDataset"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDomain", GoMethod: "ResetDomain"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroupByEmail", GoMethod: "ResetGroupByEmail"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRole", GoMethod: "ResetRole"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSpecialGroup", GoMethod: "ResetSpecialGroup"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUserByEmail", GoMethod: "ResetUserByEmail"},
-			_jsii_.MemberMethod{JsiiMethod: "resetView", GoMethod: "ResetView"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "role", GoGetter: "Role"},
-			_jsii_.MemberProperty{JsiiProperty: "roleInput", GoGetter: "RoleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "specialGroup", GoGetter: "SpecialGroup"},
-			_jsii_.MemberProperty{JsiiProperty: "specialGroupInput", GoGetter: "SpecialGroupInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "userByEmail", GoGetter: "UserByEmail"},
-			_jsii_.MemberProperty{JsiiProperty: "userByEmailInput", GoGetter: "UserByEmailInput"},
-			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
-			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetAccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessView",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessView)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessViewOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetAccessViewOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetId", GoGetter: "DatasetId"},
-			_jsii_.MemberProperty{JsiiProperty: "datasetIdInput", GoGetter: "DatasetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tableId", GoGetter: "TableId"},
-			_jsii_.MemberProperty{JsiiProperty: "tableIdInput", GoGetter: "TableIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetAccessViewOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig",
-		reflect.TypeOf((*GoogleBigqueryDatasetConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfiguration",
-		reflect.TypeOf((*GoogleBigqueryDatasetDefaultEncryptionConfiguration)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyName", GoGetter: "KmsKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "kmsKeyNameInput", GoGetter: "KmsKeyNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeouts",
-		reflect.TypeOf((*GoogleBigqueryDatasetTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryDatasetTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleBigqueryDatasetTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+func NewGoogleBigqueryDataset_Override(g GoogleBigqueryDataset, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDatasetId(val *string) {
+	if err := j.validateSetDatasetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datasetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDefaultCollation(val *string) {
+	if err := j.validateSetDefaultCollationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultCollation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDefaultPartitionExpirationMs(val *float64) {
+	if err := j.validateSetDefaultPartitionExpirationMsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultPartitionExpirationMs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDefaultTableExpirationMs(val *float64) {
+	if err := j.validateSetDefaultTableExpirationMsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultTableExpirationMs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDeleteContentsOnDestroy(val interface{}) {
+	if err := j.validateSetDeleteContentsOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteContentsOnDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetFriendlyName(val *string) {
+	if err := j.validateSetFriendlyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"friendlyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetIsCaseInsensitive(val interface{}) {
+	if err := j.validateSetIsCaseInsensitiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isCaseInsensitive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetMaxTimeTravelHours(val *string) {
+	if err := j.validateSetMaxTimeTravelHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTimeTravelHours",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleBigqueryDataset_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleBigqueryDataset_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleBigqueryDataset_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleBigqueryDataset_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleBigqueryDataset_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleBigqueryDataset_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleBigqueryDataset_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) PutAccess(value interface{}) {
+	if err := g.validatePutAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccess",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) PutDefaultEncryptionConfiguration(value *GoogleBigqueryDatasetDefaultEncryptionConfiguration) {
+	if err := g.validatePutDefaultEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) PutTimeouts(value *GoogleBigqueryDatasetTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccess",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDefaultCollation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultCollation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDefaultEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultEncryptionConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDefaultPartitionExpirationMs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultPartitionExpirationMs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDefaultTableExpirationMs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultTableExpirationMs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDeleteContentsOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteContentsOnDestroy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetFriendlyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFriendlyName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetIsCaseInsensitive() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIsCaseInsensitive",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetMaxTimeTravelHours() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxTimeTravelHours",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

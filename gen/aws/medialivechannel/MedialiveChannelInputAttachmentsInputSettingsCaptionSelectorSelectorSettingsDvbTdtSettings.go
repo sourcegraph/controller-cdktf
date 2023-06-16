@@ -1,0 +1,10 @@
+package medialivechannel
+
+
+type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}.
+	OcrLanguage *string `field:"optional" json:"ocrLanguage" yaml:"ocrLanguage"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
+	Pid *float64 `field:"optional" json:"pid" yaml:"pid"`
+}
+

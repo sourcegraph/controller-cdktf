@@ -1,549 +1,1854 @@
 package googleredisinstance
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleredisinstance/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_redis_instance google_redis_instance}.
+type GoogleRedisInstance interface {
+	cdktf.TerraformResource
+	AlternativeLocationId() *string
+	SetAlternativeLocationId(val *string)
+	AlternativeLocationIdInput() *string
+	AuthEnabled() interface{}
+	SetAuthEnabled(val interface{})
+	AuthEnabledInput() interface{}
+	AuthorizedNetwork() *string
+	SetAuthorizedNetwork(val *string)
+	AuthorizedNetworkInput() *string
+	AuthString() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	ConnectMode() *string
+	SetConnectMode(val *string)
+	ConnectModeInput() *string
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreateTime() *string
+	CurrentLocationId() *string
+	CustomerManagedKey() *string
+	SetCustomerManagedKey(val *string)
+	CustomerManagedKeyInput() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Host() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocationId() *string
+	SetLocationId(val *string)
+	LocationIdInput() *string
+	MaintenancePolicy() GoogleRedisInstanceMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *GoogleRedisInstanceMaintenancePolicy
+	MaintenanceSchedule() GoogleRedisInstanceMaintenanceScheduleOutputReference
+	MaintenanceScheduleInput() *GoogleRedisInstanceMaintenanceSchedule
+	MemorySizeGb() *float64
+	SetMemorySizeGb(val *float64)
+	MemorySizeGbInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Nodes() GoogleRedisInstanceNodesList
+	PersistenceConfig() GoogleRedisInstancePersistenceConfigOutputReference
+	PersistenceConfigInput() *GoogleRedisInstancePersistenceConfig
+	PersistenceIamIdentity() *string
+	Port() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ReadEndpoint() *string
+	ReadEndpointPort() *float64
+	ReadReplicasMode() *string
+	SetReadReplicasMode(val *string)
+	ReadReplicasModeInput() *string
+	RedisConfigs() *map[string]*string
+	SetRedisConfigs(val *map[string]*string)
+	RedisConfigsInput() *map[string]*string
+	RedisVersion() *string
+	SetRedisVersion(val *string)
+	RedisVersionInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	ReplicaCount() *float64
+	SetReplicaCount(val *float64)
+	ReplicaCountInput() *float64
+	ReservedIpRange() *string
+	SetReservedIpRange(val *string)
+	ReservedIpRangeInput() *string
+	SecondaryIpRange() *string
+	SetSecondaryIpRange(val *string)
+	SecondaryIpRangeInput() *string
+	ServerCaCerts() GoogleRedisInstanceServerCaCertsList
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Tier() *string
+	SetTier(val *string)
+	TierInput() *string
+	Timeouts() GoogleRedisInstanceTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	TransitEncryptionMode() *string
+	SetTransitEncryptionMode(val *string)
+	TransitEncryptionModeInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutMaintenancePolicy(value *GoogleRedisInstanceMaintenancePolicy)
+	PutMaintenanceSchedule(value *GoogleRedisInstanceMaintenanceSchedule)
+	PutPersistenceConfig(value *GoogleRedisInstancePersistenceConfig)
+	PutTimeouts(value *GoogleRedisInstanceTimeouts)
+	ResetAlternativeLocationId()
+	ResetAuthEnabled()
+	ResetAuthorizedNetwork()
+	ResetConnectMode()
+	ResetCustomerManagedKey()
+	ResetDisplayName()
+	ResetId()
+	ResetLabels()
+	ResetLocationId()
+	ResetMaintenancePolicy()
+	ResetMaintenanceSchedule()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPersistenceConfig()
+	ResetProject()
+	ResetReadReplicasMode()
+	ResetRedisConfigs()
+	ResetRedisVersion()
+	ResetRegion()
+	ResetReplicaCount()
+	ResetReservedIpRange()
+	ResetSecondaryIpRange()
+	ResetTier()
+	ResetTimeouts()
+	ResetTransitEncryptionMode()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleRedisInstance
+type jsiiProxy_GoogleRedisInstance struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AlternativeLocationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alternativeLocationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AlternativeLocationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alternativeLocationIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AuthEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AuthEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AuthorizedNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AuthorizedNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) AuthString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ConnectMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ConnectModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) CurrentLocationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentLocationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) CustomerManagedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerManagedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) CustomerManagedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerManagedKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Host() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"host",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) LocationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) LocationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) MaintenancePolicy() GoogleRedisInstanceMaintenancePolicyOutputReference {
+	var returns GoogleRedisInstanceMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) MaintenancePolicyInput() *GoogleRedisInstanceMaintenancePolicy {
+	var returns *GoogleRedisInstanceMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) MaintenanceSchedule() GoogleRedisInstanceMaintenanceScheduleOutputReference {
+	var returns GoogleRedisInstanceMaintenanceScheduleOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) MaintenanceScheduleInput() *GoogleRedisInstanceMaintenanceSchedule {
+	var returns *GoogleRedisInstanceMaintenanceSchedule
+	_jsii_.Get(
+		j,
+		"maintenanceScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) MemorySizeGb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memorySizeGb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) MemorySizeGbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memorySizeGbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Nodes() GoogleRedisInstanceNodesList {
+	var returns GoogleRedisInstanceNodesList
+	_jsii_.Get(
+		j,
+		"nodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) PersistenceConfig() GoogleRedisInstancePersistenceConfigOutputReference {
+	var returns GoogleRedisInstancePersistenceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) PersistenceConfigInput() *GoogleRedisInstancePersistenceConfig {
+	var returns *GoogleRedisInstancePersistenceConfig
+	_jsii_.Get(
+		j,
+		"persistenceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) PersistenceIamIdentity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"persistenceIamIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReadEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReadEndpointPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readEndpointPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReadReplicasMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readReplicasMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReadReplicasModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readReplicasModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) RedisConfigs() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"redisConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) RedisConfigsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"redisConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) RedisVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redisVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) RedisVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redisVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReplicaCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"replicaCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReplicaCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"replicaCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReservedIpRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedIpRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ReservedIpRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedIpRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) SecondaryIpRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryIpRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) SecondaryIpRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryIpRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) ServerCaCerts() GoogleRedisInstanceServerCaCertsList {
+	var returns GoogleRedisInstanceServerCaCertsList
+	_jsii_.Get(
+		j,
+		"serverCaCerts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) Timeouts() GoogleRedisInstanceTimeoutsOutputReference {
+	var returns GoogleRedisInstanceTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TransitEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) TransitEncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitEncryptionModeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_redis_instance google_redis_instance} Resource.
+func NewGoogleRedisInstance(scope constructs.Construct, id *string, config *GoogleRedisInstanceConfig) GoogleRedisInstance {
+	_init_.Initialize()
+
+	if err := validateNewGoogleRedisInstanceParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleRedisInstance{}
+
+	_jsii_.Create(
 		"google-beta.googleRedisInstance.GoogleRedisInstance",
-		reflect.TypeOf((*GoogleRedisInstance)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "alternativeLocationId", GoGetter: "AlternativeLocationId"},
-			_jsii_.MemberProperty{JsiiProperty: "alternativeLocationIdInput", GoGetter: "AlternativeLocationIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authEnabled", GoGetter: "AuthEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "authEnabledInput", GoGetter: "AuthEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizedNetwork", GoGetter: "AuthorizedNetwork"},
-			_jsii_.MemberProperty{JsiiProperty: "authorizedNetworkInput", GoGetter: "AuthorizedNetworkInput"},
-			_jsii_.MemberProperty{JsiiProperty: "authString", GoGetter: "AuthString"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "connectMode", GoGetter: "ConnectMode"},
-			_jsii_.MemberProperty{JsiiProperty: "connectModeInput", GoGetter: "ConnectModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "currentLocationId", GoGetter: "CurrentLocationId"},
-			_jsii_.MemberProperty{JsiiProperty: "customerManagedKey", GoGetter: "CustomerManagedKey"},
-			_jsii_.MemberProperty{JsiiProperty: "customerManagedKeyInput", GoGetter: "CustomerManagedKeyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
-			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "locationId", GoGetter: "LocationId"},
-			_jsii_.MemberProperty{JsiiProperty: "locationIdInput", GoGetter: "LocationIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicy", GoGetter: "MaintenancePolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicyInput", GoGetter: "MaintenancePolicyInput"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceSchedule", GoGetter: "MaintenanceSchedule"},
-			_jsii_.MemberProperty{JsiiProperty: "maintenanceScheduleInput", GoGetter: "MaintenanceScheduleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "memorySizeGb", GoGetter: "MemorySizeGb"},
-			_jsii_.MemberProperty{JsiiProperty: "memorySizeGbInput", GoGetter: "MemorySizeGbInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "nodes", GoGetter: "Nodes"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "persistenceConfig", GoGetter: "PersistenceConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "persistenceConfigInput", GoGetter: "PersistenceConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "persistenceIamIdentity", GoGetter: "PersistenceIamIdentity"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putMaintenancePolicy", GoMethod: "PutMaintenancePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceSchedule", GoMethod: "PutMaintenanceSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "putPersistenceConfig", GoMethod: "PutPersistenceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberProperty{JsiiProperty: "readEndpoint", GoGetter: "ReadEndpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "readEndpointPort", GoGetter: "ReadEndpointPort"},
-			_jsii_.MemberProperty{JsiiProperty: "readReplicasMode", GoGetter: "ReadReplicasMode"},
-			_jsii_.MemberProperty{JsiiProperty: "readReplicasModeInput", GoGetter: "ReadReplicasModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "redisConfigs", GoGetter: "RedisConfigs"},
-			_jsii_.MemberProperty{JsiiProperty: "redisConfigsInput", GoGetter: "RedisConfigsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "redisVersion", GoGetter: "RedisVersion"},
-			_jsii_.MemberProperty{JsiiProperty: "redisVersionInput", GoGetter: "RedisVersionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
-			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "replicaCount", GoGetter: "ReplicaCount"},
-			_jsii_.MemberProperty{JsiiProperty: "replicaCountInput", GoGetter: "ReplicaCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "reservedIpRange", GoGetter: "ReservedIpRange"},
-			_jsii_.MemberProperty{JsiiProperty: "reservedIpRangeInput", GoGetter: "ReservedIpRangeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlternativeLocationId", GoMethod: "ResetAlternativeLocationId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthEnabled", GoMethod: "ResetAuthEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedNetwork", GoMethod: "ResetAuthorizedNetwork"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConnectMode", GoMethod: "ResetConnectMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomerManagedKey", GoMethod: "ResetCustomerManagedKey"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocationId", GoMethod: "ResetLocationId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaintenancePolicy", GoMethod: "ResetMaintenancePolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceSchedule", GoMethod: "ResetMaintenanceSchedule"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPersistenceConfig", GoMethod: "ResetPersistenceConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReadReplicasMode", GoMethod: "ResetReadReplicasMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedisConfigs", GoMethod: "ResetRedisConfigs"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRedisVersion", GoMethod: "ResetRedisVersion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReplicaCount", GoMethod: "ResetReplicaCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReservedIpRange", GoMethod: "ResetReservedIpRange"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecondaryIpRange", GoMethod: "ResetSecondaryIpRange"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTier", GoMethod: "ResetTier"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTransitEncryptionMode", GoMethod: "ResetTransitEncryptionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "secondaryIpRange", GoGetter: "SecondaryIpRange"},
-			_jsii_.MemberProperty{JsiiProperty: "secondaryIpRangeInput", GoGetter: "SecondaryIpRangeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serverCaCerts", GoGetter: "ServerCaCerts"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "tier", GoGetter: "Tier"},
-			_jsii_.MemberProperty{JsiiProperty: "tierInput", GoGetter: "TierInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionMode", GoGetter: "TransitEncryptionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionModeInput", GoGetter: "TransitEncryptionModeInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceConfig",
-		reflect.TypeOf((*GoogleRedisInstanceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicy",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putWeeklyMaintenanceWindow", GoMethod: "PutWeeklyMaintenanceWindow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWeeklyMaintenanceWindow", GoMethod: "ResetWeeklyMaintenanceWindow"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindow", GoGetter: "WeeklyMaintenanceWindow"},
-			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowInput", GoGetter: "WeeklyMaintenanceWindowInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "day", GoGetter: "Day"},
-			_jsii_.MemberProperty{JsiiProperty: "dayInput", GoGetter: "DayInput"},
-			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putStartTime", GoMethod: "PutStartTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hours", GoGetter: "Hours"},
-			_jsii_.MemberProperty{JsiiProperty: "hoursInput", GoGetter: "HoursInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "minutes", GoGetter: "Minutes"},
-			_jsii_.MemberProperty{JsiiProperty: "minutesInput", GoGetter: "MinutesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
-			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHours", GoMethod: "ResetHours"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMinutes", GoMethod: "ResetMinutes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSeconds", GoMethod: "ResetSeconds"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
-			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceSchedule",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenanceSchedule)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceMaintenanceScheduleOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "endTime", GoGetter: "EndTime"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "scheduleDeadlineTime", GoGetter: "ScheduleDeadlineTime"},
-			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceMaintenanceScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodes",
-		reflect.TypeOf((*GoogleRedisInstanceNodes)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodesList",
-		reflect.TypeOf((*GoogleRedisInstanceNodesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceNodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodesOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceNodesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceNodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfig",
-		reflect.TypeOf((*GoogleRedisInstancePersistenceConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfigOutputReference",
-		reflect.TypeOf((*GoogleRedisInstancePersistenceConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "persistenceMode", GoGetter: "PersistenceMode"},
-			_jsii_.MemberProperty{JsiiProperty: "persistenceModeInput", GoGetter: "PersistenceModeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rdbNextSnapshotTime", GoGetter: "RdbNextSnapshotTime"},
-			_jsii_.MemberProperty{JsiiProperty: "rdbSnapshotPeriod", GoGetter: "RdbSnapshotPeriod"},
-			_jsii_.MemberProperty{JsiiProperty: "rdbSnapshotPeriodInput", GoGetter: "RdbSnapshotPeriodInput"},
-			_jsii_.MemberProperty{JsiiProperty: "rdbSnapshotStartTime", GoGetter: "RdbSnapshotStartTime"},
-			_jsii_.MemberProperty{JsiiProperty: "rdbSnapshotStartTimeInput", GoGetter: "RdbSnapshotStartTimeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPersistenceMode", GoMethod: "ResetPersistenceMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRdbSnapshotStartTime", GoMethod: "ResetRdbSnapshotStartTime"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstancePersistenceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceServerCaCerts",
-		reflect.TypeOf((*GoogleRedisInstanceServerCaCerts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceServerCaCertsList",
-		reflect.TypeOf((*GoogleRedisInstanceServerCaCertsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceServerCaCertsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceServerCaCertsOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceServerCaCertsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "expireTime", GoGetter: "ExpireTime"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
-			_jsii_.MemberProperty{JsiiProperty: "sha1Fingerprint", GoGetter: "Sha1Fingerprint"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceServerCaCertsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceTimeouts",
-		reflect.TypeOf((*GoogleRedisInstanceTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleRedisInstanceTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_redis_instance google_redis_instance} Resource.
+func NewGoogleRedisInstance_Override(g GoogleRedisInstance, scope constructs.Construct, id *string, config *GoogleRedisInstanceConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleRedisInstance.GoogleRedisInstance",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleRedisInstance)SetAlternativeLocationId(val *string) {
+	if err := j.validateSetAlternativeLocationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alternativeLocationId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetAuthEnabled(val interface{}) {
+	if err := j.validateSetAuthEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetAuthorizedNetwork(val *string) {
+	if err := j.validateSetAuthorizedNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetConnectMode(val *string) {
+	if err := j.validateSetConnectModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetCustomerManagedKey(val *string) {
+	if err := j.validateSetCustomerManagedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerManagedKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetLocationId(val *string) {
+	if err := j.validateSetLocationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locationId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetMemorySizeGb(val *float64) {
+	if err := j.validateSetMemorySizeGbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memorySizeGb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetReadReplicasMode(val *string) {
+	if err := j.validateSetReadReplicasModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readReplicasMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetRedisConfigs(val *map[string]*string) {
+	if err := j.validateSetRedisConfigsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redisConfigs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetRedisVersion(val *string) {
+	if err := j.validateSetRedisVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redisVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetReplicaCount(val *float64) {
+	if err := j.validateSetReplicaCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetReservedIpRange(val *string) {
+	if err := j.validateSetReservedIpRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedIpRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetSecondaryIpRange(val *string) {
+	if err := j.validateSetSecondaryIpRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryIpRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetTier(val *string) {
+	if err := j.validateSetTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisInstance)SetTransitEncryptionMode(val *string) {
+	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transitEncryptionMode",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleRedisInstance_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleRedisInstance_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleRedisInstance.GoogleRedisInstance",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleRedisInstance_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleRedisInstance_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleRedisInstance.GoogleRedisInstance",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleRedisInstance_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleRedisInstance_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleRedisInstance.GoogleRedisInstance",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleRedisInstance_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleRedisInstance.GoogleRedisInstance",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) PutMaintenancePolicy(value *GoogleRedisInstanceMaintenancePolicy) {
+	if err := g.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) PutMaintenanceSchedule(value *GoogleRedisInstanceMaintenanceSchedule) {
+	if err := g.validatePutMaintenanceScheduleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaintenanceSchedule",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) PutPersistenceConfig(value *GoogleRedisInstancePersistenceConfig) {
+	if err := g.validatePutPersistenceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPersistenceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) PutTimeouts(value *GoogleRedisInstanceTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetAlternativeLocationId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAlternativeLocationId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetAuthEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetAuthorizedNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthorizedNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetConnectMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetCustomerManagedKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomerManagedKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetLocationId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocationId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetMaintenanceSchedule() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceSchedule",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetPersistenceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersistenceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetReadReplicasMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReadReplicasMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetRedisConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRedisConfigs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetRedisVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRedisVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetReplicaCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicaCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetReservedIpRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservedIpRange",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetSecondaryIpRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecondaryIpRange",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetTier() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTier",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetTransitEncryptionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransitEncryptionMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

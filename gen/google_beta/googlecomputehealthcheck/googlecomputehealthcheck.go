@@ -1,527 +1,1399 @@
 package googlecomputehealthcheck
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputehealthcheck/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_health_check google_compute_health_check}.
+type GoogleComputeHealthCheck interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CheckIntervalSec() *float64
+	SetCheckIntervalSec(val *float64)
+	CheckIntervalSecInput() *float64
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreationTimestamp() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GrpcHealthCheck() GoogleComputeHealthCheckGrpcHealthCheckOutputReference
+	GrpcHealthCheckInput() *GoogleComputeHealthCheckGrpcHealthCheck
+	HealthyThreshold() *float64
+	SetHealthyThreshold(val *float64)
+	HealthyThresholdInput() *float64
+	Http2HealthCheck() GoogleComputeHealthCheckHttp2HealthCheckOutputReference
+	Http2HealthCheckInput() *GoogleComputeHealthCheckHttp2HealthCheck
+	HttpHealthCheck() GoogleComputeHealthCheckHttpHealthCheckOutputReference
+	HttpHealthCheckInput() *GoogleComputeHealthCheckHttpHealthCheck
+	HttpsHealthCheck() GoogleComputeHealthCheckHttpsHealthCheckOutputReference
+	HttpsHealthCheckInput() *GoogleComputeHealthCheckHttpsHealthCheck
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogConfig() GoogleComputeHealthCheckLogConfigOutputReference
+	LogConfigInput() *GoogleComputeHealthCheckLogConfig
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	SelfLink() *string
+	SslHealthCheck() GoogleComputeHealthCheckSslHealthCheckOutputReference
+	SslHealthCheckInput() *GoogleComputeHealthCheckSslHealthCheck
+	TcpHealthCheck() GoogleComputeHealthCheckTcpHealthCheckOutputReference
+	TcpHealthCheckInput() *GoogleComputeHealthCheckTcpHealthCheck
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleComputeHealthCheckTimeoutsOutputReference
+	TimeoutSec() *float64
+	SetTimeoutSec(val *float64)
+	TimeoutSecInput() *float64
+	TimeoutsInput() interface{}
+	Type() *string
+	UnhealthyThreshold() *float64
+	SetUnhealthyThreshold(val *float64)
+	UnhealthyThresholdInput() *float64
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutGrpcHealthCheck(value *GoogleComputeHealthCheckGrpcHealthCheck)
+	PutHttp2HealthCheck(value *GoogleComputeHealthCheckHttp2HealthCheck)
+	PutHttpHealthCheck(value *GoogleComputeHealthCheckHttpHealthCheck)
+	PutHttpsHealthCheck(value *GoogleComputeHealthCheckHttpsHealthCheck)
+	PutLogConfig(value *GoogleComputeHealthCheckLogConfig)
+	PutSslHealthCheck(value *GoogleComputeHealthCheckSslHealthCheck)
+	PutTcpHealthCheck(value *GoogleComputeHealthCheckTcpHealthCheck)
+	PutTimeouts(value *GoogleComputeHealthCheckTimeouts)
+	ResetCheckIntervalSec()
+	ResetDescription()
+	ResetGrpcHealthCheck()
+	ResetHealthyThreshold()
+	ResetHttp2HealthCheck()
+	ResetHttpHealthCheck()
+	ResetHttpsHealthCheck()
+	ResetId()
+	ResetLogConfig()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetSslHealthCheck()
+	ResetTcpHealthCheck()
+	ResetTimeouts()
+	ResetTimeoutSec()
+	ResetUnhealthyThreshold()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for GoogleComputeHealthCheck
+type jsiiProxy_GoogleComputeHealthCheck struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) CheckIntervalSec() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"checkIntervalSec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) CheckIntervalSecInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"checkIntervalSecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) GrpcHealthCheck() GoogleComputeHealthCheckGrpcHealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckGrpcHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"grpcHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) GrpcHealthCheckInput() *GoogleComputeHealthCheckGrpcHealthCheck {
+	var returns *GoogleComputeHealthCheckGrpcHealthCheck
+	_jsii_.Get(
+		j,
+		"grpcHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) HealthyThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"healthyThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) HealthyThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"healthyThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Http2HealthCheck() GoogleComputeHealthCheckHttp2HealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckHttp2HealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"http2HealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Http2HealthCheckInput() *GoogleComputeHealthCheckHttp2HealthCheck {
+	var returns *GoogleComputeHealthCheckHttp2HealthCheck
+	_jsii_.Get(
+		j,
+		"http2HealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) HttpHealthCheck() GoogleComputeHealthCheckHttpHealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckHttpHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"httpHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) HttpHealthCheckInput() *GoogleComputeHealthCheckHttpHealthCheck {
+	var returns *GoogleComputeHealthCheckHttpHealthCheck
+	_jsii_.Get(
+		j,
+		"httpHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) HttpsHealthCheck() GoogleComputeHealthCheckHttpsHealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckHttpsHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"httpsHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) HttpsHealthCheckInput() *GoogleComputeHealthCheckHttpsHealthCheck {
+	var returns *GoogleComputeHealthCheckHttpsHealthCheck
+	_jsii_.Get(
+		j,
+		"httpsHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) LogConfig() GoogleComputeHealthCheckLogConfigOutputReference {
+	var returns GoogleComputeHealthCheckLogConfigOutputReference
+	_jsii_.Get(
+		j,
+		"logConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) LogConfigInput() *GoogleComputeHealthCheckLogConfig {
+	var returns *GoogleComputeHealthCheckLogConfig
+	_jsii_.Get(
+		j,
+		"logConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) SslHealthCheck() GoogleComputeHealthCheckSslHealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckSslHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"sslHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) SslHealthCheckInput() *GoogleComputeHealthCheckSslHealthCheck {
+	var returns *GoogleComputeHealthCheckSslHealthCheck
+	_jsii_.Get(
+		j,
+		"sslHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TcpHealthCheck() GoogleComputeHealthCheckTcpHealthCheckOutputReference {
+	var returns GoogleComputeHealthCheckTcpHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"tcpHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TcpHealthCheckInput() *GoogleComputeHealthCheckTcpHealthCheck {
+	var returns *GoogleComputeHealthCheckTcpHealthCheck
+	_jsii_.Get(
+		j,
+		"tcpHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Timeouts() GoogleComputeHealthCheckTimeoutsOutputReference {
+	var returns GoogleComputeHealthCheckTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TimeoutSec() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeoutSec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TimeoutSecInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeoutSecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) UnhealthyThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"unhealthyThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck) UnhealthyThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"unhealthyThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_health_check google_compute_health_check} Resource.
+func NewGoogleComputeHealthCheck(scope constructs.Construct, id *string, config *GoogleComputeHealthCheckConfig) GoogleComputeHealthCheck {
+	_init_.Initialize()
+
+	if err := validateNewGoogleComputeHealthCheckParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleComputeHealthCheck{}
+
+	_jsii_.Create(
 		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheck)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "checkIntervalSec", GoGetter: "CheckIntervalSec"},
-			_jsii_.MemberProperty{JsiiProperty: "checkIntervalSecInput", GoGetter: "CheckIntervalSecInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "creationTimestamp", GoGetter: "CreationTimestamp"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "grpcHealthCheck", GoGetter: "GrpcHealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "grpcHealthCheckInput", GoGetter: "GrpcHealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "healthyThreshold", GoGetter: "HealthyThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "healthyThresholdInput", GoGetter: "HealthyThresholdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "http2HealthCheck", GoGetter: "Http2HealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "http2HealthCheckInput", GoGetter: "Http2HealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "httpHealthCheck", GoGetter: "HttpHealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "httpHealthCheckInput", GoGetter: "HttpHealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "httpsHealthCheck", GoGetter: "HttpsHealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "httpsHealthCheckInput", GoGetter: "HttpsHealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
-			_jsii_.MemberProperty{JsiiProperty: "logConfigInput", GoGetter: "LogConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putGrpcHealthCheck", GoMethod: "PutGrpcHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putHttp2HealthCheck", GoMethod: "PutHttp2HealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putHttpHealthCheck", GoMethod: "PutHttpHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putHttpsHealthCheck", GoMethod: "PutHttpsHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putSslHealthCheck", GoMethod: "PutSslHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putTcpHealthCheck", GoMethod: "PutTcpHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCheckIntervalSec", GoMethod: "ResetCheckIntervalSec"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGrpcHealthCheck", GoMethod: "ResetGrpcHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHealthyThreshold", GoMethod: "ResetHealthyThreshold"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttp2HealthCheck", GoMethod: "ResetHttp2HealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpHealthCheck", GoMethod: "ResetHttpHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHttpsHealthCheck", GoMethod: "ResetHttpsHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogConfig", GoMethod: "ResetLogConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSslHealthCheck", GoMethod: "ResetSslHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTcpHealthCheck", GoMethod: "ResetTcpHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeoutSec", GoMethod: "ResetTimeoutSec"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnhealthyThreshold", GoMethod: "ResetUnhealthyThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
-			_jsii_.MemberProperty{JsiiProperty: "sslHealthCheck", GoGetter: "SslHealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "sslHealthCheckInput", GoGetter: "SslHealthCheckInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "tcpHealthCheck", GoGetter: "TcpHealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "tcpHealthCheckInput", GoGetter: "TcpHealthCheckInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutSec", GoGetter: "TimeoutSec"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutSecInput", GoGetter: "TimeoutSecInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
-			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheck{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckConfig",
-		reflect.TypeOf((*GoogleComputeHealthCheckConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckGrpcHealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheckGrpcHealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckGrpcHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckGrpcHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "grpcServiceName", GoGetter: "GrpcServiceName"},
-			_jsii_.MemberProperty{JsiiProperty: "grpcServiceNameInput", GoGetter: "GrpcServiceNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
-			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGrpcServiceName", GoMethod: "ResetGrpcServiceName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckGrpcHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttp2HealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheckHttp2HealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttp2HealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckHttp2HealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
-			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeader", GoGetter: "ProxyHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeaderInput", GoGetter: "ProxyHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requestPath", GoGetter: "RequestPath"},
-			_jsii_.MemberProperty{JsiiProperty: "requestPathInput", GoGetter: "RequestPathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyHeader", GoMethod: "ResetProxyHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequestPath", GoMethod: "ResetRequestPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponse", GoMethod: "ResetResponse"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "response", GoGetter: "Response"},
-			_jsii_.MemberProperty{JsiiProperty: "responseInput", GoGetter: "ResponseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckHttp2HealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheckHttpHealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckHttpHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
-			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeader", GoGetter: "ProxyHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeaderInput", GoGetter: "ProxyHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requestPath", GoGetter: "RequestPath"},
-			_jsii_.MemberProperty{JsiiProperty: "requestPathInput", GoGetter: "RequestPathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyHeader", GoMethod: "ResetProxyHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequestPath", GoMethod: "ResetRequestPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponse", GoMethod: "ResetResponse"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "response", GoGetter: "Response"},
-			_jsii_.MemberProperty{JsiiProperty: "responseInput", GoGetter: "ResponseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpsHealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheckHttpsHealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpsHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckHttpsHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
-			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
-			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeader", GoGetter: "ProxyHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeaderInput", GoGetter: "ProxyHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "requestPath", GoGetter: "RequestPath"},
-			_jsii_.MemberProperty{JsiiProperty: "requestPathInput", GoGetter: "RequestPathInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHost", GoMethod: "ResetHost"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyHeader", GoMethod: "ResetProxyHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequestPath", GoMethod: "ResetRequestPath"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponse", GoMethod: "ResetResponse"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "response", GoGetter: "Response"},
-			_jsii_.MemberProperty{JsiiProperty: "responseInput", GoGetter: "ResponseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckHttpsHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckLogConfig",
-		reflect.TypeOf((*GoogleComputeHealthCheckLogConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckLogConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckLogConfigOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enable", GoGetter: "Enable"},
-			_jsii_.MemberProperty{JsiiProperty: "enableInput", GoGetter: "EnableInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnable", GoMethod: "ResetEnable"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckSslHealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheckSslHealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckSslHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckSslHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
-			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeader", GoGetter: "ProxyHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeaderInput", GoGetter: "ProxyHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
-			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyHeader", GoMethod: "ResetProxyHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponse", GoMethod: "ResetResponse"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "response", GoGetter: "Response"},
-			_jsii_.MemberProperty{JsiiProperty: "responseInput", GoGetter: "ResponseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckSslHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckTcpHealthCheck",
-		reflect.TypeOf((*GoogleComputeHealthCheckTcpHealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckTcpHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckTcpHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
-			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecification", GoGetter: "PortSpecification"},
-			_jsii_.MemberProperty{JsiiProperty: "portSpecificationInput", GoGetter: "PortSpecificationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeader", GoGetter: "ProxyHeader"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyHeaderInput", GoGetter: "ProxyHeaderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
-			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortName", GoMethod: "ResetPortName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPortSpecification", GoMethod: "ResetPortSpecification"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyHeader", GoMethod: "ResetProxyHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponse", GoMethod: "ResetResponse"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "response", GoGetter: "Response"},
-			_jsii_.MemberProperty{JsiiProperty: "responseInput", GoGetter: "ResponseInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckTcpHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckTimeouts",
-		reflect.TypeOf((*GoogleComputeHealthCheckTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeHealthCheckTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_GoogleComputeHealthCheckTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_health_check google_compute_health_check} Resource.
+func NewGoogleComputeHealthCheck_Override(g GoogleComputeHealthCheck, scope constructs.Construct, id *string, config *GoogleComputeHealthCheckConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		[]interface{}{scope, id, config},
+		g,
 	)
 }
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetCheckIntervalSec(val *float64) {
+	if err := j.validateSetCheckIntervalSecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkIntervalSec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetHealthyThreshold(val *float64) {
+	if err := j.validateSetHealthyThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthyThreshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetTimeoutSec(val *float64) {
+	if err := j.validateSetTimeoutSecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeoutSec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeHealthCheck)SetUnhealthyThreshold(val *float64) {
+	if err := j.validateSetUnhealthyThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unhealthyThreshold",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleComputeHealthCheck_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeHealthCheck_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeHealthCheck_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeHealthCheck_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeHealthCheck_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeHealthCheck_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleComputeHealthCheck_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutGrpcHealthCheck(value *GoogleComputeHealthCheckGrpcHealthCheck) {
+	if err := g.validatePutGrpcHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGrpcHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutHttp2HealthCheck(value *GoogleComputeHealthCheckHttp2HealthCheck) {
+	if err := g.validatePutHttp2HealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHttp2HealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutHttpHealthCheck(value *GoogleComputeHealthCheckHttpHealthCheck) {
+	if err := g.validatePutHttpHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHttpHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutHttpsHealthCheck(value *GoogleComputeHealthCheckHttpsHealthCheck) {
+	if err := g.validatePutHttpsHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHttpsHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutLogConfig(value *GoogleComputeHealthCheckLogConfig) {
+	if err := g.validatePutLogConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLogConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutSslHealthCheck(value *GoogleComputeHealthCheckSslHealthCheck) {
+	if err := g.validatePutSslHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSslHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutTcpHealthCheck(value *GoogleComputeHealthCheckTcpHealthCheck) {
+	if err := g.validatePutTcpHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTcpHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) PutTimeouts(value *GoogleComputeHealthCheckTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetCheckIntervalSec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCheckIntervalSec",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetGrpcHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGrpcHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetHealthyThreshold() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHealthyThreshold",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetHttp2HealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttp2HealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetHttpHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetHttpsHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpsHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetLogConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetSslHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSslHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetTcpHealthCheck() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTcpHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetTimeoutSec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ResetUnhealthyThreshold() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUnhealthyThreshold",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

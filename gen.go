@@ -21,7 +21,7 @@ var (
 	version     = flag.String("version", "", "target cdktf version, no 'v' prefix, e.g. '0.13.3'")
 )
 
-//go:generate go run . --version 0.13.3 --parallelism 2
+//go:generate go run . --version 0.16.3 --parallelism 4
 func main() {
 	flag.Parse()
 

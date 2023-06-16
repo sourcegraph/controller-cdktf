@@ -1,0 +1,238 @@
+package googledatalosspreventiondeidentifytemplate
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatalosspreventiondeidentifytemplate/internal"
+)
+
+type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList
+type jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewGoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList {
+	_init_.Initialize()
+
+	if err := validateNewGoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList{}
+
+	_jsii_.Create(
+		"google-beta.googleDataLossPreventionDeidentifyTemplate.GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewGoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList_Override(g GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google-beta.googleDataLossPreventionDeidentifyTemplate.GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) Get(index *float64) GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsOutputReference {
+	if err := g.validateGetParameters(index); err != nil {
+		panic(err)
+	}
+	var returns GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsOutputReference
+
+	_jsii_.Invoke(
+		g,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,190 +1,1357 @@
 package networkservicesedgecacheorigin
 
 import (
-	"reflect"
-
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/sourcegraph/controller-cdktf/gen/google/networkservicesedgecacheorigin/internal"
 )
 
-func init() {
-	_jsii_.RegisterClass(
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin}.
+type NetworkServicesEdgeCacheOrigin interface {
+	cdktf.TerraformResource
+	AwsV4Authentication() NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
+	AwsV4AuthenticationInput() *NetworkServicesEdgeCacheOriginAwsV4Authentication
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	FailoverOrigin() *string
+	SetFailoverOrigin(val *string)
+	FailoverOriginInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxAttempts() *float64
+	SetMaxAttempts(val *float64)
+	MaxAttemptsInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	OriginAddress() *string
+	SetOriginAddress(val *string)
+	OriginAddressInput() *string
+	OriginOverrideAction() NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
+	OriginOverrideActionInput() *NetworkServicesEdgeCacheOriginOriginOverrideAction
+	OriginRedirect() NetworkServicesEdgeCacheOriginOriginRedirectOutputReference
+	OriginRedirectInput() *NetworkServicesEdgeCacheOriginOriginRedirect
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	Protocol() *string
+	SetProtocol(val *string)
+	ProtocolInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RetryConditions() *[]*string
+	SetRetryConditions(val *[]*string)
+	RetryConditionsInput() *[]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeout() NetworkServicesEdgeCacheOriginTimeoutOutputReference
+	TimeoutInput() *NetworkServicesEdgeCacheOriginTimeout
+	Timeouts() NetworkServicesEdgeCacheOriginTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAwsV4Authentication(value *NetworkServicesEdgeCacheOriginAwsV4Authentication)
+	PutOriginOverrideAction(value *NetworkServicesEdgeCacheOriginOriginOverrideAction)
+	PutOriginRedirect(value *NetworkServicesEdgeCacheOriginOriginRedirect)
+	PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout)
+	PutTimeouts(value *NetworkServicesEdgeCacheOriginTimeouts)
+	ResetAwsV4Authentication()
+	ResetDescription()
+	ResetFailoverOrigin()
+	ResetId()
+	ResetLabels()
+	ResetMaxAttempts()
+	ResetOriginOverrideAction()
+	ResetOriginRedirect()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPort()
+	ResetProject()
+	ResetProtocol()
+	ResetRetryConditions()
+	ResetTimeout()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for NetworkServicesEdgeCacheOrigin
+type jsiiProxy_NetworkServicesEdgeCacheOrigin struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) AwsV4Authentication() NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference {
+	var returns NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"awsV4Authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) AwsV4AuthenticationInput() *NetworkServicesEdgeCacheOriginAwsV4Authentication {
+	var returns *NetworkServicesEdgeCacheOriginAwsV4Authentication
+	_jsii_.Get(
+		j,
+		"awsV4AuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) FailoverOrigin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"failoverOrigin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) FailoverOriginInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"failoverOriginInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) MaxAttempts() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxAttempts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) MaxAttemptsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxAttemptsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginOverrideAction() NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference {
+	var returns NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
+	_jsii_.Get(
+		j,
+		"originOverrideAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginOverrideActionInput() *NetworkServicesEdgeCacheOriginOriginOverrideAction {
+	var returns *NetworkServicesEdgeCacheOriginOriginOverrideAction
+	_jsii_.Get(
+		j,
+		"originOverrideActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginRedirect() NetworkServicesEdgeCacheOriginOriginRedirectOutputReference {
+	var returns NetworkServicesEdgeCacheOriginOriginRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"originRedirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginRedirectInput() *NetworkServicesEdgeCacheOriginOriginRedirect {
+	var returns *NetworkServicesEdgeCacheOriginOriginRedirect
+	_jsii_.Get(
+		j,
+		"originRedirectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) RetryConditions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"retryConditions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) RetryConditionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"retryConditionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Timeout() NetworkServicesEdgeCacheOriginTimeoutOutputReference {
+	var returns NetworkServicesEdgeCacheOriginTimeoutOutputReference
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TimeoutInput() *NetworkServicesEdgeCacheOriginTimeout {
+	var returns *NetworkServicesEdgeCacheOriginTimeout
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) Timeouts() NetworkServicesEdgeCacheOriginTimeoutsOutputReference {
+	var returns NetworkServicesEdgeCacheOriginTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+func NewNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheOriginConfig) NetworkServicesEdgeCacheOrigin {
+	_init_.Initialize()
+
+	if err := validateNewNetworkServicesEdgeCacheOriginParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_NetworkServicesEdgeCacheOrigin{}
+
+	_jsii_.Create(
 		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOrigin)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
-			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "failoverOrigin", GoGetter: "FailoverOrigin"},
-			_jsii_.MemberProperty{JsiiProperty: "failoverOriginInput", GoGetter: "FailoverOriginInput"},
-			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
-			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAttempts", GoGetter: "MaxAttempts"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAttemptsInput", GoGetter: "MaxAttemptsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "originAddress", GoGetter: "OriginAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "originAddressInput", GoGetter: "OriginAddressInput"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
-			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
-			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
-			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
-			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
-			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
-			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeout", GoMethod: "PutTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFailoverOrigin", GoMethod: "ResetFailoverOrigin"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxAttempts", GoMethod: "ResetMaxAttempts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRetryConditions", GoMethod: "ResetRetryConditions"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "retryConditions", GoGetter: "RetryConditions"},
-			_jsii_.MemberProperty{JsiiProperty: "retryConditionsInput", GoGetter: "RetryConditionsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NetworkServicesEdgeCacheOrigin{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
+		[]interface{}{scope, id, config},
+		&j,
 	)
-	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginConfig",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeout",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeout)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeoutOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "connectTimeout", GoGetter: "ConnectTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "connectTimeoutInput", GoGetter: "ConnectTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAttemptsTimeout", GoGetter: "MaxAttemptsTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "maxAttemptsTimeoutInput", GoGetter: "MaxAttemptsTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "readTimeout", GoGetter: "ReadTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "readTimeoutInput", GoGetter: "ReadTimeoutInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConnectTimeout", GoMethod: "ResetConnectTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMaxAttemptsTimeout", GoMethod: "ResetMaxAttemptsTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetReadTimeout", GoMethod: "ResetReadTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResponseTimeout", GoMethod: "ResetResponseTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "responseTimeout", GoGetter: "ResponseTimeout"},
-			_jsii_.MemberProperty{JsiiProperty: "responseTimeoutInput", GoGetter: "ResponseTimeoutInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeouts",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeouts)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeoutsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
-			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
-			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
-			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+func NewNetworkServicesEdgeCacheOrigin_Override(n NetworkServicesEdgeCacheOrigin, scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheOriginConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		[]interface{}{scope, id, config},
+		n,
 	)
 }
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetFailoverOrigin(val *string) {
+	if err := j.validateSetFailoverOriginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failoverOrigin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetMaxAttempts(val *float64) {
+	if err := j.validateSetMaxAttemptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxAttempts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetOriginAddress(val *string) {
+	if err := j.validateSetOriginAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetRetryConditions(val *[]*string) {
+	if err := j.validateSetRetryConditionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retryConditions",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func NetworkServicesEdgeCacheOrigin_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNetworkServicesEdgeCacheOrigin_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NetworkServicesEdgeCacheOrigin_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNetworkServicesEdgeCacheOrigin_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NetworkServicesEdgeCacheOrigin_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNetworkServicesEdgeCacheOrigin_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func NetworkServicesEdgeCacheOrigin_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutAwsV4Authentication(value *NetworkServicesEdgeCacheOriginAwsV4Authentication) {
+	if err := n.validatePutAwsV4AuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAwsV4Authentication",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutOriginOverrideAction(value *NetworkServicesEdgeCacheOriginOriginOverrideAction) {
+	if err := n.validatePutOriginOverrideActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putOriginOverrideAction",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutOriginRedirect(value *NetworkServicesEdgeCacheOriginOriginRedirect) {
+	if err := n.validatePutOriginRedirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putOriginRedirect",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout) {
+	if err := n.validatePutTimeoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeout",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutTimeouts(value *NetworkServicesEdgeCacheOriginTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetAwsV4Authentication() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAwsV4Authentication",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetDescription() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetFailoverOrigin() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFailoverOrigin",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetLabels() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetMaxAttempts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMaxAttempts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetOriginOverrideAction() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOriginOverrideAction",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetOriginRedirect() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOriginRedirect",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetPort() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetProject() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetRetryConditions() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRetryConditions",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,3 +1,3 @@
 # `data_google_secret_manager_secret`
 
-Refer to the Terraform Registory for docs: [`data_google_secret_manager_secret`](https://www.terraform.io/docs/providers/google-beta/d/google_secret_manager_secret).
+Refer to the Terraform Registory for docs: [`data_google_secret_manager_secret`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_secret_manager_secret).

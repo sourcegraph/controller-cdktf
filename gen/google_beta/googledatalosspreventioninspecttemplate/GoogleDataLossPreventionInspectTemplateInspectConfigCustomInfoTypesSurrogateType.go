@@ -1,0 +1,6 @@
+package googledatalosspreventioninspecttemplate
+
+
+type GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType struct {
+}
+
