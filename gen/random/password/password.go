@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/random/password/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/password random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password random_password}.
 type Password interface {
 	cdktf.TerraformResource
+	BcryptHash() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -67,6 +68,9 @@ type Password interface {
 	Number() interface{}
 	SetNumber(val interface{})
 	NumberInput() interface{}
+	Numeric() interface{}
+	SetNumeric(val interface{})
+	NumericInput() interface{}
 	OverrideSpecial() *string
 	SetOverrideSpecial(val *string)
 	OverrideSpecialInput() *string
@@ -125,6 +129,7 @@ type Password interface {
 	ResetMinSpecial()
 	ResetMinUpper()
 	ResetNumber()
+	ResetNumeric()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -144,6 +149,16 @@ type Password interface {
 // The jsii proxy struct for Password
 type jsiiProxy_Password struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Password) BcryptHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bcryptHash",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Password) CdktfStack() cdktf.TerraformStack {
@@ -416,6 +431,26 @@ func (j *jsiiProxy_Password) NumberInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Password) Numeric() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"numeric",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Password) NumericInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"numericInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Password) OverrideSpecial() *string {
 	var returns *string
 	_jsii_.Get(
@@ -546,8 +581,7 @@ func (j *jsiiProxy_Password) UpperInput() interface{} {
 	return returns
 }
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/password random_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password random_password} Resource.
 func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig) Password {
 	_init_.Initialize()
 
@@ -565,7 +599,7 @@ func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/password random_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password random_password} Resource.
 func NewPassword_Override(p Password, scope constructs.Construct, id *string, config *PasswordConfig) {
 	_init_.Initialize()
 
@@ -576,7 +610,7 @@ func NewPassword_Override(p Password, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_Password)SetConnection(val interface{}) {
+func (j *jsiiProxy_Password) SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +621,7 @@ func (j *jsiiProxy_Password)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetCount(val interface{}) {
+func (j *jsiiProxy_Password) SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +632,7 @@ func (j *jsiiProxy_Password)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Password) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -606,7 +640,7 @@ func (j *jsiiProxy_Password)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Password) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -614,7 +648,7 @@ func (j *jsiiProxy_Password)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Password) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +659,7 @@ func (j *jsiiProxy_Password)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetLength(val *float64) {
+func (j *jsiiProxy_Password) SetLength(val *float64) {
 	if err := j.validateSetLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +670,7 @@ func (j *jsiiProxy_Password)SetLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Password) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +681,7 @@ func (j *jsiiProxy_Password)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Password)SetLower(val interface{}) {
+func (j *jsiiProxy_Password) SetLower(val interface{}) {
 	if err := j.validateSetLowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +692,7 @@ func (j *jsiiProxy_Password)SetLower(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinLower(val *float64) {
+func (j *jsiiProxy_Password) SetMinLower(val *float64) {
 	if err := j.validateSetMinLowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +703,7 @@ func (j *jsiiProxy_Password)SetMinLower(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinNumeric(val *float64) {
+func (j *jsiiProxy_Password) SetMinNumeric(val *float64) {
 	if err := j.validateSetMinNumericParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +714,7 @@ func (j *jsiiProxy_Password)SetMinNumeric(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinSpecial(val *float64) {
+func (j *jsiiProxy_Password) SetMinSpecial(val *float64) {
 	if err := j.validateSetMinSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +725,7 @@ func (j *jsiiProxy_Password)SetMinSpecial(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinUpper(val *float64) {
+func (j *jsiiProxy_Password) SetMinUpper(val *float64) {
 	if err := j.validateSetMinUpperParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +736,7 @@ func (j *jsiiProxy_Password)SetMinUpper(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetNumber(val interface{}) {
+func (j *jsiiProxy_Password) SetNumber(val interface{}) {
 	if err := j.validateSetNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +747,18 @@ func (j *jsiiProxy_Password)SetNumber(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetOverrideSpecial(val *string) {
+func (j *jsiiProxy_Password) SetNumeric(val interface{}) {
+	if err := j.validateSetNumericParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numeric",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Password) SetOverrideSpecial(val *string) {
 	if err := j.validateSetOverrideSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +769,7 @@ func (j *jsiiProxy_Password)SetOverrideSpecial(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Password) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -732,7 +777,7 @@ func (j *jsiiProxy_Password)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Password) SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +788,7 @@ func (j *jsiiProxy_Password)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetSpecial(val interface{}) {
+func (j *jsiiProxy_Password) SetSpecial(val interface{}) {
 	if err := j.validateSetSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +799,7 @@ func (j *jsiiProxy_Password)SetSpecial(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetUpper(val interface{}) {
+func (j *jsiiProxy_Password) SetUpper(val interface{}) {
 	if err := j.validateSetUpperParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,6 +1132,14 @@ func (p *jsiiProxy_Password) ResetNumber() {
 	)
 }
 
+func (p *jsiiProxy_Password) ResetNumeric() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNumeric",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Password) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1170,4 +1223,3 @@ func (p *jsiiProxy_Password) ToTerraform() interface{} {
 
 	return returns
 }
-

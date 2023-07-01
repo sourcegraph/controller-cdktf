@@ -108,6 +108,10 @@ func (j *jsiiProxy_StringResource) validateSetNumberParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_StringResource) validateSetNumericParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StringResource) validateSetOverrideSpecialParameters(val *string) error {
 	return nil
 }

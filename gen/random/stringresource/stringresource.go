@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/random/stringresource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/string random_string}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string random_string}.
 type StringResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type StringResource interface {
 	Number() interface{}
 	SetNumber(val interface{})
 	NumberInput() interface{}
+	Numeric() interface{}
+	SetNumeric(val interface{})
+	NumericInput() interface{}
 	OverrideSpecial() *string
 	SetOverrideSpecial(val *string)
 	OverrideSpecialInput() *string
@@ -125,6 +128,7 @@ type StringResource interface {
 	ResetMinSpecial()
 	ResetMinUpper()
 	ResetNumber()
+	ResetNumeric()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -416,6 +420,26 @@ func (j *jsiiProxy_StringResource) NumberInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StringResource) Numeric() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"numeric",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StringResource) NumericInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"numericInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StringResource) OverrideSpecial() *string {
 	var returns *string
 	_jsii_.Get(
@@ -546,8 +570,7 @@ func (j *jsiiProxy_StringResource) UpperInput() interface{} {
 	return returns
 }
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/string random_string} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string random_string} Resource.
 func NewStringResource(scope constructs.Construct, id *string, config *StringResourceConfig) StringResource {
 	_init_.Initialize()
 
@@ -565,7 +588,7 @@ func NewStringResource(scope constructs.Construct, id *string, config *StringRes
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/string random_string} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string random_string} Resource.
 func NewStringResource_Override(s StringResource, scope constructs.Construct, id *string, config *StringResourceConfig) {
 	_init_.Initialize()
 
@@ -576,7 +599,7 @@ func NewStringResource_Override(s StringResource, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetConnection(val interface{}) {
+func (j *jsiiProxy_StringResource) SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +610,7 @@ func (j *jsiiProxy_StringResource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetCount(val interface{}) {
+func (j *jsiiProxy_StringResource) SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +621,7 @@ func (j *jsiiProxy_StringResource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StringResource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -606,7 +629,7 @@ func (j *jsiiProxy_StringResource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StringResource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -614,7 +637,7 @@ func (j *jsiiProxy_StringResource)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_StringResource) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +648,7 @@ func (j *jsiiProxy_StringResource)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetLength(val *float64) {
+func (j *jsiiProxy_StringResource) SetLength(val *float64) {
 	if err := j.validateSetLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +659,7 @@ func (j *jsiiProxy_StringResource)SetLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StringResource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +670,7 @@ func (j *jsiiProxy_StringResource)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetLower(val interface{}) {
+func (j *jsiiProxy_StringResource) SetLower(val interface{}) {
 	if err := j.validateSetLowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +681,7 @@ func (j *jsiiProxy_StringResource)SetLower(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetMinLower(val *float64) {
+func (j *jsiiProxy_StringResource) SetMinLower(val *float64) {
 	if err := j.validateSetMinLowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +692,7 @@ func (j *jsiiProxy_StringResource)SetMinLower(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetMinNumeric(val *float64) {
+func (j *jsiiProxy_StringResource) SetMinNumeric(val *float64) {
 	if err := j.validateSetMinNumericParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +703,7 @@ func (j *jsiiProxy_StringResource)SetMinNumeric(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetMinSpecial(val *float64) {
+func (j *jsiiProxy_StringResource) SetMinSpecial(val *float64) {
 	if err := j.validateSetMinSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +714,7 @@ func (j *jsiiProxy_StringResource)SetMinSpecial(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetMinUpper(val *float64) {
+func (j *jsiiProxy_StringResource) SetMinUpper(val *float64) {
 	if err := j.validateSetMinUpperParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +725,7 @@ func (j *jsiiProxy_StringResource)SetMinUpper(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetNumber(val interface{}) {
+func (j *jsiiProxy_StringResource) SetNumber(val interface{}) {
 	if err := j.validateSetNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +736,18 @@ func (j *jsiiProxy_StringResource)SetNumber(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetOverrideSpecial(val *string) {
+func (j *jsiiProxy_StringResource) SetNumeric(val interface{}) {
+	if err := j.validateSetNumericParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numeric",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StringResource) SetOverrideSpecial(val *string) {
 	if err := j.validateSetOverrideSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +758,7 @@ func (j *jsiiProxy_StringResource)SetOverrideSpecial(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StringResource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -732,7 +766,7 @@ func (j *jsiiProxy_StringResource)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StringResource) SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +777,7 @@ func (j *jsiiProxy_StringResource)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetSpecial(val interface{}) {
+func (j *jsiiProxy_StringResource) SetSpecial(val interface{}) {
 	if err := j.validateSetSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +788,7 @@ func (j *jsiiProxy_StringResource)SetSpecial(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StringResource)SetUpper(val interface{}) {
+func (j *jsiiProxy_StringResource) SetUpper(val interface{}) {
 	if err := j.validateSetUpperParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,6 +1121,14 @@ func (s *jsiiProxy_StringResource) ResetNumber() {
 	)
 }
 
+func (s *jsiiProxy_StringResource) ResetNumeric() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNumeric",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StringResource) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1170,4 +1212,3 @@ func (s *jsiiProxy_StringResource) ToTerraform() interface{} {
 
 	return returns
 }
-
