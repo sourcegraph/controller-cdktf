@@ -21,21 +21,21 @@ type IntegerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The maximum inclusive value of the range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer#max Integer#max}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#max Integer#max}
 	Max *float64 `field:"required" json:"max" yaml:"max"`
 	// The minimum inclusive value of the range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer#min Integer#min}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#min Integer#min}
 	Min *float64 `field:"required" json:"min" yaml:"min"`
 	// Arbitrary map of values that, when changed, will trigger recreation of resource.
 	//
 	// See [the main provider documentation](../index.html) for more information.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer#keepers Integer#keepers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#keepers Integer#keepers}
 	Keepers *map[string]*string `field:"optional" json:"keepers" yaml:"keepers"`
 	// A custom seed to always produce the same value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer#seed Integer#seed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer#seed Integer#seed}
 	Seed *string `field:"optional" json:"seed" yaml:"seed"`
 }
 

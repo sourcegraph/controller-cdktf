@@ -108,6 +108,10 @@ func (j *jsiiProxy_Password) validateSetNumberParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_Password) validateSetNumericParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Password) validateSetOverrideSpecialParameters(val *string) error {
 	return nil
 }

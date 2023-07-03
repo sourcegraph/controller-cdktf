@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/random/integer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer random_integer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer random_integer}.
 type Integer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,8 +377,7 @@ func (j *jsiiProxy_Integer) TerraformResourceType() *string {
 	return returns
 }
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer random_integer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer random_integer} Resource.
 func NewInteger(scope constructs.Construct, id *string, config *IntegerConfig) Integer {
 	_init_.Initialize()
 
@@ -396,7 +395,7 @@ func NewInteger(scope constructs.Construct, id *string, config *IntegerConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/integer random_integer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/integer random_integer} Resource.
 func NewInteger_Override(i Integer, scope constructs.Construct, id *string, config *IntegerConfig) {
 	_init_.Initialize()
 
@@ -407,7 +406,7 @@ func NewInteger_Override(i Integer, scope constructs.Construct, id *string, conf
 	)
 }
 
-func (j *jsiiProxy_Integer)SetConnection(val interface{}) {
+func (j *jsiiProxy_Integer) SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_Integer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetCount(val interface{}) {
+func (j *jsiiProxy_Integer) SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_Integer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Integer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_Integer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Integer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_Integer)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Integer) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_Integer)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Integer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_Integer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetMax(val *float64) {
+func (j *jsiiProxy_Integer) SetMax(val *float64) {
 	if err := j.validateSetMaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_Integer)SetMax(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetMin(val *float64) {
+func (j *jsiiProxy_Integer) SetMin(val *float64) {
 	if err := j.validateSetMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Integer)SetMin(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Integer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_Integer)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Integer) SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_Integer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Integer)SetSeed(val *string) {
+func (j *jsiiProxy_Integer) SetSeed(val *string) {
 	if err := j.validateSetSeedParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,4 +859,3 @@ func (i *jsiiProxy_Integer) ToTerraform() interface{} {
 
 	return returns
 }
-

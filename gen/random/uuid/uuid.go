@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/random/uuid/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/uuid random_uuid}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid random_uuid}.
 type Uuid interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -307,8 +307,7 @@ func (j *jsiiProxy_Uuid) TerraformResourceType() *string {
 	return returns
 }
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/uuid random_uuid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid random_uuid} Resource.
 func NewUuid(scope constructs.Construct, id *string, config *UuidConfig) Uuid {
 	_init_.Initialize()
 
@@ -326,7 +325,7 @@ func NewUuid(scope constructs.Construct, id *string, config *UuidConfig) Uuid {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/uuid random_uuid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/uuid random_uuid} Resource.
 func NewUuid_Override(u Uuid, scope constructs.Construct, id *string, config *UuidConfig) {
 	_init_.Initialize()
 
@@ -337,7 +336,7 @@ func NewUuid_Override(u Uuid, scope constructs.Construct, id *string, config *Uu
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetConnection(val interface{}) {
+func (j *jsiiProxy_Uuid) SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_Uuid)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetCount(val interface{}) {
+func (j *jsiiProxy_Uuid) SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_Uuid)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Uuid) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -367,7 +366,7 @@ func (j *jsiiProxy_Uuid)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Uuid) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_Uuid)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Uuid) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_Uuid)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Uuid) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_Uuid)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Uuid) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func (j *jsiiProxy_Uuid)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Uuid) SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,4 +748,3 @@ func (u *jsiiProxy_Uuid) ToTerraform() interface{} {
 
 	return returns
 }
-

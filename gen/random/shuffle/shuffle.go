@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/random/shuffle/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/shuffle random_shuffle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle}.
 type Shuffle interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,8 +378,7 @@ func (j *jsiiProxy_Shuffle) TerraformResourceType() *string {
 	return returns
 }
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/shuffle random_shuffle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle} Resource.
 func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) Shuffle {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/shuffle random_shuffle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle} Resource.
 func NewShuffle_Override(s Shuffle, scope constructs.Construct, id *string, config *ShuffleConfig) {
 	_init_.Initialize()
 
@@ -408,7 +407,7 @@ func NewShuffle_Override(s Shuffle, scope constructs.Construct, id *string, conf
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetConnection(val interface{}) {
+func (j *jsiiProxy_Shuffle) SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_Shuffle)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetCount(val interface{}) {
+func (j *jsiiProxy_Shuffle) SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_Shuffle)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Shuffle) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_Shuffle)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Shuffle) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_Shuffle)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetInput(val *[]*string) {
+func (j *jsiiProxy_Shuffle) SetInput(val *[]*string) {
 	if err := j.validateSetInputParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_Shuffle)SetInput(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Shuffle) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_Shuffle)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Shuffle) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_Shuffle)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Shuffle) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -487,7 +486,7 @@ func (j *jsiiProxy_Shuffle)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Shuffle) SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_Shuffle)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetResultCount(val *float64) {
+func (j *jsiiProxy_Shuffle) SetResultCount(val *float64) {
 	if err := j.validateSetResultCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_Shuffle)SetResultCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Shuffle)SetSeed(val *string) {
+func (j *jsiiProxy_Shuffle) SetSeed(val *string) {
 	if err := j.validateSetSeedParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,4 +868,3 @@ func (s *jsiiProxy_Shuffle) ToTerraform() interface{} {
 
 	return returns
 }
-
