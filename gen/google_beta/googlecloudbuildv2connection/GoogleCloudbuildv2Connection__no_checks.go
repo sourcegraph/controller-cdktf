@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutGithubEnterpriseConf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutGitlabConfigParameters(value *GoogleCloudbuildv2ConnectionGitlabConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutTimeoutsParameters(value *GoogleCloudbuildv2ConnectionTimeouts) error {
 	return nil
 }

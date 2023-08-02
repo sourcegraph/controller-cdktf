@@ -6,21 +6,21 @@ type GoogleLoggingBillingAccountSinkExclusions struct {
 	//
 	// By using the sample function, you can exclude less than 100% of the matching log entries
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_billing_account_sink#filter GoogleLoggingBillingAccountSink#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_logging_billing_account_sink#filter GoogleLoggingBillingAccountSink#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 	// A client-assigned identifier, such as "load-balancer-exclusion".
 	//
 	// Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. First character has to be alphanumeric.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_billing_account_sink#name GoogleLoggingBillingAccountSink#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_logging_billing_account_sink#name GoogleLoggingBillingAccountSink#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A description of this exclusion.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_billing_account_sink#description GoogleLoggingBillingAccountSink#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_logging_billing_account_sink#description GoogleLoggingBillingAccountSink#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// If set to True, then this exclusion is disabled and it does not exclude any log entries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_logging_billing_account_sink#disabled GoogleLoggingBillingAccountSink#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_logging_billing_account_sink#disabled GoogleLoggingBillingAccountSink#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 }
 

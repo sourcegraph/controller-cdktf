@@ -154,6 +154,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutDataCacheConfigParameters(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -393,6 +404,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetDiskTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetEditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

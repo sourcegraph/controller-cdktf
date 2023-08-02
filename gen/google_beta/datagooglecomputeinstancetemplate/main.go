@@ -745,6 +745,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv6AccessType", GoGetter: "Ipv6AccessType"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
+			_jsii_.MemberProperty{JsiiProperty: "networkAttachment", GoGetter: "NetworkAttachment"},
 			_jsii_.MemberProperty{JsiiProperty: "networkIp", GoGetter: "NetworkIp"},
 			_jsii_.MemberProperty{JsiiProperty: "nicType", GoGetter: "NicType"},
 			_jsii_.MemberProperty{JsiiProperty: "queueCount", GoGetter: "QueueCount"},

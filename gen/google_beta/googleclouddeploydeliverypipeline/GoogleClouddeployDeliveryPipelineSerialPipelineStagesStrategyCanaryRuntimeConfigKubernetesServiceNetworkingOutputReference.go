@@ -28,6 +28,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	Deployment() *string
 	SetDeployment(val *string)
 	DeploymentInput() *string
+	DisablePodOverprovisioning() interface{}
+	SetDisablePodOverprovisioning(val interface{})
+	DisablePodOverprovisioningInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworking
@@ -67,6 +70,7 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisablePodOverprovisioning()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +131,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"deploymentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) DisablePodOverprovisioning() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disablePodOverprovisioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) DisablePodOverprovisioningInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disablePodOverprovisioningInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +273,17 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Set(
 		j,
 		"deployment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference)SetDisablePodOverprovisioning(val interface{}) {
+	if err := j.validateSetDisablePodOverprovisioningParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disablePodOverprovisioning",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) ResetDisablePodOverprovisioning() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisablePodOverprovisioning",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

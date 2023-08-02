@@ -35,6 +35,9 @@ type GoogleIamWorkloadIdentityPoolProviderOidcOutputReference interface {
 	IssuerUri() *string
 	SetIssuerUri(val *string)
 	IssuerUriInput() *string
+	JwksJson() *string
+	SetJwksJson(val *string)
+	JwksJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleIamWorkloadIdentityPoolProviderOidcOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowedAudiences()
+	ResetJwksJson()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference) Iss
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference) JwksJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference) JwksJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference)SetI
 	_jsii_.Set(
 		j,
 		"issuerUri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference)SetJwksJson(val *string) {
+	if err := j.validateSetJwksJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksJson",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowedAudiences",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderOidcOutputReference) ResetJwksJson() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJwksJson",
 		nil, // no parameters
 	)
 }

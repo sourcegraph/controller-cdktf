@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformtenantdefaultsupportedidpconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config}.
 type GoogleIdentityPlatformTenantDefaultSupportedIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) Timeou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
 func NewGoogleIdentityPlatformTenantDefaultSupportedIdpConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantDefaultSupportedIdpConfigConfig) GoogleIdentityPlatformTenantDefaultSupportedIdpConfig {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleIdentityPlatformTenantDefaultSupportedIdpConfig(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
 func NewGoogleIdentityPlatformTenantDefaultSupportedIdpConfig_Override(g GoogleIdentityPlatformTenantDefaultSupportedIdpConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantDefaultSupportedIdpConfigConfig) {
 	_init_.Initialize()
 

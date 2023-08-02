@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatabasemigrationserviceconnectionprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile}.
 type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	cdktf.TerraformResource
 	Alloydb() GoogleDatabaseMigrationServiceConnectionProfileAlloydbOutputReference
@@ -580,7 +580,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewGoogleDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServiceConnectionProfileConfig) GoogleDatabaseMigrationServiceConnectionProfile {
 	_init_.Initialize()
 
@@ -598,7 +598,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfile(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewGoogleDatabaseMigrationServiceConnectionProfile_Override(g GoogleDatabaseMigrationServiceConnectionProfile, scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServiceConnectionProfileConfig) {
 	_init_.Initialize()
 

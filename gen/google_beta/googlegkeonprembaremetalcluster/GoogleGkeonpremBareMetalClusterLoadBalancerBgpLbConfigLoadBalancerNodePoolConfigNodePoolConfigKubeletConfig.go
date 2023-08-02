@@ -9,7 +9,7 @@ type GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolC
 	// traffic produced by image pulls.
 	// Defaults to 10.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_gkeonprem_bare_metal_cluster#registry_burst GoogleGkeonpremBareMetalCluster#registry_burst}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_burst GoogleGkeonpremBareMetalCluster#registry_burst}
 	RegistryBurst *float64 `field:"optional" json:"registryBurst" yaml:"registryBurst"`
 	// The limit of registry pulls per second.
 	//
@@ -18,7 +18,7 @@ type GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolC
 	// traffic produced by image pulls.
 	// Defaults to 5.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_gkeonprem_bare_metal_cluster#registry_pull_qps GoogleGkeonpremBareMetalCluster#registry_pull_qps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_pull_qps GoogleGkeonpremBareMetalCluster#registry_pull_qps}
 	RegistryPullQps *float64 `field:"optional" json:"registryPullQps" yaml:"registryPullQps"`
 	// Prevents the Kubelet from pulling multiple images at a time.
 	//
@@ -27,7 +27,7 @@ type GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolC
 	// backend. Issue https://github.com/kubernetes/kubernetes/issues/10959 has
 	// more details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_gkeonprem_bare_metal_cluster#serialize_image_pulls_disabled GoogleGkeonpremBareMetalCluster#serialize_image_pulls_disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_gkeonprem_bare_metal_cluster#serialize_image_pulls_disabled GoogleGkeonpremBareMetalCluster#serialize_image_pulls_disabled}
 	SerializeImagePullsDisabled interface{} `field:"optional" json:"serializeImagePullsDisabled" yaml:"serializeImagePullsDisabled"`
 }
 

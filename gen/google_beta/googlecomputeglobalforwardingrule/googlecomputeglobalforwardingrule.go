@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeglobalforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type GoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	AllowPscGlobalAccess() interface{}
@@ -74,6 +74,9 @@ type GoogleComputeGlobalForwardingRule interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	NoAutomateDnsZone() interface{}
+	SetNoAutomateDnsZone(val interface{})
+	NoAutomateDnsZoneInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PortRange() *string
@@ -146,6 +149,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	ResetLoadBalancingScheme()
 	ResetMetadataFilters()
 	ResetNetwork()
+	ResetNoAutomateDnsZone()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -498,6 +502,26 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NoAutomateDnsZone() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAutomateDnsZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NoAutomateDnsZoneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAutomateDnsZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -699,7 +723,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -717,7 +741,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -883,6 +907,17 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetNoAutomateDnsZone(val interface{}) {
+	if err := j.validateSetNoAutomateDnsZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noAutomateDnsZone",
 		val,
 	)
 }
@@ -1314,6 +1349,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetNoAutomateDnsZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNoAutomateDnsZone",
 		nil, // no parameters
 	)
 }

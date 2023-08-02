@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesslevelcondition/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
 type GoogleAccessContextManagerAccessLevelCondition interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewGoogleAccessContextManagerAccessLevelCondition(scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelConditionConfig) GoogleAccessContextManagerAccessLevelCondition {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewGoogleAccessContextManagerAccessLevelCondition(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewGoogleAccessContextManagerAccessLevelCondition_Override(g GoogleAccessContextManagerAccessLevelCondition, scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelConditionConfig) {
 	_init_.Initialize()
 

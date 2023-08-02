@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetN
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetResilienceModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

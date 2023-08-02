@@ -76,6 +76,10 @@ func validateGoogleCloudRunV2Job_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Job) validateSetClientParameters(val *string) error {
 	return nil
 }

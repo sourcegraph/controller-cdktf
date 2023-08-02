@@ -56,10 +56,6 @@ func (g *jsiiProxy_GoogleRedisInstance) validatePutMaintenancePolicyParameters(v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstance) validatePutMaintenanceScheduleParameters(value *GoogleRedisInstanceMaintenanceSchedule) error {
-	return nil
-}
-
 func (g *jsiiProxy_GoogleRedisInstance) validatePutPersistenceConfigParameters(value *GoogleRedisInstancePersistenceConfig) error {
 	return nil
 }

@@ -39,6 +39,9 @@ type GoogleComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkAttachment() *string
+	SetNetworkAttachment(val *string)
+	NetworkAttachmentInput() *string
 	NetworkInput() *string
 	NetworkIp() *string
 	SetNetworkIp(val *string)
@@ -97,6 +100,7 @@ type GoogleComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	ResetAliasIpRange()
 	ResetIpv6AccessConfig()
 	ResetNetwork()
+	ResetNetworkAttachment()
 	ResetNetworkIp()
 	ResetNicType()
 	ResetQueueCount()
@@ -253,6 +257,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) NetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +500,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)SetNetworkAttachment(val *string) {
+	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachment",
 		val,
 	)
 }
@@ -815,6 +850,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAttachment",
 		nil, // no parameters
 	)
 }

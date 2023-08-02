@@ -21,34 +21,34 @@ type GoogleStorageTransferJobConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique description to identify the Transfer Job.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#description GoogleStorageTransferJob#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#description GoogleStorageTransferJob#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// transfer_spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#transfer_spec GoogleStorageTransferJob#transfer_spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#transfer_spec GoogleStorageTransferJob#transfer_spec}
 	TransferSpec *GoogleStorageTransferJobTransferSpec `field:"required" json:"transferSpec" yaml:"transferSpec"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#id GoogleStorageTransferJob#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#id GoogleStorageTransferJob#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// notification_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#notification_config GoogleStorageTransferJob#notification_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#notification_config GoogleStorageTransferJob#notification_config}
 	NotificationConfig *GoogleStorageTransferJobNotificationConfig `field:"optional" json:"notificationConfig" yaml:"notificationConfig"`
 	// The project in which the resource belongs. If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#project GoogleStorageTransferJob#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#project GoogleStorageTransferJob#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// schedule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#schedule GoogleStorageTransferJob#schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#schedule GoogleStorageTransferJob#schedule}
 	Schedule *GoogleStorageTransferJobSchedule `field:"optional" json:"schedule" yaml:"schedule"`
 	// Status of the job.
 	//
 	// Default: ENABLED. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_transfer_job#status GoogleStorageTransferJob#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_transfer_job#status GoogleStorageTransferJob#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

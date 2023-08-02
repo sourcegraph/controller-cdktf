@@ -44,6 +44,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalNodeNetworkConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalPodNetworkConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *GoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig) error {
 	return nil
 }

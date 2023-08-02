@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryanalyticshublistingiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member}.
 type GoogleBigqueryAnalyticsHubListingIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
 func NewGoogleBigqueryAnalyticsHubListingIamMember(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingIamMemberConfig) GoogleBigqueryAnalyticsHubListingIamMember {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleBigqueryAnalyticsHubListingIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
 func NewGoogleBigqueryAnalyticsHubListingIamMember_Override(g GoogleBigqueryAnalyticsHubListingIamMember, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingIamMemberConfig) {
 	_init_.Initialize()
 

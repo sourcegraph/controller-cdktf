@@ -19,24 +19,24 @@ type GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#data_exchange_id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#data_exchange_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#data_exchange_id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#data_exchange_id}.
 	DataExchangeId *string `field:"required" json:"dataExchangeId" yaml:"dataExchangeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#members GoogleBigqueryAnalyticsHubDataExchangeIamBinding#members}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#members GoogleBigqueryAnalyticsHubDataExchangeIamBinding#members}.
 	Members *[]*string `field:"required" json:"members" yaml:"members"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#role GoogleBigqueryAnalyticsHubDataExchangeIamBinding#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#role GoogleBigqueryAnalyticsHubDataExchangeIamBinding#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#condition GoogleBigqueryAnalyticsHubDataExchangeIamBinding#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#condition GoogleBigqueryAnalyticsHubDataExchangeIamBinding#condition}
 	Condition *GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#location GoogleBigqueryAnalyticsHubDataExchangeIamBinding#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#location GoogleBigqueryAnalyticsHubDataExchangeIamBinding#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#project GoogleBigqueryAnalyticsHubDataExchangeIamBinding#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#project GoogleBigqueryAnalyticsHubDataExchangeIamBinding#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -21,34 +21,34 @@ type GoogleVertexAiTensorboardConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// User provided name of this Tensorboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#display_name GoogleVertexAiTensorboard#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#display_name GoogleVertexAiTensorboard#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// Description of this Tensorboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#description GoogleVertexAiTensorboard#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#description GoogleVertexAiTensorboard#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// encryption_spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#encryption_spec GoogleVertexAiTensorboard#encryption_spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#encryption_spec GoogleVertexAiTensorboard#encryption_spec}
 	EncryptionSpec *GoogleVertexAiTensorboardEncryptionSpec `field:"optional" json:"encryptionSpec" yaml:"encryptionSpec"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#id GoogleVertexAiTensorboard#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#id GoogleVertexAiTensorboard#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The labels with user-defined metadata to organize your Tensorboards.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#labels GoogleVertexAiTensorboard#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#labels GoogleVertexAiTensorboard#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#project GoogleVertexAiTensorboard#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#project GoogleVertexAiTensorboard#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The region of the tensorboard. eg us-central1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#region GoogleVertexAiTensorboard#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#region GoogleVertexAiTensorboard#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_tensorboard#timeouts GoogleVertexAiTensorboard#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_tensorboard#timeouts GoogleVertexAiTensorboard#timeouts}
 	Timeouts *GoogleVertexAiTensorboardTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

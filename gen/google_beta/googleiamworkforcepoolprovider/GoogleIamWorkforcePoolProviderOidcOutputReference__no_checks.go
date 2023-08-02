@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) validatePutClientSecretParameters(value *GoogleIamWorkforcePoolProviderOidcClientSecret) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) validatePutWebSsoConfigParameters(value *GoogleIamWorkforcePoolProviderOidcWebSsoConfig) error {
 	return nil
 }

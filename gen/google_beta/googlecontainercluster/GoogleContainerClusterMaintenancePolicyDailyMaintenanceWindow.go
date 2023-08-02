@@ -2,7 +2,7 @@ package googlecontainercluster
 
 
 type GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindow struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_cluster#start_time GoogleContainerCluster#start_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster#start_time GoogleContainerCluster#start_time}.
 	StartTime *string `field:"required" json:"startTime" yaml:"startTime"`
 }
 

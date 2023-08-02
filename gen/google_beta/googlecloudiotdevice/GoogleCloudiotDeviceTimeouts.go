@@ -2,11 +2,11 @@ package googlecloudiotdevice
 
 
 type GoogleCloudiotDeviceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_device#create GoogleCloudiotDevice#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudiot_device#create GoogleCloudiotDevice#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_device#delete GoogleCloudiotDevice#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudiot_device#delete GoogleCloudiotDevice#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_device#update GoogleCloudiotDevice#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudiot_device#update GoogleCloudiotDevice#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computerouter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_router google_compute_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_router google_compute_router}.
 type ComputeRouter interface {
 	cdktf.TerraformResource
 	Bgp() ComputeRouterBgpOutputReference
@@ -498,7 +498,7 @@ func (j *jsiiProxy_ComputeRouter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_router google_compute_router} Resource.
 func NewComputeRouter(scope constructs.Construct, id *string, config *ComputeRouterConfig) ComputeRouter {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewComputeRouter(scope constructs.Construct, id *string, config *ComputeRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_router google_compute_router} Resource.
 func NewComputeRouter_Override(c ComputeRouter, scope constructs.Construct, id *string, config *ComputeRouterConfig) {
 	_init_.Initialize()
 

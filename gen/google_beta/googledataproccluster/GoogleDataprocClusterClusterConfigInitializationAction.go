@@ -6,13 +6,13 @@ type GoogleDataprocClusterClusterConfigInitializationAction struct {
 	//
 	// The script must be a GCS file with a gs:// prefix.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_cluster#script GoogleDataprocCluster#script}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_cluster#script GoogleDataprocCluster#script}
 	Script *string `field:"required" json:"script" yaml:"script"`
 	// The maximum duration (in seconds) which script is allowed to take to execute its action.
 	//
 	// GCP will default to a predetermined computed value if not set (currently 300).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_cluster#timeout_sec GoogleDataprocCluster#timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_cluster#timeout_sec GoogleDataprocCluster#timeout_sec}
 	TimeoutSec *float64 `field:"optional" json:"timeoutSec" yaml:"timeoutSec"`
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validatePutConditionPrometheusQueryLanguageParameters(value *GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validatePutConditionThresholdParameters(value *GoogleMonitoringAlertPolicyConditionsConditionThreshold) error {
 	return nil
 }

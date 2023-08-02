@@ -4,11 +4,11 @@ package googlenetworkservicestlsroute
 type GoogleNetworkServicesTlsRouteRules struct {
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_tls_route#action GoogleNetworkServicesTlsRoute#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_tls_route#action GoogleNetworkServicesTlsRoute#action}
 	Action *GoogleNetworkServicesTlsRouteRulesAction `field:"required" json:"action" yaml:"action"`
 	// matches block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_tls_route#matches GoogleNetworkServicesTlsRoute#matches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_tls_route#matches GoogleNetworkServicesTlsRoute#matches}
 	Matches interface{} `field:"required" json:"matches" yaml:"matches"`
 }
 

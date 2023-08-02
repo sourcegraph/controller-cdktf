@@ -9,11 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtabletable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_table google_bigtable_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigtable_table google_bigtable_table}.
 type GoogleBigtableTable interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChangeStreamRetention() *string
+	SetChangeStreamRetention(val *string)
+	ChangeStreamRetentionInput() *string
 	ColumnFamily() GoogleBigtableTableColumnFamilyList
 	ColumnFamilyInput() interface{}
 	// Experimental.
@@ -107,6 +110,7 @@ type GoogleBigtableTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutColumnFamily(value interface{})
 	PutTimeouts(value *GoogleBigtableTableTimeouts)
+	ResetChangeStreamRetention()
 	ResetColumnFamily()
 	ResetDeletionProtection()
 	ResetId()
@@ -136,6 +140,26 @@ func (j *jsiiProxy_GoogleBigtableTable) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableTable) ChangeStreamRetention() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"changeStreamRetention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableTable) ChangeStreamRetentionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"changeStreamRetentionInput",
 		&returns,
 	)
 	return returns
@@ -452,7 +476,7 @@ func (j *jsiiProxy_GoogleBigtableTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigtable_table google_bigtable_table} Resource.
 func NewGoogleBigtableTable(scope constructs.Construct, id *string, config *GoogleBigtableTableConfig) GoogleBigtableTable {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewGoogleBigtableTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigtable_table google_bigtable_table} Resource.
 func NewGoogleBigtableTable_Override(g GoogleBigtableTable, scope constructs.Construct, id *string, config *GoogleBigtableTableConfig) {
 	_init_.Initialize()
 
@@ -478,6 +502,17 @@ func NewGoogleBigtableTable_Override(g GoogleBigtableTable, scope constructs.Con
 		"google-beta.googleBigtableTable.GoogleBigtableTable",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableTable)SetChangeStreamRetention(val *string) {
+	if err := j.validateSetChangeStreamRetentionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"changeStreamRetention",
+		val,
 	)
 }
 
@@ -900,6 +935,14 @@ func (g *jsiiProxy_GoogleBigtableTable) PutTimeouts(value *GoogleBigtableTableTi
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableTable) ResetChangeStreamRetention() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChangeStreamRetention",
+		nil, // no parameters
 	)
 }
 

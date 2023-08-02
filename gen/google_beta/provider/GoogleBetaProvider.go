@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -226,6 +226,9 @@ type GoogleBetaProvider interface {
 	FirebaseDatabaseCustomEndpoint() *string
 	SetFirebaseDatabaseCustomEndpoint(val *string)
 	FirebaseDatabaseCustomEndpointInput() *string
+	FirebaseExtensionsCustomEndpoint() *string
+	SetFirebaseExtensionsCustomEndpoint(val *string)
+	FirebaseExtensionsCustomEndpointInput() *string
 	FirebaseHostingCustomEndpoint() *string
 	SetFirebaseHostingCustomEndpoint(val *string)
 	FirebaseHostingCustomEndpointInput() *string
@@ -248,6 +251,9 @@ type GoogleBetaProvider interface {
 	GkeBackupCustomEndpoint() *string
 	SetGkeBackupCustomEndpoint(val *string)
 	GkeBackupCustomEndpointInput() *string
+	GkeHub2CustomEndpoint() *string
+	SetGkeHub2CustomEndpoint(val *string)
+	GkeHub2CustomEndpointInput() *string
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
@@ -293,6 +299,9 @@ type GoogleBetaProvider interface {
 	LoggingCustomEndpoint() *string
 	SetLoggingCustomEndpoint(val *string)
 	LoggingCustomEndpointInput() *string
+	LookerCustomEndpoint() *string
+	SetLookerCustomEndpoint(val *string)
+	LookerCustomEndpointInput() *string
 	MemcacheCustomEndpoint() *string
 	SetMemcacheCustomEndpoint(val *string)
 	MemcacheCustomEndpointInput() *string
@@ -336,6 +345,9 @@ type GoogleBetaProvider interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	PublicCaCustomEndpoint() *string
+	SetPublicCaCustomEndpoint(val *string)
+	PublicCaCustomEndpointInput() *string
 	PubsubCustomEndpoint() *string
 	SetPubsubCustomEndpoint(val *string)
 	PubsubCustomEndpointInput() *string
@@ -521,12 +533,14 @@ type GoogleBetaProvider interface {
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseCustomEndpoint()
 	ResetFirebaseDatabaseCustomEndpoint()
+	ResetFirebaseExtensionsCustomEndpoint()
 	ResetFirebaseHostingCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirebaseStorageCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGameServicesCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
+	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
 	ResetGkehubFeatureCustomEndpoint()
 	ResetGkeonpremCustomEndpoint()
@@ -542,6 +556,7 @@ type GoogleBetaProvider interface {
 	ResetImpersonateServiceAccountDelegates()
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
+	ResetLookerCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
@@ -558,6 +573,7 @@ type GoogleBetaProvider interface {
 	ResetOverrideLogicalId()
 	ResetPrivatecaCustomEndpoint()
 	ResetProject()
+	ResetPublicCaCustomEndpoint()
 	ResetPubsubCustomEndpoint()
 	ResetPubsubLiteCustomEndpoint()
 	ResetRecaptchaEnterpriseCustomEndpoint()
@@ -2027,6 +2043,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaseDatabaseCustomEndpointInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseExtensionsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseExtensionsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseExtensionsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseExtensionsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) FirebaseHostingCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2162,6 +2198,26 @@ func (j *jsiiProxy_GoogleBetaProvider) GkeBackupCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"gkeBackupCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GkeHub2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeHub2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GkeHub2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeHub2CustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2467,6 +2523,26 @@ func (j *jsiiProxy_GoogleBetaProvider) LoggingCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) LookerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) LookerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) MemcacheCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2742,6 +2818,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ProjectInput() *string {
 	_jsii_.Get(
 		j,
 		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) PublicCaCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicCaCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) PublicCaCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicCaCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3468,7 +3564,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3486,7 +3582,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4060,6 +4156,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseDatabaseCustomEndpoint(val *str
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseExtensionsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseExtensionsCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseHostingCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4104,6 +4208,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetGkeBackupCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"gkeBackupCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetGkeHub2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeHub2CustomEndpoint",
 		val,
 	)
 }
@@ -4228,6 +4340,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetLoggingCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetLookerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"lookerCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetMemcacheCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4328,6 +4448,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetProject(val *string) {
 	_jsii_.Set(
 		j,
 		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetPublicCaCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"publicCaCustomEndpoint",
 		val,
 	)
 }
@@ -5273,6 +5401,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseDatabaseCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseExtensionsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseExtensionsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseHostingCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5317,6 +5453,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetGkeBackupCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkeBackupCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetGkeHub2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeHub2CustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -5441,6 +5585,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetLoggingCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetLookerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLookerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetMemcacheCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5549,6 +5701,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetPublicCaCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPublicCaCustomEndpoint",
 		nil, // no parameters
 	)
 }

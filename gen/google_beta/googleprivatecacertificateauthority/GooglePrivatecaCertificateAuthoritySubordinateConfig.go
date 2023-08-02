@@ -8,11 +8,11 @@ type GooglePrivatecaCertificateAuthoritySubordinateConfig struct {
 	// and usability purposes only. The resource name is in the format
 	// 'projects/*\/locations/*\/caPools/*\/certificateAuthorities/*'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_authority#certificate_authority GooglePrivatecaCertificateAuthority#certificate_authority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_privateca_certificate_authority#certificate_authority GooglePrivatecaCertificateAuthority#certificate_authority}
 	CertificateAuthority *string `field:"optional" json:"certificateAuthority" yaml:"certificateAuthority"`
 	// pem_issuer_chain block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_privateca_certificate_authority#pem_issuer_chain GooglePrivatecaCertificateAuthority#pem_issuer_chain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_privateca_certificate_authority#pem_issuer_chain GooglePrivatecaCertificateAuthority#pem_issuer_chain}
 	PemIssuerChain *GooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChain `field:"optional" json:"pemIssuerChain" yaml:"pemIssuerChain"`
 }
 

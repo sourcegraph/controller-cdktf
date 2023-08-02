@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudiotdevice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_device google_cloudiot_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudiot_device google_cloudiot_device}.
 type GoogleCloudiotDevice interface {
 	cdktf.TerraformResource
 	Blocked() interface{}
@@ -586,7 +586,7 @@ func (j *jsiiProxy_GoogleCloudiotDevice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_device google_cloudiot_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudiot_device google_cloudiot_device} Resource.
 func NewGoogleCloudiotDevice(scope constructs.Construct, id *string, config *GoogleCloudiotDeviceConfig) GoogleCloudiotDevice {
 	_init_.Initialize()
 
@@ -604,7 +604,7 @@ func NewGoogleCloudiotDevice(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_device google_cloudiot_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudiot_device google_cloudiot_device} Resource.
 func NewGoogleCloudiotDevice_Override(g GoogleCloudiotDevice, scope constructs.Construct, id *string, config *GoogleCloudiotDeviceConfig) {
 	_init_.Initialize()
 

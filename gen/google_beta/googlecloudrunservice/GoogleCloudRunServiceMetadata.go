@@ -5,7 +5,7 @@ type GoogleCloudRunServiceMetadata struct {
 	// Annotations is a key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata.
 	//
 	// More
-	// info: http://kubernetes.io/docs/user-guide/annotations
+	// info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
 	//
 	// *Note**: The Cloud Run API may add additional annotations that were not provided in your config.
 	// If terraform plan shows a diff where a server-side annotation is added, you can add it to your config
@@ -25,18 +25,18 @@ type GoogleCloudRunServiceMetadata struct {
 	// - 'run.googleapis.com/launch-stage' sets the [launch stage](https://cloud.google.com/run/docs/troubleshooting#launch-stage-validation)
 	// when a preview feature is used. For example, '"run.googleapis.com/launch-stage": "BETA"'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_run_service#annotations GoogleCloudRunService#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloud_run_service#annotations GoogleCloudRunService#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
 	// May match selectors of replication controllers
 	// and routes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_run_service#labels GoogleCloudRunService#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloud_run_service#labels GoogleCloudRunService#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_run_service#namespace GoogleCloudRunService#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloud_run_service#namespace GoogleCloudRunService#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

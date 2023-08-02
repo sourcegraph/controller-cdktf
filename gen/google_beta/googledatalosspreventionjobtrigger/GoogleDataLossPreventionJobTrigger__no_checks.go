@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateSetStatusParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateSetTriggerIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionJobTriggerParameters(scope constructs.Construct, id *string, config *GoogleDataLossPreventionJobTriggerConfig) error {
 	return nil
 }

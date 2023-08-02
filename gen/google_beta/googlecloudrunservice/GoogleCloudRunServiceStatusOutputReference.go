@@ -41,6 +41,7 @@ type GoogleCloudRunServiceStatusOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Traffic() GoogleCloudRunServiceStatusTrafficList
 	Url() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -186,6 +187,16 @@ func (j *jsiiProxy_GoogleCloudRunServiceStatusOutputReference) TerraformResource
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceStatusOutputReference) Traffic() GoogleCloudRunServiceStatusTrafficList {
+	var returns GoogleCloudRunServiceStatusTrafficList
+	_jsii_.Get(
+		j,
+		"traffic",
 		&returns,
 	)
 	return returns

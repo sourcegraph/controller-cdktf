@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerazureclient/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_azure_client google_container_azure_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_azure_client google_container_azure_client}.
 type GoogleContainerAzureClient interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleContainerAzureClient) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_azure_client google_container_azure_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_azure_client google_container_azure_client} Resource.
 func NewGoogleContainerAzureClient(scope constructs.Construct, id *string, config *GoogleContainerAzureClientConfig) GoogleContainerAzureClient {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleContainerAzureClient(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_azure_client google_container_azure_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_azure_client google_container_azure_client} Resource.
 func NewGoogleContainerAzureClient_Override(g GoogleContainerAzureClient, scope constructs.Construct, id *string, config *GoogleContainerAzureClientConfig) {
 	_init_.Initialize()
 

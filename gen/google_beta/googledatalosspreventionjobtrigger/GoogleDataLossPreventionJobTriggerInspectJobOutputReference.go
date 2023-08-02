@@ -75,6 +75,7 @@ type GoogleDataLossPreventionJobTriggerInspectJobOutputReference interface {
 	PutStorageConfig(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfig)
 	ResetActions()
 	ResetInspectConfig()
+	ResetInspectTemplateName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -565,6 +566,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetInspectConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) ResetInspectTemplateName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInspectTemplateName",
 		nil, // no parameters
 	)
 }

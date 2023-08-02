@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetProjectParameters(val *string) 
 }
 
 func (j *jsiiProxy_GoogleComputeDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetProvisionedThroughputParameters(val *float64) error {
 	return nil
 }
 

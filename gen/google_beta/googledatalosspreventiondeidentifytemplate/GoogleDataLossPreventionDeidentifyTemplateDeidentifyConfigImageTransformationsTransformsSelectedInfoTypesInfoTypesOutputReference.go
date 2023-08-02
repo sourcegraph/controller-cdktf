@@ -32,6 +32,8 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformati
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SensitivityScore() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScoreOutputReference
+	SensitivityScoreInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScore
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformati
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSensitivityScore(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScore)
+	ResetSensitivityScore()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigIma
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesOutputReference) SensitivityScore() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScoreOutputReference {
+	var returns GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesOutputReference) SensitivityScoreInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScore {
+	var returns *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigIma
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesOutputReference) PutSensitivityScore(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesSensitivityScore) {
+	if err := g.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSensitivityScore",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformsSelectedInfoTypesInfoTypesOutputReference) ResetVersion() {

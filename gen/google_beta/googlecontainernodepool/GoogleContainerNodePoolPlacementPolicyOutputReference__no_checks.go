@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }

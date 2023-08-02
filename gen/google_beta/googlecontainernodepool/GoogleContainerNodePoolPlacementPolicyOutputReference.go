@@ -37,6 +37,9 @@ type GoogleContainerNodePoolPlacementPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
+	SetTpuTopology(val *string)
+	TpuTopologyInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -64,6 +67,7 @@ type GoogleContainerNodePoolPlacementPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTpuTopology()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) Terraf
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) TpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopologyInput",
 		&returns,
 	)
 	return returns
@@ -248,6 +272,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference)SetTerr
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference)SetTpuTopology(val *string) {
+	if err := j.validateSetTpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tpuTopology",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) ResetTpuTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTpuTopology",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

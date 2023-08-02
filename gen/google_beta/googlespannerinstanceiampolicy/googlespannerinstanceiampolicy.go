@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerinstanceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy}.
 type GoogleSpannerInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy} Resource.
 func NewGoogleSpannerInstanceIamPolicy(scope constructs.Construct, id *string, config *GoogleSpannerInstanceIamPolicyConfig) GoogleSpannerInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleSpannerInstanceIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy} Resource.
 func NewGoogleSpannerInstanceIamPolicy_Override(g GoogleSpannerInstanceIamPolicy, scope constructs.Construct, id *string, config *GoogleSpannerInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetNetworkTierParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetPortRangeParameters(val *string) error {
 	return nil
 }

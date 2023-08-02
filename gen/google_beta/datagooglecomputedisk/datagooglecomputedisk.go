@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputedisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/data-sources/google_compute_disk google_compute_disk}.
 type DataGoogleComputeDisk interface {
 	cdktf.TerraformDataSource
 	AsyncPrimaryDisk() DataGoogleComputeDiskAsyncPrimaryDiskList
@@ -28,6 +28,7 @@ type DataGoogleComputeDisk interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DiskEncryptionKey() DataGoogleComputeDiskDiskEncryptionKeyList
+	EnableConfidentialCompute() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,6 +67,7 @@ type DataGoogleComputeDisk interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	ProvisionedIops() *float64
+	ProvisionedThroughput() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	ResourcePolicies() *[]*string
@@ -210,6 +212,16 @@ func (j *jsiiProxy_DataGoogleComputeDisk) DiskEncryptionKey() DataGoogleComputeD
 	_jsii_.Get(
 		j,
 		"diskEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) EnableConfidentialCompute() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableConfidentialCompute",
 		&returns,
 	)
 	return returns
@@ -445,6 +457,16 @@ func (j *jsiiProxy_DataGoogleComputeDisk) ProvisionedIops() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -626,7 +648,7 @@ func (j *jsiiProxy_DataGoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) DataGoogleComputeDisk {
 	_init_.Initialize()
 
@@ -644,7 +666,7 @@ func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk_Override(d DataGoogleComputeDisk, scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestoreentitytype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype}.
 type GoogleVertexAiFeaturestoreEntitytype interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytype(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeConfig) GoogleVertexAiFeaturestoreEntitytype {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewGoogleVertexAiFeaturestoreEntitytype(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytype_Override(g GoogleVertexAiFeaturestoreEntitytype, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeConfig) {
 	_init_.Initialize()
 

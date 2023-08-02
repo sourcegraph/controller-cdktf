@@ -26,6 +26,8 @@ type GoogleMonitoringAlertPolicyConditionsOutputReference interface {
 	ConditionMatchedLogInput() *GoogleMonitoringAlertPolicyConditionsConditionMatchedLog
 	ConditionMonitoringQueryLanguage() GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference
 	ConditionMonitoringQueryLanguageInput() *GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
+	ConditionPrometheusQueryLanguage() GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
+	ConditionPrometheusQueryLanguageInput() *GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
 	ConditionThreshold() GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference
 	ConditionThresholdInput() *GoogleMonitoringAlertPolicyConditionsConditionThreshold
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -76,10 +78,12 @@ type GoogleMonitoringAlertPolicyConditionsOutputReference interface {
 	PutConditionAbsent(value *GoogleMonitoringAlertPolicyConditionsConditionAbsent)
 	PutConditionMatchedLog(value *GoogleMonitoringAlertPolicyConditionsConditionMatchedLog)
 	PutConditionMonitoringQueryLanguage(value *GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage)
+	PutConditionPrometheusQueryLanguage(value *GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage)
 	PutConditionThreshold(value *GoogleMonitoringAlertPolicyConditionsConditionThreshold)
 	ResetConditionAbsent()
 	ResetConditionMatchedLog()
 	ResetConditionMonitoringQueryLanguage()
+	ResetConditionPrometheusQueryLanguage()
 	ResetConditionThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -171,6 +175,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) Conditi
 	_jsii_.Get(
 		j,
 		"conditionMonitoringQueryLanguageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) ConditionPrometheusQueryLanguage() GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference {
+	var returns GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
+	_jsii_.Get(
+		j,
+		"conditionPrometheusQueryLanguage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) ConditionPrometheusQueryLanguageInput() *GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage {
+	var returns *GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
+	_jsii_.Get(
+		j,
+		"conditionPrometheusQueryLanguageInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) PutCond
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) PutConditionPrometheusQueryLanguage(value *GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage) {
+	if err := g.validatePutConditionPrometheusQueryLanguageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConditionPrometheusQueryLanguage",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) PutConditionThreshold(value *GoogleMonitoringAlertPolicyConditionsConditionThreshold) {
 	if err := g.validatePutConditionThresholdParameters(value); err != nil {
 		panic(err)
@@ -620,6 +655,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) ResetCo
 	_jsii_.InvokeVoid(
 		g,
 		"resetConditionMonitoringQueryLanguage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) ResetConditionPrometheusQueryLanguage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConditionPrometheusQueryLanguage",
 		nil, // no parameters
 	)
 }

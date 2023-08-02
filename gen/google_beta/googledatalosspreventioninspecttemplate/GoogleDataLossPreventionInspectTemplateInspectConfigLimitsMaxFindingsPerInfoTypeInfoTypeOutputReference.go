@@ -32,6 +32,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInf
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SensitivityScore() GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference
+	SensitivityScoreInput() *GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSensitivityScore(value *GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore)
+	ResetSensitivityScore()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMax
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) SensitivityScore() GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference {
+	var returns GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) SensitivityScoreInput() *GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore {
+	var returns *GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMax
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) PutSensitivityScore(value *GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore) {
+	if err := g.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSensitivityScore",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) ResetVersion() {

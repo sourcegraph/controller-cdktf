@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -114,6 +114,9 @@ type GoogleComputeRegionBackendService interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecurityPolicy() *string
+	SetSecurityPolicy(val *string)
+	SecurityPolicyInput() *string
 	SelfLink() *string
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
@@ -192,6 +195,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetProject()
 	ResetProtocol()
 	ResetRegion()
+	ResetSecurityPolicy()
 	ResetSessionAffinity()
 	ResetSubsetting()
 	ResetTimeouts()
@@ -821,6 +825,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendService) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) SecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -942,7 +966,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -960,7 +984,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1189,6 +1213,17 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService)SetSecurityPolicy(val *string) {
+	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicy",
 		val,
 	)
 }
@@ -1782,6 +1817,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetSecurityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPolicy",
 		nil, // no parameters
 	)
 }

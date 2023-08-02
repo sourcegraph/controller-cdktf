@@ -98,6 +98,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() GoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleContainerClusterNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *GoogleContainerClusterNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -152,6 +154,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	PutReservationAffinity(value *GoogleContainerClusterNodeConfigReservationAffinity)
 	PutSandboxConfig(value *GoogleContainerClusterNodeConfigSandboxConfig)
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *GoogleContainerClusterNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -181,6 +184,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetSandboxConfig()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -785,6 +789,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ShieldedInst
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) SoleTenantConfig() GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) SoleTenantConfigInput() *GoogleContainerClusterNodeConfigSoleTenantConfig {
+	var returns *GoogleContainerClusterNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1478,6 +1502,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutShieldedI
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutSoleTenantConfig(value *GoogleContainerClusterNodeConfigSoleTenantConfig) {
+	if err := g.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSoleTenantConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutTaint(value interface{}) {
 	if err := g.validatePutTaintParameters(value); err != nil {
 		panic(err)
@@ -1712,6 +1747,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetShielde
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

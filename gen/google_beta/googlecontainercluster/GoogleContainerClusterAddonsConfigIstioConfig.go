@@ -6,11 +6,11 @@ type GoogleContainerClusterAddonsConfigIstioConfig struct {
 	//
 	// It is disabled by default. Set disabled = false to enable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_cluster#disabled GoogleContainerCluster#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster#disabled GoogleContainerCluster#disabled}
 	Disabled interface{} `field:"required" json:"disabled" yaml:"disabled"`
 	// The authentication type between services in Istio. Available options include AUTH_MUTUAL_TLS.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_cluster#auth GoogleContainerCluster#auth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster#auth GoogleContainerCluster#auth}
 	Auth *string `field:"optional" json:"auth" yaml:"auth"`
 }
 

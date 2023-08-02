@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestorageobjectaccesscontrol/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_object_access_control google_storage_object_access_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_object_access_control google_storage_object_access_control}.
 type GoogleStorageObjectAccessControl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleStorageObjectAccessControl) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_object_access_control google_storage_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_object_access_control google_storage_object_access_control} Resource.
 func NewGoogleStorageObjectAccessControl(scope constructs.Construct, id *string, config *GoogleStorageObjectAccessControlConfig) GoogleStorageObjectAccessControl {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewGoogleStorageObjectAccessControl(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_object_access_control google_storage_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_object_access_control google_storage_object_access_control} Resource.
 func NewGoogleStorageObjectAccessControl_Override(g GoogleStorageObjectAccessControl, scope constructs.Construct, id *string, config *GoogleStorageObjectAccessControlConfig) {
 	_init_.Initialize()
 

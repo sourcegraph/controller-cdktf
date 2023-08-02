@@ -165,8 +165,6 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsC
 
 func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
 	case *AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints:
 		val := val.(*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -178,9 +176,11 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsC
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
+	case cdktf.IResolvable:
+		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

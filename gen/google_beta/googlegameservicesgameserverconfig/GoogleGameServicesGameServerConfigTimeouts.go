@@ -2,9 +2,9 @@ package googlegameservicesgameserverconfig
 
 
 type GoogleGameServicesGameServerConfigTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_game_server_config#create GoogleGameServicesGameServerConfig#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#create GoogleGameServicesGameServerConfig#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_game_server_config#delete GoogleGameServicesGameServerConfig#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#delete GoogleGameServicesGameServerConfig#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

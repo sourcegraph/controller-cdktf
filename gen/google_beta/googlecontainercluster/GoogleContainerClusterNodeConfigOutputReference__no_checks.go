@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutS
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutSoleTenantConfigParameters(value *GoogleContainerClusterNodeConfigSoleTenantConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutTaintParameters(value interface{}) error {
 	return nil
 }

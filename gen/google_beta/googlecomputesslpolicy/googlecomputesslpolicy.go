@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesslpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_policy google_compute_ssl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_ssl_policy google_compute_ssl_policy}.
 type GoogleComputeSslPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_GoogleComputeSslPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_policy google_compute_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_ssl_policy google_compute_ssl_policy} Resource.
 func NewGoogleComputeSslPolicy(scope constructs.Construct, id *string, config *GoogleComputeSslPolicyConfig) GoogleComputeSslPolicy {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewGoogleComputeSslPolicy(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_ssl_policy google_compute_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_ssl_policy google_compute_ssl_policy} Resource.
 func NewGoogleComputeSslPolicy_Override(g GoogleComputeSslPolicy, scope constructs.Construct, id *string, config *GoogleComputeSslPolicyConfig) {
 	_init_.Initialize()
 

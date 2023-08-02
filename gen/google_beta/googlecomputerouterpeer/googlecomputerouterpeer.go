@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
 type GoogleComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -157,6 +157,7 @@ type GoogleComputeRouterPeer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPeerIpAddress()
 	ResetPeerIpv6NexthopAddress()
 	ResetProject()
 	ResetRegion()
@@ -748,7 +749,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) GoogleComputeRouterPeer {
 	_init_.Initialize()
 
@@ -766,7 +767,7 @@ func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer_Override(g GoogleComputeRouterPeer, scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1415,6 +1416,14 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetPeerIpAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPeerIpAddress",
 		nil, // no parameters
 	)
 }

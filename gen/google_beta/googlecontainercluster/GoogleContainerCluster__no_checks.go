@@ -172,6 +172,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutResourceUsageExportConfigP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutSecurityPostureConfigParameters(value *GoogleContainerClusterSecurityPostureConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutServiceExternalIpsConfigParameters(value *GoogleContainerClusterServiceExternalIpsConfig) error {
 	return nil
 }
@@ -201,6 +205,10 @@ func validateGoogleContainerCluster_IsTerraformElementParameters(x interface{}) 
 }
 
 func validateGoogleContainerCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
 	return nil
 }
 
@@ -249,6 +257,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableL4IlbSubsettingParam
 }
 
 func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableLegacyAbacParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableMultiNetworkingParameters(val interface{}) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksruntimeiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member}.
 type GoogleNotebooksRuntimeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
 func NewGoogleNotebooksRuntimeIamMember(scope constructs.Construct, id *string, config *GoogleNotebooksRuntimeIamMemberConfig) GoogleNotebooksRuntimeIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleNotebooksRuntimeIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
 func NewGoogleNotebooksRuntimeIamMember_Override(g GoogleNotebooksRuntimeIamMember, scope constructs.Construct, id *string, config *GoogleNotebooksRuntimeIamMemberConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesendpointpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_endpoint_policy google_network_services_endpoint_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_endpoint_policy google_network_services_endpoint_policy}.
 type GoogleNetworkServicesEndpointPolicy interface {
 	cdktf.TerraformResource
 	AuthorizationPolicy() *string
@@ -569,7 +569,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_endpoint_policy google_network_services_endpoint_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_endpoint_policy google_network_services_endpoint_policy} Resource.
 func NewGoogleNetworkServicesEndpointPolicy(scope constructs.Construct, id *string, config *GoogleNetworkServicesEndpointPolicyConfig) GoogleNetworkServicesEndpointPolicy {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewGoogleNetworkServicesEndpointPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_endpoint_policy google_network_services_endpoint_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_endpoint_policy google_network_services_endpoint_policy} Resource.
 func NewGoogleNetworkServicesEndpointPolicy_Override(g GoogleNetworkServicesEndpointPolicy, scope constructs.Construct, id *string, config *GoogleNetworkServicesEndpointPolicyConfig) {
 	_init_.Initialize()
 

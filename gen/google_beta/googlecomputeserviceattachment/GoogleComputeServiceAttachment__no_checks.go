@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetReconcileConnectionsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetRegionParameters(val *string) error {
 	return nil
 }

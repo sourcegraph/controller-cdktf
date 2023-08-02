@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcareconsentstoreiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding}.
 type GoogleHealthcareConsentStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleHealthcareConsentStoreIamBinding) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
 func NewGoogleHealthcareConsentStoreIamBinding(scope constructs.Construct, id *string, config *GoogleHealthcareConsentStoreIamBindingConfig) GoogleHealthcareConsentStoreIamBinding {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewGoogleHealthcareConsentStoreIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
 func NewGoogleHealthcareConsentStoreIamBinding_Override(g GoogleHealthcareConsentStoreIamBinding, scope constructs.Construct, id *string, config *GoogleHealthcareConsentStoreIamBindingConfig) {
 	_init_.Initialize()
 

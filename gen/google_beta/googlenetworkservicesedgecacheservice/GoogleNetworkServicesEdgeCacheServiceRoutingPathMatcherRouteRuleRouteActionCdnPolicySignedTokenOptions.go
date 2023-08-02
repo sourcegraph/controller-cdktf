@@ -8,7 +8,7 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction
 	//
 	// You may specify up to 3 signature algorithms to use. Possible values: ["ED25519", "HMAC_SHA_256", "HMAC_SHA1"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_edge_cache_service#allowed_signature_algorithms GoogleNetworkServicesEdgeCacheService#allowed_signature_algorithms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_edge_cache_service#allowed_signature_algorithms GoogleNetworkServicesEdgeCacheService#allowed_signature_algorithms}
 	AllowedSignatureAlgorithms *[]*string `field:"optional" json:"allowedSignatureAlgorithms" yaml:"allowedSignatureAlgorithms"`
 	// The query parameter in which to find the token.
 	//
@@ -16,7 +16,7 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction
 	//
 	// Defaults to 'edge-cache-token'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_edge_cache_service#token_query_parameter GoogleNetworkServicesEdgeCacheService#token_query_parameter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_edge_cache_service#token_query_parameter GoogleNetworkServicesEdgeCacheService#token_query_parameter}
 	TokenQueryParameter *string `field:"optional" json:"tokenQueryParameter" yaml:"tokenQueryParameter"`
 }
 

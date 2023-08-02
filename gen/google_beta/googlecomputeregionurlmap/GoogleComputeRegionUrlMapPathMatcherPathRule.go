@@ -9,11 +9,11 @@ type GoogleComputeRegionUrlMapPathMatcherPathRule struct {
 	// does not include any text after the first ? or #, and those chars are not
 	// allowed here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_url_map#paths GoogleComputeRegionUrlMap#paths}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_url_map#paths GoogleComputeRegionUrlMap#paths}
 	Paths *[]*string `field:"required" json:"paths" yaml:"paths"`
 	// route_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_url_map#route_action GoogleComputeRegionUrlMap#route_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_url_map#route_action GoogleComputeRegionUrlMap#route_action}
 	RouteAction *GoogleComputeRegionUrlMapPathMatcherPathRuleRouteAction `field:"optional" json:"routeAction" yaml:"routeAction"`
 	// The region backend service resource to which traffic is directed if this rule is matched.
 	//
@@ -24,11 +24,11 @@ type GoogleComputeRegionUrlMapPathMatcherPathRule struct {
 	// weightedBackendServices, service must not be specified. Only one of urlRedirect,
 	// service or routeAction.weightedBackendService must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_url_map#service GoogleComputeRegionUrlMap#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_url_map#service GoogleComputeRegionUrlMap#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// url_redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_url_map#url_redirect GoogleComputeRegionUrlMap#url_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_url_map#url_redirect GoogleComputeRegionUrlMap#url_redirect}
 	UrlRedirect *GoogleComputeRegionUrlMapPathMatcherPathRuleUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
 

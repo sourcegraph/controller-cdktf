@@ -6,7 +6,7 @@ type GoogleStorageBucketEncryption struct {
 	//
 	// You must pay attention to whether the crypto key is available in the location that this bucket is created in. See the docs for more details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_storage_bucket#default_kms_key_name GoogleStorageBucket#default_kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket#default_kms_key_name GoogleStorageBucket#default_kms_key_name}
 	DefaultKmsKeyName *string `field:"required" json:"defaultKmsKeyName" yaml:"defaultKmsKeyName"`
 }
 

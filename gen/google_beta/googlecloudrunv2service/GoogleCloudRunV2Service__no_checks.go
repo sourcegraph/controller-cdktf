@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetCustomAudiencesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

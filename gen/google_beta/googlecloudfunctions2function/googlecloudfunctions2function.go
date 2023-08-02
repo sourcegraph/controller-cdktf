@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctions2function/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function}.
 type GoogleCloudfunctions2Function interface {
 	cdktf.TerraformResource
 	BuildConfig() GoogleCloudfunctions2FunctionBuildConfigOutputReference
@@ -87,6 +87,7 @@ type GoogleCloudfunctions2Function interface {
 	Timeouts() GoogleCloudfunctions2FunctionTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	Url() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -533,8 +534,18 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2Function) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewGoogleCloudfunctions2Function(scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionConfig) GoogleCloudfunctions2Function {
 	_init_.Initialize()
 
@@ -552,7 +563,7 @@ func NewGoogleCloudfunctions2Function(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewGoogleCloudfunctions2Function_Override(g GoogleCloudfunctions2Function, scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 

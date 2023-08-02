@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_organization google_apigee_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_organization google_apigee_organization}.
 type GoogleApigeeOrganization interface {
 	cdktf.TerraformResource
 	AnalyticsRegion() *string
 	SetAnalyticsRegion(val *string)
 	AnalyticsRegionInput() *string
+	ApigeeProjectId() *string
 	AuthorizedNetwork() *string
 	SetAuthorizedNetwork(val *string)
 	AuthorizedNetworkInput() *string
@@ -41,6 +42,9 @@ type GoogleApigeeOrganization interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableVpcPeering() interface{}
+	SetDisableVpcPeering(val interface{})
+	DisableVpcPeeringInput() interface{}
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -126,6 +130,7 @@ type GoogleApigeeOrganization interface {
 	ResetAuthorizedNetwork()
 	ResetBillingType()
 	ResetDescription()
+	ResetDisableVpcPeering()
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -166,6 +171,16 @@ func (j *jsiiProxy_GoogleApigeeOrganization) AnalyticsRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"analyticsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ApigeeProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apigeeProjectId",
 		&returns,
 	)
 	return returns
@@ -286,6 +301,26 @@ func (j *jsiiProxy_GoogleApigeeOrganization) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) DisableVpcPeering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableVpcPeering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) DisableVpcPeeringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableVpcPeeringInput",
 		&returns,
 	)
 	return returns
@@ -582,7 +617,7 @@ func (j *jsiiProxy_GoogleApigeeOrganization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
 func NewGoogleApigeeOrganization(scope constructs.Construct, id *string, config *GoogleApigeeOrganizationConfig) GoogleApigeeOrganization {
 	_init_.Initialize()
 
@@ -600,7 +635,7 @@ func NewGoogleApigeeOrganization(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
 func NewGoogleApigeeOrganization_Override(g GoogleApigeeOrganization, scope constructs.Construct, id *string, config *GoogleApigeeOrganizationConfig) {
 	_init_.Initialize()
 
@@ -681,6 +716,17 @@ func (j *jsiiProxy_GoogleApigeeOrganization)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization)SetDisableVpcPeering(val interface{}) {
+	if err := j.validateSetDisableVpcPeeringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableVpcPeering",
 		val,
 	)
 }
@@ -1105,6 +1151,14 @@ func (g *jsiiProxy_GoogleApigeeOrganization) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeOrganization) ResetDisableVpcPeering() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableVpcPeering",
 		nil, // no parameters
 	)
 }

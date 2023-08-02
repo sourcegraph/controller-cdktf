@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmscryptokeyiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member}.
 type GoogleKmsCryptoKeyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
 func NewGoogleKmsCryptoKeyIamMember(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamMemberConfig) GoogleKmsCryptoKeyIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleKmsCryptoKeyIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
 func NewGoogleKmsCryptoKeyIamMember_Override(g GoogleKmsCryptoKeyIamMember, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamMemberConfig) {
 	_init_.Initialize()
 

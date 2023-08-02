@@ -43,6 +43,9 @@ type GoogleVertexAiIndexMetadataConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleVertexAiIndexMetadataConfig
 	SetInternalValue(val *GoogleVertexAiIndexMetadataConfig)
+	ShardSize() *string
+	SetShardSize(val *string)
+	ShardSizeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type GoogleVertexAiIndexMetadataConfigOutputReference interface {
 	ResetApproximateNeighborsCount()
 	ResetDistanceMeasureType()
 	ResetFeatureNormType()
+	ResetShardSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -245,6 +249,26 @@ func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) InternalVal
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) ShardSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shardSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) ShardSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shardSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,6 +390,17 @@ func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference)SetShardSize(val *string) {
+	if err := j.validateSetShardSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shardSize",
 		val,
 	)
 }
@@ -617,6 +652,14 @@ func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) ResetFeatur
 	_jsii_.InvokeVoid(
 		g,
 		"resetFeatureNormType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) ResetShardSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetShardSize",
 		nil, // no parameters
 	)
 }

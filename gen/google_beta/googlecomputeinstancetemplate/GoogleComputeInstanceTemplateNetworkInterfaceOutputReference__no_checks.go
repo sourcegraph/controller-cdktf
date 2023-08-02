@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceOutputReference) validateSetNetworkIpParameters(val *string) error {
 	return nil
 }

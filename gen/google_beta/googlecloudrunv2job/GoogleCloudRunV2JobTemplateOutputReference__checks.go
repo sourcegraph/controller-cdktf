@@ -109,6 +109,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateResolvePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetAnnotationsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

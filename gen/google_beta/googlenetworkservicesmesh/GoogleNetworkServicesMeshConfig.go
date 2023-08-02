@@ -21,13 +21,13 @@ type GoogleNetworkServicesMeshConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Short name of the Mesh resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#name GoogleNetworkServicesMesh#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#name GoogleNetworkServicesMesh#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#description GoogleNetworkServicesMesh#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#description GoogleNetworkServicesMesh#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#id GoogleNetworkServicesMesh#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#id GoogleNetworkServicesMesh#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,17 +40,17 @@ type GoogleNetworkServicesMeshConfig struct {
 	// '15001' is used as the interception port. This will is applicable only for sidecar proxy
 	// deployments.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#interception_port GoogleNetworkServicesMesh#interception_port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#interception_port GoogleNetworkServicesMesh#interception_port}
 	InterceptionPort *float64 `field:"optional" json:"interceptionPort" yaml:"interceptionPort"`
 	// Set of label tags associated with the Mesh resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#labels GoogleNetworkServicesMesh#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#labels GoogleNetworkServicesMesh#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#project GoogleNetworkServicesMesh#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#project GoogleNetworkServicesMesh#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_mesh#timeouts GoogleNetworkServicesMesh#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_network_services_mesh#timeouts GoogleNetworkServicesMesh#timeouts}
 	Timeouts *GoogleNetworkServicesMeshTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

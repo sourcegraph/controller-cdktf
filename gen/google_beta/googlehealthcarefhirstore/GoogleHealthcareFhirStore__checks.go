@@ -219,6 +219,14 @@ func validateGoogleHealthcareFhirStore_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetComplexDataTypeReferenceParsingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

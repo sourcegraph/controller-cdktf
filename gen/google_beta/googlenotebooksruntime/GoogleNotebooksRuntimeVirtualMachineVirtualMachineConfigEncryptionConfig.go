@@ -8,7 +8,7 @@ type GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig st
 	// 'projects/{PROJECT_ID}/locations/{REGION}/keyRings/
 	// {KEY_RING_NAME}/cryptoKeys/{KEY_NAME}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_notebooks_runtime#kms_key GoogleNotebooksRuntime#kms_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime#kms_key GoogleNotebooksRuntime#kms_key}
 	KmsKey *string `field:"optional" json:"kmsKey" yaml:"kmsKey"`
 }
 

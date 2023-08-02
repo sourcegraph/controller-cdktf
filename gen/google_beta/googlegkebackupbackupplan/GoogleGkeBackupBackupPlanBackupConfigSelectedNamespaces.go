@@ -4,7 +4,7 @@ package googlegkebackupbackupplan
 type GoogleGkeBackupBackupPlanBackupConfigSelectedNamespaces struct {
 	// A list of Kubernetes Namespaces.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_gke_backup_backup_plan#namespaces GoogleGkeBackupBackupPlan#namespaces}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_gke_backup_backup_plan#namespaces GoogleGkeBackupBackupPlan#namespaces}
 	Namespaces *[]*string `field:"required" json:"namespaces" yaml:"namespaces"`
 }
 

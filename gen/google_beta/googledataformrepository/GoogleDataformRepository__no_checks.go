@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleDataformRepository) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepository) validatePutWorkspaceCompilationOverridesParameters(value *GoogleDataformRepositoryWorkspaceCompilationOverrides) error {
+	return nil
+}
+
 func validateGoogleDataformRepository_IsConstructParameters(x interface{}) error {
 	return nil
 }

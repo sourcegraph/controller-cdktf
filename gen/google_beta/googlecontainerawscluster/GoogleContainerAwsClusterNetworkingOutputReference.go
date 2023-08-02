@@ -29,6 +29,9 @@ type GoogleContainerAwsClusterNetworkingOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleContainerAwsClusterNetworking
 	SetInternalValue(val *GoogleContainerAwsClusterNetworking)
+	PerNodePoolSgRulesDisabled() interface{}
+	SetPerNodePoolSgRulesDisabled(val interface{})
+	PerNodePoolSgRulesDisabledInput() interface{}
 	PodAddressCidrBlocks() *[]*string
 	SetPodAddressCidrBlocks(val *[]*string)
 	PodAddressCidrBlocksInput() *[]*string
@@ -70,6 +73,7 @@ type GoogleContainerAwsClusterNetworkingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPerNodePoolSgRulesDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,6 +134,26 @@ func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"perNodePoolSgRulesDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"perNodePoolSgRulesDisabledInput",
 		&returns,
 	)
 	return returns
@@ -272,6 +296,17 @@ func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference)SetPerNodePoolSgRulesDisabled(val interface{}) {
+	if err := j.validateSetPerNodePoolSgRulesDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perNodePoolSgRulesDisabled",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (g *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) ResetPerNodePoolSgRulesDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPerNodePoolSgRulesDisabled",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

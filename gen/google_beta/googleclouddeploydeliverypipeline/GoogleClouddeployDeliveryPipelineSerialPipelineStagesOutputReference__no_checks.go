@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputRe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validatePutDeployParametersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validatePutStrategyParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy) error {
 	return nil
 }

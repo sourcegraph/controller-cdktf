@@ -29,7 +29,7 @@ type GoogleComputeRegionBackendServiceConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#name GoogleComputeRegionBackendService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#name GoogleComputeRegionBackendService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Lifetime of cookies in seconds if session_affinity is GENERATED_COOKIE.
 	//
@@ -39,56 +39,56 @@ type GoogleComputeRegionBackendServiceConfig struct {
 	//
 	// When the load balancing scheme is INTERNAL, this field is not used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#affinity_cookie_ttl_sec GoogleComputeRegionBackendService#affinity_cookie_ttl_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#affinity_cookie_ttl_sec GoogleComputeRegionBackendService#affinity_cookie_ttl_sec}
 	AffinityCookieTtlSec *float64 `field:"optional" json:"affinityCookieTtlSec" yaml:"affinityCookieTtlSec"`
 	// backend block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#backend GoogleComputeRegionBackendService#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#backend GoogleComputeRegionBackendService#backend}
 	Backend interface{} `field:"optional" json:"backend" yaml:"backend"`
 	// cdn_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#cdn_policy GoogleComputeRegionBackendService#cdn_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#cdn_policy GoogleComputeRegionBackendService#cdn_policy}
 	CdnPolicy *GoogleComputeRegionBackendServiceCdnPolicy `field:"optional" json:"cdnPolicy" yaml:"cdnPolicy"`
 	// circuit_breakers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#circuit_breakers GoogleComputeRegionBackendService#circuit_breakers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#circuit_breakers GoogleComputeRegionBackendService#circuit_breakers}
 	CircuitBreakers *GoogleComputeRegionBackendServiceCircuitBreakers `field:"optional" json:"circuitBreakers" yaml:"circuitBreakers"`
 	// Time for which instance will be drained (not accept new connections, but still work to finish started).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#connection_draining_timeout_sec GoogleComputeRegionBackendService#connection_draining_timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#connection_draining_timeout_sec GoogleComputeRegionBackendService#connection_draining_timeout_sec}
 	ConnectionDrainingTimeoutSec *float64 `field:"optional" json:"connectionDrainingTimeoutSec" yaml:"connectionDrainingTimeoutSec"`
 	// connection_tracking_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#connection_tracking_policy GoogleComputeRegionBackendService#connection_tracking_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#connection_tracking_policy GoogleComputeRegionBackendService#connection_tracking_policy}
 	ConnectionTrackingPolicy *GoogleComputeRegionBackendServiceConnectionTrackingPolicy `field:"optional" json:"connectionTrackingPolicy" yaml:"connectionTrackingPolicy"`
 	// consistent_hash block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#consistent_hash GoogleComputeRegionBackendService#consistent_hash}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#consistent_hash GoogleComputeRegionBackendService#consistent_hash}
 	ConsistentHash *GoogleComputeRegionBackendServiceConsistentHash `field:"optional" json:"consistentHash" yaml:"consistentHash"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#description GoogleComputeRegionBackendService#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#description GoogleComputeRegionBackendService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// If true, enable Cloud CDN for this RegionBackendService.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#enable_cdn GoogleComputeRegionBackendService#enable_cdn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#enable_cdn GoogleComputeRegionBackendService#enable_cdn}
 	EnableCdn interface{} `field:"optional" json:"enableCdn" yaml:"enableCdn"`
 	// failover_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#failover_policy GoogleComputeRegionBackendService#failover_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#failover_policy GoogleComputeRegionBackendService#failover_policy}
 	FailoverPolicy *GoogleComputeRegionBackendServiceFailoverPolicy `field:"optional" json:"failoverPolicy" yaml:"failoverPolicy"`
 	// The set of URLs to HealthCheck resources for health checking this RegionBackendService. Currently at most one health check can be specified.
 	//
 	// A health check must be specified unless the backend service uses an internet
 	// or serverless NEG as a backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#health_checks GoogleComputeRegionBackendService#health_checks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#health_checks GoogleComputeRegionBackendService#health_checks}
 	HealthChecks *[]*string `field:"optional" json:"healthChecks" yaml:"healthChecks"`
 	// iap block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#iap GoogleComputeRegionBackendService#iap}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#iap GoogleComputeRegionBackendService#iap}
 	Iap *GoogleComputeRegionBackendServiceIap `field:"optional" json:"iap" yaml:"iap"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#id GoogleComputeRegionBackendService#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#id GoogleComputeRegionBackendService#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -99,7 +99,7 @@ type GoogleComputeRegionBackendServiceConfig struct {
 	// balancing cannot be used with the other(s). For more information, refer to
 	// [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#load_balancing_scheme GoogleComputeRegionBackendService#load_balancing_scheme}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#load_balancing_scheme GoogleComputeRegionBackendService#load_balancing_scheme}
 	LoadBalancingScheme *string `field:"optional" json:"loadBalancingScheme" yaml:"loadBalancingScheme"`
 	// The load balancing algorithm used within the scope of the locality. The possible values are:.
 	//
@@ -158,21 +158,21 @@ type GoogleComputeRegionBackendServiceConfig struct {
 	// by a URL map that is bound to target gRPC proxy that has validate_for_proxyless
 	// field set to true. Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV", "WEIGHTED_MAGLEV"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#locality_lb_policy GoogleComputeRegionBackendService#locality_lb_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#locality_lb_policy GoogleComputeRegionBackendService#locality_lb_policy}
 	LocalityLbPolicy *string `field:"optional" json:"localityLbPolicy" yaml:"localityLbPolicy"`
 	// log_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#log_config GoogleComputeRegionBackendService#log_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#log_config GoogleComputeRegionBackendService#log_config}
 	LogConfig *GoogleComputeRegionBackendServiceLogConfig `field:"optional" json:"logConfig" yaml:"logConfig"`
 	// The URL of the network to which this backend service belongs.
 	//
 	// This field can only be specified when the load balancing scheme is set to INTERNAL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#network GoogleComputeRegionBackendService#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#network GoogleComputeRegionBackendService#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// outlier_detection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#outlier_detection GoogleComputeRegionBackendService#outlier_detection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#outlier_detection GoogleComputeRegionBackendService#outlier_detection}
 	OutlierDetection *GoogleComputeRegionBackendServiceOutlierDetection `field:"optional" json:"outlierDetection" yaml:"outlierDetection"`
 	// A named port on a backend instance group representing the port for communication to the backend VMs in that group.
 	//
@@ -183,41 +183,45 @@ type GoogleComputeRegionBackendServiceConfig struct {
 	// default of "http" if not given.
 	// Must be omitted when the loadBalancingScheme is INTERNAL (Internal TCP/UDP Load Balancing).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#port_name GoogleComputeRegionBackendService#port_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#port_name GoogleComputeRegionBackendService#port_name}
 	PortName *string `field:"optional" json:"portName" yaml:"portName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#project GoogleComputeRegionBackendService#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#project GoogleComputeRegionBackendService#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The protocol this RegionBackendService uses to communicate with backends.
 	//
 	// The default is HTTP. **NOTE**: HTTP2 is only valid for beta HTTP/2 load balancer
 	// types and may result in errors if used with the GA API. Possible values: ["HTTP", "HTTPS", "HTTP2", "SSL", "TCP", "UDP", "GRPC", "UNSPECIFIED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#protocol GoogleComputeRegionBackendService#protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#protocol GoogleComputeRegionBackendService#protocol}
 	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 	// The Region in which the created backend service should reside. If it is not provided, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#region GoogleComputeRegionBackendService#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#region GoogleComputeRegionBackendService#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// The security policy associated with this backend service.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#security_policy GoogleComputeRegionBackendService#security_policy}
+	SecurityPolicy *string `field:"optional" json:"securityPolicy" yaml:"securityPolicy"`
 	// Type of session affinity to use.
 	//
 	// The default is NONE. Session affinity is
 	// not applicable if the protocol is UDP. Possible values: ["NONE", "CLIENT_IP", "CLIENT_IP_PORT_PROTO", "CLIENT_IP_PROTO", "GENERATED_COOKIE", "HEADER_FIELD", "HTTP_COOKIE", "CLIENT_IP_NO_DESTINATION"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#session_affinity GoogleComputeRegionBackendService#session_affinity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#session_affinity GoogleComputeRegionBackendService#session_affinity}
 	SessionAffinity *string `field:"optional" json:"sessionAffinity" yaml:"sessionAffinity"`
 	// subsetting block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#subsetting GoogleComputeRegionBackendService#subsetting}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#subsetting GoogleComputeRegionBackendService#subsetting}
 	Subsetting *GoogleComputeRegionBackendServiceSubsetting `field:"optional" json:"subsetting" yaml:"subsetting"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#timeouts GoogleComputeRegionBackendService#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#timeouts GoogleComputeRegionBackendService#timeouts}
 	Timeouts *GoogleComputeRegionBackendServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// How many seconds to wait for the backend before considering it a failed request.
 	//
 	// Default is 30 seconds. Valid range is [1, 86400].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_region_backend_service#timeout_sec GoogleComputeRegionBackendService#timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_compute_region_backend_service#timeout_sec GoogleComputeRegionBackendService#timeout_sec}
 	TimeoutSec *float64 `field:"optional" json:"timeoutSec" yaml:"timeoutSec"`
 }
 

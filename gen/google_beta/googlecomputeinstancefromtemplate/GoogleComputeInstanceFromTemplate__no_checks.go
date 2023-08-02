@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutNetworkPerforma
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutParamsParameters(value *GoogleComputeInstanceFromTemplateParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutReservationAffinityParameters(value *GoogleComputeInstanceFromTemplateReservationAffinity) error {
 	return nil
 }

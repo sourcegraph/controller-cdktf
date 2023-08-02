@@ -152,6 +152,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutResourceUsageExportConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutSecurityPostureConfigParameters(value *ContainerClusterSecurityPostureConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutServiceExternalIpsConfigParameters(value *ContainerClusterServiceExternalIpsConfig) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func validateContainerCluster_IsTerraformElementParameters(x interface{}) error 
 }
 
 func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
 	return nil
 }
 

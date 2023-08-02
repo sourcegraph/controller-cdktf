@@ -134,6 +134,28 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validatePutJsonOptionsParameters(value *GoogleBigqueryTableExternalDataConfigurationJsonOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validatePutParquetOptionsParameters(value *GoogleBigqueryTableExternalDataConfigurationParquetOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -272,6 +294,22 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 }
 
 func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetMaxBadRecordsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetMetadataCacheModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetObjectMetadataParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

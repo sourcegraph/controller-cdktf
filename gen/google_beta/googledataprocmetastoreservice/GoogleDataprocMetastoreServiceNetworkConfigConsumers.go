@@ -8,7 +8,7 @@ type GoogleDataprocMetastoreServiceNetworkConfigConsumers struct {
 	// There must be at least one IP address available in the subnet's primary range. The subnet is specified in the following form:
 	// 'projects/{projectNumber}/regions/{region_id}/subnetworks/{subnetwork_id}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataproc_metastore_service#subnetwork GoogleDataprocMetastoreService#subnetwork}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_metastore_service#subnetwork GoogleDataprocMetastoreService#subnetwork}
 	Subnetwork *string `field:"required" json:"subnetwork" yaml:"subnetwork"`
 }
 

@@ -31,6 +31,7 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 	InternalValue() *GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	SetInternalValue(val *GoogleComputeInstanceFromMachineImageBootDiskInitializeParams)
 	Labels() cdktf.StringMap
+	ResourceManagerTags() cdktf.StringMap
 	Size() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -145,6 +146,16 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	_jsii_.Get(
 		j,
 		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) ResourceManagerTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
 		&returns,
 	)
 	return returns
