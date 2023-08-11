@@ -1,2 +1,7 @@
+bazel-out
+bazel-bin
+bazel-controller-cdktf
+bazel-testlogs
+
 !gen/*/jsii/*.tgz
 
